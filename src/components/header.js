@@ -6,6 +6,7 @@ import bag from '../assets/images/shopping-bag.png';
 import search from '../assets/images/search.png';
 import profile from '../assets/images/profile.png';
 import menu_grid_sub_img from '../assets/images/banner1.jpg';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
   render() {
@@ -24,7 +25,7 @@ class Header extends Component {
         </div>
 
         <div className=" header-items logo-item">
-            <img src={logo} className="logo"/>
+            <Link to={'/'}><img src={logo} className="logo"/></Link>
         </div>
 
         <div className=" header-items right-icons">

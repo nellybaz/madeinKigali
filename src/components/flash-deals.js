@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../css/flash_deals.css';
 import nextArrow from '../assets/images/r2-arrow.png';
 import prevArrow from '../assets/images/l2-arrow.png';
+import {Link} from 'react-router-dom';
 //import '../assets/js/animations.js';
 
 
@@ -82,7 +83,7 @@ class FlashDeals extends Component {
             return(
             <div className={'flash-deals-item'}>
             <div className="flasdeals-img-div">
-              <img className="flashdeals-img" src={item.img}/>
+              <Link to={`/product/${item.brand}/${item.id}`} ><img className="flashdeals-img" src={item.img}/></Link>
             </div>
             <div className="flashdeals-text">
               <p>{item.brand}</p>

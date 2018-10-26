@@ -152,7 +152,7 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-      <Header/>
+      {/* <Header/> */}
       <Carousel/>
 
       <div className="middle-nav">
