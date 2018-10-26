@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/flash_deals.css';
-import nextArrow from '../assets/images/right-arrow.png';
-import prevArrow from '../assets/images/left-arrow.png';
+import nextArrow from '../assets/images/r2-arrow.png';
+import prevArrow from '../assets/images/l2-arrow.png';
 //import '../assets/js/animations.js';
 
 

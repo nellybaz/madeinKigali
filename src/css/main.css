@@ -1,13 +1,13 @@
-.carousel-item img{
+/* .carousel-item img{
     height: 400px !important;
-}
+} */
 
 .Slider{
-    height: 500px;
+    height: 750px;
 }
 
 .jumbo3{
-    height: 500px;
+    height: 750px;
     background: url('../assets/images/banner20.png');
     -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -17,7 +17,7 @@
 }
 
 .jumbo1{
-    height: 500px;
+    height: 750px;
     background: url('../assets/images/banner4.gif');
     -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -26,7 +26,7 @@
 }
 
 .jumbo2{
-    height: 500px;
+    height: 750px;
     background: url('../assets/images/banner11.jpg');
     -webkit-background-size: cover;
   -moz-background-size: cover;
