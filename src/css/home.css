@@ -1,0 +1,32 @@
+.Home{
+
+    margin: 0 0% 0 0%;
+    background-color: #fff;
+}
+
+*{
+    /* font-family: Arial, Helvetica, sans-serif, Lato; */
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.middle-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E9EDED;
+    padding: 20px 0;
+
+}
+
+.middle-nav > .middle-nav-item{
+    padding: 0 4%;
+    font-size:0.8rem;
+}
+.middleBanner{
+    width: 100%;
+    height: 300px;
+    background:url('../assets/images/middle-banner.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

@@ -2,8 +2,10 @@
   "name": "madeinkigali",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://madeinkigali.com/dev",
   "dependencies": {
     "react": "^16.5.2",
+    "react-countdown-now": "^1.3.0",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.5"
   },

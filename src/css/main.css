@@ -1,0 +1,68 @@
+.carousel-item img{
+    height: 400px !important;
+}
+
+.Slider{
+    height: 500px;
+}
+
+.jumbo3{
+    height: 500px;
+    background: url('../assets/images/banner20.png');
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+}
+
+.jumbo1{
+    height: 500px;
+    background: url('../assets/images/banner4.gif');
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.jumbo2{
+    height: 500px;
+    background: url('../assets/images/banner11.jpg');
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.Divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.divider-name{
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+.Divider > div {
+    padding: 0 2%;
+}
+.text{
+
+    position: relative;
+    top: 15px;
+}
+.horizontal-bar{
+    border-bottom: 3px solid gray;
+    width: 40%;
+    height: 20px;
+}
+
+.flash-deals-timer{
+    font-size: 1.2rem;
+    color: brown;
+    margin-left: 5px;
+    font-style: italic;
+}
