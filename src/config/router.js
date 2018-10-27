@@ -18,7 +18,7 @@ class Routing extends Component {
             <div>
                 <Header/>
                 <Switch>
-                    <Route exact path={"/"} component={App}/>
+                    <Route exact path={"/dev"} component={App}/>
                     <Route exact path={"/product/:slug/:number"} component={Product}/>
                 </Switch>
             </div>
