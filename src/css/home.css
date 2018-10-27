@@ -75,10 +75,12 @@
     /* border: 1px solid black; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .insta-feed-grid-box > a{
-    margin-right: 5px;
+    margin: 0 5px 5px 0 ;
 }
 
 .instafeed__item{
