@@ -230,14 +230,12 @@ class Home extends Component {
                   <img class='instafeed__item__background' src='{{image}}' />
                     <div class='instafeed__item__overlay'>
                       <div class='instafeed__item__overlay--inner'>
-                       
-                        <p class='instafeed__item__location'>{{location}}</p>
                       </div>
                     </div>
                 </a>"
-                  userId='7164727307'
-                  clientId='31f47f9c02fe4e9da98cbe56b17c598d'
-                  accessToken='7164727307.1677ed0.828dacf9419f4a80a57344cdf80a99a4'
+                  userId='4242984811'
+                  clientId='035fca9dd2b84d6aaec758d945b931ad'
+                  accessToken='4242984811.1677ed0.744ef950db2e48dc9f8f76cf6f9aab0e'
                 />
 
             </div>

@@ -25,7 +25,7 @@ class Header extends Component {
         </div>
 
         <div className=" header-items logo-item">
-            <Link to={'/'}><img src={logo} className="logo"/></Link>
+            <Link to={'/dev'}><img src={logo} className="logo"/></Link>
         </div>
 
         <div className=" header-items right-icons">

@@ -6,9 +6,10 @@
         display: none;
     }
 
-    .flasdeals-img-div{
-        height: 50% !important;
+    .flash-deals-item{
+        width: 40% !important;
     }
+   
 }
 
 .FlashDeals
@@ -34,7 +35,7 @@
 
 .flasdeals-img-div{
     background: #FBFBFB;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 100%;
 }
 
