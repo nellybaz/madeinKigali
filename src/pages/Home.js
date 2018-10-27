@@ -11,6 +11,8 @@ import shoe2 from '../assets/images/shoe3.png';
 import brand1 from '../assets/images/brands1.jpg';
 import middleBanner from '../assets/images/middle-banner.png';
 
+import Instafeed from 'react-instafeed';
+
 
 class Home extends Component {
   constructor(props){
@@ -150,6 +152,9 @@ class Home extends Component {
   }
   
   render() {
+
+    const instafeedTarget = 'instafeed';
+
     return (
       <div className="Home">
       {/* <Header/> */}
@@ -176,11 +181,26 @@ class Home extends Component {
 
       <div>
 
+        {/* flas deals section start */}
+
           <Divider name='FlashDeals' displayTimer={true}/>
 
           <FlashDeals objectDispay={this.state.flashdealsObj} showNav={true}/>
       </div>
 
+      {/* flashdeals section ends */}
+
+       {/* fabric section starts */}
+
+            <div>
+
+      <Divider name='Create Your Own Dream'/>
+      <div className="middleBanner"></div>
+      </div>
+
+      {/* fabric section ends */}
+      
+        {/* blog section starts */}
        <div>
 
         <Divider name='In The Know'/>
@@ -188,14 +208,48 @@ class Home extends Component {
         <FlashDeals objectDispay={this.state.brandsObj} showNav={false}/>
       </div>
 
-       <div>
+      {/* bog section ends */}
 
-        <Divider name='Create Your Own Dream'/>
-        <div className="middleBanner"></div>
-        {/* <img className="middleBanner" src={middleBanner} />
-        <img className="middleBanner" src={middleBanner} /> */}
+     
+
+        <div className="instagram-section">
+            <div className="left">
+            
+            </div>
+            <div className="right">
+              <Divider name="Shop Instagram Look"/>
+
+                  <div id={instafeedTarget} className="insta-feed-grid-box">
+                <Instafeed
+                  limit='5'
+                  ref='instafeed'
+                  resolution='standard_resolution'
+                  sortBy='most-recent'
+                  target={instafeedTarget}
+                  template="<a href='{{link}}' target='_blank' class='instafeed__item'>
+                  <img class='instafeed__item__background' src='{{image}}' />
+                    <div class='instafeed__item__overlay'>
+                      <div class='instafeed__item__overlay--inner'>
+                       
+                        <p class='instafeed__item__location'>{{location}}</p>
+                      </div>
+                    </div>
+                </a>"
+                  userId='7164727307'
+                  clientId='31f47f9c02fe4e9da98cbe56b17c598d'
+                  accessToken='7164727307.1677ed0.828dacf9419f4a80a57344cdf80a99a4'
+                />
+
+            </div>
+
+
+
+            </div>
+          
+
         </div>
-
+        
+        
             
       </div>
     );

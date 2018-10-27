@@ -83,12 +83,12 @@ class FlashDeals extends Component {
             return(
             <div className={'flash-deals-item'}>
             <div className="flasdeals-img-div">
-              <Link to={`/product/${item.brand}/${item.id}`} ><img className="flashdeals-img" src={item.img}/></Link>
+              <Link to={`/dev/product/${item.brand}/${item.id}`} ><img className="flashdeals-img" src={item.img}/></Link>
             </div>
             <div className="flashdeals-text">
-              <p>{item.brand}</p>
-              <p>Red Leather Bag</p>
-              <p>$120</p>
+              <p className="f-brands">{item.brand}</p>
+              <p className="f-name">Red Leather Bag</p>
+              <p className="f-price">$120</p>
             </div>
         </div>
             )

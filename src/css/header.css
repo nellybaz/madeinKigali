@@ -115,7 +115,7 @@
 .navigation > div{
     padding: 0.5% 2%;
     margin: 0 2%;
-
+    
 }
 
 .navigation a{
@@ -141,17 +141,20 @@
     display: none;
     width: 100%;
     height: 300px;
-    background-color:#F5F5F5;
+    /* background-color:#F5F5F5; */
     left: 0;
-    padding: 0 30px;
     
+    /* margin: 0 20% 0 20% !important;
+     */
    
 }
+
 
 .new-in:hover .drop-down-content-new-in{
     display: grid;
     position: absolute;
     z-index: 1;
+
 }
 
 /* newin styling */
@@ -167,6 +170,9 @@
     margin-top: 0;
     grid-template-columns: 1fr 1fr;
     height: 100%;
+    padding: 0 30px;
+    background-color:#F5F5F5;
+    
   
 }
 
@@ -199,9 +205,8 @@
     display: none;
     width: 100%;
     height: 300px;
-    background-color:#F5F5F5;
     left: 0;
-    padding: 0 30px;
+    
 }
 .brands:hover .drop-down-content-brands{
     display: grid;
@@ -214,6 +219,9 @@
     margin-top: 0;
     grid-template-columns: 1fr 1fr 2fr;
     height: 100%;
+    padding: 0 30px;
+    background-color:#F5F5F5;
+   
   
 }
 
@@ -222,9 +230,9 @@
     display: none;
     width: 100%;
     height: 300px;
-    background-color:#F5F5F5;
+    
     left: 0;
-    padding: 0 30px;
+    
 }
 .sale:hover .drop-down-content-sale{
     display: grid;
@@ -237,5 +245,12 @@
     margin-top: 0;
     grid-template-columns: 1fr 1fr 2fr;
     height: 100%;
+    padding: 0 30px;
+    background-color:#F5F5F5;
   
+}
+
+
+.f-brands{
+    font-weight: 700;
 }

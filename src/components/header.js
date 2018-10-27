@@ -43,7 +43,7 @@ class Header extends Component {
                     </div> */}
                     {/* <p>hi</p> */}
 
-                    <div className="mega-menu-sub-grid-new-in">
+                    <div className="mega-menu-sub-grid-new-in mega-menu-sub-grid">
                         <div className="mega-menu-sub-grid-content grid-item">
                         <h4 className="newin-title mega-menu-title">NEW IN</h4>
                         <a href="#">New Arrivals</a>
@@ -79,12 +79,8 @@ class Header extends Component {
             <div><a href="#">WHOLESALE </a></div>
             <div className="brands"><a href="#">BRANDS </a>
             <div className="drop-down-content-brands">
-                    {/* <div>
-                        <h4 className="newin-title mega-menu-title">SHOP BY CATEGORY</h4>
-                    </div> */}
-                    {/* <p>hi</p> */}
 
-                    <div className="mega-menu-sub-grid-brands">
+                    <div className="mega-menu-sub-grid-brands mega-menu-sub-grid">
                         <div className="mega-menu-sub-grid-content grid-item">
                         <h4 className="newin-title mega-menu-title">SHOP BY CATEGORY</h4>
                         <a href="#">Brand A-Z</a>
@@ -121,7 +117,7 @@ class Header extends Component {
                     </div> */}
                     {/* <p>hi</p> */}
 
-                    <div className="mega-menu-sub-grid-sale">
+                    <div className="mega-menu-sub-grid-sale mega-menu-sub-grid">
                         <div className="mega-menu-sub-grid-content grid-item">
                         <h4 className="newin-title mega-menu-title">SALES & OFFERS</h4>
                         <a href="#">Shop all Sales</a>
