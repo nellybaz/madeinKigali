@@ -1,0 +1,33 @@
+.Related{
+    width:100%;
+}
+
+.related-post-div{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.realed-post-div > .related-item{
+    
+
+}
+
+.related-item{
+    width: 18%;
+    margin:0;
+    /* padding: 5px; */
+    /* border: 1px solid black; */
+}
+.related-item img, .related-item p{
+    width: 100%;
+    padding:3px;
+   
+}
+
+h3{
+    padding-left: 10px;
+}

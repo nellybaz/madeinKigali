@@ -7,9 +7,14 @@ class Divider extends Component {
     constructor(props){
         super(props)
 
+        this.state ={
+            
+        }
        
     }
   render() {
+
+
 
     // Random component
 const Completionist = () => <span>tIMER FINISHED! CALL FUNCTION</span>;
@@ -26,8 +31,8 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
 };
 
     return (
-        <div className="Divider">
-            <div className="horizontal-bar"></div>
+        <div className={`Divider ${this.props.class}`}>
+            <div className="horizontal-bar hbar-left"></div>
             <div className="text">
                 <p className='divider-name'>{this.props.name}
                 
@@ -39,7 +44,7 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
             />
             }</p>
             </div>
-            <div className="horizontal-bar"></div>
+            <div className="horizontal-bar hb-right"></div>
         
         </div>
     );

@@ -1,8 +1,13 @@
-/* .carousel-item img{
-    height: 400px !important;
-} */
+.flex-wrap{
+    flex-wrap: wrap !important;
+}
 
 
+@media only screen and ( max-width: 745px){
+    .jumbo1, .jumbo2, .jumbo3 {
+        background-size: 200% 100% !important;
+    }
+}
 
 .Slider{
     height: 750px;
@@ -14,7 +19,7 @@
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: contain;
     
 }
 
@@ -33,14 +38,26 @@
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: contain;
 }
 
 .Divider{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin:0 4%;
     
+}
+
+.full_width{
+    margin: 0;
+    
+}
+
+.full_width *{
+    font-family: 'Source Sans Pro', sans-serif !important;
+    /* color:gray !important; */
+    border-color: gray !important;
 }
 
 .divider-name{
@@ -55,11 +72,13 @@
 
     position: relative;
     top: 15px;
+
 }
 .horizontal-bar{
-    border-bottom: 3px solid gray;
+    border-bottom: 3px solid black;
     width: 40%;
     height: 20px;
+    flex:2px;
 }
 
 .flash-deals-timer{

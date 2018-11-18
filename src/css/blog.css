@@ -1,0 +1,550 @@
+/* *{
+    border: 1px solid red;
+} */
+
+
+@media only screen and (min-width: 1600px) {
+    .blog-body > .blog-image{
+        height: 750px !important;
+    }
+
+    }
+
+
+
+.Blog{
+    background-color: #fff;
+}
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.blog-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 143.5px;
+    width: 100%;
+    /* background-color: #FCDCEB; */
+}
+
+
+.blog-header > .blog-header-item {
+    width: 11.1%;
+    height: 100%;
+    /* border: 1px solid red; */
+    
+}
+
+
+.blog-header-item img {
+    width: 100%;
+    /* padding: 10px; */
+}
+
+
+.blog-header-nav{
+    height: 60px;
+    width: 100%;
+    background-color: #9A0022;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.blog-header-navlinks {
+    text-transform: uppercase;
+    margin: 0 10px 0 0;
+    height: 100%;
+    /* border-right: 1px solid gray; */
+    padding: 20px;
+    color:#fff;
+    font-size: 0.8rem;
+}
+
+.blog-header-navlinks a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.blog-header-navlinks:hover{
+    font-size:1rem;
+    font-weight: 700;
+    border-top: 4px solid #fff;
+}
+
+.blog-title-section{
+    padding: 10px;
+}
+
+
+.blog-title-section p{
+text-align: center;
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    
+}
+
+.blog-body > .blog-image{
+    width: 100%;
+    height: 650px;
+    opacity: 0.8;
+}
+
+.blog-image img{
+    width: 100%;
+    
+    
+}
+
+
+.blog-image:hover{
+    opacity: 1;
+}
+
+
+.blog-image:hover .blog-image-title{
+    display: inline;
+}
+
+
+.blog-image:hover .blog-read-more{
+    display: inline;
+}
+
+.blog-read-more{
+    font-size: 2rem;
+    color:#000;
+    font-weight: bold;
+    position: relative;
+    bottom: 40%;
+    text-align: center;
+    display: none;
+    left:5%;
+    padding:5px;
+    
+    background-color: #fff;
+    border-radius: 3px;
+
+}
+
+.readmore-link{
+    text-decoration: none !important;
+    
+}
+.blog-image-title{
+    font-weight: 700;
+    position: relative;
+    bottom: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    left:35%;
+    display: none;
+}
+
+.blog-footer-container{
+    width: 100%;
+    margin-top:100px !important;
+    
+}
+
+.spinner-div{
+    display: inline;
+    width: 280px;
+    height:220px;
+
+}
+
+.spinner-div img{
+    width: 100%;
+    height: 100%;
+    margin-top:150px;
+}
+
+.Post{
+    width: 100%;
+
+}
+
+.blog-post-div-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0 2%;
+    grid-column-gap: 10px;
+}
+
+.article-section{
+    /* height:500px; */
+    /* background-color: gray; */
+
+    width: 100%;
+
+}
+
+.post-image-div{
+    width:100%;
+
+}
+
+.post-image-div > img{
+    width:100%;
+    height:auto;
+}
+
+
+.article-post{
+    padding:10px;
+}
+.article-post > p{
+    text-align: justify;
+}
+
+.BlogSidebar{
+    margin:15px 30px 0 0;
+}
+
+.btn-post-subscribe{
+    width: 100%;
+    background-color: #191943;
+    color:#fff;
+    font-size: 18px;
+}
+
+
+.subscribe-div {
+    background-color: #e8edec;
+    padding: 15px;
+}
+.subscribe-div input{
+    height:40px;
+    margin-bottom: 10px;
+}
+
+.about-us > h3{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+
+.about-us >p{
+    text-align: center;
+}
+
+.article-follow-us-div h4{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.post-social-media-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.post-social-media-div > a{
+    padding: 15px;
+}
+
+.post-social-media-div img{
+    width:16px;
+}
+
+.twitter-timeline{
+    margin-top: 15px;
+    width: 100%;
+}
+
+.facebook-page-div{
+    width:100%;
+}
+
+@media only screen and (max-width: 750px) {
+    .blog-post-div-container{
+       
+        grid-template-columns: repeat(auto-fit, 100%) !important;
+    
+    }
+
+    }
+
+.header-fixed{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color:#A20021;
+    width: 100%;
+    z-index: 1;
+    height: 60px;
+    top: 0;
+}
+
+.header-fixed > *{
+    color:white;
+    font-size: 0.8rem;
+}
+
+.blog-header-fixed-navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-links-fixed:hover{
+    font-size:1rem;
+    font-weight: 700;
+    border-top: 4px solid #fff;
+}
+
+.blog-header-fixed-navlinks .header-links-fixed{
+    padding:18px 15px 15px 15px;
+   
+}
+.footer-nav-div{
+    display: flex;
+    
+}
+
+.footer-nav-div > div{
+    position: relative;
+    bottom: 100px;
+    height:80px;
+    width: 50px;
+}
+
+
+.footer-nav-div > div > button{
+    height: 100%;
+     background-color: #A20021;
+}
+.footer-nav-div .footer-next-btn-div{
+   margin-left: 92.5%;
+
+}
+
+.prv-show{
+    height: 80px;    
+    width: 20px;
+    background-color: #fff;
+    position: relative;
+    bottom: 80px;
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s
+}
+
+.next-show{
+    height: 80px;    
+    width: 20px;
+    background-color: #fff;
+    position: relative;
+    bottom: 80px;
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s
+
+}
+
+.footer-next-prv-div:hover .prv-show{
+    
+    width: 200px;
+    
+    
+}
+
+.footer-next-prv-div:hover .prev-show-inner-img-div{
+    display: inline-block;
+}
+
+.footer-next-prv-div:hover .prev-show-inner p{
+    display: inline-block;
+}
+
+
+.footer-next-btn-div:hover .next-show{
+  
+    width: 200px;
+    right: 180px;
+    
+    
+}
+
+.footer-next-btn-div:hover .next-show-inner{
+    background-color: #fff;
+}
+
+.footer-next-prv-div:hover .prev-show-inner{
+    background-color: #fff;
+}
+
+
+.footer-next-btn-div:hover .next-show-inner-img-div{
+    display: inline-block;
+}
+
+.footer-next-btn-div:hover .next-show-inner p{
+    display: inline-block;
+}
+
+.signin-newsletter-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid gray; */
+    flex-direction: column;
+   
+}
+
+.blog-newslette-email{
+    width: 60%;
+    border-radius: 0;
+}
+
+.footer-red-bar
+{
+    width: 100%;
+    background-color: #A20021;
+    height:20%;
+}
+
+.footer-red-bar p{
+    text-align: center;
+    color:white;
+    padding:15px;
+}
+
+.btn-blog-subscribe{
+    color: gray;
+    height: 38px;
+    width: 40%;
+    position: relative;
+    border-radius: 0;
+    top: 3px;
+    margin: 10px 0  15px 0;
+}
+
+.newsletter-signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:300px;
+    width: 400px;
+        
+}
+
+.comments{
+    width: 100%;
+}
+
+.blog-divider-div{
+    width: 100%;
+}
+
+.prev-show-inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #9A0022;
+}
+
+/* .prev-show-inner *{
+    color: #fff !important;
+} */
+
+.prev-show-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.prev-show-inner p{
+   font-size: 1rem;
+   color: #000;
+   padding:15px;
+   display: none;
+}
+.prev-show-inner-img-div{
+    width: 50%;
+    height: 100%;
+    display: none;
+}
+
+
+/* next show */
+
+.next-show-inner{
+    width: 100%;
+    background-color: #9A0022;
+    height: 100%;
+    display: flex;
+}
+
+.next-show-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.next-show-inner p{
+   font-size: 1rem;
+   color: #000;
+   padding:15px;
+   display: none;
+}
+.next-show-inner-img-div{
+    width: 50%;
+    height: 100%;
+    display: none;
+}
+
+.blog-header-logo{
+    width: 100px;
+    position: relative;
+    bottom: 7px;
+
+}
+
+.hide{
+    display: none;
+}
+
+.newsletter-signin-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sigin-newsletter-section{
+    position: relative;
+    height:300px;
+    bottom: 100px;
+}

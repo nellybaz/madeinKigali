@@ -6,6 +6,14 @@ import {Link} from 'react-router-dom';
 //import '../assets/js/animations.js';
 
 
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobileOnly,
+  isTablet
+} from "react-device-detect";
+
 
 
 
@@ -14,11 +22,13 @@ class FlashDeals extends Component {
   componentDidMount () {
     
   }
+  
 
     constructor(props){
       super(props)
       this.state = {
        count: 0,
+       
        flasDealsSlideEnd: false,
        
 
@@ -27,7 +37,14 @@ class FlashDeals extends Component {
     }
 
     changeCount =(x)=>{
-      if (11 - this.state.count === 5){
+     let limit;
+      if(isMobileOnly){
+        limit = 6
+      }
+      else{
+        limit = 5
+      }
+      if ((this.props.objectDispay.length-1) - this.state.count === limit){
         this.setState(
           {flasDealsSlideEnd: true}
         )
@@ -77,12 +94,23 @@ class FlashDeals extends Component {
 
       {/* looping and displaying flashdeals */}
       {
+
         
         this.props.objectDispay.map((item, index)=> 
-          {if((index >= this.state.count && index < this.state.count+5) && 11 - this.state.count > 3){
+          {
+            let limit;
+            if(isBrowser || isTablet){
+              limit = 5;
+            }
+            if(isMobileOnly){
+              limit = 6;
+            }
+            
+            
+            if((index >= this.state.count && index < this.state.count+limit) && 11 - this.state.count > 3){
             return(
-            <div className={'flash-deals-item'}>
-            <div className="flasdeals-img-div">
+            <div className={'flash-deals-item'} key={item.id}>
+            <div className="flashdeals-img-div">
               <Link to={`/dev/product/${item.brand}/${item.id}`} ><img className="flashdeals-img" src={item.img}/></Link>
             </div>
             <div className="flashdeals-text">

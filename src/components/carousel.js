@@ -20,6 +20,7 @@ class Slider extends Component {
                     </div>
                     </div>
             </div>
+            
             <div className="carousel-item">
             {/* <img className="d-block w-100" src={banner1} alt="Second slide"/> */}
 

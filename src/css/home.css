@@ -1,9 +1,19 @@
+.Router{
+    background-color: #fff;
+}
+
 .Home{
 
     margin: 0 0% 0 0%;
     background-color: #fff;
     width: 100%;
+
+    
 }
+
+/* *{
+    object-fit: contain;
+} */
 
 
 @media only screen and (min-width: 1600px) {
@@ -15,6 +25,37 @@
     
 }  
 
+@media only screen and (min-width: 745px) {
+    .flashdeals-div{
+        height: 400px !important;
+    }
+
+   
+
+    .in-the-know{
+        height:350px;
+        
+    }
+
+    .popular-brands-outer-div{
+        height: 630px;
+    
+    }
+
+    .instagram-section{
+        height: 500px;
+    }
+
+    .madeinkigali-inner-div{
+        height:200px;
+    }
+
+    /* .trending-div-container{
+        height: 400px !important;
+    } */
+}
+
+
 
  @media only screen and (max-width: 745px){
     .left, .right{
@@ -22,15 +63,100 @@
         /* border: 4px dashed pink; */
     }
 
+    .middle-nav{
+        width: 100% !important;
+        overflow-x: scroll;
+        justify-content: flex-start !important;
+        padding: 5px 0 !important;
+      
+    }
+    
+
+    .middle-nav-item *
+    {
+       font-size: 0.7rem !important;
+
+    }
+    
+    
+
+    .instagram-section{
+        margin-top: 50px;
+    }
     .instafeed__item{  
         width:120px !important;
        height: 120px !important;
+   }
+
+   .popular-brands-holder{
+       flex-wrap: wrap !important;
+   }
+
+   /* *{
+       flex-wrap: wrap !important;
+   } */
+
+   .fabric-small-box-item:nth-child(1){
+       background: burlywood !important;
+   }
+   .fabric-small-box-item:nth-child(2){
+    background: purple !important;
+}
+
+.fabric-small-box-item:nth-child(3){
+    background:pink  !important;
+}
+
+.fabric-small-box-item:nth-child(4){
+    background:#9A0022  !important;
+}
+
+.fabric-small-box-item:nth-child(5){
+    background:#191843  !important;
+}
+
+.fabric-small-box-item p, .fabric-small-box-item h4{
+    color: gray;
+}
+
+
+   .fabric-small-box-item{
+       width: 70% !important;;
+   }
+
+
+    .in-the-know{
+        margin-bottom: 30px !important;
+    }
+
+   .trending-div-container{
+       overflow-x: scroll;
+
+   }
+
+
+   .madeinkigali-section{
+       margin-bottom: 30px;
+   }
+   .madeinkigali-inner-div img{
+       width:30% !important;
+       margin-bottom: 10px;
+   }
+
+   .left{
+       display: none !important;
    }
  }
 
 *{
     /* font-family: Verdana, Arial, Helvetica, sans-serif, Lato; */
-    font-family: 'Open Sans Condensed', sans-serif;
+    /* font-family: 'Open Sans Condensed', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family:  Helvetica, Arial, sans-serif */
+
+    
+
 }
 .middle-nav{
     display: flex;
@@ -38,16 +164,18 @@
     justify-content: center;
     background-color: #E9EDED;
     padding: 20px 0;
+    width: 100%;
 
 }
 
 .middle-nav > .middle-nav-item{
     padding: 0 4%;
     font-size:0.8rem;
+    width:20%;
 }
 .middleBanner{
     width: 100%;
-    height: 300px;
+    height: 500px;
     background:url('../assets/images/middle-banner.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -92,7 +220,7 @@
 .instagram-section{
     display: flex;
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
     flex-wrap: wrap;
 }
 
@@ -114,4 +242,157 @@
     width: 50%;
     height: 100%;
     
+}
+
+.fabric-small-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.fabric-small-box > div{
+    height: 150px;
+    width: 200px;
+    background-color: #F4F7F8;
+    margin: 10px;
+}
+
+.fabric-small-box-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fabric-small-box-item h4{
+    font-size: 1.5rem;
+}
+
+.fabric-small-box-item p{
+    width: 80%;
+    text-align: center;
+}
+
+.popular-brands-holder{
+    margin: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popular-brands-item{
+    height:300px;
+    /* width: 100px; */
+    width: 100%;
+    object-fit: contain;
+    flex-grow: 1;
+    margin:10px;
+    /* background-color: gray; */
+
+}
+
+.popular-brands-item-2{
+    height:150px;
+    object-fit: contain;
+}
+
+.popular-brands-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.popular-brands-item-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.brands-subitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands-subitem > .brands-subitem-item{
+    margin:10px;
+}
+
+.brands-subitem-item h3{
+    text-align: center;
+}
+
+.brands-subitem-item p{
+    color: gray;
+    text-align: center;
+}
+
+.trending-div-container{
+    width:100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending-item {
+    height: 90%;
+    border: 2px solid #F3F7F8;
+    margin: 10px;
+    width: 180px;
+}
+
+.trending-item img{
+    height: 70%;
+}
+
+.trending-inner{
+    padding: 10px;
+    height: 100%;
+   
+
+}
+
+.trending-details p{
+    font-weight: 700;
+}
+
+
+.trending-right-arrow, .trending-left-arrow{
+    display: none;
+}
+.madeinkigali-ininer{
+    
+}
+
+.madeinkigali-inner-div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 5.5%;
+    
+}
+
+.madeinkigali-inner-div img{
+    width: 14.8%;
+    height:100%;
+    object-fit: contain;
+}
+
+
+
+/* .popular-brands-outer-div *{
+    border: 1px solid gray;
+} */
+
+.flashdeals-div{
+    /* height: 400px; */
+}
+
+.madeinkigali-section{
+    height:250px;
+}
+
+.in-the-know{
+    margin-bottom:50px;
 }

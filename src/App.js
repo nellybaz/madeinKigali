@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Router from './config/router.js';
+import Home from './pages/Home.js';
 
 class App extends Component {
   render() {
     return (
-      <Router/>
+      <Home/>
     );
   }
 }

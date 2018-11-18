@@ -1,0 +1,177 @@
+.Footer{
+    width:100%;
+
+}
+
+.footer-mobile-font-size *{
+    font-size: 0.7rem !important;
+}
+
+@media only screen and (max-width: 745px){
+    .signup-div > div{
+        width:100% !important;
+        align-items: center !important;
+        justify-content: center !important;
+       
+    }
+
+    .signup-div input{
+        margin-bottom: 15px !important;
+    }
+
+    .btn-sigup-newsletter{
+        width: 80% !important;
+    }
+}
+
+.signup-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.margin-top{
+    margin-top: 100px;
+}
+
+/* *{
+    border: 1px solid gray;
+} */
+
+.signup-div > div{
+    margin:10px;
+}
+
+.footer-first-text-div p{
+    font-size: 12px;
+    padding-top:15px;
+}
+.footer-signup-div-inner {
+    width: 30%;
+    display: flex;
+
+}
+
+.footer-signup-div-inner input{
+    width: 90%;
+}
+
+.btn-sigup-newsletter{
+    background-color: #191943;
+    color: #fff;
+    border-radius: 0;
+    width: 120px;
+}
+
+.footer-second-div{
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191943;
+
+}
+
+.footer-second-div div img{
+    width: 15px;
+    height: 15px; 
+    position: relative;
+    top: 5px;
+    right: 5px;
+    
+}
+
+
+.footer-second-div > div{
+    /* margin: 20px 10% 20px 20px;
+    padding-top:10px; */
+    /* margin-right: 60px !important; */
+    
+
+}
+
+.text-icon-footer{
+    /* border: 1px solid rebeccapurple; */
+    width:25%;
+    margin-left:20px;
+    
+}
+
+.text-icon-footer p{
+    text-align: center
+}
+
+.footer-second-div div p{
+    color: #fff;
+}
+
+.footer-third-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-third-div > .social-media-div{
+    padding-right: 25px;
+    margin-bottom: 15px;
+}
+
+.signup-newsletter-home{
+    border-radius: 0;
+    width: 50%;
+
+}
+
+.btn-open-footer{
+    background-color: transparent;
+    font-size: 2.5rem;
+    color: #fff;
+    position: relative;
+    bottom: 8px;
+}
+
+.footer-expand{
+    height: 400px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expand-item{
+    width: 25%;
+    /* background: gray; */
+    height: 100%;
+    /* border: 1px solid red; */
+    margin:0 20px ;
+}
+
+.expand-item *{
+    position: relative;
+    left: 80px;
+    text-align: right;
+    color: white;
+}
+
+.text-icon-footer button:focus{
+    outline: none;
+}
+
+/* footer fade animation */
+
+.fadein, .fadeout {
+    opacity: 0;
+    
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+
+   }
+.fadein {
+    opacity: 1;
+  
+}
