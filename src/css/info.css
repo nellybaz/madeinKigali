@@ -1,37 +1,50 @@
-.Delivery{
+.Info{
     width: 100%;
-   
+    
+      
 }
 
-.delivery-outer{
+.info-outer *{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.info-outer{
     width:80%;
     margin: 15px 10%;
-    height: 500px;
-    background: #DCDCDC;
+    /* height: 500px; */
+    background: rgb(230, 228, 228);
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
 }
 
-.delivery-titles{
+.info-titles{
     display: flex;
-    margin: 0 30px;
-    justify-content: center;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
 }
 
-.delivery-titles div{
+.info-titles a{
+    color: black;
+    text-decoration: none;
+}
+
+.info-titles div{
     height:50px;
     margin-right: 15px;
+    /* border: 1px solid gray */
 }
 
-.delivery-titles h1{
+.info-titles h1{
     font-size: 1rem;   
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 30px;
-    /* border-bottom: 2px solid black; */
+    padding: 12px;
+}
 
+.info-titles a:hover{
+    color: gray;
 }
 
 .active-title{
@@ -41,4 +54,103 @@
 
 .content{
     margin: 30px;
+}
+
+.content p{
+    font-size: 1rem;
+}
+
+.international{
+    width:100%;
+}
+
+.international select{
+    width: 50%;
+    background: transparent;
+}
+
+.Delivery{
+    width: 90%;
+    margin: 0 5%;
+}
+
+.Delivery .sub-title{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+   
+}
+
+.sub-title div{
+    /* border: 3px solid black; */
+    width: 40%;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.local-shipping .middle{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.middle div{
+    background: #F5F5F5;
+    padding:10px;
+    font-size: 1rem;
+    width: 33.15%;
+    margin:2px 2px 0 0;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.margin-zero{
+    margin-right: 0 !important;
+}
+
+.third{
+    padding:20px !important;
+    font-weight: 400 !important;
+    text-transform: capitalize !important;
+}
+
+
+/* returns css */
+
+
+.returns-outer{
+    width:100%;
+}
+
+.returns-content .content-item-1{
+    display: flex;
+    width:100%;
+}
+
+.returns-content .content-item-1 div{
+    width: 30%;
+    background: #F5F5F5;
+    margin-right: 2px;
+    padding:15px;
+    margin-bottom: 2px;
+}
+
+.active3{
+    border-bottom: 3px solid rgb(26, 25, 25);
+}
+.active a {
+    color: rgb(139, 133, 133);
+}
+
+
+.active2{
+    border: 0 !important;
+    background: rgb(158, 157, 157);
+    color: white !important;
+}
+.return-title{
+    color:#D65863;
 }

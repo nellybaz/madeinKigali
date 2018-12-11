@@ -1,0 +1,173 @@
+.Fabric_Single{
+    width:100%;
+
+}
+
+.fabric-single-outer-wrapper{
+    width:100%
+}
+
+.fabric-design-div{
+    width:100%;
+    margin-bottom: 30px;
+
+}
+
+.fabric-design-div h5{
+    font-size: 1.5rem;
+}
+
+.fabric-design-inner-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: flex-end;
+    padding-left: 15px;
+    font-size: 1.1rem;
+}
+
+.fabric-design-div img{
+    width:80px;
+    height:60px;
+}
+
+/* .product-img1-fabric{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+} */
+
+.fabric-type-div{
+    width: 100%;
+   
+
+}
+
+.fabric-type-div-inner{
+    display: grid;
+    height:35px;
+    width:100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fabric-type-div-inner div{
+    height: 100%;
+    border:1px solid #EEEEEE;
+    font-size: 1.1rem;
+    text-align: center;
+    padding:5px;
+}
+
+.fabric-type-div-inner div:hover{
+    background: #EEEEEE;
+}
+
+.shipping-div-fabric p:nth-child(1){
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.shipping-div-fabric p:nth-child(2){
+    font-size: 0.9rem;
+}
+
+.btn-add-to-cart-fabric, .btn-buy-test{
+    padding:10px 20px 10px 20px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.btn-add-to-cart-fabric{
+    background: #6DB316;
+    color: white;
+}
+.add-to-cart-div-fabric{
+    margin:40px 0;
+}
+
+.div2-inner-fabric{
+    width:100%;
+    height:100;
+}
+
+.div2-fabric{
+    width:60%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+
+.fabric-meter-horizontal-div-wrapper{
+
+}
+
+
+.fabric-meter-horizontal-div-wrapper li{
+    display: inline-block;
+    width: 25px;
+    border-right: 1px solid gray;
+   
+}
+
+.fabric-meter-horizontal-div-wrapper li span{
+    font-size: 0.7rem;
+    position: relative;
+    text-align: right;
+    left:11px;
+    bottom: 7px;
+}
+
+.fabric-meter-vertical-div-wrapper ul{
+   position: relative;
+   bottom: 40px;   
+   width:65px;
+ 
+}
+
+.fabric-meter-vertical-div-wrapper li{
+    height: 25px;
+    border-bottom: 1px solid gray;   
+    list-style-type: none;
+    
+}
+
+.fabric-meter-vertical-div-wrapper li span{
+    font-size: 0.7rem;
+   
+}
+
+.hor-meter-image-div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    
+}
+
+.fabric-big-image-div{
+    position: relative;
+    /* right: 1px; */
+    bottom:15.5px;
+    width: 95.7%;
+    height: 92.8%;
+    background:url(../assets/images/fabric1.jpg);
+  
+    
+}
+
+.hor-meter-image-div img{
+    width:100%;
+    border-left: 1px solid #989898;
+    border-top: 1px solid #989898;
+    padding:0;
+}
+
+.meter-cm-tag{
+    background: black;
+    padding:5px 5.8px;
+    color:white;
+    position: relative;
+}
+
+
+a:hover{
+    text-decoration: none;
+}

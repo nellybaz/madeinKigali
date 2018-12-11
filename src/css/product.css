@@ -34,27 +34,25 @@
 .Product{
     width: 94%;
     margin: 0 3%;
-    /* background-color: #fff; */
+   
 
 }
 
 .product-section-container{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    margin-top:30px;
-    align-items: center;
-    overflow: hidden;
-    
+    flex-wrap: wrap;   
+    /* min-height: 700px;
+    overflow: auto; */
+   
+
 }
 
 
 
 .product-section-item{
     margin: 10px;
-    /* border: 1px solid gray; */
-    height: 500px;
-
+   
 }
 
 
@@ -63,56 +61,67 @@
     border: none;
     display: flex;
     flex-direction: column;
+    height: 80%;
 }
 
 .div1 > div{
     margin:3px;
 }
 .div2{
-    height: 500px;
+    
     width: 54%;
+    height:100%;
     
 }
 
 .div2-inner{
     width: 100%;
-    height: 102%;
+   
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #FBFBFB;
-    overflow-x: scroll; 
+    overflow: scroll; 
+    
    
 }
 
 
 .div2 img{    
-    width: 45%;
+    /* width: 50% !important; */
     padding:5px;    
+    height:100%;
 }
 
 
 
 .div3{
     width: 27%;
+    height:800px !important;
 }
 
 
 .product-beadcrum-div{
     margin: 10px;
+    
 }
 
 
 .product-select-img-div{
-    width: 100%;
-    height:100px;
+    width: 100%;  
+    
 }
 
 .product-select-img{
     width:100%;
     height: 100%;
     object-fit: contain;
-    border: 1px solid black;
+    border: 0 ! important;
+}
+
+
+.img-select-active{
+    border: 1px solid rgb(75, 73, 73) ! important;
 }
 
 .product-img1{
@@ -131,7 +140,7 @@
     margin: 10px 0 0 0;
     display: flex;
     flex-direction: row;
-    
+    margin-top: 40px !important;
 }
 
 .btn-add-to-cart{
@@ -162,8 +171,12 @@
 .availability{
     width: 100%;
     margin:30px 0 10px 0;
-    
-    
+   
+  
+}
+
+.details summary{
+    width:90%;
 }
 
 .btn-details{
@@ -174,13 +187,24 @@
     border-bottom: 1px solid black;
     margin-bottom: 10px;
     text-align: left;
-    padding:10px;
+    /* padding:10px; */
+    display: flex;
 }
+
+.btn-details p{
+    width:93%;
+    margin: 0;
+    padding-top:5px;
+}
+
+.btn-details span{
+    font-size: 1.5rem;
+}
+
 
 .details{
     width: 100%;
-    margin:30px 0 10px 0;
-    
+    margin:30px 0 10px 0;   
     
 }
 
@@ -220,4 +244,135 @@
 
 .social-media-share > *{
     margin:5px;
+}
+
+.div-stars{
+    display: flex;
+    justify-content: flex-start;
+    /* border:1px solid red; */
+    align-items: center;
+    width:100%;
+}
+
+.div-stars img{
+    width: 11px;
+    height:11px;
+    margin:1px;
+}
+.color-box-div{
+    margin-top:15px;
+}
+
+.color-box-div div{
+    margin-top: -10px;
+}
+
+.color-box-div img{
+    width:50px;
+    height:60px;
+    margin-right:10px;
+}
+
+.shipping-div{
+    margin-top:10px;
+}
+
+.size-div{
+    margin-top: 10px;
+}
+.quantity-div{
+    width: 40%;
+    margin-top:25px;
+}
+.div-quantity-inner {
+    display: flex;
+    width: 100%;
+    margin-top: -10px;
+    border:1px solid rgb(199, 197, 197);
+}
+
+.div-quantity-inner input{
+    border: 0;
+    width:40%;
+}
+.btn-quantity{
+    background: transparent;
+    border:0;
+    padding:4px;
+    width:30% !important;
+}
+.size-div-m2m{
+    width:100%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.size-div-m2m-inner{
+    display: flex;
+    width:100%;
+    margin-top: -10px;
+
+}
+
+.size-div-m2m-inner div{
+    min-width: 8%;
+    max-width: 18%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(199, 197, 197);
+    justify-content: center;
+    height:30px;
+    /* background: red; */
+    margin: 2px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.no-size-span-div{
+    margin-top:20px;
+}
+
+.no-size-span{
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.no-size-span img{
+    width:24px;
+    margin-right: 10px;
+}
+
+.shipping-div{
+    width: 100%;
+    margin-top:25px !important;
+}
+
+.shipping-div p:nth-child(2){
+    margin-top: -12px; 
+    font-size: 0.9rem;
+}
+
+
+
+.shipping-modal-open:hover{
+    color: #9A0022;
+    text-decoration: underline;
+}
+
+
+.modal-wrapper-product{
+    height: 400px;
+    width: 50%;
+    margin: 0 20%;
+    background: white;
+    position: fixed;
+    top: 90px;
+    left: 4%;
+    box-shadow: 2px 2px 8px 2px rgb(26, 25, 25);
+    display: none;
+
 }

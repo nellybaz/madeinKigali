@@ -1,3 +1,18 @@
+@media only screen and (max-width: 745px){
+    .inner-right{
+        width: 100% !important;
+        
+    }
+   .inner-right-in{
+       margin-left: 0 !important;
+   }
+
+    .right-inner{
+        width:80% !important;
+    }
+}
+
+
 .Help{
     width:100%;
 }
@@ -17,8 +32,12 @@ h4{
 }
 
 .inner-right{
+    width:70%;
+}
+
+.inner-right-in{
     margin-left: 15px;
-    width:70%; 
+    width:100%; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,4 +60,14 @@ h4{
     text-align: center;
     padding-left:15px;
     padding-right:15px;
+}
+
+.help-search{
+    background: #EFEFEF;
+    border: none;
+    width:94.5%;
+    margin-left: 25px;
+    padding: 15px;
+    font-size: 1rem;
+    color:gray;
 }

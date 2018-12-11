@@ -4,12 +4,12 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import Sidebar from '../components/search_sidebar';
 import {Link} from 'react-router-dom';
+import trending_icon from '../assets/images/trending_search_display.png';
 
-
-import prd1 from '../assets/images/product1.jpeg';
+import prd1 from '../assets/images/model_view1.jpg';
 import prd9 from '../assets/images/product9.jpg';
-// import prd3 from '../assets/images/product3.jpeg';
-// import prd4 from '../assets/images/product4.jpeg';
+import ads from '../assets/images/search_ads.jpg';
+
 
 class Search extends Component {
 
@@ -26,17 +26,43 @@ class Search extends Component {
 searchDisplay =()=>{
     let searchDisplayHolder = [];
     let img = '';
+    let ads_class = '';
+    let trending_details = '';
     for (let x = 0; x < 15; x++) {
-        if(x%2 == 0){
+        if(x%2 === 0 && x != 4){
             img = prd9;
+
+            trending_details =  <div className="color-change-image">
+                                    <div></div>
+                                    <div></div>
+                                </div>;
+        }
+
+        else if(x === 4){
+            img = ads;
+            ads_class = 'ads_class';
+            trending_details ="";
         }
         else{
             img = prd1;
+            ads_class = '';
+            trending_details = <div className="search-trending-product-div">
+                Trending Product
+                <img src={trending_icon} />
+            </div>;
+
         }
         searchDisplayHolder.push(
             <div className="search-prd-item-div" key={x}>
-                <Link to={'/dev/product/jean/2'} ><img src={img} alt="mik" /> </Link>
-                <p><b>Check Velvet Wide Leg Trousers </b><br></br><span>$112.99</span></p>
+                <Link to={'/dev/product/jean/2'} ><img className={ads_class} src={img} alt="mik" /> </Link>
+               {
+                   x != 4 &&
+                   <p><b>Check Velvet Wide Leg Trousers </b><br></br><span>$112.99</span></p>
+               }
+
+               {
+                    trending_details                 
+               }
 
             </div>
         )
@@ -51,11 +77,6 @@ searchDisplay =()=>{
    
   
   render() {
-
-   
-
-   
-    
     return (
        
       <div className="Search">
@@ -63,6 +84,44 @@ searchDisplay =()=>{
 
         <div className="search-inner-main">
         <div className="search-bar-top"></div>
+        <div className="search-top-nav">
+            <div>
+                ncjkdnvkjbd
+            </div>
+            <div>
+                ncjkdnvkjbd
+            </div>
+            <div>
+                ncjkdnvkjbd
+            </div>
+            <div>
+                ncjkdnvkjbd
+            </div>
+            <div>
+                ncjkdnvkjbd
+            </div>
+            <div>
+                ncjkdnvkjbd
+            </div>
+            <div>
+                ncjkdnvkjbd
+            </div>
+            <div>
+                ncjkdnvkjbd
+            </div>
+            <div>
+                ncjkdnvkjbd
+            </div>
+            <div>
+                ncjkdnvkjbd
+            </div>
+            <div>
+                ncjkdnvkjbd
+            </div>
+            <div>
+                ncjkdnvkjbd
+            </div>
+        </div>
 
 
         <div className="search-content">
@@ -86,6 +145,7 @@ searchDisplay =()=>{
         </div>
 
         <Footer />
+        <div id="end"></div>
       </div>
     );
   }

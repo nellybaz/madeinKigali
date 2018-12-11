@@ -180,7 +180,7 @@ class Blog extends Component {
                 );
 
                  
-               
+        
                 
         }  
         
@@ -245,47 +245,62 @@ class Blog extends Component {
             <div className="blog-body">
                     {this.holder()}
                     
-            </div>
+            </div> 
 
-            <div className="spinner-div">
-                { this.state.time_to_add && <img src={spinner} /> }
-            </div>
-
-            
-
-      </div>
+     </div>
        <div className="sigin-newsletter-section">
-            <div className="blog-divider-div">
-                <Divider  name="Get The News First"/>
-            </div>
+            
             <div className="signin-newsletter-social-media">
             
-                    <div className="newsletter-signin">
-                        <p><b>BE THE FIRST TO KNOW. SIGN UP FOR OUR NEWSLETTER.</b></p>
-                        <div className="newsletter-signin-inner">
-                            <input type="text" className="form-control blog-newslette-email"  placeholder="Email Address"/>
-                            <button className="btn btn-blog-subscribe">SUBSCRIBE</button>
-                        </div>
-                    </div>
 
 
                     <div className="social-media">
                         <div className="article-follow-us-div">
-                            <div>
-                                <h4><b>FOLLOW US</b></h4>
-                            </div>
-                            <div className="post-social-media-div">
-                                <a href="#" target="_blanck" > <img src={fb} alt="facebook" /></a>
-                                <a href="#" target="_blanck" > <img src={insta} alt="insta" /></a>
-                                <a href="#" target="_blanck" > <img src={twitter} alt="twitter" /></a>
-                                <a href="#" target="_blanck" > <img src={linkedin} alt="linkedin" /></a>
-                                <a href="#" target="_blanck" > <img src={pinterest} alt="pinterest" /></a>
-                                <a href="#" target="_blanck" > <img src={g_plus} alt="g_plus" /></a>
-                                <a href="#" target="_blanck" > <img src={youtube} alt="youtube" /></a>
-                                <a href="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></a>
-                                <a href="#" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
-                                
-                            </div>
+                        <div className="post-social-media-div">
+                    <div className="social-media-div">
+                    <a href="#"><img src={fb} alt="facebook" /></a>
+
+                </div>
+
+                <div className="social-media-div">
+                    <a href="#"><img src={twitter} alt="twitter" /></a>
+
+                </div>
+
+                <div className="social-media-div">
+                    <a href="#"><img src={insta} alt="insta" /></a>
+
+                </div>
+
+                <div className="social-media-div">
+                    <a href="#"><img src={linkedin} alt="linkedin" /></a>
+
+                </div>
+
+                <div className="social-media-div">
+                <a href="#" target="_blanck" > <img src={g_plus} alt="g_plus" /></a>
+
+                </div>
+
+                <div className="social-media-div">
+                <a href="#" target="_blanck" > <img src={pinterest} alt="pinterest" /></a>
+                </div>
+
+                <div className="social-media-div">
+                <a href="#" target="_blanck" > <img src={youtube} alt="youtube" /></a>
+
+                </div>
+
+                <div className="social-media-div">
+                <a href="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></a>
+
+                </div>
+
+                <div className="social-media-div">
+                <a href="#" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
+
+                </div>
+            </div>
                         
                         </div>
                     </div>
@@ -331,18 +346,6 @@ class Blog extends Component {
                 </div>
             </div>
 
-            {/* <div className="footer-nav-div">
-                <div className="footer-next-prv-div">
-                    <button className="btn"><img src={l_arrow} /></button>
-                    <div className="prv-show">
-                    </div>
-                </div>
-                <div className="footer-next-btn-div">
-                    <button className="btn"><img src={r_arrow} /></button>
-                    <div className="next-show">
-                    </div>
-                </div>
-            </div> */}
       </div>
     );
   }

@@ -23,9 +23,10 @@
     
 }
 
+
 .jumbo1{
     height: 750px;
-    background: url('../assets/images/banner4.gif');
+    background: url('../assets/images/new_background2.jpg');
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,7 +35,7 @@
 
 .jumbo2{
     height: 750px;
-    background: url('../assets/images/banner11.jpg');
+    background: url('../assets/images/new_background.jpg');
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -53,18 +54,25 @@
     margin: 0;
     
 }
-
+/* 
 .full_width *{
     font-family: 'Source Sans Pro', sans-serif !important;
-    /* color:gray !important; */
+    
     border-color: gray !important;
-}
+} */
 
 .divider-name{
-    font-family: 'Courgette', cursive;
+    font-family: 'Libre Baskerville', serif;
     text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+   
 }
 
+
+.red{
+    color: #B62043;
+}
 .Divider > div {
     padding: 0 2%;
 }
@@ -81,9 +89,15 @@
     flex:2px;
 }
 
+
+.blog-border-width{
+    border-bottom: 1px solid #d5d5d5;
+}
+
 .flash-deals-timer{
     font-size: 1.2rem;
-    color: brown;
+    color: #B62043;
+    font-family: 'Libre Baskerville', serif;
     margin-left: 5px;
     font-style: italic;
 }

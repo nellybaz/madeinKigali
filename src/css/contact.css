@@ -8,9 +8,14 @@
         width:100% !important;
     }
 
+    .contact-outer{
+        flex-wrap: wrap;
+    }
+
     .contact-outer > div{
         width: 100% !important;
     }
+
 }
 
 .contact-outer{

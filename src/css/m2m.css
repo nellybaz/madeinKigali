@@ -1,0 +1,117 @@
+.M2M{
+    width: 100%;
+    
+}
+
+.m2m-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+    margin-top: 30px;
+}
+/* .m2m-outer * {
+    border: 1px solid gray;
+} */
+
+.m2m-left{
+    width: 60%;
+    display: flex;
+
+    
+
+}
+
+.m2m-right{
+    width: 40%;
+    margin-left: 15px;
+    border-left: 0.5px solid #E4E4E4;
+    padding-left:15px;
+}
+
+.m2m-left-1{
+    width:15%;
+    display: flex;
+    flex-direction: column;
+   }
+
+.m2m-left-1 img{
+    border: 0.5px solid #E4E4E4;
+}
+
+.m2m-left-2, .m2m-left-3{
+    width: 42.5%;
+}
+
+.m2m-left-3{
+    border-left: 0.5px solid #E4E4E4;
+    padding-left:15px;
+
+}
+
+.m2m-left-3
+
+.m2m-left-2 img{
+    width: 100%;
+}
+
+
+.m2m-choose-fabric-div{
+    width:100%;
+    display: flex;
+}
+
+.m2m-choose-fabric-div > div{
+    width: 30%;
+    height:100px;
+}
+
+.m2m-size-div{
+    display: flex;
+}
+
+.m2m-size-div span{
+    width:25%;
+    /* border: 1px solid gray; */
+}
+
+.m2m-measurement-div{
+    display: flex;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.m2m-measurement-div div{
+    width:50%;
+    /* height: 100px; */
+}
+.m2m-measurement-inner div{
+    width: 100%;
+    margin-bottom:5px;
+}
+
+.m2m-measurement-inner input{
+    width: 30%;
+}
+
+.m2m-measurement-inner{
+   
+    margin-top:15px;
+   
+    
+}
+
+.inner-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.btn-m2m-bag{
+    border-radius: 0;
+    background: gray;
+    color: white;
+    margin-left:5px;
+    width:50%;
+}

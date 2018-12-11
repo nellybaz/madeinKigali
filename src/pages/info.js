@@ -1,57 +1,99 @@
 import React, { Component } from 'react';
 import Header from '../components/header';
 import '../css/info.css';
+import {withRouter} from 'react-router';
+import {Link} from 'react-router-dom';
+import Footer from '../components/footer';
+import Delivery from '../components/delivery';
+import Returns from '../components/returns';
 
 
 
-class Delivery extends Component {
+class Info extends Component {
 
     constructor(props){
         super(props)
 
         this.state={
+            category: this.props.match.params.infocategory,
+            contentToShowClassDelivery:"", 
+            contentToShowClassReturns: "",
+            delivery_active: "",
+            return_active: ''
             
         }
+
+    }
+
+    componentDidMount(){
+        let cat  = this.state.category
+        if (cat === "delivery"){
+            this.setState({
+                contentToShowClassDelivery:'',
+                contentToShowClassReturns:'hide',
+                delivery_active: "active3",
+                return_active: '',
+            })
+        }
+        else if(cat === "returns"){
+            this.setState({
+                contentToShowClassReturns:'',
+                contentToShowClassDelivery:'hide',
+                return_active: 'active3',
+                delivery_active: '',
+            })
+        }
+       
+       
     }
   
 
    
   render() {
     return (
-      <div className="Delivery">
+      <div className="Info">
         <Header/>
 
-        <div className="delivery-outer">
-        <div className="delivery-titles">
-            <div>
-                <h1>Request for Wholesale Quo</h1>
-            </div>
+        <div className="info-outer">
+        <div className="info-titles">
+          
            
 
-            <div >
-                <h1>Fabric FAQs</h1>
+            {/* <div className={`${this.state.faq_active}`}>
+                <h1><a href={'/dev/help'}>Fabric FAQs</a></h1>
+            </div> */}
+
+            <div className={``}>
+                <h1><a href={'#'}>Points of Sale</a></h1>
             </div>
 
-             <div>
-                <h1>Points of Sale</h1>
+             <div className={`${this.state.delivery_active}`}>
+                <h1><a href={'/dev/info/delivery'}>Delivery</a></h1>
             </div>
 
-             <div className="active-title">
-                <h1>Delivery</h1>
-            </div>
-
-             <div>
-                <h1>Returns</h1>
+             <div className={`${this.state.return_active}`}>
+                <h1><a href={'/dev/info/returns'} >Returns</a></h1>
             </div>
         </div>
 
-        <div className="content international">
-            <p>FREE standard delivery on all international orders over £100 (or over £75 for Australia).</p>
-            <p>For more information on standard and express delivery choose your shipping country from the drop down below</p>
+        <div className={`content ${this.state.contentToShowClassDelivery}`}>
+            <Delivery/> 
+           
         </div> 
-        
 
+        <div className={`content ${this.state.contentToShowClassReturns}`}>
+            <Returns/> 
+           
+        </div> 
+          
+    
         </div>
+
+        <div style={{marginTop:'50px'}}>
+
+            <Footer />
+        </div>
+        
      
       </div>
     );
@@ -59,4 +101,4 @@ class Delivery extends Component {
   }
 }
 
-export default Delivery;
+export default withRouter(Info);

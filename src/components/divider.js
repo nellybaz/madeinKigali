@@ -11,7 +11,7 @@ class Divider extends Component {
             
         }
        
-    }
+    } 
   render() {
 
 
@@ -32,9 +32,9 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
 
     return (
         <div className={`Divider ${this.props.class}`}>
-            <div className="horizontal-bar hbar-left"></div>
+            <div className={`horizontal-bar ${this.props.blogBorder} hbar-left`}></div>
             <div className="text">
-                <p className='divider-name'>{this.props.name}
+                <p className={`divider-name ${this.props.color}`}>{this.props.name}
                 
                     {
                         // check if shoud display timer in divider     
@@ -42,11 +42,13 @@ const renderer = ({ hours, minutes, seconds, completed }) => {
                 date={Date.now() + 9000000000}
                 renderer={renderer}
             />
+            
             }</p>
             </div>
-            <div className="horizontal-bar hb-right"></div>
+            <div className={`horizontal-bar ${this.props.blogBorder} hb-right`}></div>
         
         </div>
+
     );
   }
 }

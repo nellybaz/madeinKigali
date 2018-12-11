@@ -55,6 +55,7 @@ class Contact extends Component {
             <select className="form-control input">
                 <option selected hidden>Choose Category</option>
                 <option >Fabrics</option>
+                <option >Request Quotation</option>
                 <option >Dresses</option>
                 <option >Website</option>
                 <option>Brands</option>

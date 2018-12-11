@@ -162,7 +162,11 @@ class Post extends Component {
         <div className="blog-post-div-container">
             <div className="article-section">
                 <div className="post-image-div">
-                    <img src={bh3} />
+                    <img src={bh3} alt="mik" useMap="#image-map"/>
+
+                    <map name="image-map">
+                        <area target="" alt="Here" title="Here" href="/dev/product/Isabel%20Maer/2" coords="396,633,187" shape="circle"/>
+                    </map>
                 </div>
 
                 <div className="article-post">
@@ -175,7 +179,7 @@ class Post extends Component {
 
                 <div className="comments">
 
-                <Divider name="JOIN THE CONVO!!!" class="full_width"/>
+                <Divider blogBorder="blog-border-width" name="Join The Convo!!!" class="full_width"/>
 
                 <FacebookProvider appId="203119847024539">
                     <Comments href="https://www.facebook.com/Kibuti-1542295485889144/" />
@@ -199,39 +203,39 @@ class Post extends Component {
             </div>
                     <div className="blog-header">
                     <div className="blog-header-item">
-                        <img alt="image"  src ={bh8} />
+                        <img alt="mik"  src ={bh8} />
                     </div>
                     <div className="blog-header-item">
-                        <img alt="image"  src ={bh7} />
+                        <img alt="mik"  src ={bh7} />
                     </div>
                     <div className="blog-header-item">
-                        <img alt="image"  src ={bh6} />
+                        <img alt="mik"  src ={bh6} />
                     </div>
                     <div className="blog-header-item">
-                        <img alt="image"  src ={bh5} />
+                        <img alt="mik"  src ={bh5} />
                     </div>
                     <div className="blog-header-item">
-                        <img alt="image"  src ={bh4} />
+                        <img alt="mik"  src ={bh4} />
                     </div>
                     <div className="blog-header-item">
-                        <img alt="image"  src ={bh3} />
+                        <img alt="mik"  src ={bh3} />
                     </div>
                     <div className="blog-header-item">
-                        <img alt="image"  src ={bh2} />
+                        <img alt="mik"  src ={bh2} />
                     </div>
                     <div className="blog-header-item">
-                        <img alt="image"  src ={header1} />
+                        <img alt="mik"  src ={header1} />
                     </div>
 
                       <div className="blog-header-item">
-                        <img alt="image"  src ={bh4} />
+                        <img alt="mik"  src ={bh4} />
                     </div>
                 </div>
             </div>
 
             <div className="footer-nav-div">
                 <div className="footer-next-prv-div">
-                    <button className="btn"><img src={l_arrow} /></button>
+                    <button className="btn"><img alt='mik' src={l_arrow} /></button>
                     <div className="prv-show">
                         <div className="prev-show-inner">
 
@@ -245,7 +249,7 @@ class Post extends Component {
 
                         {/* image div of the inner div  */}
                             <div className="prev-show-inner-img-div">
-                                <img src={bh2} />
+                                <img alt='mik' src={bh2} />
                             </div>
                        
 
@@ -253,7 +257,7 @@ class Post extends Component {
                     </div>
                 </div>
                 <div className="footer-next-btn-div">
-                    <button className="btn"><img src={r_arrow} /></button>
+                    <button className="btn"><img alt='mik' src={r_arrow} /></button>
                     <div className="next-show">
                     <div className="next-show-inner">
 
@@ -267,7 +271,7 @@ class Post extends Component {
 
                         {/* image div of the inner div  */}
                             <div className="next-show-inner-img-div">
-                                <img src={bh2} />
+                                <img alt='mik' src={bh2} />
                             </div>
 
 

@@ -12,10 +12,14 @@ import Search from '../pages/search';
 import Help from '../pages/help';
 import Contact from '../pages/contact';
 import Info from '../pages/info';
-
-
+import M2M2 from '../pages/m2m2';
+import M2M from '../pages/m2m';
+import Gallery from '../pages/gallery';
+import WholesaleQuote from '../pages/wholesale_quote';
+import Fabric from '../pages/fabric_home';
 import '../css/home.css';
-import wholesale from '../pages/wholesale.js';
+import Fabric_Single from '../pages/fabric_single.js';
+
 
 class Routing extends Component {
 
@@ -41,7 +45,13 @@ class Routing extends Component {
                             <Route exact path={"/dev/shop"} component={Search}/>
                             <Route exact path={"/dev/contact"} component={Contact}/>
                             <Route exact path={"/dev/help"} component={Help}/>
-                            <Route exact path={"/dev/info"} component={Info}/>
+                            <Route exact path={"/dev/info/:infocategory"} component={Info}/>
+                            <Route exact path={"/dev/m2m"} component={M2M}/>
+                            <Route exact path={"/dev/m2m2"} component={M2M2}/>
+                            <Route exact path={"/dev/gallery"} component={Gallery}/>
+                            <Route exact path={"/dev/quote"} component={WholesaleQuote}/>
+                            <Route exact path={"/dev/fabric"} component={Fabric}/>
+                            <Route exact path={"/dev/fabric_single"} component={Fabric_Single}/>
                         </Switch>
                     </ScrollContext>
             

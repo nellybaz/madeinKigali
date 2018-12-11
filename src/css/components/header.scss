@@ -1,0 +1,82 @@
+@import '../app';
+
+$margin-for-icons: 10px;
+$header-icons-link-color: #73705B;
+header{
+    background: color(primary);
+    width:100%;
+}
+.Header-one{
+    box-sizing: border-box;
+    width:91%;
+    padding: 0 1%;
+    margin:0 auto;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 4fr 2fr 4fr;
+    grid-gap: 10px;
+    align-items: center;
+
+
+
+    //logo styles
+    .logo-item{
+        width:100%;
+        height:100%;
+        padding: 0;
+
+        img{
+            width:90%;
+            height:100%;
+            padding:5px;
+            
+        }
+    }
+
+        //left div for signin - wishlist
+    .sigin-wishlist{
+        display: flex;
+       
+       
+
+        a{
+           color:$header-icons-link-color;
+           font-size: font(p_fonts);
+           margin: $margin-for-icons;
+        }
+        
+    }
+
+
+    //right icons styles
+    .right-icons{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width:100%;
+        align-self: right;
+
+        input, a{
+            margin:$margin-for-icons;
+        }
+        
+        input{
+            width:15%;
+            background: transparent;
+            color:$header-icons-link-color;
+            padding:5px;
+            border: 0;
+            position: relative;
+            left:20px;
+            
+            
+        }
+
+        a{
+            position: relative;
+            bottom: 6px;
+        }
+
+        
+    }
+}

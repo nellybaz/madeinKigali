@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../css/footer.css';
-import info from '../assets/images/info.png';
-import delivery from '../assets/images/delivery-truck.png';
-import factory from '../assets/images/factory.png';
-import contact from '../assets/images/letter.png';
+
 
 import fb from '../assets/images/facebook-logo.png';
 import insta from '../assets/images/instagram-logo.png';
 import twitter from '../assets/images/twitter-logo.png';
 import linkedin from '../assets/images/linkedin-logo.png';
 import { isMobileOnly } from 'react-device-detect';
+
+import pinterest from '../assets/images/pinterest.png';
+import g_plus from '../assets/images/g_plus.png';
+import wiebo from '../assets/images/weibo.png';
+import youtube from '../assets/images/youtube.png';
+import tumblr from '../assets/images/tumblr.png';
 
 class Footer extends Component {
 
@@ -20,7 +23,7 @@ class Footer extends Component {
         mobileClass: 'flex-wrap',
         mobile_font_class: 'footer-mobile-font-size',
         footerSwitch: false,
-        footerClass:"fadeout"
+        footerClass:"hide fadeout"
     }
   }
 
@@ -37,7 +40,7 @@ class Footer extends Component {
 
     else{
       this.setState({
-        footerClass: "fadeout",
+        footerClass: "hide fadeout",
         footerSwitch:false
       })
     }
@@ -45,24 +48,10 @@ class Footer extends Component {
 
   }
 
-  // componentDidMount(){
 
-
-  //   if(isMobileOnly){
-  //     return true;
-  //   }
-  //   return false;
-  // }
-
-
-  // handleScrollTo = () => {
-  //   this.container.scrollTop = 10;
-  // }
   render() {
 
-    // const footerDropDonwStyles = {
-    //   backgroundColor: 'red',
-    // }
+  
 
     return (
       <div className={`Footer ${isMobileOnly && this.state.mobile_font_class}`}>
@@ -78,27 +67,6 @@ class Footer extends Component {
         </div>
 
 
-          <div className="footer-third-div">
-          <div className="social-media-div">
-            <a href="#"><img src={fb} alt="facebook" /></a>
-
-          </div>
-
-          <div className="social-media-div">
-            <a href="#"><img src={twitter} alt="twitter" /></a>
-
-          </div>
-
-          <div className="social-media-div">
-            <a href="#"><img src={insta} alt="insta" /></a>
-
-          </div>
-
-          <div className="social-media-div">
-            <a href="#"><img src={linkedin} alt="linkedin" /></a>
-
-          </div>
-        </div>
 
 
         <div className="footer-second-div">
@@ -134,28 +102,122 @@ class Footer extends Component {
             </div>
         </div>
 
+
+
         <div className={`${this.state.footerClass}`}>
             <div className="expand-item">
+            <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
 
             </div>
 
             <div className="expand-item">
+            <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
 
             </div>
             <div className="expand-item">
               
+            <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
 
             </div>
             
             <div className="expand-item">
               <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/dev/help'}>Help</Link><br></br>
 
             </div>
 
             <div className="expand-item">
 
             </div>    
+        </div>
+
+        <div className="footer-third-div">
+          <div className="social-media-div">
+            <a href="#"><img src={fb} alt="facebook" /></a>
+
+          </div>
+
+          <div className="social-media-div">
+            <a href="#"><img src={twitter} alt="twitter" /></a>
+
+          </div>
+
+          <div className="social-media-div">
+            <a href="#"><img src={insta} alt="insta" /></a>
+
+          </div>
+
+          <div className="social-media-div">
+            <a href="#"><img src={linkedin} alt="linkedin" /></a>
+
+          </div>
+
+          <div className="social-media-div">
+          <a href="#" target="_blanck" > <img src={g_plus} alt="g_plus" /></a>
+
+          </div>
+
+          <div className="social-media-div">
+          <a href="#" target="_blanck" > <img src={pinterest} alt="pinterest" /></a>
+          </div>
+
+          <div className="social-media-div">
+          <a href="#" target="_blanck" > <img src={youtube} alt="youtube" /></a>
+
+          </div>
+
+          <div className="social-media-div">
+          <a href="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></a>
+
+          </div>
+
+          <div className="social-media-div">
+          <a href="#" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
+
+          </div>
         </div>
 
         {/* map API Key

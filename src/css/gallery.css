@@ -1,0 +1,178 @@
+.Gallery{
+    width:100%;
+   
+}
+
+.gallery-wrapper{
+    width:90%;
+    margin: 50px 5% 0 5%;
+}
+
+.gallery-top-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+
+}
+
+
+.btn-gallery-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-gallery-upload{
+    font-size: 0.7rem;
+    background: transparent;
+    border:0;
+
+}
+
+.gallery-content{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows:auto;
+    grid-gap: 5px;
+    
+}
+
+.gallery-content-inner-div{
+    
+}
+
+.gallery-content-inner-div img{
+    width:100%;
+    object-fit: contain;
+}
+
+.gallery-content * {
+    /* border:1px solid gray; */
+}
+
+.gallery-navigation{
+    width:90%;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    margin-bottom: 15px;
+    
+    margin: 10px 5%
+}
+
+.gallery-navigation div{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.gallery-display-wrapper{
+    grid-column: 1/-1;
+    margin: 0px 5% 50px 5%;
+    background: transparent;
+}
+
+.gallery-display-inner{
+   width: 100%;
+   display: grid;
+   height:100%;
+   grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+   grid-gap: 5px;
+
+}
+
+.gallery-display-inner div{
+    background: white;
+    height:100%;
+    width:100%;
+    opacity: 0.99;
+    
+}
+
+.btn-exit-gallery-open{
+    position: relative;
+    left: 90%;
+    bottom: 1rem;
+    
+}
+.btn-exit-gallery-open img{
+    padding:10px 15px;
+    width:50px;
+    margin-top: 11px;
+    background: white;
+    /* border: 1px solid gray; */
+    font-size: 2rem;
+}
+
+.gallery-image-small-div p{
+   font-size: 2vmin;
+    
+}
+
+.gallery-image-small-div p{
+    padding: 10px;
+}
+
+.gallery-image-larger{
+    width: 100%;
+    height:100%;
+    object-fit: contain;
+}
+
+.img-gallery-small{
+    height: 70%;
+    width:100%;
+    object-fit: cover;
+}
+
+.hide{
+    display: none;
+}
+
+.modal-wrapper{
+    height: 400px;
+    width: 50%;
+    margin: 0 20%;
+    background: white;
+    position: fixed;
+    top: 90px;
+    left: 4%;
+    box-shadow: 2px 2px 8px 2px rgb(26, 25, 25);
+    display: none;
+
+}
+
+
+.modal-wrapper div:nth-child(1){
+    width:100%;
+    height: 70%;
+    border:1px solid gray;
+    margin-top: 30px;
+}
+
+
+.modal-wrapper div:nth-child(1) p{
+   font-size: 4vmin;
+}
+.modal-wrapper div:nth-child(2){
+    width:100%;
+    margin-top: 30px;
+}
+
+.show{
+    display: inline-block;
+}
+
+.btn-close-modal{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.btn-submit-upload{
+    background: rgb(24, 23, 23);
+    border: 1px solid black;
+    border-radius:0;
+    width: 50%;
+    margin-top: 15px;
+    color: white;
+    font-size: 2.5vmin;
+}

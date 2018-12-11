@@ -9,7 +9,7 @@ import bh6 from '../assets/images/bh6.jpg';
 import bh7 from '../assets/images/bh7.jpg';
 import bh8 from '../assets/images/bh8.jpg';
 
-import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo-blog.png';
 
 import {Link} from 'react-router-dom';
 
@@ -162,7 +162,7 @@ class BlogHeader extends Component {
       <div className={this.state.fixed_scroll_class}>
         <div className="blog-header-fixed-navlinks">
              <div className="blog-header-navlinks">
-                <Link to={'/dev'}><img className="blog-header-logo" src={logo} /></Link>
+                <Link to={'/dev'}><img className="blog-header-logo" alt="mik" src={logo} /></Link>
             </div>
             <div className="header-links-fixed">
                 <p>HOME</p>
@@ -193,31 +193,31 @@ class BlogHeader extends Component {
 
         <div className="blog-header">
             <div className="blog-header-item">
-                <img alt="image"  src ={bh8} />
+                <img alt="mikigali"  src ={bh8} />
             </div>
             <div className="blog-header-item">
-                <img alt="image"  src ={bh7} />
+                <img alt="mikigali"  src ={bh7} />
             </div>
             <div className="blog-header-item">
-                <img alt="image"  src ={bh6} />
+                <img alt="mikigali"  src ={bh6} />
             </div>
             <div className="blog-header-item">
-                <img alt="image"  src ={bh5} />
+                <img alt="mikigali"  src ={bh5} />
             </div>
             <div className="blog-header-item">
-                <img alt="image"  src ={bh4} />
+                <img alt="mikigali"  src ={bh4} />
             </div>
             <div className="blog-header-item">
-                <img alt="image"  src ={bh3} />
+                <img alt="mikigali"  src ={bh3} />
             </div>
             <div className="blog-header-item">
-                <img alt="image"  src ={bh2} />
+                <img alt="mikigali"  src ={bh2} />
             </div>
             <div className="blog-header-item">
-                <img alt="image"  src ={header1} />
+                <img alt="mikigali"  src ={header1} />
             </div>
             <div className="blog-header-item">
-                <img alt="image"  src ={bh6} />
+                <img alt="mikigali"  src ={bh6} />
             </div>
 
             
@@ -230,7 +230,7 @@ class BlogHeader extends Component {
         <div className="blog-header-nav ">
         
             <div className="blog-header-navlinks">
-                <Link to={'/dev'}><img className="blog-header-logo" src={logo} /></Link>
+                <Link to={'/dev'}><img className="blog-header-logo" alt="mik" src={logo} /></Link>
             </div>
 
             <div className="blog-header-navlinks">

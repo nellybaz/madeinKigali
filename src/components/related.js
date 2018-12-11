@@ -24,7 +24,7 @@ class Related extends Component {
     
     return (
       <div className="Related">
-      <Divider name="RELATED POST" class="full_width"/>
+      <Divider blogBorder="blog-border-width" name="Related Post" class="full_width"/>
 
 
         <div className="related-post-div">

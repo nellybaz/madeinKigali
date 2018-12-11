@@ -1,0 +1,80 @@
+header {
+  background: #191843;
+  width: 100%;
+}
+
+.Header-one {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 91%;
+  padding: 0 1%;
+  margin: 0 auto;
+  height: 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 2fr 4fr;
+      grid-template-columns: 4fr 2fr 4fr;
+  grid-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Header-one .logo-item {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.Header-one .logo-item img {
+  width: 90%;
+  height: 100%;
+  padding: 5px;
+}
+
+.Header-one .sigin-wishlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Header-one .sigin-wishlist a {
+  color: #73705B;
+  font-size: 0.8rem;
+  margin: 10px;
+}
+
+.Header-one .right-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  -ms-flex-item-align: right;
+      align-self: right;
+}
+
+.Header-one .right-icons input, .Header-one .right-icons a {
+  margin: 10px;
+}
+
+.Header-one .right-icons input {
+  width: 15%;
+  background: transparent;
+  color: #73705B;
+  padding: 5px;
+  border: 0;
+  position: relative;
+  left: 20px;
+}
+
+.Header-one .right-icons a {
+  position: relative;
+  bottom: 6px;
+}
+/*# sourceMappingURL=header.css.map */

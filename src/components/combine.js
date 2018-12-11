@@ -18,22 +18,22 @@ class CombineWith extends Component {
         <h5>Combine it with...</h5>
         <div className="combine-with-outer-div"> 
             <div className="combine-with-item-div">
-                <img className="combine-img" src={c1} />
+                <img alt="mik"className="combine-img" src={c1} />
                 <p>$230 <br/><span>Product Name</span></p>
             </div>
 
             <div className="combine-with-item-div">
-                <img className="combine-img" src={c2} />
+                <img alt="mik"className="combine-img" src={c2} />
                 <p>$230 <br/><span>Product Name</span></p>
             </div>
 
             <div className="combine-with-item-div">
-                <img className="combine-img" src={c3} />
+                <img alt="mik"className="combine-img" src={c3} />
                 <p>$230 <br/><span>Product Name</span></p>
             </div>
 
             <div className="combine-with-item-div">
-                <img className="combine-img" src={c4} />
+                <img alt="mik"className="combine-img" src={c4} />
                 <p>$230 <br/><span>Product Name</span></p>
             </div>
         </div>

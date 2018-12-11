@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/header.css';
+import '../css/components/header.css';
 import logo from '../assets/images/logo.png';
 import heart from '../assets/images/heart2.png';
 import heart_mobile from '../assets/images/heart-mobile.png';
@@ -9,7 +10,12 @@ import search from '../assets/images/search.png';
 import search_mobile from '../assets/images/search-mobile.png';
 import profile from '../assets/images/profile.png';
 import menu_grid_sub_img from '../assets/images/banner1.jpg';
-import {Link, Route} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import pause from '../assets/images/pause.png';
+
+import music from '../assets/music/music.mp3';
+
+import little_banner from '../assets/images/little_banner.jpg';
 
 import mobile_menu from '../assets/images/menu.png';
 
@@ -39,7 +45,15 @@ class Header extends Component {
         }, 10);
       } 
 
-
+    
+      handleTunePause=()=>{
+        var myAudio = this.mytune;
+        if (myAudio.paused) {
+            myAudio.play();
+        } else {
+            myAudio.pause();
+        }
+      }
   
   handleScroll=(event)=> {
       if (Math.round(window.scrollY) >= 420) {
@@ -90,36 +104,45 @@ class Header extends Component {
       <div className="Header">
         {/* {this.getWindowClick()} */}
       <div className="topmost-bar">
+            <audio autoPlay={true} ref = {(ip)=> {this.mytune = ip}}>
+            <source src={music} type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+
+        <img className="audio-pause" src={pause} onClick={()=> this.handleTunePause()} />
           <p>Register now to get <span className="top-bar-white-text">10% off*</span> your first order with code <span className="top-bar-white-text"><b>NEWCUSTOMER10</b></span></p>
       </div>
-      <div className="Header-one">
-        <div className="sigin-wishlist header-items">
-            <a href="#" className="sigin"><b>SIGN IN</b></a>
-            <a href="#" ><b>WISHLIST</b></a>
-            <a href ="#" className="wishlist-icon-link"><img className="wishlist-icon" src={heart} /></a>
+      <header className="header">
+            <div className="Header-one">
+                <div className="sigin-wishlist header-items">
+                    <a href="#" className="sigin"><b>SIGN IN</b></a>
+                    <a href="#" ><b>WISHLIST</b></a>
+                    <a href ="#" className="wishlist-icon-link"><img className="wishlist-icon" src={heart} /></a>
 
-        </div>
+                </div>
 
-        <div className=" header-items logo-item">
-            <Link to={'/dev'}><img src={logo} className="logo"/></Link>
-        </div>
+                <div className=" header-items logo-item">
+                    <Link to={'/dev'}><img src={logo} className="logo"/></Link>
+                </div>
 
-        <div className=" header-items right-icons">
-            <input className="search-input" onChange={(e)=> this.setState({search_query: e.target.value})} onKeyPress={(ev) => {
-                    if (ev.key === 'Enter') {
-                    // Do code here
-                   
-                    this.searchBoxHandler();
-                    ev.preventDefault();
-                    }
-  }} type="text" placeholder="Search" />
-            <a ><img src={search}></img></a>
-            <a><img src={profile}></img></a>
-            <a><img src={bag}></img></a>
+                <div className=" header-items right-icons">
+                    <input className="search-input" onChange={(e)=> this.setState({search_query: e.target.value})} onKeyPress={(ev) => {
+                            if (ev.key === 'Enter') {
+                            // Do code here
+                        
+                            this.searchBoxHandler();
+                            ev.preventDefault();
+                            }
+        }} type="text" placeholder="Search" />
+                    <a ><img src={search}></img></a>
+                    <a><img src={profile}></img></a>
+                    <a><img src={bag}></img></a>
 
-            
-        </div>
-        </div>
+                    
+                </div>
+                </div>
+      </header>
+     
 
 
         {/* mobile navigation */}
@@ -137,7 +160,7 @@ class Header extends Component {
              </div>*/}
 
            <div className="mobile-nav-item right-icons-mobile">
-                <a style={{fontSize: '0.8rem'}} onClick={()=> this.handleMobileSearch()} className="btn btn-search mobile-nav-item-b"><img src={search_mobile}></img><br></br>SEARCH</a>
+               <a style={{fontSize: '0.8rem'}} onClick={()=> this.handleMobileSearch()} className="btn btn-search mobile-nav-item-b"><img src={search_mobile}></img><br></br>SEARCH</a>
                 <a style={{fontSize: '0.8rem'}} className="btn mobile-nav-item-b"><img src={heart_mobile}></img> <br></br>WISHLIST</a>
                 <a style={{fontSize: '0.8rem'}} className="btn btn-bag mobile-nav-item-b"><img src={bag_mobile}></img> <br></br>BAG</a>
            </div>
@@ -158,114 +181,386 @@ class Header extends Component {
         </div>
 
 
-
     {/* mobile navigation ends */}
 
         <div className={`navigation ${this.state.nav_class}`}>
+            
             <div className="new-in" ><a href="#" >NEW IN </a>
-                <div className="drop-down-content-new-in">
-                    
-
-                    <div className="mega-menu-sub-grid-new-in mega-menu-sub-grid">
-                        <div className="mega-menu-sub-grid-content grid-item">
-                        <h4 className="newin-title mega-menu-title">NEW IN</h4>
-                        <a href="#">New Arrivals</a>
-                        <a href="#">Latest Trends</a>
-                        <a href="#"> &nbsp;</a>
-                        <a href="#">New in Designs</a>
-                        <a href="#">New in M2M</a>
-                        <a href="#">New in Bags</a>
-                        <a href="#">New in Accessories</a>
-                        <a href="#">New in WholeSale</a>                       
+            <div className="new-in-dropdown dropdowns">
+                    <div className="new-in-dropdown-content">
+                        <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                                <h5 style={{ }}>SHOP BY CLOTHING</h5>
                         
+                            <Link to={"#"} >Men’s Blazers</Link>
+                            <Link to={"#"} >Men’s coats & jackets</Link>
+                            <Link to={"#"} >Men’s dress shirts</Link>
+                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
+                            <Link to={"#"} >Women’s dresses</Link>
+                            <Link to={"#"} >Women’s shirts & blouses</Link>
+                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
+                            {/* <Link to={"#"} ></Link> */}
                         </div>
-
-                        
-
-                        <div className="mega-menu-sub-grid-img-div grid-item">
-                            <img className="mega-menu-sub-grid-img" src={menu_grid_sub_img} />
-                        </div>
-                       
                     </div>
-                    
-                    
+                  
+
+                    <div className="new-in-dropdown-content">
+                        <img width="100%" height="300px" style={{objectFit:"contain"}} src={little_banner} />
+                    </div>
                 </div>
             </div>
-            <div><Link to={'dev/shop'}>SHOP</Link></div>
-            <div><a href="#"><Link to={'/dev/wholesale/new/2'}>WHOLESALE</Link> </a></div>
-            <div className="brands"><a href="#">BRANDS </a>
-            <div className="drop-down-content-brands">
 
-                    <div className="mega-menu-sub-grid-brands mega-menu-sub-grid">
-                        <div className="mega-menu-sub-grid-content grid-item">
-                        <h4 className="newin-title mega-menu-title">SHOP BY CATEGORY</h4>
-                        <a href="#">Brand A-Z</a>
-                        <a href="#">Clothing Brands</a>                        
-                        <a href="#">Shoe Brands</a>
-                        <a href="#">Accessories Brands</a>
-                        <a href="#">Beauty Brands</a>
+                {/* fabric */}
+
+
+            <div className="fabric" ><a href="#" >FABRIC </a>
+            <div className="fabric-dropdown dropdowns">
+                    <div className="fabric-dropdown-content">
+                        <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                                <h5 style={{ }}>SHOP BY CLOTHING</h5>
                         
+                            <Link to={"#"} >Men’s Blazers</Link>
+                            <Link to={"#"} >Men’s coats & jackets</Link>
+                            <Link to={"#"} >Men’s dress shirts</Link>
+                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
+                            <Link to={"#"} >Women’s dresses</Link>
+                            <Link to={"#"} >Women’s shirts & blouses</Link>
+                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
+                            {/* <Link to={"#"} ></Link> */}
                         </div>
+                    </div>
 
-                         <div className="mega-menu-sub-grid-content grid-item">
-                         <h4 className="newin-title mega-menu-title">FEATURED BRANDS</h4>
-                        <a href="#">Amami</a>
-                        <a href="#">MIK Boutique</a>                        
-                        <a href="#">Made in Rwanda</a>
-                      
-                                             
+                    <div className="fabric-dropdown-content">
+                    
+                    <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                            <h5 style={{ }}>SHOP BY EDIT</h5>
+                    
+                        <Link to={"#"} >Last Chance to Buy</Link>
+                        <Link to={"#"} >Men’s coats & jacketsBestsellers</Link>
+                        <Link to={"#"} >Multi Packs</Link>
+                        <Link to={"#"} >Multi-buy deals </Link>
+                        <Link to={"#"} >Holiday Shop</Link>
                         
-                        </div>
+                    </div>
 
-                        <div className="mega-menu-sub-grid-img-div grid-item">
-                            <img className="mega-menu-sub-grid-img" src={menu_grid_sub_img} />
-                        </div>
-                       
+                    </div>
+
+                    <div className="fabric-dropdown-content">
+                    <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                            <h5 style={{ }}>SHOP BY CATEGORY</h5>
+                    
+                        <Link to={"#"} >RTWMen</Link>
+                        <Link to={"#"} >RTWWomen</Link>
+                        <Link to={"#"} >Couture Men</Link>
+                        <Link to={"#"} >Couture Women </Link>
+                        <Link to={"#"} >Children</Link>
+
+                        <Link to={"#"} >Wedding </Link>
+                        <Link to={"#"} >Accessories</Link>
+                        
                     </div>
                     
+
+                    </div>
+
+                    <div className="fabric-dropdown-content">
+                        <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                            <h5 style={{ }}>SHOP BY COLLECTION</h5>
                     
+                        <Link to={"#"} >The MIK Boutique</Link>
+                        <Link to={"#"} >The Men guide</Link>
+                        <Link to={"#"} >The Women guide</Link>
+                        <Link to={"#"} >Workwear </Link>
+                        <Link to={"#"} >Suits</Link>
+
+                        <Link to={"#"} >Festival </Link>
+                        <Link to={"#"} >Going out</Link>
+                        
+                    </div>
+                    </div>
+
+                    <div className="fabric-dropdown-content">
+                        <img width="100%" height="100%" src={little_banner} />
+                    </div>
                 </div>
             </div>
-            <div className="sale" ><a href="#">SALE </a>
-            <div className="drop-down-content-sale">
-                    {/* <div>
-                        <h4 className="newin-title mega-menu-title">SHOP BY CATEGORY</h4>
-                    </div> */}
-                    {/* <p>hi</p> */}
 
-                    <div className="mega-menu-sub-grid-sale mega-menu-sub-grid">
-                        <div className="mega-menu-sub-grid-content grid-item">
-                        <h4 className="newin-title mega-menu-title">SALES & OFFERS</h4>
-                        <a href="#">Shop all Sales</a>
-                        <a href="#">Sale Fabrics</a>                        
-                        <a href="#">Sale M2M</a>
-                        <a href="#">Sale Top/Dresses</a>
-                        <a href="#">Sale Shoes/Beauty</a>
+
+            {/* fabric ends */}
+
+
+
+            <div className="m2m"><a href="/dev/m2m2">MADE TO MEASURE</a>
+                <div className="m2m-dropdown dropdowns">
+                    <div className="m2m-dropdown-content">
+                        <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                                <h5 style={{ }}>SHOP BY CLOTHING</h5>
                         
+                            <Link to={"#"} >Men’s Blazers</Link>
+                            <Link to={"#"} >Men’s coats & jackets</Link>
+                            <Link to={"#"} >Men’s dress shirts</Link>
+                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
+                            <Link to={"#"} >Women’s dresses</Link>
+                            <Link to={"#"} >Women’s shirts & blouses</Link>
+                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
+                            {/* <Link to={"#"} ></Link> */}
                         </div>
+                    </div>
 
-                         <div className="mega-menu-sub-grid-content grid-item">
-                         <h4 className="newin-title mega-menu-title">SPECIAL OFFERS</h4>
-                        <a href="#">2 for £10 Jersey</a>
-                        <a href="#">3 for £8 Socks</a>                        
-                        <a href="#">Student discounts</a>
-                        <a href="#">MIK * 10 Mystery bag</a>
-                      
-                                             
+                    <div className="m2m-dropdown-content">
+                    
+                    <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                            <h5 style={{ }}>SHOP BY EDIT</h5>
+                    
+                        <Link to={"#"} >Last Chance to Buy</Link>
+                        <Link to={"#"} >Men’s coats & jacketsBestsellers</Link>
+                        <Link to={"#"} >Multi Packs</Link>
+                        <Link to={"#"} >Multi-buy deals </Link>
+                        <Link to={"#"} >Holiday Shop</Link>
                         
-                        </div>
+                    </div>
 
-                        <div className="mega-menu-sub-grid-img-div grid-item">
-                            <img className="mega-menu-sub-grid-img" src={menu_grid_sub_img} />
-                        </div>
-                       
+                    </div>
+
+                    <div className="m2m-dropdown-content">
+                    <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                            <h5 style={{ }}>SHOP BY CATEGORY</h5>
+                    
+                        <Link to={"#"} >RTWMen</Link>
+                        <Link to={"#"} >RTWWomen</Link>
+                        <Link to={"#"} >Couture Men</Link>
+                        <Link to={"#"} >Couture Women </Link>
+                        <Link to={"#"} >Children</Link>
+
+                        <Link to={"#"} >Wedding </Link>
+                        <Link to={"#"} >Accessories</Link>
+                        
                     </div>
                     
+
+                    </div>
+
+                    <div className="m2m-dropdown-content">
+                        <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                            <h5 style={{ }}>SHOP BY COLLECTION</h5>
                     
+                        <Link to={"#"} >The MIK Boutique</Link>
+                        <Link to={"#"} >The Men guide</Link>
+                        <Link to={"#"} >The Women guide</Link>
+                        <Link to={"#"} >Workwear </Link>
+                        <Link to={"#"} >Suits</Link>
+
+                        <Link to={"#"} >Festival </Link>
+                        <Link to={"#"} >Going out</Link>
+                        
+                    </div>
+                    </div>
+
+                    <div className="m2m-dropdown-content">
+                        <img width="100%" height="100%" src={little_banner} />
+                    </div>
                 </div>
             
             </div>
-            <div><a href="#"><Link to={'/dev/blog'}>STYLE</Link> </a></div>
+            <div className="wholesale"><Link to={'/dev/wholesale/new/2'}>WHOLESALE</Link>
+            <div className="wholesale-dropdown dropdowns">
+                    <div className="wholesale-dropdown-content">
+                        <div style={{display:'flex', flexDirection:'column', flexWrap:'wrap', }}>
+                            
+                            
+                                <h5 style={{ }}>SHOP BY CATEGORY</h5>
+                                                       
+                            <Link to={"#"} >Women’s suit</Link>
+                            <Link to={"#"} >Men’s suit</Link>
+                            <Link to={"#"} >Dresses</Link>
+                            <Link to={"#"} >Playsuit & Jumpsuit </Link>
+                            <Link to={"#"} >Dress Shirts</Link>
+                            <Link to={"#"} >Polos</Link>
+                            <Link to={"#"} >Tshirts & Vests</Link>
+                            <Link to={"#"} >Dress ShirtsBags & accessories</Link>
+                            <Link to={"#"} >Swimwear</Link>
+                            <Link to={"#"} >Tshirts & VestsLingeries & Nightwear</Link>
+
+                        </div>
+                    </div>
+
+                    <div className="wholesale-dropdown-content">
+                    
+
+
+
+                    <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                        {/* continuation from above sub menu */}
+                        <Link to={"#"} >Hospitality</Link>
+                        <Link to={"#"} >School Uniforms</Link>
+                        <Link to={"#"} >Industrial wear</Link>
+                        <Link to={"#"} >Security uniforms</Link>
+                        <Link to={"#"} >Sewing accessories</Link>
+                        <Link to={"#"} >Fabrics</Link>
+                            
+                            <h5 style={{ }}>SHOP BY OCCASSION</h5>
+
+                        <Link to={"#"} >Wedding</Link>
+                        <Link to={"#"} >Workwear</Link>
+                        <Link to={"#"} >Prom</Link>
+                        
+                        
+                    </div>
+
+                    </div>
+
+                    <div className="wholesale-dropdown-content">
+                    <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                            <h5 style={{ }}>SHOP BY CATEGORY</h5>
+                    
+                        <Link to={"#"} >Petite</Link>
+                        <Link to={"#"} >Curves</Link>
+                        <Link to={"#"} >Maternity</Link>
+                        <Link to={"#"} >Tall </Link>
+                        <Link to={"#"} >Muscle fit</Link>
+
+                        <Link to={"#"} >Shop by fit </Link>
+                        <Link to={"#"} >Petite</Link>
+                        
+                    </div>
+                    
+
+                    </div>
+
+                    <div className="wholesale-dropdown-content">
+                        <div style={{display:'flex', flexDirection:'column'}}>
+                      
+                            
+                            <h5 style={{ }}>SHOP BY BRAND</h5>
+                    
+                        <Link to={"#"} >Amami</Link>
+                        <Link to={"#"} >Ramazani</Link>
+                        <Link to={"#"} >MIK boutique </Link>
+                        <Link to={"#"} >Shop by brand </Link>
+                        <Link to={"#"} >Amami</Link>
+
+                        
+                        
+                    </div>
+                    </div>
+
+                     <div className="m2m-dropdown-content">
+                        <img width="100%" height="100%" src={little_banner} />
+                    </div>
+                </div>
+            
+            
+            </div>
+            <div className="brands"><a href="#">BRANDS </a>
+
+                 <div className="brands-dropdown dropdowns">
+                    <div className="brands-dropdown-content">
+                        <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                                <h5 style={{ }}>SHOP BY CLOTHING</h5>
+                        
+                            <Link to={"#"} >Men’s Blazers</Link>
+                            <Link to={"#"} >Men’s coats & jackets</Link>
+                            <Link to={"#"} >Men’s dress shirts</Link>
+                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
+                            <Link to={"#"} >Women’s dresses</Link>
+                            <Link to={"#"} >Women’s shirts & blouses</Link>
+                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
+                            {/* <Link to={"#"} ></Link> */}
+                        </div>
+                    </div>
+
+                    <div className="brands-dropdown-content">
+                    
+                    <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                            <h5 style={{ }}>SHOP BY EDIT</h5>
+                    
+                        <Link to={"#"} >Last Chance to Buy</Link>
+                        <Link to={"#"} >Men’s coats & jacketsBestsellers</Link>
+                        <Link to={"#"} >Multi Packs</Link>
+                        <Link to={"#"} >Multi-buy deals </Link>
+                        <Link to={"#"} >Holiday Shop</Link>
+                        
+                    </div>
+
+                    </div>
+
+                   
+
+                    <div className="brands-dropdown-content">
+                        <img width="100%" height="100%" src={little_banner} />
+                    </div>
+                </div>
+            </div>
+            <div className="sale" ><a href="#">SALES </a>
+            <div className="sales-dropdown dropdowns">
+                    <div className="sales-dropdown-content">
+                        <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                                <h5 style={{ }}>SHOP BY CLOTHING</h5>
+                        
+                            <Link to={"#"} >Men’s Blazers</Link>
+                            <Link to={"#"} >Men’s coats & jackets</Link>
+                            <Link to={"#"} >Men’s dress shirts</Link>
+                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
+                            <Link to={"#"} >Women’s dresses</Link>
+                            <Link to={"#"} >Women’s shirts & blouses</Link>
+                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
+                            {/* <Link to={"#"} ></Link> */}
+                        </div>
+                    </div>
+
+                    <div className="sales-dropdown-content">
+                    
+                    <div style={{display:'flex', flexDirection:'column'}}>
+                            
+                            
+                            <h5 style={{ }}>SHOP BY EDIT</h5>
+                    
+                        <Link to={"#"} >Last Chance to Buy</Link>
+                        <Link to={"#"} >Men’s coats & jacketsBestsellers</Link>
+                        <Link to={"#"} >Multi Packs</Link>
+                        <Link to={"#"} >Multi-buy deals </Link>
+                        <Link to={"#"} >Holiday Shop</Link>
+                        
+                    </div>
+
+                    </div>
+
+                   
+
+                    <div className="sales-dropdown-content">
+                        <img src={little_banner} />
+                    </div>
+                </div>
+            </div>
+            <div><Link to={'/dev/blog'}>STYLE</Link></div>
+
+              <div><Link to={'/dev/blog'}>FABRIC</Link></div>
             
             
 

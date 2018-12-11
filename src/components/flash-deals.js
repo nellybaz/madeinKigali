@@ -7,20 +7,23 @@ import {Link} from 'react-router-dom';
 
 
 import {
-  BrowserView,
-  MobileView,
+  
   isBrowser,
   isMobileOnly,
   isTablet
 } from "react-device-detect";
 
 
-
-
 class FlashDeals extends Component {
 
   componentDidMount () {
-    
+    if(this.props.isBlog){
+        this.setState({
+          flash_deals_class: "flash-deals-item-blog",
+          flash_deals_outer: "outer-for-blog",
+
+        })
+    }
   }
   
 
@@ -28,11 +31,10 @@ class FlashDeals extends Component {
       super(props)
       this.state = {
        count: 0,
-       
+       flash_deals_class: "flash-deals-item",
+       flash_deals_outer: "",
        flasDealsSlideEnd: false,
-       
-
-        
+      
       }
     }
 
@@ -84,11 +86,13 @@ class FlashDeals extends Component {
   render() {
     
     return (
-      <div className="FlashDeals">
-      
+      <div className={`FlashDeals ${this.state.flash_deals_outer}`}>
+        {
+          !this.props.isBlog &&
         <button className="btn btn-next-prev btn btn-next-prev-left" onClick={()=>this.changeCount(-1)}>
         <img className="img-next-prev" src={prevArrow}/>
         </button>
+        }
       
       
 
@@ -102,21 +106,40 @@ class FlashDeals extends Component {
             if(isBrowser || isTablet){
               limit = 5;
             }
-            if(isMobileOnly){
+            if(isMobileOnly || this.props.isBlog){
               limit = 6;
             }
             
             
             if((index >= this.state.count && index < this.state.count+limit) && 11 - this.state.count > 3){
             return(
-            <div className={'flash-deals-item'} key={item.id}>
+
+              // changing class name with states if its for blog display or not
+            <div className={`${this.state.flash_deals_class}`} key={item.id}>
             <div className="flashdeals-img-div">
+              {/* rendering image if blog */}
+              {
+                this.props.isBlog && 
+                <Link to={`/dev/blog/post/${item.link}`} ><img className="flashdeals-img" src={item.img}/></Link>
+              }
+              {
+                !this.props.isBlog && 
               <Link to={`/dev/product/${item.brand}/${item.id}`} ><img className="flashdeals-img" src={item.img}/></Link>
-            </div>
+              }
+              </div>
             <div className="flashdeals-text">
-              <p className="f-brands">{item.brand}</p>
+              {!this.props.isBlog && <div>
+
+                <p className="f-brands">{item.brand}</p>
               <p className="f-name">Red Leather Bag</p>
               <p className="f-price">$120</p>
+              </div>}
+
+              {
+                this.props.isBlog && <div>
+                  <p className="flashdeals-blog-description">Introducing wedding style trending gowns, cool and colorful</p>
+                </div>
+              }
             </div>
         </div>
             )
@@ -126,12 +149,15 @@ class FlashDeals extends Component {
          
         )
       }
-       {/* <p>Index is  {this.state.count}</p> */}
 
        
-        <button className="btn btn-next-prev" onClick={()=>this.changeCount(1)}>
+        {
+          !this.props.isBlog &&
+          <button className="btn btn-next-prev" onClick={()=>this.changeCount(1)}>
           <img className="img-next-prev" src={nextArrow}/>
-        </button>
+          </button>
+          
+        }
       </div>
     );
   }

@@ -28,6 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #FAFAFA;
 
 
 }
@@ -45,7 +46,7 @@
 }
 
 .footer-first-text-div p{
-    font-size: 12px;
+    font-size: 0.8rem;
     padding-top:15px;
 }
 .footer-signup-div-inner {
@@ -59,7 +60,7 @@
 }
 
 .btn-sigup-newsletter{
-    background-color: #191943;
+    background-color: #191843;
     color: #fff;
     border-radius: 0;
     width: 120px;
@@ -68,9 +69,10 @@
 .footer-second-div{
     height:50px;
     display: flex;
-    justify-content: center;
+
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #191943;
+    background-color: #191843;
 
 }
 
@@ -84,35 +86,30 @@
 }
 
 
-.footer-second-div > div{
-    /* margin: 20px 10% 20px 20px;
-    padding-top:10px; */
-    /* margin-right: 60px !important; */
-    
 
-}
-
-.text-icon-footer{
-    /* border: 1px solid rebeccapurple; */
-    width:25%;
-    margin-left:20px;
-    
-}
 
 .text-icon-footer p{
-    text-align: center
+    text-align: center;
+    padding-top:10px;
+    font-size: 0.8rem;
 }
 
 .footer-second-div div p{
-    color: #fff;
+    color: #73705B;
 }
 
 .footer-third-div{
+    height:50px;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
+
+.social-media-div img{
+    width:16px;
+    padding-top:15px;
+}
 
 .footer-third-div > .social-media-div{
     padding-right: 25px;
@@ -127,33 +124,29 @@
 
 .btn-open-footer{
     background-color: transparent;
-    font-size: 2.5rem;
-    color: #fff;
-    position: relative;
-    bottom: 8px;
+    font-size: 1.4rem;
+    color: #73705B;
+    
 }
 
 .footer-expand{
-    height: 400px;
-    background: black;
+    height: 300px;
+    background: #F5F5F5;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    
 }
 
+
 .expand-item{
-    width: 25%;
-    /* background: gray; */
-    height: 100%;
-    /* border: 1px solid red; */
-    margin:0 20px ;
+   
+    position: relative;
+    right:4%;
 }
 
 .expand-item *{
-    position: relative;
-    left: 80px;
-    text-align: right;
-    color: white;
+    font-size: 0.8rem;
+     color: rgb(48, 47, 47);
 }
 
 .text-icon-footer button:focus{

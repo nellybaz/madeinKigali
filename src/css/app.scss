@@ -1,0 +1,24 @@
+
+
+$colors: (
+    primary: #191843,
+    primary-light: lighten(#191843, 50%),
+    accent: #9A0022,
+    gray: #CCCCCC,
+    );
+
+$fonts:(
+    p_fonts: 0.8rem,
+    title_fonts: 1.4rem,
+
+);
+
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+};
+
+
+@function font($font_size){
+    @return map-get($fonts, $font_size )
+}
