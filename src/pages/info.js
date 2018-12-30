@@ -51,17 +51,12 @@ class Info extends Component {
    
   render() {
     return (
-      <div className="Info">
+      <div className="Info" style={{background:'white'}}>
         <Header/>
 
         <div className="info-outer">
         <div className="info-titles">
           
-           
-
-            {/* <div className={`${this.state.faq_active}`}>
-                <h1><a href={'/dev/help'}>Fabric FAQs</a></h1>
-            </div> */}
 
             <div className={``}>
                 <h1><a href={'#'}>Points of Sale</a></h1>

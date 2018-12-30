@@ -105,6 +105,10 @@
     margin: 10px;
 }
 
+details summary::-webkit-details-marker {
+    display:none;
+  }
+
 
 .product-select-img-div{
     width: 100%;

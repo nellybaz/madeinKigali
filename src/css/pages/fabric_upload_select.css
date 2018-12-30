@@ -1,0 +1,92 @@
+.fabric_upload_select {
+  width: 100%;
+}
+
+.fabric_upload_select-wrapper {
+  width: 89%;
+  margin: 30px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+  grid-gap: 10px;
+}
+
+.fabric_upload_select-wrapper .fabric_select-right {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 3fr;
+      grid-template-columns: 5fr 3fr;
+  grid-gap: 20px;
+}
+
+.fabric_upload_select-wrapper .fabric-select-left {
+  width: 80%;
+  padding: 0% 6% 6% 6%;
+  border: 1px solid #F7F7F7;
+}
+
+.fabric-meter-wrapper {
+  border: 1px solid #F7F7F7;
+}
+
+.fabric-meter-wrapper .meter-hor ul {
+  border-bottom: 1px solid gainsboro;
+}
+
+.fabric-meter-wrapper .meter-hor ul li {
+  list-style: none;
+  display: inline-block;
+  width: 10%;
+  font-size: 0.6rem;
+}
+
+.fabric-meter-wrapper .meter-vert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fabric-meter-wrapper .meter-vert ul {
+  border-right: 1px solid gainsboro;
+  width: 10%;
+  position: relative;
+  bottom: 38px;
+}
+
+.fabric-meter-wrapper .meter-vert ul li {
+  height: 52px;
+  list-style: none;
+  font-size: 0.6rem;
+}
+
+.image-metered {
+  width: 85%;
+  height: 450px;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #F7F7F7;
+  position: relative;
+  bottom: 3.5%;
+  right: 0.5%;
+}
+
+.fabric_design_switch-div {
+  width: 100%;
+}
+
+.fabric_design_switch-div button {
+  padding: 0;
+  border: 0;
+  margin-right: 5px;
+}
+
+.fab_right_section {
+  width: 99%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=fabric_upload_select.css.map */

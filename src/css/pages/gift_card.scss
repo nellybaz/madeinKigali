@@ -1,0 +1,130 @@
+.GiftCard{
+    width:100%;
+    height: 100%;
+
+}
+
+$black-lightened: lighten(#000, 20%);
+
+.gift-card-wrapper{
+    width:80%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .gift-img-gif{
+        width:100%;
+    }
+
+    *{
+        box-sizing: border-box;
+        margin: 0 auto;
+        color:$black-lightened;
+    }
+    
+}
+
+.gift-p1{
+    width: 30%;
+    text-align: center;
+}
+
+.gift-title{
+    font-size: 2rem;
+}
+
+.gift-card-wrapper-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    
+    .gift-left{
+        position: relative;
+        left: 4%;
+    }
+
+    .gift-right{
+        position: relative;
+        right: 4%;
+    }
+
+    .gift-card-wrapper-inner-div{
+        height:auto;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        // border: 1px solid red;
+
+        .gift-card-wrapper-inner-div-p{
+            text-align: center;
+            width:60%;
+        }
+    }
+}
+
+.gift-upper-writings{
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.img-split-gift-div{
+    width:100%;
+    position: relative;
+    bottom: 100px;
+}
+
+.img-split-gift{
+    width:100%;
+}
+
+.gift-card-wrapper-inner-2{
+    position: relative;
+    bottom: 200px;
+    z-index:0;
+
+    
+    
+}
+.gift-has-card-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: lighten(gray, 45%);
+    padding: 30px;
+    margin: -50px 0 50px 0;
+}
+
+.gift-card-wrapper-inner-div-btn{
+    width: 60%;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.gift-has-card-div-btn{
+    width: 30%;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.gift-has-card-div-p{
+    width:35%;
+    text-align: center;
+    margin: 15px 0;
+}

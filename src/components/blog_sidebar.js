@@ -31,6 +31,7 @@ class BlogSidebar extends Component {
 
   render() {
     return (
+        
       <div className="BlogSidebar">
 
         <div className="subscribe-div">

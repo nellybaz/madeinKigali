@@ -8,8 +8,10 @@
     "google-map-react": "^1.1.0",
     "react": "^16.5.2",
     "react-addons-css-transition-group": "^15.6.2",
+    "react-count-to": "^0.12.0",
     "react-countdown-now": "^1.3.0",
     "react-device-detect": "^1.6.1",
+    "react-document-meta": "^3.0.0-beta.2",
     "react-dom": "^16.5.2",
     "react-facebook": "^6.0.15",
     "react-instafeed": "^0.4.0",
@@ -18,7 +20,8 @@
     "react-router-scroll-4": "^1.0.0-beta.2",
     "react-scripts": "2.0.5",
     "react-twitter-widgets": "^1.7.1",
-    "superagent": "^4.0.0-beta.5"
+    "superagent": "^4.0.0",
+    "universal-cookie": "^3.0.7"
   },
   "scripts": {
     "start": "react-scripts start",

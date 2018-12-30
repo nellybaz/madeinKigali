@@ -33,7 +33,7 @@ class Contact extends Component {
    
 
     return (
-      <div className="Contact">
+      <div className="Contact" style={{background:'white'}}>
         <Header />
         
         <div className="contact-outer">

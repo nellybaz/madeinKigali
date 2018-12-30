@@ -1,0 +1,36 @@
+.CombineWith{
+    width:100%;
+    height:100%;
+
+    h5{
+        text-align: center;
+    }
+
+
+    .combine-with-outer-div{
+        width:100%;
+        // border: 1px solid red;
+        height:100%;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        
+        grid-gap: 0;
+
+
+        .inner{
+            width:100%;
+            height: 250px;
+            img{
+                width:100%;
+                height:100%;
+                object-fit: contain;
+            }
+
+            p{
+                text-align: center;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

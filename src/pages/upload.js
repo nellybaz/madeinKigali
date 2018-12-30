@@ -1,49 +1,75 @@
-import React, { Component } from 'react';
-import '../css/home.css';
+import React, {Component} from 'react';
+import request from 'superagent';
+
+class Upload extends Component{
+
+  async login(x) {  
+    try {
 
 
+        let currentComponent = this;
 
-class Upload extends Component {
-
-    constructor(self){
-      super(self)
-    }
-  
-  uploadChange=(e)=>{
-    //   console.log(e.target.files)
-
-    let val = ''
-    let files = e.target.files;
-    let reader = new FileReader();
-    reader.readAsDataURL(files[0]);
-
-
-    reader.onload=(e)=>{
-      val = e.target.result;
-        console.log(e.target.result);
-        
-    }
-
-    return val
-}
-  
-  render() {
-    
-    return (
-      <div className="Upload">
+    request
+      .post('https://www.madeinkigali.com/upload/')
+      .send(x)
+      .end(function(err, res){
      
-            <input type="file" name="picture" onChange={(e)=> this.uploadChange(e)}/>
-
-            {/* {this.uploadChange()} */}
-
-
+      if(res != null){
+        if(res.body.res === 1)
+        {
+          
+            console.log('uploaded');
             
-            <iframe src="//iframe.dacast.com/b/119308/c/485898" width="400" height="431" frameborder="0" scrolling="no" allow="autoplay" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>            
+        }
+
+        else if(res.body.res === 0)
+        {
+            console.log('not registered');
+            
+        }
+         
+      }
+      else{
+        console.log(res, err);
         
-            
-      </div>
-    );
-  }
+      }
+    
+      });
+    
+    
+    } catch(e) {
+      console.log(e);
+    }
 }
 
+
+  handleselectedFile = (event) => {
+    const data = new FormData();
+    data.append('submit', 'mail.com');
+    data.append('fileToUpload', event.target.files[0]);    
+
+    this.login(data)
+
+    // var request = new XMLHttpRequest();
+    // request.open("POST", "https://www.madeinkigali.com/upload/");
+    // request.send(data);
+    
+  }
+
+  render(){
+    return(
+      <div className='Upload' style={{background:'white'}}>
+      <h4>UPLOAD IMAGES</h4>
+      
+
+
+      <div className="pp">
+        <input type="file" name="" id="" onChange={this.handleselectedFile} />
+        <button onClick={this.handleUpload}>Upload</button>
+       
+      </div>
+      </div>
+    )
+    }
+  }
 export default Upload;

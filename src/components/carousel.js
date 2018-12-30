@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../css/main.css'; 
 
 
+
 class Slider extends Component {
   render() {
     return (

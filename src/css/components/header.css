@@ -1,12 +1,12 @@
 header {
-  background: #191843;
+  background: white;
   width: 100%;
 }
 
 .Header-one {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 91%;
+  width: 86%;
   padding: 0 1%;
   margin: 0 auto;
   height: 80px;
@@ -76,5 +76,63 @@ header {
 .Header-one .right-icons a {
   position: relative;
   bottom: 6px;
+}
+
+.logo-div-nav {
+  width: 140px;
+  height: 60px !important;
+}
+
+.logo-div-nav img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.topbar-nav {
+  width: 100%;
+  padding: 5px 5%;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid #cdcdcd;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7fr 2fr;
+      grid-template-columns: 7fr 2fr;
+  grid-gap: 0;
+}
+
+.topbar-nav .topbar-nav-left p {
+  position: relative;
+  top: 15px;
+  color: #4d4d4d;
+}
+
+.topbar-nav .topbar-nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.topbar-nav .topbar-nav-right input, .topbar-nav .topbar-nav-right a {
+  padding: 5px;
+}
+
+.topbar-nav .topbar-nav-right input {
+  width: 60px;
+  border: 0;
+  color: #4d4d4d;
 }
 /*# sourceMappingURL=header.css.map */

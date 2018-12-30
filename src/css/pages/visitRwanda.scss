@@ -1,0 +1,187 @@
+$gray_light: lighten(gray, 30%);
+$left : 0;
+@media only screen and(max-width: 745px){
+    .slideshow-content{
+        height: 200px !important;
+        div{
+            width: 300px !important;
+            
+        }
+    }
+}
+
+.visitRwanda{
+    
+    width: 100%;
+
+    .big-title{
+        text-align: center;
+        font-size: 2rem;
+        margin: 50px 0;
+        color: $gray_light;
+        font-weight: bold;
+        
+    }
+
+}
+
+.visitRwana-wrapper{
+    width:85%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    
+    
+    justify-content: center;
+
+
+    *{
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+   
+
+    .visitRwana-wrapper-img{
+        width:100%;
+    }
+
+}
+
+.shop-all{
+    background: transparent;
+    padding: 10px 0;
+    width: 30%;
+    margin: 0 auto;
+    border:2px solid $gray_light;
+    cursor: pointer;
+  
+  
+}
+
+.btn-div{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.slideshow-wrapper{
+    width: 100%;
+    margin-top: 50px;
+    height: 10%;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    align-items: center;
+    // grid-gap: 3px;
+
+
+    button:focus{
+        outline: none;
+    }
+
+    .slideshow-wrapper-div{
+        border: 1px solid white;
+
+
+        
+    }
+
+
+    .slideshow-content-wrapper{
+        width:100%;
+        height: 100%;
+        overflow: hidden;
+
+
+        .slideshow-content{
+            width:500%;
+            height: 150px;
+            overflow: hidden;
+            position: relative;
+            clear: both;
+            left: -500px;
+
+            -webkit-transition: left 1s;
+            -moz-transition: left 1s;
+            -o-transition: left 1s;
+            transition: left 1s;
+
+
+            div{
+                float: left;
+                width:355px;
+                height:100%;
+                // display: grid;
+                // grid-template-columns: 1fr 1fr;
+                // grid-gap: 5px;
+
+
+                .slide-content-img-div{
+                    width:100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img{
+                        width:50%;
+                        height:100%;
+                    }
+                }
+
+                .slide-content-other-div{
+                    display: flex;
+                    // align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    *{
+                        padding: 5px;
+                    }
+
+
+                    a:hover{
+                        color: black;
+                    }
+
+                    button{
+                        background: transparent;
+                        border: 1px solid $gray_light;
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+
+    
+}
+
+.slide-next, .slide-previous{
+   
+    cursor: pointer;
+    background: transparent;
+    border:0;
+    // padding: 6px;
+    // width: 40px;
+}
+
+
+.img-title-div{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 30px 0 10px 0;
+}
+
+.btn-vr{
+    background: transparent;
+    color:black;
+    font-size: 1rem;
+    border:0;
+    width:100%;
+    cursor: pointer;
+}

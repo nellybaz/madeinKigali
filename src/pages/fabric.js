@@ -4,7 +4,7 @@ import React, {Component} from "react";
 class Fabric extends Component{
     render(){
         return(
-            <div>
+            <div style={{background:'white'}}>
 
                 <table width="100%" >
                     <tr style={{borderBottom: '1px solid #000'}}>

@@ -78,7 +78,7 @@ class Fabric_Single extends Component {
   render() {
 
     return (
-        <div>
+        <div style={{background:'white'}}>
             {/* EXTENDING PRODUCT PAGE */}
 
             <Header/>
@@ -187,10 +187,10 @@ class Fabric_Single extends Component {
                     </div>
                    
                     
-                    <div className="product-section-item div3">
+                    <div className="product-section-item div3 div3-fabric">
                         <div className="price-section-div">
-                            <h1>$139.99</h1>
-                            <h5 style={{textTransform:'uppercase'}}>Chickens of the world <br></br></h5>
+                            <h1 style={{fontSize:'2rem'}}>$139.99</h1>
+                            <h5 style={{textTransform:'uppercase', fontSize:'1rem'}}>Chickens of the world <br></br></h5>
                             
                         </div>
 
@@ -267,12 +267,12 @@ class Fabric_Single extends Component {
 
 
                         <div className="social-media-share">
-                        <a class="twitter-share-button"
+                        <a className="twitter-share-button"
                             href="https://twitter.com/intent/tweet">
                         Tweet</a>
 
 
-                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20" width="69" height="20" style={{border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20" width="69" height="20" style={{border:'none', overflow:'hidden'}} scrolling="no" frameBorder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                         </div>
                     </div>
                 </div>

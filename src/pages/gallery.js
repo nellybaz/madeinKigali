@@ -142,7 +142,7 @@ class Gallery extends Component{
 
     render(){
         return(
-            <div className="Gallery">
+            <div className="Gallery" style={{background:'white'}}>
                 <Header/>
              <div className="gallery-wrapper">
                 <div className="gallery-top-row">

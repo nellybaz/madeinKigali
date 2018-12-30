@@ -1,3 +1,37 @@
+@media only screen and (max-width:745px){
+    .fabric-sidebar{
+        display: none !important;
+    }
+
+    .fabric-wrapper{
+        grid-template-columns: 1fr !important;
+    }
+    
+    .fabric-cat-one-div-inner{
+        grid-gap: 5px !important;
+    }
+
+    .fabric-cat-one-div-inner div{
+        height:80px !important
+    }
+
+    .fabric-cat-two-div-inner-2{
+        grid-gap: 5px !important;
+    }
+
+    .fabric-cat-two-div-inner-2 div{
+        height:80px !important;
+    }
+
+    .fabric-content{
+        border:0 !important;
+    }
+
+    .fabric_image_jumbo{
+        height:200px !important;
+    }
+}
+
 .Fabric_home{
     width:100%;
     
@@ -69,7 +103,7 @@
 }
 .fabric-cat-two-div-inner-2 div{
     height: 150px;
-    background: red;
+    
 }
 
 .fabric-cat-two-div-inner-2-img-div{
@@ -97,16 +131,16 @@
 }
 
 .fabric-content-h4{
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .fabric-content-p{
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .fabric-cat-one-div-inner-p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     text-transform: capitalize;
@@ -114,7 +148,7 @@
 
 .fabric-cat-two-div-inner-1-h4{
     font-weight: bold;
-    font-size: 1.6rem !important;
+    font-size: 1.1rem !important;
     margin-bottom: 20px;
     
 }
@@ -123,7 +157,7 @@
 
 .fabric-cat-two-div-inner-2-wrapper-p{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .fabric-cat-three-div-h4-div{
@@ -133,19 +167,20 @@
 }
 
 .fabric-cat-three-div-h4{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #282325;
     font-weight: bold;
 }
 
 .fabric-cat-three-div-p{
-    font-size: 1.4rem;
+    font-size: 1rem;
     
 }
 
+
 .fabric-cat-three-div button{
     padding: 10px;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding-right: 35px;
     padding-left: 35px;
     border-radius: 4px;
@@ -161,12 +196,12 @@
 
 .fabric-sidebar summary{
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding:10px;
     border-bottom: 2px solid rgb(235, 230, 230);
 }
 
 .fabric-sidebar p{
     padding-left: 10px;
-    font-size: 1.2rem
+    font-size: 0.8rem
 }

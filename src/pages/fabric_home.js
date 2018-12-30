@@ -63,7 +63,7 @@ class Fabric extends Component{
 
     render(){
         return(
-            <div className="Fabric_home">
+            <div className="Fabric_home" style={{background:'white'}}>
             <Header />
             <div className="fabric_image_jumbo">
                 <img src={fabric_jumbo} />
@@ -131,7 +131,6 @@ class Fabric extends Component{
                         </details>
                     </div>
 
-
                     {/* content */}
                     <div className="fabric-content">
 
@@ -143,7 +142,7 @@ class Fabric extends Component{
                         <div className="fabric-cat-one-div">
                             <div className="fabric-cat-one-div-inner">
                                 <div>
-                                <Link to={'/dev/fabric_single'} >
+                                <Link to={'/dev/fabric_search'} >
                                     <div className="fabric-cat-one-div-inner-img-div">
                                             <img src={fabric1} />
                                         </div>
@@ -153,7 +152,7 @@ class Fabric extends Component{
                                 </div>
                                   
                                 <div>
-                                    <Link to={'/dev/fabric_single'} >
+                                    <Link to={'/dev/fabric_search'} >
                                     <div className="fabric-cat-one-div-inner-img-div">
                                             <img src={fabric2} />
                                         </div>
@@ -162,7 +161,7 @@ class Fabric extends Component{
                                     </Link>
                                 </div>
                                  <div>
-                                 <Link to={'/dev/fabric_single'} >
+                                 <Link to={'/dev/fabric_search'} >
                                     <div className="fabric-cat-one-div-inner-img-div">
                                             <img src={fabric3} />
                                         </div>

@@ -3,7 +3,7 @@
         width: 100% !important;
     }
 
-    .SearchSidebar, .sidebar-fixed{
+    .SearchSidebar, .sidebar-fixed, .search-sidebar{
         display: none !important;
     }
 
@@ -12,7 +12,6 @@
         width: 100% !important;
         
     }
-
     
 }
 
@@ -102,9 +101,6 @@
 
 
 
-
-
-
 /* sidebar */
 
 .SearchSidebar{
@@ -172,8 +168,13 @@
     border-right: 0.5px solid white;
     border-bottom: 0.5px solid white;
     text-align: center;
-    background: #3d3d3d;
-    color:white;
+    background: rgb(243, 243, 243);
+    color:rgb(102, 101, 101);
+}
+
+.search-top-nav-active{
+    background: rgb(139, 138, 138) !important;
+    color:rgb(240, 238, 238) !important;
 }
 
 
@@ -219,6 +220,7 @@
     background: rebeccapurple;
 }
 
+
 .color-change-image div:nth-child(2){
   
     background: rgb(156, 26, 150);
@@ -234,9 +236,17 @@
     margin:5px;
 }
 
+
 .sidebar-small{
-    height:50% !important;
+    height:35% !important;
     position: fixed;
     top: 80px;
     width:18%;
+}
+.prd-search-likes{
+    border-radius: 50%;
+    font-size: 0.7rem;
+    background: rgb(156, 26, 150);
+    color: white;
+    padding:5px;
 }

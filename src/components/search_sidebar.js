@@ -75,7 +75,10 @@ class SearchSidebar extends Component {
 
 
         isBottom(el) {
-            return el.getBoundingClientRect().bottom <= window.innerHeight;
+            if(el != null){
+                return el.getBoundingClientRect().bottom <= window.innerHeight;      
+            }
+            
             }   
 
         trackScrolling = () => {

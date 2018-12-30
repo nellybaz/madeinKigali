@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,2BAA2B,CAAA;EAEvB,MAAM,EAAC,KACX;CAAC",
+    "sources": [
+        "fabric_display.scss"
+    ],
+    "names": [],
+    "file": "fabric_display.css"
+}

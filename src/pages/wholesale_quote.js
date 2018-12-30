@@ -5,7 +5,7 @@ import '../css/wholesale_quote.css';
 class WholeSaleQuote extends Component{
     render(){
         return(
-            <div className="WholeSaleQuote">
+            <div className="WholeSaleQuote" style={{background:'white'}}>
                 <Header />
                     <div className="quote-wrapper">
                         <div className="quote-left">
@@ -40,14 +40,14 @@ class WholeSaleQuote extends Component{
                                 <option>Please select category</option>
                             </select>
                                 <br></br>
-                            <textarea className="quote-textarea border-gray" rows="10"/>
+                            <textarea className="quote-textarea border-gray" rows="10" value="Dear Sir/Madam, I write to request..."/>
                             <div class="upload-btn-wrapper">
                                 <button class="btn-req-upload border-gray">Upload a file</button>
                                 <input type="file" name="myfile" />
                             </div>
                             <br></br>
 
-                            <details className="other-req">
+                            <details className="other-req" open>
                                 <summary style={{ color: 'rgb(75, 72, 72);'}}>
                                     <span style={{fontSize:'1.2rem',}}><b>Other Requirements</b></span>
                                     <br></br>

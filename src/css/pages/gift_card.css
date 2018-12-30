@@ -1,0 +1,163 @@
+.GiftCard {
+  width: 100%;
+  height: 100%;
+}
+
+.gift-card-wrapper {
+  width: 80%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.gift-card-wrapper .gift-img-gif {
+  width: 100%;
+}
+
+.gift-card-wrapper * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  color: #333333;
+}
+
+.gift-p1 {
+  width: 30%;
+  text-align: center;
+}
+
+.gift-title {
+  font-size: 2rem;
+}
+
+.gift-card-wrapper-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.gift-card-wrapper-inner .gift-left {
+  position: relative;
+  left: 4%;
+}
+
+.gift-card-wrapper-inner .gift-right {
+  position: relative;
+  right: 4%;
+}
+
+.gift-card-wrapper-inner .gift-card-wrapper-inner-div {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gift-card-wrapper-inner .gift-card-wrapper-inner-div .gift-card-wrapper-inner-div-p {
+  text-align: center;
+  width: 60%;
+}
+
+.gift-upper-writings {
+  width: 100%;
+  position: relative;
+  bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.img-split-gift-div {
+  width: 100%;
+  position: relative;
+  bottom: 100px;
+}
+
+.img-split-gift {
+  width: 100%;
+}
+
+.gift-card-wrapper-inner-2 {
+  position: relative;
+  bottom: 200px;
+  z-index: 0;
+}
+
+.gift-has-card-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #f3f3f3;
+  padding: 30px;
+  margin: -50px 0 50px 0;
+}
+
+.gift-card-wrapper-inner-div-btn {
+  width: 60%;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.gift-has-card-div-btn {
+  width: 30%;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.gift-has-card-div-p {
+  width: 35%;
+  text-align: center;
+  margin: 15px 0;
+}
+/*# sourceMappingURL=gift_card.css.map */

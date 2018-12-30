@@ -37,7 +37,7 @@ class M2M extends Component {
   
     
     return (
-      <div className="M2M">
+      <div className="M2M" style={{background:'white'}}>
         <Header/>
         
         <div className="m2m-outer">

@@ -1,0 +1,23 @@
+.notFound{
+    width:100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.not-text{
+    margin-top: -270px;
+    text-align: center;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.not-text span, .not-text a{
+    font-size: 1rem;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}

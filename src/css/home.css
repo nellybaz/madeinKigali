@@ -33,12 +33,6 @@
 }  
 
 @media only screen and (min-width: 745px) {
-    .flashdeals-div{
-        height: 400px !important;
-    }
-
-   
-
     .in-the-know{
         height:350px;
         
@@ -58,38 +52,34 @@
         height:230px;
     }
 
-    /* .trending-div-container{
-        height: 400px !important;
-    } */
 }
 
 
 
  @media only screen and (max-width: 745px){
      .right{
-        width: 100% !important;
-        border: 4px dashed pink;
-    }
-
-    .middle-nav{
-        width: 100% !important;
-        overflow-x: scroll;
-        justify-content: flex-start !important;
-        padding: 5px 0 !important;
-      
+        display: none;
     }
     
 
-    .middle-nav-item *
+    .middle-nav-item a
     {
-        font-size: 0.7rem !important;
-        
-
-
+        font-size: 0.6rem !important;
     }
     
-    
+    .middle-nav{
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 5px;
+        padding: 10px 5%;
+        justify-items: center;
+        
+    }
 
+   .flashdeals-div{
+       height:880px !important;
+   }
+    
     .instagram-section{
        grid-template-columns: 1fr !important;
        width: 100% !important;
@@ -104,13 +94,6 @@
    .popular-brands-holder{
        flex-wrap: wrap !important;
    }
-
-   /* *{
-       flex-wrap: wrap !important;
-   } */
-
-
-
 
    .fabric-small-box-item:nth-child(1){
        background: burlywood !important;
@@ -142,34 +125,70 @@
 
 
     .in-the-know{
-        margin-bottom: 30px !important;
+        height:700px !important;
     }
 
    .trending-div-container{
        overflow-x: scroll;
+       height:200px !important;
 
    }
 
 
    .madeinkigali-section{
        margin-bottom: 30px;
+       height:500px;
    }
 
    .madeinkigali-inner-div{
        grid-template-columns: repeat(3, 1fr) !important;
+       height:300px;
+       
    }
 
    .madeinkigali-inner-div img{
        width:100% !important;
+       height:90% !important;
        margin-bottom: 10px;
    }
 
    .left{
        display: none !important;
    }
+
+   .middleBanner{
+       background-size: 100% 100% !important;
+       height:300px !important;
+      
+       background-attachment: fixed;
+       
+   }
+
+   .fabric-inner-div-wrapper{
+        height:220px !important;
+        width:90% !important;
+        margin:15px auto !important; 
+
+   }
+
+   .fabric-inner-div-wrapper p{
+       font-size: 0.6rem !important;
+   }
+
+   .popular-brands-outer-div{
+       margin-bottom: 15px;
+   }
+
+   .brands-subitem-item{
+       display: none;
+   }
+
+   .insta-feed-grid-box{
+       display: none !important;
+   }
  }
 
-
+ /* END OF MOBILE VIEW */
 
 *{
     /* font-family: Verdana, Arial, Helvetica, sans-serif, Lato; */
@@ -178,42 +197,38 @@
     /* font-family: 'Source Sans Pro', sans-serif; */
     /* font-family: Arial,Helvetica Neue,Helvetica,sans-serif; */
     /* font-family: Baskerville, 'Baskerville Old Face'; */
-    font-family:  Helvetica, Arial, sans-serif
+    font-family:  Helvetica, Arial, sans-serif;
     /* font-family: 'Libre Baskerville', serif; */
-
-    
-
 }
 .middle-nav{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* padding:20px 5% 0px 5%; */
+    justify-items: center;
+    background: #F4F4F4;
+    height:80px;
     align-items: center;
-    justify-content: center;
-    background-color: #E9EDED;
-    padding: 20px 0;
-    width: 100%;
-
 }
-
-
 
 .middle-nav-item a{
     color: rgb(75, 72, 72);
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 0.8rem;
     text-decoration: none !important;
 }
 
 .middle-nav-item span {
     margin-right: 5px;
 }
-.middle-nav > .middle-nav-item{
+/* .middle-nav > .middle-nav-item{
     padding: 0 4%;
     font-size:0.8rem;
     width:20%;
-}
+} */
 
 .flashdeals-div{
-    height: 320px !important;
+    height: 320px;
 }
 .middleBanner{
     width: 90%;
@@ -284,7 +299,7 @@
 .insta-left-img{
     /* border: 1px solid gray; */
     width:100%;
-    height: 99%;
+    height: 88.6%;
     object-fit: cover;
     box-shadow: 15px 15px rgb(211, 206, 206);
     position: relative;
@@ -378,11 +393,13 @@
 
 .brands-subitem-item h3{
     text-align: center;
+    font-size: 1.3rem;
 }
 
 .brands-subitem-item p{
     color: gray;
     text-align: center;
+    font-size: 0.8rem;
 }
 
 .trending-div-container{
@@ -552,7 +569,7 @@
   }
 
   .fabric-inner-div-wrapper div p{
-      font-size: 1rem;
+      font-size: 0.8rem;
       text-align: center;
       padding:10px;
       font-weight: bold;
@@ -594,4 +611,60 @@
 
 .fabric-inner-div-wrapper a:hover{
     text-decoration: none;
+}
+
+.modal-wrapper-product{
+    padding:20px;
+    height: 400px;
+    width: 50%;
+    margin: 0 20%;
+    background: black;
+    background-image: url('../assets/images/fabric3.jpg');
+    position: fixed;
+    top: 90px;
+    left: 4%;
+    box-shadow: 2px 2px 8px 2px rgb(26, 25, 25);
+  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    
+
+}
+
+ .modal-wrapper-product label{
+    width:80% !important;
+    margin: 0 12%;
+    margin-bottom: 15px;
+}
+
+
+
+.modal-wrapper-product *{
+    color:white !important;
+}
+
+.modal-wrapper-product input{
+    width:100% !important;
+    color: black !important;
+}
+
+.close-shipping-div-home{
+    margin-top: 15px;
+}
+
+.btn-close-modal-home{
+    color:black !important;
+}
+.btn-close-modal-home:hover{
+    background: black;
+    color:white !important;
+}
+.show{
+    display: inline-block;
+}
+
+.popup-hide{
+    display: none !important;
 }

@@ -10,6 +10,8 @@ import prd1 from '../assets/images/model_view1.jpg';
 import prd9 from '../assets/images/product9.jpg';
 import ads from '../assets/images/search_ads.jpg';
 
+import like from '../assets/images/heart3.png';
+
 
 class Search extends Component {
 
@@ -46,7 +48,7 @@ searchDisplay =()=>{
         else{
             img = prd1;
             ads_class = '';
-            trending_details = <div className="search-trending-product-div">
+            trending_details = <div className="search-trending-product-div" title="Currently trending">
                 Trending Product
                 <img src={trending_icon} />
             </div>;
@@ -57,7 +59,7 @@ searchDisplay =()=>{
                 <Link to={'/dev/product/jean/2'} ><img className={ads_class} src={img} alt="mik" /> </Link>
                {
                    x != 4 &&
-                   <p><b>Check Velvet Wide Leg Trousers </b><br></br><span>$112.99</span></p>
+                   <p><b>Check Velvet Wide Leg Trousers </b><br></br><span>$112.99</span> <span style={{float:'right', marginRight:"20%", width:"16px", display:'flex', position:'relative', bottom:'370px', left:'10px'}} title="Likes"><img src={like} /><span className="prd-search-likes">112</span></span></p>
                }
 
                {
@@ -79,14 +81,14 @@ searchDisplay =()=>{
   render() {
     return (
        
-      <div className="Search">
+      <div className="Search" style={{background:'white'}}>
        <Header />
 
         <div className="search-inner-main">
         <div className="search-bar-top"></div>
         <div className="search-top-nav">
-            <div>
-                ncjkdnvkjbd
+            <div className='search-top-nav-active'>
+                All
             </div>
             <div>
                 ncjkdnvkjbd
@@ -135,8 +137,7 @@ searchDisplay =()=>{
                     {this.searchDisplay()}
                 </div>
             
-            </div>
-            
+            </div>            
             
             
         </div>

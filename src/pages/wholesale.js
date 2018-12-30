@@ -22,9 +22,8 @@ class Wholesale extends Component {
        
     // }
   render() {
-
     return (
-        <div>
+        <div style={{background:'white'}}>
          <Header/>
             <div className="product-top-info-bar">
                 <p>Free delivery and returns + info</p>

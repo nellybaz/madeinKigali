@@ -1,9 +1,10 @@
-import React, { Component } from 'react'; 
-import { BrowserRouter, Route,Switch, Link } from 'react-router-dom';
+import React, { lazy, Suspense, Component } from 'react'; 
+import { BrowserRouter as Router, Route,Switch, Link } from 'react-router-dom';
 import { ScrollContext } from 'react-router-scroll-4';
-import App from '../App.js'; 
+
+
+import App from '../App';
 import Product from '../pages/Product.js';
-import Header from '../components/header';
 import Upload from '../pages/upload';
 import Blog from '../pages/blog';
 import Post from '../pages/post';
@@ -17,24 +18,23 @@ import M2M from '../pages/m2m';
 import Gallery from '../pages/gallery';
 import WholesaleQuote from '../pages/wholesale_quote';
 import Fabric from '../pages/fabric_home';
+import Signin from '../pages/signin';
 import '../css/home.css';
 import Fabric_Single from '../pages/fabric_single.js';
+import Fabric_Display from '../pages/fabric_display';
+import Fabric_Upload from '../pages/fabric_upload';
+import Fabric_Upload_Select from '../pages/fabric_upload_select';
+import visitRwanda from '../pages/visitRwanda.js';
+import notFound from '../pages/404';
+import student_discount from '../pages/student_discount';
+import GiftCard from '../pages/gift_card.js';
+import Cart from '../pages/cart.js';
+import Delivery from '../pages/delivery_final.js';
 
-
-class Routing extends Component {
-
-    constructor(props){
-        super(props)
-
-       
-    }
-  render() {
-
-    return (
-        <div className="Router">
-                <BrowserRouter onUpdate={()=> window.scrollTo(0,0)}>
-                <ScrollContext>
+    const outer =()=> (
+                <Router onUpdate={()=> window.scrollTo(0,0)}>
                         <Switch>
+                            
                             <Route exact path={"/dev"} component={App}/>
                             <Route exact path={"/upload"} component={Upload}/>
                             <Route exact path={"/dev/blog"} component={Blog}/>
@@ -52,17 +52,21 @@ class Routing extends Component {
                             <Route exact path={"/dev/quote"} component={WholesaleQuote}/>
                             <Route exact path={"/dev/fabric"} component={Fabric}/>
                             <Route exact path={"/dev/fabric_single"} component={Fabric_Single}/>
-                        </Switch>
-                    </ScrollContext>
-            
-            
-
-                </BrowserRouter>
-        </div>
+                            <Route exact path={"/dev/fabric_search"} component={Fabric_Display}/>
+                            <Route exact path={"/dev/fabric/upload"} component={Fabric_Upload}/>
+                            <Route exact path={"/dev/fabric/upload/select/:fabric_id"} component={Fabric_Upload_Select}/>
+                            <Route exact path={"/dev/signin"} component={Signin}/>
+                            <Route exact path={"/dev/visit_rwanda"} component={visitRwanda}/>
+                            <Route exact path={"/dev/student_discount"} component={student_discount}/>
+                            <Route exact path={"/dev/gift_card"} component={GiftCard}/>
+                            <Route exact path={"/dev/cart"} component={Cart}/>
+                            <Route exact path={"/dev/delivery"} component={Delivery}/>
+                             <Route component={notFound}/>
+                        </Switch>            
+                </Router>
         
-       
-    );
-  }
-}
+        );
+        
+    
 
-export default Routing;
+export default outer;

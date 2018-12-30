@@ -2,11 +2,29 @@
     flex-wrap: wrap !important;
 }
 
+body{
+    background: white;
+}
+
 
 @media only screen and ( max-width: 745px){
-    .jumbo1, .jumbo2, .jumbo3 {
-        background-size: 200% 100% !important;
+    .Slider{
+        height:300px !important;
     }
+    .slide, .carousel-inner, .carousel-item{
+        height: 100%;
+    }
+
+    .jumbo1, .jumbo2, .jumbo3 {
+        background-size: 100% 100% !important;
+        height:100% !important;
+    }
+
+    .divider-name{
+        font-size: 1rem !important;
+    }
+
+    
 }
 
 .Slider{
@@ -15,7 +33,7 @@
 
 .jumbo3{
     height: 750px;
-    background: url('../assets/images/banner20.png');
+    background: url('../assets/images/new_background2.jpg');
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -26,7 +44,7 @@
 
 .jumbo1{
     height: 750px;
-    background: url('../assets/images/new_background2.jpg');
+    background: url('../assets/images/bg.jpg');
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -83,7 +101,7 @@
 
 }
 .horizontal-bar{
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
     width: 40%;
     height: 20px;
     flex:2px;
@@ -101,3 +119,4 @@
     margin-left: 5px;
     font-style: italic;
 }
+

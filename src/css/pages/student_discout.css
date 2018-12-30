@@ -1,0 +1,72 @@
+.student_discout-wrapper {
+  width: 100;
+}
+
+.student_discout {
+  width: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  background: url(../../assets/images/student_discount_landing_page.jpg);
+  height: 600px;
+}
+
+.student_discout .student_discout-inner-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  position: relative;
+  top: 25%;
+  left: 1%;
+}
+
+.student_discout .student_discout-inner-div .btn-stdnt {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #333333;
+  margin-bottom: 10px;
+  padding: 7px;
+  font-weight: bold;
+}
+
+.student_discout .student_discout-inner-div .btn-stdnt:hover {
+  background: black;
+  color: white;
+}
+
+.student_discout .student_discout-inner-div .btn-stdnt-a {
+  margin-top: 30px;
+}
+
+.student_discout .student_discout-inner-div .p1 {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.student_discout .student_discout-inner-div .p2 {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.student_discout .student_discout-inner-div .stdnt-link {
+  text-decoration: underline;
+}
+
+.student_discout * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  color: #333333;
+}
+/*# sourceMappingURL=student_discout.css.map */

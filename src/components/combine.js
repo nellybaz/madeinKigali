@@ -10,32 +10,29 @@ import c4 from '../assets/images/combine4.jpeg';
 
 
 
-
 class CombineWith extends Component {
+
+    combineWithDisplay =()=>{
+        const Holder = [];
+        for (let x = 0; x < 8; x++) {
+            Holder.push(
+                <div className='inner'>
+                    <img src={c1} />
+                    <p><span>$23.99</span><br></br>Product name</p>
+                </div>
+            );
+            
+        }
+        return Holder;
+    }
   render() {
     return (
       <div className="CombineWith">
         <h5>Combine it with...</h5>
         <div className="combine-with-outer-div"> 
-            <div className="combine-with-item-div">
-                <img alt="mik"className="combine-img" src={c1} />
-                <p>$230 <br/><span>Product Name</span></p>
-            </div>
 
-            <div className="combine-with-item-div">
-                <img alt="mik"className="combine-img" src={c2} />
-                <p>$230 <br/><span>Product Name</span></p>
-            </div>
-
-            <div className="combine-with-item-div">
-                <img alt="mik"className="combine-img" src={c3} />
-                <p>$230 <br/><span>Product Name</span></p>
-            </div>
-
-            <div className="combine-with-item-div">
-                <img alt="mik"className="combine-img" src={c4} />
-                <p>$230 <br/><span>Product Name</span></p>
-            </div>
+            {this.combineWithDisplay()}
+        
         </div>
 
 

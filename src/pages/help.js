@@ -32,7 +32,7 @@ class Help extends Component {
    
 
     return (
-      <div className="Help">
+      <div className="Help" style={{background:'white'}}>
         <Header />
 
         <div className="div-outer">

@@ -79,14 +79,14 @@ class Footer extends Component {
            <div className="text-icon-footer">
 
             {/* <img src={factory} alt="made in kigali"/>  */}
-            <p onClick={()=> this.toggleFooter()}>COMPANY</p>
+            <p onClick={()=> this.toggleFooter()}>DELIVERY & RETURNS</p>
             </div>
 
 
              <div className="text-icon-footer">
 
               {/* <img src={delivery} alt="made in kigali"/>  */}
-              <p onClick={()=> this.toggleFooter()}>DELIVERY & RETURNS</p>
+              <p onClick={()=> this.toggleFooter()}>CARDS & OFFERS</p>
               </div>
               
 
@@ -122,7 +122,7 @@ class Footer extends Component {
             </div>
 
             <div className="expand-item">
-            <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
+            <Link to={'/dev/company'}>Company</Link> <br></br>
               <Link to={'/dev/help'}>Help</Link><br></br>
               <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
               <Link to={'/dev/help'}>Help</Link><br></br>
@@ -138,18 +138,11 @@ class Footer extends Component {
             </div>
             <div className="expand-item">
               
-            <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
+            <Link to={'/dev/student_discount'}>Student Discount</Link> <br></br>
+              <Link to={'/dev/gift_card'}>Gift Cards</Link><br></br>
+              <Link to={'/dev/contact'}>MIK Cards</Link> <br></br>
+              
+             
 
             </div>
             
