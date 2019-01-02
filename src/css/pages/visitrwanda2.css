@@ -1,0 +1,103 @@
+.VisitRwanda2 {
+  width: 100%;
+  background: white;
+}
+
+.VisitRwanda2 .btn-div {
+  position: relative;
+  bottom: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.VisitRwanda2 .btn-div a {
+  width: 20%;
+}
+
+.VisitRwanda2 .btn-div a button {
+  width: 100%;
+  padding: 10px 20px;
+  border: 2px solid black;
+  background: transparent;
+}
+
+.vr-wrapper {
+  width: 90%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.vr-wrapper * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.vr-wrapper .img-div {
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  margin-bottom: 30px;
+}
+
+.vr-wrapper .img-div p {
+  font-weight: bold;
+}
+
+.vr-wrapper .img-div p:nth-child(2) {
+  font-size: 0.8rem;
+}
+
+.vr-wrapper .img-div p:nth-child(3) {
+  font-size: 0.7rem;
+}
+
+.vr-wrapper .img-div:nth-child(5) {
+  bottom: 115px;
+}
+
+.vr-wrapper .img-div:nth-child(8), .vr-wrapper .img-div:nth-child(9), .vr-wrapper .img-div:nth-child(10) {
+  bottom: 115px;
+}
+
+.vr-wrapper .img-div:nth-child(12) {
+  bottom: 225px;
+}
+
+.vr-wrapper .img-div:nth-child(13), .vr-wrapper .img-div:nth-child(14) {
+  bottom: 115px;
+}
+
+.vr-wrapper .img-div:nth-child(15), .vr-wrapper .img-div:nth-child(16) {
+  bottom: 219px;
+}
+/*# sourceMappingURL=visitrwanda2.css.map */

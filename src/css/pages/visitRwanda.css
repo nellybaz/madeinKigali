@@ -39,15 +39,6 @@
   width: 100%;
 }
 
-.shop-all {
-  background: transparent;
-  padding: 10px 0;
-  width: 30%;
-  margin: 0 auto;
-  border: 2px solid #cdcdcd;
-  cursor: pointer;
-}
-
 .btn-div {
   width: 100%;
   display: -webkit-box;
@@ -62,6 +53,8 @@
 }
 
 .slideshow-wrapper {
+  position: relative;
+  bottom: 120px;
   width: 100%;
   margin-top: 50px;
   height: 10%;
@@ -128,6 +121,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -148,6 +144,7 @@
 .slideshow-wrapper .slideshow-content-wrapper .slideshow-content div .slide-content-other-div button {
   background: transparent;
   border: 1px solid #cdcdcd;
+  width: 80%;
 }
 
 .slide-next, .slide-previous {

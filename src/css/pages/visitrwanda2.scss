@@ -1,0 +1,96 @@
+.VisitRwanda2{
+    width:100%;
+    background: white;
+
+    .btn-div{
+        position: relative;
+        bottom: 200px;
+        width: 100%;
+        //border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        a{
+            width:20%;
+            //border: 1px solid red;
+
+            button{
+                width:100%;
+                padding: 10px 20px;
+                border:2px solid black;
+                background: transparent;
+            }
+        }
+    }
+    
+}
+
+.vr-wrapper{
+    width:90%;    
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 50px;
+  
+    
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    *{
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    
+
+
+    .img-div{
+        position: relative;
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;
+        margin-bottom: 30px;
+        
+
+        p{
+            font-weight: bold;
+
+            &:nth-child(2){
+                font-size: 0.8rem;
+            }
+            &:nth-child(3){
+                font-size: 0.7rem;
+            }
+        }
+
+        &:nth-child(5){
+            //border: 1px solid red;
+            bottom: 115px;
+        }
+
+
+        &:nth-child(8), &:nth-child(9), &:nth-child(10){
+            //border: 1px solid red;
+            bottom: 115px;
+        }
+
+        &:nth-child(12){
+            //border: 1px solid red;
+            bottom: 225px;
+        }
+
+        &:nth-child(13), &:nth-child(14){
+           // border: 1px solid red;
+            bottom: 115px;
+        }
+
+        &:nth-child(15), &:nth-child(16){
+           // border: 1px solid red;
+            bottom: 219px;
+        }
+    }
+}

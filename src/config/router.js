@@ -24,12 +24,13 @@ import Fabric_Single from '../pages/fabric_single.js';
 import Fabric_Display from '../pages/fabric_display';
 import Fabric_Upload from '../pages/fabric_upload';
 import Fabric_Upload_Select from '../pages/fabric_upload_select';
-import visitRwanda from '../pages/visitRwanda.js';
+import visitRwanda from '../pages/visitRwanda2';
 import notFound from '../pages/404';
 import student_discount from '../pages/student_discount';
 import GiftCard from '../pages/gift_card.js';
 import Cart from '../pages/cart.js';
 import Delivery from '../pages/delivery_final.js';
+import Company from '../pages/company';
 
     const outer =()=> (
                 <Router onUpdate={()=> window.scrollTo(0,0)}>
@@ -41,7 +42,7 @@ import Delivery from '../pages/delivery_final.js';
                             <Route exact path={"/dev/blog/post/:blog_id/:blog_name"} component={Post}/>
                             <Route exact path={"/dev/product/:slug/:number"} component={Product}/>
                             <Route exact path={"/dev/wholesale/:slug/:number"} component={Wholesale}/>
-                            <Route exact path={"/dev/search/:query/"} component={Search}/>
+                            <Route exact path={"/dev/search/:query/category/:category_no"} component={Search}/>
                             <Route exact path={"/dev/shop"} component={Search}/>
                             <Route exact path={"/dev/contact"} component={Contact}/>
                             <Route exact path={"/dev/help"} component={Help}/>
@@ -61,6 +62,7 @@ import Delivery from '../pages/delivery_final.js';
                             <Route exact path={"/dev/gift_card"} component={GiftCard}/>
                             <Route exact path={"/dev/cart"} component={Cart}/>
                             <Route exact path={"/dev/delivery"} component={Delivery}/>
+                            <Route exact path={"/dev/company"} component={Company}/>
                              <Route component={notFound}/>
                         </Switch>            
                 </Router>
