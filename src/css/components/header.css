@@ -126,6 +126,10 @@ header {
           flex-direction: row;
 }
 
+.topbar-nav .topbar-nav-right a {
+  margin-right: 15px;
+}
+
 .topbar-nav .topbar-nav-right input, .topbar-nav .topbar-nav-right a {
   padding: 5px;
 }

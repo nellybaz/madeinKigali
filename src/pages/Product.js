@@ -10,10 +10,13 @@ import Footer from '../components/footer'
 import heart from '../assets/images/heart.png';
 import star from '../assets/images/star.png';
 import bag from '../assets/images/model_view1.jpg';
+import bag2 from '../assets/images/cart2.jpg';
+// import bag3 from '../assets/images/model_view1.jpg';
+// import bag4 from '../assets/images/model_view1.jpg';
+// import bag5 from '../assets/images/model_view1.jpg';
 import envelope from '../assets/images/envelope.png';
 
 import shipping_example from "../assets/images/shipping.png";
-
 
 import {
     BrowserView,
@@ -32,13 +35,115 @@ class Product extends Component {
             fadein_top_animate_class: '',
             fadein_top_animate_class2: '',
             modal_opacity_big: '',
+            start_show: 1,
+            image_selected_active: 'img-select-active',
         }
     }
 
 
+   async componentDidMount() {
+        window.scrollTo(0,0);
 
-    componentDidMount() {
+        const img_div = this.refs.div2_inner;
+        let scrollPos  = img_div.scrollLeft;
 
+       setInterval( async ()=> {       
+        
+        if(img_div.scrollLeft < 140){
+            // img_div.scrollLeft == 0 || 
+            this.setState({
+                start_show: 1,
+            });
+        }
+
+
+        else if(img_div.scrollLeft > 850){
+            // img_div.scrollLeft == 0 || 
+            this.setState({
+                start_show: 4,
+            });
+        }
+
+        else if(img_div.scrollLeft > 540){
+            // img_div.scrollLeft == 0 || 
+            this.setState({
+                start_show: 3,
+            });
+        }
+
+        else if(img_div.scrollLeft >= 150){
+            this.setState({
+                start_show: 2,
+            });
+
+        }
+        
+    }, 10)
+    }
+
+
+    handleImageDisplayAndScroll = (which, start=this.state.start_show) =>{
+        const holder1 = [];
+        const holder2 = [];
+        let class_show = '';
+
+        for (let x = 1; x <= 5; x++) {
+
+            if(x == start || x - start ==1){
+                class_show = this.state.image_selected_active;
+            }
+            else{
+                class_show = "";
+            }
+            holder1.push(
+                <div className="product-select-img-div" onClick={()=> {
+
+                const img_div = this.refs.div2_inner;
+
+                switch (x) {
+                    case 1:
+                    img_div.scrollLeft = 140;
+                        break;
+                
+
+                        case 2:
+                        img_div.scrollLeft = 140;
+                            break;
+                    
+
+                            case 3:
+                    img_div.scrollLeft = 540;
+                        break;
+
+                        case 4:
+                    img_div.scrollLeft = 850;
+                        break;
+                
+
+                        case 5:
+                    img_div.scrollLeft = 850;
+                        break;
+                
+                
+                    default:
+                        break;
+                }
+                
+                               
+            }
+                
+                }>
+                    <img className={`product-select-img ${class_show}`} src={bag} />
+                </div>
+            );
+            
+        }
+
+
+        if(which == "small"){
+            return holder1
+        }
+        return holder2;
     }
 
 
@@ -102,53 +207,44 @@ class Product extends Component {
 
     }
 
+
+
     render() {
 
         return (
             <div style={{ background: 'white' }}>
                 <Header />
                 <div className="product-top-info-bar">
-                    <p>Free delivery and returns + info</p>
+                    <p style={{fontSize: '0.8rem'}}>Free delivery and returns + info</p>
                 </div>
                 <div className={`Product ${this.state.modal_opacity_big}`}>
 
 
 
                     <div className="product-beadcrum-div">
-                        <h5> NAXIST ITALIAN BAGS</h5>
-                        <p>Fashion / Women / jeans / joni_jeans</p>
-
+                        <div className='more'>
+                            <span>MORE PRODUCTS &nbsp; &nbsp;</span>
+                            <button><img src={require('../assets/images/back_black.png')} /></button>
+                            <button><img src={require('../assets/images/next_black.png')} /></button>
+                        </div>
+                        <h5 style={{ fontSize: '0.8rem' }}> NAXIST ITALIAN BAGS</h5>
+                        <p style={{ fontSize: '0.8rem' }}>Fashion / Women / jeans / joni_jeans</p>
                     </div>
 
                     <div className="product-section-container">
                         <div className="product-section-item div1">
-                            <div className="product-select-img-div">
-                                <img className="product-select-img img-select-active" src={bag} />
-                            </div>
-                            <div className="product-select-img-div">
-                                <img className="product-select-img img-select-active" src={bag} />
-                            </div>
-                            <div className="product-select-img-div">
-                                <img className="product-select-img" src={bag} />
-                            </div>
-                            <div className="product-select-img-div">
-                                <img className="product-select-img" src={bag} />
-                            </div>
-                            <div className="product-select-img-div">
-                                <img className="product-select-img" src={bag} />
-                            </div>
+                            {this.handleImageDisplayAndScroll('small')}
                         </div>
 
 
                         <div className="product-section-item div2">
-                            <div className="div2-inner ">
+                            <div ref="div2_inner" className="div2-inner ">
 
                                 <img className="product-img1" src={bag} />
+                                <img className="product-img1" src={bag2} />
                                 <img className="product-img1" src={bag} />
-                                <img className="product-img1" src={bag} />
-                                <img className="product-img1" src={bag} />
-
-
+                                <img className="product-img1" src={bag2} />
+                                <img className="product-img1" src={require('../assets/images/product1.jpeg')} />
                             </div>
 
                         </div>
@@ -256,21 +352,19 @@ class Product extends Component {
                         </div> */}
 
                             <div className="details">
-                                <details>
-                                    <summary className="btn btn-details">
-                                        <p>PRODUCT DETAILS <span>+</span></p>
-                                    </summary>
-                                    <p>Product Details Here</p>
-                                </details>
+                            <details className='summary-m2m'>
+                                <summary className="">
+                                    <p>PRODUCT DETAILS <span style={{textAlign:'right'}}>+</span></p>
+                                </summary>
+                                <p>Shipping Details Here</p>
+                            </details>
 
-
-
-                                <details>
-                                    <summary className="btn btn-details">
-                                        <p>DELIVERIES & RETURNS <span>+</span></p>
-                                    </summary>
-                                    <p>Delivery Details Here</p>
-                                </details>
+                             <details className='summary-m2m'>
+                                <summary className="">
+                                    <p>DELIVERIES & RETURNS<span style={{textAlign:'right'}}>+</span></p> 
+                                </summary>
+                                <p>Delivery Details Here</p>
+                            </details>
                             </div>
 
                             <div className="social-media-share">

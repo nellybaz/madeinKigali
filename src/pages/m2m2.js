@@ -11,8 +11,6 @@ import heart from '../assets/images/heart.png';
 import star from '../assets/images/star.png';
 import bag from '../assets/images/model_view1.jpg';
 
-
-
 import {
     BrowserView,
     MobileView,
@@ -27,10 +25,10 @@ class M2M extends Component {
 
        this.state={
             quantity_value: 0,
+            product_header_no: 1,
             product_details_class: '',
        }
     }
-
 
    componentDidMount(){
     
@@ -66,21 +64,86 @@ class M2M extends Component {
            }
         }
    }
+
+
+   shuffleProductDetailsHeader(x){
+        // if(){
+            //alert(x)
+            this.setState({
+                product_header_no: x
+            });
+        //}
+   }
+   productDetailsHeader=()=>{
+
+        const holder = [];
+
+        let class_name = "";
+        let title = "";
+        for (let x = 1; x <= 5; x++) {
+
+            switch (x) {
+                case 1:
+                    title = "Product Details";
+                    break;
+
+                case 2:
+                    title = "Browse designs"
+                    break;
+
+                case 3:
+                    title = "Sell your designs";
+                    break;
+
+                case 4:
+                    title = "Print Guideline";
+                    break;
+
+                case 5:
+                    title = "Delivery";
+                    break;
+
+                default:
+                    title = "";
+                    break;
+            }
+
+            if(this.state.product_header_no === x){
+                //alert(this.state.product_header_no);
+                class_name = "product-header-details-active"
+            }
+
+            else{
+                class_name =''
+            }
+            holder.push(
+                <div className={class_name} key={x} onClick={()=>this.shuffleProductDetailsHeader(x)}>
+                    {title}
+                </div>
+            )          
+        }
+        return holder;
+   }
   render() {
 
     return (
         <div style={{background:'white'}}>
             <Header/>
             <div className="product-top-info-bar">
-                <p>Free delivery and returns + info</p>
+                <p style={{fontSize: '0.8rem'}}>Free delivery and returns + info</p>
             </div>
             <div className="Product">
                
                 
 
                 <div className="product-beadcrum-div">
-                    <h5> NAXIST ITALIAN BAGS</h5>
-                    <p>Fashion / Women / jeans / joni_jeans</p>
+                <div className='more'>
+                            <span>MORE PRODUCTS &nbsp; &nbsp;</span>
+                            <button><img src={require('../assets/images/back_black.png')} /></button>
+                            <button><img src={require('../assets/images/next_black.png')} /></button>
+                        </div>
+                    <h5 style={{ fontSize: '0.8rem' }}> NAXIST ITALIAN BAGS</h5>
+                    <p style={{fontSize: '0.8rem'}}>Fashion / Women / jeans / joni_jeans</p>
                     
                 </div>
                 <div className="product-section-container">
@@ -100,13 +163,8 @@ class M2M extends Component {
                        
                     </div>
 
-                    <div className="product-section-item div2 div2-m2m">
-                            <div className="div2-inner ">
-                                
-                                <img className="product-img1" src={bag} />                                                 
-                        
-                                
-                            </div>
+                    <div className="product-section-item div2-m2m">
+                            <img src={bag} />             
 
                     </div>
                    
@@ -117,82 +175,36 @@ class M2M extends Component {
                             <h5> <b>NAXIST ITALIAN BAGS</b> <br></br></h5>
                             <p>Long Sleeves Afican Mens' Print</p>
                             <h1 style={{fontSize:'1.2rem'}}>$139.99</h1>
-                            {/* <div className="div-stars">
-                                <img className="wishlist" src={star} />
-                                <img className="wishlist" src={star} />
-                                <img className="wishlist" src={star} />
-                                <img className="wishlist" src={star} />
-                                <img className="wishlist" src={star} />
-
-                                <p style={{position:'relative', top: '6px'}}> &nbsp; [172 votes] | 121 Orders</p>
-                            </div> */}
                         </div>
 
                         
 
 
                         <div className="color-box-div-m2m">
-                            <p>CHOOSE FABRIC</p>
-                            <div>
-                                <img src={bag} />
-                                <img src={bag} />
-                                <img src={bag} />
-                                <img src={bag} />
-                                
+                            <p><b>CHOOSE FABRIC</b></p>
+                            <div className='color-box-div-m2m-inner'>
+                                <div title="Choose fabric">1</div>
 
-                                <p style={{fontSize:'0.8rem'}}>Please select fabric from above. If you don't find please click here to view more fabric</p>
-                                
+                                <div title="Choose fabric">2</div>
+
+                                <div title="Choose fabric">3</div>
+
+                                <div title="Choose fabric">4</div>                                
                             </div>
+                            <p style={{fontSize:'0.8rem'}}>Please select fabric from above. If you don't find please click here to view more fabric</p>
                         </div>
-                        {/* <div className="size-div">
-                            <p>SIZE</p>
-                            <select className="input-size form-control" placeholder="Choose Size">
-                                <option value="" disabled selected hidden>Choose Size</option>
-                                <option>34</option>
-                                <option>36</option>
-                                <option>40</option>
-                                <option>42</option>
-                                <option>44</option>
-                            </select>
-                        </div> */}
-
-                         {/* <div className="shipping-div">
-                            <p>SHIPPING</p>
-                           
-                        </div> */}
-
-                        {/* <div className="quantity-div">
-                            <p>QUANTITY</p>
-
-                            <div className="div-quantity-inner">
-                                <button onClick={()=>
-                                    this.handleQuantity(0)
-                                } className="btn-quantity">-</button>
-                                <input type="number" value={this.state.quantity_value}  />
-                                <button onClick={()=>
-                                   this.handleQuantity(1)
-                                } className="btn-quantity">+</button>
-
-
-                            </div>
-                           
-                        </div> */}
-
+                        
                         <div className="add-to-cart">
                             <button className="btn btn-add-to-cart">ADD TO CART</button>
                             <img className="wishlist" src={heart} />
                         </div>
 
-                        {/* <div className="availability">
-                        <button className="btn btn-availability">SEE AVAILABILITY IN STORE</button>
-                        </div> */}
-
                         <div className="details">
                        
                         
-                     <details>
-                                <summary className="btn btn-details">
-                                    <p>PRODUCT DETAILS</p> <span style={{textAlign:'right'}}>+</span>
+                     <details className='summary-m2m'>
+                                <summary className="">
+                                    <p>PRODUCT DETAILS <span style={{textAlign:'right'}}>+</span></p>
                                 </summary>
                                 
                                 <div className={`${this.state.product_details_class}`}>
@@ -349,16 +361,16 @@ class M2M extends Component {
 
 
                             </details>
-                            <details>
-                                <summary className="btn btn-details">
-                                    <p>SHIPPING DETAILS</p> <span style={{textAlign:'right'}}>+</span>
+                            <details className='summary-m2m'>
+                                <summary className="">
+                                    <p>SHIPPING DETAILS <span style={{textAlign:'right'}}>+</span></p>
                                 </summary>
                                 <p>Shipping Details Here</p>
                             </details>
 
-                             <details>
-                                <summary className="btn btn-details">
-                                    <p>DELIVERIES & RETURNS</p> <span style={{textAlign:'right'}}>+</span>
+                             <details className='summary-m2m'>
+                                <summary className="">
+                                    <p>DELIVERIES & RETURNS<span style={{textAlign:'right'}}>+</span></p> 
                                 </summary>
                                 <p>Delivery Details Here</p>
                             </details>
@@ -374,6 +386,54 @@ class M2M extends Component {
                         </div>
                     </div>
                 </div>
+
+                <section className='m2m2-product-details'>
+                    <div className='header'>
+                        {this.productDetailsHeader()}
+
+                    </div>
+
+
+                    <div className='m2m2-section-content'>
+                        <div className=''>
+                            <h5>Canvas Fabric Printing</h5>
+                            <p>Ready in 1-3 days</p>
+                        </div>
+                        
+                        <div className=''>
+                            <table className='m2m2-table'>
+                                <tr>
+                                    <th className='col-1'></th>
+                                    <th>Max Print:</th>
+                                    <th>Weight:</th>
+                                    <th>Roll With:</th>
+                                    <th></th>
+                                </tr>
+
+                                <tr>
+                                    <td className='col-1'>Wooven canvas 300</td>
+                                    <td>1.59m</td>
+                                    <td>300</td>
+                                    <td>1.61m</td>
+                                    <td className='m2m2-section-btn'><button>START DESIGN</button></td>
+                                </tr>
+                                <tr>
+                                    <td className='col-1'>Wooven canvas 300</td>
+                                    <td>1.59m</td>
+                                    <td>300</td>
+                                    <td>1.61m</td>
+                                    <td className='m2m2-section-btn'><button>START DESIGN</button></td>
+                                </tr>
+                            </table>
+
+                            <div className=''>
+                                    <p style={{marginTop: '15px'}}>The Lorem Ipsum is simply dummy text of the composition and layout before printing. Lorem Ipsum has been the standard text for printing since the 1500s, when an anonymous printer assembled pieces of text together to make a sample book of text fonts. It has not only survived five centuries, but has also adapted to computer office, without its content is changed. It was popularized in the 1960s through the sale of Letraset sheets containing passages from Lorem Ipsum, and more recently by its inclusion in text layout applications, such as Aldus PageMaker.</p>
+                                    <p style={{marginTop: '15px'}}>The Lorem Ipsum is simply dummy text of the composition and layout before printing. Lorem Ipsum has been the standard text for printing since the 1500s, when an anonymous printer assembled pieces of text together to make a sample book of text fonts. It has not only survived five centuries, but has also adapted to computer office, without its content is changed. It was popularized in the 1960s through the sale of Letraset sheets containing passages from Lorem Ipsum, and more recently by its inclusion in text layout applications, such as Aldus PageMaker.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
 
                 <div className="combine-with-div">
                     <CombineWith />

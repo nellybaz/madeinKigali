@@ -4,7 +4,9 @@
 
 .fabric_upload_select-wrapper {
   width: 89%;
+  height: 600px;
   margin: 30px auto;
+  margin-bottom: 180px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 4fr;
@@ -19,15 +21,22 @@
   -ms-grid-columns: 5fr 3fr;
       grid-template-columns: 5fr 3fr;
   grid-gap: 20px;
+  height: 400px !important;
 }
 
 .fabric_upload_select-wrapper .fabric-select-left {
   width: 80%;
   padding: 0% 6% 6% 6%;
   border: 1px solid #F7F7F7;
+  height: 600px;
+}
+
+.fabric_upload_select-wrapper .fabric-select-left p, .fabric_upload_select-wrapper .fabric-select-left li {
+  font-size: 0.8rem;
 }
 
 .fabric-meter-wrapper {
+  height: 600px;
   border: 1px solid #F7F7F7;
 }
 

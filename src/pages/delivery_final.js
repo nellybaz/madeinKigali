@@ -12,6 +12,10 @@ import '../css/pages/delivery_final.css';
 
 class Delivery extends Component{
 
+    componentDidMount(){
+        window.scrollTo(0,0);
+    }
+
     handleBagCartDisplay =()=>{
         const bagCartDisplay= [];
         
@@ -52,7 +56,7 @@ class Delivery extends Component{
                 {/* <Header /> */}
 
                     <div className='delivery-logo-div'>
-                        <Link to={'/dev'}><img src={logo} /></Link>
+                        <Link to={'/dev/12hdgsikdhlmsdne'}><img src={logo} /></Link>
                     </div>
                     <div className='delivery-progress-bar'>
                         <div className='delivery-active'>DELIVERY</div>

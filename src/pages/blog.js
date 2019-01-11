@@ -131,6 +131,8 @@ class Blog extends Component {
 
 
     async componentDidMount() {
+       
+        window.scrollTo(0,0);
         try {
 
             let data = JSON.stringify({
@@ -215,8 +217,8 @@ class Blog extends Component {
             BlogBodyHolder.push(
                 <div className="blog-image" key={x}>
                     <img src={this.state.blog_body_data[x].img} alt={this.state.blog_body_data[x].title} />
-                    <Link className="readmore-link" to={`blog/post/${this.state.blog_body_data[x].id}{/${this.state.blog_body_data[x].title}}`} ><h3 className="blog-image-title">{this.state.blog_body_data[x].title}</h3></Link>
-                    <Link className="readmore-link" to={`blog/post/${this.state.blog_body_data[x].id}{/${this.state.blog_body_data[x].title}}`}><p className="blog-read-more">READ MORE</p></Link>
+                    <Link className="readmore-link" to={`post/${this.state.blog_body_data[x].id}{/${this.state.blog_body_data[x].title}}`} ><h3 className="blog-image-title">{this.state.blog_body_data[x].title}</h3></Link>
+                    <Link className="readmore-link" to={`post/${this.state.blog_body_data[x].id}{/${this.state.blog_body_data[x].title}}`}><p className="blog-read-more">READ MORE</p></Link>
                 </div>
 
             )
@@ -236,7 +238,7 @@ class Blog extends Component {
 
         return (
             <div className="Blog" style={{ background: 'white' }}>
-                <BlogHeader />
+                <BlogHeader navigation={this.props.match.params.nav}/>
 
 
                 <div className="body-container">
@@ -251,41 +253,40 @@ class Blog extends Component {
                     <div className="signin-newsletter-social-media">
 
 
-
                         <div className="social-media">
                             <div className="article-follow-us-div">
                                 <div className="post-social-media-div">
                                     <div className="social-media-div">
-                                        <a href="#"><img src={fb} alt="facebook" /></a>
+                                        <a href="https://www.facebook.com/MadeInKigali/ "><img src={fb} alt="facebook" /></a>
 
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="#"><img src={twitter} alt="twitter" /></a>
+                                        <a href="https://twitter.com/MadeinKigaliRW"><img src={twitter} alt="twitter" /></a>
 
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="#"><img src={insta} alt="insta" /></a>
+                                        <a href="https://www.instagram.com/madeinkigali/"><img src={insta} alt="insta" /></a>
 
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="#"><img src={linkedin} alt="linkedin" /></a>
+                                        <a href="https://www.linkedin.com/in/madeinkigali/"><img src={linkedin} alt="linkedin" /></a>
 
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="#" target="_blanck" > <img src={g_plus} alt="g_plus" /></a>
+                                        <a href="https://plus.google.com/u/2/112933730940706528592?tab=mX" target="_blanck" > <img src={g_plus} alt="g_plus" /></a>
 
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="#" target="_blanck" > <img src={pinterest} alt="pinterest" /></a>
+                                        <a href="https://www.pinterest.com/madeinkigali/pins/" target="_blanck" > <img src={pinterest} alt="pinterest" /></a>
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="#" target="_blanck" > <img src={youtube} alt="youtube" /></a>
+                                        <a href="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></a>
 
                                     </div>
 
@@ -295,7 +296,7 @@ class Blog extends Component {
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="#" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
+                                        <a href="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
 
                                     </div>
                                 </div>

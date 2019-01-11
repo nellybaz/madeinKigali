@@ -7,6 +7,7 @@
         display: none !important;
     }
 
+
     .logo-item{
         width:29% !important;
         margin:0 20% 0 5% !important;
@@ -176,9 +177,9 @@
     
 }
 
-.navigation > div > div{
+/* .navigation > div > div{
     box-shadow: 0 15px rgb(190, 188, 188);
-}
+} */
 
 
 .navigation > div > a{
@@ -442,7 +443,7 @@
     padding:5px 30px 0 30px;
     display: none;
     width: 100%;
-    /* height: 300px; */
+    height:100%;
     grid-template-columns: 1fr 1fr 3fr;
     position: absolute;
     z-index: 1;
@@ -456,14 +457,63 @@
     margin-left: 15px;
     margin-top: 15px;
     width:100%;
-    height:100%;
+    height:60%;
+    padding-left: 20px; 
 }
 
+.div-for-brands-display{
+    height:60px;
+    /* border: 1px solid red; */
+    grid-column: 1/-1;
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);   
+    grid-gap:0;
+}
+
+.div-for-brands-display div{
+    width:80%;
+    /* border: 1px solid red; */
+    margin:0 auto;
+    position: relative;
+    bottom: 0px;
+    height:40px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:row;
+}
+
+.div-for-brands-display div img{
+    max-width:100%;
+    height: 100%;
+
+}
 
 .brands-dropdown-content img{
     width:80%;
-    height: 90%;
-    object-fit: contain;
+    height: 220px;
+    object-fit: cover;
+    /* border: 1px solid red; */
+}
+
+
+.shop-all-brands-div{
+    grid-column: 1/-1;
+    /* border: 1px solid red; */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:row;
+}
+
+.shop-all-brands-div a{
+    font-size: 0.8rem;
+    /* font-weight: bold; */
+    margin-top: 20px !important;
+    /* border: 1px solid red; */
+    padding-top: 5px;
+    border-top: 1px dotted gray;
 }
 .fabric:hover .fabric-dropdown{
     display: grid;
@@ -500,6 +550,7 @@
     margin:16px 5%;
     height:350px;
     z-index: 2;
+    /* margin-bottom: 1px solid red !important; */
     
     
 }
@@ -539,7 +590,7 @@
 .fashion-stories-dropdown{
     padding:5px 30px 0 30px;
     display: none;    
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: repeat(3, 1fr) 2fr;
     position: absolute;
     z-index: 2;
     background-color: #F5F5F5;
@@ -552,14 +603,37 @@
     border-right: 0.5px solid #E5E5E5;
     margin-left: 15px;
     margin-top: 15px;
+    /* border: 1px solid red; */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    width:100%;
+    height:90%;
+}
+
+.fashion-stories-dropdown-content:nth-child(4){
+    align-items: flex-start;
+    padding: 0 30px;
 }
 
 .fashion-stories-dropdown-content img{
-    width:100%;
-    height:310px;
+    /* border: 1px solid red; */
+    width:80%;
+    margin: 20px auto;
+    height:70%;
+    object-fit: cover;
+}
+
+.fashion-stories-dropdown-content .div-inner{
+    position: relative;
+    bottom:30px;
 }
 
 
+.fashion-stories-dropdown-content p{
+    font-size: 0.8rem;
+}
 
 
 .visitrwanda:hover .visitrwanda-dropdown{

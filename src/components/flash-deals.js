@@ -5,7 +5,6 @@ import prevArrow from '../assets/images/l2-arrow.png';
 import {Link} from 'react-router-dom';
 //import '../assets/js/animations.js';
 
-
 import {
   
   isBrowser,

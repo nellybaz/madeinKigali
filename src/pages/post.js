@@ -163,6 +163,7 @@ class Post extends Component {
     }
 
     async componentDidMount() {
+        window.scrollTo(0,0);
         this.setState({
             isLoading: true,
         })
@@ -298,7 +299,7 @@ class Post extends Component {
                                 </div>
 
                                 <div className='post-prev-div-inner-content-img-div'>
-                                    <img style={{ width: '100%', objectFit: 'contain', height: '100%', }} src={bh2} alt='mik' />
+                                    <img style={{ width: '100%', objectFit: 'cover', height: '100%', }} src={bh2} alt='mik' />
                                 </div>
 
 
@@ -315,7 +316,7 @@ class Post extends Component {
                             <div className='post-next-div-inner'>
                                 <div onMouseEnter={()=>this.handleButtonSlides(1)} onMouseLeave={()=>this.handleButtonSlides(2)} className={`post-next-div-inner-content ${this.state.post_next_div_inner_content_class}`}>
                                     <div className='post-next-div-inner-content-img-div'>
-                                        <img style={{width:'100%', objectFit:'contain', height:'100%'}} src={bh2} alt='mik' />
+                                        <img style={{width:'100%', objectFit:'cover', height:'100%'}} src={bh2} alt='mik' />
                                     </div>
 
                                     <div className='post-next-div-inner-content-title-div'>

@@ -26,17 +26,19 @@ class Wholesale extends Component {
         <div style={{background:'white'}}>
          <Header/>
             <div className="product-top-info-bar">
-                <p>Free delivery and returns + info</p>
+                <p style={{fontSize: '0.8rem'}}>Free delivery and returns + info</p>
             </div>
             <div className="Product">
-               
-                
 
-                <div className="product-beadcrum-div">
-                    <h5> NAXIST ITALIAN BAGS</h5>
-                    <p>Fashion / Women / jeans / joni_jeans</p>
-                    
-                </div>
+            <div className="product-beadcrum-div">
+                        <div className='more'>
+                            <span>MORE PRODUCTS &nbsp; &nbsp;</span>
+                            <button><img src={require('../assets/images/back_black.png')} /></button>
+                            <button><img src={require('../assets/images/next_black.png')} /></button>
+                        </div>
+                        <h5 style={{ fontSize: '0.8rem' }}> NAXIST ITALIAN BAGS</h5>
+                        <p style={{ fontSize: '0.8rem' }}>Fashion / Women / jeans / joni_jeans</p>
+                    </div>
 
                
 
@@ -131,22 +133,16 @@ class Wholesale extends Component {
                         </div> */}
 
                         <div className="details">
-                        <details>
-                                <summary className="btn btn-details">
-                                    <p>PRODUCT DETAILS</p> <span style={{textAlign:'right'}}>+</span>
-                                </summary>
-                                <p>Product Details Here</p>
-                            </details>
-                            <details>
-                                <summary className="btn btn-details">
-                                    <p>SHIPPING DETAILS</p> <span style={{textAlign:'right'}}>+</span>
+                        <details className='summary-m2m'>
+                                <summary className="">
+                                    <p>SHIPPING DETAILS <span style={{textAlign:'right'}}>+</span></p>
                                 </summary>
                                 <p>Shipping Details Here</p>
                             </details>
 
-                             <details>
-                                <summary className="btn btn-details">
-                                    <p>DELIVERIES & RETURNS</p> <span style={{textAlign:'right'}}>+</span>
+                             <details className='summary-m2m'>
+                                <summary className="">
+                                    <p>DELIVERIES & RETURNS<span style={{textAlign:'right'}}>+</span></p> 
                                 </summary>
                                 <p>Delivery Details Here</p>
                             </details>

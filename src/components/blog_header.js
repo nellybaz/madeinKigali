@@ -113,6 +113,44 @@ class BlogHeader extends Component {
         }
     }
 
+    handleBlogHeaderPics = () =>{
+        const holder = [];
+
+        let img = bh2;
+
+        switch (this.props.navigation) {
+            case "home":
+                img = bh2                
+                break;
+
+                case "style":
+                img = bh4                
+                break;
+
+                case "beauty":
+                img = bh6                
+                break;
+
+                case "news":
+                img = bh8                
+                break;
+        
+            default:
+                img = bh5
+                break;
+        }
+
+        for (let x = 1; x <= 9; x++) {
+            holder.push(
+                <div className="blog-header-item">
+                    <img alt="mikigali" src={img} />
+                </div>
+            );
+            
+        }
+        return holder;
+    }
+
 
     async componentDidMount() {
         try {
@@ -162,7 +200,7 @@ class BlogHeader extends Component {
                     <div className={this.state.fixed_scroll_class}>
                         <div className="blog-header-fixed-navlinks">
                             <div className="blog-header-navlinks">
-                                <Link className='blog-logo-link' to={'/dev'}><img className="blog-header-logo" alt="mik" src={logo} /></Link>
+                                <Link className='blog-logo-link' to={'/dev/12hdgsikdhlmsdne'}><img className="blog-header-logo" alt="mik" src={logo} /></Link>
                             </div>
                             <div className="header-links-fixed">
                                 <p>HOME</p>
@@ -188,34 +226,7 @@ class BlogHeader extends Component {
                     </div>
 
                     <div className="blog-header">
-                        <div className="blog-header-item">
-                            <img alt="mikigali" src={bh8} />
-                        </div>
-                        <div className="blog-header-item">
-                            <img alt="mikigali" src={bh7} />
-                        </div>
-                        <div className="blog-header-item">
-                            <img alt="mikigali" src={bh6} />
-                        </div>
-                        <div className="blog-header-item">
-                            <img alt="mikigali" src={bh5} />
-                        </div>
-                        <div className="blog-header-item">
-                            <img alt="mikigali" src={bh4} />
-                        </div>
-                        <div className="blog-header-item">
-                            <img alt="mikigali" src={bh3} />
-                        </div>
-                        <div className="blog-header-item">
-                            <img alt="mikigali" src={bh2} />
-                        </div>
-                        <div className="blog-header-item">
-                            <img alt="mikigali" src={header1} />
-                        </div>
-                        <div className="blog-header-item">
-                            <img alt="mikigali" src={bh6} />
-                        </div>
-
+                        {this.handleBlogHeaderPics()}
 
                     </div>
 
@@ -226,24 +237,23 @@ class BlogHeader extends Component {
                     <div className="blog-header-nav ">
 
                         <div className="blog-header-navlinks">
-                            <Link to={'/dev'}><img className="blog-header-logo" alt="mik" src={logo} /></Link>
+                            <Link to={'/dev/12hdgsikdhlmsdne'}><img className="blog-header-logo" alt="mik" src={logo} /></Link>
                         </div>
 
                         <div className="blog-header-navlinks">
-                            <Link to={'/dev/blog'} ><p>HOME</p></Link>
+                            <Link to={'/dev/blog/home'} ><p>HOME</p></Link>
                         </div>
                         <div className="blog-header-navlinks">
-                            <p>STYLE</p>
+                            <Link to={'/dev/blog/style'} ><p>STYLE</p></Link>
                         </div>
                         <div className="blog-header-navlinks">
-                            <p>BEAUTY</p>
+                        <Link to={'/dev/blog/beauty'} ><p>BEAUTY</p></Link>
                         </div>
                         <div className="blog-header-navlinks">
-                            <p>NEWS</p>
+                        <Link to={'/dev/blog/news'} ><p>NEWS</p></Link>
                         </div>
-
                         <div className="blog-header-navlinks">
-                            <p>#VISITRWANDA</p>
+                            <Link  to={'/dev/visit_rwanda'} ><p>#VISITRWANDA</p></Link>
                         </div>
 
                     </div>

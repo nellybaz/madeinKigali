@@ -44,8 +44,8 @@ class About extends Component {
                 }
 
         
-
     componentDidMount() {
+        window.scrollTo(0,0);
 
 
 
@@ -85,7 +85,7 @@ class About extends Component {
 
                         <div className='div-title-div'>
                             <h5>MADE WITH LOVE</h5>
-                            <span><button>WHAT WE DO</button><button>HOW WE DO IT</button><button>OUR GOAL</button></span>
+                            <span><button><Link to={'/dev/company/about'} >WHAT WE DO</Link></button><button><Link to={'/dev/company/about#how-we-do-it'} >HOW WE DO IT</Link></button><button><Link to={'/dev/company/about'} >OUR GOAL</Link></button></span>
                         </div>
 
                     </div>
@@ -228,6 +228,44 @@ class About extends Component {
                             </div>
                             
                         </div>
+
+
+                        <div className='products'>
+                            <div className='prdt'>                          
+                                
+                                <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center' }}>
+                                <CountTo to={800} speed={2000}>{fn}</CountTo>
+                                <p>MILLION DOLLARS IN TURN OVER</p>
+                                </div>
+
+                                <img src={require('../assets/images/company-girl.png')} style={{height: '320px', maxWidth: '150px', position:'relative', bottom:'100px'}} />
+                            </div>
+
+                            <div className='distribution'>
+                            <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center' }}>
+                                <CountTo to={120} speed={2000}>{fn2}</CountTo>
+                                <p>Employees</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+
+                        <div className="products map-section">
+                                 <div>
+                                     <img src={require('../assets/images/company-map.jpg')} />
+                                 </div>
+
+                                 <div>
+                                    <div style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center' }}>
+                                    <CountTo to={120} speed={2000}>{fn2}</CountTo>
+                                    <p><b>Markets</b></p>
+                                    </div>
+                                     
+                                 </div>
+
+                        </div>
                         
                     </div>
                     </section>
@@ -240,7 +278,7 @@ class About extends Component {
                             </p>
 
 
-                            <Link to={'/dev/blog'} ><button className='btn-company'>ACCESS THE NEWSROOM</button></Link>
+                            <Link to={'/dev/blog/home'} ><button className='btn-company'>ACCESS THE NEWSROOM</button></Link>
                         </div>
                     </section>
 

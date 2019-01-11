@@ -31,14 +31,15 @@ import GiftCard from '../pages/gift_card.js';
 import Cart from '../pages/cart.js';
 import Delivery from '../pages/delivery_final.js';
 import Company from '../pages/company';
+import About from '../pages/about';
 
     const outer =()=> (
                 <Router onUpdate={()=> window.scrollTo(0,0)}>
                         <Switch>
                             
-                            <Route exact path={"/dev"} component={App}/>
+                            <Route exact path={"/dev/12hdgsikdhlmsdne"} component={App}/>
                             <Route exact path={"/upload"} component={Upload}/>
-                            <Route exact path={"/dev/blog"} component={Blog}/>
+                            <Route exact path={"/dev/blog/:nav"} component={Blog}/>
                             <Route exact path={"/dev/blog/post/:blog_id/:blog_name"} component={Post}/>
                             <Route exact path={"/dev/product/:slug/:number"} component={Product}/>
                             <Route exact path={"/dev/wholesale/:slug/:number"} component={Wholesale}/>
@@ -63,6 +64,7 @@ import Company from '../pages/company';
                             <Route exact path={"/dev/cart"} component={Cart}/>
                             <Route exact path={"/dev/delivery"} component={Delivery}/>
                             <Route exact path={"/dev/company"} component={Company}/>
+                            <Route exact path={"/dev/company/about"} component={About}/>
                              <Route component={notFound}/>
                         </Switch>            
                 </Router>

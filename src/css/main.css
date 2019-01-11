@@ -11,11 +11,11 @@ body{
     .Slider{
         height:300px !important;
     }
-    .slide, .carousel-inner, .carousel-item{
+    /* .slide, .carousel-inner, .carousel-item{
         height: 100%;
-    }
+    } */
 
-    .jumbo1, .jumbo2, .jumbo3 {
+    .c-item {
         background-size: 100% 100% !important;
         height:100% !important;
     }
@@ -120,3 +120,84 @@ body{
     font-style: italic;
 }
 
+
+
+/* new  customized carousel */
+
+.slider-wrapper{
+    width:100%;
+    height: 100%;
+   
+
+   
+    
+}
+
+.carousel_item_holder{
+    width:100%;
+    height:100%;
+
+  
+}
+
+.c-item{
+    /* border: 1px solid red; */
+    width:100%;
+    height:100%;
+    display: none;
+
+    
+}
+
+.act {
+    display: inline-block;
+}
+
+.c-item:nth-child(1){
+    background: url('../assets/images/bg.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.c-item:nth-child(2){
+    background: url('../assets/images/new_background.jpg');
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+}
+
+
+.c-item:nth-child(3){
+    background: url('../assets/images/new_background2.jpg');
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+}
+
+.dot-control{
+    height: 20px;
+    /* background: #B62043; */
+    position: relative;
+    top:-8px;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:row;
+}
+.dot-control div{
+    width: 10px;
+    border-radius: 5px;
+    background: #B62043;
+    height:10px;
+    margin: 2px;
+
+    cursor: pointer;
+}

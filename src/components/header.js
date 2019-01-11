@@ -19,7 +19,7 @@ import pause from '../assets/images/pause.png';
 
 import music from '../assets/music/music.mp3';
 
-import little_banner from '../assets/images/little_banner.jpg';
+import little_banner from '../assets/images/1Y.jpg';
 
 import mobile_menu from '../assets/images/menu.png';
 
@@ -39,9 +39,8 @@ class Header2 extends Component {
 
 
     async componentDidMount() {
-     
         
-               
+                     
 
         setInterval(async () => {
 
@@ -103,13 +102,13 @@ class Header2 extends Component {
             cookies.remove('userID');
         }
 
-        window.location.href="/dev";
+        window.location.href="/dev/12hdgsikdhlmsdne";
 
     }
 
    searchBoxHandler =()=>{
     // alert('Searching....');
-    window.location.href=`/dev/search/${this.state.search_query}`;
+    window.location.href=`/dev/search/${this.state.search_query}/category/1`;
 
     //call search api
    }
@@ -170,11 +169,11 @@ class Header2 extends Component {
 
                 <div className='topbar-nav'>
                     <div className='topbar-nav-left'>
-                        <p>Student? check our student discount</p>
+                        <p style={{fontSize:'0.8rem'}}>Student? check our student discount</p>
                     </div>
 
                     <div className='topbar-nav-right'>
-                    <input ref="search_input" className="search-input" onChange={(e)=> this.setState({search_query: e.target.value})} onKeyPress={(ev) => {
+                    <input title="SEARCH" style={{fontSize:'0.8rem'}} ref="search_input" className="search-input" onChange={(e)=> this.setState({search_query: e.target.value})} onKeyPress={(ev) => {
                             if (ev.key === 'Enter') {
                             // Do code here
                         
@@ -182,21 +181,22 @@ class Header2 extends Component {
                             ev.preventDefault();
                             }
         }} type="text" placeholder="Search" />
-                    <a href="#" onClick={()=>this.handleSearchHighlight()}><img src={search}></img></a>
-                    <a href="/dev/signin"><img src={profile}></img></a>
-                    <a href="/dev/cart"><img src={bag}></img></a>
+                    <a href="#" onClick={()=>this.handleSearchHighlight()} title="SEARCH"><img src={search}></img></a>
+                    <a href="/dev/signin"  title="SIGN IN"><img src={profile}></img></a>
+                    <a href="/dev/cart" title="WISHLIST"><img src={require('../assets/images/heart2.png')}></img></a>
+                    <a href="/dev/cart" title="BASKET"><img src={bag}></img></a>
+                    
                     </div>
                     
                 </div>
       </header>
-     
 
         {/* mobile navigation */}
 
         <div className={`mobile-nav`}>
         
             <a style={{fontSize: '0.8rem'}} className="btn btn-open-nav mobile-nav-item"><img src={mobile_menu} alt="mik"/><br></br>MENU</a>
-            <Link to={'/dev'} className="mobile-nav-item" ><img className="mobile-logo" src={logo} /></Link>
+            <Link to={'/dev/12hdgsikdhlmsdne'} className="mobile-nav-item" ><img className="mobile-logo" src={logo} /></Link>
             
 
            <div className="mobile-nav-item right-icons-mobile">
@@ -220,13 +220,12 @@ class Header2 extends Component {
                     />
         </div>
 
-
      {/* mobile navigation ends */}
 
         <div className={`navigation ${this.state.nav_class}`}>
 
             <div className='logo-div-nav'>
-                <Link to={'/dev'} ><img src={logo} alt="mik logo"/></Link>
+                <Link to={'/dev/12hdgsikdhlmsdne'} ><img src={logo} alt="mik logo"/></Link>
             </div>
             
             <div className="new-in" ><a href="#" >NEW IN </a>
@@ -523,7 +522,7 @@ class Header2 extends Component {
                         <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                                <h5 style={{ }}>SHOP BY CLOTHING</h5>
+                                <h5 style={{ }}>SHOP BY BRANDS</h5>
                         
                             <Link to={"#"} >Men’s Blazers</Link>
                             <Link to={"#"} >Men’s coats & jackets</Link>
@@ -531,7 +530,7 @@ class Header2 extends Component {
                             <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
                             <Link to={"#"} >Women’s dresses</Link>
                             <Link to={"#"} >Women’s shirts & blouses</Link>
-                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
+                            {/* <Link to={"#"} >Women’s playsuit & jumpsuit</Link> */}
                             {/* <Link to={"#"} ></Link> */}
                         </div>
                     </div>
@@ -558,6 +557,30 @@ class Header2 extends Component {
                     <div className="brands-dropdown-content">
                         <img width="100%" height="100%" src={little_banner} />
                     </div>
+
+                    <div className='div-for-brands-display'>
+                        <div>
+                            <img src={require('../assets/images/logo.png')} />
+                        </div>
+                        <div>
+                        <img src={require('../assets/images/logo.png')} />
+                        </div>
+                        <div>
+                        <img src={require('../assets/images/logo.png')} />
+                        </div>
+                        <div>
+                        <img src={require('../assets/images/logo.png')} />
+                        </div>
+                        <div>
+                        <img src={require('../assets/images/logo.png')} />
+                        </div>
+
+                        <div className='shop-all-brands-div'>
+                        <Link to={'/dev/search/jeans/category/1'} >SHOP ALL BRANDS</Link>
+                    </div>
+                    </div>
+
+                    
                 </div>
             </div>
             
@@ -605,33 +628,7 @@ class Header2 extends Component {
                 </div>
             
             </div>
-            <div className='fashion-stories'><Link to={'/dev/blog'}>FASHION STORIES</Link>
-            <div className="fashion-stories-dropdown dropdowns">
-                    <div className="fashion-stories-dropdown-content">
-                        <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                            
-                                <h5 style={{ }}>ALL FASHION STORIES</h5>
-                        
-                            <Link to={"#"} >Men’s Blazers</Link>
-                            <Link to={"#"} >Men’s coats & jackets</Link>
-                            <Link to={"#"} >Men’s dress shirts</Link>
-                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
-                            <Link to={"#"} >Women’s dresses</Link>
-                            <Link to={"#"} >Women’s shirts & blouses</Link>
-                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
-                            {/* <Link to={"#"} ></Link> */}
-                        </div>
-                    </div>
-                  
-
-                    <div className="fashion-stories-dropdown-content">
-                        <img src={little_banner} />
-                    </div>
-                </div>
-            </div>
-
-              <div className='visitrwanda'><Link to={'/dev/visit_rwanda'}>#VISITRWANDA</Link>
+            <div className='visitrwanda'><Link to={'/dev/visit_rwanda'}>#VISITRWANDA</Link>
               <div className="visitrwanda-dropdown dropdowns">
                     <div className="visitrwanda-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>
@@ -656,6 +653,50 @@ class Header2 extends Component {
                     </div>
                 </div>
               </div>
+
+
+            <div className='fashion-stories'><Link to={'/dev/blog/home'}>FASHION STORIES</Link>
+            <div className="fashion-stories-dropdown dropdowns">
+
+                      
+                        <div className="fashion-stories-dropdown-content">
+                            <img src={little_banner} />
+                            <p>SEASON 5 DISPLAY</p>
+                        </div>
+
+                        <div className="fashion-stories-dropdown-content">
+                            <img src={little_banner} />
+                            <p>BOUTIQUE AUTUMN 2018</p>
+                        </div>
+
+
+                        <div className="fashion-stories-dropdown-content">
+                            <img src={little_banner} />
+                            <p>SEASON 5 DISPLAY</p>
+                        </div>
+                        <div className="fashion-stories-dropdown-content">
+                            <div className='div-inner' style={{ display: 'flex', flexDirection: 'column' }}>
+
+
+                                <h5 style={{}}>ALL FASHION STORIES</h5>
+
+                                <Link to={"#"} >Men’s Blazers</Link>
+                                <Link to={"#"} >Men’s coats & jackets</Link>
+                                <Link to={"#"} >Men’s dress shirts</Link>
+                                <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
+                                <Link to={"#"} >Women’s dresses</Link>
+                                <Link to={"#"} >Women’s shirts & blouses</Link>
+                                <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
+                                {/* <Link to={"#"} ></Link> */}
+                            </div>
+                        </div>
+                  
+
+                    
+                </div>
+            </div>
+
+              
             
             
 

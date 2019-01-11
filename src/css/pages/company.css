@@ -1,3 +1,17 @@
+@media only screen and (max-width: 745px) {
+  .About .about-wrapper * {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    height: auto !important;
+    width: 100% !important;
+    position: relative !important;
+    bottom: 0 !important;
+  }
+  .About .about-wrapper h5 {
+    font-size: 2rem !important;
+  }
+}
+
 .About {
   width: 100%;
 }
@@ -153,6 +167,12 @@
   height: 40px;
 }
 
+.About .about-wrapper .div2 .div-title-div span button a {
+  background: black;
+  color: white;
+  width: 100%;
+}
+
 .About .about-wrapper .div {
   width: 95%;
   margin: 0 auto;
@@ -211,7 +231,7 @@
 }
 
 .long {
-  height: 1000px;
+  height: auto;
   width: 100%;
   display: -ms-grid;
   display: grid;

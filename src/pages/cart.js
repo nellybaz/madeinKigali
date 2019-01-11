@@ -13,6 +13,11 @@ import img2 from "../assets/images/cart2.jpg";
 
 class Cart extends Component{
 
+    componentDidMount(){
+        window.scrollTo(0,0);
+    }
+    
+
     handeleCartDisplay =()=>{
         const cartDisplay = [];
         let img = img1;

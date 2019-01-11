@@ -1,3 +1,26 @@
+@media only screen and(max-width:745px){
+   
+   .About{
+    .about-wrapper{
+        *{
+            grid-template-columns: 1fr !important;
+            height: auto !important;
+            width:100% !important;
+            position: relative !important;
+            bottom: 0 !important;
+        }
+    
+        h5{
+            font-size: 2rem !important;
+        }
+    
+       }
+   }
+    
+    
+ }
+
+
 .About{
     width:100%;
     
@@ -11,7 +34,6 @@
             color:black;
         }
         
-
         .box-wrapper{
             display: grid;
             grid-template-columns: repeat(5, 1fr);
@@ -128,6 +150,13 @@
                         background: black;
                         color: white;
                         height: 40px;
+
+
+                        a{
+                            background: black;
+                            color: white;
+                            width:100%;
+                        }
                     }
                 }
             }
@@ -201,7 +230,8 @@
 
 
 .long{
-    height:1000px;
+    height:auto;
+    //border: 1px solid red;
     width:100%;
     display: grid;
     grid-template-columns: 2fr 3fr;

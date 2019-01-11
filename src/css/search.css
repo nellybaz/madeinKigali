@@ -247,7 +247,9 @@
 .prd-search-likes{
     border-radius: 50%;
     font-size: 0.7rem;
-    background: rgb(156, 26, 150);
-    color: white;
+    border: 1px solid black;
+    /* background: rgb(156, 26, 150); */
+    color: black;
     padding:5px;
+    cursor: pointer;
 }

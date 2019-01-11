@@ -20,6 +20,7 @@ class Footer extends Component {
   constructor(props){
     super(props);
     this.state={
+      btn_openned: '',
         mobileClass: 'flex-wrap',
         mobile_font_class: 'footer-mobile-font-size',
         footerSwitch: false,
@@ -32,7 +33,8 @@ class Footer extends Component {
     if (this.state.footerSwitch == false){
         this.setState({
           footerClass: "footer-expand fadein",
-          footerSwitch:true
+          footerSwitch:true,
+          btn_openned: 'btn-openned',
         })
         
         
@@ -41,7 +43,8 @@ class Footer extends Component {
     else{
       this.setState({
         footerClass: "hide fadeout",
-        footerSwitch:false
+        footerSwitch:false,
+        btn_openned:''
       })
     }
 
@@ -66,26 +69,95 @@ class Footer extends Component {
           </div>
         </div>
 
+        <div className='footer-new-design'>
+          <table>
+              <tr>
+                <th onClick={()=> this.toggleFooter()}>HELP</th>
+                <th onClick={()=> this.toggleFooter()}>DELIVERY & RETURNS</th>
+                <th onClick={()=> this.toggleFooter()}>CARDS & OFFERS</th>
+                <th onClick={()=> this.toggleFooter()}>COMPANY</th>
+                <th onClick={()=> this.toggleFooter()}>CONTACT</th>
+                <th  onClick={()=> this.toggleFooter()}><p className={`btn-open-footer ${this.state.btn_openned}`}>+</p></th>
+                
+              </tr>
+
+              <tr className={`${this.state.footerClass}`}>
+              <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}>Help</Link></td>
+                <td><Link to={'/dev/student_discount'}>Student Discount</Link></td>
+                <td><Link to={'/dev/company'}>Company</Link></td>
+                <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}></Link></td>
+              </tr>
+
+              <tr className={`${this.state.footerClass}`}>
+              <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}>Help</Link></td>
+                <td><Link to={'/dev/gift_card'}>Gift Cards</Link></td>
+                <td><Link to={''}>Help</Link></td>
+                <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}></Link></td>
+              </tr>
+
+              <tr className={`${this.state.footerClass}`}>
+              <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}>Help</Link></td>
+                <td><Link to={'/dev/contact'}>MIK Cards</Link></td>
+                <td><Link to={''}>Help</Link></td>
+                <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}></Link></td>
+              </tr>
+
+              <tr className={`${this.state.footerClass}`}>
+                <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}>Help</Link></td>
+                <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}>Help</Link></td>
+                <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}></Link></td>
+              </tr>
+
+              <tr className={`${this.state.footerClass}`}>
+              <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}>Help</Link></td>
+                <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}>Help</Link></td>
+                <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}></Link></td>
+              </tr>
+
+              <tr className={`${this.state.footerClass}`}>
+              <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}>Help</Link></td>
+                <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}>Help</Link></td>
+                <td><Link to={''}>Contact us</Link></td>
+                <td><Link to={''}></Link></td>
+              </tr>
 
 
+          </table>
+        
+        </div>
 
+{/* 
         <div className="footer-second-div">
           <div className="text-icon-footer">
 
-            {/* <img src={info} alt="made in kigali"/>  */}
+            
             <p onClick={()=> this.toggleFooter()}>HELP</p>
           </div>
 
            <div className="text-icon-footer">
 
-            {/* <img src={factory} alt="made in kigali"/>  */}
+            
             <p onClick={()=> this.toggleFooter()}>DELIVERY & RETURNS</p>
             </div>
 
 
              <div className="text-icon-footer">
 
-              {/* <img src={delivery} alt="made in kigali"/>  */}
+              
               <p onClick={()=> this.toggleFooter()}>CARDS & OFFERS</p>
               </div>
               
@@ -93,17 +165,20 @@ class Footer extends Component {
 
             <div className="text-icon-footer">
 
-            {/* <img src={contact} alt="made in kigali"/>  */}
+           
             <p onClick={()=> this.toggleFooter()} > CONTACT US</p>
             </div>
 
              <div className="text-icon-footer">
                 <button onClick={()=> this.toggleFooter()} className="btn btn-open-footer">+</button>
             </div>
-        </div>
+        </div> */}
 
 
+        
 
+
+{/* 
         <div className={`${this.state.footerClass}`}>
             <div className="expand-item">
             <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
@@ -161,44 +236,43 @@ class Footer extends Component {
               <Link to={'/dev/help'}>Help</Link><br></br>
 
             </div>
-
             <div className="expand-item">
 
             </div>    
-        </div>
+        </div> */}
 
         <div className="footer-third-div">
           <div className="social-media-div">
-            <a href="#"><img src={fb} alt="facebook" /></a>
+            <a target="_blank" href="https://www.facebook.com/MadeInKigali/"><img src={fb} alt="facebook" /></a>
 
           </div>
 
           <div className="social-media-div">
-            <a href="#"><img src={twitter} alt="twitter" /></a>
+            <a target="_blank" href="https://twitter.com/MadeinKigaliRW"><img src={twitter} alt="twitter" /></a>
 
           </div>
 
           <div className="social-media-div">
-            <a href="#"><img src={insta} alt="insta" /></a>
+            <a target="_blank" href="https://www.instagram.com/madeinkigali/"><img src={insta} alt="insta" /></a>
 
           </div>
 
           <div className="social-media-div">
-            <a href="#"><img src={linkedin} alt="linkedin" /></a>
+            <a target="_blank" href="https://www.linkedin.com/in/madeinkigali/"><img src={linkedin} alt="linkedin" /></a>
 
           </div>
 
           <div className="social-media-div">
-          <a href="#" target="_blanck" > <img src={g_plus} alt="g_plus" /></a>
+          <a href="https://plus.google.com/u/2/112933730940706528592?tab=mX" target="_blank" > <img src={g_plus} alt="g_plus" /></a>
 
           </div>
 
           <div className="social-media-div">
-          <a href="#" target="_blanck" > <img src={pinterest} alt="pinterest" /></a>
+          <a href="https://www.pinterest.com/madeinkigali/pins/" target="_blank" > <img src={pinterest} alt="pinterest" /></a>
           </div>
 
           <div className="social-media-div">
-          <a href="#" target="_blanck" > <img src={youtube} alt="youtube" /></a>
+          <a href="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></a>
 
           </div>
 
@@ -208,7 +282,7 @@ class Footer extends Component {
           </div>
 
           <div className="social-media-div">
-          <a href="#" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
+          <a href="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
 
           </div>
         </div>

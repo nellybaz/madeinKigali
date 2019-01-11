@@ -10,8 +10,6 @@
 
     }
 
-
-
 .Blog{
     background-color: #F2F1F2 !important;
    
@@ -110,7 +108,7 @@ text-align: center;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;    
-    grid-gap: 3px;
+    grid-gap: 5px;
     
     
 }
@@ -119,12 +117,13 @@ text-align: center;
     width: 100%;
     height: 650px;
     opacity: 0.8;
+    /* border: 1px solid red; */
 }
 
 .blog-image img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     
     
 }
@@ -392,7 +391,7 @@ text-align: center;
     width:270px;
     
     position: fixed;
-    left:79%;
+    left:80.6%;
     bottom: 0;
     display: grid;
     grid-template-columns: 4fr 1fr;
@@ -673,4 +672,11 @@ text-align: center;
 
 .sigin-newsletter-section{
     margin-top: 30px;
+}
+
+.insta-feed{
+    height: 400px;
+    width:100%;
+    /* border: 1px solid red; */
+    overflow: scroll;
 }

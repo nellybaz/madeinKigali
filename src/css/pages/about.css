@@ -1,0 +1,194 @@
+@media only screen and (max-width: 745px) {
+  .about .about-wrapper * {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    height: auto !important;
+    width: 100% !important;
+  }
+  .about .about-wrapper h5 {
+    font-size: 2rem !important;
+  }
+}
+
+.about {
+  width: 100%;
+}
+
+.about-wrapper {
+  width: 100%;
+  background: white;
+}
+
+.about-wrapper * {
+  color: black;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.about-wrapper .four {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 2fr;
+      grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 0;
+}
+
+.about-wrapper .four div {
+  width: 100%;
+  height: 500px;
+}
+
+.about-wrapper .four div:nth-child(2) {
+  background: black;
+  padding: 50px 50px;
+}
+
+.about-wrapper .four div:nth-child(2) * {
+  color: white;
+}
+
+.about-wrapper .four div:nth-child(2) h5 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.about-wrapper .four div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-wrapper .four div .img-fit {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-wrapper .three {
+  width: 100%;
+}
+
+.about-wrapper .three .boards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  width: 100%;
+  height: 100%;
+  padding: 20px 50px;
+}
+
+.about-wrapper .three .boards div {
+  width: 100%;
+  background: #F7F8F6;
+}
+
+.about-wrapper .three .boards div img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-wrapper .three .boards div h5, .about-wrapper .three .boards div p {
+  padding: 10px;
+}
+
+.about-wrapper .three .boards div h5 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.about-wrapper .three .one {
+  height: 250px;
+  width: 60%;
+  padding: 50px 50px;
+}
+
+.about-wrapper .three .one h5 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.about-wrapper .two {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  grid-gap: 0;
+}
+
+.about-wrapper .two .two-two-2 {
+  padding: 50px 60px;
+  background: #F7F8F6;
+}
+
+.about-wrapper .two .two-one:nth-child(1) {
+  background: black;
+  padding: 50px 60px;
+}
+
+.about-wrapper .two .two-one:nth-child(1) * {
+  color: white;
+}
+
+.about-wrapper .two div {
+  width: 100%;
+  height: 500px;
+}
+
+.about-wrapper .two div h5 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.about-wrapper .two div img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-wrapper .one {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
+
+.about-wrapper .one div {
+  width: 100%;
+  height: 600px;
+}
+
+.about-wrapper .one div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #F3F8F7;
+  padding: 150px 50px;
+}
+
+.about-wrapper .one div:nth-child(2) h5 {
+  font-size: 3.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.about-wrapper .one div:nth-child(2) h5, .about-wrapper .one div:nth-child(2) p {
+  width: 90%;
+}
+
+.about-wrapper .one div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=about.css.map */

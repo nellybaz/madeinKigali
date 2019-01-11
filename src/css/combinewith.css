@@ -1,3 +1,10 @@
+@media only screen and (max-width: 745px) {
+  .combine-with-outer-div1, .combine-with-outer-div2 {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+}
+
 .CombineWith {
   width: 100%;
   height: 100%;
@@ -7,9 +14,8 @@
   text-align: center;
 }
 
-.CombineWith .combine-with-outer-div {
+.CombineWith .combine-with-outer-div1 {
   width: 100%;
-  height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -17,20 +23,42 @@
   grid-gap: 0;
 }
 
-.CombineWith .combine-with-outer-div .inner {
+.CombineWith .combine-with-outer-div1 .inner {
   width: 100%;
-  height: 250px;
+  height: 300px;
 }
 
-.CombineWith .combine-with-outer-div .inner img {
+.CombineWith .combine-with-outer-div1 .inner img {
   width: 100%;
-  height: 100%;
+  height: 80%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.CombineWith .combine-with-outer-div .inner p {
+.CombineWith .combine-with-outer-div1 .inner p {
   text-align: center;
   font-size: 0.8rem;
+}
+
+.CombineWith .combine-with-outer-div2 {
+  background: #F5F5F5;
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0;
+}
+
+.CombineWith .combine-with-outer-div2 div {
+  width: 100%;
+  height: 300px;
+}
+
+.CombineWith .combine-with-outer-div2 div img {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=combinewith.css.map */

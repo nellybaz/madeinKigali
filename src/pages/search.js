@@ -12,7 +12,6 @@ import ads from '../assets/images/search_ads.jpg';
 
 import like from '../assets/images/heart3.png';
 
-
 class Search extends Component {
 
     constructor(props) {
@@ -92,7 +91,7 @@ class Search extends Component {
                     <Link to={'/dev/product/jean/2'} ><img className={ads_class} src={img} alt="mik" /> </Link>
                     {
                         x != 4 &&
-                        <p><b>Check Velvet Wide Leg Trousers </b><br></br><span>$112.99</span> <span style={{ float: 'right', marginRight: "20%", width: "16px", display: 'flex', position: 'relative', bottom: '370px', left: '10px' }} title="Likes"><img src={like} /><span className="prd-search-likes">112</span></span></p>
+                        <p><b>Check Velvet Wide Leg Trousers </b><br></br><span>$112.99</span> <span style={{ float: 'right', marginRight: "20%", width: "16px", display: 'flex', position: 'relative', bottom: '370px', left: '10px', cursor: 'pointer' }} title="Likes"><img src={like} /><span className="prd-search-likes">112</span></span></p>
                     }
 
                     {

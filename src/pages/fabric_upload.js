@@ -80,6 +80,9 @@ class Fabric_Upload extends Component{
                     </section>
 
 
+                  
+
+
 
                 <Footer/>
             </div>

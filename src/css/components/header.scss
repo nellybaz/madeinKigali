@@ -125,6 +125,11 @@ header{
         justify-content: center;
         flex-direction: row;
 
+        a{
+            //border: 1px solid red;
+            margin-right: 15px;
+        }
+
         input,a{
             padding:5px;
         }
