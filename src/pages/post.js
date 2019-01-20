@@ -205,9 +205,13 @@ class Post extends Component {
                     <div className="article-section">
                         <div className="post-image-div">
                             <img src={bh3} alt="mik" useMap="#image-map" />
+                            <a href="/dev/product/Isabel%20Maer/2"><div className='image-point' title="SHOP THIS">
+                            
+                            </div>
+                            </a>
 
                             <map name="image-map">
-                                <area target="" alt="Here" title="Here" href="/dev/product/Isabel%20Maer/2" coords="396,633,187" shape="circle" />
+                                <area target="" alt="Here" title="Here" href="/dev/product/Isabel%20Maer/2" coords="396,680,187" shape="circle"/>
                             </map>
                         </div>
 

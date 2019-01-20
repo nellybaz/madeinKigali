@@ -6,7 +6,7 @@ import twitter from '../assets/images/twitter-logo.png';
 import linkedin from '../assets/images/linkedin-logo.png';
 
 import Instafeed from 'react-instafeed';
-import InstagramEmbed from 'react-instagram-embed'
+// import InstagramEmbed from 'react-instagram-embed'
 
 import pinterest from '../assets/images/pinterest.png';
 import g_plus from '../assets/images/g_plus.png';
@@ -126,7 +126,7 @@ class BlogSidebar extends Component {
                     />
                 </div>
 
-                <div className='insta-feed'>
+                {/* <div className='insta-feed'>
                     <InstagramEmbed
                         url='https://www.instagram.com/p/BN4dQ2TgN0z/'
                         maxWidth={320}
@@ -142,7 +142,7 @@ class BlogSidebar extends Component {
                         onAfterRender={() => { }}
                         onFailure={(err) => { console.log(err);}}
                     />
-                </div>
+                </div> */}
             </div>
         );
     }
