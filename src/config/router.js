@@ -32,6 +32,10 @@ import Cart from '../pages/cart.js';
 import Delivery from '../pages/delivery_final.js';
 import Company from '../pages/company';
 import About from '../pages/about';
+import PointOfSale from '../pages/point_of_sale';
+import DashBoard from '../pages/dashboard/dashboard';
+import FlashDeals from  '../pages/dashboard/flashdeals';
+
 
     const outer =()=> (
                 <Router onUpdate={()=> window.scrollTo(0,0)}>
@@ -47,6 +51,7 @@ import About from '../pages/about';
                             <Route exact path={"/dev/shop"} component={Search}/>
                             <Route exact path={"/dev/contact"} component={Contact}/>
                             <Route exact path={"/dev/help"} component={Help}/>
+                            <Route exact path={"/dev/points"} component={PointOfSale}/>
                             <Route exact path={"/dev/info/:infocategory"} component={Info}/>
                             <Route exact path={"/dev/m2m"} component={M2M}/>
                             <Route exact path={"/dev/m2m2"} component={M2M2}/>
@@ -65,6 +70,8 @@ import About from '../pages/about';
                             <Route exact path={"/dev/delivery"} component={Delivery}/>
                             <Route exact path={"/dev/company"} component={Company}/>
                             <Route exact path={"/dev/company/about"} component={About}/>
+                            <Route exact path={"/dashboard"} component={DashBoard}/>
+                            <Route exact path={"/dashboard/flashdeals"} component={FlashDeals}/>
                              <Route component={notFound}/>
                         </Switch>            
                 </Router>

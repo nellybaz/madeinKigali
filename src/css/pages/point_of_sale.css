@@ -1,0 +1,74 @@
+.PointOfSale {
+  width: 100%;
+}
+
+.PointOfSale .point-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  grid-gap: 5;
+}
+
+.PointOfSale .point-wrapper .left {
+  width: 100%;
+  height: 500px;
+  border: solid 2px #cdcdcd;
+  margin-top: 11%;
+  padding-top: 50px;
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.PointOfSale .point-wrapper .left div {
+  padding: 10px;
+}
+
+.PointOfSale .point-wrapper .left div * {
+  color: #595959;
+}
+
+.PointOfSale .point-wrapper .left div h6 {
+  font-weight: bold;
+}
+
+.PointOfSale .point-wrapper .left div p {
+  font-size: 0.8rem;
+}
+
+.map-pointer {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #9A0022;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/*# sourceMappingURL=point_of_sale.css.map */

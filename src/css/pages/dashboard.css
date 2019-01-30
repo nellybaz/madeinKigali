@@ -1,0 +1,112 @@
+.DashBoard {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 8fr;
+      grid-template-columns: 2fr 8fr;
+  grid-gap: 0;
+}
+
+.DashBoard * {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.DashBoard div {
+  height: 700px;
+  width: 100%;
+}
+
+.DashBoard .d-left {
+  background: #260746;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.DashBoard .d-left * {
+  color: white;
+}
+
+.DashBoard .d-left .profile-image {
+  margin-top: 50px;
+  height: 300px;
+  width: 70%;
+  border-radius: 50%;
+}
+
+.DashBoard .d-left .profile-image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.DashBoard .d-left div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.DashBoard .d-left div * {
+  text-align: center;
+}
+
+.DashBoard .d-left div button {
+  width: 100%;
+  background: #7215d1;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.DashBoard .d-right .top-header {
+  height: 50px;
+  border: 1px solid grey;
+}
+
+.DashBoard .d-right .d-right-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.DashBoard .d-right .d-right-content {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  height: 70%;
+}
+
+.DashBoard .d-right .d-right-content input, .DashBoard .d-right .d-right-content select {
+  height: 50px;
+  border: 1px solid #cdcdcd;
+  padding: 5px;
+  background: white;
+  color: #4d4d4d;
+}
+
+.DashBoard .d-right .d-right-content .checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.DashBoard .d-right .d-right-content .add-btn {
+  height: 50px;
+}
+
+.DashBoard .d-right .d-right-content form {
+  display: inline;
+}
+/*# sourceMappingURL=dashboard.css.map */

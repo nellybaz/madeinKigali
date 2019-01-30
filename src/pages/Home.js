@@ -57,6 +57,9 @@ import insta_left from '../assets/images/insta-left2.jpeg';
 import cross_out from '../assets/images/cross-out.png';
 import { Link } from 'react-router-dom';
 
+
+import request from 'superagent';
+
 import {
   isMobileOnly
 } from "react-device-detect";
@@ -224,6 +227,8 @@ class Home extends Component {
 
 
   componentDidMount() {
+
+    this.flashdealsCall();
     let visited = sessionStorage.getItem('visited');
     if(visited != null){
       this.setState({
@@ -313,6 +318,58 @@ class Home extends Component {
       })
     }
   }
+
+
+
+  async flashdealsCall() {
+    
+      try {
+
+
+        let currentComponent = this;
+
+    request
+      .post('https://madeinkigali.com/API/api2/homepage/')
+      .set('Content-Type', 'application/x-www-form-urlencoded')
+      .send({ token: "mik9876543210", tag:'flashdeals'})
+      .end(function(err, res){
+     
+      if(res != null){
+        if(res.body.flashdeals != null)
+        {
+
+        //   currentComponent.setState({
+        //     flashdeals = 
+        // });
+            console.log(res.body.flashdeals);
+            console.log('true');
+            
+            
+          
+        }
+
+        else if(res.body.res === 0)
+        {
+            console.log('not registered');
+            
+        }
+         
+      }
+      else{
+        console.log(res, err);
+        
+      }
+    
+      });
+    
+    
+    } catch(e) {
+      console.log(e);
+    }
+}
+
+
+//===============  API CALL ===========================\\
 
   generateUserID = () => {
 
@@ -440,7 +497,7 @@ class Home extends Component {
               <span><img src={support} /></span> <Link to={'/dev/quote'}>Wholesale Quote</Link>
             </div>
             <div className="middle-nav-item">
-              <span><img src={location} /></span><Link to={'/dev/info/points-of-sale'}>Points of Sale</Link>
+              <span><img src={location} /></span><Link to={'/dev/points'}>Points of Sale</Link>
             </div>
             <div className="middle-nav-item">
               <span><img src={delivery} /></span><Link to={'/dev/info/delivery'} >Delivery</Link>

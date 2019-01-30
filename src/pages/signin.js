@@ -93,7 +93,6 @@ class Signin extends Component{
         }
   }
 
-
   disableCookies =()=>{
     const cookies = new Cookies();
     if(cookies.get('email') != undefined){

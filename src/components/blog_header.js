@@ -134,6 +134,10 @@ class BlogHeader extends Component {
                 case "news":
                 img = bh8                
                 break;
+
+                case "visit_rwanda":
+                img = bh6               
+                break;
         
             default:
                 img = bh5
@@ -253,7 +257,7 @@ class BlogHeader extends Component {
                         <Link to={'/dev/blog/news'} ><p>NEWS</p></Link>
                         </div>
                         <div className="blog-header-navlinks">
-                            <Link  to={'/dev/visit_rwanda'} ><p>#VISITRWANDA</p></Link>
+                            <Link  to={'/dev/blog/visit_rwanda'} ><p>#VISITRWANDA</p></Link>
                         </div>
 
                     </div>
