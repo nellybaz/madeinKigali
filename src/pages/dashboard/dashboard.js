@@ -74,13 +74,14 @@ class DashBoard extends Component{
             {
                console.log('info added okay');
                alert('PRODUCT UPLOAD SUCCESS');
-               window.location.href = "/dashboard"
+               window.location.href = "/dev/admin/dashboard"
                
               
             }
 
             else if(res.body.res === 0)
             {
+                alert('PRODUCT UPLOAD FAILED');
                 console.log('not registered');
                 
             }
@@ -133,6 +134,7 @@ class DashBoard extends Component{
       .end(function(err, res){
      
       if(res != null){
+        console.log(res.body);
         if(res.body.res === 1)
         {
             currentComponent.addProduct();
@@ -229,9 +231,9 @@ class DashBoard extends Component{
                           
                         }}>
                             <option selected>Select Brand</option>
-                            <option value = "amami">Amami</option>
-                            <option value = "mik">MIK</option>
-                            <option value = "mik & co">MIK & CO</option>
+                            <option value = "Amami">Amami</option>
+                            <option value = "MIK">MIK</option>
+                            <option value = "MIK & CO">MIK & CO</option>
                         </select>
                         <input type="text" placeholder="Sex" />
 

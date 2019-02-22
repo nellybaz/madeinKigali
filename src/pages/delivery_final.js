@@ -11,7 +11,6 @@ import logo from '../assets/images/logo.png';
 import '../css/pages/delivery_final.css';
 
 class Delivery extends Component{
-
     componentDidMount(){
         window.scrollTo(0,0);
     }

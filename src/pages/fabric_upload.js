@@ -6,6 +6,21 @@ import Footer from '../components/footer';
 import {Link} from 'react-router-dom';
 
 class Fabric_Upload extends Component{
+    constructor(props){
+        super(props)
+        this.state={
+            upload_btn: true,
+            upload_btn_class: 'grey_background',
+        }
+    }
+
+
+    showButton = ()=>{
+        this.setState({
+            upload_btn: false,
+            upload_btn_class: ''
+        });
+    }
     render(){
         return(
             <div className="fabric_upload" style={{background:'white'}}>
@@ -34,7 +49,7 @@ class Fabric_Upload extends Component{
                                 you have permission to do so. Reproducing copyrighted, trademarked or
                                 otherwise protected material is a violation of Spoonflower’s Terms of Service.</p>
 
-                                <span><input type="checkbox" /> I own the rights or have permission to use these designs, and I agree to the Spoonflower Terms of Service.</span>
+                                <span><input type="checkbox" onChange={this.showButton}/> I own the rights or have permission to use these designs, and I agree to the Spoonflower Terms of Service.</span>
                             
 
                                 {/* horizontal line */}
@@ -42,7 +57,7 @@ class Fabric_Upload extends Component{
 
 
                                 <h5>3. Upload Your FIles</h5>
-                                <Link to={'/dev/fabric/upload/select/1'} ><button className="btn-upload-fabric">Upload</button></Link>
+                                <Link to={'/dev/fabric/upload/select/1'} ><button disabled = {this.state.upload_btn}  className="btn-upload-fabric">Upload</button></Link>
                             </div>
 
                             

@@ -1,3 +1,10 @@
+@media only screen and (min-width: 1600px) {
+  .fabric_upload {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+}
+
 .fabric_upload {
   width: 100%;
 }
@@ -65,5 +72,9 @@
 .fabric-upload-right h6 {
   font-size: 1.2rem;
   margin-top: 20px;
+}
+
+.grey_background {
+  background: gray;
 }
 /*# sourceMappingURL=fabric_upload.css.map */

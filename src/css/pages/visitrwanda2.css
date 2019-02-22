@@ -33,6 +33,13 @@
   background: transparent;
 }
 
+@media only screen and (min-width: 1600px) {
+  .VisitRwanda2 {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+}
+
 .vr-wrapper {
   width: 90%;
   -webkit-box-sizing: border-box;

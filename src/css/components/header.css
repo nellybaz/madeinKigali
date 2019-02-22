@@ -79,8 +79,9 @@ header {
 }
 
 .logo-div-nav {
-  width: 140px;
-  height: 60px !important;
+  width: 13%;
+  max-height: 110px !important;
+  min-height: 60px;
 }
 
 .logo-div-nav img {

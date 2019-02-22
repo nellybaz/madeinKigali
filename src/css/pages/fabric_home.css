@@ -1,0 +1,97 @@
+.fabric-sidebar-view-all-div {
+  padding: 10px;
+}
+
+.fabric-sidebar-view-all-div .fabric-sidebar-view-all-button {
+  padding: 10px;
+  background: #9a0022;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  width: 80%;
+  cursor: pointer;
+}
+
+.fabric-upload-ads {
+  width: 100%;
+  background: #f3f3f3;
+  height: 300px;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.fabric-upload-ads h5 {
+  font-weight: bold;
+}
+
+.fabric-upload-ads ul {
+  position: relative;
+  right: 20px;
+}
+
+.fabric-upload-ads a button {
+  padding: 10px;
+  background: #9a0022;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  width: 80%;
+  cursor: pointer;
+}
+
+.fabric-upload-ads .view-all {
+  margin-top: 20px;
+}
+
+.fabric-upload-ads .view-all a {
+  text-decoration: underline;
+}
+
+.sample-printing {
+  margin-top: 20px;
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.sample-printing div {
+  height: 100%;
+}
+
+.sample-printing .left {
+  width: 4%;
+  background: #f3f3f3;
+  cursor: pointer;
+}
+
+.sample-printing .right {
+  width: 96%;
+  cursor: pointer;
+}
+
+.sample-printing .right img {
+  width: 100%;
+  height: 70%;
+}
+
+.sample-printing .right span {
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.sample-printing:hover > .left {
+  background: #9a0022;
+}
+/*# sourceMappingURL=fabric_home.css.map */

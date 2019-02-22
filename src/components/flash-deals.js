@@ -110,7 +110,7 @@ class FlashDeals extends Component {
             }
             
             
-            if((index >= this.state.count && index < this.state.count+limit) && 11 - this.state.count > 3){
+            if((index >= this.state.count && index < this.state.count+limit) && 6 - this.state.count > 3){
             return(
 
               // changing class name with states if its for blog display or not
@@ -119,24 +119,25 @@ class FlashDeals extends Component {
               {/* rendering image if blog */}
               {
                 this.props.isBlog && 
-                <Link to={`/dev/blog/post/${item.link}`} ><img className="flashdeals-img" src={item.img}/></Link>
+                <Link to={`/dev/blog/post/${item.id}/${item.name}`} ><img className="flashdeals-img" src={`https://madeinkigali.com/images/blog/${item.img}`}/></Link>
               }
               {
                 !this.props.isBlog && 
-              <Link to={`/dev/product/${item.brand}/${item.id}`} ><img className="flashdeals-img" src={item.img}/></Link>
+              <Link to={`/dev/product/${item.brand}/${item.id}`} ><img className="flashdeals-img" src={`https://madeinkigali.com/images/products/${item.img}`}/></Link>
               }
               </div>
             <div className="flashdeals-text">
               {!this.props.isBlog && <div>
 
                 <p className="f-brands">{item.brand}</p>
-              <p className="f-name">Red Leather Bag</p>
-              <p className="f-price">$120</p>
+              <p className="f-name">{item.name}</p>
+              <p className="f-price">${item.price}</p>
               </div>}
 
               {
                 this.props.isBlog && <div>
-                  <p className="flashdeals-blog-description">Introducing wedding style trending gowns, cool and colorful</p>
+                  <p className="flashdeals-blog-description">{item.name} <br></br> <span>{item.description}</span> </p>
+                  
                 </div>
               }
             </div>
@@ -148,7 +149,6 @@ class FlashDeals extends Component {
          
         )
       }
-
        
         {
           !this.props.isBlog &&

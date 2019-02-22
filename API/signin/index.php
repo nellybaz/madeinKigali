@@ -9,6 +9,25 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 include("../functions/functions.php");
 $res = "";
 
+
+//tag  = "save"
+
+// recieve the following post
+//audio_name
+//userid
+//label
+
+
+
+//tag = "send"
+//send as json data the following
+//audio_name
+//title
+//recorder name
+//label
+
+
+
 if(isset($_POST['token']) == "mik9876543210")
     {
         $tag = $_POST["tag"];

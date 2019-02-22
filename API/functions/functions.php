@@ -28,7 +28,12 @@ class Functions{
     	
     	return $this->res;
         
-    }
+	}
+	
+
+	function searchProduct($query){
+		
+	}
 }
 
 $test = new Functions();

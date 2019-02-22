@@ -138,7 +138,7 @@ class Header2 extends Component {
             </audio>
 
         <img className="audio-pause" src={this.state.music_icon} onClick={()=> this.handleTunePause()} />
-          <p>Register now to get <span className="top-bar-white-text">10% off*</span> your first order with code <span onClick={()=>this.disableCookies()} className="top-bar-white-text"><b>NEWCUSTOMER10</b></span></p>
+          <p onClick={()=>window.location.href="/dev/signin"}>Register now to get <span className="top-bar-white-text">10% off*</span> your first order with code <span onClick={()=>this.disableCookies()} className="top-bar-white-text"><b>NEWCUSTOMER10</b></span></p>
       </div>
       <header className="header">
         
@@ -169,7 +169,7 @@ class Header2 extends Component {
 
                 <div className='topbar-nav'>
                     <div className='topbar-nav-left'>
-                        <p style={{fontSize:'0.8rem'}}>Student? check our student discount</p>
+                        <Link className='student-text' to={'/dev/student_discount'} >Student? check our student discount</Link>
                     </div>
 
                     <div className='topbar-nav-right'>
@@ -234,16 +234,16 @@ class Header2 extends Component {
                         <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                                <h5 style={{ }}>SHOP BY CLOTHING</h5>
+                                <h5 style={{ }}>SHOP BY CATEGORY</h5>
                         
-                            <Link to={"#"} >Men’s Blazers</Link>
-                            <Link to={"#"} >Men’s coats & jackets</Link>
-                            <Link to={"#"} >Men’s dress shirts</Link>
-                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
-                            <Link to={"#"} >Women’s dresses</Link>
-                            <Link to={"#"} >Women’s shirts & blouses</Link>
-                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
-                            {/* <Link to={"#"} ></Link> */}
+                            <Link to={"#"} >New in Fashion</Link>
+                            <Link to={"#"} >New in Fabric Design</Link>
+                            <Link to={"#"} >New in Bags & Accessories</Link>
+                            <Link to={"#"} >New in Petite, Tall & Maternity </Link>
+                            <Link to={"#"} >New in Wholesale</Link>
+                            <Link to={"#"} >New in Brands</Link>
+                            <Link to={"#"} >New in Made to Measure</Link>
+                            <Link to={"#"} >Swim Shop</Link>
                         </div>
                     </div>
                   
@@ -257,21 +257,25 @@ class Header2 extends Component {
                 {/* fabric */}
 
 
-            <div className="fabric" ><a href="#" >FABRIC </a>
+            <div className="fabric" ><a href="/dev/fabric" >FABRIC </a>
             <div className="fabric-dropdown dropdowns">
                     <div className="fabric-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                                <h5 style={{ }}>FABRICS</h5>
+                                <h5 style={{ }}>DESIGN</h5>
                         
-                            <Link to={"/dev/fabric"} >Fabrics</Link>
+                            <Link to={"/dev/fabric/create"} >Create </Link>
                             <Link to={"/dev/fabric/upload"} >Upload</Link>
-                            <Link to={"#"} >Men’s dress shirts</Link>
-                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
-                            <Link to={"#"} >Women’s dresses</Link>
-                            <Link to={"#"} >Women’s shirts & blouses</Link>
-                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
+                            <Link to={"#"} >Design tools</Link>
+                            <Link to={"/dev/help"} >Design FAQS </Link>
+
+                            <h5 style={{ }}>SELL</h5>
+
+
+                            <Link to={"#"} >Commissions</Link>
+                        <Link to={"#"} >Seller Agreement</Link>
+                            <Link to={"#"} >Selling FAQs</Link>
                             {/* <Link to={"#"} ></Link> */}
                         </div>
                     </div>
@@ -281,13 +285,20 @@ class Header2 extends Component {
                     <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                            <h5 style={{ }}>SHOP BY EDIT</h5>
+                            <h5 style={{ }}>DESIGN YOUR OWN</h5>
                     
-                        <Link to={"#"} >Last Chance to Buy</Link>
-                        <Link to={"#"} >Men’s coats & jacketsBestsellers</Link>
-                        <Link to={"#"} >Multi Packs</Link>
-                        <Link to={"#"} >Multi-buy deals </Link>
-                        <Link to={"#"} >Holiday Shop</Link>
+                        <Link to={"#"} >Fabric</Link>
+                        <Link to={"#"} >Leather</Link>
+                        <Link to={"#"} >Clothing</Link>
+                        <Link to={"#"} >Homewear </Link>
+                        <Link to={"#"} >Accessories</Link>
+
+                        <h5 style={{ }}>SHOP BY CATEGORY</h5>
+
+                        <Link to={"#"} >Select a Room</Link>
+                        <Link to={"#"} >Soft furnishings</Link>
+                       
+                        
                         
                     </div>
 
@@ -297,16 +308,21 @@ class Header2 extends Component {
                     <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                            <h5 style={{ }}>SHOP BY CATEGORY</h5>
+                            {/* <h5 style={{ }}>SHOP BY CATEGORY</h5> */}
                     
-                        <Link to={"#"} >RTWMen</Link>
-                        <Link to={"#"} >RTWWomen</Link>
-                        <Link to={"#"} >Couture Men</Link>
-                        <Link to={"#"} >Couture Women </Link>
-                        <Link to={"#"} >Children</Link>
+                        <Link style={{fontWeight:'400'}} to={"#"} >Cook and dine</Link>
+                        <Link to={"#"} >Home accessories</Link>
+                        <Link to={"#"} >Stationery</Link>
+                        <Link to={"#"} >Travel & leisure </Link>
+                       
 
-                        <Link to={"#"} >Wedding </Link>
-                        <Link to={"#"} >Accessories</Link>
+                        <h5 style={{ }}>SHOP BY DESIGNS</h5>
+
+                        <Link to={"#"} >Trending Now </Link>
+                        <Link to={"#"} >Animals</Link>
+                        <Link to={"#"} >Nature </Link>
+                        <Link to={"#"} >Seasonals</Link>
+                        <Link to={"#"} >Holiday </Link>
                         
                     </div>
                     
@@ -317,16 +333,21 @@ class Header2 extends Component {
                         <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                            <h5 style={{ }}>SHOP BY COLLECTION</h5>
+                            <h5 style={{ }}>SHOP BY THEMES</h5>
                     
-                        <Link to={"#"} >The MIK Boutique</Link>
-                        <Link to={"#"} >The Men guide</Link>
-                        <Link to={"#"} >The Women guide</Link>
-                        <Link to={"#"} >Workwear </Link>
-                        <Link to={"#"} >Suits</Link>
+                        <Link to={"#"} >Summer wave</Link>
+                        <Link to={"#"} >Spring Flower</Link>
+                        <Link to={"#"} >Valentine’s Day</Link>
+                        <Link to={"#"} >Holiday </Link>
+                        <Link to={"#"} >Dots</Link>
 
-                        <Link to={"#"} >Festival </Link>
-                        <Link to={"#"} >Going out</Link>
+                        <h5 style={{ }}>HELP CENTER</h5>
+
+                        <Link to={"#"} >Our Process </Link>
+                        <Link to={"#"} >Products</Link>
+
+                        <Link to={"#"} >Fill-A-Yard  </Link>
+                        <Link to={"#"} >Tutorials</Link>
                         
                     </div>
                     </div>
@@ -348,15 +369,15 @@ class Header2 extends Component {
                         <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                                <h5 style={{ }}>SHOP BY CLOTHING</h5>
+                                <h5 style={{ }}>SHOP BY STYLE</h5>
                         
-                            <Link to={"#"} >Men’s Blazers</Link>
-                            <Link to={"#"} >Men’s coats & jackets</Link>
-                            <Link to={"#"} >Men’s dress shirts</Link>
-                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
-                            <Link to={"#"} >Women’s dresses</Link>
-                            <Link to={"#"} >Women’s shirts & blouses</Link>
-                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
+                            <Link to={"#"} >MIK Boutique</Link>
+                            <Link to={"#"} >The Men guide</Link>
+                            <Link to={"#"} >The Women  guide</Link>
+                            <Link to={"#"} >Wardrobe essentials </Link>
+                            <Link to={"#"} >Work wear & Suits</Link>
+                            <Link to={"#"} >Mind Blowing</Link>
+                            <Link to={"#"} >Dare to impress</Link>
                             {/* <Link to={"#"} ></Link> */}
                         </div>
                     </div>
@@ -366,14 +387,18 @@ class Header2 extends Component {
                     <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                            <h5 style={{ }}>SHOP BY EDIT</h5>
+                            <h5 style={{ }}>SHOP BY CATEGORY</h5>
                     
-                        <Link to={"#"} >Last Chance to Buy</Link>
-                        <Link to={"#"} >Men’s coats & jacketsBestsellers</Link>
-                        <Link to={"#"} >Multi Packs</Link>
-                        <Link to={"#"} >Multi-buy deals </Link>
-                        <Link to={"#"} >Holiday Shop</Link>
-                        
+                        <Link to={"#"} >Shop all Women</Link>
+                        <Link to={"#"} >Shop all Men</Link>
+                        <Link to={"#"} >Shop All Patronnage</Link>
+                        <Link to={"#"} >Children</Link>
+                        <Link to={"#"} >Toodler & Baby Wear</Link>
+                        <Link to={"#"} >Special occasions</Link>
+                        <Link to={"#"} >Couture</Link>
+                        <Link to={"#"} >Accessories</Link>
+                        <Link to={"#"} >Festival</Link>
+
                     </div>
 
                     </div>
@@ -382,17 +407,18 @@ class Header2 extends Component {
                     <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                            <h5 style={{ }}>SHOP BY CATEGORY</h5>
+                            <h5 style={{ }}>DESIGN YOUR OWN</h5>
                     
-                        <Link to={"#"} >RTWMen</Link>
-                        <Link to={"#"} >RTWWomen</Link>
-                        <Link to={"#"} >Couture Men</Link>
-                        <Link to={"#"} >Couture Women </Link>
-                        <Link to={"#"} >Children</Link>
+                        <Link to={"#"} >Patterns</Link>
+                        <Link to={"#"} >Clothing</Link>
+                        <Link to={"#"} >Handmade Jewellery Men</Link>
+                        <Link to={"#"} >Embroidery Design </Link>
+                        <Link to={"#"} >Beaded Design</Link>
 
-                        <Link to={"#"} >Wedding </Link>
-                        <Link to={"#"} >Accessories</Link>
-                        
+                        <Link to={"#"} >Weaving Design </Link>
+                        <Link to={"#"} >Art Design</Link>
+                        <Link to={"#"} >Home Decor </Link>
+     
                     </div>
                     
 
@@ -402,16 +428,14 @@ class Header2 extends Component {
                         <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                            <h5 style={{ }}>SHOP BY COLLECTION</h5>
+                            <h5 style={{ }}>FABRIC CATALOGUE</h5>
                     
-                        <Link to={"#"} >The MIK Boutique</Link>
-                        <Link to={"#"} >The Men guide</Link>
-                        <Link to={"#"} >The Women guide</Link>
-                        <Link to={"#"} >Workwear </Link>
-                        <Link to={"#"} >Suits</Link>
+                        <Link to={"#"} >Uniwax</Link>
+                        <Link to={"#"} >Vlisco</Link>
+                        <Link to={"#"} >Chinese Wax</Link>
+                        <Link to={"#"} >Couture Lace </Link>
+                        <Link to={"#"} >Wedding Lace</Link>
 
-                        <Link to={"#"} >Festival </Link>
-                        <Link to={"#"} >Going out</Link>
                         
                     </div>
                     </div>
@@ -430,15 +454,17 @@ class Header2 extends Component {
                             
                                 <h5 style={{ }}>SHOP BY CATEGORY</h5>
                                                        
-                            <Link to={"#"} >Women’s suit</Link>
-                            <Link to={"#"} >Men’s suit</Link>
-                            <Link to={"#"} >Dresses</Link>
-                            <Link to={"#"} >Playsuit & Jumpsuit </Link>
-                            <Link to={"#"} >Dress Shirts</Link>
-                            <Link to={"#"} >Polos</Link>
-                            <Link to={"#"} >Tshirts & Vests</Link>
-                            <Link to={"#"} >Dress ShirtsBags & accessories</Link>
-                            <Link to={"#"} >Swimwear</Link>
+                            <Link to={"#"} >Women’s Clothing</Link>
+                            <Link to={"#"} >Men’s Clothing</Link>
+                            <Link to={"#"} >Sportswears</Link>
+                            <Link to={"#"} >Bag & Accessories </Link>
+                            <Link to={"#"} >Children</Link>
+                            <Link to={"#"} >Infant & Toodlers</Link>
+                            <Link to={"#"} >Garment Accessories</Link>
+                            <Link to={"#"} >Novelty & Special use</Link>
+                            <Link to={"#"} >Special Occassions</Link>
+                            <Link  to={"#"} >Shoes</Link>
+                            
                             
 
                         </div>
@@ -451,20 +477,22 @@ class Header2 extends Component {
 
                     <div style={{display:'flex', flexDirection:'column'}}>
                             
-                        {/* continuation from above sub menu */}
-                        <Link to={"#"} >Tshirts & VestsLingeries & Nightwear</Link>
-                        <Link to={"#"} >Hospitality</Link>
-                        <Link to={"#"} >School Uniforms</Link>
-                        <Link to={"#"} >Industrial wear</Link>
-                        {/* <Link to={"#"} >Security uniforms</Link>
-                        <Link to={"#"} >Sewing accessories</Link> */}
-                        <Link to={"#"} >Fabrics</Link>
+                    
+                        <Link style={{fontWeight: '400'}} to={"#"} >Home Decor</Link>
+                        <Link to={"#"} >Rwanda Beverages</Link>
+                       
+                        <Link to={"#"} >Rwanda Honey</Link> 
                             
-                            <h5 style={{ }}>SHOP BY OCCASSION</h5>
+                            {/* <h5 style={{ }}>SHOP BY CATEGORY</h5> */}
 
-                        <Link to={"#"} >Wedding</Link>
-                        <Link to={"#"} >Workwear</Link>
-                        <Link to={"#"} >Prom</Link>
+                        <Link to={"#"} >Source from Turkey</Link>
+                        <Link to={"#"} >Source from China</Link>
+                        <Link to={"#"} >Source from Italy</Link>
+                        <Link to={"#"} >Source from USA</Link>
+                        <h5 style={{ }}>SHOP BY USAGE</h5>
+                    
+                        <Link to={"#"} >School Uniforms</Link>
+                        <Link to={"#"} >Hospitality</Link>
                         
                         
                     </div>
@@ -475,16 +503,21 @@ class Header2 extends Component {
                     <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                            <h5 style={{ }}>SHOP BY CATEGORY</h5>
-                    
-                        <Link to={"#"} >Petite</Link>
-                        <Link to={"#"} >Curves</Link>
-                        <Link to={"#"} >Maternity</Link>
-                        <Link to={"#"} >Tall </Link>
-                        <Link to={"#"} >Muscle fit</Link>
+                            
+                        <Link style={{fontWeight: '400'}} to={"#"} >Security</Link>
+                        <Link to={"#"} >Polos </Link>
+                        <Link to={"#"} >T-shirts & Vest</Link>
 
-                        <Link to={"#"} >Shop by fit </Link>
-                        <Link to={"#"} >Petite</Link>
+                        <Link to={"#"} >Bags & Accessories </Link>
+                        <Link to={"#"} >Swimwear</Link>
+
+                        <Link to={"#"} >Lingeries & Nightwear </Link>
+                        <Link to={"#"} >Kitenge Fabrics</Link>
+                        <h5 style={{ }}>SHOP BY COLLECTION</h5>
+                    
+                    <Link to={"#"} >Cut & Sew</Link>
+                    <Link to={"#"} >Underwears</Link>
+                    
                         
                     </div>
                     
@@ -495,14 +528,16 @@ class Header2 extends Component {
                         <div style={{display:'flex', flexDirection:'column'}}>
                       
                             
-                            <h5 style={{ }}>SHOP BY BRAND</h5>
-                    
-                        <Link to={"#"} >Amami</Link>
-                        <Link to={"#"} >Ramazani</Link>
-                        <Link to={"#"} >MIK boutique </Link>
-                        <Link to={"#"} >Shop by brand </Link>
-                        <Link to={"#"} >Amami</Link>
-
+                        <Link style={{fontWeight: '400'}} to={"#"} >Industrial </Link>
+                        <Link to={"#"} >School Uniforms </Link>
+                        <Link to={"#"} >Hospitality</Link>
+                        <Link to={"#"} >Security</Link>
+                        <Link to={"#"} >Polos</Link>
+                        <Link to={"#"} >T-shirts and Vest </Link>
+                        <Link to={"#"} >Bags & Accessories</Link>
+                        <Link to={"#"} >Swimwear</Link>
+                        <Link to={"#"} >Lingeries & Nightwear</Link>
+                        <Link to={"#"} >Kitenge Fabric</Link>
                         
                         
                     </div>
@@ -522,16 +557,18 @@ class Header2 extends Component {
                         <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                                <h5 style={{ }}>SHOP BY BRANDS</h5>
+                                <h5 style={{ }}>SHOP BY CATEGORY</h5>
                         
-                            <Link to={"#"} >Men’s Blazers</Link>
-                            <Link to={"#"} >Men’s coats & jackets</Link>
-                            <Link to={"#"} >Men’s dress shirts</Link>
-                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
-                            <Link to={"#"} >Women’s dresses</Link>
-                            <Link to={"#"} >Women’s shirts & blouses</Link>
-                            {/* <Link to={"#"} >Women’s playsuit & jumpsuit</Link> */}
-                            {/* <Link to={"#"} ></Link> */}
+                            <Link to={"#"} >Brands A to Z</Link>
+                            <Link to={"#"} >Clothing Brands</Link>
+                            <Link to={"#"} >Shoe Brands</Link>
+                            <Link to={"#"} >Accessories Brands </Link>
+                            <Link to={"#"} >Beauty Brands</Link>
+                            <h5 style={{ }}>FEATURED BRANDS</h5>
+                    
+                        <Link to={"#"} >Maxhosa</Link>
+                        
+                            
                         </div>
                     </div>
 
@@ -540,13 +577,14 @@ class Header2 extends Component {
                     <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                            <h5 style={{ }}>SHOP BY EDIT</h5>
-                    
-                        <Link to={"#"} >Last Chance to Buy</Link>
-                        <Link to={"#"} >Men’s coats & jacketsBestsellers</Link>
-                        <Link to={"#"} >Multi Packs</Link>
-                        <Link to={"#"} >Multi-buy deals </Link>
-                        <Link to={"#"} >Holiday Shop</Link>
+                    <Link style={{fontWeight: '400'}} to={"#"} >Dpipertwins</Link>
+                        <Link to={"#"} >Nanawax</Link>
+                        <Link to={"#"} >Patheo </Link>
+                        <Link to={"#"} >Duro Olowu</Link>
+                        <Link to={"#"} >Stella Jean </Link>
+                        <Link to={"#"} >MIK Boutique</Link>
+                        <Link to={"#"} >Oheme Ohema </Link>
+                        <Link to={"#"} >Ellisha Boie</Link>
                         
                     </div>
 
@@ -591,16 +629,14 @@ class Header2 extends Component {
                         <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                                <h5 style={{ }}>SHOP BY CLOTHING</h5>
+                                <h5 style={{ }}>SALES & OFFERS</h5>
                         
-                            <Link to={"#"} >Men’s Blazers</Link>
-                            <Link to={"#"} >Men’s coats & jackets</Link>
-                            <Link to={"#"} >Men’s dress shirts</Link>
-                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
-                            <Link to={"#"} >Women’s dresses</Link>
-                            <Link to={"#"} >Women’s shirts & blouses</Link>
-                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
-                            {/* <Link to={"#"} ></Link> */}
+                            <Link to={"#"} >Shop all Sales</Link>
+                            <Link to={"#"} >SALE Fabric</Link>
+                            <Link to={"#"} >SALE M2M</Link>
+                            <Link to={"#"} >SALE TOP/DRESSES </Link>
+                            <Link to={"#"} >SALES  SHOES/BEAUTY</Link>
+  
                         </div>
                     </div>
 
@@ -608,16 +644,14 @@ class Header2 extends Component {
                         <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                                <h5 style={{ }}>SHOP BY CLOTHING</h5>
+                                <h5 style={{ }}>SPECIAL OFFERS</h5>
                         
-                            <Link to={"#"} >Men’s Blazers</Link>
-                            <Link to={"#"} >Men’s coats & jackets</Link>
-                            <Link to={"#"} >Men’s dress shirts</Link>
-                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
-                            <Link to={"#"} >Women’s dresses</Link>
-                            <Link to={"#"} >Women’s shirts & blouses</Link>
-                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
-                            {/* <Link to={"#"} ></Link> */}
+                            <Link to={"#"} >2 for £10 Jersey</Link>
+                            <Link to={"#"} >Multi-buy deals</Link>
+                            <Link to={"#"} >Last Chance to Buy</Link>
+                            <Link to={"#"} >MIK * 10 Mystery bag</Link>
+                            <Link to={"#"} >Student discount</Link>
+
                         </div>
                     </div>
                   
@@ -634,16 +668,16 @@ class Header2 extends Component {
                         <div style={{display:'flex', flexDirection:'column'}}>
                             
                             
-                                <h5 style={{ }}>VISIT RWANDA</h5>
+                                <h5 style={{ }}>SHOP BY EDIT</h5>
                         
-                            <Link to={"#"} >Men’s Blazers</Link>
-                            <Link to={"#"} >Men’s coats & jackets</Link>
-                            <Link to={"#"} >Men’s dress shirts</Link>
-                            <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
-                            <Link to={"#"} >Women’s dresses</Link>
-                            <Link to={"#"} >Women’s shirts & blouses</Link>
-                            <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
-                            {/* <Link to={"#"} ></Link> */}
+                            <Link to={"#"} >Baskets</Link>
+                            <Link to={"#"} >Arts</Link>
+                            <Link to={"#"} >Clothing</Link>
+                            <Link to={"#"} >Home Decor </Link>
+                            <Link to={"#"} >Bags & Accessories </Link>
+                            <Link to={"#"} >Gift Box</Link>
+                            <Link to={"#"} >Multi-buy deals</Link>
+                            <Link to={"#"} >Last Chance to Buy</Link>
                         </div>
                     </div>
                   
@@ -661,33 +695,32 @@ class Header2 extends Component {
                       
                         <div className="fashion-stories-dropdown-content">
                             <img src={little_banner} />
-                            <p>SEASON 5 DISPLAY</p>
+                            <p>Spring awakening</p>
                         </div>
 
                         <div className="fashion-stories-dropdown-content">
                             <img src={little_banner} />
-                            <p>BOUTIQUE AUTUMN 2018</p>
+                            <p>Casual Party</p>
                         </div>
 
 
                         <div className="fashion-stories-dropdown-content">
                             <img src={little_banner} />
-                            <p>SEASON 5 DISPLAY</p>
+                            <p>Gorilla Trekking</p>
                         </div>
                         <div className="fashion-stories-dropdown-content">
                             <div className='div-inner' style={{ display: 'flex', flexDirection: 'column' }}>
 
 
-                                <h5 style={{}}>ALL FASHION STORIES</h5>
+                                <h5 style={{}}>THE EDIT</h5>
 
-                                <Link to={"#"} >Men’s Blazers</Link>
-                                <Link to={"#"} >Men’s coats & jackets</Link>
-                                <Link to={"#"} >Men’s dress shirts</Link>
-                                <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
-                                <Link to={"#"} >Women’s dresses</Link>
-                                <Link to={"#"} >Women’s shirts & blouses</Link>
-                                <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
-                                {/* <Link to={"#"} ></Link> */}
+                                <Link to={"#"} >Competition</Link>
+                                <Link to={"#"} >Art Stories</Link>
+                                <Link to={"#"} >Blog Stories</Link>
+                                <Link to={"#"} >#Visit Rwanda Blog </Link>
+                                <Link to={"#"} >#MadeinKigaliRW</Link>
+                                <Link to={"#"} >MIK Supports</Link>
+                  
                             </div>
                         </div>
                   

@@ -22,6 +22,16 @@
 }
 
 
+@media only screen and (min-width: 1600px) {
+
+    .Search{
+        width:60% !important;
+        margin: 0 auto !important;
+    }
+
+}
+
+
 
 .Search{
     width:100%; 

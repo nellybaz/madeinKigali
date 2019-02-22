@@ -35,6 +35,11 @@ import About from '../pages/about';
 import PointOfSale from '../pages/point_of_sale';
 import DashBoard from '../pages/dashboard/dashboard';
 import FlashDeals from  '../pages/dashboard/flashdeals';
+import Blog_Dashboard from  '../pages/dashboard/blog';
+import Trending from '../pages/dashboard/trending';
+import PreFabricUpload from '../pages/pre_fabirc_upload';
+import ComingSoon from '../pages/coming_soon2';
+import About2 from '../pages/about2';
 
 
     const outer =()=> (
@@ -44,6 +49,7 @@ import FlashDeals from  '../pages/dashboard/flashdeals';
                             <Route exact path={"/dev/12hdgsikdhlmsdne"} component={App}/>
                             <Route exact path={"/upload"} component={Upload}/>
                             <Route exact path={"/dev/blog/:nav"} component={Blog}/>
+                            <Route exact path={"/dev"} component={ComingSoon}/>
                             <Route exact path={"/dev/blog/post/:blog_id/:blog_name"} component={Post}/>
                             <Route exact path={"/dev/product/:slug/:number"} component={Product}/>
                             <Route exact path={"/dev/wholesale/:slug/:number"} component={Wholesale}/>
@@ -61,6 +67,7 @@ import FlashDeals from  '../pages/dashboard/flashdeals';
                             <Route exact path={"/dev/fabric_single"} component={Fabric_Single}/>
                             <Route exact path={"/dev/fabric_search"} component={Fabric_Display}/>
                             <Route exact path={"/dev/fabric/upload"} component={Fabric_Upload}/>
+                            <Route exact path={"/dev/fabric/create"} component={PreFabricUpload}/>
                             <Route exact path={"/dev/fabric/upload/select/:fabric_id"} component={Fabric_Upload_Select}/>
                             <Route exact path={"/dev/signin"} component={Signin}/>
                             <Route exact path={"/dev/visit_rwanda"} component={visitRwanda}/>
@@ -70,8 +77,11 @@ import FlashDeals from  '../pages/dashboard/flashdeals';
                             <Route exact path={"/dev/delivery"} component={Delivery}/>
                             <Route exact path={"/dev/company"} component={Company}/>
                             <Route exact path={"/dev/company/about"} component={About}/>
-                            <Route exact path={"/dashboard"} component={DashBoard}/>
-                            <Route exact path={"/dashboard/flashdeals"} component={FlashDeals}/>
+                            <Route exact path={"/dev/company/about2"} component={About2}/>
+                            <Route exact path={"/dev/admin/dashboard"} component={DashBoard}/>
+                            <Route exact path={"/dev/admin/dashboard/flashdeals"} component={FlashDeals}/>
+                            <Route exact path={"/dev/admin/dashboard/blog"} component={Blog_Dashboard}/>
+                            <Route exact path={"/dev/admin/dashboard/trending"} component={Trending}/>
                              <Route component={notFound}/>
                         </Switch>            
                 </Router>

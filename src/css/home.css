@@ -16,6 +16,11 @@
 
 
 @media only screen and (min-width: 1600px) {
+
+    .Home{
+        width:60% !important;
+        margin: 0 auto !important;
+    }
     .Router, .mega-menu-sub-grid {
         width:60%;
         margin: 0 20% 0 20% !important;
@@ -199,6 +204,11 @@
     font-family:  Helvetica, Arial, sans-serif;
     /* font-family: 'Libre Baskerville', serif; */
 }
+
+.popular-brands-outer-div{
+    height:auto;
+    /* border: 1px solid red; */
+}
 .middle-nav{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -227,17 +237,27 @@
 } */
 
 .flashdeals-div{
-    height: 320px;
+    height: 450px;
+    width:92%;
+    margin: 0 auto;
+    margin-bottom: 15px;
 }
 .middleBanner{
-    width: 90%;
-    margin: 15px 5% 0 5%;
-    height: 500px;
-    background:url('../assets/images/background_front.jpg');
+    width: 92%;
+    margin: 5px auto;
+    margin-bottom: 15px;
+    height: auto
+    
+    /* background:url('../assets/images/background_front.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
+}
+
+.middleBanner img {
+    width:100%;
+    object-fit: cover;
 }
 
 
@@ -349,11 +369,15 @@
 }
 
 .popular-brands-holder{
-    margin: 0 5%;
+    width: 92.3%;
+    margin:0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
+
+
 .popular-brands-item{
     height:460px;
   
@@ -445,9 +469,9 @@
 
 
 .madeinkigali-inner-div{
-    width: 90%;
+    width: 92%;
     display: grid;
-    margin: 0 5%;
+    margin: 0 auto;
     grid-template-columns: repeat(6, 1fr)
     
 }
@@ -462,7 +486,7 @@
 
 
 .madeinkigali-section{
-
+    margin-top: -30px;
 }
 
 
@@ -519,9 +543,9 @@
 }
 
 .in-the-know{
-    margin-bottom:80px;
-    margin-top: 30px;
-    height:260px;
+    /* margin-bottom:80px; */
+    height:350px;
+    background: #f4f4f4;
 }
 
 .gallery-little-title{
@@ -547,10 +571,12 @@
 
 
   .fabric-inner-div-wrapper{
+  
       height:500px;
       display: grid;
       width:80%;
       margin: 10px 10%;     
+      margin-bottom: 0;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 10px;
       grid-template-rows: 1fr 1fr;
@@ -666,4 +692,19 @@
 
 .popup-hide{
     display: none !important;
+}
+
+.loading-spinner{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:row;
+  
+    height: 100%;
+}
+
+.loading-spinner img{
+    width:30px;
+    height:30px;
 }

@@ -4,6 +4,16 @@
       
 }
 
+
+@media only screen and (min-width: 1600px) {
+
+    .Info{
+        width:60% !important;
+        margin: 0 auto !important;
+    }
+
+}
+
 .info-outer *{
     font-family: 'Roboto Mono', monospace;
 }

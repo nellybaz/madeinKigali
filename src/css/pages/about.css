@@ -10,6 +10,13 @@
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .about {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+}
+
 .about {
   width: 100%;
 }
@@ -17,6 +24,30 @@
 .about-wrapper {
   width: 100%;
   background: white;
+}
+
+.about-wrapper .final_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-right: 10%;
+}
+
+.about-wrapper .final_btn button {
+  padding: 5px;
+  background: black;
+  color: white;
+  border: none;
 }
 
 .about-wrapper * {
@@ -112,8 +143,8 @@
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
   grid-gap: 0;
 }
 
@@ -190,5 +221,184 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.five {
+  position: relative;
+  bottom: 50px;
+  padding: 2% 15%;
+  width: 100%;
+  margin: 0 auto;
+  height: 700px;
+  background: #f3f3f3;
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  grid-gap: 10px;
+}
+
+.five div {
+  width: 100%;
+  height: 100%;
+}
+
+.five .five-left .five-left-top {
+  width: 100%;
+  height: 20%;
+}
+
+.five .five-left .five-left-top h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.five .five-left .five-left-top button {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.five .five-left .five-left-top p {
+  font-size: 14px;
+}
+
+.five .five-left .five-left-bottom {
+  width: 100%;
+  height: 80%;
+}
+
+.five .five-left .five-left-bottom img {
+  width: 100%;
+  height: 110%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.five .five-right .five-right-top, .five .five-right .five-right-bottom {
+  border-radius: 25px;
+  margin-bottom: 30px;
+  height: 50%;
+  width: 100%;
+  background: white !important;
+}
+
+.five .five-right .five-right-top {
+  padding: 20px;
+}
+
+.five .five-right .five-right-top h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.five .five-right .five-right-top .inner {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 9fr;
+      grid-template-columns: 1fr 9fr;
+  grid-gap: 0;
+}
+
+.five .five-right .five-right-top .inner img {
+  position: relative;
+  top: 10px;
+  margin-right: 10px;
+}
+
+.five .five-right .five-right-top .inner .text-div p {
+  font-size: 12px;
+}
+
+.five .five-right .five-right-bottom {
+  height: 38%;
+  border-radius: 0;
+  padding: 20px;
+}
+
+.five .five-right .five-right-bottom h5 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.five .five-right .five-right-bottom p {
+  font-size: 12px;
+}
+
+.six {
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 20%;
+  height: 600px;
+  position: relative;
+  bottom: 150px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  grid-gap: 10;
+}
+
+.six .left h3 {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  padding-right: 10%;
+}
+
+.six .left img {
+  width: 95%;
+  height: 300px;
+}
+
+.six .right {
+  padding-right: 30%;
+  position: relative;
+  bottom: 20%;
+}
+
+.six .right p {
+  font-size: 12px;
+}
+
+.six .right .inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 9fr;
+      grid-template-columns: 1fr 9fr;
+  grid-gap: 0;
+}
+
+.six .right .inner img {
+  width: 16px;
+}
+
+.six .right .btn-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.six .right .btn-div button {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
 }
 /*# sourceMappingURL=about.css.map */

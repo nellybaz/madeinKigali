@@ -1,0 +1,168 @@
+@media only screen and (min-width: 1600px) {
+  .ComingSoon {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+}
+
+@font-face {
+  font-family: "AvenirCustom";
+  src: url("../../assets/fonts/AvenirRoman.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "BaskervilleCustom";
+  src: url("../../assets/fonts/Baskerville.otf") format("opentype");
+}
+
+.ComingSoon {
+  border: 1px solid #F8F8F8;
+  width: 100%;
+  background: #F8F8F8;
+}
+
+.ComingSoon * {
+  font-family: "AvenirCustom";
+}
+
+.coming-soon-header {
+  padding: 0 30px;
+}
+
+.coming-soon-header img {
+  width: 100px;
+  height: 30px;
+}
+
+.ComingSoon .content {
+  background: url("../../assets/images/coming2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 98;
+  height: 900px;
+}
+
+.ComingSoon .content a:hover {
+  background: #f3f3f3 !important;
+  color: black !important;
+}
+
+.ComingSoon .content .content-inner {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.ComingSoon .content .content-inner h2 {
+  font-size: 95px;
+  color: #9A0022;
+}
+
+.ComingSoon .content .content-inner p {
+  color: black;
+  width: 67%;
+  text-align: center;
+}
+
+.ComingSoon .content .content-inner img {
+  width: 70%;
+  position: relative;
+  right: 15px;
+}
+
+.ComingSoon .content .content-inner .btns-div {
+  position: relative;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  left: 4%;
+  width: 100%;
+  padding-left: 10%;
+}
+
+.ComingSoon .content .content-inner .btns-div a {
+  border: none;
+  background: black;
+  color: white;
+  width: 120px;
+  padding: 10px 15px;
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: bolder;
+  font-family: "AvenirCustom";
+}
+
+.ComingSoon .content .content-inner .count-down-div {
+  width: 60%;
+  height: 150px;
+  position: relative;
+  left: 3%;
+}
+
+.ComingSoon .content .content-inner .count-down-div * {
+  font-size: 5rem;
+}
+
+.ComingSoon .content .content-inner .count-down-labels ul {
+  margin-left: 10px;
+  position: relative;
+  bottom: 40px;
+  margin-top: 5px;
+}
+
+.ComingSoon .content .content-inner .count-down-labels ul li {
+  text-decoration: none;
+  display: inline;
+  margin-right: 115px;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: "BaskervilleCustom" !important;
+}
+
+.ComingSoon .content .content-inner .social-sub {
+  margin-top: 50px;
+  width: 40%;
+  height: 100px;
+  position: relative;
+  right: 50px;
+}
+
+.ComingSoon .content .content-inner .social-sub input {
+  border: none;
+  border-bottom: 2px #cdcdcd solid;
+  background: transparent;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Felipa', cursive;
+}
+
+.social-sub ::-webkit-input-placeholder {
+  font-style: italic;
+  color: #cdcdcd;
+  font-family: 'Felipa', cursive;
+}
+
+.coming-soon-social {
+  position: relative;
+  right: 35%;
+  bottom: 40px;
+}
+
+.coming-soon-social img {
+  width: 15px !important;
+  height: 28px;
+}
+
+.days, .hours, .mins, .secs {
+  border-bottom: 1.5px solid black;
+  border-top: 1.5px solid black;
+  border-right: 0.5px solid #8c8c8c;
+  border-left: 0.5px solid #8c8c8c;
+  border-radius: 6px;
+  margin: 5px;
+  padding: 0 10px;
+  background: white;
+  height: 500px !important;
+}
+/*# sourceMappingURL=coming_soon.css.map */

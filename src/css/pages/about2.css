@@ -1,0 +1,229 @@
+@media only screen and (min-width: 1600px) {
+  .About2 {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+}
+
+.About2 {
+  width: 100%;
+}
+
+.About2 .about2-wrapper {
+  background: white;
+  width: 100%;
+}
+
+.About2 .about2-wrapper * {
+  color: black;
+  font-family: Lato;
+}
+
+.About2 .about2-wrapper .video-jumbotron video {
+  width: 100%;
+}
+
+.About2 .about2-wrapper .mission {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.About2 .about2-wrapper .mission p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.About2 .about2-wrapper .timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.About2 .about2-wrapper .timeline .p {
+  width: 250px;
+}
+
+.About2 .about2-wrapper .timeline .p p {
+  border-top: 1px solid black;
+  font-size: 24px;
+  padding-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.About2 .about2-wrapper .timeline-tabs {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  grid-gap: 2px;
+}
+
+.About2 .about2-wrapper .timeline-tabs div {
+  width: 100%;
+  height: 50px;
+  background: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.About2 .about2-wrapper .tab-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+  width: 80%;
+  margin: 0 auto;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.About2 .about2-wrapper .tab-content div {
+  width: 100%;
+  height: 100%;
+}
+
+.About2 .about2-wrapper .tab-content .left {
+  width: 100%;
+}
+
+.About2 .about2-wrapper .tab-content .left img {
+  width: 100%;
+}
+
+.About2 .about2-wrapper .tab-content .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.active-tab {
+  background: gray !important;
+  border-top: 2px solid black !important;
+}
+
+.strategy {
+  width: 100%;
+  background: #f3f3f3;
+  padding: 0 10%;
+  height: 300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
+  grid-gap: 0;
+}
+
+.strategy div {
+  width: 100%;
+  height: 95%;
+}
+
+.strategy .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.strategy .left h4 {
+  font-weight: bold;
+}
+
+.strategy .left button {
+  padding: 8px;
+  border: none;
+  background: black;
+  color: white;
+}
+
+.strategy .right {
+  padding: 10%;
+}
+
+.bottom-div {
+  width: 100%;
+  height: 300px;
+  background: #1a1a1a;
+}
+
+.bottom-div div p, .bottom-div div h5 {
+  color: white !important;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bottom-div div p {
+  font-size: 12px;
+  color: black !important;
+}
+
+.bottom-div .top {
+  border: 2px solid white;
+  width: 30%;
+  position: relative;
+  left: 50%;
+  bottom: 30px;
+  padding: 10px;
+}
+
+.bottom-div .bottom {
+  width: 40%;
+  margin-left: 10%;
+}
+
+.bottom-div .bottom * {
+  color: white !important;
+}
+
+.bottom-div .bottom p {
+  text-align: justify;
+}
+/*# sourceMappingURL=about2.css.map */

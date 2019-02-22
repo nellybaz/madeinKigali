@@ -97,6 +97,10 @@
   color: #4d4d4d;
 }
 
+.DashBoard .d-right .d-right-content textarea {
+  height: 150px;
+}
+
 .DashBoard .d-right .d-right-content .checkbox {
   width: 20px;
   height: 20px;
@@ -108,5 +112,41 @@
 
 .DashBoard .d-right .d-right-content form {
   display: inline;
+}
+
+@media only screen and (min-width: 1600px) {
+  .DashBoard {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+}
+
+.flashdeals-container .inner {
+  border: 1px solid #cdcdcd;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.flashdeals-container .inner input {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: #666666;
+}
+
+.search-result {
+  height: 100%;
+  overflow: scroll;
+}
+
+.search-item-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 1fr;
+      grid-template-columns: 5fr 1fr;
+  grid-gap: 10px;
+  height: 50px !important;
+  padding: 20px;
 }
 /*# sourceMappingURL=dashboard.css.map */

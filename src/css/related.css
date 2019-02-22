@@ -2,6 +2,15 @@
     width:100%;
 }
 
+
+@media only screen and (min-width: 1600px) {
+
+    .Related{
+        width:60% !important;
+        margin: 0 auto !important;
+    }
+
+}
 .related-post-div{
     display: flex;
     width: 100%;

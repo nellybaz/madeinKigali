@@ -24,6 +24,13 @@
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .Product {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+}
+
 .Product {
   width: 94%;
   margin: 0 3%;

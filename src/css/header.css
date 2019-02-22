@@ -7,7 +7,6 @@
         display: none !important;
     }
 
-
     .logo-item{
         width:29% !important;
         margin:0 20% 0 5% !important;
@@ -99,10 +98,18 @@
 }
 /* END OF MOBILE VIEW */
 
+
 .Header{
     width:100%;
     background-color: #fff;
 
+}
+
+.topbar-nav .student-text{
+    font-size: 0.8rem;
+    color: black;
+    position: relative;
+    top: 10px;
 }
 
 .topmost-bar{
@@ -120,6 +127,8 @@
     font-size: 0.8rem;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+
+    cursor: pointer;
     
 }
 
@@ -551,10 +560,14 @@
     height:350px;
     z-index: 2;
     /* margin-bottom: 1px solid red !important; */
-    
-    
 }
 
+.dropdowns h5 {
+    padding-bottom: 3px;
+    border-bottom: 1px solid gray;
+    text-decoration: none !important;
+    width: 150px !important;
+}
 
 .new-in-dropdown{
     padding:5px 30px 0 30px;

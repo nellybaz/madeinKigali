@@ -3,6 +3,17 @@
    
 }
 
+
+
+@media only screen and (min-width: 1600px) {
+
+    .Gallery{
+        width:60% !important;
+        margin: 0 auto !important;
+    }
+
+}
+
 .gallery-wrapper{
     width:90%;
     margin: 50px 5% 0 5%;

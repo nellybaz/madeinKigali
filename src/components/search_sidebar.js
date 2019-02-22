@@ -109,40 +109,83 @@ class SearchSidebar extends Component {
     return (
        
       <div id="SearchSidebar" className={`SearchSidebar ${this.state.sidebar_class}`} >
+        {/* <div className="sidebar-item">
+            <details>
+                <summary>
+                        <button className="btn btn-sidebar-search"><p><b>Size</b> </p>
+                    <span><img src={arrow_down} /></span></button>  
+                        </summary>
+
+                        <p>Details</p>
+            </details>
+          
+
+        </div> */}
+
         <div className="sidebar-item">
-            <button className="btn btn-sidebar-search"><p><b>Product Type</b> </p>
-            <span><img src={arrow_down} /></span></button>          
+                    
+        </div>
+        <div className="sidebar-item">
+        <details>
+                <summary>
+                        <button className="btn btn-sidebar-search"><p><b>Price</b> </p>
+                    <span><img src={arrow_down} /></span></button>  
+                        </summary>
+
+                        <p>Details</p>
+            </details>         
+        </div>
+        <div className="sidebar-item">
+        <details>
+                <summary>
+                        <button className="btn btn-sidebar-search"><p><b>Brand</b> </p>
+                    <span><img src={arrow_down} /></span></button>  
+                        </summary>
+
+                        <p>Details</p>
+            </details>         
+        </div>
+        <div className="sidebar-item">
+        <details>
+                <summary>
+                        <button className="btn btn-sidebar-search"><p><b>Fabric</b> </p>
+                    <span><img src={arrow_down} /></span></button>  
+                        </summary>
+
+                        <p>Details</p>
+            </details>          
+        </div>
+        <div className="sidebar-item">
+        <details>
+                <summary>
+                        <button className="btn btn-sidebar-search"><p><b>Size</b> </p>
+                    <span><img src={arrow_down} /></span></button>  
+                        </summary>
+
+                        <p>Details</p>
+            </details>        
         </div>
 
         <div className="sidebar-item">
-            <button className="btn btn-sidebar-search"><p><b>Size</b> </p>
-            <span><img src={arrow_down} /></span></button>          
-        </div>
-        <div className="sidebar-item">
-            <button className="btn btn-sidebar-search"><p><b>Price</b></p> 
-            <span><img src={arrow_down} /></span></button>          
-        </div>
-        <div className="sidebar-item">
-            <button className="btn btn-sidebar-search"><p><b>Brand</b></p> 
-            <span><img src={arrow_down} /></span></button>          
-        </div>
-        <div className="sidebar-item">
-            <button className="btn btn-sidebar-search"><p><b>Fabric</b> </p>
-            <span><img src={arrow_down} /></span></button>          
-        </div>
-        <div className="sidebar-item">
-            <button className="btn btn-sidebar-search"><p><b>Size</b> </p>
-            <span><img src={arrow_down} /></span></button>          
+        <details>
+                <summary>
+                        <button className="btn btn-sidebar-search"><p><b>Color</b> </p>
+                    <span><img src={arrow_down} /></span></button>  
+                        </summary>
+
+                        <p>Details</p>
+            </details>        
         </div>
 
         <div className="sidebar-item">
-            <button className="btn btn-sidebar-search"><p><b>Color</b> </p>
-            <span><img src={arrow_down} /></span></button>          
-        </div>
+        <details>
+                <summary>
+                        <button className="btn btn-sidebar-search"><p><b>Color</b> </p>
+                    <span><img src={arrow_down} /></span></button>  
+                        </summary>
 
-        <div className="sidebar-item">
-            <button className="btn btn-sidebar-search"><p><b>Color</b> </p>
-            <span><img src={arrow_down} /></span></button>          
+                        <p>Details</p>
+            </details>        
         </div>
       
       </div>

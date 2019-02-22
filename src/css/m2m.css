@@ -3,6 +3,16 @@
     
 }
 
+
+
+@media only screen and (min-width: 1600px) {
+
+    .M2M{
+        width:60% !important;
+        margin: 0 auto !important;
+    }
+
+}
 .m2m-outer{
     display: flex;
     justify-content: center;

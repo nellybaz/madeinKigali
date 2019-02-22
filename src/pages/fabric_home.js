@@ -1,11 +1,13 @@
 import React, {Component} from "react";
 import '../css/fabric_home.css';
+import '../css/pages/fabric_home.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import fabric_jumbo from '../assets/images/fabric_home.jpg';
 import fabric1 from '../assets/images/fabric1.jpg';
 import fabric2 from '../assets/images/fabric2.jpg';
 import fabric3 from '../assets/images/fabric3.jpg';
+import arrow_down from '../assets/images/arrow-down.png';
 
 import {Link} from 'react-router-dom';
 
@@ -72,7 +74,13 @@ class Fabric extends Component{
                 {/* left sidebar */}
                     <div className="fabric-sidebar">
                         <details open>
-                            <summary>Fabrics By Type</summary>
+                        
+                        <summary>
+                            <button className="btn btn-sidebar-search"><p><b>Fabrics By Type</b> </p>
+                        <span><img src={arrow_down} /></span></button>  
+                        </summary>
+
+                     
                             <p>Cotton Fabric</p>
                             <p>Linen Fabric</p>
                             <p>Jersey Fabric</p>
@@ -87,7 +95,10 @@ class Fabric extends Component{
 
 
                          <details>
-                            <summary>Fabrics By Usage</summary>
+                         <summary>
+                            <button className="btn btn-sidebar-search"><p><b>Fabrics By Usage</b> </p>
+                        <span><img src={arrow_down} /></span></button>  
+                        </summary>
                             <p>Cotton Fabric</p>
                             <p>Linen Fabric</p>
                             <p>Jersey Fabric</p>
@@ -102,7 +113,11 @@ class Fabric extends Component{
 
 
                          <details>
-                            <summary>Fabrics By Properties</summary>
+                            
+                            <summary>
+                            <button className="btn btn-sidebar-search"><p><b>Fabrics By Properties</b> </p>
+                        <span><img src={arrow_down} /></span></button>  
+                        </summary>
                             <p>Cotton Fabric</p>
                             <p>Linen Fabric</p>
                             <p>Jersey Fabric</p>
@@ -117,7 +132,11 @@ class Fabric extends Component{
 
 
                          <details>
-                            <summary>Labels, Tags and Accessories</summary>
+                            
+                            <summary>
+                            <button className="btn btn-sidebar-search"><p><b>Labels, Tags and Accessories</b> </p>
+                        <span><img src={arrow_down} /></span></button>  
+                        </summary>
                             <p>Cotton Fabric</p>
                             <p>Linen Fabric</p>
                             <p>Jersey Fabric</p>
@@ -129,6 +148,61 @@ class Fabric extends Component{
                             <p>Silk Fabric</p>
                             <p>Canvas Fabric</p>
                         </details>
+
+                        <div className='fabric-sidebar-view-all-div'>
+                            <Link to={'/dev/fabric_search'} >
+                                <button className='fabric-sidebar-view-all-button'>View all Fabrics</button>
+                            </Link>
+                        </div>
+
+
+                        <div className='fabric-upload-ads'>
+                            <h5>Your Design on Fabric</h5>
+
+                            <ul>
+                          
+                                <li> No Minimum Orders</li>
+                                <li> Express delivery available</li>
+                                <li>1-2 Day Production Turnaround</li>
+                                <li>Handmade</li>
+                            </ul>
+
+                            <Link to={'/dev/fabric/upload'} >
+                                <button className=''>Upload Your Design</button>
+                            </Link>
+                            <br></br>
+
+                            <div className='view-all'>
+                            <Link to={'/dev/fabric_search'}>View all Fabrics</Link>
+                            </div>
+                        
+                        </div>
+
+
+                        <div className='sample-printing'>
+                                <div className='left'>
+                                
+                                </div>
+
+                                <div className='right'>
+                                    <img src={require('../assets/images/fab4.jpg')} alt="madeinkigali-sample-fabric-printing"/>
+                                    <span>Fabric Sample Printing</span>
+                                </div>
+                            
+                        </div>
+
+
+                        <div className='sample-printing'>
+                                <div className='left'>
+                                
+                                </div>
+
+                                <div className='right'>
+                                    <img src={require('../assets/images/fab5.jpg')} alt="madeinkigali-sample-fabric-printing"/>
+                                    <span>Fabric Swatch Pack</span>
+                                </div>
+                            
+                        </div>
                     </div>
 
                     {/* content */}

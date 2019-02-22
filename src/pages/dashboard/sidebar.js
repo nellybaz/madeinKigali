@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-
+import '../../css/pages/dashboard.css';
 
 class SideBar extends Component{
     render(){
         return(
-            <div className='SideBar'>
+           
               <div className='d-left'>
 
                     <div className='profile-image'>
@@ -14,19 +14,19 @@ class SideBar extends Component{
                     <p>Admin Name</p>
 
                     <div className='sub-menus'>
-                    <button><a href={'/dashboard'}>PRODUCTS</a></button>
-                    <button><a href={'/dashboard/flashdeals'}>FLASH DEALS</a></button>
-                    <button>BLOG</button>
+                    <button><a href={'/dev/admin/dashboard'}>PRODUCTS</a></button>
+                    <button><a href={'/dev/admin/dashboard/flashdeals'}>FLASH DEALS</a></button>
+                    <button><a href={'/dev/admin/dashboard/blog'}>BLOG</a></button>
                     <button>FEATURED BLOG</button>
 
                     <button>BRANDS</button>
-                    <button>TRENDING</button>
+                    <button><a href={'/dev/admin/dashboard/trending'}>TRENDING</a></button>
                     
                     </div>
                 
                 </div>
 
-            </div>
+            
         )
     }
 }

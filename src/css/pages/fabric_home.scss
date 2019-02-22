@@ -1,0 +1,95 @@
+
+.fabric-sidebar-view-all-div{
+    padding: 10px;
+
+    .fabric-sidebar-view-all-button{
+        padding: 10px;
+        background: #9a0022;
+        border: none;
+        color:white;
+        border-radius: 3px;
+        width:80%;
+        cursor: pointer;
+    }
+}
+
+.fabric-upload-ads{
+    width:100%;
+    background: lighten(grey, 45%);
+    height: 300px;
+    padding: 15px;
+    border-radius: 3px;
+
+    h5{
+        font-weight: bold;
+    }
+
+    ul{
+        position: relative;
+        right:20px;
+    }
+
+    a{
+        button{
+        padding: 10px;
+        background: #9a0022;
+        border: none;
+        color:white;
+        border-radius: 3px;
+        width:80%;
+        cursor: pointer;
+        }
+    }
+
+    .view-all{
+        margin-top:20px;
+
+        a{
+            text-decoration: underline;
+        }
+    }
+}
+
+.sample-printing{
+    margin-top: 20px;
+    height: 100px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:row;
+
+    div{
+        
+        height:100%;
+    }
+
+    .left{
+        width:4%;
+        background: lighten(grey, 45%);
+        cursor: pointer;
+    }
+
+    
+    .right{
+        width:96%;
+        cursor: pointer;
+
+        img{
+            width:100%;
+            height:70%;
+        }
+
+        span{
+            padding: 10px;
+            font-size: 1.1rem;
+        }
+    }
+
+   
+}
+
+
+.sample-printing:hover > .left{
+    background: #9a0022;
+}
