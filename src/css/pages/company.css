@@ -1,21 +1,105 @@
-@media only screen and (max-width: 745px) {
-  .About .about-wrapper * {
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
-    height: auto !important;
-    width: 100% !important;
-    position: relative !important;
-    bottom: 0 !important;
-  }
-  .About .about-wrapper h5 {
-    font-size: 2rem !important;
-  }
+@font-face {
+  font-family: "BaskervilleCustom";
+  src: url("../../assets/fonts/Baskerville-Regular.otf") format("opentype");
 }
 
-@media only screen and (min-width: 1600px) {
-  .About {
-    width: 60% !important;
-    margin: 0 auto !important;
+@font-face {
+  font-family: "WarsawGothic";
+  src: url("../../assets/fonts/WarsawGothic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "WarsawGothicE";
+  src: url("../../assets/fonts/WarsawGothicExt.otf") format("opentype");
+}
+
+@media only screen and (max-width: 745px) {
+  .About * {
+    -webkit-box-sizing: border-box !important;
+            box-sizing: border-box !important;
+  }
+  .About .about-wrapper .div {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    -ms-grid-rows: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+    grid-gap: 0;
+  }
+  .About .about-wrapper .about-wrapper-div1 {
+    height: auto !important;
+  }
+  .About .about-wrapper .about-wrapper-div1 .div-title-div {
+    height: auto !important;
+  }
+  .About .about-wrapper .about-wrapper-div1 .div-title-div h5 {
+    font-size: 2rem !important;
+    font-weight: bold;
+  }
+  .About .about-wrapper .about-wrapper-div1 .div-title-div p {
+    width: 100% !important;
+    text-align: justify;
+  }
+  .About .about-wrapper .about-wrapper-div1 img {
+    height: 250px !important;
+    width: 100% !important;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .About .about-wrapper .about-wrapper-div3 {
+    height: 450px !important;
+  }
+  .About .about-wrapper .about-wrapper-div3 .div-title-div {
+    height: auto !important;
+  }
+  .About .about-wrapper .about-wrapper-div3 .div-title-div h5 {
+    font-size: 2rem !important;
+    font-weight: bold;
+  }
+  .About .about-wrapper .about-wrapper-div3 .div-title-div p {
+    font-size: 1.1rem !important;
+  }
+  .About .about-wrapper .about-wrapper-div3 .div-image-div {
+    height: 225px !important;
+  }
+  .About .about-wrapper .about-wrapper-div3 .div-image-div img {
+    -o-object-fit: contain !important;
+       object-fit: contain !important;
+    height: 100% !important;
+  }
+  .About .about-wrapper .box-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 0px !important;
+    padding: 0px 30px !important;
+  }
+  .About .about-wrapper .box-wrapper div {
+    padding: 0px !important;
+    width: 100%;
+    height: auto !important;
+    margin-bottom: 15px;
+  }
+  .long {
+    height: auto !important;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    grid-gap: 5px;
+  }
+  .long .large-image {
+    display: none !important;
+  }
+  .facts {
+    width: 100% !important;
+    right: 0 !important;
+  }
+  .facts h5 {
+    font-size: 2rem !important;
   }
 }
 
@@ -24,6 +108,7 @@
 }
 
 .About .about-wrapper {
+  border-top: 1px solid #b3b3b3;
   width: 100%;
   background: white;
   font-family: Lato, Arial, Helvetica, sans-serif;
@@ -34,18 +119,57 @@
 }
 
 .About .about-wrapper .box-wrapper {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  height: auto !important;
+  background: #F6F8F6;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
-  padding: 20px 30px;
+  padding: 10px 30px;
 }
 
 .About .about-wrapper .box-wrapper div {
   padding: 20px;
-  widows: 100%;
+  position: relative;
+  bottom: 30px;
   height: 300px;
+}
+
+.About .about-wrapper .box-wrapper div p {
+  font-size: 0.9rem;
+  height: 80%;
+}
+
+.About .about-wrapper .box-wrapper div button {
+  font-size: 0.9rem;
+  width: auto;
+}
+
+.About .about-wrapper .div {
+  width: 95%;
+  margin: 0 auto;
+  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
+
+.About .about-wrapper .div .div-image-div {
+  width: 100%;
+  height: 100%;
+}
+
+.About .about-wrapper .div .div-image-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .About .about-wrapper .div4 {
@@ -88,29 +212,29 @@
 
 .About .about-wrapper .div4 .div-title-div p {
   padding: 0 20px;
+  text-align: center;
 }
 
 .About .about-wrapper .div4 .div-title-div button {
   margin-left: 20px;
 }
 
-.About .about-wrapper .div3 {
-  background: #E2E2E2;
-  width: 100% !important;
-  height: 500px !important;
+.About .about-wrapper .about-wrapper-div3 {
+  background: #eeefec;
+  width: 100%;
+  height: auto;
 }
 
-.About .about-wrapper .div3 * {
+.About .about-wrapper .about-wrapper-div3 * {
   color: white !important;
 }
 
-.About .about-wrapper .div3 .div-image-div img {
-  height: 500px !important;
+.About .about-wrapper .about-wrapper-div3 .div-image-div img {
+  height: 500px;
 }
 
-.About .about-wrapper .div3 .div-title-div {
+.About .about-wrapper .about-wrapper-div3 .div-title-div {
   width: 100%;
-  padding: 0 5%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,16 +251,22 @@
           flex-direction: column;
 }
 
-.About .about-wrapper .div3 .div-title-div h5 {
+.About .about-wrapper .about-wrapper-div3 .div-title-div h5 {
   font-size: 4rem;
   color: black !important;
-}
-
-.About .about-wrapper .div3 .div-title-div p {
   font-weight: bold;
 }
 
-.About .about-wrapper .div3 span button {
+.About .about-wrapper .about-wrapper-div3 .div-title-div p {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 3rem;
+  text-align: center;
+  color: black !important;
+  font-family: 'Felipa', cursive;
+}
+
+.About .about-wrapper .about-wrapper-div3 span button {
   padding: 5px 10px;
   width: auto;
   margin-right: 3px;
@@ -146,7 +276,7 @@
   height: 40px;
 }
 
-.About .about-wrapper .div3 span button a {
+.About .about-wrapper .about-wrapper-div3 span button a {
   background: black;
   color: white;
   width: 100%;
@@ -207,52 +337,46 @@
   width: 100%;
 }
 
-.About .about-wrapper .div {
-  width: 95%;
-  margin: 0 auto;
-  height: 500px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 0;
+.About .about-wrapper .about-wrapper-div1 {
+  height: 650px;
 }
 
-.About .about-wrapper .div .div-image-div {
-  width: 100%;
-  height: 100%;
+.About .about-wrapper .about-wrapper-div1 img {
+  width: 145% !important;
+  position: relative;
+  right: 25%;
+  padding-top: 5px;
 }
 
-.About .about-wrapper .div .div-image-div img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.About .about-wrapper .div1 {
-  height: 500px;
-}
-
-.About .about-wrapper .div1 img {
-  height: 99% !important;
-}
-
-.About .about-wrapper .div1 .div-title-div {
+.About .about-wrapper .about-wrapper-div1 .div-title-div {
+  position: relative;
+  top: 30px;
+  z-index: 1;
   width: 100%;
 }
 
-.About .about-wrapper .div1 .div-title-div h5 {
-  font-size: 7rem;
+.About .about-wrapper .about-wrapper-div1 .div-title-div h5, .About .about-wrapper .about-wrapper-div1 .div-title-div span {
+  font-size: 10rem;
   padding: 0 5px;
+  font-family: "WarsawGothic";
 }
 
-.About .about-wrapper .div1 .div-title-div p {
-  font-size: 1.2rem;
+.About .about-wrapper .about-wrapper-div1 .div-title-div h5 span {
+  position: relative;
+  bottom: 50px;
+  right: 5px;
+}
+
+.About .about-wrapper .about-wrapper-div1 .div-title-div p {
+  font-size: 0.9rem;
   width: 80%;
+  position: relative;
+  left: 17px;
+  bottom: 80px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.About .about-wrapper .div1 .div-title-div button {
+.About .about-wrapper .about-wrapper-div1 .div-title-div button {
   padding: 5px;
   width: 100px;
   height: 45px;
@@ -263,7 +387,7 @@
 }
 
 .btn-company {
-  padding: 5px 10px;
+  padding: 5px 20px;
   width: auto;
   margin-right: 3px;
   border: 0;
@@ -278,16 +402,22 @@
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 2fr;
-      grid-template-columns: 3fr 2fr;
+  -ms-grid-columns: 4fr 2fr;
+      grid-template-columns: 4fr 2fr;
   grid-gap: 5px;
 }
 
 .long .large-image {
-  width: 100%;
-  height: 100%;
-  background: url("../../assets/images/banner-1-about.jpg");
-  background-size: 120% 100%;
+  z-index: 1;
+  position: relative;
+  bottom: 70px;
+  right: 100px;
+  margin-top: 8.5%;
+  width: 117%;
+  height: 106.8%;
+  background: url("../../assets/images/madeinkigalimodel01.png");
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
 }
 
 .long div {
@@ -297,10 +427,15 @@
 
 .long .right-content {
   padding: 10px;
+  padding-right: 30px;
+  position: relative;
+  right: 20%;
 }
 
 .long .right-content .facts {
-  width: 100%;
+  width: 180%;
+  position: relative;
+  right: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,9 +454,19 @@
 }
 
 .long .right-content .facts h5 {
-  width: 170%;
-  font-size: 3.5rem;
+  width: 280%;
+  font-size: 4rem;
   font-weight: bold;
+  padding-right: 10px;
+  font-family: 'WarsawGothic';
+}
+
+.long .right-content .facts p {
+  font-size: 0.9rem;
+  position: relative;
+  top: 8%;
+  left: 5%;
+  width: 640%;
 }
 
 .long .right-content .stores {
@@ -347,11 +492,15 @@
   width: 100%;
 }
 
+.long .right-content .distribution2 {
+  border-top: 1px solid #cdcdcd;
+}
+
 .long .right-content .products {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  -ms-grid-columns: 1.1fr 1fr;
+      grid-template-columns: 1.1fr 1fr;
   grid-gap: 0;
   border-bottom: 1px solid #cdcdcd;
   height: auto;
@@ -373,13 +522,32 @@
 }
 
 .long .right-content .products .prdt img {
-  width: 90%;
+  width: 240%;
+  height: 140%;
+  position: relative;
+  right: 220%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  bottom: 10%;
+}
+
+.long .right-content .products .prdt .company-para {
+  text-decoration: underline !important;
+  font-size: 0.7rem;
+  width: 200%;
 }
 
 .long .right-content .products .prdt p {
-  text-decoration: underline;
-  font-size: 12px;
+  position: relative;
+  right: 15%;
+  font-size: 0.7rem;
   text-transform: uppercase;
+  width: 140%;
+  text-align: center;
+}
+
+.long .right-content .products .prdt .investment-p {
+  width: 180% !important;
 }
 
 .long .right-content .products .distribution * {
@@ -387,13 +555,40 @@
 }
 
 .long .right-content .products .distribution p {
-  text-decoration: underline;
-  font-size: 12px;
+  font-size: 0.7rem;
   text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.long .right-content .products .distribution .counters-p {
+  bottom: 12% !important;
+}
+
+.long .right-content .products2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+  height: 25%;
+}
+
+.long .right-content .products3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.3fr 1fr;
+      grid-template-columns: 1.3fr 1fr;
+  grid-gap: 0;
+  height: 20%;
+}
+
+.long .right-content .products3 .product-counter {
+  font-size: 4rem !important;
 }
 
 .newsroom {
-  height: 200px;
+  height: 180px;
   width: 100%;
   background: #F7F8F6;
   padding: 20px;
@@ -402,23 +597,57 @@
 .newsroom p span {
   font-size: 3.5rem;
   font-weight: bold;
+  text-align: center;
+  font-family: 'WarsawGothic';
 }
 
 .newsroom button {
   float: right;
+  position: relative;
+  bottom: 65px;
 }
 
 .counter {
-  font-size: 8rem;
-  color: black;
+  font-size: 4rem !important;
+  color: #63a5e1 !important;
   font-weight: bold;
+  text-decoration: none !important;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .product-counter {
-  font-size: 5rem;
-  color: black;
+  font-size: 4rem !important;
+  color: #63a5e1 !important;
   font-weight: bold;
+  text-decoration: none !important;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.map-section {
+  height: 300px !important;
+  border-top: 1px solid #cdcdcd;
+}
+
+.map-section div {
+  height: 100%;
+}
+
+.map-section div img {
+  height: 80%;
+  width: 150%;
+  position: relative;
+  right: 30%;
+}
+
+.product-counter3 {
+  font-size: 5.5rem !important;
+  color: #63a5e1 !important;
+  font-weight: bold;
+  text-decoration: none !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.counters-p {
+  bottom: 17% !important;
 }
 /*# sourceMappingURL=company.css.map */

@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import '../css/pages/coming_soon.css';
+import '../css/utils/screen.css';
+
 import request from 'superagent';
 import Countdown from 'react-countdown-now';
 
 import fb from '../assets/images/icons/facebook-logo.png';
-import insta from '../assets/images/icons/instagram.png';
+import insta from '../assets/images/instagram-black.png';
 import twitter from '../assets/images/icons/twitter-logo-silhouette.png';
 import linkedin from '../assets/images/icons/linkedin-logo.png';
 import { isMobileOnly } from 'react-device-detect';
@@ -12,11 +14,10 @@ import { isMobileOnly } from 'react-device-detect';
 import {Link} from 'react-router-dom';
 
 import pinterest from '../assets/images/icons/pinterest.png';
-import g_plus from '../assets/images/g_plus.png';
-import wiebo from '../assets/images/weibo.png';
+import g_plus from '../assets/images/icons/google-plus-black.png';
+import wiebo from '../assets/images/icons/weibo-black.png';
 import youtube from '../assets/images/icons/youtube.png';
 import tumblr from '../assets/images/icons/tumblr-logo.png';
-
 
 const Completionist = () => <span>You are good to go!</span>;
 class ComingSoon2 extends Component{
@@ -24,7 +25,8 @@ class ComingSoon2 extends Component{
   constructor(props){
     super(props);
     this.state={
-      email_input: ''
+      email_input: '',
+      large_screen_class: '',
     }
   }
   
@@ -76,6 +78,15 @@ class ComingSoon2 extends Component{
       }
     }
   }
+
+
+  componentDidMount(){
+    if(window.innerWidth > 1400){
+      this.setState({
+        large_screen_class: "large_screen",
+      });
+    }
+  }
     render(){
       
 
@@ -90,7 +101,8 @@ class ComingSoon2 extends Component{
           };
 
         return(
-            <div className='ComingSoon'>
+            <div className={`ComingSoon ${this.state.large_screen_class}`}>
+            
                 <div className='content' height={window.innerHeight}>
 
                         <div className='content-inner'>
@@ -106,7 +118,7 @@ class ComingSoon2 extends Component{
                            
                                 <Countdown
                                 
-                                date={'Fri, 01 Mar 2019 00:00:00' }
+                                date={'Mon, 11 Mar 2019 00:00:00' }
                                 renderer={renderer}
                             />
                             
@@ -120,7 +132,6 @@ class ComingSoon2 extends Component{
                                 <li>SECONDS</li>
                             </ul>
                             </div>
-
 
                             <div className='social-sub'>
                             <input onKeyPress={this._handleKeyPress} onChange={(e)=> this.setState({
@@ -150,10 +161,10 @@ class ComingSoon2 extends Component{
 
           </div>
 
-          {/* <div className="social-media-div">
+          <div className="social-media-div">
           <a href="https://plus.google.com/u/2/112933730940706528592?tab=mX" target="_blank" > <img src={g_plus} alt="g_plus" /></a>
 
-          </div> */}
+          </div>
 
           <div className="social-media-div">
           <a href="https://www.pinterest.com/madeinkigali/pins/" target="_blank" > <img src={pinterest} alt="pinterest" /></a>
@@ -163,19 +174,113 @@ class ComingSoon2 extends Component{
           <a href="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></a>
 
           </div>
-
-          {/* <div className="social-media-div">
-          <a href="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></a>
-
-          </div> */}
-
           <div className="social-media-div">
           <a href="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
+
+          </div>
+
+          <div className="social-media-div">
+          <a href="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></a>
 
           </div>
         </div>
                         </div>
                 
+                </div>
+
+                <div className='coming-mobile-wrapper'>
+                    <div className='mobile-logo-div'>
+                        <img src={require('../assets/images/logo.png')} />
+                    </div>
+
+                    <div className='mobile-header'>
+                        <h4>COMING SOON</h4>  
+                        <p>The Lorem Ipsum is simply dummy text of the composition and layout before printing. Lorem Ipsum has been the standard text for printing since the 1500s, The Lorem Ipsum is simply dummy text of the composition</p>
+                    
+                    </div>
+
+                    <div className='mobile-content'>
+
+                      <div className='mobile-content-inner-div2'>
+
+                      <div className='space-div'>
+                      
+                      </div>
+                            <Countdown
+                                
+                                date={'Mon, 04 Mar 2019 00:00:00' }
+                                renderer={renderer}
+                            />
+
+                            <ul className='mobile-content-inner-ul'>
+                              <li>DAYS</li>
+
+                              <li>HOURS</li>
+
+                              <li className='coming-min-label'>MINS</li>
+
+                              <li className='coming-sec-label'>SECS</li>
+                            </ul>
+
+                            <div className='coming-mobile-btn-div'>
+                              <Link to={'/dev/company/about2'}>ABOUT US</Link>
+                              <Link to={'/dev/company'}>WHO WE ARE</Link>
+                              <Link to={'/dev/company/about'}>WHAT WE DO</Link>
+                            </div>
+                      
+                      </div>
+                      
+                    </div>
+
+ 
+                    <div className='coming-mobile-footer'>
+                    <div className='coming-footer-input-div'>
+                      <input type="text"  placeholder="We'll be here soon, subscribe to be notfied...   >"/>
+                    </div>
+
+                    <div className='coming-footer-social'>
+
+                      <Link to={'https://www.facebook.com/MadeInKigali/'} >
+                        <img src={require('../assets/images/icons/facebook_white.png')} />
+                      </Link>
+
+                      <Link to={'https://twitter.com/MadeinKigaliRW'} >
+                        <img src={require('../assets/images/icons/twitter_white.png')} />
+                      </Link>
+
+                      <Link to={'https://www.instagram.com/madeinkigali/'} >
+                        <img src={require('../assets/images/icons/instagram_white.png')} />
+                      </Link>
+
+                      <Link to={'https://www.linkedin.com/in/madeinkigali/'} >
+                        <img src={require('../assets/images/icons/linkedin_white.png')} />
+                      </Link>
+
+                      <Link to={'https://www.pinterest.com/madeinkigali/pins/'} >
+                        <img src={require('../assets/images/icons/pinterest_white.png')} />
+                      </Link>
+
+                      <Link to={'https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber'} >
+                        <img src={require('../assets/images/icons/youtube_white.png')} />
+                      </Link>
+
+                      <Link to={'https://madeinkigali-blog.tumblr.com/'} >
+                        <img src={require('../assets/images/icons/tumblr_white.png')} />
+                      </Link>
+
+                      <Link to={'https://plus.google.com/u/2/112933730940706528592?tab=mX'} >
+                        <img src={require('../assets/images/icons/google_white.png')} />
+                      </Link>
+
+                      <Link to={'#'} >
+                        <img src={require('../assets/images/icons/weibo_white.png')} />
+                      </Link>
+                    
+                    </div>
+                    
+                    </div>
+
+
                 </div>
 
             </div>

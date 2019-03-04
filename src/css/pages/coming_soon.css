@@ -1,18 +1,194 @@
 @media only screen and (min-width: 1600px) {
-  .ComingSoon {
-    width: 60% !important;
-    margin: 0 auto !important;
+  .ComingSoon .days, .ComingSoon .hours, .ComingSoon .mins, .ComingSoon .secs {
+    font-size: 5.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    display: none !important;
+  }
+  .coming-mobile-wrapper {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 100%;
+    height: 800px;
+  }
+  .mobile-logo-div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 5%;
+            flex: 0 1 5%;
+    width: 100%;
+  }
+  .mobile-logo-div img {
+    height: 100%;
+    width: 30%;
+  }
+  .mobile-header {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 20%;
+            flex: 0 1 20%;
+    padding: 0 5%;
+  }
+  .mobile-header h4 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #9a0022;
+    font-family: Lato;
+  }
+  .mobile-header p {
+    text-align: justify center;
+    font-family: Lato;
+    position: relative;
+    bottom: 15px;
+    color: black;
+  }
+  .mobile-content {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    background: url(../../assets/images/madeinkigal06.2.png);
+    background-size: 100% 100%;
+  }
+  .mobile-content .mobile-content-inner-div2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20%;
+  }
+  .mobile-content .mobile-content-inner-div2 .mobile-content-inner-ul {
+    width: 100%;
+    margin-top: 4%;
+  }
+  .mobile-content .mobile-content-inner-div2 .mobile-content-inner-ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-right: 14%;
+  }
+  .mobile-content .mobile-content-inner-div2 .coming-mobile-btn-div a {
+    background: black;
+    margin-right: 5px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .coming-mobile-footer {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 10%;
+            flex: 0 1 10%;
+    background: #9a0022;
+  }
+  .coming-mobile-footer .coming-footer-input-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10px;
+  }
+  .coming-mobile-footer .coming-footer-input-div ::-webkit-input-placeholder {
+    font-style: italic;
+    color: #cdcdcd;
+    text-align: center;
+    font-family: 'Felipa', cursive;
+  }
+  .coming-mobile-footer .coming-footer-input-div input {
+    width: 80%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+  }
+  .coming-mobile-footer .coming-footer-social {
+    padding-left: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+  }
+  .coming-mobile-footer .coming-footer-social a img {
+    width: 16px;
+  }
+  .days, .hours, .mins, .secs {
+    margin-right: 0 !important;
+    border-bottom: 1.5px solid black;
+    border-top: 1.5px solid black;
+    border-right: 0.5px solid #8c8c8c;
+    border-left: 0.5px solid #8c8c8c;
+    border-radius: 6px;
+    background: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .space-div {
+    width: 100%;
+    height: 300px;
   }
 }
 
 @font-face {
   font-family: "AvenirCustom";
-  src: url("../../assets/fonts/AvenirRoman.otf") format("opentype");
+  src: url("../../assets/fonts/Avenir-Roman.otf") format("opentype");
 }
 
 @font-face {
   font-family: "BaskervilleCustom";
-  src: url("../../assets/fonts/Baskerville.otf") format("opentype");
+  src: url("../../assets/fonts/Baskerville-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Baskerville-Italic";
+  src: url("../../assets/fonts/Baskerville-Italic.otf") format("opentype");
 }
 
 .ComingSoon {
@@ -25,6 +201,10 @@
   font-family: "AvenirCustom";
 }
 
+.coming-mobile-wrapper {
+  display: none;
+}
+
 .coming-soon-header {
   padding: 0 30px;
 }
@@ -35,7 +215,7 @@
 }
 
 .ComingSoon .content {
-  background: url("../../assets/images/coming2.png");
+  background: url("../../assets/images/coming3.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 98;
@@ -96,25 +276,25 @@
   width: 60%;
   height: 150px;
   position: relative;
-  left: 3%;
+  left: 0%;
 }
 
 .ComingSoon .content .content-inner .count-down-div * {
-  font-size: 5rem;
+  font-size: 6.5rem;
 }
 
 .ComingSoon .content .content-inner .count-down-labels ul {
-  margin-left: 10px;
+  margin-left: -10px;
   position: relative;
-  bottom: 40px;
+  bottom: 30px;
   margin-top: 5px;
 }
 
 .ComingSoon .content .content-inner .count-down-labels ul li {
   text-decoration: none;
   display: inline;
-  margin-right: 115px;
-  font-size: 11px;
+  margin-right: 135px;
+  font-size: 8px;
   font-weight: bold;
   font-family: "BaskervilleCustom" !important;
 }
@@ -129,28 +309,28 @@
 
 .ComingSoon .content .content-inner .social-sub input {
   border: none;
-  border-bottom: 2px #cdcdcd solid;
+  border-bottom: 2px #f3f3f3 solid;
   background: transparent;
   width: 100%;
   padding: 10px;
-  font-size: 18px;
+  font-size: 14px;
   font-family: 'Felipa', cursive;
 }
 
 .social-sub ::-webkit-input-placeholder {
   font-style: italic;
-  color: #cdcdcd;
-  font-family: 'Felipa', cursive;
+  color: #bfbfbf;
+  font-family: "Baskerville-Italic";
 }
 
 .coming-soon-social {
+  width: 35%;
   position: relative;
-  right: 35%;
   bottom: 40px;
 }
 
-.coming-soon-social img {
-  width: 15px !important;
+.coming-soon-social .social-media-div img {
+  width: 12px !important;
   height: 28px;
 }
 
@@ -160,8 +340,8 @@
   border-right: 0.5px solid #8c8c8c;
   border-left: 0.5px solid #8c8c8c;
   border-radius: 6px;
-  margin: 5px;
-  padding: 0 10px;
+  margin: 2px;
+  padding: 0 12px;
   background: white;
   height: 500px !important;
 }

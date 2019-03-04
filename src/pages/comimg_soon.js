@@ -15,6 +15,16 @@ import youtube from '../assets/images/youtube.png';
 import tumblr from '../assets/images/tumblr.png';
 
 
+
+import {
+  
+  isBrowser,
+  isMobileOnly,
+  isTablet
+} from "react-device-detect";
+
+
+
 const Completionist = () => <span>You are good to go!</span>;
 class ComingSoon extends Component{
     
@@ -32,10 +42,13 @@ class ComingSoon extends Component{
 
         return(
             <div className='ComingSoon'>
+
+            
                 <div className='coming-soon-header'>
                     <img src={require('../assets/images/logo.png')} alt="mik logo"/>
                 </div>
 
+   
                 <div className='content' height={window.innerHeight}>
 
                         <div className='content-inner'>
@@ -127,7 +140,11 @@ class ComingSoon extends Component{
         </div>
                         </div>
                 
-                </div>
+                </div> 
+
+
+                
+              
 
             </div>
         )

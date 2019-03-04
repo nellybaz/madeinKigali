@@ -94,7 +94,7 @@
         margin-left: 0 !important;
     }
 
-   
+    
 }
 /* END OF MOBILE VIEW */
 
@@ -163,7 +163,7 @@
     height:50px;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
     width: 90%;
     z-index: 1;
     flex-wrap: wrap;
@@ -376,11 +376,12 @@
 
 .search-input:focus{
     outline: none;
-}
+} 
 
 .nav-fixed{
     position: fixed;
     top: 0;
+    z-index: 2;
     width:100%;
     background-color: #191843;
     

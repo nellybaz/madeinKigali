@@ -63,7 +63,7 @@ class Header2 extends Component {
             //     music_icon: pause,
             // })
         }
-      }
+      } 
   
   handleScroll=(event)=> {
       if (Math.round(window.scrollY) >= 420) {
@@ -236,7 +236,7 @@ class Header2 extends Component {
                             
                                 <h5 style={{ }}>SHOP BY CATEGORY</h5>
                         
-                            <Link to={"#"} >New in Fashion</Link>
+                            <Link  to={"#"} >New in Fashion</Link>
                             <Link to={"#"} >New in Fabric Design</Link>
                             <Link to={"#"} >New in Bags & Accessories</Link>
                             <Link to={"#"} >New in Petite, Tall & Maternity </Link>
