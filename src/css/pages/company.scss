@@ -39,7 +39,7 @@
             .div-title-div{
                 // border: 1px solid red;
                 height: auto !important;
-                h5{
+                h5, span{
                     font-size: 2rem !important;
                     font-weight: bold;
                 }
@@ -185,7 +185,7 @@
                 }
 
                 button{
-                    font-size: 0.9rem;
+                    font-size: 0.7rem;
                     width:auto;
                     // border: 1px solid red;
                 }
@@ -371,20 +371,23 @@
        
 
         .about-wrapper-div1{
-            height: 650px;
+            // border: 1px solid red;
+            height: auto;
+
 
             img{
+
                 // min-height: 80% !important;
                 // max-height: 96.3%  !important;
                 // height: 90% !important;
-                // border: 1px solid red;
-                width:145% !important;
+                // border: 1px solid pink;
+                width:110% !important;
+                height: 107.5% !important;
                 position: relative;
-                right: 25%;
-                // top: 4%;
-                // bottom: %;
+                right: 4.7%;
+                object-fit: cover !important;
                 padding-top: 5px;
-                // border: 1px solid red;
+                
             }
 
             .div-title-div{
@@ -454,23 +457,23 @@
 
 .long{
     height:auto;
+    margin-bottom: 30px;
+    // border: 1px solid navy;
     width:100%;
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 2fr 2fr;
     grid-gap: 5px;
   
 
     .large-image{
         z-index: 1;
-        position: relative;
-        bottom: 70px;
-        right: 100px;
-        margin-top:8.5%;
+        
+        margin-top:9%;
         // border: 1px solid red;
-        width:117%;
-        height:106.8%;
+        
         background: url('../../assets/images/madeinkigalimodel01.png');
-        background-size: 90% 100%;
+        background-size:contain;
+        background-position:center;
         background-repeat: no-repeat;
     }
 
@@ -481,12 +484,14 @@
     }
 
     .right-content{
-        // height: 80% !important;
-    //  border: 1px solid red;
-        padding: 10px;
-        padding-right: 30px;
+        // border: 1px solid red;
+        height: 95% !important;
+        // border: 1px solid red;
+        width:100%;
+        padding: 10px 20%; 
+        padding-left: 10%;
         position: relative;
-        right: 20%;
+        right: 0%;
         .facts{
             // border: 1px solid red;
             width:180%;
@@ -642,7 +647,7 @@
             height: 20%;
 
             .product-counter{
-                font-size: 4rem !important;
+                font-size: 3vw !important;
             }
         }
 
@@ -654,9 +659,13 @@
 
 
 .newsroom{
-    height: 180px;
+    // border: 1px solid red;
+    position: relative;
+    bottom: 20px;
+    height: 16vw;
     width:100%;
     background:#F7F8F6;
+    // z-index: 4;
     padding:20px;
      
 
@@ -677,7 +686,7 @@
 }
 
 .counter{
-    font-size: 4rem !important;
+    font-size: 4vw !important;
     color: #63a5e1 !important;
     font-weight: bold;
     text-decoration: none !important;
@@ -687,7 +696,7 @@
 
 
 .product-counter{
-    font-size: 4rem !important;
+    font-size: 4vw !important;
     color: #63a5e1 !important;
     font-weight: bold;
     text-decoration: none !important;
@@ -695,14 +704,17 @@
 }
 
 .map-section {
+    // border: 1px solid pink;
 
-    height:300px !important;
+    // height:20vw !important;
+    height: 20% !important;
     border-top: 1px solid lighten(gray, 30%);
     div{
         height: 100%;
         
             img{
                 height: 80%;
+                // border: 1px solid red;
                 width: 150%;
                 position: relative;
                 right: 30%;
@@ -713,7 +725,7 @@
 }
 
 .product-counter3{
-    font-size: 5.5rem !important;
+    font-size: 5.5vw !important;
     color: #63a5e1 !important;
     font-weight: bold;
     text-decoration: none !important;

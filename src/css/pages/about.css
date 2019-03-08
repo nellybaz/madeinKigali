@@ -13,7 +13,69 @@
   src: url("../../assets/fonts/Baskerville-Italic.otf") format("opentype");
 }
 
-@media only screen and (max-width: 745px) {
+@media only screen and (min-width: 2000px) {
+  .Company-about {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+  .about-section1-left-top h4 {
+    font-size: 4.2vw !important;
+  }
+  .about-section1-left-top p {
+    font-size: 1.8vw !important;
+  }
+  .about-section1-left-top a {
+    font-size: 0.6vw !important;
+  }
+  .about-section1-left-bottom h4 {
+    font-size: 0.9vw !important;
+  }
+  .about-section1-left-bottom p, .about-section1-left-bottom li {
+    font-size: 0.63vw !important;
+  }
+  .section2-left-bottom-h4 {
+    font-size: 1.02vw !important;
+  }
+  .section2-left-bottom-p {
+    font-size: 0.66vw !important;
+  }
+  .section2-right-top h4, .section2-right-bottom h4 {
+    font-size: 0.9 !important;
+  }
+  .section2-right-top p, .section2-right-top li, .section2-right-bottom p, .section2-right-bottom li {
+    font-size: 0.6vw !important;
+  }
+  .about-section3 {
+    margin-top: -9em !important;
+  }
+  .about-section3-left img {
+    width: 42vw !important;
+  }
+  .about-section3-right {
+    width: 30vw !important;
+    right: 12vw !important;
+  }
+  .about-section3-right h4 {
+    font-size: 0.9vw !important;
+  }
+  .about-section3-right p {
+    font-size: 0.6vw !important;
+  }
+  .div-action-right-bottom {
+    top: 6vw !important;
+  }
+  .div-action-right-bottom h5 {
+    font-size: 1.8vw !important;
+  }
+  .div-action-right-bottom a {
+    font-size: 0.66vw !important;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .about-section1-right img {
+    display: none !important;
+  }
   .about-section1 {
     height: auto !important;
     -ms-grid-columns: 1fr !important;
@@ -26,6 +88,9 @@
   .about-section1 .about-section1-left-top h4 {
     text-align: center;
   }
+  .about-section1 .about-section1-left-top a {
+    top: 1px;
+  }
   .about-section1 .about-section1-left-bottom {
     margin-top: 20px;
     height: auto !important;
@@ -35,6 +100,10 @@
   }
   .about-section1 .about-section1-left-bottom p {
     width: 100% !important;
+    font-size: 0.9rem !important;
+  }
+  .about-section1 .about-section1-left-bottom li {
+    font-size: 0.9rem !important;
   }
   .about-section1-right img {
     width: 100%;
@@ -74,7 +143,43 @@
     width: 90% !important;
   }
   .div-action-right-bottom {
+    top: -10% !important;
+    height: 270px;
     right: 0 !important;
+  }
+  .div-action-right-bottom h5 {
+    font-size: 1rem !important;
+  }
+  .section2-right-top h4, .section2-right-bottom h4 {
+    font-size: 1.5rem !important;
+  }
+  .section2-right-top p, .section2-right-top li, .section2-right-bottom p, .section2-right-bottom li {
+    font-size: 0.9rem !important;
+  }
+  .section2-left-bottom-h4 {
+    font-size: 1.5rem !important;
+  }
+  .section2-left-bottom-p {
+    font-size: 0.9rem !important;
+  }
+  .about-section3-right {
+    width: 100% !important;
+    right: 0 !important;
+  }
+  .about-section3-right h4 {
+    font-size: 1.5rem !important;
+  }
+  .about-section3-right p {
+    font-size: 0.9rem !important;
+  }
+  .div-action-right-bottom {
+    top: -5% !important;
+  }
+  .div-action-right-bottom h5 {
+    font-size: 2.5rem !important;
+  }
+  .div-action-right-bottom a {
+    font-size: 0.9 !important;
   }
 }
 
@@ -92,7 +197,7 @@
 
 .Company-about .content-wrapper .about-section1 {
   width: 100%;
-  height: 1000px;
+  height: auto;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
@@ -104,7 +209,7 @@
 
 .Company-about .content-wrapper .about-section1 .about-section1-left, .Company-about .content-wrapper .about-section1 .about-section1-right {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .Company-about .content-wrapper .about-section1 .about-section1-left {
@@ -143,14 +248,14 @@
 }
 
 .Company-about .content-wrapper .about-section1 .about-section1-left .about-section1-left-top h4 {
-  font-size: 6rem;
+  font-size: 7vw;
   font-weight: bold;
   font-family: "WarsawGothicE";
   color: black;
 }
 
 .Company-about .content-wrapper .about-section1 .about-section1-left .about-section1-left-top p {
-  font-size: 2.5rem;
+  font-size: 3vw;
   color: black;
   position: relative;
   bottom: 7%;
@@ -169,7 +274,7 @@
 }
 
 .Company-about .content-wrapper .about-section1 .about-section1-left .about-section1-left-bottom {
-  padding: 30px 50px;
+  padding: 10px 50px;
   width: 100%;
   position: relative;
   height: 50.2%;
@@ -178,26 +283,30 @@
 
 .Company-about .content-wrapper .about-section1 .about-section1-left .about-section1-left-bottom h4 {
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: bold;
 }
 
 .Company-about .content-wrapper .about-section1 .about-section1-left .about-section1-left-bottom p {
-  font-size: 0.9rem;
+  font-size: 1.05vw;
   color: black;
   width: 80%;
 }
 
+.Company-about .content-wrapper .about-section1 .about-section1-left .about-section1-left-bottom ul li {
+  font-size: 1.05vw;
+}
+
 .about-section1-right img {
   width: 100%;
-  height: 1000px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .about-section2 {
   width: 100%;
-  height: 900px;
+  height: auto;
   background: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,8 +333,8 @@
 }
 
 .about-section2 .section2-left .section2-left-top img {
-  width: 96%;
-  height: 100%;
+  width: 100%;
+  max-height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -238,14 +347,14 @@
 }
 
 .about-section2 .section2-left .section2-left-bottom .section2-left-bottom-h4 {
-  font-size: 1.5rem;
+  font-size: 1.7vw;
   color: black;
 }
 
 .about-section2 .section2-left .section2-left-bottom .section2-left-bottom-p {
   width: 49%;
   color: #000;
-  font-size: 0.9rem;
+  font-size: 1.1vw;
 }
 
 .about-section2 .section2-right {
@@ -254,33 +363,37 @@
 }
 
 .about-section2 .section2-right .section2-right-top, .about-section2 .section2-right .section2-right-bottom {
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
+  position: relative;
+  right: 2%;
   height: 45%;
   background: #F5F8F6;
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 30px;
 }
 
 .about-section2 .section2-right .section2-right-top h4, .about-section2 .section2-right .section2-right-bottom h4 {
-  font-size: 2rem;
+  font-size: 1.5vw;
   color: black;
 }
 
-.about-section2 .section2-right .section2-right-top p, .about-section2 .section2-right .section2-right-bottom p {
-  font-size: 0.9rem;
+.about-section2 .section2-right .section2-right-top p, .about-section2 .section2-right .section2-right-top li, .about-section2 .section2-right .section2-right-bottom p, .about-section2 .section2-right .section2-right-bottom li {
+  font-size: 1vw;
   color: black;
 }
 
 .about-section2 .section2-right .section2-right-bottom {
   background: #5DBCD2;
   border-radius: 0;
-  height: 52%;
+  height: 70%;
+  z-index: 1;
 }
 
 .about-section3 {
+  margin-top: -7em;
   width: 100%;
-  height: 1050px;
+  height: auto;
   background: #F5F8F6;
   display: -ms-grid;
   display: grid;
@@ -291,32 +404,37 @@
 
 .about-section3 .about-section3-left, .about-section3 .about-section3-right {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .about-section3 .about-section3-left img {
-  width: 155%;
-  height: 98.7%;
+  width: 70vw;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: 13px;
   position: relative;
-  right: 13%;
+  right: 0%;
 }
 
 .about-section3 .about-section3-right {
   z-index: 1;
-  padding: 30px 70px;
+  width: 50vw;
+  position: relative;
+  top: 6vw;
+  right: 20vw;
+  padding: 10% 5%;
+  padding-right: 20%;
 }
 
 .about-section3 .about-section3-right h4 {
-  font-size: 1.1rem;
+  font-size: 1.5vw;
   color: black;
 }
 
 .about-section3 .about-section3-right p {
   color: black;
-  font-size: 0.9rem;
+  font-size: 1vw;
   position: relative;
   bottom: 10px;
 }
@@ -337,12 +455,12 @@
           flex-direction: column;
   position: relative;
   right: 0%;
-  top: 5%;
+  top: 10vw;
 }
 
 .about-section3 .about-section3-right h5 {
   margin-top: 40px;
-  font-size: 2.5rem;
+  font-size: 3vw;
   font-family: 'Baskerville-Italic';
   color: black;
 }
@@ -351,6 +469,7 @@
   background: black;
   color: white;
   padding: 10px;
+  font-size: 1.1vw;
   border: none;
   font-weight: bold;
 }

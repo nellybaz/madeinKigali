@@ -40,16 +40,19 @@ import Trending from '../pages/dashboard/trending';
 import PreFabricUpload from '../pages/pre_fabirc_upload';
 import ComingSoon from '../pages/coming_soon2';
 import About2 from '../pages/about2';
+import Company2 from '../pages/company2';
+import ComingSoon1 from '../pages/comimg_soon';
 
 
     const outer =()=> (
                 <Router onUpdate={()=> window.scrollTo(0,0)}>
                         <Switch>
-                            
+                        <Route exact path={"/dev/company2"} component={Company2}/>
+                        {/* <Route exact path={"/"} component={ComingSoon1}/> */}
                             {/* <Route exact path={"/dev/12hdgsikdhlmsdne"} component={App}/>
                             <Route exact path={"/dev/upload"} component={Upload}/> */}
                             <Route exact path={"/dev/blog/:nav"} component={Blog}/>
-                            <Route exact path={"/dev"} component={ComingSoon}/>
+                            <Route exact path={"/dev"} component={ComingSoon1}/>
                              <Route exact path={"/dev/blog/post/:blog_id/:blog_name"} component={Post}/>
                             {/* <Route exact path={"/dev/product/:slug/:number"} component={Product}/>
                             <Route exact path={"/dev/wholesale/:slug/:number"} component={Wholesale}/>

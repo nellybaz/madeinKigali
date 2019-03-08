@@ -81,7 +81,7 @@ class ComingSoon2 extends Component{
 
 
   componentDidMount(){
-    if(window.innerWidth > 1400){
+    if(window.innerWidth > 2200){
       this.setState({
         large_screen_class: "large_screen",
       });
@@ -112,12 +112,12 @@ class ComingSoon2 extends Component{
                                 <Link to={'/dev/company/about2'}>ABOUT US</Link>
                                 <Link to={'/dev/company'}>WHO WE ARE</Link>
                                 <Link to={'/dev/company/about'}>WHAT WE DO</Link>
-                            </div>
+                             </div>
 
                             <div className='count-down-div'>
                            
                                 <Countdown
-                                
+                                 
                                 date={'Mon, 11 Mar 2019 00:00:00' }
                                 renderer={renderer}
                             />
@@ -195,7 +195,11 @@ class ComingSoon2 extends Component{
 
                     <div className='mobile-header'>
                         <h4>COMING SOON</h4>  
-                        <p>The Lorem Ipsum is simply dummy text of the composition and layout before printing. Lorem Ipsum has been the standard text for printing since the 1500s, The Lorem Ipsum is simply dummy text of the composition</p>
+                        <p>
+                          We're working really hard on creating something fantastic and are pretty interested to see what you think!
+                          Its nothing revolutionary, but it will fix somethings that are just aren't working so well as they should.
+                          In the meantime follow our social media feeds or click on the buttons below for more informations about MIK.
+                        </p>
                     
                     </div>
 
@@ -208,7 +212,7 @@ class ComingSoon2 extends Component{
                       </div>
                             <Countdown
                                 
-                                date={'Mon, 04 Mar 2019 00:00:00' }
+                                date={'Mon, 11 Mar 2019 00:00:00' }
                                 renderer={renderer}
                             />
 

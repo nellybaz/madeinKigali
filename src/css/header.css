@@ -2,11 +2,21 @@
     border: 1px solid red;
 } */
 
-@media only screen and (max-width: 745px){
+
+@media only screen and (min-width: 2000px){
+
+    .navigation > div a:nth-child(1){
+        font-size: 0.45vw !important;
+       
+        
+    }
+}
+
+@media only screen and (max-width: 900px){
     .sigin-wishlist{
         display: none !important;
     }
-
+ 
     .logo-item{
         width:29% !important;
         margin:0 20% 0 5% !important;
@@ -47,18 +57,22 @@
     }
 
     .right-icons-mobile{
-        display: flex;
+       display:flex;
+       justify-content: flex-end;
+       align-items:center;
+       flex-direction:row;
         margin-left: 15px;
     }
 
 
-    .right-icons-mobile *{}
+    
    .mobile-nav{
        width: 100%;
        height:60px;
        background-color: white;
        display: flex !important;
        align-items: center;
+       /* border: 1px solid red; */
    }
    .btn-search-mobile{
        background-color: transparent;
@@ -151,7 +165,7 @@
 {
     
 }
-
+ 
 .mobile-nav{
 
     display: none;
@@ -166,12 +180,15 @@
     /* border-bottom: 1px solid white; */
     width: 90%;
     z-index: 1;
-    flex-wrap: wrap;
+    /* flex-shrink:  */
+    flex-wrap: nowrap;
     
 }
 
 .navigation > div a:nth-child(1){
     font-weight: bold;
+    /* border: 1px solid red; */
+    font-size: 0.9vw;
     
 }
 
@@ -198,7 +215,8 @@
 
 .navigation a{
     color: rgb(75, 72, 72);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    /* border: 1px solid red; */
     text-decoration: none;
     margin-bottom: 10px !important;
     
@@ -548,7 +566,8 @@
 }
 
 .new-in{
-    
+    /* border: 1px solid red;
+    font-size: 1vw !important; */
 }
 
 .new-in:hover .new-in-dropdown{
@@ -568,6 +587,8 @@
     border-bottom: 1px solid gray;
     text-decoration: none !important;
     width: 150px !important;
+    /* font-size: 1.3vw; */
+    /* border: 1px solid red; */
 }
 
 .new-in-dropdown{

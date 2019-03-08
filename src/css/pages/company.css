@@ -33,7 +33,7 @@
   .About .about-wrapper .about-wrapper-div1 .div-title-div {
     height: auto !important;
   }
-  .About .about-wrapper .about-wrapper-div1 .div-title-div h5 {
+  .About .about-wrapper .about-wrapper-div1 .div-title-div h5, .About .about-wrapper .about-wrapper-div1 .div-title-div span {
     font-size: 2rem !important;
     font-weight: bold;
   }
@@ -145,7 +145,7 @@
 }
 
 .About .about-wrapper .box-wrapper div button {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   width: auto;
 }
 
@@ -338,13 +338,16 @@
 }
 
 .About .about-wrapper .about-wrapper-div1 {
-  height: 650px;
+  height: auto;
 }
 
 .About .about-wrapper .about-wrapper-div1 img {
-  width: 145% !important;
+  width: 110% !important;
+  height: 107.5% !important;
   position: relative;
-  right: 25%;
+  right: 4.7%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
   padding-top: 5px;
 }
 
@@ -399,24 +402,21 @@
 
 .long {
   height: auto;
+  margin-bottom: 30px;
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 4fr 2fr;
-      grid-template-columns: 4fr 2fr;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
   grid-gap: 5px;
 }
 
 .long .large-image {
   z-index: 1;
-  position: relative;
-  bottom: 70px;
-  right: 100px;
-  margin-top: 8.5%;
-  width: 117%;
-  height: 106.8%;
+  margin-top: 9%;
   background: url("../../assets/images/madeinkigalimodel01.png");
-  background-size: 90% 100%;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -426,10 +426,12 @@
 }
 
 .long .right-content {
-  padding: 10px;
-  padding-right: 30px;
+  height: 95% !important;
+  width: 100%;
+  padding: 10px 20%;
+  padding-left: 10%;
   position: relative;
-  right: 20%;
+  right: 0%;
 }
 
 .long .right-content .facts {
@@ -584,11 +586,13 @@
 }
 
 .long .right-content .products3 .product-counter {
-  font-size: 4rem !important;
+  font-size: 3vw !important;
 }
 
 .newsroom {
-  height: 180px;
+  position: relative;
+  bottom: 20px;
+  height: 16vw;
   width: 100%;
   background: #F7F8F6;
   padding: 20px;
@@ -608,7 +612,7 @@
 }
 
 .counter {
-  font-size: 4rem !important;
+  font-size: 4vw !important;
   color: #63a5e1 !important;
   font-weight: bold;
   text-decoration: none !important;
@@ -616,7 +620,7 @@
 }
 
 .product-counter {
-  font-size: 4rem !important;
+  font-size: 4vw !important;
   color: #63a5e1 !important;
   font-weight: bold;
   text-decoration: none !important;
@@ -624,7 +628,7 @@
 }
 
 .map-section {
-  height: 300px !important;
+  height: 20% !important;
   border-top: 1px solid #cdcdcd;
 }
 
@@ -640,7 +644,7 @@
 }
 
 .product-counter3 {
-  font-size: 5.5rem !important;
+  font-size: 5.5vw !important;
   color: #63a5e1 !important;
   font-weight: bold;
   text-decoration: none !important;

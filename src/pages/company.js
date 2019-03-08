@@ -6,7 +6,7 @@ import '../css/utils/screen.css';
 import {Link} from 'react-router-dom';
 
 import CountTo from 'react-count-to';
-import img1 from '../assets/images/madeinkigali02.jpg';
+import img1 from '../assets/images/madeinkigali02.png';
 
 import img1_1 from '../assets/images/madeinkigali05.jpg';
 
@@ -69,10 +69,10 @@ class About extends Component {
         
     componentDidMount() {
         // componentDidMount(){
-            if(window.innerWidth > 1400){
+            if(window.innerWidth > 2200){
               this.setState({
                 large_screen_class: "large_screen",
-              });
+              }); 
             }
         //   }
 
@@ -107,7 +107,7 @@ class About extends Component {
                             <p>
                             MIK is an authentic, multi-platform experience that aims at resonating with the people who use it, because it’s built by them. 
 It’s a place made to get it right to shop and be inspired to develop your own style. 
-                            </p>
+                             </p>
                             {/* <Link to={'/dev/company/about2'}><button>ABOUT US</button></Link> */}
                         </div>
                         <div className='div-image-div'>
@@ -136,7 +136,7 @@ It’s a place made to get it right to shop and be inspired to develop your own 
 
                     <div className='box-wrapper'>
                         <div>
-                            <h5><b>About Us</b></h5>
+                             <h5><b>About Us</b></h5>
                             <p>
                             We are selflessly committed to providing the most authentic handmade fashion products that Rwanda has to offer while ensuring that the hundreds of women that we work with in producing the products are the priority beneficiaries to the proceeds.
                             </p>
@@ -148,7 +148,7 @@ It’s a place made to get it right to shop and be inspired to develop your own 
                             <p>
                             From clothes and footwear to homeware, our local but highly talented designers focus on the details to ensure that each piece is perfect for your look and comfort. Our flattering styles always fit with no fuss. We do not stop until each product is made to perfectly fit you. 
                             </p>
-
+ 
                             <button className='btn-company'>WHAT WE DO</button>
                         </div>
                         <div>

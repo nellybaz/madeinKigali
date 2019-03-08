@@ -14,9 +14,9 @@ class About extends Component{
         }
     }
  
- 
+  
     componentDidMount(){
-        if(window.innerWidth > 1400){
+        if(window.innerWidth > 2200){
           this.setState({
             large_screen_class: "large_screen",
           });
@@ -80,11 +80,11 @@ class About extends Component{
 
                     </section>
 
-                    <section className="about-section2">
+                     <section className="about-section2">
                          <div className='section2-left'>
                             <div className='section2-left-top'>
  
-                                <img src={require('../assets/images/madeinkigali11.1.jpg')}  alt="madeinkigali09.1"/>
+                                <img src={require('../assets/images/madeinkigali11.2.png')}  alt="madeinkigali09.1"/>
                             
                             </div>
 
@@ -108,25 +108,76 @@ And lastly, not forgeting our future leaders; being a student can mean living on
                             <h4>OUR PRODUCTS</h4>
 
                             <p>
-                            Our products are made with a deep passion to contribute to the actualisation of the “Africa we want” vision been pioneered by African leaders. The products you buy from MIK shelf are testament to what a united front of Africans can achieve with the support of a willing government. We have added more products to our offerings and pride ourselves as leading providers of unique and quality clothing, footwear, homeware, bags, decor,  and accessories.
+                            Our products are made with a deep passion to contribute to the actualisation of the “Africa we want” vision been pioneered by African leaders. The products you buy from MIK shelf are testament to what a united front of Africans can achieve with the support of a willing government. We have added more products to our offerings and pride ourselves as leading providers of 
+                            unique and quality clothing, footwear, homeware, bags, decor,  and accessories. Beyond getting it right, our products are handmade from the best of quality materials we could source. We prioritize local suppliers over any other and sustain strict policies for our quality-control department. Every MIK product comes with a story that can be traced back to the women in various cooperatives that put materials together before the design stage.
                             </p>
-                            <p>
-                            Beyond getting it right, our products are handmade from the best of quality materials we could source. We prioritize local suppliers over any other and sustain strict policies for our quality-control department. Every MIK product comes with a story that can be traced back to the women in various cooperatives that put materials together before the design stage.
-                            </p>
+
+
+                            <h4 style={{fontSize: '1.7vw'}}>Made to get it right</h4>
+
+<p style={{position:'relative', bottom:'10px'}}>
+Whoever associates or engages with made in Kigali is left with a story to tell. From employees and partners to customers, our service is unmatched and is ever improving. When you buy and/or work for Made in Kigali, you have a relationship with us that we will nurture and you will undoubtedly appreciate.
+
+Our employees are more than workers, they are our partners.  We encourage a work environment in which creativity can thrive and that is why our products are usually unique and incredibly attractive. Just as it is known, It feels good to do good, so responsibility is at the core of everything we do. We are dramatically passionate about quality. If you ever doubt our sober mission, find out how we source our raw-materials, 
+the caring partners we work with, our employee conditions, community engagement and so much more. All of this is to satisfy our responsibility to you.
+</p>
                             </div>
 
                             <div className='section2-right-bottom'>
-                            <h4>FACTORY OF EMOTIONS</h4>
+                            <h4>CODE OF CONDUCT</h4>
 
-                            <p>The Lorem Ipsum is simply dummy text of the composition and layout before printing. Lorem Ipsum has been the standard text for printing since the 1500s,</p>
-                            <p>The Lorem Ipsum is simply dummy text of the composition and layout before printing. Lorem Ipsum has been the standard text for printing since the 1500s, when an anonymous printer assembled pieces of text together to make a sample book of text fonts. It has not only survived five centuries, but has also adapted to computer office, without its content is changed. It was popularized in the 1960s through the sale of Letraset sheets containing passages from Lorem Ipsum, and, more recently, by its inclusion in text layout applications, such as Aldus PageMaker.</p>
+                          
 
-                            
-                            <p>The Lorem Ipsum is simply dummy text of the composition and layout before printing. Lorem Ipsum has been the standard text for printing since the 1500s, when an anonymous printer assembled pieces of text together to make a sample book of text fonts. It has not only survived five centuries, but has also adapted to computer office, without its content is changed. It was popularized in the 1960s through the sale of Letraset sheets containing passages from Lorem Ipsum, and, more recently, by its inclusion in text layout applications, such as Aldus PageMaker.</p>
+<p>
+All our suppliers and/or partners are subject to the same non-compromisable MIK Code of Conduct (CoC). We are expressly non-tolerant to discrimination, abuse, unlawful labour and . The New Labour Code (law n° 66/2018 of 30/08/2018 regulating labour in Rwanda) of the Republic of Rwanda guides our organisation’s by-laws while we strive to remain compliant to all of the other laws and regulations we are expected to follow. 
+
+Very notable from our Code of Conduct is also our unwavering commitment to ensuring that we source materials that are not hazardous to the environment and/or can be recycled for reuse. Animal welfare is also at the core of what we protect and we are intensifying our efforts in this regard day after another.
+
+To ensure seamless compliance with our Code of Conduct by our suppliers and partners, we have out in place various programs and activities that include:
+
+</p>
+<ul>
+<li>Outsourcing audit firms</li>
+    <li>Onboarding new suppliers/partners</li>
+    <li>Regular Quality Evaluation programs</li>
+    <li>Partnerships with Conservation organisations</li>
+    <li>Annual re-training for staff</li>
+
+    </ul>
+
+
+
+    <h4 style={{fontSize: '1.7vw'}}>Eco-Fashion</h4>
+<p>
+Made in Kigali believes in adding value to the environment without robbing it; that been the reason we make the environment greener for every sale we are privileged to make. In compliance with the government of Rwanda’s vision, we operate under a “Green Growth” goal that aims at making our entity the number ONE echo friendly fashion house in Africa by 2030.
+
+Our products are packaged and made out of materials that are either 100% echo friendly or can be recycled after use. It would amaze you to know that we are 100% pure plastic intolerant and will continue to operate like that in the foreseeable future.
+
+</p>
+
+<p><b>
+Consistent carbon footprint reduction efforts
+</b>
+</p>
+
+<p>
+Every business year, we engage our organisation in discussions with environmental specialists on ways in which we could further reduce our carbon-footprint against our performance in that area for the previous year.
+</p>
+
+ <p><b>
+ Pioneering the Conservation Agenda
+ </b></p>
+
+ <p>
+ Our impact goes beyond the products we sell or the women we empower, we have actualised plans to lead the conservation business. 
+
+  </p>
+
                             </div>
                         </div>
 
                     </section>
+
 
                     <section className='about-section3'>
                     <div className='about-section3-left'>
@@ -136,39 +187,32 @@ And lastly, not forgeting our future leaders; being a student can mean living on
                     </div>
 
                     <div className='about-section3-right'>
-                        <h4 style={{fontSize:'1.5rem'}}>THE MIK BRANDS</h4>
-
+                        <h4 style={{fontSize:'1.5rem', position:'relative', top:'10px'}}>THE MIK BRANDS</h4>
+                            <br></br>
                         <p>
                         
-We don't do fashion like anyone else does fashion. Our ASOS Brands, created by our London design team, look between the lines to bring you the freshest clothing, shoes, accessories and gifts. When it comes to our curation of brands at ASOS, we select the best of those to give you the biggest variety, amazing exclusives and coolest collaborations. And in case that wasn't enough, we've also got a range of first-rate Face + Body products you can express yourself with, too. There are no rules – just endless ways to be you.
+                        Our fashion sense is like no other. MIK Brands are produced with accurate attention to detail to bring you the best of clothing, shoes, accessories and homeware you can possibly get. When it comes to sourcing external brands at MIK, we ensure to retain quality, authenticity and exclusivity. Offering you the best you can get is not an extra service for us, it is standard practice.
                         </p>
                     
 
                     <h4>MIK DESIGN</h4>
                     <p>
                     
-Giving you the confidence to express your individuality, ASOS DESIGN interprets major trends, adding that next-level ASOS spin. Representing in our size ranges (ASOS Curve, Tall, Petite and Maternity), we've got all the stuff you need to invent a style that’s all yours… making every day, night and everything in-between as extraordinary as you are.
+                    Expression and Identity are at the core of what we create. MIK DESIGNS illuminates major trends, according every one of our customers the chance to express themselves without speaking.  Piece after another, our designs are just a representation of you, the unmatched customers that we serve. 
                     </p>
 
                    <h4>MIK EDITION</h4>
                    <p>                   
-ASOS EDITION is designed for the most memorable moments of your life so you can turn up and stand out in occasionwear that’s as unique as you. In our size ranges and including our beautiful ASOS EDITION Wedding Collection, we'll have you dancing before the party's even begun.
+                   The MIK EDITION is curated to ensure that the wardrobe choices you make for the irreplaceable moments and events fit without compromising style. In our size ranges and including our beautiful MIK EDITION Wedding Collection, we'll have you dancing before the party's even begun.
                    </p>
                     
 
                     <h4>MIK 1950</h4>
                     <p>
-Backing oversized fits with a minimal, clean aesthetic, ASOS WHITE is here to elevate your every day. Believing investment pieces don’t have to compromise on individuality, it creates understated staples with a modern twist that you’ll be proud to wear – not to mention look damn cool in.
+                    Our designs are heavily influenced by the pop art movement that sprout in the mid 1950. This collection  adopts the bold expressionism to the Pop Art aesthetic while mixing with existing African prints to democratise fashion for the trendy clientele. 
                     </p>
 
 
-                    <h4>MIK COLLABS</h4>
-<p>No longer a choice between conscience and self-expression, we believe fashion has the power to build futures. That’s why our exclusive ASOS MADE IN KENYA collection works with SOKO Kenya to improve the lives of local communities by offering skills and support to drive sustainable development. Does good, looks good.</p>
-
-
-{/* <h4>MIK collabs</h4>
-<p>We collaborate with some of the world's biggest names like Crayola, The Simpsons, LaQuan Smith, GLAAD and VFILES to design cool collections you won't find anywhere else. We do the hard work, you look amazing… deal?</p>
-                     */}
                     
                    <div className='div-action-right-bottom'>
                         <h5>Made to get it right</h5>
@@ -178,7 +222,7 @@ Backing oversized fits with a minimal, clean aesthetic, ASOS WHITE is here to el
 
                    
                    
-                    </section> 
+                    </section>  
                 
                 </div>
 

@@ -1,0 +1,451 @@
+@font-face {
+  font-family: "BaskervilleCustom";
+  src: url("../../assets/fonts/Baskerville-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "WarsawGothic";
+  src: url("../../assets/fonts/WarsawGothic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "WarsawGothicE";
+  src: url("../../assets/fonts/WarsawGothicExt.otf") format("opentype");
+}
+
+@media only screen and (max-width: 745px) {
+  .c2-section1-title-div p {
+    display: none;
+  }
+  .c2-section1-span {
+    bottom: 0.5rem !important;
+  }
+  .c2-content-section2 {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .c2-content-section2 h5 {
+    font-size: 0.8rem !important;
+  }
+  .c2-content-section2 p, .c2-content-section2 button {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .Company2 {
+    width: 60% !important;
+    margin: 0 auto;
+  }
+  .company2-inner0 {
+    height: 5.4vw !important;
+  }
+  .company2-inner0 h4 {
+    width: 100% !important;
+    font-size: 2.64vw !important;
+  }
+  .company2-inner0 p {
+    font-size: 0.72vw !important;
+  }
+  .company2-inner1, .company2-inner3, .company2-inner4 {
+    height: 10.8vw !important;
+  }
+  .company2-inner2 {
+    height: 15.3vw !important;
+  }
+  .c2-counter1 {
+    font-size: 2.7vw !important;
+  }
+  .c2-counter2 {
+    font-size: 3.3vw !important;
+  }
+  .c2-counter-p {
+    font-size: 0.48vw !important;
+  }
+  .c2-section1-h5, .c2-section1-span {
+    font-size: 6.9vw !important;
+  }
+  .c2-section1-title-div p {
+    font-size: 0.8vw !important;
+  }
+  .c2-content-section2 h5 {
+    font-size: 1.2vw !important;
+  }
+  .c2-content-section2 p {
+    font-size: 0.8vw !important;
+  }
+  .c2-content-section2 .c2-section2-btn {
+    font-size: 0.7vw !important;
+  }
+  .c2-newsroom {
+    width: 100%;
+    height: 200px;
+    background: #F5F8F6;
+    position: relative;
+    margin-top: -3.84vw !important;
+  }
+  .c2-newsroom * {
+    color: black;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .c2-newsroom div {
+    padding: 10px 20px;
+    padding-top: 1.8vw !important;
+  }
+  .c2-newsroom div p span {
+    font-size: 2.4vw !important;
+  }
+  .c2-newsroom div button {
+    padding: 0.48vw 0.9vw !important;
+    font-size: 0.72vw !important;
+    top: 1.5vw !important;
+  }
+}
+
+.Company2 {
+  width: 100%;
+  height: 100%;
+}
+
+.Company2 .c2-content-section1 {
+  width: 100%;
+  height: auto;
+  background: white;
+  border-top: 1px solid #bfbfbf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Company2 .c2-content-section1 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Company2 .c2-content-section1 div {
+  width: 50%;
+}
+
+.Company2 .c2-content-section1 .c2-section1-img-div img {
+  width: 100%;
+  height: auto;
+}
+
+.Company2 .c2-content-section1 .c2-section1-title-div {
+  padding-left: 4%;
+  padding-top: 3%;
+}
+
+.Company2 .c2-content-section1 .c2-section1-title-div .c2-section1-h5, .Company2 .c2-content-section1 .c2-section1-title-div .c2-section1-span {
+  font-family: "WarsawGothic";
+  font-size: 11.5vw;
+  color: black;
+}
+
+.Company2 .c2-content-section1 .c2-section1-title-div .c2-section1-span {
+  position: relative;
+  bottom: 35px;
+}
+
+.Company2 .c2-content-section1 .c2-section1-title-div p {
+  width: 80%;
+  color: black;
+  font-size: 0.96vw;
+  position: relative;
+  bottom: 4rem;
+}
+
+.Company2 .c2-content-section2 {
+  background: #F5F8F6;
+  width: 100%;
+  height: auto;
+  padding: 0 3%;
+  padding-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0;
+}
+
+.Company2 .c2-content-section2 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: black;
+}
+
+.Company2 .c2-content-section2 div {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Company2 .c2-content-section2 h5 {
+  font-size: 1.5vw;
+}
+
+.Company2 .c2-content-section2 p {
+  height: 70%;
+  font-size: 1vw;
+}
+
+.Company2 .c2-content-section2 .c2-section2-btn {
+  padding: 10px 15px;
+  background: black;
+  color: white;
+  border: none;
+  font-size: 0.8vw;
+  font-weight: bold;
+  width: auto;
+}
+
+.Company2 .company2-wrapper {
+  width: 100%;
+  height: auto;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Company2 .company2-wrapper * {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Company2 .company2-wrapper .c2-long-img {
+  width: 60%;
+  z-index: 1;
+}
+
+.Company2 .company2-wrapper .company2-long-right {
+  width: 40%;
+  height: auto;
+  position: relative;
+  right: 5%;
+}
+
+.Company2 .company2-wrapper .company2-inner {
+  width: 100%;
+  border-top: 1px solid #cccccc;
+}
+
+.Company2 .company2-wrapper .company2-inner div {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Company2 .company2-wrapper .company2-inner .c2-left {
+  border-right: 1px solid #cccccc;
+}
+
+.Company2 .company2-wrapper .company2-inner0 {
+  height: 9vw;
+  width: 150%;
+  position: relative;
+  right: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Company2 .company2-wrapper .company2-inner0 h4 {
+  width: 70%;
+  color: black;
+  font-weight: bold;
+  font-family: 'WarsawGothic';
+  font-size: 4.4vw;
+}
+
+.Company2 .company2-wrapper .company2-inner0 p {
+  color: black;
+  font-size: 0.96vw;
+}
+
+.Company2 .company2-wrapper .company2-inner1 {
+  height: 18vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  grid-gap: 0;
+}
+
+.Company2 .company2-wrapper .company2-inner1 .c2-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
+
+.Company2 .company2-wrapper .company2-inner1 .c2-left div {
+  width: 100%;
+  height: 100%;
+  padding-right: 2px;
+}
+
+.Company2 .company2-wrapper .company2-inner1 .c2-left div img {
+  width: 100%;
+  height: auto;
+}
+
+.Company2 .company2-wrapper .company2-inner2 {
+  height: 25.5vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2.3fr;
+      grid-template-columns: 3fr 2.3fr;
+  grid-gap: 0;
+}
+
+.Company2 .company2-wrapper .company2-inner3 {
+  height: 18vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
+
+.Company2 .company2-wrapper .company2-inner4 {
+  height: 18vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  grid-gap: 0;
+}
+
+.Company2 .company2-wrapper .company2-inner4 .map-div {
+  border: none;
+}
+
+.Company2 .company2-wrapper .company2-inner4 .map-div img {
+  width: 100%;
+  height: auto;
+}
+
+.c2-counter-p {
+  text-decoration: underline;
+  font-size: 0.8vw;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.c2-counter {
+  color: #63a5e1;
+  font-weight: bold;
+}
+
+.c2-counter1 {
+  font-size: 4.5vw;
+}
+
+.c2-counter2 {
+  font-size: 5.5vw;
+}
+
+.c2-counter2 span {
+  position: relative;
+  left: 40%;
+}
+
+.c2-newsroom {
+  width: 100%;
+  height: 200px;
+  background: #F5F8F6;
+  position: relative;
+  margin-top: -6.4vw;
+}
+
+.c2-newsroom * {
+  color: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.c2-newsroom div {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10fr 2fr;
+      grid-template-columns: 10fr 2fr;
+  grid-gap: 0;
+  padding: 10px 20px;
+  padding-top: 3vw;
+}
+
+.c2-newsroom div p span {
+  font-family: 'WarsawGothic';
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.c2-newsroom div button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 0.8vw 1.5vw;
+  font-size: 1.2vw;
+  position: relative;
+  top: 3vw;
+}
+/*# sourceMappingURL=company2.css.map */

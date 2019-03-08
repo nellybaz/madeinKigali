@@ -152,11 +152,11 @@ class About2 extends Component {
     }
  
     componentDidMount(){
-        if(window.innerWidth > 1400){
-          this.setState({
-            large_screen_class: "large_screen",
-          });
-        }
+        // if(window.innerWidth > 2000){
+        //   this.setState({
+        //     large_screen_class: "large_screen",
+        //   });
+        // }
       }
 
     render() {
@@ -201,14 +201,14 @@ class About2 extends Component {
 
 
 
-                    <div className='mission'>
+                   <div className='mission'>
                         <p>
                         Our mission is to become the world’s number one solution for cooperatives and for fashion loving designers around Africa by driving long lasting positive change.
 
 We want to make the world a better place where people can be themselves, expressing their authenticity through unique reations.
                         </p>
                     </div>
-
+ 
 
                     <div className='timeline'>
                    <div className='p'>
@@ -218,7 +218,7 @@ We want to make the world a better place where people can be themselves, express
                     
                     </div>
 
-
+ 
                     <div className='timeline-tabs'>
                         <div onClick={()=> this.changeTabColor('a')} className={`a ${this.state.a}`}>
                         2013
@@ -233,7 +233,7 @@ We want to make the world a better place where people can be themselves, express
                         2016
                         </div>
                         <div onClick={()=> this.changeTabColor('e')} className={`e ${this.state.e}`}>
-                        2017
+                          2017
                         </div>
                         <div onClick={()=> this.changeTabColor('f')} className={`f ${this.state.f}`}>
                         2018
@@ -243,6 +243,8 @@ We want to make the world a better place where people can be themselves, express
                         </div>
                     
                     </div>
+
+
 
                     <div className='tab-content'>
 
@@ -254,6 +256,8 @@ We want to make the world a better place where people can be themselves, express
                     <p>{this.state.timeline[this.state.timelineDisplayIndex].summary}</p>
                     </div>
                     </div>
+
+
 
                     <div className='strategy'>
 
@@ -273,6 +277,8 @@ Our unwavering belief in pushing boundaries is powered by a deep commitment to s
                     
                     </div>
 
+                    
+
                     <div className='bottom-div'>
                     <div className='bottom-div-top'>
                     
@@ -285,7 +291,7 @@ Our unwavering belief in pushing boundaries is powered by a deep commitment to s
                     </p>
                     </div>
                     
-                    </div>
+                    </div> 
                 </div>
 
 

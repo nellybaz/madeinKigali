@@ -1,12 +1,57 @@
+$jumbo-content-h4: 2.5vw;
+$jumbo-content-p: 1.3vw;
+@media only screen and (min-width: 2000px) {
 
-@media only screen and (min-width: 1600px) {
+    $jumbo-content-h4: $jumbo-content-h4 * 0.6;
+     $jumbo-content-p : $jumbo-content-p * 0.6;
+    .About2{
+        width:60% !important;
+        margin: 0 auto;
+    }
 
-    // .About2{
-    //     width:60% !important;
-    //     margin: 0 auto !important;
-    //     background: white;
-        
-    // }
+
+    .about2-jumbo-content{
+        bottom: 0.6*40vw !important; 
+        // left: 10%;
+        width:60% !important;
+
+        h5{
+            font-size: $jumbo-content-h4 !important;
+        }
+        p{
+            font-size: $jumbo-content-p !important;
+        }
+
+        button{
+            font-size: 0.6 * 1.2vw !important;
+        }
+    }
+
+    .timeline{
+        p{
+            font-size: 0.6 * 2vw !important;
+        }
+    }
+
+
+    .strategy-left{
+        h4{
+            font-size: 0.6*4vw !important;
+        }
+
+        a{
+            font-size: 0.6* 1.3vw !important; 
+        }
+    }
+
+    .strategy-right{
+        p{
+            font-size: 0.6 * 1.3vw !important;
+        }
+    }
+
+    
+
 
 }
 
@@ -24,8 +69,8 @@
 @media only screen and (max-width: 600px) {
     .about2-jumbo-content{
         height: auto !important;
-        bottom: 190px !important; 
-        margin-bottom: 80px !important;
+        bottom: 100vw !important; 
+        // margin-bottom: 80px !important;
 
         h5{
             font-size: 1rem !important;
@@ -76,12 +121,27 @@
         
     }
 
-    .strategy-left{
-        h4{
-            font-size: 2rem;
+    .timeline{
+        p{
+            font-size: 1.1rem !important;
         }
     }
 
+    .strategy-left{
+        h4{
+            font-size: 2rem !important;
+        }
+
+        a{
+            font-size: 0.9rem !important;
+        }
+    }
+
+    .strategy-right{
+        p{
+            font-size: 0.9rem  !important;
+        }
+    }
     .bottom-div-top{
         width:100% !important;
         left: 0 !important;
@@ -120,6 +180,7 @@
         width:100%;
 
         .video-jumbotron{
+            // border: 1px solid red;
             width:100%;
             height: auto;
             video{
@@ -130,7 +191,7 @@
         .mission{
             width:80%;
             margin: 0 auto;
-            margin-top: 150px;
+            margin-top: 10px;
             p{
                 text-align: center;
                 font-weight: bold;
@@ -148,7 +209,7 @@
 
                p{
                 border-top: 1px solid black;
-                font-size: 24px;
+                font-size: 2vw;
                 padding-top: 10px;
                 font-weight: bold;
                 text-align: center;
@@ -166,7 +227,7 @@
             grid-gap:2px;
             div{
                 width:100%;
-                width:150px;
+                // width:150px;
                 height: 50px;
                 background: black;
 
@@ -202,7 +263,7 @@
                     // border: 1px solid red;
                     // padding: 0 !important;
                     width:105%;
-                    height: 103%;
+                    height: auto;
                     object-fit: cover;
                    position: relative;
                    bottom: 2%;
@@ -228,7 +289,7 @@
             }
         }
     }
-
+ 
     .strategy-right{
         padding: 10px !important;
         margin-bottom: 30px;
@@ -276,6 +337,7 @@
             font-weight: bold;
             font-family: 'WarsawGothicE';
             letter-spacing: 0.3rem;
+            font-size: 4vw;
         }
  
         a{
@@ -284,11 +346,17 @@
             border:none;
             background: black;
             color: white;
+            font-size: 1.3vw;
         }
     }
 
     .strategy-right{
         padding: 10%;
+
+        p{
+            font-size: 1.3vw;
+            
+        }
     }
 }
 
@@ -308,6 +376,7 @@
 
         p{
             font-size: 12px;
+            // border: 1px solid red;
             color: black !important;
         }
     }
@@ -350,15 +419,14 @@
 
 .about2-jumbo-content{
     // border: 1px solid red;
-    margin-bottom: -350px;
     width:100%;
     display:flex;
     justify-content: center;
     align-items:center;
     flex-direction:column;
-    position: relative;
+    position: absolute;
     
-    bottom: 550px;
+    bottom: 4vw;
     h5{
         padding: 5px 10px;
         font-weight: bold;
@@ -367,7 +435,7 @@
         width: 80%;
         
         text-align: center;
-        font-size: 2.5rem;
+        font-size: $jumbo-content-h4;
     }
 
     .h5{
@@ -380,7 +448,7 @@
 
     p{
         background: white;
-        font-size: 18px;
+        font-size: $jumbo-content-p;
         color: white;
         padding: 5px 10px;
         opacity: 0.8;
@@ -401,6 +469,7 @@
         border: 1px solid #9A0022;
         font-weight: bold;
         opacity: 0.8;
+        font-size: 1.2vw;
         cursor: pointer;
         
     }

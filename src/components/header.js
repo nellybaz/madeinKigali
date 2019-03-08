@@ -132,7 +132,7 @@ class Header2 extends Component {
       <div className="Header">
         {/* {this.getWindowClick()} */}
       <div className="topmost-bar">
-            <audio autoPlay={true} ref = {(ip)=> {this.mytune = ip}}>
+            <audio autoPlay={false} ref = {(ip)=> {this.mytune = ip}}>
             <source src={music} type="audio/mpeg" />
                 Your browser does not support the audio element.
             </audio>
@@ -194,7 +194,7 @@ class Header2 extends Component {
         {/* mobile navigation */}
 
         <div className={`mobile-nav`}>
-        
+         
             <a style={{fontSize: '0.8rem'}} className="btn btn-open-nav mobile-nav-item"><img src={mobile_menu} alt="mik"/><br></br>MENU</a>
             <Link to={'/dev/12hdgsikdhlmsdne'} className="mobile-nav-item" ><img className="mobile-logo" src={logo} /></Link>
             
@@ -222,7 +222,7 @@ class Header2 extends Component {
 
      {/* mobile navigation ends */}
 
-        <div className={`navigation ${this.state.nav_class}`}>
+         <div className={`navigation ${this.state.nav_class}`}>
 
             <div className='logo-div-nav'>
                 <Link to={'/dev/12hdgsikdhlmsdne'} ><img src={logo} alt="mik logo"/></Link>

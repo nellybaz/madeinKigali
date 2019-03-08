@@ -1,3 +1,35 @@
+@media only screen and (min-width: 2000px) {
+  .About2 {
+    width: 60% !important;
+    margin: 0 auto;
+  }
+  .about2-jumbo-content {
+    bottom: 24vw !important;
+    width: 60% !important;
+  }
+  .about2-jumbo-content h5 {
+    font-size: 1.5vw !important;
+  }
+  .about2-jumbo-content p {
+    font-size: 0.78vw !important;
+  }
+  .about2-jumbo-content button {
+    font-size: 0.72vw !important;
+  }
+  .timeline p {
+    font-size: 1.2vw !important;
+  }
+  .strategy-left h4 {
+    font-size: 2.4vw !important;
+  }
+  .strategy-left a {
+    font-size: 0.78vw !important;
+  }
+  .strategy-right p {
+    font-size: 0.78vw !important;
+  }
+}
+
 @font-face {
   font-family: "WarsawGothicE";
   src: url("../../assets/fonts/WarsawGothicExt.otf") format("opentype");
@@ -6,8 +38,7 @@
 @media only screen and (max-width: 600px) {
   .about2-jumbo-content {
     height: auto !important;
-    bottom: 190px !important;
-    margin-bottom: 80px !important;
+    bottom: 100vw !important;
   }
   .about2-jumbo-content h5 {
     font-size: 1rem !important;
@@ -54,8 +85,17 @@
     margin-left: 0 !important;
     margin-top: 10px;
   }
+  .timeline p {
+    font-size: 1.1rem !important;
+  }
   .strategy-left h4 {
-    font-size: 2rem;
+    font-size: 2rem !important;
+  }
+  .strategy-left a {
+    font-size: 0.9rem !important;
+  }
+  .strategy-right p {
+    font-size: 0.9rem  !important;
   }
   .bottom-div-top {
     width: 100% !important;
@@ -99,7 +139,7 @@
 .About2 .about2-wrapper .mission {
   width: 80%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 10px;
 }
 
 .About2 .about2-wrapper .mission p {
@@ -129,7 +169,7 @@
 
 .About2 .about2-wrapper .timeline .p p {
   border-top: 1px solid black;
-  font-size: 24px;
+  font-size: 2vw;
   padding-top: 10px;
   font-weight: bold;
   text-align: center;
@@ -147,7 +187,6 @@
 
 .About2 .about2-wrapper .timeline-tabs div {
   width: 100%;
-  width: 150px;
   height: 50px;
   background: black;
   color: white;
@@ -191,7 +230,7 @@
 
 .About2 .about2-wrapper .tab-content .tab-content-left img {
   width: 105%;
-  height: 103%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
@@ -273,6 +312,7 @@
   font-weight: bold;
   font-family: 'WarsawGothicE';
   letter-spacing: 0.3rem;
+  font-size: 4vw;
 }
 
 .strategy .strategy-left a {
@@ -280,10 +320,15 @@
   border: none;
   background: black;
   color: white;
+  font-size: 1.3vw;
 }
 
 .strategy .strategy-right {
   padding: 10%;
+}
+
+.strategy .strategy-right p {
+  font-size: 1.3vw;
 }
 
 .bottom-div {
@@ -336,7 +381,6 @@
 }
 
 .about2-jumbo-content {
-  margin-bottom: -350px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,8 +395,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  bottom: 550px;
+  position: absolute;
+  bottom: 4vw;
 }
 
 .about2-jumbo-content h5 {
@@ -362,7 +406,7 @@
   color: white !important;
   width: 80%;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.5vw;
 }
 
 .about2-jumbo-content .h5 {
@@ -375,7 +419,7 @@
 
 .about2-jumbo-content p {
   background: white;
-  font-size: 18px;
+  font-size: 1.3vw;
   color: white;
   padding: 5px 10px;
   opacity: 0.8;
@@ -396,6 +440,7 @@
   border: 1px solid #9A0022;
   font-weight: bold;
   opacity: 0.8;
+  font-size: 1.2vw;
   cursor: pointer;
 }
 /*# sourceMappingURL=about2.css.map */
