@@ -10,6 +10,12 @@
        
         
     }
+
+    .nav-fixed{
+        /* width:60% !important; */
+        margin: 0 auto !important;
+        left: 20% !important;
+    }
 }
 
 @media only screen and (max-width: 900px){
@@ -157,7 +163,7 @@
     justify-content: left;
     height: 70px;
     align-items: center;
-    
+     
     
 } */
 

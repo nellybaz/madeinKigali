@@ -100,6 +100,8 @@
 
 
 .ComingSoon1{
+    height: auto;
+    // border: 1px solid red;
     width:100%;
     background:linear-gradient(#F8F8F8, white);
    
@@ -225,6 +227,7 @@
         border:none;
         color: lighten(black, 65%);
         font-size: 1.2vw;
+        font-family: 'Felipa', cursive;
         border-bottom: 1.5px solid lighten(black, 75%);
     }
 }
@@ -395,6 +398,7 @@
                 width:80%;
                 background: transparent;
                 border: none;
+                font-family: 'Felipa', cursive;
                 border-bottom: 1px solid lighten(gray, 30%);
             }
         }

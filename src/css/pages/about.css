@@ -19,7 +19,7 @@
     margin: 0 auto !important;
   }
   .about-section1-left-top h4 {
-    font-size: 4.2vw !important;
+    font-size: 3.6vw !important;
   }
   .about-section1-left-top p {
     font-size: 1.8vw !important;
@@ -248,7 +248,8 @@
 }
 
 .Company-about .content-wrapper .about-section1 .about-section1-left .about-section1-left-top h4 {
-  font-size: 7vw;
+  font-size: 6vw;
+  letter-spacing: 0.3rem;
   font-weight: bold;
   font-family: "WarsawGothicE";
   color: black;

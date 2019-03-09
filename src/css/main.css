@@ -4,7 +4,7 @@
 
 body{
     background: white;
-}
+} 
 
 
 @media only screen and ( max-width: 745px){
@@ -192,7 +192,7 @@ body{
     align-items:center;
     flex-direction:row;
 }
-.dot-control div{
+.dot-control .dot{
     width: 10px;
     border-radius: 5px;
     background: #B62043;
@@ -200,4 +200,8 @@ body{
     margin: 2px;
 
     cursor: pointer;
+}
+
+.dot-control .dot-act{
+    background: #d5d5d5;
 }

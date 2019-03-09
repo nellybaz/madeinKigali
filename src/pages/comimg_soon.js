@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../css/pages/coming1.css';
 import Countdown from 'react-countdown-now';
-
+import request from 'superagent';
 
 import fb from '../assets/images/icons/facebook-logo.png';
 import insta from '../assets/images/instagram-black.png';
@@ -19,6 +19,64 @@ import tumblr from '../assets/images/icons/tumblr-logo.png';
 
 const Completionist = () => <span>You are good to go!</span>;
 class ComingSoon1 extends Component {
+
+
+  constructor(props){
+    super(props);
+    this.state={
+      email_input: '',
+      large_screen_class: '',
+    }
+  }
+
+  async subscribe() {
+    try {
+
+      let currentComponent = this;
+
+      request
+        .post('https://madeinkigali.com/API/api2/dashboard/')
+        .set('Content-Type', 'application/x-www-form-urlencoded')
+        .send({ token: "mik9876543210", tag: 'subscribe', email: this.state.email_input })
+        .end(function (err, res) {
+          if (res != null) {
+            if (res.body.res == 1) {
+                alert("Thanks for subscribing!!\n We will reach back to you soon");
+                window.location.href = "/dev";
+            }
+
+            else{
+              alert("Could not subscribe please try again");
+            }
+
+          }
+
+          else {
+            console.log(res, err);
+
+          }
+
+        });
+
+
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  _handleKeyPress=(e)=> {
+    if (e.key === 'Enter') {
+      if(this.state.email_input == ""){
+          alert("Please enter your email");
+      }else{
+        if(!this.state.email_input.includes("@")){
+          alert("Please enter valid email");
+        }else{
+          this.subscribe();
+        }
+      }
+    }
+  }
   render() {
 
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
@@ -79,7 +137,11 @@ class ComingSoon1 extends Component {
 
 
           <div className='coming1-social-sub'>
-            <input type="email" placeholder="We'll be here soon, subscribe to be notified...          >" />
+            <input
+            onKeyPress={this._handleKeyPress} onChange={(e)=> this.setState({
+              email_input: e.target.value,
+          })}
+            type="email" placeholder="We'll be here soon, subscribe to be notified...          >" />
 
           </div>
 
@@ -175,7 +237,7 @@ class ComingSoon1 extends Component {
 
                             <div className='coming-mobile-btn-div'>
                               <Link to={'/dev/company/about2'}>ABOUT US</Link>
-                              <Link to={'/dev/company2'}>WHO WE ARE</Link>
+                               <Link to={'/dev/company2'}>WHO WE ARE</Link>
                               <Link to={'/dev/company/about'}>WHAT WE DO</Link>
                             </div>
                       
@@ -186,7 +248,12 @@ class ComingSoon1 extends Component {
  
                     <div className='coming-mobile-footer'>
                     <div className='coming-footer-input-div'>
-                      <input type="text"  placeholder="We'll be here soon, subscribe to be notfied...   >"/>
+                      <input
+                      onKeyPress={this._handleKeyPress} onChange={(e)=> this.setState({
+                        email_input: e.target.value,
+                    })}
+                      
+                      type="text"  placeholder="We'll be here soon, subscribe to be notfied...   >"/>
                     </div>
 
                     <div className='coming-footer-social'>
@@ -230,6 +297,8 @@ class ComingSoon1 extends Component {
                     </div>
                     
                     </div>
+
+                    
 
 
                 </div>

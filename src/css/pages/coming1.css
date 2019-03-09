@@ -63,6 +63,7 @@
 }
 
 .ComingSoon1 {
+  height: auto;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(white));
   background: linear-gradient(#F8F8F8, white);
@@ -179,6 +180,7 @@
   border: none;
   color: #a6a6a6;
   font-size: 1.2vw;
+  font-family: 'Felipa', cursive;
   border-bottom: 1.5px solid #bfbfbf;
 }
 
@@ -353,6 +355,7 @@
     width: 80%;
     background: transparent;
     border: none;
+    font-family: 'Felipa', cursive;
     border-bottom: 1px solid #cdcdcd;
   }
   .coming-mobile-footer .coming-footer-social {

@@ -217,7 +217,7 @@ $jumbo-content-p: 1.3vw;
             }
            }
         }
-
+ 
 
         .timeline-tabs{
             width:80%;
@@ -294,6 +294,10 @@ $jumbo-content-p: 1.3vw;
         padding: 10px !important;
         margin-bottom: 30px;
         text-align: justify;
+
+        p{
+            font-size: 1.1vw;
+        }
     }
 
     
@@ -354,7 +358,9 @@ $jumbo-content-p: 1.3vw;
         padding: 10%;
 
         p{
-            font-size: 1.3vw;
+            font-size: 0.9rem;
+
+
             
         }
     }
@@ -388,7 +394,7 @@ $jumbo-content-p: 1.3vw;
         // border: 1px solid red;
         position: relative;
         left: 30%;
-        bottom: 40px;
+        bottom: 30px;
         padding:10px;
 
         p{
@@ -404,6 +410,8 @@ $jumbo-content-p: 1.3vw;
         width:40%;
         height: auto;
         // border: 1px solid red;
+        position: relative;
+        bottom: 10px;
         *{
             color: white !important;
         }
@@ -428,11 +436,12 @@ $jumbo-content-p: 1.3vw;
     
     bottom: 4vw;
     h5{
-        padding: 5px 10px;
+        padding: 5px 20px;
         font-weight: bold;
         background: black;
         color: white !important;
-        width: 80%;
+        width: auto;
+        // border: 1px solid red;
         
         text-align: center;
         font-size: $jumbo-content-h4;

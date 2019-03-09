@@ -14,55 +14,44 @@ class Slider extends Component {
         const carousel_item = document.getElementsByClassName('c-item');
                 
         let len = carousel_item.length
-      
-        
 
         setInterval(async ()=>{ 
-            let motive = 0       
-            try {
-                carousel_item[this.state.carousel_index].className = "c-item";
-            } catch (error) {
-                console.log(error);
-                
-            }
-
-           try {
-            this.state.carousel_index < len-1 ?
-            carousel_item[this.state.carousel_index + 1].className = "c-item act" : 
-            motive = 1;
-           } catch (error) {
-               console.log(error);
-               
-           }
-           this.changeState(motive);           
-        }, 8000);
+            this.changeState()
+        }, 2000);
         
     }
 
     changeState = (motive = 0) =>{
-        if(motive != 1){
-            this.setState({
-                carousel_index: this.state.carousel_index + 1,
-            })
+
+        const carousel_item = document.getElementsByClassName('c-item');
+        const dot_item = document.getElementsByClassName('dot');
+        
+        
+        // console.log(carousel_item);
+        
+
+        for(let i=0; i < carousel_item.length; i++){
+            carousel_item[i].className = "c-item";
+            dot_item[i].className =  "dot dot-act";
+            
         }
 
+        carousel_item[this.state.carousel_index].className = "c-item act";
+        dot_item[this.state.carousel_index].className = "dot";
+        if(this.state.carousel_index == 2){
+                this.setState({
+                    carousel_index: 0
+                });
+        }
         else{
-            try {
-                const carousel_item = document.getElementsByClassName('c-item');
-                carousel_item[2].className = "c-item";
-                carousel_item[0].className = "c-item act";
-
-
-            } catch (error) {
-                console.log(error);
-                
-            }
             this.setState({
-                carousel_index: 0,
-            })
+                carousel_index: this.state.carousel_index + 1
+            });
         }
 
-        //alert(this.state.carousel_index);
+
+
+        
         }
 
 
@@ -83,7 +72,7 @@ class Slider extends Component {
 
 
                         }
-                    } key={x} className=''>
+                    } key={x} className='dot'>
 
                     </div>
                 )
@@ -118,36 +107,6 @@ class Slider extends Component {
                 </div>
                 
             </div>
-
-                {/* <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel" data-interval="3000">
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <div className="jumbotron jumbotron-fluid jumbo1">
-                                <div className="container">
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="carousel-item">
-
-                            <div className="jumbotron jumbotron-fluid jumbo2">
-                                <div className="container">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div className="carousel-item">
-
-                            <div className="jumbotron jumbotron-fluid jumbo3">
-                                <div className="container">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
-
             </div>
         );
     }

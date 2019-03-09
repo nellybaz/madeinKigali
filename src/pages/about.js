@@ -33,7 +33,7 @@ class About extends Component{
                         <div className='about-section1-left'>
                             <div className='about-section1-left-top'>
                                 <h4>
-                                'The Africa we Want'
+                                'The Africa we want'
                                 </h4>
                                 <p>
                                 Support the movement
@@ -74,7 +74,7 @@ class About extends Component{
                         </div>
 
                         <div className='about-section1-right'>
-                            <img src={require('../assets/images/modelmadeinkigali09.png')}  />
+                            <img src={require('../assets/images/modelmadeinkigali09.1.png')}  />
                         
                         </div>
 
@@ -187,7 +187,7 @@ Every business year, we engage our organisation in discussions with environmenta
                     </div>
 
                     <div className='about-section3-right'>
-                        <h4 style={{fontSize:'1.5rem', position:'relative', top:'10px'}}>THE MIK BRANDS</h4>
+                        <h4 style={{position:'relative', top:'10px'}}>THE MIK BRANDS</h4>
                             <br></br>
                         <p>
                         

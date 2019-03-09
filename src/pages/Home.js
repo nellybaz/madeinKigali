@@ -176,17 +176,20 @@ class Home extends Component {
 
     try {
 
-
+ 
       let currentComponent = this;
 
       request
         .post('https://madeinkigali.com/API/api2/homepage/')
         .set('Content-Type', 'application/x-www-form-urlencoded')
         .send({ token: "mik9876543210", tag: 'flashdeals' })
+        // .parse(({ res }) => JSON.parse(res))
         .end(function (err, res) {
 
           if (res != null) {
             if (res.body.flashdeals != null) {
+              console.log(res.body.flashdeals);
+              
 
               //loop through the data, and push an array of data to state
               const data1 = [];
