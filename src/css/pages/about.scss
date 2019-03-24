@@ -39,6 +39,7 @@
    }
 
    .about-section1-left-bottom{
+       padding-bottom: 35px  !important;
        h4{
            font-size: 0.6 * 1.5vw !important;
        }
@@ -46,6 +47,8 @@
        p, li{
            font-size: 0.6 * 1.05vw !important;
        }
+
+
    }
 
    .section2-left-bottom-h4{
@@ -60,7 +63,7 @@
 
    .section2-right-top, .section2-right-bottom{
        h4{
-           font-size: 0.6 *1.5 !important;
+           font-size: 0.6 *1.5vw !important;
        }
 
        p,li{
@@ -77,10 +80,12 @@
            width:0.6 * 70vw !important;
        }
    }
-
-
+ 
+ 
 
    .about-section3-right{
+      top: 0 !important;
+    // display:none;
     width: 0.6 * 50vw !important;
     right: 0.6 * 20vw !important;
        h4{
@@ -90,11 +95,15 @@
        p{
            font-size: 0.6 * 1vw !important;
        }
+
+       .sub-h4{
+        font-size: 0.6*1vw !important;
+    }
    }
 
 
    .div-action-right-bottom{
-       top:  0.6 * 10vw !important;
+       top:  0.6 * 5vw !important;
 
        h5{
            font-size: 0.6 * 3vw !important;
@@ -173,6 +182,7 @@
     .about-section2{
         flex-direction: column !important;
         height: auto !important;
+        // border: 1px solid red;
 
         .section2-left{
             width:100% !important;
@@ -208,17 +218,25 @@
     }
 
     .about-section3-left{
+        margin-top: 20%;
+        // border: 1px solid red;
         img{
             width:90% !important;
         }
     }
 
     .div-action-right-bottom{
+        // border: 1px solid red;
         top: -10% !important;
         height: 270px;
         right: 0 !important;
         h5{
-            font-size: 1rem !important;
+            font-size: 0.6rem !important;
+            text-align:center;
+        }
+
+        a{
+            font-size: 0.8rem !important;
         }
     }
     
@@ -552,10 +570,10 @@
             justify-content: center;
             align-items:center;
             flex-direction:column;
-
+            // border: 1px solid red;
             position: relative;
             right: 0%;
-            top: 10vw;
+            top: 5vw;
         }
 
         h5{

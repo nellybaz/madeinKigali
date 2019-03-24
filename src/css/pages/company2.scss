@@ -228,6 +228,7 @@ $moulded:11.5vw;
 
     //section 2 styles
     .c2-content-section2{
+        // border: 1px solid red;
         background: #F5F8F6;
         *{
             box-sizing: border-box;
@@ -243,6 +244,7 @@ $moulded:11.5vw;
         grid-gap:0;
 
         div{
+            // border: 1px solid red;
             width:90%;
            display:flex;
            justify-content: center;
@@ -251,7 +253,7 @@ $moulded:11.5vw;
         }
 
         h5{
-            font-size: 1.5vw;
+            font-size: 1.1vw;
         }
 
         p{

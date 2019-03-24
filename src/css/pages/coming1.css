@@ -160,11 +160,11 @@
 }
 
 .coming1-labels .p-h {
-  margin-right: 13.4vw;
+  margin-right: 12.7vw;
 }
 
 .coming1-labels .p-m {
-  margin-right: 13.6vw;
+  margin-right: 11.9vw;
 }
 
 .coming1-social-sub {
@@ -311,7 +311,7 @@
     display: inline-block;
     font-size: 0.7rem;
     font-weight: bold;
-    margin-right: 14%;
+    margin-right: 10%;
   }
   .mobile-content .mobile-content-inner-div2 .coming-mobile-btn-div a {
     background: black;
@@ -392,6 +392,12 @@
   .space-div {
     width: 100%;
     height: 300px;
+  }
+  .coming-hour-label {
+    margin-right: 3.2rem !important;
+  }
+  .coming-min-label {
+    margin-right: 2.8rem !important;
   }
 }
 /*# sourceMappingURL=coming1.css.map */

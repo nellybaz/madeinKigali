@@ -34,12 +34,12 @@ class About2 extends Component {
             timeline : [
                 {
                     img: img1,
-                    summary: 'With a passion of inaugurating Rwanda’s apparel industry to be a major contributor to the economy’s earnings, Made in Kigali was founded by Scorpio Ramazani in 2013. The founder’s vision was to create an alternative textile production firm to the existing brands. With a  deliberate focus on empowering local women with entrepreneurial skills, Ms. Ramazani was successful at training 10 tailors in understanding the art of garment making while employing an extra 55 as permanent staff for production. Made in Kigali was as well a timely response to the government’s call for private investors to consider developing industries beyond mining.The founder understood that there was more to Rwanda than the Gorillas, tea and coffee, there had to be a diversification of what and how the country generated its income. '
+                    summary: 'With a passion of inaugurating Rwanda’s apparel industry to be a major contributor to the economy’s earnings, Made in Kigali was founded by Scorpio Ramazani Khoury in 2013. The founder’s vision was to create an alternative textile production firm to the existing brands with a deliberate focus on empowering local women with entrepreneurial skills. Ms. Ramazani Khoury was successful at training 10 tailors in understanding the art of garment making while employing an extra 55 as permanent staff for production. Made in Kigali was as well a timely response to the government’s call for the private sector to consider developing industries beyond mining. The founder understood that there was more to Rwanda than the Gorillas, tea and coffee. There had to be a diversification of what and how the country generated its income.'
                 },
 
                 {
                     img: img2,
-                    summary: 'From May 19th - 23rd 2014, Rwanda hosted the African Development Bank (AfDB) Annual Meetings, where Boards of Governors of the bank meet to review the Bank Group\'s achievements in the past year as well as examine and endorse its plans for the current year. We were invited to exhibit our products at the African Development Bank\'s 50th Anniversary were discussions were focused on the following theme: " The next 50 years: The Africa we want. While this was our official launch to the Rwandan market, our products and unique business model were as a result of the support we received from Rwandan people thus earning us the 2nd position over hundreds of exhibitors at the 17th International Trade Fair held under the auspices of the Rwanda Private Sector Federation.'
+                    summary: 'From May 19th - 23rd 2014, Rwanda hosted the African Development Bank (AfDB) Annual Meetings, where Boards of Governors of the bank meet to review the Bank Group\'s achievements in the past year as well as examine and endorse its plans for the current year. We were invited to exhibit our products at the African Development Bank\'s 50th Anniversary were discussions were focused on the following theme: " The next 50 years: The Africa We Want”. While this was our official launch to the Rwandan market, our products and unique business model were as a result of the support we received from Rwandan people thus earning us the 2nd position over hundreds of exhibitors at the 17th International Trade Fair held under the auspices of the Rwanda Private Sector Federation.'
                 },
 
                 {
@@ -49,12 +49,12 @@ class About2 extends Component {
 
                 {
                     img: img4,
-                    summary: 'The textile industry was not a priority when MIK started its operations in Rwanda. It took the resilience of our management and the hard work of the talented women we worked with to withstand the challenges that came with it. We thrived from being a start-up fashion house in 2013 to facilitating the overall growth of the fashion scene in Rwanda. we were grateful for the many initiatives that the government introduced during that period; to support the textile industry including the first edition of Made in Rwanda expo that we were privileged to participate in and the lifting of all taxes on raw materials used in textile production. MIK  added a branch at the Kigali heights complex that was inaugurated by the President of the Republic of Rwanda, H.E Paul Kagame “Everybody’s business is government’s business because it is the government’s responsibility to provide the best business environment”'
+                    summary: 'The textile industry was not a priority when MIK started its operations in Rwanda. It took the resilience of our management and the hard work of the talented women we worked with to withstand the challenges that came with it. We thrived from being a start-up fashion house in 2013 to facilitating the overall growth of the fashion scene in Rwanda. We were grateful for the many initiatives that the government introduced during that period; to support the textile industry including the first edition of Made in Rwanda expo that we were privileged to participate in and the lifting of all taxes on raw materials used in textile production. MIK  added a branch at the Kigali heights complex that was inaugurated by the President of the Republic of Rwanda, H.E Paul Kagame “Everybody’s business is government’s business because it is the government’s responsibility to provide the best business environment”'
                 },
 
                 {
                     img: img5,
-                    summary: 'As Rwanda continued to strive for economic independence, the government ’s initiatives included vintage and secondhand clothing ban in the early months of 2017. The government believed that used clothing were negatively impacting the textile industry and contributed to an attitude of Western dependence. Even as production houses like MIK were aiming at sustaining the demand for clothing after the ban, we observed that there was no firm that produced underwear and lingerie products in Rwanda thus making them scarce products. We decided to outsource an Italian brand that met our standards and converted our Kigali Heights branch into a lingerie store called Amami; this being heavily based on demand and necessity. We then opened a new MIK branch in one of our business centres “Remera corner” in Remera district next to Airtel headquarters.'
+                    summary: 'As Rwanda continued to strive for economic independence, the government ’s initiatives included vintage and secondhand clothing ban in the early months of 2017. The government believed that used clothing were negatively impacting the textile industry and contributed to an attitude of Western dependence. Even as production houses like MIK were aiming at sustaining the demand for clothing after the ban, we observed that there was no firm that produced underwear and lingerie products in Rwanda thus making them scarce products. We decided to outsource an Italian brand that met our standards and converted our Kigali Heights branch into a lingerie store called Amami; this being heavily based on demand and necessity. We then opened a new MIK branch in one of our business centres “Remera corner” in Remera district.'
                 },
 
                 {
@@ -203,9 +203,8 @@ class About2 extends Component {
 
                    <div className='mission'>
                         <p>
-                        Our mission is to become the world’s number one solution for cooperatives and for fashion loving designers around Africa by driving long lasting positive change.
-
-We want to make the world a better place where people can be themselves, expressing their authenticity through unique reations.
+                        Our mission is to become the world’s number one solution for cooperatives and for fashion loving designers around Africa by driving long lasting
+                         positive change. We want to make the world a better place where people can be themselves, expressing their authenticity through unique creations.
                         </p>
                     </div>
  
@@ -269,25 +268,27 @@ We want to make the world a better place where people can be themselves, express
 
                         <div className='strategy-right'>
                         <p>
-                        We are committed to showing the world that all our achievements over the last 5 years were only the beginning.
-Our unwavering belief in pushing boundaries is powered by a deep commitment to social good and contributing to the fashion industry in Africa. And our unique approach to solving social and infrustructural challenges around the Africa is constantly evolving.We believe that fashion is not to make you look good only, your comfort is as much a priority. we channel this to give our customers exactly what they want, at the best price and quality.
+                        We are committed to showing the world that all our achievements over the last 5 years were only the beginning. Our unwavering belief in pushing boundaries is powered by a deep commitment to social good and contributing to the fashion industry in Africa. And our unique approach to solving social and infrastructural challenges 
+                        around Africa is constantly evolving. We believe that fashion is not to make you look good only, your comfort is as much a priority. We channel this to give our customers exactly what they want, at the best price and quality.
                         </p>
                         
                         </div>
                     
                     </div>
-
+ 
                     
 
                     <div className='bottom-div'>
                     <div className='bottom-div-top'>
                     
                     <p>IN A WORLD FULL OF TRENDS, OUR MISSION REMAINS THE SAME</p>
-                    <h5>MADE IN KIGALI FASHION WILL NOT CHANGE THE WORLD, THE PEOPLE WHO WEAR THEM WILL</h5>
+                    <h5>MADE IN KIGALI FASHION MAY NOT CHANGE THE WORLD, BUT THE PEOPLE WHO WEAR THEM WILL</h5>
                     </div>
                     <div className='bottom-div-bottom'>
                     <p>
-                    We never settle until our customers are satisfied, we make sure to stay ahead of their high expectations. We want to boost our relationships with each individual customer as much as possible, not just for friction-free shopping but for a lasting relationship built on the things they care about most. We understand our customers because so many of us are our customers. Shopping on MIK is more than a transactional process – we are an authentic, resourceful and creative brand that resonates through investing in people, communities and innovative ideas.
+                    
+                    We never settle until our customers are satisfied, we make sure to stay ahead of their high expectations. We want to boost our relationships with each individual customer as much as possible, not just for friction-free shopping but for a lasting relationship built on the things they care about most. We understand our customers because so many of us are them. 
+                    Shopping on MIK is more than a transactional process – we are an authentic, resourceful and creative brand that resonates through investing in people, communities and innovative ideas.
                     </p>
                     </div>
                     

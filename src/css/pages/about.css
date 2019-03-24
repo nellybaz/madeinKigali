@@ -27,6 +27,9 @@
   .about-section1-left-top a {
     font-size: 0.6vw !important;
   }
+  .about-section1-left-bottom {
+    padding-bottom: 35px  !important;
+  }
   .about-section1-left-bottom h4 {
     font-size: 0.9vw !important;
   }
@@ -40,7 +43,7 @@
     font-size: 0.66vw !important;
   }
   .section2-right-top h4, .section2-right-bottom h4 {
-    font-size: 0.9 !important;
+    font-size: 0.9vw !important;
   }
   .section2-right-top p, .section2-right-top li, .section2-right-bottom p, .section2-right-bottom li {
     font-size: 0.6vw !important;
@@ -52,6 +55,7 @@
     width: 42vw !important;
   }
   .about-section3-right {
+    top: 0 !important;
     width: 30vw !important;
     right: 12vw !important;
   }
@@ -61,8 +65,11 @@
   .about-section3-right p {
     font-size: 0.6vw !important;
   }
+  .about-section3-right .sub-h4 {
+    font-size: 0.6vw !important;
+  }
   .div-action-right-bottom {
-    top: 6vw !important;
+    top: 3vw !important;
   }
   .div-action-right-bottom h5 {
     font-size: 1.8vw !important;
@@ -139,6 +146,9 @@
   .about-section3-right {
     padding: 20px !important;
   }
+  .about-section3-left {
+    margin-top: 20%;
+  }
   .about-section3-left img {
     width: 90% !important;
   }
@@ -148,7 +158,11 @@
     right: 0 !important;
   }
   .div-action-right-bottom h5 {
-    font-size: 1rem !important;
+    font-size: 0.6rem !important;
+    text-align: center;
+  }
+  .div-action-right-bottom a {
+    font-size: 0.8rem !important;
   }
   .section2-right-top h4, .section2-right-bottom h4 {
     font-size: 1.5rem !important;
@@ -456,7 +470,7 @@
           flex-direction: column;
   position: relative;
   right: 0%;
-  top: 10vw;
+  top: 5vw;
 }
 
 .about-section3 .about-section3-right h5 {

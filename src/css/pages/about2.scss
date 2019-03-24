@@ -1,5 +1,7 @@
 $jumbo-content-h4: 2.5vw;
 $jumbo-content-p: 1.3vw;
+
+
 @media only screen and (min-width: 2000px) {
 
     $jumbo-content-h4: $jumbo-content-h4 * 0.6;
@@ -8,8 +10,8 @@ $jumbo-content-p: 1.3vw;
         width:60% !important;
         margin: 0 auto;
     }
-
-
+ 
+ 
     .about2-jumbo-content{
         bottom: 0.6*40vw !important; 
         // left: 10%;
@@ -107,6 +109,7 @@ $jumbo-content-p: 1.3vw;
     }
 
     .About2 .strategy{
+        height: auto !important;
         // border: 1px solid red;
         grid-template-columns:1fr !important;
 
@@ -291,9 +294,14 @@ $jumbo-content-p: 1.3vw;
     }
  
     .strategy-right{
+        // border:1px solid red;
         padding: 10px !important;
         margin-bottom: 30px;
         text-align: justify;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction:row;
 
         p{
             font-size: 1.1vw;
@@ -319,11 +327,12 @@ $jumbo-content-p: 1.3vw;
     width:100%;
     background: lighten(gray, 45%);
     padding:0 10%;
-    height:auto;
+    height:400px;
     // border: 1px solid red;
     display:grid;
     grid-template-columns:2fr 3fr;
     grid-gap:0;
+    // padding:10px 30px;
 
     div{
         width:100%;
@@ -332,6 +341,7 @@ $jumbo-content-p: 1.3vw;
     }
 
     .strategy-left{
+        // border: 1px solid red;
         display:flex;
         justify-content: center;
         align-items:center;
@@ -368,9 +378,10 @@ $jumbo-content-p: 1.3vw;
 
 .bottom-div{
     width:100%;
-    height:auto;
+    height:400px;
     // border: 1px solid red;
     background: lighten(black, 10%);
+    padding: 20px 10px;
 
     div{
         // border: 1px solid red;
@@ -393,10 +404,10 @@ $jumbo-content-p: 1.3vw;
         height: 60%;
         // border: 1px solid red;
         position: relative;
-        left: 30%;
-        bottom: 30px;
+        left: 35%;
+        bottom: 60px;
         padding:10px;
-
+ 
         p{
             font-size: 16px;
         }

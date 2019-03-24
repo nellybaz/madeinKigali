@@ -5,7 +5,7 @@
 
 .footer-mobile-font-size *{
     font-size: 0.7rem !important;
-}
+} 
 
 @media only screen and (max-width: 745px){
     .signup-div > div{
@@ -21,6 +21,11 @@
 
     .btn-sigup-newsletter{
         width: 80% !important;
+    }
+    
+
+    .footer-mobile-font-size *{
+        font-size: 0.6rem !important;
     }
 }
 

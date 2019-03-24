@@ -3,7 +3,7 @@
 } */
 
 
-@media only screen and (min-width: 2000px){
+@media only screen and (min-width: 2500px){
 
     .navigation > div a:nth-child(1){
         font-size: 0.45vw !important;
@@ -15,7 +15,7 @@
         /* width:60% !important; */
         margin: 0 auto !important;
         left: 20% !important;
-    }
+    } 
 }
 
 @media only screen and (max-width: 900px){
@@ -120,6 +120,7 @@
 
 
 .Header{
+    /* border: 1px solid red; */
     width:100%;
     background-color: #fff;
 
@@ -261,7 +262,7 @@
 
 
 .new-in:hover .drop-down-content-new-in{
-    display: grid;
+    /* display: grid; */
     position: absolute;
     z-index: 1;
 
@@ -321,7 +322,7 @@
     
 }
 .brands:hover .drop-down-content-brands{
-    display: grid;
+    /* display: grid; */
     position: absolute;
     z-index: 1;
 }
@@ -366,9 +367,7 @@
 
 .hide{
     display: none;
-    /* position: relative;
-    right: 40%;
-    top:30px; */
+    
 
 }
 
@@ -389,22 +388,26 @@
 .search-bar input{
     width: 100%;
 }
-
+ 
 
 /* .search-input{
     border:none;
-    background-color: #0A1D40;
+    background-color: #0A1D40;~
     text-align: right;
     color: #6c6e70;
 } */
-
+ 
 .search-input:focus{
     outline: none;
-} 
+}  
+
+
 
 .nav-fixed{
+    /* border: 1px solid red; */
     position: fixed;
     top: 0;
+    margin: 0 auto;
     z-index: 2;
     width:100%;
     background-color: #191843;
@@ -427,7 +430,7 @@
 }
 
 .m2m:hover .m2m-dropdown{
-    display: grid;
+    /* display: grid; */
 }
 .m2m-dropdown{
     padding:5px 30px 0 30px;
@@ -454,7 +457,7 @@
 }
 
 .wholesale:hover .wholesale-dropdown{
-    display: grid;
+    /* display: grid; */
 }
 .wholesale-dropdown{
     padding:5px 30px 0 30px;
@@ -471,7 +474,7 @@
 
 
 .brands:hover .brands-dropdown{
-    display: grid;
+    /* display: grid; */
 }
 .brands-dropdown{
     padding:5px 30px 0 30px;
@@ -550,7 +553,7 @@
     border-top: 1px dotted gray;
 }
 .fabric:hover .fabric-dropdown{
-    display: grid;
+    /* display: grid; */
 }
 .fabric-dropdown{
     padding:5px 30px 0 30px;
@@ -577,7 +580,7 @@
 }
 
 .new-in:hover .new-in-dropdown{
-    display: grid;
+    /* display: grid; */
 }
 
 .dropdowns{
@@ -624,7 +627,7 @@
 
 
 .fashion-stories:hover .fashion-stories-dropdown{
-    display: grid;
+    /* display: grid; */
 }
 
 
@@ -678,7 +681,7 @@
 
 
 .visitrwanda:hover .visitrwanda-dropdown{
-    display: grid;
+    /* display: grid; */
 }
 
 
@@ -709,7 +712,7 @@
 
 /* for sales */
 .sale:hover .sales-dropdown{
-    display: grid;
+    /* display: grid; */
 }
 
 

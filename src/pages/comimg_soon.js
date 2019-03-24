@@ -17,7 +17,7 @@ import youtube from '../assets/images/icons/youtube.png';
 import tumblr from '../assets/images/icons/tumblr-logo.png';
 
 
-const Completionist = () => <span>You are good to go!</span>;
+const Completionist = () => window.location.href="/dev/company2";
 class ComingSoon1 extends Component {
 
 
@@ -118,7 +118,7 @@ class ComingSoon1 extends Component {
 
             <Countdown
 
-              date={'Mon, 11 Mar 2019 00:00:00'}
+              date={'Mon, 17 Mar 2019 13:00:00'}
               renderer={renderer}
             />
 
@@ -128,8 +128,8 @@ class ComingSoon1 extends Component {
           <div className='coming1-labels'>
             <p className='p-d'>DAYS</p>
             <p className='p-h'>HOURS</p>
-            <p className='p-m'>MINS</p>
-            <p className='p-s'>SECS</p>
+            <p className='p-m'>MINUTES</p>
+            <p className='p-s'>SECONDS</p>
           </div>
 
 
@@ -163,12 +163,12 @@ class ComingSoon1 extends Component {
           </div>
 
           <div className="social-media-div">
-            <a target="_blank" href="https://www.linkedin.com/in/madeinkigali/"><img src={linkedin} alt="linkedin" /></a>
+            <a target="_blank" href="https://www.linkedin.com/company/13063612/admin/"><img src={linkedin} alt="linkedin" /></a>
 
           </div>
 
           <div className="social-media-div">
-          <a href="https://plus.google.com/u/2/112933730940706528592?tab=mX" target="_blank" > <img src={g_plus} alt="g_plus" /></a>
+          <a href="https://plus.google.com/u/0/107469092096162928956" target="_blank" > <img src={g_plus} alt="g_plus" /></a>
 
           </div>
 
@@ -220,19 +220,19 @@ class ComingSoon1 extends Component {
                       
                       </div>
                             <Countdown
-                                
-                                date={'Mon, 11 Mar 2019 00:00:00' }
+                                 
+                                date={'Mon, 17 Mar 2019 13:00:00' }
                                 renderer={renderer2}
                             />
 
                             <ul className='mobile-content-inner-ul'>
                               <li>DAYS</li>
 
-                              <li>HOURS</li>
+                              <li className='coming-hour-label'>HOURS</li>
 
-                              <li className='coming-min-label'>MINS</li>
+                              <li className='coming-min-label'>MINUTES</li>
 
-                              <li className='coming-sec-label'>SECS</li>
+                              <li className='coming-sec-label'>SECONDS</li>
                             </ul>
 
                             <div className='coming-mobile-btn-div'>
@@ -270,7 +270,7 @@ class ComingSoon1 extends Component {
                         <img src={require('../assets/images/icons/instagram_white.png')} />
                       </Link>
 
-                      <Link to={'https://www.linkedin.com/in/madeinkigali/'} >
+                      <Link to={'https://www.linkedin.com/company/13063612/admin/'} >
                         <img src={require('../assets/images/icons/linkedin_white.png')} />
                       </Link>
 
@@ -286,7 +286,7 @@ class ComingSoon1 extends Component {
                         <img src={require('../assets/images/icons/tumblr_white.png')} />
                       </Link>
 
-                      <Link to={'https://plus.google.com/u/2/112933730940706528592?tab=mX'} >
+                      <Link to={'https://plus.google.com/u/0/107469092096162928956'} >
                         <img src={require('../assets/images/icons/google_white.png')} />
                       </Link>
 

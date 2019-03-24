@@ -15,7 +15,7 @@ import menu_grid_sub_img from '../assets/images/banner1.jpg';
 import {Link} from 'react-router-dom';
 import play from '../assets/images/play.gif';
 import pause from '../assets/images/pause.png';
-
+ 
 
 import music from '../assets/music/music.mp3';
 
@@ -34,6 +34,22 @@ class Header2 extends Component {
             search_query:'jeans',
             nav_class: '',
             music_icon: play,
+            mobile_drawer: '',
+        }
+    }
+
+
+    handleDrawer=(x)=>{
+        if(x == 1 && this.state.mobile_drawer == ""){
+            this.setState({
+                mobile_drawer: 'mobile-drawer-active',
+            });
+        }
+
+        else{
+            this.setState({
+                mobile_drawer: '',
+            });
         }
     }
 
@@ -48,7 +64,7 @@ class Header2 extends Component {
           
         }, 10);
       } 
-
+ 
     
       handleTunePause=()=>{
         var myAudio = this.mytune;
@@ -63,7 +79,7 @@ class Header2 extends Component {
             //     music_icon: pause,
             // })
         }
-      } 
+      }  
   
   handleScroll=(event)=> {
       if (Math.round(window.scrollY) >= 420) {
@@ -141,32 +157,6 @@ class Header2 extends Component {
           <p onClick={()=>window.location.href="/dev/signin"}>Register now to get <span className="top-bar-white-text">10% off*</span> your first order with code <span onClick={()=>this.disableCookies()} className="top-bar-white-text"><b>NEWCUSTOMER10</b></span></p>
       </div>
       <header className="header">
-        
-            {/* <div className="Header-one">
-                <div className="sigin-wishlist header-items">
-                    <a href="/dev/signin" className="sigin"><b>SIGN IN</b></a>
-                    <a href="#" ><b>WISHLIST</b></a>
-                    <a href ="#" className="wishlist-icon-link"><img className="wishlist-icon" src={heart} /></a>
-
-                </div>
-
-                <div className=" header-items right-icons">
-                    <input ref="search_input" className="search-input" onChange={(e)=> this.setState({search_query: e.target.value})} onKeyPress={(ev) => {
-                            if (ev.key === 'Enter') {
-                            // Do code here
-                        
-                            this.searchBoxHandler();
-                            ev.preventDefault();
-                            }
-        }} type="text" placeholder="Search" />
-                    <a href="#" onClick={()=>this.handleSearchHighlight()}><img src={search}></img></a>
-                    <a href="/dev/signin"><img src={profile}></img></a>
-                    <a href="/dev/cart"><img src={bag}></img></a>
-
-                    
-                </div>
-                </div> */}
-
                 <div className='topbar-nav'>
                     <div className='topbar-nav-left'>
                         <Link className='student-text' to={'/dev/student_discount'} >Student? check our student discount</Link>
@@ -195,7 +185,8 @@ class Header2 extends Component {
 
         <div className={`mobile-nav`}>
          
-            <a style={{fontSize: '0.8rem'}} className="btn btn-open-nav mobile-nav-item"><img src={mobile_menu} alt="mik"/><br></br>MENU</a>
+            <a onClick={()=> this.handleDrawer(1)}
+             style={{fontSize: '0.8rem'}} className="btn btn-open-nav mobile-nav-item"><img src={mobile_menu} alt="mik"/><br></br>MENU</a>
             <Link to={'/dev/12hdgsikdhlmsdne'} className="mobile-nav-item" ><img className="mobile-logo" src={logo} /></Link>
             
 
@@ -221,6 +212,91 @@ class Header2 extends Component {
         </div>
 
      {/* mobile navigation ends */}
+
+
+     {/* mobile drawer starts */}
+
+            <div className={`mobile-drawer ${this.state.mobile_drawer}`}>
+                <div className='mobile-drawer-content'>
+                    <details>
+                        <summary>NEW IN</summary>
+                        <Link to={''}>New in Fashion</Link>
+                        <Link to={''}>New in Fabric Designs</Link>
+                        <Link to={''}>New in Bag & Accessories</Link>
+                        <Link to={''}>New in Wholesale</Link>
+                    </details>
+
+                    <details>
+                        <summary>FABRIC</summary>
+                        <Link to={''}>Create</Link>
+                        <Link to={''}>Upload</Link>
+                        <Link to={''}>Design Tools</Link>
+                        <Link to={''}>Design FAQS</Link>
+                    </details>
+
+                    <details>
+                        <summary>MADE TO MEASURE</summary>
+                        <Link to={''}>MIK Boutique</Link>
+                        <Link to={''}>The Men’s guide</Link>
+                        <Link to={''}>The Women’s guide</Link>
+                        <Link to={''}>Wardrobe essentials</Link>
+                    </details>
+
+                    <details>
+                        <summary>WHOLESALE</summary>
+                        <Link to={''}>Women’s Clothing</Link>
+                        <Link to={''}>Men’s Clothing</Link>
+                        <Link to={''}>Bag & Accessories</Link>
+                        <Link to={''}>Sportswears</Link>
+                    </details>
+
+                    <details>
+                        <summary>BRANDS</summary>
+                        <Link to={''}>Brands A-Z</Link>
+                        <Link to={''}>Clothing Brands</Link>
+                        <Link to={''}>Accessories Brands</Link>
+                        <Link to={''}>Shoe Brands</Link>
+                    </details>
+
+                    <details>
+                        <summary>SALES</summary>
+                        <Link to={''}>Shop all Sales</Link>
+                        <Link to={''}>SALE Fabric</Link>
+                        <Link to={''}>Bag & Accessories</Link>
+                        <Link to={''}>Sale M2M</Link>
+                    </details>
+
+                    <details>
+                        <summary>#VISIT RWANDA</summary>
+                        <Link to={'/dev/visit_rwanda'}>#Visitrwanda</Link>
+                        <Link to={''}>Baskets</Link>
+                        <Link to={''}>Atrs</Link>
+                        <Link to={''}>Clothing</Link>
+                    </details>
+
+                    <details>
+                        <summary>FASHION STORIES</summary>
+                        <Link to={'/dev/blog/home'}>Fashion Stories</Link>
+                        <Link to={''}>Competition</Link>
+                        <Link to={''}>Art Stories</Link>
+                        <Link to={''}>Blog Stories</Link>
+                    </details>
+                
+                </div>
+
+                <div className='mobile-drawer-close'
+                    onClick={()=> this.handleDrawer(0)}
+                >
+                X
+                </div>
+
+            
+            </div>
+
+        
+
+
+     {/* mobile drawer ends */}
 
          <div className={`navigation ${this.state.nav_class}`}>
 

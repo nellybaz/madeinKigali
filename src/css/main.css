@@ -154,7 +154,7 @@ body{
 }
 
 .c-item:nth-child(1){
-    background: url('../assets/images/bg.jpg');
+    background: url('../assets/images/madinkigali001.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -190,7 +190,7 @@ body{
     display:flex;
     justify-content: center;
     align-items:center;
-    flex-direction:row;
+    flex-direction:row; 
 }
 .dot-control .dot{
     width: 10px;

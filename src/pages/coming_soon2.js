@@ -88,7 +88,7 @@ class ComingSoon2 extends Component{
     }
   }
     render(){
-      
+       
 
         const renderer = ({ days,hours, minutes, seconds, completed }) => {
             if (completed) {

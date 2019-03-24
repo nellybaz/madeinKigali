@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-//css imports
 import '../css/home.css';
-// import '../css/header.css';
-// import '../css/footer.css';
-// import '../css/flash_deals.css';
-// import '../css/main.css';
-// import '../css/components/header.css';
 
 
 import Cookies from 'universal-cookie';
@@ -63,7 +57,8 @@ import { Link } from 'react-router-dom';
 import request from 'superagent';
 
 import {
-  isMobileOnly
+  isMobileOnly,
+  is_mobile
 } from "react-device-detect";
 
 
@@ -137,9 +132,11 @@ class Home extends Component {
       cookies.set('userID', this.generateUserID(), { path: '/', expires: new Date(Date.now() + 2592000) })
     }
 
+    let galleryImageLimit = window.innerWidth < 900 ? 3: 6;
+
 
     //adding madeinkigali gallery
-    for (let x = 0; x < 6; x++) {
+    for (let x = 0; x < galleryImageLimit; x++) {
       let img = mik5;
       if (x == 1) {
         img = mik9
@@ -158,7 +155,7 @@ class Home extends Component {
       this.state.madeinkigali_gallery.push(
         <img onClick={() => this.setState({
           mik_dropdown_class: ''
-        })} alt="mik" src={mik3} alt="mik" src={img} key={x} />
+        })} alt="mik" alt="mik" src={img} key={x} />
       )
     }
 
@@ -373,7 +370,8 @@ class Home extends Component {
 
           if (res != null) {
             if (res.body.brands != null) {
-
+              // console.log(res.body.brands);
+              
               //set state to the data
               currentComponent.setState({
                 popularObj: res.body.brands,
@@ -427,28 +425,43 @@ class Home extends Component {
     let Popular2 = [];
 
     let bigText = '';
-    for (let x = 0; x < this.state.popularObj.length; x++) {
+    let popularDisplayLength = this.state.popularObj.length;
+    for (let x = 0; x < popularDisplayLength; x++) {
+      if(window.innerWidth <= 900 && x < 1){
+        console.log(window.innerWidth);
+        
+        Popular1.push(
 
-
-      Popular1.push(
-
-        <div className="popular-brands-item" key={x}>
-          <img alt='mik' src={`https://madeinkigali.com/images/brands/${this.state.popularObj[x].brand_big_banner}`} />
-
-        </div>
-      )
-
-      Popular2.push(
-        <div className="popular-brands-item popular-brands-item-2" key={x} >
-          {/* <img alt='mik' src={`http://madeinkigali.com/images/brands/${this.state.popularObj[x].brand_small_banner}`} /> */}
-
-          <div className="brands-subitem-item">
-            <h3 style={{ color: 'rgb(75, 72, 72)' }}><b>{this.state.popularObj[x].brand_name}</b></h3>
-            <p>{this.state.popularObj[x].brand_hashtags}</p>
-
+          <div className="popular-brands-item" key={x}>
+            <img alt='mik' src={`https://madeinkigali.com/images/brands/${this.state.popularObj[x].brand_big_banner}`} />
+  
           </div>
-        </div>
-      );
+        )
+      }
+
+      if(window.innerWidth > 900 ){
+        Popular1.push(
+
+          <div className="popular-brands-item" key={x}>
+            <img alt='mik' src={`https://madeinkigali.com/images/brands/${this.state.popularObj[x].brand_big_banner}`} />
+  
+          </div>
+        )
+      }
+
+     
+
+      // Popular2.push(
+      //   <div className="popular-brands-item popular-brands-item-2" key={x} >
+      //     {/* <img alt='mik' src={`http://madeinkigali.com/images/brands/${this.state.popularObj[x].brand_small_banner}`} /> */}
+
+      //     <div className="brands-subitem-item">
+      //       <h3 style={{ color: 'rgb(75, 72, 72)' }}><b>{this.state.popularObj[x].brand_name}</b></h3>
+      //       <p>{this.state.popularObj[x].brand_hashtags}</p>
+
+      //     </div>
+      //   </div>
+      // );
 
 
 
@@ -572,7 +585,7 @@ class Home extends Component {
               <Divider name='Create Your Own Dream' />
               {/* fabric miidle banner image */}
               <div className="middleBanner">
-                <img src={require('../assets/images/background_front.jpg')} />
+                <img src={require('../assets/images/madeinkigali002.png')} />
               </div>
 
               <div className="fabric-inner-div-wrapper">
@@ -637,17 +650,6 @@ class Home extends Component {
 
             {/* popular brands end */}
 
-            {/* trending starts  */}
-
-            {/* <Divider name="#Trending" />
-            <div className="trending-div-container">
-
-              {this.state.trending}
-
-            </div> */}
-
-            {/* trending ends */}
-
             <div className="madeinkigali-section">
               <Divider name="#MadeinKigaliRW" />
               <a href="/dev/gallery" className="gallery-little-title">VIEW GALLERY</a>
@@ -701,55 +703,7 @@ class Home extends Component {
 
 
             </div>
-
-            {/* <div className="instagram-section"> */}
-              {/* <div className="left">
-                <img className="insta-left-img" src={insta_left} />
-              </div> */}
-              {/* <div className="right"> */}
-                {/* <Divider name="Shop Instagram Look"/> */}
-
-                {/* <div id={instafeedTarget} className="insta-feed-grid-box"> */}
-                  {/* <Instafeed
-                  limit='5'
-                  ref='instafeed'
-                  resolution='standard_resolution'
-                  sortBy='most-recent'
-                  target={instafeedTarget}
-                  template="<a href='{{link}}' target='_blank' class='instafeed__item'>
-      <img alt='mik' class='instafeed__item__background' src='{{image}}' />
-                    <div class='instafeed__item__overlay'>
-                      <div class='instafeed__item__overlay--inner'>
-                      </div>
-                    </div>
-                </a>"
-                  userId='4242984811'
-                  clientId='035fca9dd2b84d6aaec758d945b931ad'
-                  accessToken='4242984811.1677ed0.744ef950db2e48dc9f8f76cf6f9aab0e'
-                /> */}
-
-                  {/* <img className="insta-pic" src={mik8} />
-                  <img className="insta-pic" src={mik9} />
-                  <img className="insta-pic" src={mik8} />
-
-                  <img className="insta-pic" src={mik8} />
-                  <img className="insta-pic" src={mik9} />
-                  <img className="insta-pic" src={mik8} />
-
-
-                  <img className="insta-pic" src={mik8} />
-                  <img className="insta-pic" src={mik9} />
-                  <img className="insta-pic" src={mik8} />
-
-                </div> */}
-
-
-
-              {/* </div> */}
-
-
-            {/* </div> */}
-
+ 
             {/* blog section starts */}
             <div className="in-the-know">
 

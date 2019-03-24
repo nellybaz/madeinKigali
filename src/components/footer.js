@@ -83,7 +83,7 @@ class Footer extends Component {
               <td><Link to={'/dev/help'}>Shop Online</Link></td>
                 <td><Link to={'/dev/help'}>Track your order</Link></td>
                 <td><Link to={'/dev/student_discount'}>Student Discount</Link></td>
-                <td><Link to={'/dev/company'}>Company</Link></td>
+                <td><Link to={'/dev/company2'}>Company</Link></td>
                 <td><Link to={'/dev/contact'}>Contact us</Link></td>
                 <td><Link to={''}></Link></td>
               </tr>
@@ -224,7 +224,7 @@ class Footer extends Component {
             </div>
 
             <div className="expand-item">
-            <Link to={'/dev/company'}>Company</Link> <br></br>
+            <Link to={'/dev/company2'}>Company</Link> <br></br>
               <Link to={'/dev/help'}>Help</Link><br></br>
               <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
               <Link to={'/dev/help'}>Help</Link><br></br>
@@ -268,7 +268,7 @@ class Footer extends Component {
             </div>    
         </div> */}
 
-        <div className="footer-third-div">
+         <div className="footer-third-div">
           <div className="social-media-div">
             <a target="_blank" href="https://www.facebook.com/MadeInKigali/"><img src={fb} alt="facebook" /></a>
 

@@ -5,16 +5,15 @@ import prevArrow from '../assets/images/l2-arrow.png';
 import {Link} from 'react-router-dom';
 //import '../assets/js/animations.js';
 
-import {
+import { 
   
   isBrowser,
   isMobileOnly,
   isTablet
 } from "react-device-detect";
-
+ 
 
 class FlashDeals extends Component {
-
   componentDidMount () {
     if(this.props.isBlog){
         this.setState({
@@ -106,7 +105,7 @@ class FlashDeals extends Component {
               limit = 5;
             }
             if(isMobileOnly || this.props.isBlog){
-              limit = 6;
+              limit = 2;
             }
             
             

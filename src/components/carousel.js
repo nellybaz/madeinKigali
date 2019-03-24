@@ -26,7 +26,7 @@ class Slider extends Component {
         const carousel_item = document.getElementsByClassName('c-item');
         const dot_item = document.getElementsByClassName('dot');
         
-        
+         
         // console.log(carousel_item);
         
 

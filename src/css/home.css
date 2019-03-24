@@ -30,7 +30,7 @@
         width: 50% !important;
         margin:7px 25% !important;
     }
-
+ 
     .nav-fixed{
         width:60% !important;
     }
@@ -38,7 +38,7 @@
 
 @media only screen and (min-width: 745px) {
     .in-the-know{
-        height:350px;
+        /* height:350px; */
         
     }
 
@@ -129,7 +129,7 @@
 
 
     .in-the-know{
-        height:700px !important;
+        height:auto !important;
     }
 
    .trending-div-container{
@@ -140,20 +140,21 @@
 
 
    .madeinkigali-section{
-       margin-bottom: 30px;
-       height:500px;
+       /* margin-bottom: 30px; */
+       height:auto;
    }
 
    .madeinkigali-inner-div{
        grid-template-columns: repeat(3, 1fr) !important;
-       height:300px;
+       height:auto;
+       /* border: 1px solid red; */
        
    }
 
    .madeinkigali-inner-div img{
        width:100% !important;
-       height:90% !important;
-       margin-bottom: 10px;
+       height:auto !important;
+       margin-bottom: 5px;
    }
 
    .left{
@@ -162,9 +163,6 @@
 
    .middleBanner{
        background-size: 100% 100% !important;
-       height:300px !important;
-      
-       background-attachment: fixed;
        
    }
 
@@ -237,7 +235,7 @@
 } */
 
 .flashdeals-div{
-    height: 450px;
+    height: auto;
     width:92%;
     margin: 0 auto;
     margin-bottom: 15px;
@@ -332,7 +330,7 @@
 
 .fabric{
   
-    
+    /* border: 1px solid red; */
 }
 
 
@@ -379,8 +377,8 @@
 
 
 .popular-brands-item{
-    height:460px;
-  
+    height:auto;
+    /* border: 1px solid red; */
     width: 100%;
     object-fit: contain;
     flex-grow: 1;
@@ -389,13 +387,13 @@
 }
 
 .popular-brands-item-2{
-    height:110px;
+    height:auto;
     object-fit: contain;
 }
 
 .popular-brands-item img{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .popular-brands-item-2 img{
@@ -664,7 +662,7 @@
     margin-bottom: 15px;
 }
 
-
+ 
 
 .modal-wrapper-product *{
     color:white !important;

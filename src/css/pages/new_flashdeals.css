@@ -1,7 +1,22 @@
+@media only screen and (max-width: 745px) {
+  .Flashdeals2 {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+  .Flashdeals2 .flashdeals2-img-div {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .Flashdeals2 .flashdeals2-img-div img {
+    width: 100%;
+    height: auto !important;
+  }
+}
+
 .Flashdeals2 {
   margin-top: 15px;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
@@ -23,10 +38,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .Flashdeals2 .flashdeals2-img-div img {
@@ -35,5 +50,17 @@
      object-fit: contain;
   height: 100%;
   border-radius: 35px;
+}
+
+.Flashdeals2 .flashdeals2-img-div p {
+  font-family: 'Lato';
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.Flashdeals2 .flashdeals2-img-div p strike {
+  color: #9A0022;
 }
 /*# sourceMappingURL=new_flashdeals.css.map */
