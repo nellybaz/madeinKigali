@@ -10,7 +10,7 @@ import {Link} from 'react-router-dom';
 import CountTo from 'react-count-to';
 
 class Company2 extends Component{
- 
+  
  
     constructor(props){
         super(props)
@@ -84,11 +84,11 @@ class Company2 extends Component{
     } 
     render(){
 
-        const fn = value => <p className='c2-counter c2-counter2'>{value}%</p>;
-        const fn2 = value => <p className='c2-counter c2-counter1'>{value}</p>;
-        const fn2_plus = value => <p className='c2-counter c2-counter2'><span>+</span> <br></br>{value}</p>; 
-        const fn3 = value => <p className='c2-counter c2-counter2'>{value}</p>;
-        const fn3_plus = value => <p className='c2-counter c2-counter2'>+{value}</p>;
+        const fn = value => <p id="c2-c1" className='c2-counter c2-counter2'>{value}%</p>;
+        const fn2 = value => <p id="c2-c2" className='c2-counter c2-counter1'>{value}</p>;
+        const fn2_plus = value => <p id="c2-c3" className='c2-counter c2-counter2'><span>+</span> <br></br>{value}</p>; 
+        const fn3 = value => <p id="c2-c4" className='c2-counter c2-counter2'>{value}</p>;
+        const fn3_plus = value => <p id="c2-c5" className='c2-counter c2-counter2'>+{value}</p>;
         return(
             <div className='Company2'>
                 <Header />
@@ -199,7 +199,7 @@ It’s a place made to get it right to shop and be inspired to develop your own 
                                 this.state.markets_count ? <CountTo to={5} speed={2000}>{fn3_plus}</CountTo> :  <h4 className='c2-counter c2-counter2'>+5</h4>
                             }
                             
-                            <p style={{textDecoration:'none'}} className='c2-counter-p'>MILLION DOLLARS INVESTMENT IN RWANDA</p>
+                            <p style={{textDecoration:'none'}} className='c2-counter-p'>MILLION DOLLARS INVESTMENT<br></br> IN RWANDA</p>
                         
                         </div>
 
@@ -263,7 +263,7 @@ It’s a place made to get it right to shop and be inspired to develop your own 
                             <p><span>THE EDIT</span> <br></br>
                             Get your fix from the trends you need to know from MIK.    
                             </p>
-                            <Link to={'/dev/blog/home'} ><button className=''>ACCESS THE EDIT</button></Link>
+                            <Link to={'/dev/blog/home'} ><button className='access-btn'>ACCESS THE EDIT</button></Link>
                         </div>
                     </section> 
 

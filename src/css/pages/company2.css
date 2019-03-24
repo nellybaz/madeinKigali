@@ -14,6 +14,9 @@
 }
 
 @media only screen and (max-width: 745px) {
+  #c2-c1, #c2-c2, #c2-c3, #c2-c4, #c2-c5 {
+    font-size: 2rem !important;
+  }
   .c2-section1-title-div p {
     display: none;
   }
@@ -25,10 +28,70 @@
         grid-template-columns: repeat(1, 1fr) !important;
   }
   .c2-content-section2 h5 {
+    font-size: 1rem !important;
+  }
+  .c2-content-section2 p, .c2-content-section2 a {
+    font-size: .8rem !important;
+    text-align: justify;
+  }
+  .company2-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .company2-wrapper .c2-long-img {
+    width: 100% !important;
+  }
+  .company2-wrapper .company2-long-right {
+    width: 90% !important;
+    height: 900px !important;
+    right: 0 !important;
+  }
+  .company2-wrapper .company2-long-right * {
+    border-right: none !important;
+  }
+  .company2-wrapper .company2-long-right .company2-inner0 {
+    width: 100% !important;
+    right: 0 !important;
+    margin-top: 20px;
+    padding: 0 10px;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .company2-wrapper .company2-long-right .company2-inner0 p {
+    left: 0 !important;
+    font-size: 0.8rem !important;
+    right: 0 !important;
+    text-align: justify;
+  }
+  .company2-wrapper .company2-long-right .company2-inner h4 {
+    font-size: 2rem !important;
+    margin-bottom: 20px;
+  }
+  .company2-wrapper .company2-long-right .company2-inner p {
     font-size: 0.8rem !important;
   }
-  .c2-content-section2 p, .c2-content-section2 button {
-    font-size: 0.7rem !important;
+  .company2-wrapper .company2-long-right .company2-inner1 {
+    margin-top: 50px !important;
+    height: 180px !important;
+  }
+  .company2-wrapper .company2-inner2, .company2-wrapper .company2-inner3, .company2-wrapper .company2-inner4 {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    height: 200px !important;
+    border-right: none !important;
+  }
+  .c2-newsroom div {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+  .c2-newsroom span {
+    font-size: 2rem !important;
+  }
+  .c2-newsroom .access-btn {
+    font-size: 1rem !important;
+    padding: 5px 10px;
   }
 }
 

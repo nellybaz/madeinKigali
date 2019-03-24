@@ -32,6 +32,12 @@ $moulded:11.5vw;
 
         @media only screen and (max-width:745px){
 
+
+            #c2-c1, #c2-c2, #c2-c3,#c2-c4, #c2-c5 {
+                font-size: 2rem !important;
+            }
+
+
             .c2-section1-title-div{
                 p{
                     display: none;
@@ -41,7 +47,7 @@ $moulded:11.5vw;
             //    font-size: 1.5rem !important;
             bottom:0.5rem !important;
            }
-
+ 
            
 
            .c2-content-section2{
@@ -49,11 +55,87 @@ $moulded:11.5vw;
             
 
                h5{
-                   font-size: 0.8rem !important;
+                   font-size: 1rem !important;
                }
-               p, button{
-                   font-size: 0.7rem !important
+               p, a{
+                   font-size: .8rem !important;
+                   text-align: justify;
+                //    border: 1px solid red;
                }
+            }
+
+
+            .company2-wrapper{
+                flex-wrap: wrap;
+
+                .c2-long-img{
+                    width:100% !important;
+                }
+
+                .company2-long-right{
+                    width:90% !important;
+                    height: 900px !important;
+                    right: 0 !important;
+
+                    *{
+                        border-right: none !important;
+                    }
+    
+                    .company2-inner0{
+                        width:100% !important;
+                        right:0 !important;
+                        margin-top: 20px;
+                        padding: 0 10px;
+                        flex-direction: column !important;
+
+                        p{
+                            // width:100vw !important;
+                            left: 0 !important;
+                            font-size: 0.8rem !important;
+                            right: 0 !important;
+                            text-align: justify;
+                            // border: 1px solid red;
+                        }
+                    }
+                   .company2-inner{
+                    h4{
+                        font-size: 2rem !important;
+                        // border: 1px solid red;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-size: 0.8rem !important;
+                        // width:100% !important;
+                    }
+                   }
+
+                   .company2-inner1{
+                    //    border: 1px solid green;
+                       margin-top: 50px !important;
+                       height: 180px !important;
+                   }
+                }
+
+
+                .company2-inner2, .company2-inner3, .company2-inner4{
+                    grid-template-columns: 1fr !important;
+                    height: 200px !important;
+                    border-right: none !important;
+                }
+            }
+
+            .c2-newsroom{
+               div{
+                grid-template-columns: 1fr !important;
+               }
+                span{
+                    font-size: 2rem !important;
+                }
+
+                .access-btn{
+                    font-size: 1rem !important;
+                    padding: 5px 10px;
+                }
             }
         }
 
@@ -334,6 +416,7 @@ $moulded:11.5vw;
 
 
         .company2-inner0{
+            // border: 1px solid red;
            height: $box-height0;
            width:150%;
            position: relative;

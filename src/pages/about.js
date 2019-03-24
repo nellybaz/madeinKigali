@@ -72,7 +72,7 @@ class About extends Component{
                             
                             </div>
                         </div>
- 
+  
                         <div className='about-section1-right'>
                             <img src={require('../assets/images/modelmadeinkigali09.1.png')}  />
                         
