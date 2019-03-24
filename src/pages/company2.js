@@ -101,7 +101,7 @@ class Company2 extends Component{
                             MIK is an authentic, multi-platform experience that aims at resonating with the people who use it, because it’s built by them. 
 It’s a place made to get it right to shop and be inspired to develop your own style. 
                              </p>
-                            {/* <Link to={'/company/about2'}><button>ABOUT US</button></Link> */}
+                            {/* <Link to={'/stash/company/about2'}><button>ABOUT US</button></Link> */}
                         </div>
                         <div className='c2-section1-img-div'>
                             <img src={img1} />
@@ -263,7 +263,7 @@ It’s a place made to get it right to shop and be inspired to develop your own 
                             <p><span>THE EDIT</span> <br></br>
                             Get your fix from the trends you need to know from MIK.    
                             </p>
-                            <Link to={'/blog/home'} ><button className='access-btn'>ACCESS THE EDIT</button></Link>
+                            <Link to={'/stash/blog/home'} ><button className='access-btn'>ACCESS THE EDIT</button></Link>
                         </div>
                     </section> 
 

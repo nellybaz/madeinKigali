@@ -2,7 +2,7 @@
   "name": "madeinkigali",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://madeinkigali.com/dev",
+  "homepage": "https://madeinkigali.com/stash",
   "dependencies": {
     "axios": "^0.18.0",
     "google-map-react": "^1.1.0",

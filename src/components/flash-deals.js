@@ -101,12 +101,14 @@ class FlashDeals extends Component {
         this.props.objectDispay.map((item, index)=> 
           {
             let limit;
-            if(isBrowser || isTablet){
-              limit = 5;
-            }
-            if(isMobileOnly || this.props.isBlog){
-              limit = 2;
-            }
+            // if(isBrowser || isTablet){
+            //   limit = 1;
+            // }
+            // if(isMobileOnly || this.props.isBlog){
+              
+            // }
+
+            window.innerWidth < 900 ? limit = 2 : limit = 5;
             
             
             if((index >= this.state.count && index < this.state.count+limit) && 6 - this.state.count > 3){
