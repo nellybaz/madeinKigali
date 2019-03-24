@@ -262,7 +262,7 @@
 
 
 .new-in:hover .drop-down-content-new-in{
-    /* display: grid; */
+    display: grid;
     position: absolute;
     z-index: 1;
 
@@ -322,7 +322,7 @@
     
 }
 .brands:hover .drop-down-content-brands{
-    /* display: grid; */
+    display: grid;
     position: absolute;
     z-index: 1;
 }
@@ -430,7 +430,7 @@
 }
 
 .m2m:hover .m2m-dropdown{
-    /* display: grid; */
+    display: grid;
 }
 .m2m-dropdown{
     padding:5px 30px 0 30px;
@@ -457,7 +457,7 @@
 }
 
 .wholesale:hover .wholesale-dropdown{
-    /* display: grid; */
+    display: grid;
 }
 .wholesale-dropdown{
     padding:5px 30px 0 30px;
@@ -474,7 +474,7 @@
 
 
 .brands:hover .brands-dropdown{
-    /* display: grid; */
+    display: grid;
 }
 .brands-dropdown{
     padding:5px 30px 0 30px;
@@ -553,7 +553,7 @@
     border-top: 1px dotted gray;
 }
 .fabric:hover .fabric-dropdown{
-    /* display: grid; */
+    display: grid;
 }
 .fabric-dropdown{
     padding:5px 30px 0 30px;
@@ -580,7 +580,7 @@
 }
 
 .new-in:hover .new-in-dropdown{
-    /* display: grid; */
+    display: grid;
 }
 
 .dropdowns{
@@ -627,7 +627,7 @@
 
 
 .fashion-stories:hover .fashion-stories-dropdown{
-    /* display: grid; */
+    display: grid;
 }
 
 
@@ -681,7 +681,7 @@
 
 
 .visitrwanda:hover .visitrwanda-dropdown{
-    /* display: grid; */
+    display: grid;
 }
 
 
@@ -712,7 +712,7 @@
 
 /* for sales */
 .sale:hover .sales-dropdown{
-    /* display: grid; */
+    display: grid;
 }
 
 
