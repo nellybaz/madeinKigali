@@ -17,7 +17,7 @@ import youtube from '../assets/images/icons/youtube.png';
 import tumblr from '../assets/images/icons/tumblr-logo.png';
 
 
-const Completionist = () => window.location.href="/dev/company2";
+const Completionist = () => window.location.href="/company2";
 class ComingSoon1 extends Component {
 
 
@@ -106,9 +106,9 @@ class ComingSoon1 extends Component {
 
           <img src={require('../assets/images/coming3.jpg')} />
           <div className='coming1-btns'>
-            <Link to={'/dev/company/about2'}>ABOUT US</Link>
-            <Link to={'/dev/company2'}>WHO WE ARE</Link>
-            <Link to={'/dev/company/about'}>WHAT WE DO</Link>
+            <Link to={'/company/about2'}>ABOUT US</Link>
+            <Link to={'/company2'}>WHO WE ARE</Link>
+            <Link to={'/company/about'}>WHAT WE DO</Link>
 
           </div>
 
@@ -236,9 +236,9 @@ class ComingSoon1 extends Component {
                             </ul>
 
                             <div className='coming-mobile-btn-div'>
-                              <Link to={'/dev/company/about2'}>ABOUT US</Link>
-                               <Link to={'/dev/company2'}>WHO WE ARE</Link>
-                              <Link to={'/dev/company/about'}>WHAT WE DO</Link>
+                              <Link to={'/company/about2'}>ABOUT US</Link>
+                               <Link to={'/company2'}>WHO WE ARE</Link>
+                              <Link to={'/company/about'}>WHAT WE DO</Link>
                             </div>
                       
                       </div>

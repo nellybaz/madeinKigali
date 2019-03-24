@@ -262,7 +262,7 @@ class About2 extends Component {
 
                         <div className='strategy-left'>
                             <h4>MADE IN AFRICA</h4>
-                            <Link to={'/dev/company2'}>FASHION IS COMFORT</Link>
+                            <Link to={'/company2'}>FASHION IS COMFORT</Link>
                         
                         </div>
 
