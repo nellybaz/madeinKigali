@@ -48,42 +48,42 @@ const outer = () => (
         <Router onUpdate={() => window.scrollTo(0, 0)}>
                 <Switch>
                         
-                        {/* <Route exact path={"/12hdgsikdhlmsdne"} component={App} />
-                        <Route exact path={"/upload"} component={Upload} />
-                        <Route exact path={"/blog/:nav"} component={Blog} />
-                        <Route exact path={"/blog/post/:blog_id/:blog_name"} component={Post} />
-                        <Route exact path={"/product/:slug/:number"} component={Product} />
-                        <Route exact path={"/wholesale/:slug/:number"} component={Wholesale} />
-                        <Route exact path={"/search/:query/category/:category_no"} component={Search} />
-                        <Route exact path={"/shop"} component={Search} />
-                        <Route exact path={"/contact"} component={Contact} />
-                        <Route exact path={"/help"} component={Help} />
-                        <Route exact path={"/points"} component={PointOfSale} />
-                        <Route exact path={"/info/:infocategory"} component={Info} />
-                        <Route exact path={"/m2m"} component={M2M} />
-                        <Route exact path={"/m2m2"} component={M2M2} />
-                        <Route exact path={"/gallery"} component={Gallery} />
-                        <Route exact path={"/quote"} component={WholesaleQuote} />
-                        <Route exact path={"/fabric"} component={Fabric} />
-                        <Route exact path={"/fabric_single"} component={Fabric_Single} />
-                        <Route exact path={"/fabric_search"} component={Fabric_Display} />
-                        <Route exact path={"/fabric/upload"} component={Fabric_Upload} />
-                        <Route exact path={"/fabric/create"} component={PreFabricUpload} />
-                        <Route exact path={"/fabric/upload/select/:fabric_id"} component={Fabric_Upload_Select} />
-                        <Route exact path={"/signin"} component={Signin} />
-                        <Route exact path={"/visit_rwanda"} component={visitRwanda} />
-                        <Route exact path={"/student_discount"} component={student_discount} />
-                        <Route exact path={"/gift_card"} component={GiftCard} />
-                        <Route exact path={"/cart"} component={Cart} /> */}
-                        <Route exact path={"/"} component={ComingSoon1} />
-                        {/* <Route exact path={"/delivery"} component={Delivery} /> */}
-                        <Route exact path={"/company2"} component={Company2} />
-                        <Route exact path={"/company/about"} component={About} />
-                        <Route exact path={"/company/about2"} component={About2} />
-                        {/* <Route exact path={"/admin/dashboard"} component={DashBoard} />
-                        <Route exact path={"/admin/dashboard/flashdeals"} component={FlashDeals} />
-                        <Route exact path={"/admin/dashboard/blog"} component={Blog_Dashboard} />
-                        <Route exact path={"/admin/dashboard/trending"} component={Trending} /> */}
+                        {/* <Route exact path={"/stash/12hdgsikdhlmsdne"} component={App} />
+                        <Route exact path={"/stash/upload"} component={Upload} />
+                        <Route exact path={"/stash/blog/:nav"} component={Blog} />
+                        <Route exact path={"/stash/blog/post/:blog_id/:blog_name"} component={Post} />
+                        <Route exact path={"/stash/product/:slug/:number"} component={Product} />
+                        <Route exact path={"/stash/wholesale/:slug/:number"} component={Wholesale} />
+                        <Route exact path={"/stash/search/:query/category/:category_no"} component={Search} />
+                        <Route exact path={"/stash/shop"} component={Search} />
+                        <Route exact path={"/stash/contact"} component={Contact} />
+                        <Route exact path={"/stash/help"} component={Help} />
+                        <Route exact path={"/stash/points"} component={PointOfSale} />
+                        <Route exact path={"/stash/info/:infocategory"} component={Info} />
+                        <Route exact path={"/stash/m2m"} component={M2M} />
+                        <Route exact path={"/stash/m2m2"} component={M2M2} />
+                        <Route exact path={"/stash/gallery"} component={Gallery} />
+                        <Route exact path={"/stash/quote"} component={WholesaleQuote} />
+                        <Route exact path={"/stash/fabric"} component={Fabric} />
+                        <Route exact path={"/stash/fabric_single"} component={Fabric_Single} />
+                        <Route exact path={"/stash/fabric_search"} component={Fabric_Display} />
+                        <Route exact path={"/stash/fabric/upload"} component={Fabric_Upload} />
+                        <Route exact path={"/stash/fabric/create"} component={PreFabricUpload} />
+                        <Route exact path={"/stash/fabric/upload/select/:fabric_id"} component={Fabric_Upload_Select} />
+                        <Route exact path={"/stash/signin"} component={Signin} />
+                        <Route exact path={"/stash/visit_rwanda"} component={visitRwanda} />
+                        <Route exact path={"/stash/student_discount"} component={student_discount} />
+                        <Route exact path={"/stash/gift_card"} component={GiftCard} />
+                        <Route exact path={"/stash/cart"} component={Cart} /> */}
+                        <Route exact path={"/stash/"} component={ComingSoon1} />
+                        {/* <Route exact path={"/stash/delivery"} component={Delivery} /> */}
+                        <Route exact path={"/stash/company2"} component={Company2} />
+                        <Route exact path={"/stash/company/about"} component={About} />
+                        <Route exact path={"/stash/company/about2"} component={About2} />
+                        {/* <Route exact path={"/stash/admin/dashboard"} component={DashBoard} />
+                        <Route exact path={"/stash/admin/dashboard/flashdeals"} component={FlashDeals} />
+                        <Route exact path={"/stash/admin/dashboard/blog"} component={Blog_Dashboard} />
+                        <Route exact path={"/stash/admin/dashboard/trending"} component={Trending} /> */}
                         <Route component={notFound} />
                 </Switch>
         </Router>
