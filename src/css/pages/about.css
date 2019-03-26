@@ -66,7 +66,7 @@
     font-size: 0.6vw !important;
   }
   .about-section3-right .sub-h4 {
-    font-size: 0.6vw !important;
+    font-size: 0.54vw !important;
   }
   .div-action-right-bottom {
     top: 3vw !important;
@@ -80,9 +80,6 @@
 }
 
 @media only screen and (max-width: 920px) {
-  .about-section1-right img {
-    display: none !important;
-  }
   .about-section1 {
     height: auto !important;
     -ms-grid-columns: 1fr !important;
@@ -93,7 +90,12 @@
     padding: 0 20px;
   }
   .about-section1 .about-section1-left-top h4 {
+    font-size: 2.5rem !important;
     text-align: center;
+  }
+  .about-section1 .about-section1-left-top p {
+    font-size: 1.5rem !important;
+    bottom: 0 !important;
   }
   .about-section1 .about-section1-left-top a {
     top: 1px;
@@ -101,6 +103,7 @@
   .about-section1 .about-section1-left-bottom {
     margin-top: 20px;
     height: auto !important;
+    padding: 20px !important;
   }
   .about-section1 .about-section1-left-bottom h4 {
     font-size: 2rem !important;
@@ -112,9 +115,21 @@
   .about-section1 .about-section1-left-bottom li {
     font-size: 0.9rem !important;
   }
-  .about-section1-right img {
+  .first-image-mobile-div {
+    margin-top: 10px;
     width: 100%;
-    height: 400px !important;
+  }
+  .first-image-mobile-div img {
+    width: 100%;
+  }
+  .about-section1-right {
+    height: 520px !important;
+  }
+  .about-section1-right img {
+    width: 100% !important;
+    height: auto !important;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .about-section2 {
     -webkit-box-orient: vertical !important;
@@ -138,6 +153,9 @@
     width: 100% !important;
     height: auto !important;
   }
+  .section2-right p {
+    text-align: justify;
+  }
   .about-section3 {
     height: auto !important;
     -ms-grid-columns: 1fr !important;
@@ -146,8 +164,18 @@
   .about-section3-right {
     padding: 20px !important;
   }
+  .about-section3-right p {
+    text-align: justify;
+  }
   .about-section3-left {
     margin-top: 20%;
+  }
+  .about-section3-left .experience-2 {
+    padding: 20px;
+    text-align: justify;
+  }
+  .about-section3-left .experience-2 * {
+    color: black;
   }
   .about-section3-left img {
     width: 100vw !important;
@@ -180,8 +208,11 @@
     width: 100% !important;
     right: 0 !important;
   }
-  .about-section3-right h4 {
+  .about-section3-right .sub-h4-1 {
     font-size: 1.5rem !important;
+  }
+  .about-section3-right .sub-h4 {
+    font-size: 1.1rem !important;
   }
   .about-section3-right p {
     font-size: 0.9rem !important;
@@ -306,6 +337,7 @@
   font-size: 1.05vw;
   color: black;
   width: 80%;
+  text-align: justify;
 }
 
 .Company-about .content-wrapper .about-section1 .about-section1-left .about-section1-left-bottom ul li {
@@ -442,8 +474,15 @@
   padding-right: 20%;
 }
 
-.about-section3 .about-section3-right h4 {
+.about-section3 .about-section3-right .sub-h4-1 {
   font-size: 1.5vw;
+  color: black;
+  position: relative;
+  margin-bottom: -3px !important;
+}
+
+.about-section3 .about-section3-right .sub-h4 {
+  font-size: 1vw;
   color: black;
 }
 
