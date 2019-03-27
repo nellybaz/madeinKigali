@@ -170,23 +170,63 @@ It’s a place made to get it right to shop and be inspired to develop your own 
                             <div className='c2-left-left'>
                                 <img src={require('../assets/images/madeinkigali11.png')} />
                             </div>
-                            <div className='c2-left-right'>
+                            <div id="pop-show1" className='c2-left-right'>
+                            
                             {
                                 this.state.markets_count ? <CountTo to={8} speed={2000}>{fn2}</CountTo> :  <h4 className='c2-counter c2-counter1'>8</h4>
                             }
                                
-                                <p className='c2-counter-p'>PRODUCT CATEGORIES</p>
+                                <p className='c2-counter-p '>PRODUCT CATEGORIES</p>
+                                <div id="company-pop1">
+                                    <ul>
+                                        <li>WOMEN</li>
+                                        <li>ACCESSORIES</li>
+                                        <li>MEN</li>
+                                        <li>KIDS</li>
+                                        <li>LIVING</li>
+                                        <li>BEAUTY</li>
+                                        <li>ARTS</li>
+                                        <li>FOOD</li>
+                                    </ul>
+                                </div>
                             </div>
                         
                         </div>
 
-                        <div className=''>
+                        <div id="pop-show2" className=''>
+
+                        
 
                         {
-                                this.state.markets_count ? <CountTo to={13} speed={2000}>{fn2}</CountTo> :   <h4 className='c2-counter c2-counter1'>13</h4>
+                                this.state.markets_count ? <CountTo to={5} speed={2000}>{fn2}</CountTo> :   <h4 className='c2-counter c2-counter1'>5</h4>
                             }
                            
-                            <p className='c2-counter-p'>DISTRIBUTION CHANNELS</p>
+                            <p className='c2-counter-p '>DISTRIBUTION CHANNELS</p>
+
+                            <div id="company-pop2">
+                                <h5>Our 5 Distribution Channel</h5>
+                                <ul>
+                                    <li>
+                                        Single brand stores
+                                    </li>
+
+                                    <li>
+                                        Multi-brand stores
+                                    </li>
+
+                                    <li>
+                                        MIK Authorized Dealers
+                                    </li>
+
+                                    <li>
+                                        Department Stores
+                                    </li>
+
+                                    <li>
+                                        Our own online stores
+                                    </li>
+                                </ul>
+                            </div>
                         
                         </div>
                     

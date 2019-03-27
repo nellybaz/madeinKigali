@@ -14,6 +14,7 @@ import img5 from '../assets/images/about/MadeinRwandakigali2017.png';
 import img6 from '../assets/images/about/MadeinRwandakigali2018.png';
 import img7 from '../assets/images/about/MadeinRwandakigali2019.png';
 
+
 class About2 extends Component {
     constructor(props){
         super(props)

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 745px) {
+@media only screen and (min-width: 900px) {
     .div2-inner {
       -webkit-box-sizing: content-box;
               box-sizing: content-box;
@@ -6,7 +6,7 @@
     }
   }
   
-  @media only screen and (max-width: 745px) {
+  @media only screen and (max-width: 900px) {
     .div1 {
       display: none !important;
     }

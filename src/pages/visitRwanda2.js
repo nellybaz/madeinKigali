@@ -5,27 +5,8 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 
 import { Link } from 'react-router-dom';
-
-//images
-
-// import vr1 from '../assets/images/vr1.gif';
 import vr2 from '../assets/images/vr2.gif';
 import vr3 from '../assets/images/vr3.gif';
-// import vr4 from '../assets/images/vr4.gif';
-// import vr5 from '../assets/images/vr5.gif';
-// import vr6 from '../assets/images/vr6.gif';
-// import vr7 from '../assets/images/vr7.gif';
-// import vr8 from '../assets/images/vr8.gif';
-// import vr9 from '../assets/images/vr9.gif';
-// import vr10 from '../assets/images/vr10.gif';
-// import vr11 from '../assets/images/vr8.gif';
-// import vr12 from '../assets/images/vr12.gif';
-// import vr13 from '../assets/images/vr8.gif';
-// import vr14 from '../assets/images/vr14.gif';
-// import vr15 from '../assets/images/vr15.gif';
-// import vr16 from '../assets/images/vr16.gif';
-
-
 import right_arrow from '../assets/images/next_black.png';
 import left_arrow from '../assets/images/back_black.png';
 import img_title from '../assets/images/visit_rwanda_title.png';
@@ -53,9 +34,9 @@ class VisitRwanda2 extends Component {
                 img  = require(`../assets/images/vr${x}.gif`);
             }
             holder.push(
-                <Link className='img-div' to={`/dev/search/jeans/category/${x}`}>
+                <Link className={`img-div img${x}`} to={`/dev/search/jeans/category/${x}`}>
                     <div>
-                        <img src={img} alt="mik" />
+                        <img  src={img} alt="mik" />
                         <p>STATEMENT COATS</p>
                         <p>The gift she'll be showing off</p>
                     </div>
@@ -151,7 +132,7 @@ class VisitRwanda2 extends Component {
                     <div className='slideshow-wrapper-div'>
                         <button onClick={()=>this.handleScroll(0)} className="slide-previous"><img style={{width:24}} src={left_arrow}/></button>
                     </div>
-
+ 
                     <div className="slideshow-content-wrapper">
                     <span id="target-tool"></span>
                        <div className="slideshow-content" style={{left: this.state.scroll_no}}>
