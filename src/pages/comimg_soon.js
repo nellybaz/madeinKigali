@@ -106,9 +106,9 @@ class ComingSoon1 extends Component {
 
           <img src={require('../assets/images/coming3.jpg')} />
           <div className='coming1-btns'>
-            <Link to={'/stash/company/about2'}>ABOUT US</Link>
-            <Link to={'/stash/company2'}>WHO WE ARE</Link>
-            <Link to={'/stash/company/about'}>WHAT WE DO</Link>
+            <Link to={'/company/about2'}>ABOUT US</Link>
+            <Link to={'/company2'}>WHO WE ARE</Link>
+            <Link to={'/company/about'}>WHAT WE DO</Link>
 
           </div>
 
@@ -167,10 +167,10 @@ class ComingSoon1 extends Component {
 
           </div>
 
-          <div className="social-media-div">
+          {/* <div className="social-media-div">
           <a href="https://plus.google.com/u/0/107469092096162928956" target="_blank" > <img src={g_plus} alt="g_plus" /></a>
 
-          </div>
+          </div> */}
 
           <div className="social-media-div">
           <a href="https://www.pinterest.com/madeinkigali/pins/" target="_blank" > <img src={pinterest} alt="pinterest" /></a>
@@ -236,9 +236,9 @@ class ComingSoon1 extends Component {
                             </ul>
 
                             <div className='coming-mobile-btn-div'>
-                              <Link to={'/stash/company/about2'}>ABOUT US</Link>
-                               <Link to={'/stash/company2'}>WHO WE ARE</Link>
-                              <Link to={'/stash/company/about'}>WHAT WE DO</Link>
+                              <Link to={'/company/about2'}>ABOUT US</Link>
+                               <Link to={'/company2'}>WHO WE ARE</Link>
+                              <Link to={'/company/about'}>WHAT WE DO</Link>
                             </div>
                       
                       </div>
@@ -286,9 +286,9 @@ class ComingSoon1 extends Component {
                         <img src={require('../assets/images/icons/tumblr_white.png')} />
                       </Link>
 
-                      <Link to={'https://plus.google.com/u/0/107469092096162928956'} >
+                      {/* <Link to={'https://plus.google.com/u/0/107469092096162928956'} >
                         <img src={require('../assets/images/icons/google_white.png')} />
-                      </Link>
+                      </Link> */}
 
                       <Link to={'#'} >
                         <img src={require('../assets/images/icons/weibo_white.png')} />

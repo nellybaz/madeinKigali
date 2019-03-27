@@ -333,7 +333,7 @@ class Header2 extends Component {
                 {/* fabric */}
 
 
-            <div className="fabric" ><a href="/dev/fabric" >FABRIC </a>
+            <div className="fabric" ><a href="#" >FABRIC </a>
             <div className="fabric-dropdown dropdowns">
                     <div className="fabric-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>
@@ -439,7 +439,7 @@ class Header2 extends Component {
 
 
 
-            <div className="m2m"><a href="/dev/m2m2">MADE TO MEASURE</a>
+            <div className="m2m"><a href="#">MADE TO MEASURE</a>
                 <div className="m2m-dropdown dropdowns">
                     <div className="m2m-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>

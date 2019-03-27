@@ -75,11 +75,11 @@ const outer = () => (
                         <Route exact path={"/dev/student_discount"} component={student_discount} />
                         <Route exact path={"/dev/gift_card"} component={GiftCard} />
                         <Route exact path={"/dev/cart"} component={Cart} /> */}
-                        <Route exact path={"/dev"} component={ComingSoon1} />
+                        <Route exact path={"/"} component={ComingSoon1} />
                         {/* <Route exact path={"/dev/delivery"} component={Delivery} /> */}
-                        <Route exact path={"/dev/company2"} component={Company2} />
-                        <Route exact path={"/dev/company/about"} component={About} />
-                        <Route exact path={"/dev/company/about2"} component={About2} />
+                        <Route exact path={"/company2"} component={Company2} />
+                        <Route exact path={"/company/about"} component={About} />
+                        <Route exact path={"/company/about2"} component={About2} />
                         {/* <Route exact path={"/dev/admin/dashboard"} component={DashBoard} />
                         <Route exact path={"/dev/admin/dashboard/flashdeals"} component={FlashDeals} />
                         <Route exact path={"/dev/admin/dashboard/blog"} component={Blog_Dashboard} />
