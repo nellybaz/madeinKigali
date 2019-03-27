@@ -553,7 +553,7 @@
     border-top: 1px dotted gray;
 }
 .fabric:hover .fabric-dropdown{
-    /* display: grid; */
+    display: grid;
 }
 .fabric-dropdown{
     padding:5px 30px 0 30px;
