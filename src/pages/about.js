@@ -39,7 +39,7 @@ class About extends Component{
                                 Support the movement
                                 </p>
 
-                                <Link to={'/stash/company/about2'}>
+                                <Link to={'/who-we-are'}>
                                     MORE ABOUT US
                                 </Link>
 
@@ -129,7 +129,7 @@ class About extends Component{
 
                             <h4 style={{fontSize: '1.7vw'}}>Made to get it right</h4>
 
-<p style={{position:'relative', bottom:'10px'}}>
+<p style={{position:'relative', bottom:'1px'}}>
 Whoever associates or engages with made in Kigali is left with a story to tell. From employees and partners to customers, our service is unmatched and is ever improving. When you buy and/or work for Made in Kigali, you have a relationship with us that we will nurture and you will undoubtedly appreciate. Our employees are more than workers, they are our partners.  We encourage a work environment in which creativity can thrive and that is why our products are usually unique and incredibly attractive. Just as it is known, It feels good to do good, so responsibility is at the core of everything we do. We are dramatically passionate about quality.
 If you ever doubt our sober mission, find out how we source our raw-materials, the caring partners we work with, our employee conditions, community engagement and so much more. All of this is to satisfy our responsibility to you.
 </p>
@@ -252,7 +252,7 @@ Every business year, we engage our organisation in discussions with environmenta
                     
                    <div className='div-action-right-bottom'>
                         <h5>Made to get it right</h5>
-                        <Link to={'/stash/company/about2'}>DISCOVER THE MIK STORY ></Link>
+                        <Link to={'/about-us'}>DISCOVER THE MIK STORY ></Link>
                    </div>
                     </div>
 

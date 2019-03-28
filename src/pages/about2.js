@@ -3,6 +3,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import '../css/pages/about2.css';
 import '../css/utils/screen.css';
+// import {sudo } from 'react-document-meta';
 
 import {Link} from 'react-router-dom';
 
@@ -263,7 +264,7 @@ class About2 extends Component {
 
                         <div className='strategy-left'>
                             <h4>MADE IN AFRICA</h4>
-                            <Link to={'/stash/company2'}>FASHION IS COMFORT</Link>
+                            <Link to={'/who-we-are'}>FASHION IS COMFORT</Link>
                         
                         </div>
 
