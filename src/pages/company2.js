@@ -8,6 +8,7 @@ import img1 from '../assets/images/madeinkigali02.png';
 
 import {Link} from 'react-router-dom';
 import CountTo from 'react-count-to';
+import MetaTags from 'react-meta-tags';
 
 class Company2 extends Component{
   
@@ -91,6 +92,11 @@ class Company2 extends Component{
         const fn3_plus = value => <p id="c2-c5" className='c2-counter c2-counter2'>+{value}</p>;
         return(
             <div className='Company2'>
+            <MetaTags>
+            <title>MadeinKigali, Online fashion store, Kigali, Rwanda - Who we are</title>
+            <meta name="description" content="At MIK, we are passionate about community collaboration and are proud to nurture partnerships with cooperatives and upcoming designers in Africa to bring our customers authentic and beautiful pieces to value. Everything you need to know about fashion in Rwanda. Fashion news and trends and the latest styles." />
+            
+          </MetaTags>
                 <Header />
 
                 <div className='c2-content-section1'>

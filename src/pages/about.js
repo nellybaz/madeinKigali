@@ -5,6 +5,8 @@ import Footer from '../components/footer';
 import {Link} from 'react-router-dom';
 import '../css/pages/about.css';
 import '../css/utils/screen.css';
+import MetaTags from 'react-meta-tags';
+
 
 class About extends Component{
     constructor(props){
@@ -26,6 +28,12 @@ class About extends Component{
     render(){
         return(
             <div className={`Company-about ${this.state.large_screen_class}`}>
+
+<MetaTags>
+            <title>MadeinKigali, Online fashion store, Kigali, Rwanda - What we do</title>
+            <meta name="description" content="Trendy dresses, fashion clothing, invest in Rwanda and much more. Online shopping for Made in Rwanda Fashion & much more. Subscribe to be notified when the store is Live . Offering Wide Range Of Products, Multiple Payment Options coming soon." />
+            
+          </MetaTags>
                 <Header />
 
                 <div className='content-wrapper'>

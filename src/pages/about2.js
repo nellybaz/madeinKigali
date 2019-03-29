@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 import '../css/pages/about2.css';
 import '../css/utils/screen.css';
 // import {sudo } from 'react-document-meta';
+import MetaTags from 'react-meta-tags';
 
 import {Link} from 'react-router-dom';
 
@@ -164,6 +165,11 @@ class About2 extends Component {
     render() {
         return (
             <div className={`About2 ${this.state.large_screen_class}`}>
+            <MetaTags>
+            <title>MadeinKigali, Online fashion store, Kigali, Rwanda - About Us</title>
+            <meta name="description" content="We are selflessly committed to providing the most authentic handmade fashion products that Rwanda has to offer while ensuring that the hundreds of women that we work with in producing the products are the priority beneficiaries to the proceeds." />
+            
+          </MetaTags>
                 <Header />
 
                 <div className='about2-wrapper'>

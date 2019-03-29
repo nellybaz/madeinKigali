@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import MetaTags from 'react-meta-tags';
 import '../css/pages/coming1.css';
 import Countdown from 'react-countdown-now';
 import request from 'superagent';
@@ -15,7 +15,7 @@ import g_plus from '../assets/images/icons/google-plus-black.png';
 import wiebo from '../assets/images/icons/weibo-black.png';
 import youtube from '../assets/images/icons/youtube.png';
 import tumblr from '../assets/images/icons/tumblr-logo.png';
-
+// import MetaTags from 'react-meta-tags';
 
 const Completionist = () => window.location.href="/who-we-are";
 class ComingSoon1 extends Component {
@@ -101,6 +101,11 @@ class ComingSoon1 extends Component {
     };
     return (
       <div className='ComingSoon1'>
+      <MetaTags>
+            <title>MadeInKigali - Rwanda's Fashion Store - Coming Soon</title>
+            <meta name="description" content="Follow our social media Feeds for updates on Made in Rwanda fashion clothing and subscribe to be notified when the store is Live" />
+
+          </MetaTags>
 
         <div className='coming1-content'>
 
