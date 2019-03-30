@@ -319,7 +319,7 @@ class Blog extends Component {
                             <img alt="image" src={bh8} />
                         </div>
                         <div className="blog-header-item">
-                            <img alt="image" src={bh7} />
+                            <img alt="image" src={bh7} /> 
                         </div>
                         <div className="blog-header-item">
                             <img alt="image" src={bh6} />

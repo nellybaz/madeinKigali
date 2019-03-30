@@ -151,7 +151,7 @@ class M2M extends Component {
                         <div className="product-select-img-div">
                             <img className="product-select-img" src={bag}/>
                         </div>
-                        <div className="product-select-img-div">
+                        {/* <div className="product-select-img-div">
                             <img className="product-select-img" src={bag}/>
                         </div>
                         <div className="product-select-img-div">
@@ -159,7 +159,7 @@ class M2M extends Component {
                         </div>
                         <div className="product-select-img-div">
                             <img className="product-select-img" src={bag}/>
-                        </div>
+                        </div> */}
                        
                     </div>
 

@@ -41,6 +41,15 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .slideshow-content-wrapper {
+    overflow: scroll !important;
+  }
+  .slide-next, .slide-previous {
+    display: none !important;
+  }
+  .img-title-div img {
+    width: 70vw;
+  }
   .btn-div {
     margin-top: 200px;
   }

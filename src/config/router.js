@@ -62,7 +62,7 @@ import ComingSoon1 from '../pages/comimg_soon';
                             <Route exact path={"/dev/help"} component={Help}/>
                             <Route exact path={"/dev/points"} component={PointOfSale}/>
                             <Route exact path={"/dev/info/:infocategory"} component={Info}/>
-                            <Route exact path={"/dev/m2m"} component={M2M}/>
+                            {/* <Route exact path={"/dev/m2m"} component={M2M}/> */}
                             <Route exact path={"/dev/m2m2"} component={M2M2}/>
                             <Route exact path={"/dev/gallery"} component={Gallery}/>
                             <Route exact path={"/dev/quote"} component={WholesaleQuote}/>
