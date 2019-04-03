@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72b4fb27-763e-480c-8aa6-bd779e38233d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/css/pages/about2.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/pages/about2.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/pages/about2.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/pages/about2.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/pages/cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/pages/cart.scss" afterDir="false" />
-    </list>
+    <list default="true" id="72b4fb27-763e-480c-8aa6-bd779e38233d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -63,6 +59,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,10 +95,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -134,16 +131,17 @@
       <updated>1546546871922</updated>
       <workItem from="1546546875403" duration="1661000" />
       <workItem from="1552201641806" duration="320000" />
+      <workItem from="1554048830142" duration="33000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1981000" />
+    <option name="totallyTimeSpent" value="2014000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="47" width="1299" height="701" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -156,7 +154,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.32867134" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.32982457" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />

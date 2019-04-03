@@ -24,11 +24,15 @@ class VisitRwanda2 extends Component {
     diplayImageGifs=()=>{
         const holder = [];
         let img = "";
-        for (let x = 1; x <= 14; x++) {
+        for (let x = 1; x <= 13; x++) {
             // img  = require(`../assets/images/vr${x}.gif`);
 
-            if(x === 11 || x === 13){
+            if(x == 11){
                 img  = require(`../assets/images/vr${8}.gif`);
+            }
+
+            else if(x == 13){
+                img  = require(`../assets/images/vr${12}.gif`);
             }
             else{
                 img  = require(`../assets/images/vr${x}.gif`);
