@@ -118,7 +118,7 @@ class ComingSoon2 extends Component{
                            
                                 <Countdown
                                  
-                                date={'Mon, 11 Mar 2019 00:00:00' }
+                                date={'Mon, 08 Jul 2019 00:00:00' }
                                 renderer={renderer}
                             />
                             
@@ -212,7 +212,7 @@ class ComingSoon2 extends Component{
                       </div>
                             <Countdown
                                 
-                                date={'Mon, 11 Mar 2019 00:00:00' }
+                                date={'Mon, 08 Jul 2019 00:00:00' }
                                 renderer={renderer}
                             />
 
