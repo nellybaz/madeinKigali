@@ -1,0 +1,20 @@
+*, *::before, *::after { box-sizing: border-box}
+
+section{
+    width: 60vw;
+    margin: auto;
+
+
+.top-bar{
+    width: fit-content;
+    height: fit-content;
+    margin: 2vw auto ;
+    
+
+    a{
+        border: 0.1vw solid gray;
+        padding:  1vw 5vw;
+    }
+    
+}
+}
