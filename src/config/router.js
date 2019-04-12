@@ -47,6 +47,7 @@ import BuyerLicence from '../pages/buyer_licence';
 import SellerLicence from '../pages/seller_licence';
 import WashCare from '../pages/washcare';
 import MIKKFW from '../pages/mik_kfw';
+import SiteMap from '../pages/sitemap';
 
 
     const outer =()=> (
@@ -95,6 +96,7 @@ import MIKKFW from '../pages/mik_kfw';
                             <Route exact path={"/dev/seller_licence"} component={SellerLicence}/>
                             <Route exact path={"/dev/washcare"} component={WashCare}/>
                             <Route exact path={"/dev/mik_kigali_fashion_week"} component={MIKKFW}/>
+                            <Route exact path={"/dev/sitemap"} component={SiteMap}/>
                              <Route component={notFound}/>
                         </Switch>            
                 </Router>

@@ -1,5 +1,114 @@
+@font-face {
+  font-family: "BaskervilleCustom";
+  src: url("../../assets/fonts/Baskerville-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "WarsawGothic";
+  src: url("../../assets/fonts/WarsawGothic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "WarsawGothicE";
+  src: url("../../assets/fonts/WarsawGothicExt.otf") format("opentype");
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.title {
+  padding: 2vw;
+  font-family: 'WarsawGothic';
+  letter-spacing: 1vw;
+}
+
+.mid-title {
+  font-size: 1.5vw;
+  padding: 1vw;
+  font-family: 'WarsawGothic';
+}
+
+.sub-title {
+  font-size: 2vw;
+  padding: 1vw;
+  font-family: 'WarsawGothic';
+  letter-spacing: 0.72vw;
+}
+
+hr {
+  margin: 2vw auto;
+  width: 3vw;
+  background-color: white;
+}
+
+p {
+  width: 60vw;
+  margin: auto;
+  text-align: center;
+  padding: 1vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .title {
+    padding: 2vw;
+    font-family: 'WarsawGothic';
+    letter-spacing: 1.5vw;
+  }
+  .mid-title {
+    font-size: 5vw;
+    padding: 1vw;
+    font-family: 'WarsawGothic';
+  }
+  .sub-title {
+    font-size: 7.5vw;
+    padding: 1vw;
+    font-family: 'WarsawGothic';
+    letter-spacing: 0.7vw;
+  }
+  hr {
+    margin: 2vw auto;
+    width: 3vw;
+    background-color: white;
+  }
+  p {
+    width: 60vw;
+    margin: auto;
+    text-align: center;
+    padding: 1vw;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .title {
+    padding: 2vw;
+    font-family: 'WarsawGothic';
+    letter-spacing: 0.94vw;
+    font-size: 2vw;
+  }
+  .mid-title {
+    font-size: 2vw;
+    padding: 1vw;
+    font-family: 'WarsawGothic';
+  }
+  .sub-title {
+    font-size: 2vw;
+    padding: 1vw;
+    font-family: 'WarsawGothic';
+    letter-spacing: 0.5vw;
+  }
+  hr {
+    margin: 2vw auto;
+    width: 3vw;
+    background-color: white;
+  }
+  p {
+    width: 36vw;
+    margin: auto;
+    text-align: center;
+    padding: 1vw;
+    font-size: 0.7vw;
+  }
 }
 /*# sourceMappingURL=mik_kfw.css.map */
