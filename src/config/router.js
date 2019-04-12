@@ -46,6 +46,7 @@ import SizeGuide from '../pages/size_guide';
 import BuyerLicence from '../pages/buyer_licence';
 import SellerLicence from '../pages/seller_licence';
 import WashCare from '../pages/washcare';
+import MIKKFW from '../pages/mik_kfw';
 
 
     const outer =()=> (
@@ -93,6 +94,7 @@ import WashCare from '../pages/washcare';
                             <Route exact path={"/dev/buyer_licence"} component={BuyerLicence}/>
                             <Route exact path={"/dev/seller_licence"} component={SellerLicence}/>
                             <Route exact path={"/dev/washcare"} component={WashCare}/>
+                            <Route exact path={"/dev/mik_kigali_fashion_week"} component={MIKKFW}/>
                              <Route component={notFound}/>
                         </Switch>            
                 </Router>

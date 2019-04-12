@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,EAAE,CAAC,AAAA,QAAQ,EAAE,CAAC,AAAA,OAAO,CAAC;EACnB,kBAAkB,EAAE,UAAU;EACtB,UAAU,EAAE,UAAU;CAC/B",
+    "sources": [
+        "mik_kfw.scss"
+    ],
+    "names": [],
+    "file": "mik_kfw.css"
+}
