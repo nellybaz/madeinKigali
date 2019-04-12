@@ -27,12 +27,16 @@ section{
     h1{
         text-align: left;
         width: 60vw;
-        padding-left: 0.5vw
+        padding-left: 0.5vw;
+        font-size: 2.5vw;
     }
     p{
         width: 60vw;
         text-align: justify;
     }
+    // h3{
+    //     width: 60vw;
+    // }
     ul{
         li{
          list-style: square;   
@@ -84,6 +88,7 @@ section{
             font-size: 4vw;
             font-weight: bold;
             padding: 0.5vw 0;
+            
         }
     }
     }

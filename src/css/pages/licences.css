@@ -36,6 +36,7 @@ section .terms h1 {
   text-align: left;
   width: 60vw;
   padding-left: 0.5vw;
+  font-size: 2.5vw;
 }
 
 section .terms p {
