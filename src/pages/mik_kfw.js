@@ -38,7 +38,7 @@ class MIKKFW extends Component {
                     
 
                     <p>
-                    For London Fashion Week February 2018, we supported designers Molly Goddard, House of Holland, Preen <br />
+                    For Kigali Fashion Week February 2018, we supported designers Molly Goddard, House of Holland, Preen <br />
                     by Thornton Bregazzi, Fashion East, Nicopanda and Shrimps at a new show space on Covent Garden’s <br />
                     Floral Street. We also hosted exclusive fashion talks and events at our London flagship store, including 
                     <br />trend talks with broadcaster and style maven Laura Jackson. London Fashion Week will be back in 

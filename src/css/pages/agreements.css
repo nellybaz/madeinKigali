@@ -1,6 +1,16 @@
+@font-face {
+  font-family: "WarsawGothic";
+  src: url("../../assets/fonts/WarsawGothic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "WarsawGothicE";
+  src: url("../../assets/fonts/WarsawGothicExt.otf") format("opentype");
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 section {

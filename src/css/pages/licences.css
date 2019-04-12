@@ -20,11 +20,130 @@ section .top-bar {
 
 section .top-bar a {
   border: 0.1vw solid gray;
-  padding: 1vw 5vw;
+  padding: 1vw 7.5vw;
   font-weight: bold;
 }
 
 section .top-bar a ._active {
   color: red;
+}
+
+section .terms {
+  text-align: left;
+}
+
+section .terms h1 {
+  text-align: left;
+  width: 60vw;
+  padding-left: 0.5vw;
+}
+
+section .terms p {
+  width: 60vw;
+  text-align: justify;
+}
+
+section .terms ul li {
+  list-style: square;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    width: 80vw;
+    margin: auto;
+  }
+  section .top-bar {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 2vw auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section .top-bar a {
+    border: 0.1vw solid gray;
+    padding: 1vw 1vw;
+    font-weight: bold;
+    text-align: center;
+  }
+  section .top-bar a ._active {
+    color: red;
+  }
+  section .terms {
+    text-align: left;
+  }
+  section .terms h1 {
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: justify;
+    width: 80vw;
+    padding-left: 0.5vw;
+    margin: 1vw 2vw;
+  }
+  section .terms p {
+    width: 80vw;
+    text-align: justify;
+    padding: 1vw 0;
+    font-size: 3vw;
+  }
+  section .terms h3 {
+    font-size: 4vw;
+    font-weight: bold;
+    padding: 0.5vw 0;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  section {
+    width: 40vw;
+    margin: auto;
+  }
+  section .top-bar {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 2vw auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section .top-bar a {
+    border: 0.1vw solid gray;
+    padding: 1vw 2.5vw;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2vw;
+  }
+  section .top-bar a ._active {
+    color: red;
+  }
+  section .terms {
+    text-align: left;
+  }
+  section .terms h1 {
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-align: justify;
+    width: 40vw;
+    padding: 0;
+  }
+  section .terms p {
+    width: 40vw;
+    text-align: justify;
+    padding: 1vw 0;
+    font-size: 1vw;
+  }
+  section .terms h3 {
+    font-size: 1.25vw;
+    font-weight: bold;
+    padding: 0.5vw 0;
+  }
 }
 /*# sourceMappingURL=licences.css.map */
