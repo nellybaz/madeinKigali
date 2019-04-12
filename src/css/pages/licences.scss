@@ -14,6 +14,11 @@ section{
     a{
         border: 0.1vw solid gray;
         padding:  1vw 5vw;
+        font-weight: bold;
+
+        ._active{
+            color: red;
+        }
     }
     
 }

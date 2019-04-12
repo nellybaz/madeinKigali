@@ -43,8 +43,9 @@ import About2 from '../pages/about2';
 import Company2 from '../pages/company2';
 import ComingSoon1 from '../pages/comimg_soon';
 import SizeGuide from '../pages/size_guide';
-import BuyerLicence from '../pages/seller_licence';
-import SellerLicence from '../pages/buyer_licence';
+import BuyerLicence from '../pages/buyer_licence';
+import SellerLicence from '../pages/seller_licence';
+import WashCare from '../pages/washcare';
 
 
     const outer =()=> (
@@ -91,6 +92,7 @@ import SellerLicence from '../pages/buyer_licence';
                             <Route exact path={"/dev/admin/dashboard/trending"} component={Trending}/>
                             <Route exact path={"/dev/buyer_licence"} component={BuyerLicence}/>
                             <Route exact path={"/dev/seller_licence"} component={SellerLicence}/>
+                            <Route exact path={"/dev/washcare"} component={WashCare}/>
                              <Route component={notFound}/>
                         </Switch>            
                 </Router>

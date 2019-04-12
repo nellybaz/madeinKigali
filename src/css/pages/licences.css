@@ -1,0 +1,30 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  width: 60vw;
+  margin: auto;
+}
+
+section .top-bar {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 2vw auto;
+}
+
+section .top-bar a {
+  border: 0.1vw solid gray;
+  padding: 1vw 5vw;
+  font-weight: bold;
+}
+
+section .top-bar a ._active {
+  color: red;
+}
+/*# sourceMappingURL=licences.css.map */

@@ -1,0 +1,57 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  section{
+      h1{
+        width: fit-content;
+        margin: auto;
+      }
+      .title{
+          font-weight: bold;
+      }
+
+      .washing{
+          display: flex;
+          .left{
+              width: 25vw;
+          }
+          .middle{
+            width: 25vw;
+            margin: 0 2vw;
+        }
+        .right{
+            width: 25vw;
+        }
+      }
+      .drying{
+        display: flex;
+        .left{
+            width: 25vw;
+        }
+        .middle{
+          width: 25vw;
+          margin: 0 2vw;
+      }
+      .right{
+          width: 25vw;
+      }
+
+    }
+    .shoes{
+        display: flex;
+        .left{
+            width: 35vw;
+            margin: 0 1vw;
+        }
+       
+      .right{
+          width: 35vw;
+          margin: 0 1vw;
+      }
+
+    }
+
+  }
+

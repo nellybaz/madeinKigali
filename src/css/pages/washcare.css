@@ -1,0 +1,70 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section h1 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+section .title {
+  font-weight: bold;
+}
+
+section .washing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .washing .left {
+  width: 25vw;
+}
+
+section .washing .middle {
+  width: 25vw;
+  margin: 0 2vw;
+}
+
+section .washing .right {
+  width: 25vw;
+}
+
+section .drying {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .drying .left {
+  width: 25vw;
+}
+
+section .drying .middle {
+  width: 25vw;
+  margin: 0 2vw;
+}
+
+section .drying .right {
+  width: 25vw;
+}
+
+section .shoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .shoes .left {
+  width: 35vw;
+  margin: 0 1vw;
+}
+
+section .shoes .right {
+  width: 35vw;
+  margin: 0 1vw;
+}
+/*# sourceMappingURL=washcare.css.map */
