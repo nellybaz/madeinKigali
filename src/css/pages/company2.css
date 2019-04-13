@@ -1,4 +1,9 @@
 @font-face {
+  font-family: "BaskervilleCustom";
+  src: url("../../assets/fonts/Baskerville-Regular.otf") format("opentype");
+}
+
+@font-face {
   font-family: "WarsawGothic";
   src: url("../../assets/fonts/WarsawGothic.otf") format("opentype");
 }
