@@ -1,57 +1,263 @@
 *, *::before, *::after {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+            // border: 1px solid black;
+            
   }
 
   section{
-      h1{
-        width: fit-content;
-        margin: auto;
-      }
+    width: 60vw;
+    h1{
+      margin: auto;
+      width: fit-content;
+    }
       .title{
-          font-weight: bold;
+          letter-spacing: 0.1vw;
+          margin: 0 auto;
+          padding: 1vw;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      .sub-title{
+        letter-spacing: 0;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .topic{
+        font-size: 1.5vw;
+        text-decoration: underline;
+        margin: 1vw auto;
+        font-weight: 700;
       }
 
       .washing{
           display: flex;
+          width: fit-content;
+          margin: 2vw auto;
+         
           .left{
-              width: 25vw;
+              width: 20vw;
           }
           .middle{
-            width: 25vw;
-            margin: 0 2vw;
+            width: 20vw;
+            margin: 0 5vw;
         }
         .right{
-            width: 25vw;
+            width: 20vw;
         }
       }
       .drying{
         display: flex;
+        width: fit-content;
+        margin: 2vw auto;
         .left{
-            width: 25vw;
+            width: 20vw;
         }
         .middle{
-          width: 25vw;
-          margin: 0 2vw;
+          width: 20vw;
+          margin: 0 5vw;
       }
       .right{
-          width: 25vw;
+          width: 20vw;
       }
 
     }
+    
     .shoes{
         display: flex;
+        width: fit-content;
+        margin: 2vw auto;
         .left{
-            width: 35vw;
-            margin: 0 1vw;
+            width: 32.5vw;
+            margin-right:  2.5vw;
         }
        
       .right{
-          width: 35vw;
-          margin: 0 1vw;
+          width: 32.5vw;
+          margin-left: 2.5vw;
       }
 
     }
+    .imgg{
+      font-size: 7vw;
+      color: gray
+    }
+  
+  }
+
+
+@media only screen and (max-width:600px){
+  section{
+    // width: 90vw;
+    display: inline;
+    h1{
+      margin: auto;
+      width: fit-content;
+    }
+      .title{
+          letter-spacing: 0.1vw;
+          margin: 0 auto;
+          padding: 1vw;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 4vw;
+      }
+      .sub-title{
+        letter-spacing: 0;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2vw;
+      }
+      
+      .topic{
+        font-size: 2.5vw;
+        text-decoration: underline;
+        margin: 1vw auto;
+        font-weight: 700;
+      }
+
+      .washing{
+          // display: inline;
+          display: flex;
+          margin: 2vw auto;
+          .left{
+              width: 90vw;
+          }
+          .middle{
+            width: 20vw;
+            margin: 0 5vw;
+        }
+        .right{
+            width: 20vw;
+        }
+      }
+      .drying{
+        display: inline;
+        margin: 2vw auto;
+        .left{
+            width: 40vw;
+        }
+        .middle{
+          width: 40vw;
+          margin: 0 5vw;
+      }
+      .right{
+          width: 40vw;
+      }
+
+    }
+    
+    .shoes{
+      width: 90vw ;
+      margin: 2vw auto; 
+      height: 10vw;
+        .left{
+          display:
+            width: 32.5vw;
+            margin-right:  2.5vw;
+            font-size: 0.5vw;
+        }
+       
+      .right{
+          width: 32.5vw;
+          margin-left: 2.5vw;
+      }
+
+    }
+    .imgg{
+      font-size: 5vw;
+      color: gray
+    }
+  
+  }
+
+}
+@media only screen and (min-width:1600px){
+  section{
+    width: 45vw;
+    h1{
+      margin: auto;
+      width: fit-content;
+    }
+      .title{
+          letter-spacing: 0.1vw;
+          margin: 0 auto;
+          padding: 1vw;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1vw;
+      }
+      .sub-title{
+        letter-spacing: 0;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8vw;
+      }
+      
+      .topic{
+        font-size: 0.7vw;
+        text-decoration: underline;
+        margin: 1vw auto;
+        font-weight: 700;
+      }
+
+      .washing{
+          display: flex;
+          width: fit-content;
+          margin: 2vw auto;
+          font-size: 0.5vw;
+         
+          .left{
+              width: 10vw;
+          }
+          .middle{
+            width: 10vw;
+            margin: 0 1vw;
+        }
+        .right{
+            width: 10vw;
+        }
+      }
+      .drying{
+        display: flex;
+        width: fit-content;
+        margin: 2vw auto;
+        font-size: 0.5vw;
+        .left{
+            width: 10vw;
+        }
+        .middle{
+          width: 10vw;
+          margin: 0 1vw;
+      }
+      .right{
+          width: 10vw;
+      }
+
+    }
+    hr{
+      width: 10vw;
+    }
+    .shoes{
+        display: flex;
+        width: fit-content;
+        margin: 2vw auto;
+        font-size: 0.5vw;
+
+        .left{
+            width: 15vw;
+            margin-right:  1vw;
+        }
+       
+      .right{
+          width: 15vw;
+          margin-left: 1vw;
+      }
+
+    }
+    .imgg{
+      font-size: 2vw;
+      color: gray
+    }
 
   }
+}
 

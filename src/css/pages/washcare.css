@@ -1,70 +1,284 @@
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border: 1px solid black;
+}
+
+section {
+  width: 60vw;
 }
 
 section h1 {
+  margin: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: auto;
 }
 
 section .title {
-  font-weight: bold;
+  letter-spacing: 0.1vw;
+  margin: 0 auto;
+  padding: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section .sub-title {
+  letter-spacing: 0;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section .topic {
+  font-size: 1.5vw;
+  text-decoration: underline;
+  margin: 1vw auto;
+  font-weight: 700;
 }
 
 section .washing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2vw auto;
 }
 
 section .washing .left {
-  width: 25vw;
+  width: 20vw;
 }
 
 section .washing .middle {
-  width: 25vw;
-  margin: 0 2vw;
+  width: 20vw;
+  margin: 0 5vw;
 }
 
 section .washing .right {
-  width: 25vw;
+  width: 20vw;
 }
 
 section .drying {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2vw auto;
 }
 
 section .drying .left {
-  width: 25vw;
+  width: 20vw;
 }
 
 section .drying .middle {
-  width: 25vw;
-  margin: 0 2vw;
+  width: 20vw;
+  margin: 0 5vw;
 }
 
 section .drying .right {
-  width: 25vw;
+  width: 20vw;
 }
 
 section .shoes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2vw auto;
 }
 
 section .shoes .left {
-  width: 35vw;
-  margin: 0 1vw;
+  width: 32.5vw;
+  margin-right: 2.5vw;
 }
 
 section .shoes .right {
-  width: 35vw;
-  margin: 0 1vw;
+  width: 32.5vw;
+  margin-left: 2.5vw;
+}
+
+section .imgg {
+  font-size: 7vw;
+  color: gray;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    display: inline;
+  }
+  section h1 {
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  section .title {
+    letter-spacing: 0.1vw;
+    margin: 0 auto;
+    padding: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vw;
+  }
+  section .sub-title {
+    letter-spacing: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+  }
+  section .topic {
+    font-size: 2.5vw;
+    text-decoration: underline;
+    margin: 1vw auto;
+    font-weight: 700;
+  }
+  section .washing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2vw auto;
+  }
+  section .washing .left {
+    width: 90vw;
+  }
+  section .washing .middle {
+    width: 20vw;
+    margin: 0 5vw;
+  }
+  section .washing .right {
+    width: 20vw;
+  }
+  section .drying {
+    display: inline;
+    margin: 2vw auto;
+  }
+  section .drying .left {
+    width: 40vw;
+  }
+  section .drying .middle {
+    width: 40vw;
+    margin: 0 5vw;
+  }
+  section .drying .right {
+    width: 40vw;
+  }
+  section .shoes {
+    width: 90vw;
+    margin: 2vw auto;
+    height: 10vw;
+  }
+  section .shoes .left {
+    display: none;
+    width: 32.5vw;
+    margin-right: 2.5vw;
+    font-size: 0.5vw;
+  }
+  section .shoes .right {
+    width: 32.5vw;
+    margin-left: 2.5vw;
+  }
+  section .imgg {
+    font-size: 5vw;
+    color: gray;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  section {
+    width: 45vw;
+  }
+  section h1 {
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  section .title {
+    letter-spacing: 0.1vw;
+    margin: 0 auto;
+    padding: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+  }
+  section .sub-title {
+    letter-spacing: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8vw;
+  }
+  section .topic {
+    font-size: 0.7vw;
+    text-decoration: underline;
+    margin: 1vw auto;
+    font-weight: 700;
+  }
+  section .washing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 2vw auto;
+    font-size: 0.5vw;
+  }
+  section .washing .left {
+    width: 10vw;
+  }
+  section .washing .middle {
+    width: 10vw;
+    margin: 0 1vw;
+  }
+  section .washing .right {
+    width: 10vw;
+  }
+  section .drying {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 2vw auto;
+    font-size: 0.5vw;
+  }
+  section .drying .left {
+    width: 10vw;
+  }
+  section .drying .middle {
+    width: 10vw;
+    margin: 0 1vw;
+  }
+  section .drying .right {
+    width: 10vw;
+  }
+  section hr {
+    width: 10vw;
+  }
+  section .shoes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 2vw auto;
+    font-size: 0.5vw;
+  }
+  section .shoes .left {
+    width: 15vw;
+    margin-right: 1vw;
+  }
+  section .shoes .right {
+    width: 15vw;
+    margin-left: 1vw;
+  }
+  section .imgg {
+    font-size: 2vw;
+    color: gray;
+  }
 }
 /*# sourceMappingURL=washcare.css.map */
