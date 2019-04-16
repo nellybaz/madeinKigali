@@ -16,6 +16,20 @@ import {
 } from "react-device-detect";
 
 class WashCare extends Component {
+    constructor(props){
+        super(props)
+
+        this.state = {
+            counter : 0,
+        }
+    }
+
+    increase= ()=>{
+        // alert("called");
+        this.setState({
+            counter : this.state.counter +1,
+        });
+    }
 
     render() {
 
@@ -33,6 +47,7 @@ class WashCare extends Component {
                             We test all our garments to make sure they stay looking as good as new after washing. To keep garments looking their best, always follow the instructions on the care label.
                     {/* <Image>`</Image> */}
                             <div className="imgg">Icons</div>
+                            <div className=''></div>
 
                         </div>
                         <div className="middle">
@@ -46,6 +61,9 @@ class WashCare extends Component {
                         </div>
 
                     </div>
+
+                    <p> You pressed this number of times: {this.state.counter}</p>
+                    <button onClick={()=>this.increase()} >Hit me</button>
 
                     <h1 className="topic"> DRYING</h1>
                     <div className="drying">

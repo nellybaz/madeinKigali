@@ -1,7 +1,6 @@
 *, *::before, *::after {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-            // border: 1px solid black;
             
   }
 
@@ -151,7 +150,7 @@
       margin: 2vw auto; 
       height: 10vw;
         .left{
-          display:
+          display: none;
             width: 32.5vw;
             margin-right:  2.5vw;
             font-size: 0.5vw;

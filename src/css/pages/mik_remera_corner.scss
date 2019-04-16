@@ -1,0 +1,50 @@
+*{
+    border: 1px solid black;
+}
+.remContainer{
+    background-color: gainsboro;
+    width: fit-content;
+    margin: auto;
+    .remA{
+        background-color: white;
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-column-gap: 1vw;;
+        grid-template-rows: 25vw 20vw 20vw;
+        grid-row-gap:1vw;;
+
+        .remA1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .remA7{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }        
+    }
+    .remB{
+        background-color: white;
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 25vw 25vw 25vw;
+        grid-column-gap: 1vw;
+        grid-row-gap:1vw;
+
+        margin: auto;
+        .remBBox{
+            width: fit-content;
+            height: fit-content;
+            .remBimg{
+                height: 17.5vw;
+                width: 25vw;
+            }
+            .remBdesc{
+                padding: 1vw;
+                h5{width: fit-content;
+                    font-size: 1vw;
+                }
+            }
+        }  
+    }
+}

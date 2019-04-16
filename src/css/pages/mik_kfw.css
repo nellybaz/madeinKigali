@@ -20,7 +20,7 @@
 
 .title {
   padding: 2vw;
-  font-family: 'WarsawGothic';
+  font-family: "WarsawGothic" !important;
   letter-spacing: 1vw;
 }
 

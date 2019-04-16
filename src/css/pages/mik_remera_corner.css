@@ -1,0 +1,78 @@
+* {
+  border: 1px solid black;
+}
+
+.remContainer {
+  background-color: gainsboro;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.remContainer .remA {
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30vw 30vw 30vw;
+      grid-template-columns: 30vw 30vw 30vw;
+  grid-column-gap: 1vw;
+  -ms-grid-rows: 25vw 20vw 20vw;
+      grid-template-rows: 25vw 20vw 20vw;
+  grid-row-gap: 1vw;
+}
+
+.remContainer .remA .remA1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.remContainer .remA .remA7 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.remContainer .remB {
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25vw 25vw 25vw;
+      grid-template-columns: 25vw 25vw 25vw;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
+  margin: auto;
+}
+
+.remContainer .remB .remBBox {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.remContainer .remB .remBBox .remBimg {
+  height: 17.5vw;
+  width: 25vw;
+}
+
+.remContainer .remB .remBBox .remBdesc {
+  padding: 1vw;
+}
+
+.remContainer .remB .remBBox .remBdesc h5 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1vw;
+}
+/*# sourceMappingURL=mik_remera_corner.css.map */
