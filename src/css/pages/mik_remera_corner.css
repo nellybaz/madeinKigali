@@ -1,8 +1,13 @@
-* {
-  border: 1px solid black;
+@font-face {
+  font-family: "WarsawGothicE";
+  src: url("../../assets/fonts/WarsawGothicExt.otf") format("opentype");
 }
 
 .remContainer {
+  padding-top: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: gainsboro;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -11,6 +16,7 @@
 }
 
 .remContainer .remA {
+  padding-top: 0;
   background-color: white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -20,8 +26,8 @@
   -ms-grid-columns: 30vw 30vw 30vw;
       grid-template-columns: 30vw 30vw 30vw;
   grid-column-gap: 1vw;
-  -ms-grid-rows: 25vw 20vw 20vw;
-      grid-template-rows: 25vw 20vw 20vw;
+  -ms-grid-rows: auto 20vw 20vw;
+      grid-template-rows: auto 20vw 20vw;
   grid-row-gap: 1vw;
 }
 
@@ -29,6 +35,51 @@
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.remContainer .remA .remA2 {
+  background-color: gainsboro;
+}
+
+.remContainer .remA .remA2 .remA2title {
+  padding-top: 7.5vw;
+  padding-bottom: 2vw;
+  margin: auto;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: bold;
+  font-family: WarsawGothicE;
+  letter-spacing: 0.5vw;
+}
+
+.remContainer .remA .remA2 .remA2text {
+  width: inherit;
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.remContainer .remA .remAsub {
+  padding: 1vw;
+  font-size: 1.8vw;
+  font-weight: bold;
+  font-family: WarsawGothicE;
+  letter-spacing: 0.5vw;
+}
+
+.remContainer .remA .remAdesc {
+  width: inherit;
+  text-align: left;
+  font-size: 1.2vw;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.remContainer .remA .remA3, .remContainer .remA .remA4 {
+  background-color: gainsboro;
 }
 
 .remContainer .remA .remA7 {
