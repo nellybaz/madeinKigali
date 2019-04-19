@@ -16,20 +16,20 @@ import {
 } from "react-device-detect";
 
 class WashCare extends Component {
-    constructor(props){
-        super(props)
+    // constructor(props){
+    //     super(props)
 
-        this.state = {
-            counter : 0,
-        }
-    }
+    //     this.state = {
+    //         counter : 0,
+    //     }
+    // }
 
-    increase= ()=>{
-        // alert("called");
-        this.setState({
-            counter : this.state.counter +1,
-        });
-    }
+    // increase= ()=>{
+    //     // alert("called");
+    //     this.setState({
+    //         counter : this.state.counter +1,
+    //     });
+    // }
 
     render() {
 
@@ -62,8 +62,8 @@ class WashCare extends Component {
 
                     </div>
 
-                    <p> You pressed this number of times: {this.state.counter}</p>
-                    <button onClick={()=>this.increase()} >Hit me</button>
+                    {/* <p> You pressed this number of times: {this.state.counter}</p>
+                    <button onClick={()=>this.increase()} >Hit me</button> */}
 
                     <h1 className="topic"> DRYING</h1>
                     <div className="drying">
@@ -73,7 +73,9 @@ class WashCare extends Component {
                         <br /><br />
 
                             The dry clean symbol is a circle with a letter inside, the letter indicates the chemical which can be used, and your dry cleaner will refer to this and know what to do. A cross means do not dry clean. <br />
-                            <div className="imgg">Icons</div>
+                            <div className="imgg">
+                            Icons
+                            </div>
                         </div>
                         <div className="middle">
                             NATURAL DRYING

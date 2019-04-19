@@ -5,7 +5,7 @@ section{
     margin: auto;
 
 
-.top-bar{
+.licences-top-bar{
     width: fit-content;
     height: fit-content;
     margin: 2vw auto ;
@@ -22,7 +22,7 @@ section{
     }
     
 }
-.terms{
+.licences-terms{
     text-align: left;
     h1{
         text-align: left;
@@ -34,13 +34,15 @@ section{
         width: 60vw;
         text-align: justify;
     }
-    // h3{
-    //     width: 60vw;
-    // }
     ul{
         li{
          list-style: square;   
         }
+    }
+    i{
+        color:#ff6666;
+        font-size: 5vw;
+        padding: 1vw;
     }
 }
 }
@@ -50,7 +52,7 @@ section{
         margin: auto;
     
     
-    .top-bar{
+    .licences-top-bar{
         width: fit-content;
         height: fit-content;
         margin: 2vw auto ;
@@ -68,7 +70,7 @@ section{
         }
         
     }
-    .terms{
+    .licences-terms{
         text-align: left;
         h1{
             font-size: 5vw;
@@ -88,7 +90,11 @@ section{
             font-size: 4vw;
             font-weight: bold;
             padding: 0.5vw 0;
-            
+        }
+        i{
+            color:#ff6666;
+            font-size: 2.5vw;
+            padding: 2vw;
         }
     }
     }
@@ -99,7 +105,7 @@ section{
         margin: auto;
     
     
-    .top-bar{
+    .licences-top-bar{
         width: fit-content;
         height: fit-content;
         margin: 2vw auto ;
@@ -118,7 +124,7 @@ section{
         }
         
     }
-    .terms{
+    .licences-terms{
         text-align: left;
         h1{
             font-size: 1.2vw;
@@ -137,6 +143,11 @@ section{
             font-size: 1.25vw;
             font-weight: bold;
             padding: 0.5vw 0;
+        }
+        i{
+            color:#ff6666;
+            font-size: 1.5vw;
+            padding: 1vw;
         }
     }
     }

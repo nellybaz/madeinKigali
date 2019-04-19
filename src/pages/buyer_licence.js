@@ -25,14 +25,14 @@ class BuyerLicence extends Component {
                 <Header />
                 <section>
 
-                    <div className="top-bar">
+                    <div className="licences-top-bar">
 
                         <Link className="_active" to={'#'}>Buyer Licence Agreement</Link>
-                        <Link to={SellerLicence}>Seller Licence Agreement</Link>
+                        <Link to={'/dev/seller_licence'}>Seller Licence Agreement</Link>
 
                     </div>
 
-                    <div className="terms">
+                    <div className="licences-terms">
                     <h1>Standard License (Non-exclusive)</h1>
                         <p>
                         Our Standard License allows you to use the design for digital and physical reproduction such as websites, ebooks, apps, software, books, magazines, posters, packaging and and other promotional/marketing media that is not for resale. The supplied downloadable file is a hi-resolution flat JPG file. Choosing an Extended or Premium License allows you do even more with the designs.
@@ -45,10 +45,10 @@ class BuyerLicence extends Component {
 
                         <p>
                         <i class="fas fa-shopping-cart"></i>
-                        Items for Resale up to 500 units – physical products for sale including clothing, t-shirts, homeware, stationery, accessories, posters, postcards and commercial merchandise up to 500 units / items / metres
+                       <strong> Items for Resale up to 500 units – </strong>physical products for sale including clothing, t-shirts, homeware, stationery, accessories, posters, postcards and commercial merchandise up to 500 units / items / metres
                         </p><p>
                         <i class="fas fa-boxes"></i>
-Items for Resale + Unlimited Reproduction - allows over 500 units / items /meters for resale
+                        <strong>Items for Resale + Unlimited Reproduction - </strong>allows over 500 units / items /meters for resale
 </p>
 <h1>Premium License (Exclusive)</h1>
 <p>
@@ -56,7 +56,7 @@ If you are looking for exclusive designs that only you and your company/brand ha
 </p>
 <p>
 <i class="fas fa-star"></i>
-Exclusive Rights - you get all the benefits of our Standard and Exclusive License plus you get exclusive rights to the design and it’s instantly removed from the site once purchased.
+<strong>Exclusive Rights </strong>- you get all the benefits of our Standard and Exclusive License plus you get exclusive rights to the design and it’s instantly removed from the site once purchased.
 </p>                   
                     </div>
                 </section>

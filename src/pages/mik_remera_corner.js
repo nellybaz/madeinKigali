@@ -20,20 +20,20 @@ import {
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 class MIKRemera extends Component {
 
-  constructor(props){
-    super(props);
-    this.state={
-        
-    }
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
 
-  static defaultProps = {
-    center: {
-      lat: -1.948840,
-      lng: 30.077600
-    },
-    zoom: 13
-  };
+        }
+    }
+
+    static defaultProps = {
+        center: {
+            lat: -1.948840,
+            lng: 30.077600
+        },
+        zoom: 13
+    };
 
 
     render() {
@@ -73,8 +73,8 @@ class MIKRemera extends Component {
 
 
                         <div className='remA4'>
-                        <h2 className='remAsub'>
-                        MAP AND DIRECTIONS 
+                            <h2 className='remAsub'>
+                                MAP AND DIRECTIONS
                             </h2>
                             <p className='remAdesc'>
                                 Remera Street <br />
@@ -82,22 +82,22 @@ class MIKRemera extends Component {
                                 Remera Street <br />
                             </p>
                             <button>GET DIRECTIONS</button>
-                </div>
+                        </div>
                         <div className='remA5'>
-                        <div style={{ height: '300px', width: '50%', marginLeft:'30px', marginTop:'30px', border: '2px solid black' }}>
-            <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyCMRJ7kiGqluy7WJRc43vd6LxyvOtt_6OE'}}
-            defaultCenter={this.props.center}
-            defaultZoom={this.props.zoom}
-            >
-            <AnyReactComponent
-                lat={-1.948840}
-                lng={30.077600}
-                text={'MADE IN KIGALI'}
-            />
-            </GoogleMapReact>
-      </div>
-                </div>
+                            <div style={{ height: '25vw', width: 'inherit', border: '2px solid black' }}>
+                                <GoogleMapReact
+                                    bootstrapURLKeys={{ key: 'AIzaSyCMRJ7kiGqluy7WJRc43vd6LxyvOtt_6OE' }}
+                                    defaultCenter={this.props.center}
+                                    defaultZoom={this.props.zoom}
+                                >
+                                    <AnyReactComponent
+                                        lat={-1.948840}
+                                        lng={30.077600}
+                                        text={'MADE IN KIGALI'}
+                                    />
+                                </GoogleMapReact>
+                            </div>
+                        </div>
                         <div className='remA6'>
                             This is A desc
                 </div>

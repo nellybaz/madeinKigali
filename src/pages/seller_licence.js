@@ -24,14 +24,14 @@ class SellerLicence extends Component {
                 <Header />
                 <section>
 
-                    <div className="top-bar">
+                    <div className="licences-top-bar">
 
-                        <Link to={BuyerLicence}>Buyer Licence Agreement</Link>
+                        <Link to={'/dev/buyer_licence'}>Buyer Licence Agreement</Link>
                         <Link className="_active" to={'#'}>Seller Licence Agreement</Link>
 
                     </div>
 
-                    <div className="terms">
+                    <div className="licences-terms">
                         <h1>Seller License Agreement</h1>
 
                         <p>

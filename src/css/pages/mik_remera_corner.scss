@@ -19,7 +19,7 @@
         display: grid;
         grid-template-columns: 30vw 30vw 30vw;
         grid-column-gap: 1vw;;
-        grid-template-rows: auto 20vw 20vw;
+        grid-template-rows: auto auto 20vw;
         grid-row-gap:1vw;;
 
         .remA1{
@@ -52,6 +52,7 @@
                 font-weight: bold;
                 font-family:WarsawGothicE;
                 letter-spacing: 0.5vw;
+                height: 25vw;
         }
         .remAdesc{
             width: inherit;
@@ -62,6 +63,9 @@
         }
         .remA3, .remA4{
             background-color: gainsboro;;
+            height: 30vw;
+            padding: 1vw;
+            // border: 1px solid black;
         }
         .remA7{
             grid-column-start: 2;

@@ -26,8 +26,8 @@
   -ms-grid-columns: 30vw 30vw 30vw;
       grid-template-columns: 30vw 30vw 30vw;
   grid-column-gap: 1vw;
-  -ms-grid-rows: auto 20vw 20vw;
-      grid-template-rows: auto 20vw 20vw;
+  -ms-grid-rows: auto auto 20vw;
+      grid-template-rows: auto auto 20vw;
   grid-row-gap: 1vw;
 }
 
@@ -68,6 +68,7 @@
   font-weight: bold;
   font-family: WarsawGothicE;
   letter-spacing: 0.5vw;
+  height: 25vw;
 }
 
 .remContainer .remA .remAdesc {
@@ -80,6 +81,8 @@
 
 .remContainer .remA .remA3, .remContainer .remA .remA4 {
   background-color: gainsboro;
+  height: 30vw;
+  padding: 1vw;
 }
 
 .remContainer .remA .remA7 {
