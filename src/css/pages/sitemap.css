@@ -27,7 +27,7 @@ section hr {
   margin: 0.75vw auto;
 }
 
-section .container {
+section .sitemap-container {
   padding: 0;
   margin: auto 0.5vw;
   display: -webkit-box;
@@ -35,7 +35,7 @@ section .container {
   display: flex;
 }
 
-section .container .col {
+section .sitemap-container .sitemap-col {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -43,28 +43,29 @@ section .container .col {
   margin: 0;
 }
 
-section .container .col .categ1 {
+section .sitemap-container .sitemap-col .sitemap-categ1 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-section .container .col .categ1 .category-name {
+section .sitemap-container .sitemap-col .sitemap-categ1 .sitemap-category-name {
   margin: 0;
   font-size: 1.2vw;
   padding: 1vw 0;
 }
 
-section .container .col .categ1 li {
+section .sitemap-container .sitemap-col .sitemap-categ1 li {
   list-style: none;
 }
 
-section .container .col .categ1 li a {
+section .sitemap-container .sitemap-col .sitemap-categ1 li a {
   text-decoration: underline;
   font-size: 1vw;
+  color: black;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   section {
     padding-top: 1vw;
     width: 90vw;
@@ -76,7 +77,7 @@ section .container .col .categ1 li a {
   section hr {
     height: 0.5vw;
   }
-  section .container {
+  section .sitemap-container {
     padding: 0;
     margin: auto 0.5vw;
     display: -webkit-box;
@@ -85,23 +86,23 @@ section .container .col .categ1 li a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  section .container .col {
+  section .sitemap-container .sitemap-col {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 0  5vw 0 0;
     margin: 0;
   }
-  section .container .col .categ1 {
+  section .sitemap-container .sitemap-col .sitemap-categ1 {
     width: 30vw;
     padding-bottom: 2vw;
   }
-  section .container .col .categ1 .category-name {
+  section .sitemap-container .sitemap-col .sitemap-categ1 .sitemap-category-name {
     margin: 0;
     font-size: 3vw;
     padding: 2vw 0;
   }
-  section .container .col .categ1 li a {
+  section .sitemap-container .sitemap-col .sitemap-categ1 li a {
     font-size: 2.5vw;
   }
 }
@@ -110,7 +111,6 @@ section .container .col .categ1 li a {
   section {
     padding-top: 1vw;
     width: 43vw;
-    border: 1px solid black;
     margin: auto;
   }
   section .sitemap-title {
@@ -124,27 +124,27 @@ section .container .col .categ1 li a {
     background-color: black;
     margin: 0.25vw auto;
   }
-  section .container {
+  section .sitemap-container {
     margin: auto 0.1vw;
   }
-  section .container .col {
+  section .sitemap-container .sitemap-col {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 0  2.5vw 0 0;
     margin: 0;
   }
-  section .container .col .categ1 {
+  section .sitemap-container .sitemap-col .sitemap-categ1 {
     width: 7vw;
   }
-  section .container .col .categ1 .category-name {
+  section .sitemap-container .sitemap-col .sitemap-categ1 .sitemap-category-name {
     font-size: 0.7vw;
     padding: 1vw 0;
   }
-  section .container .col .categ1 li {
+  section .sitemap-container .sitemap-col .sitemap-categ1 li {
     list-style: none;
   }
-  section .container .col .categ1 li a {
+  section .sitemap-container .sitemap-col .sitemap-categ1 li a {
     text-decoration: underline;
     font-size: 0.5vw;
   }
