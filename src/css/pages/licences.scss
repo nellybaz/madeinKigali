@@ -15,20 +15,22 @@ section{
         border: 0.1vw solid gray;
         padding:  1vw 7.5vw;
         font-weight: bold;
-
-        ._active{
-            color: red;
-        }
+        text-decoration: none;
+        color: black;
+    }
+    ._active{
+        color: #ff6666;
     }
     
 }
 .licences-terms{
     text-align: left;
+    padding-top: 1vw;
     h1{
         text-align: left;
         width: 60vw;
         padding-left: 0.5vw;
-        font-size: 2.5vw;
+        font-size: 1.5vw;
     }
     p{
         width: 60vw;
@@ -44,9 +46,12 @@ section{
         font-size: 5vw;
         padding: 1vw;
     }
+    p{
+        font-size: 1.2vw;
+    }
 }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     section{
         width: 80vw;
         margin: auto;
@@ -60,31 +65,29 @@ section{
         
         a{
             border: 0.1vw solid gray;
-            padding:  1vw 1vw;
+            padding:  1vw 2.5vw;
             font-weight: bold;
             text-align: center;
-    
-            ._active{
-                color: red;
-            }
+
         }
+        
         
     }
     .licences-terms{
-        text-align: left;
+        // text-align: left;
         h1{
-            font-size: 5vw;
+            font-size: 2.5vw;
             font-weight: bold;
             text-align:justify;
             width: 80vw;
             padding-left: 0.5vw ;
-            margin: 1vw 2vw;
+            margin: 1vw auto;
         }
         p{
             width: 80vw;
             text-align: justify;
             padding: 1vw 0;
-            font-size: 3vw;
+            font-size: 2.5vw;
         }
         h3{
             font-size: 4vw;
@@ -114,20 +117,14 @@ section{
         a{
             border: 0.1vw solid gray;
             padding:  1vw 2.5vw;
-            font-weight: bold;
-            text-align: center;
             font-size: 1.2vw;
-    
-            ._active{
-                color: red;
-            }
         }
         
     }
     .licences-terms{
         text-align: left;
         h1{
-            font-size: 1.2vw;
+            font-size: 1vw;
             font-weight: bold;
             text-align:justify;
             width: 40vw;

@@ -17,88 +17,91 @@
 *, *::before, *::after {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-            
   }
-  .title{
+  .kfw-title{
     padding: 2vw;
     font-family: 'WarsawGothic'!important;
     letter-spacing: 1vw;
+    text-align: center;
 }
-.mid-title{
+.kfw-mid-title{
     font-size: 1.5vw;
     padding: 1vw;
     font-family: 'WarsawGothic';
+    font-weight: normal;
+    letter-spacing: 0.5vw;
+
 }
-.sub-title{
+.kfw-sub-title{
     font-size: 2vw;
     padding: 1vw;
-    font-family: 'WarsawGothic';
-    letter-spacing: 0.72vw;
+    font-weight: normal;
 }
-hr{
-    margin: 2vw auto;
-    width: 3vw;
-    background-color: white;
+.kfw-hr{
+    margin: 1vw auto;
+    width: 5vw;
+    background-color:gainsboro;
+    height: 0.2vw;
+    border: 1px solid gainsboro;
 }
 p{
     width:60vw;
     margin: auto;
     text-align: center;
     padding: 1vw;
+    line-height:  2vw;
 }
 
   @media only screen and (max-width: 900px) {
-  .title{
+  .kfw-title{
       padding: 2vw;
       font-family: 'WarsawGothic';
-      letter-spacing: 1.5vw;
+      letter-spacing: 2vw;
   }
-  .mid-title{
-      font-size: 5vw;
+  .kfw-mid-title{
+      font-size: 3vw;
       padding: 1vw;
       font-family: 'WarsawGothic';
   }
-  .sub-title{
-      font-size: 7.5vw;
+  .kfw-sub-title{
+      font-size: 4vw;
       padding: 1vw;
-      font-family: 'WarsawGothic';
-      letter-spacing: 0.7vw;
   }
-  hr{
-      margin: 2vw auto;
-      width: 3vw;
-      background-color: white;
-  }
+  .kfw-hr{
+    margin: 2vw auto;
+    width: 10vw;
+    height: 0.5vw;
+}
   p{
       width:60vw;
       margin: auto;
       text-align: center;
       padding: 1vw;
+      font-size: 15px;
+      line-height:  20px;
   }
 
 }
 @media only screen and (min-width: 1600px) {
-    .title{
-        padding: 2vw;
-        font-family: 'WarsawGothic';
-        letter-spacing: 0.94vw;
-        font-size: 2vw;
-    }
-    .mid-title{
-        font-size: 2vw;
-        padding: 1vw;
-        font-family: 'WarsawGothic';
-    }
-    .sub-title{
-        font-size: 2vw;
+    .kfw-title{
         padding: 1vw;
         font-family: 'WarsawGothic';
         letter-spacing: 0.5vw;
+        font-size: 1.5vw;
     }
-    hr{
-        margin: 2vw auto;
-        width: 3vw;
-        background-color: white;
+    .kfw-mid-title{
+        font-size: 1.2vw;
+        padding: 1vw;
+        font-family: 'WarsawGothic';
+    }
+    .kfw-sub-title{
+        font-size: 1.2vw;
+        padding: 1vw;
+    }
+    .kfw-hr{
+        margin: 0.5vw auto;
+        width: 2.5vw;
+        height: 0.2vw;
     }
     p{
         width:36vw;
@@ -106,5 +109,6 @@ p{
         text-align: center;
         padding: 1vw;
         font-size: 0.7vw;
+        line-height:  1vw;
     }
 }

@@ -24,17 +24,17 @@ class MIKKFW extends Component {
             <div style={{ background: 'white' }}>
                 <Header />
                 <section>
-                    <h1 className="title">
+                    <h1 className="kfw-title">
                     MADE IN KIGALI
                     </h1>
-                    <h1 className="mid-title">
+                    <h1 className="kfw-mid-title">
                     SUPPORTS
                     </h1>
-                    <h1 className="sub-title">
+                    <h1 className="kfw-sub-title">
                     KIGALI FASHION WEEK
                     </h1>
 
-                    <hr />
+                    <hr className="kfw-hr"/>
                     
 
                     <p>
