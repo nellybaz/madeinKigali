@@ -18,94 +18,230 @@
 .remContainer .remA {
   padding-top: 0;
   background-color: white;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: inherit;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30vw 30vw 30vw;
       grid-template-columns: 30vw 30vw 30vw;
   grid-column-gap: 1vw;
-  -ms-grid-rows: auto auto 20vw;
-      grid-template-rows: auto auto 20vw;
+  -ms-grid-rows: auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
   grid-row-gap: 1vw;
 }
 
-.remContainer .remA .remA1 {
+.remContainer .remA img {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: inherit;
 }
 
-.remContainer .remA .remA2 {
-  background-color: gainsboro;
+.remContainer .remA .remA-desc {
+  background-color: ghostwhite;
 }
 
-.remContainer .remA .remA2 .remA2title {
+.remContainer .remA .remA-desc .remA-desc-title {
   padding-top: 7.5vw;
   padding-bottom: 2vw;
   margin: auto;
   text-align: center;
   font-size: 2.5vw;
   font-weight: bold;
-  font-family: WarsawGothicE;
-  letter-spacing: 0.5vw;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 0.2vw;
 }
 
-.remContainer .remA .remA2 .remA2text {
+.remContainer .remA .remA-desc .remA-desc-text {
   width: inherit;
   font-size: 1.5vw;
-  font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.remContainer .remA .remAsub {
-  padding: 1vw;
-  font-size: 1.8vw;
-  font-weight: bold;
-  font-family: WarsawGothicE;
-  letter-spacing: 0.5vw;
+.remContainer .remA .remB {
+  background-color: ghostwhite;
+  width: 30vw;
   height: 25vw;
+  padding-left: 2vw;
 }
 
-.remContainer .remA .remAdesc {
-  width: inherit;
-  text-align: left;
-  font-size: 1.2vw;
+.remContainer .remA .remB .remB-sub-title {
+  font-size: 1.5vw;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 1vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-.remContainer .remA .remA3, .remContainer .remA .remA4 {
-  background-color: gainsboro;
+.remContainer .remA .remB .remB-hr {
+  width: 4vw;
+  height: 0.5vw;
+  background-color: white;
+  border: 1px solid white;
+  margin: 1vw 0;
+}
+
+.remContainer .remA .remB .remB-desc {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  text-align: justify;
+  font-weight: bold;
+  padding: 0;
+}
+
+.remContainer .remA .remC {
+  background-color: ghostwhite;
+  width: 30vw;
   height: 30vw;
-  padding: 1vw;
+  padding: 0 2vw;
+  border: 1px solid black;
 }
 
-.remContainer .remA .remA7 {
+.remContainer .remA .remC .remC-sub-title {
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding-top: 1vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.remContainer .remA .remC .remC-text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  text-align: left;
+  padding: 0;
+  height: 30vw;
+}
+
+.remContainer .remA .remC-slides {
   -ms-grid-column: 2;
       grid-column-start: 2;
   grid-column-end: 4;
+  border: 1px solid black;
+  height: 30vw;
 }
 
-.remContainer .remB {
+.remContainer .remA .remD {
+  margin: 0;
+  width: 92vw;
+  padding-left: 2vw;
+  background-color: ghostwhite;
+}
+
+.remContainer .remA .remD .remD-top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.remContainer .remA .remD .remD-top-bar .remD-sub-title {
+  padding: 0;
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding-top: 1vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.remContainer .remA .remD .remD-top-bar .remD-button {
+  font-size: 1vw;
+  height: 2.5vw;
+  margin-top: 1.2vw;
+  margin-left: 62.5vw;
+}
+
+.remContainer .remA .remD .rem-hr {
+  width: 4vw;
+  height: 0.5vw;
   background-color: white;
+  border: 1px solid white;
+  margin: 1vw 0 0  0;
+}
+
+.remContainer .remA .remD .remD-brands {
+  height: 10vw;
+  border: 1px solid black;
+  padding: 0;
+}
+
+.remContainer .remA .remD .remD-sub-title {
+  padding: 0;
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding-top: 1vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.remContainer .remA .remD .remD-store-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.remContainer .remA .remD .remD-store-services .store-service {
+  background-color: white;
+  text-align: center;
+  font-size: 1.25vw;
+  padding: 1vw;
+  margin: 1vw;
+}
+
+.remContainer .remA .remD .drop-it {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  margin-left: -2vw;
+  padding: 1vw;
+}
+
+.remContainer .remA .remD .drop-it .drop-it-title {
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+.remContainer .remA .remD .drop-it .drop-it-text {
+  padding: 0;
+}
+
+.remContainer .remA .remD .drop-it .drop-it-text button {
+  margin: 0 1vw;
+}
+
+.remContainer .remA .remD .remE {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25vw 25vw 25vw;
-      grid-template-columns: 25vw 25vw 25vw;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
   grid-column-gap: 1vw;
   grid-row-gap: 1vw;
-  margin: auto;
 }
 
-.remContainer .remB .remBBox {
+.remContainer .remA .remD .remE .remEBox {
+  background-color: white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -114,19 +250,69 @@
   height: fit-content;
 }
 
-.remContainer .remB .remBBox .remBimg {
+.remContainer .remA .remD .remE .remEBox .remEimg {
   height: 17.5vw;
-  width: 25vw;
+  width: 27vw;
 }
 
-.remContainer .remB .remBBox .remBdesc {
+.remContainer .remA .remD .remE .remEBox .remEdesc {
   padding: 1vw;
 }
 
-.remContainer .remB .remBBox .remBdesc h5 {
+.remContainer .remA .remD .remE .remEBox .remEdesc h5 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 1vw;
+}
+
+.remContainer .remA .remD .food-drink {
+  height: 10vw;
+  border: 1px solid black;
+}
+
+.remContainer .remA .remD .other-stores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.remContainer .remA .remD .other-stores .rem-other-store {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid black;
+  background-color: white;
+  margin: 0 0.5vw;
+}
+
+.remContainer .remA .remD .other-stores .rem-other-store .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.remContainer .remA .remD .other-stores .rem-other-store .label i {
+  font-size: 3vw;
+}
+
+.remContainer .remA .remD .other-stores .rem-other-store .label p {
+  line-height: 1.3vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+}
+
+.remContainer .remA .remD .other-stores .rem-other-store hr {
+  width: inherit;
+}
+
+.remContainer .remA .remD .other-stores .rem-other-store i {
+  font-size: 25vw;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=mik_remera_corner.css.map */

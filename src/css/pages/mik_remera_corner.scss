@@ -15,85 +15,238 @@
     .remA{
         padding-top: 0;
         background-color: white;
-        width: fit-content;
+        width: inherit;
         display: grid;
         grid-template-columns: 30vw 30vw 30vw;
         grid-column-gap: 1vw;;
-        grid-template-rows: auto auto 20vw;
+        grid-template-rows: auto auto auto auto auto;
         grid-row-gap:1vw;;
 
-        .remA1{
+        img{
             grid-column-start: 1;
             grid-column-end: 3;
-            height: fit-content;
+            height: inherit;
         }
-        .remA2{
-            background-color:  gainsboro;
-            .remA2title{
+        .remA-desc{
+            background-color:  ghostwhite;
+            .remA-desc-title{
                 padding-top: 7.5vw;
                 padding-bottom: 2vw;
                 margin: auto;
                 text-align: center;
                 font-size: 2.5vw;
                 font-weight: bold;
-                font-family:WarsawGothicE;
-                letter-spacing: 0.5vw;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                letter-spacing: 0.2vw;
             }
-            .remA2text{
+            .remA-desc-text{
                 width: inherit;
                 font-size: 1.5vw;
-                font-weight: bold;
                 font-family: Verdana, Geneva, Tahoma, sans-serif
             }
         }
-        .remAsub{
-            padding: 1vw;
-                font-size: 1.8vw;
-                font-weight: bold;
-                font-family:WarsawGothicE;
-                letter-spacing: 0.5vw;
-                height: 25vw;
-        }
-        .remAdesc{
-            width: inherit;
-            text-align: left;
-            font-size: 1.2vw;
-                font-weight: bold;
-                font-family: Verdana, Geneva, Tahoma, sans-serif
-        }
-        .remA3, .remA4{
-            background-color: gainsboro;;
-            height: 30vw;
-            padding: 1vw;
-            // border: 1px solid black;
-        }
-        .remA7{
-            grid-column-start: 2;
-            grid-column-end: 4;
-        }        
-    }
-    .remB{
-        background-color: white;
-        width: fit-content;
-        display: grid;
-        grid-template-columns: 25vw 25vw 25vw;
-        grid-column-gap: 1vw;
-        grid-row-gap:1vw;
 
-        margin: auto;
-        .remBBox{
-            width: fit-content;
-            height: fit-content;
-            .remBimg{
-                height: 17.5vw;
-                width: 25vw;
+        .remB{
+            background-color:  ghostwhite;
+            width: 30vw;
+            height: 25vw;
+            padding-left: 2vw; 
+            .remB-sub-title{
+                font-size: 1.5vw;
+                font-weight: bold;
+                padding-top: 1vw;
+                height: fit-content;
+                width: fit-content;
             }
-            .remBdesc{
-                padding: 1vw;
-                h5{width: fit-content;
+
+            .remB-hr{
+                width: 4vw;
+                height: 0.5vw;
+                background-color: white;
+                border: 1px solid white;
+                margin: 1vw 0;
+            }
+            .remB-desc{
+                width: fit-content;
+                margin: 0;
+                text-align: justify;
+                font-weight: bold;
+                padding: 0;
+            }
+        }
+
+        .remC{
+            background-color:  ghostwhite;
+            width: 30vw;
+            height: 30vw;
+            padding: 0 2vw; 
+            border: 1px solid black;
+            .remC-sub-title{
+                font-size: 1.5vw;
+                font-weight: bold;
+                padding-top: 1vw;
+                height: fit-content;
+                width: fit-content;
+            }
+            .remC-text{
+                width: fit-content;
+                margin: 0;
+                text-align: left;
+                padding: 0;
+                height: 30vw;
+
+            }
+           
+        }
+        .remC-slides{
+            grid-column-start:2;
+            grid-column-end: 4;
+            border: 1px solid black;
+            height: 30vw;
+
+        }
+
+        .remD{
+            margin: 0;
+            // border: 1px solid black;
+            width: 92vw;
+            padding-left: 2vw; 
+            background-color: ghostwhite;
+
+            .remD-top-bar{
+                display: flex;
+
+                .remD-sub-title{
+                    padding: 0;
+                    font-size: 1.5vw;
+                font-weight: bold;
+                padding-top: 1vw;
+                height: fit-content;
+                width: fit-content;
+
+                }
+                
+                .remD-button{
                     font-size: 1vw;
+                    height: 2.5vw;
+                    margin-top: 1.2vw;
+                    margin-left: 62.5vw
                 }
             }
-        }  
+            .rem-hr{
+                width: 4vw;
+                height: 0.5vw;
+                background-color: white;
+                border: 1px solid white;
+                margin: 1vw 0 0  0;
+                }
+            .remD-brands{
+                height: 10vw;
+                border: 1px solid black;
+                padding: 0;
+            }
+            .remD-sub-title{
+                padding: 0;
+                    font-size: 1.5vw;
+                font-weight: bold;
+                padding-top: 1vw;
+                height: fit-content;
+                width: fit-content;
+
+            }
+
+            .remD-store-services{
+                display: flex;
+                .store-service{
+                    background-color: white;
+                    text-align: center;
+                    font-size: 1.25vw;
+                    padding: 1vw ;
+                    margin: 1vw;
+
+                }
+            }
+
+            .drop-it{
+                background-color: black;
+                color: white;
+                text-align: center;
+                font-size: 1vw;
+                margin-left: -2vw;
+                padding: 1vw;
+                .drop-it-title{
+                    font-size: 1.2vw;
+                    font-weight: bold;
+                }
+                .drop-it-text{
+                    padding: 0;
+                    button{
+                        margin: 0 1vw;
+                    }
+
+                }
+            }
+            .remE{
+                
+                width: fit-content;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-column-gap: 1vw;
+                grid-row-gap:1vw;
+        
+                .remEBox{
+                    background-color: white;
+                    width: fit-content;
+                    height: fit-content;
+                    .remEimg{
+                        height: 17.5vw;
+                        width: 27vw;
+                    }
+                    .remEdesc{
+                        padding: 1vw;
+                        h5{width: fit-content;
+                            font-size: 1vw;
+                        }
+                    }
+                }  
+            }
+            .food-drink{
+                height: 10vw;
+                border: 1px solid black;
+            }
+            .other-stores{
+                display: flex;
+                .rem-other-store{
+                    width: fit-content;
+                    border: 1px solid black;
+                    background-color: white;
+                    margin: 0 0.5vw;
+                    .label{
+                        display: flex;
+                        width: fit-content;
+                        i{
+                            font-size: 3vw;
+                        }
+                        p{
+                            line-height: 1.3vw;
+                        width: fit-content;
+                        text-align: left;
+                        }
+                        
+                    }
+                    hr{
+                        width: inherit;
+                    }
+                    i{
+                        font-size: 25vw;
+                        opacity: 0.5;
+
+                    }
+                }
+            }
+
+        }
+               
     }
+
 }

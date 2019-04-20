@@ -41,30 +41,35 @@ class MIKRemera extends Component {
         return (
             <div style={{ background: 'white' }}>
                 <Header />
+
+                {/* section containing everything */}
+
                 <section className="remContainer">
 
-                    {/* External big container */}
                     <section className="remA">
-                        <div className='remA1'>
-                            <img style={{ width: '100%', objectFit: 'contain' }} src={rem} />
 
-                        </div>
-                        <div className='remA2'>
-                            <h1 className='remA2title'>
+                        <img style={{ width: '100%', objectFit: 'contain' }} src={rem} />
+                        {/* First row of a grid */}
+                        <div className='remA-desc'>
+                            <h1 className='remA-desc-title'>
                                 TOPSHOP AT OXFORD CIRCUS
                         </h1>
-                            <p className='remA2text'>
+                            <p className='remA-desc-text'>
                                 214 OXFORD STREET, <br />
                                 LONDON, W1C 1DA <br /><br />
                                 03448 487487
                         </p>
 
                         </div>
-                        <div className='remA3'>
-                            <h2 className='remAsub'>
+
+                        {/* Second row of a grid */}
+                        <div className='remB'>
+                            <h2 className='remB-sub-title'>
                                 OPENING HOURS
+                                <hr className="remB-hr" />
                             </h2>
-                            <p className='remAdesc'>
+
+                            <p className='remB-desc'>
                                 Mon - Fri: 09.30 - 22.00 <br />
                                 Sat: 09.00 - 22.00 <br />
                                 Sun: 11.30 - 18.00 <br />
@@ -72,19 +77,20 @@ class MIKRemera extends Component {
                         </div>
 
 
-                        <div className='remA4'>
-                            <h2 className='remAsub'>
+                        <div className='remB'>
+                            <h2 className='remB-sub-title'>
                                 MAP AND DIRECTIONS
+                                <hr className="remB-hr" />
                             </h2>
-                            <p className='remAdesc'>
+                            <p className='remB-desc'>
                                 Remera Street <br />
                                 Remera Street<br />
                                 Remera Street <br />
                             </p>
                             <button>GET DIRECTIONS</button>
                         </div>
-                        <div className='remA5'>
-                            <div style={{ height: '25vw', width: 'inherit', border: '2px solid black' }}>
+                        <div className='remB-map' >
+                            <div style={{ height: '25vw', width: 'inherit', }}>
                                 <GoogleMapReact
                                     bootstrapURLKeys={{ key: 'AIzaSyCMRJ7kiGqluy7WJRc43vd6LxyvOtt_6OE' }}
                                     defaultCenter={this.props.center}
@@ -98,81 +104,210 @@ class MIKRemera extends Component {
                                 </GoogleMapReact>
                             </div>
                         </div>
-                        <div className='remA6'>
-                            This is A desc
-                </div>
-                        <div className='remA7'>
-                            This is A desc
-                </div>
+
+                        {/* Third row of a grid */}
+                        <div className='remC'>
+                            <h2 className='remC-sub-title'>
+                                MORE THAN JUST A STORE
+                        </h2>
+
+                            <p className='remC-text'>
+                                WIth three floors and 90,000 sq ft - that's the equivalent of 1,800 Kigali busses standing end to end - MIK Remera Corner  is more than just your average.
+                        <br />
+                                WIth three floors and 90,000 sq ft - that's the equivalent of 1,800 Kigali busses standing end to end - MIK Remera Corner  is more than just your average.
+                        </p>
+                        </div>
+
+                        <div className='remC-slides'>
+                            Sliding Images
+                        </div>
+
+                        <div className='remD'>
+                            <div className='remD-top-bar'>
+                                <h2 className='remD-sub-title'>
+                                    BRANDS AVAILABLE
+                        <hr className='rem-hr' />
+                                </h2>
+                                <button className='remD-button'>SHOP ALL BRANDS</button>
+                            </div>
+
+                            <div className='remD-brands'>
+                                {/* Imgafes for brands available */}
+
+                            </div>
+
+                            <h2 className='remD-sub-title'>
+                                STORE SERVICES
+                            <hr className='rem-hr' />
+                            </h2>
+                            <div className='remD-store-services'>
+                                <h3 className='store-service'>MIK PERSONAL SHOPPING</h3>
+                                <h3 className='store-service'>CLICK AND COLLECT</h3>
+                                <h3 className='store-service'>STUDENT DISCOUNT 10% OFF</h3>
+                                <h3 className='store-service'>ORDER IN STORE</h3>
+                                <h3 className='store-service'>IN-STORE STYLIST</h3>
+                            </div>
+
+                            <div className='drop-it'>
+
+                                <h2 className='drop-it-title'><strong style={{fontSize :'2.5vw',}}>Drop</strong><em style={{fontSize :'2.5vw', paddingRight:'2vw',}}>it</em> YOU SHOP. YOU DROP. WE DELIVER.</h2>
+
+                                <p className='drop-it-text'>
+                                    Visit our Remera Corner store and have your shoppin gdelivered home
+
+                        <button>DOWNLOAD THE APP NOW</button>
+                                </p>
+
+                            </div>
+
+                            <h2 className='remD-sub-title'>
+                                BEAUTY SERVICES
+                        <hr className='rem-hr' />
+                            </h2>
+
+                            <section className="remE">
+                                <div className='remEBox'>
+                                    <div className='remEimg'>
+                                        {/* Image */}
+                                    </div>
+                                    <div className='remEdesc'>
+                                        <h5>HERSHESONS</h5>
+                                        <h7>Blow Dry Bar</h7> <br />
+                                        0207 927 7888
+                            </div>
+                                </div>
+                                <div className='remEBox'>
+                                    <div className='remEimg'>
+                                        {/* Image */}
+                                    </div>
+                                    <div className='remEdesc'>
+                                        <h5>HERSHESONS</h5>
+                                        <h7>Blow Dry Bar</h7> <br />
+                                        0207 927 7888
+                            </div>
+                                </div>
+                                <div className='remEBox'>
+                                    <div className='remEimg'>
+                                        {/* Image */}
+                                    </div>
+                                    <div className='remEdesc'>
+                                        <h5>HERSHESONS</h5>
+                                        <h7>Blow Dry Bar</h7> <br />
+                                        0207 927 7888
+                            </div>
+                                </div>
+                                <div className='remEBox'>
+                                    <div className='remEimg'>
+                                        {/* Image */}
+                                    </div>
+                                    <div className='remEdesc'>
+                                        <h5>HERSHESONS</h5>
+                                        <h7>Blow Dry Bar</h7> <br />
+                                        0207 927 7888
+                            </div>
+                                </div>
+                                <div className='remEBox'>
+                                    <div className='remEimg'>
+                                        {/* Image */}
+                                    </div>
+                                    <div className='remEdesc'>
+                                        <h5>HERSHESONS</h5>
+                                        <h7>Blow Dry Bar</h7> <br />
+                                        0207 927 7888
+                            </div>
+                                </div>
+                                <div className='remEBox'>
+                                    <div className='remEimg'>
+                                        {/* Image */}
+                                    </div>
+                                    <div className='remEdesc'>
+                                        <h5>HERSHESONS</h5>
+                                        <h7>Blow Dry Bar</h7> <br />
+                                        0207 927 7888
+                            </div>
+                                </div>
+
+
+                            </section>
+
+                            <h2 className='remD-sub-title'>
+                                FOOD AND DRINK SERVICES
+                        <hr className='rem-hr' />
+                            </h2>
+                            <div className='food-drink'>
+
+                                {/* Images for drinks brands */}
+
+                            </div>
+                            <h2 className='remD-sub-title'>
+                                OTHER STORES NEARBY...
+                        <hr className='rem-hr' />
+                            </h2>
+                            <div className='other-stores'>
+                                <div className='rem-other-store'>
+                                    <div className='other-store-map'>
+                                        <p className='label'>  
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <p >
+                                        <strong>Made In Kigali</strong><br />
+                                            Selfridges,<br />
+                                            400 Oxford St,<br />
+                                            Marylebone,<br />
+                                            London,<br />
+                                            W1A 1AB<br />
+                                        </p>
+                                           
+                                            </p>
+                                            <hr/>
+                                            <i class="fas fa-map-marked"></i>
+                                    </div>
+                                </div>
+                                <div className='rem-other-store'>
+                                    <div className='other-store-map'>
+                                        <p className='label'>  
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <p >
+                                        <strong>Made In Kigali</strong><br />
+                                            Selfridges,<br />
+                                            400 Oxford St,<br />
+                                            Marylebone,<br />
+                                            London,<br />
+                                            W1A 1AB<br />
+                                        </p>
+                                           
+                                            </p>
+                                            <hr/>
+                                            <i class="fas fa-map-marked"></i>
+                                    </div>
+                                </div>
+                                <div className='rem-other-store'>
+                                    <div className='other-store-map'>
+                                        <p className='label'>  
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <p >
+                                        <strong>Made In Kigali</strong><br />
+                                            Selfridges,<br />
+                                            400 Oxford St,<br />
+                                            Marylebone,<br />
+                                            London,<br />
+                                            W1A 1AB<br />
+                                        </p>
+                                           
+                                            </p>
+                                            <hr/>
+                                            <i class="fas fa-map-marked"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
                     </section>
 
 
 
 
-                    <section className="remB">
-                        <div className='remBBox'>
-                            <div className='remBimg'>
-                                {/* Image */}
-                            </div>
-                            <div className='remBdesc'>
-                                <h5>HERSHESONS</h5>
-                                <h7>Blow Dry Bar</h7> <br />
-                                0207 927 7888
-                            </div>
-                        </div>
-                        <div className='remBBox'>
-                            <div className='remBimg'>
-                                {/* Image */}
-                            </div>
-                            <div className='remBdesc'>
-                                <h5>HERSHESONS</h5>
-                                <h7>Blow Dry Bar</h7> <br />
-                                0207 927 7888
-                            </div>
-                        </div>
-                        <div className='remBBox'>
-                            <div className='remBimg'>
-                                {/* Image */}
-                            </div>
-                            <div className='remBdesc'>
-                                <h5>HERSHESONS</h5>
-                                <h7>Blow Dry Bar</h7> <br />
-                                0207 927 7888
-                            </div>
-                        </div>
-                        <div className='remBBox'>
-                            <div className='remBimg'>
-                                {/* Image */}
-                            </div>
-                            <div className='remBdesc'>
-                                <h5>HERSHESONS</h5>
-                                <h7>Blow Dry Bar</h7> <br />
-                                0207 927 7888
-                            </div>
-                        </div>
-                        <div className='remBBox'>
-                            <div className='remBimg'>
-                                {/* Image */}
-                            </div>
-                            <div className='remBdesc'>
-                                <h5>HERSHESONS</h5>
-                                <h7>Blow Dry Bar</h7> <br />
-                                0207 927 7888
-                            </div>
-                        </div>
-                        <div className='remBBox'>
-                            <div className='remBimg'>
-                                {/* Image */}
-                            </div>
-                            <div className='remBdesc'>
-                                <h5>HERSHESONS</h5>
-                                <h7>Blow Dry Bar</h7> <br />
-                                0207 927 7888
-                            </div>
-                        </div>
-
-
-                    </section>
                 </section>
 
 

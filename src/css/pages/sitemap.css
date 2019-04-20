@@ -76,8 +76,10 @@ section .sitemap-container .sitemap-col .sitemap-categ1 li a {
   }
   section hr {
     height: 0.5vw;
+    margin: auto 0;
   }
-  section .sitemap-container {
+  section 3
+.sitemap-container {
     padding: 0;
     margin: auto 0.5vw;
     display: -webkit-box;
@@ -86,23 +88,27 @@ section .sitemap-container .sitemap-col .sitemap-categ1 li a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  section .sitemap-container .sitemap-col {
+  section 3
+.sitemap-container .sitemap-col {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding: 0  5vw 0 0;
     margin: 0;
   }
-  section .sitemap-container .sitemap-col .sitemap-categ1 {
+  section 3
+.sitemap-container .sitemap-col .sitemap-categ1 {
     width: 30vw;
     padding-bottom: 2vw;
   }
-  section .sitemap-container .sitemap-col .sitemap-categ1 .sitemap-category-name {
+  section 3
+.sitemap-container .sitemap-col .sitemap-categ1 .sitemap-category-name {
     margin: 0;
     font-size: 3vw;
     padding: 2vw 0;
   }
-  section .sitemap-container .sitemap-col .sitemap-categ1 li a {
+  section 3
+.sitemap-container .sitemap-col .sitemap-categ1 li a {
     font-size: 2.5vw;
   }
 }
