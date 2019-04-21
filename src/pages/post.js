@@ -163,6 +163,8 @@ class Post extends Component {
     }
 
     async componentDidMount() {
+        // console.log(this.props.match.params.blog_id);
+        
         window.scrollTo(0,0);
         this.setState({
             isLoading: true,
@@ -171,8 +173,8 @@ class Post extends Component {
 
             let data = JSON.stringify({
                 "tag": "get_blog",
-                "article_no": 1
-
+                "article_no": this.props.match.params.blog_id
+ 
             })
 
             const res = await fetch('https://madeinkigali.com/API/products/index.php', {

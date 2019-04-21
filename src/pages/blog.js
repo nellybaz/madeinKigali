@@ -40,88 +40,88 @@ class Blog extends Component {
             data_display_limit: 8,
             time_to_add: true,
             blog_body_data: [
-                {
-                    id: 1,
-                    img: header1,
-                    title: 'Blog Title One',
-                },
+                // {
+                //     id: 1,
+                //     img: header1,
+                //     title: 'Blog Title One',
+                // },
 
-                {
-                    id: 2,
-                    img: bh2,
-                    title: 'Blog Title Two',
-                },
-                {
-                    id: 3,
-                    img: bh3,
-                    title: 'Blog Title Three',
-                },
-                {
-                    id: 4,
-                    img: bh4,
-                    title: 'Blog Title Four',
-                },
-                {
-                    id: 5,
-                    img: bh5,
-                    title: 'Blog Title Five',
-                },
-                {
-                    id: 6,
-                    img: bh6,
-                    title: 'Blog Title Six',
-                },
-                {
-                    id: 7,
-                    img: bh7,
-                    title: 'Blog Title Seven',
-                },
-                {
-                    id: 8,
-                    img: bh8,
-                    title: 'Blog Title Eight',
-                },
-                {
-                    id: 9,
-                    img: header1,
-                    title: 'Blog Title One',
-                },
+                // {
+                //     id: 2,
+                //     img: bh2,
+                //     title: 'Blog Title Two',
+                // },
+                // {
+                //     id: 3,
+                //     img: bh3,
+                //     title: 'Blog Title Three',
+                // },
+                // {
+                //     id: 4,
+                //     img: bh4,
+                //     title: 'Blog Title Four',
+                // },
+                // {
+                //     id: 5,
+                //     img: bh5,
+                //     title: 'Blog Title Five',
+                // },
+                // {
+                //     id: 6,
+                //     img: bh6,
+                //     title: 'Blog Title Six',
+                // },
+                // {
+                //     id: 7,
+                //     img: bh7,
+                //     title: 'Blog Title Seven',
+                // },
+                // {
+                //     id: 8,
+                //     img: bh8,
+                //     title: 'Blog Title Eight',
+                // },
+                // {
+                //     id: 9,
+                //     img: header1,
+                //     title: 'Blog Title One',
+                // },
 
-                {
-                    id: 10,
-                    img: bh2,
-                    title: 'Blog Title Two',
-                },
-                {
-                    id: 11,
-                    img: bh3,
-                    title: 'Blog Title Three',
-                },
-                {
-                    id: 12,
-                    img: bh4,
-                    title: 'Blog Title Four',
-                },
-                {
-                    id: 13,
-                    img: bh5,
-                    title: 'Blog Title Five',
-                },
-                {
-                    id: 14,
-                    img: bh6,
-                    title: 'Blog Title Six',
-                },
-                {
-                    id: 15,
-                    img: bh7,
-                    title: 'Blog Title Seven',
-                },
-                {
-                    id: 16,
-                    img: bh8,
-                    title: 'Blog Title Eight',
-                },
+                // {
+                //     id: 10,
+                //     img: bh2,
+                //     title: 'Blog Title Two',
+                // },
+                // {
+                //     id: 11,
+                //     img: bh3,
+                //     title: 'Blog Title Three',
+                // },
+                // {
+                //     id: 12,
+                //     img: bh4,
+                //     title: 'Blog Title Four',
+                // },
+                // {
+                //     id: 13,
+                //     img: bh5,
+                //     title: 'Blog Title Five',
+                // },
+                // {
+                //     id: 14,
+                //     img: bh6,
+                //     title: 'Blog Title Six',
+                // },
+                // {
+                //     id: 15,
+                //     img: bh7,
+                //     title: 'Blog Title Seven',
+                // },
+                // {
+                //     id: 16,
+                //     img: bh8,
+                //     title: 'Blog Title Eight',
+                // },
 
 
 
@@ -130,10 +130,7 @@ class Blog extends Component {
     }
 
 
-
-    async componentDidMount() {
-       
-        window.scrollTo(0,0);
+    async getAllBlogPost(){
         try {
 
             let data = JSON.stringify({
@@ -142,16 +139,23 @@ class Blog extends Component {
 
             })
 
-            fetch('http://madeinkigali.com/API/products/index.php', {
+          var res = await fetch('https://madeinkigali.com/API/products/index.php', {
                 method: 'post',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
                 body: `request=${data}`
-                // body: JSON.stringify({"tag":"get_blog", "article_no": 1})
-            }).then(res => res.json())
-                .then(res => console.log(res.result));
+               
+            });
+
+            var jsonRes = await res.json();
+            // console.log(jsonRes.result);
+            
+
+                this.setState({
+                    blog_body_data: jsonRes.result,
+                });
 
 
 
@@ -163,6 +167,13 @@ class Blog extends Component {
         } catch (e) {
             console.log(e);
         }
+    }
+
+    componentDidMount() {
+       
+        window.scrollTo(0,0);
+        this.getAllBlogPost();
+        
     }
 
 
@@ -210,16 +221,17 @@ class Blog extends Component {
     }
 
     holder = () => {
-
+        console.log(this.state.blog_body_data);
+        
 
         let BlogBodyHolder = []
 
-        for (let x = 0; x < this.state.data_display_limit; x++) {
+        for (let x = 0; x < this.state.blog_body_data.length; x++) {
             BlogBodyHolder.push(
                 <div className="blog-image" key={x}>
-                    <img src={this.state.blog_body_data[x].img} alt={this.state.blog_body_data[x].title} />
-                    <Link className="readmore-link" to={`post/${this.state.blog_body_data[x].id}{/${this.state.blog_body_data[x].title}}`} ><h3 className="blog-image-title">{this.state.blog_body_data[x].title}</h3></Link>
-                    <Link className="readmore-link" to={`post/${this.state.blog_body_data[x].id}{/${this.state.blog_body_data[x].title}}`}><p className="blog-read-more">READ MORE</p></Link>
+                    <img src={`https://madeinkigali.com/images/blog/${this.state.blog_body_data[x].article_image}`} alt={this.state.blog_body_data[x].article_name} />
+                    <Link className="readmore-link" to={`post/${this.state.blog_body_data[x].article_no}/${this.state.blog_body_data[x].article_name}`} ><h3 className="blog-image-title">{this.state.blog_body_data[x].article_name}</h3></Link>
+                    <Link className="readmore-link" to={`post/${this.state.blog_body_data[x].article_no}/${this.state.blog_body_data[x].article_name}`}><p className="blog-read-more">READ MORE</p></Link>
                 </div>
 
             )
@@ -244,7 +256,12 @@ class Blog extends Component {
 
                 <div className="body-container">
                     <div className="blog-body">
-                        {this.holder()}
+                        {
+                            this.state.blog_body_data.length > 0 ? this.holder() : 
+                            <div style={{ width: '100vw',  height: "100vh", display: "flex", alignItems: 'center', justifyContent: 'center' }}>
+                                <img style={{ width: '100px' }} src={spinner} />
+                            </div>
+                        }
 
                     </div>
 

@@ -159,7 +159,7 @@ text-align: center;
     bottom: 40%;
     text-align: center;
     display: none;
-    right: 3%;;
+    right: 3%;
     padding:5px;    
     background-color: #fff;
     border-radius: 3px;
@@ -324,13 +324,15 @@ text-align: center;
         font-size: 1rem;
         left: 20px !important;
         text-align: left !important;
+        font-weight: bolder !important;
         /* border: 1px solid red; */
         /* width:140% !important; */
     }
 
     .blog-read-more{
         font-size: 1rem;
-    }
+       display: none !important;
+        }
 
     
 
