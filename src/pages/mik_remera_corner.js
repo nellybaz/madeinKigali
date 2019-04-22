@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
+import SimpleImageSlider from "react-simple-image-slider";
 import '../css/pages/mik_remera_corner.css';
 import Header from '../components/header';
 import rem from '../assets/images/about/remera_corner.png';
@@ -52,7 +53,7 @@ class MIKRemera extends Component {
                         {/* First row of a grid */}
                         <div className='remA-desc'>
                             <h1 className='remA-desc-title'>
-                                TOPSHOP AT OXFORD CIRCUS
+                                MADE IN KIGALI AT REMERA CORNER
                         </h1>
                             <p className='remA-desc-text'>
                                 214 OXFORD STREET, <br />

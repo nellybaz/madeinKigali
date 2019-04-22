@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import '../css/pages/washcare.css';
 import Header from '../components/header';
+import waterIcon from '../assets/images/icons/washcare-icons/001-water.svg';
+import ironIcon from '../assets/images/icons/washcare-icons/002-iron.svg';
+import pIcon from '../assets/images/icons/washcare-icons/003-letter-p.svg';
+import notWashIcon from '../assets/images/icons/washcare-icons/004-do-not-wash.svg';
+import fIcon from '../assets/images/icons/washcare-icons/005-f-inside-a-circle.svg';
+import wIcon from '../assets/images/icons/washcare-icons/006-wet-cleaning.svg';
+import washcare from '../assets/images/icons/washcare-icons/washcare.jpeg';
 
 import CombineWith from '../components/combine';
 import Footer from '../components/footer';
@@ -16,21 +23,6 @@ import {
 } from "react-device-detect";
 
 class WashCare extends Component {
-    // constructor(props){
-    //     super(props)
-
-    //     this.state = {
-    //         counter : 0,
-    //     }
-    // }
-
-    // increase= ()=>{
-    //     // alert("called");
-    //     this.setState({
-    //         counter : this.state.counter +1,
-    //     });
-    // }
-
     render() {
 
         return (
@@ -46,12 +38,24 @@ class WashCare extends Component {
                         <div className="left">
                             We test all our garments to make sure they stay looking as good as new after washing. To keep garments looking their best, always follow the instructions on the care label.
                     {/* <Image>`</Image> */}
-                            <div className="imgg">Icons</div>
+
+                            <div className="imgg">
+                            {/* Icons */}
+                            <img style={{ objectFit: 'contain' }} src={washcare} />
+                            
+                            </div>
                             <div className=''></div>
 
                         </div>
                         <div className="middle">
-                            <div className="imgg">Icons</div>
+                        <img style={{ objectFit: 'contain' }} src={waterIcon} />
+                        <img style={{ objectFit: 'contain' }} src={waterIcon} />
+                        <img style={{  objectFit: 'contain' }} src={wIcon} />
+                        <img style={{ objectFit: 'contain' }} src={waterIcon} />
+                        <img style={{ objectFit: 'contain' }} src={waterIcon} />
+                        <img style={{ objectFit: 'contain' }} src={waterIcon} />
+
+                            {/* <div className="imgg">Icons</div> */}
                         </div>
                         <div className="right">
                             Separate your wash into whites, darks, and colours to reduce the risk of colours running. <br />
@@ -74,7 +78,13 @@ class WashCare extends Component {
 
                             The dry clean symbol is a circle with a letter inside, the letter indicates the chemical which can be used, and your dry cleaner will refer to this and know what to do. A cross means do not dry clean. <br />
                             <div className="imgg">
-                            Icons
+                            <img style={{ objectFit: 'contain' }} src={fIcon}/>
+                            <img style={{ objectFit: 'contain' }} src={pIcon} />
+
+                            <img style={{ objectFit: 'contain' }} src={fIcon} />
+                            <img style={{ objectFit: 'contain' }} src={pIcon} />
+
+                            {/* Icons */}
                             </div>
                         </div>
                         <div className="middle">
@@ -96,7 +106,14 @@ class WashCare extends Component {
                         <br /><br />
 
                             For the perfect press without damage, the dot inside the iron indicates the temperature to set your iron to, the more dots there are, the hotter the iron you can use. You can burn or even melt your clothes if you use the wrong setting, so make sure you check.
-<br />   <div className="imgg">Icons</div></div>
+<br />   <div className="imgg">
+{/* Icons */}
+<img style={{  objectFit: 'contain' }} src={ironIcon} />
+                        <img style={{ objectFit: 'contain' }} src={ironIcon} />
+                        <img style={{ objectFit: 'contain' }} src={ironIcon} />
+                        <img style={{ objectFit: 'contain' }} src={ironIcon} />
+
+</div></div>
 
                     </div>
 

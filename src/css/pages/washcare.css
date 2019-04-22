@@ -48,9 +48,18 @@ section .washing .left {
   width: 20vw;
 }
 
+section .washing .left img {
+  margin: 1vw 2vw;
+}
+
 section .washing .middle {
   width: 20vw;
   margin: 0 5vw;
+}
+
+section .washing .middle img {
+  width: 5vw;
+  margin-right: 5vw;
 }
 
 section .washing .right {
@@ -71,6 +80,11 @@ section .drying .left {
   width: 20vw;
 }
 
+section .drying .left img {
+  width: 5vw;
+  margin-right: 5vw;
+}
+
 section .drying .middle {
   width: 20vw;
   margin: 0 5vw;
@@ -78,6 +92,11 @@ section .drying .middle {
 
 section .drying .right {
   width: 20vw;
+}
+
+section .drying .right img {
+  width: 5vw;
+  margin-right: 5vw;
 }
 
 section .shoes {

@@ -36,10 +36,17 @@
          
           .left{
               width: 20vw;
+              img{
+                margin: 1vw 2vw;
+              }
           }
           .middle{
             width: 20vw;
             margin: 0 5vw;
+            img{
+              width: 5vw;
+              margin-right: 5vw;
+            }
         }
         .right{
             width: 20vw;
@@ -51,13 +58,22 @@
         margin: 2vw auto;
         .left{
             width: 20vw;
+            img{
+              width: 5vw;
+              margin-right: 5vw;
+            }
         }
         .middle{
           width: 20vw;
           margin: 0 5vw;
+          
       }
       .right{
           width: 20vw;
+          img{
+            width: 5vw;
+            margin-right: 5vw;
+          }
       }
 
     }
