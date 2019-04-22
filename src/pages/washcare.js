@@ -30,10 +30,10 @@ class WashCare extends Component {
                 <Header />
                 <section>
 
-                    <h1 className="title">Wash Guide & After Care</h1>
-                    <h1 className="sub-title">CLOTHING</h1>
-                    <h1 className="topic"> WASHING</h1>
-                    <div className="washing">
+                    <h1 className="washcare-title">Wash Guide & After Care</h1>
+                    <h1 className="washcare-sub-title">CLOTHING</h1>
+                    <h1 className="washcare-topic"> WASHING</h1>
+                    <div className="washcare-washing">
 
                         <div className="left">
                             We test all our garments to make sure they stay looking as good as new after washing. To keep garments looking their best, always follow the instructions on the care label.
@@ -66,11 +66,8 @@ class WashCare extends Component {
 
                     </div>
 
-                    {/* <p> You pressed this number of times: {this.state.counter}</p>
-                    <button onClick={()=>this.increase()} >Hit me</button> */}
-
-                    <h1 className="topic"> DRYING</h1>
-                    <div className="drying">
+                    <h1 className="washcare-topic"> DRYING</h1>
+                    <div className="washcare-drying">
 
                         <div className="left">
                             DRY CLEANING
@@ -117,8 +114,8 @@ class WashCare extends Component {
 
                     </div>
 
-                    <h1 className="topic"> SHOES</h1>
-                    <div className="shoes">
+                    <h1 className="washcare-topic"> SHOES</h1>
+                    <div className="washcare-shoes">
 
                         <div className="left">
                             Our trainers and canvas products, unless we advise you,

@@ -10,26 +10,27 @@
       margin: auto;
       width: fit-content;
     }
-      .title{
+      .washcare-title{
           letter-spacing: 0.1vw;
           margin: 0 auto;
           padding: 1vw;
           font-family: Arial, Helvetica, sans-serif;
       }
-      .sub-title{
+      .washcare-sub-title{
         letter-spacing: 0;
         margin: 0 auto;
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 2vw;
       }
       
-      .topic{
+      .washcare-topic{
         font-size: 1.5vw;
         text-decoration: underline;
         margin: 1vw auto;
         font-weight: 700;
       }
 
-      .washing{
+      .washcare-washing{
           display: flex;
           width: fit-content;
           margin: 2vw auto;
@@ -52,7 +53,7 @@
             width: 20vw;
         }
       }
-      .drying{
+      .washcare-drying{
         display: flex;
         width: fit-content;
         margin: 2vw auto;
@@ -78,7 +79,7 @@
 
     }
     
-    .shoes{
+    .washcare-shoes{
         display: flex;
         width: fit-content;
         margin: 2vw auto;
@@ -93,10 +94,6 @@
       }
 
     }
-    .imgg{
-      font-size: 7vw;
-      color: gray
-    }
   
   }
 
@@ -109,30 +106,30 @@
       margin: auto;
       width: fit-content;
     }
-      .title{
+      .washcare-title{
           letter-spacing: 0.1vw;
           margin: 0 auto;
           padding: 1vw;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 4vw;
       }
-      .sub-title{
+      .washcare-sub-title{
         letter-spacing: 0;
         margin: 0 auto;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 2vw;
       }
       
-      .topic{
+      .washcare-topic{
         font-size: 2.5vw;
         text-decoration: underline;
         margin: 1vw auto;
         font-weight: 700;
       }
 
-      .washing{
-          // display: inline;
-          display: flex;
+      .washcare-washing{
+          display: inline;
+          // display: flex;
           margin: 2vw auto;
           .left{
               width: 90vw;
@@ -145,7 +142,7 @@
             width: 20vw;
         }
       }
-      .drying{
+      .washcare-drying{
         display: inline;
         margin: 2vw auto;
         .left{
@@ -161,7 +158,7 @@
 
     }
     
-    .shoes{
+    .washcare-shoes{
       width: 90vw ;
       margin: 2vw auto; 
       height: 10vw;
@@ -189,32 +186,28 @@
 @media only screen and (min-width:1600px){
   section{
     width: 45vw;
-    h1{
-      margin: auto;
-      width: fit-content;
-    }
-      .title{
+      .washcare-title{
           letter-spacing: 0.1vw;
           margin: 0 auto;
           padding: 1vw;
           font-family: Arial, Helvetica, sans-serif;
           font-size: 1vw;
       }
-      .sub-title{
+      .washcare-sub-title{
         letter-spacing: 0;
         margin: 0 auto;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.8vw;
+        font-size: 0.5vw;
       }
       
-      .topic{
+      .washcare-topic{
         font-size: 0.7vw;
         text-decoration: underline;
         margin: 1vw auto;
         font-weight: 700;
       }
 
-      .washing{
+      .washcare-washing{
           display: flex;
           width: fit-content;
           margin: 2vw auto;
@@ -222,22 +215,34 @@
          
           .left{
               width: 10vw;
+              img{
+                width: 5vw;
+                margin-right: 1.5vw;
+              }
           }
           .middle{
             width: 10vw;
             margin: 0 1vw;
+            img{
+              width: 2.5vw;
+              margin-right: 2.5vw;
+            }
         }
         .right{
             width: 10vw;
         }
       }
-      .drying{
+      .washcare-drying{
         display: flex;
         width: fit-content;
         margin: 2vw auto;
         font-size: 0.5vw;
         .left{
             width: 10vw;
+            img{
+              width: 2.5vw;
+              margin-right: 2.5vw;
+            }
         }
         .middle{
           width: 10vw;
@@ -245,13 +250,17 @@
       }
       .right{
           width: 10vw;
+          img{
+            width: 2.5vw;
+            margin-right: 2.5vw;
+          }
       }
 
     }
     hr{
       width: 10vw;
     }
-    .shoes{
+    .washcare-shoes{
         display: flex;
         width: fit-content;
         margin: 2vw auto;
