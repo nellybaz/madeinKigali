@@ -18,6 +18,19 @@
 
     }
 
+
+    @media only screen and (max-width:900px){
+        .blog-header-navlinks p, .blog-header-fixed-navlinks p{
+            /* display: none !important; */
+            font-size: 0.7rem !important;
+        }
+
+        .blog-header-fixed-navlinks .header-links-fixed{
+            padding: 15px 5px 0 0  !important;
+           
+        }
+    }
+
 .Blog{
     background-color: #F2F1F2 !important;
    
@@ -56,6 +69,7 @@
 
 
 .blog-header-nav{
+    /* border: 1px solid red; */
     height: 60px;
     width: 100%;
     background-color: #9A0022;
