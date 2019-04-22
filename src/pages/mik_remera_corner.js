@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import SimpleImageSlider from "react-simple-image-slider";
+// import SimpleImageSlider from "react-simple-image-slider";
 import '../css/pages/mik_remera_corner.css';
 import Header from '../components/header';
 import rem from '../assets/images/about/remera_corner.png';
