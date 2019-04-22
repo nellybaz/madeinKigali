@@ -3,7 +3,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import '../css/wholesale_quote.css';
 class WholeSaleQuote extends Component{
-    render(){
+    render(){ 
         return(
             <div className="WholeSaleQuote" style={{background:'white'}}>
                 <Header />
@@ -86,6 +86,10 @@ class WholeSaleQuote extends Component{
 
 
                                 <button className="quote-submit">SUBMIT RFQ</button>
+                        </div>
+
+                        <div className="w-quote-right">
+                                <img src={require('../assets/images/menus/5Brands.jpg')}  />
                         </div>
                     </div>
 
