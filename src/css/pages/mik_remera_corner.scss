@@ -196,10 +196,14 @@
                 }
                 .drop-it-text{
                     padding: 0;
+                    
+                    color: white;
+                    letter-spacing: 0.1vw;
                     button{
                     background-color: black;
                     color: white;
                     font-size: 1vw;
+                    font-weight: bold;
                     width: fit-content;
                     border: none;
                     margin-left: 2vw;

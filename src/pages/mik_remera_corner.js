@@ -184,7 +184,7 @@ class MIKRemera extends Component {
                                 <h2 className='drop-it-title'><strong style={{fontSize :'2.5vw',}}>Drop</strong><em style={{fontSize :'2.5vw', paddingRight:'2vw',}}>it</em> YOU SHOP. YOU DROP. WE DELIVER.</h2>
 
                                 <p className='drop-it-text'>
-                                    Visit our Remera Corner store and have your shoppin gdelivered home
+                                    Visit our Remera Corner store and have your shopping delivered home
 
                         <button>DOWNLOAD THE APP NOW</button>
                                 </p>

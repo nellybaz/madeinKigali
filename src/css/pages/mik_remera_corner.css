@@ -247,12 +247,15 @@
 
 .remContainer .remA .remD .drop-it .drop-it-text {
   padding: 0;
+  color: white;
+  letter-spacing: 0.1vw;
 }
 
 .remContainer .remA .remD .drop-it .drop-it-text button {
   background-color: black;
   color: white;
   font-size: 1vw;
+  font-weight: bold;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
