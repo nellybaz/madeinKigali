@@ -21,6 +21,7 @@
     "react-router-sitemap": "^1.2.0",
     "react-router-sitemap-builder": "^1.1.1",
     "react-scripts": "2.0.5",
+    "react-simple-image-slider": "^1.0.2",
     "react-twitter-widgets": "^1.7.1",
     "superagent": "^4.0.0",
     "universal-cookie": "^3.0.7"

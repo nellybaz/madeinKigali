@@ -73,6 +73,16 @@
                 font-weight: bold;
                 padding: 1vw 0;
             }
+            button{
+                // height: fit-content;
+                text-align: center;
+                    background-color: black;
+                    color: white;
+                    font-size: 1.2vw;
+                    width: fit-content;;
+                    padding: 0.5vw 5vw;
+                    margin: 12vw 0 0 3vw;
+            }
         }
 
         .remC{
@@ -80,7 +90,6 @@
             width: 30vw;
             height: 30vw;
             padding: 0 2vw; 
-            border: 1px solid black;
             .remC-sub-title{
                 font-size: 1.5vw;
                 font-weight: bold;
@@ -101,7 +110,6 @@
         .remC-slides{
             grid-column-start:2;
             grid-column-end: 4;
-            border: 1px solid black;
             height: 30vw;
 
         }
@@ -127,10 +135,14 @@
                 }
                 
                 .remD-button{
-                    font-size: 1vw;
-                    height: 2.5vw;
+                    height: fit-content;
                     margin-top: 1.2vw;
-                    margin-left: 62.5vw
+                    margin-left: 55vw;
+                    background-color: black;
+                    color: white;
+                    font-size: 1.2vw;
+                    width: 15vw;;
+                    padding: 0.5vw 1vw;
                 }
             }
             .rem-hr{
@@ -142,8 +154,12 @@
                 }
             .remD-brands{
                 height: 10vw;
-                border: 1px solid black;
-                padding: 0;
+                display: flex;
+                background-color: white;
+                width: fit-content;
+                img{
+                    padding: 0.5vw 2vw;
+                }
             }
             .remD-sub-title{
                 padding: 0;
@@ -181,7 +197,12 @@
                 .drop-it-text{
                     padding: 0;
                     button{
-                        margin: 0 1vw;
+                    background-color: black;
+                    color: white;
+                    font-size: 1vw;
+                    width: fit-content;
+                    border: none;
+                    margin-left: 2vw;
                     }
 
                 }
@@ -212,7 +233,12 @@
             }
             .food-drink{
                 height: 10vw;
-                border: 1px solid black;
+                display: flex;
+                background-color: white;
+                width: fit-content;
+                img{
+                    padding: 0.5vw 2vw;
+                }
             }
             .other-stores{
                 display: flex;

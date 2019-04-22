@@ -1,10 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
-// import SimpleImageSlider from "react-simple-image-slider";
+import SimpleImageSlider from "react-simple-image-slider";
 import '../css/pages/mik_remera_corner.css';
 import Header from '../components/header';
 import rem from '../assets/images/about/remera_corner.png';
+import slide1 from '../assets/images/slide1.jpeg';
+import slide2 from '../assets/images/slide2.jpeg';
+import slide3 from '../assets/images/slide3.jpeg';
+import slide4 from '../assets/images/slide4.jpeg';
+import slide5 from '../assets/images/slide5.jpeg';
+import slide6 from '../assets/images/slide6.jpeg';
+import remStore from '../assets/images/store.jpg';
+import benugo from '../assets/images/benugo.png';
+import lolas from '../assets/images/lolas.png';
+import bubbleology from '../assets/images/bubleology.png';
+
 import CombineWith from '../components/combine';
 import GoogleMapReact from 'google-map-react';
 
@@ -38,6 +49,14 @@ class MIKRemera extends Component {
 
 
     render() {
+        const images = [
+            { url: slide1 },
+            { url: slide2 },
+            { url: slide3},
+            { url: slide4 },
+            { url: slide5 },
+            { url: slide6},
+        ];
 
         return (
             <div style={{ background: 'white' }}>
@@ -91,7 +110,7 @@ class MIKRemera extends Component {
                             <button>GET DIRECTIONS</button>
                         </div>
                         <div className='remB-map' >
-                            <div style={{ height: '25vw', width: 'inherit', }}>
+                            <div style={{ height: '30vw', width: 'inherit', }}>
                                 <GoogleMapReact
                                     bootstrapURLKeys={{ key: 'AIzaSyCMRJ7kiGqluy7WJRc43vd6LxyvOtt_6OE' }}
                                     defaultCenter={this.props.center}
@@ -120,7 +139,13 @@ class MIKRemera extends Component {
                         </div>
 
                         <div className='remC-slides'>
-                            Sliding Images
+                        <SimpleImageSlider
+                    width={807}
+                    height={396}
+                    images={images}
+                />
+
+                            {/* Sliding Images */}
                         </div>
 
                         <div className='remD'>
@@ -133,7 +158,12 @@ class MIKRemera extends Component {
                             </div>
 
                             <div className='remD-brands'>
+                            <img style={{ width: '100%', objectFit: 'contain' }} src={benugo} />
+                            <img style={{ width: '100%', objectFit: 'contain' }} src={lolas} />
+                            <img style={{ width: '100%', objectFit: 'contain' }} src={bubbleology} />
+
                                 {/* Imgafes for brands available */}
+                                
 
                             </div>
 
@@ -170,6 +200,7 @@ class MIKRemera extends Component {
                                 <div className='remEBox'>
                                     <div className='remEimg'>
                                         {/* Image */}
+                                        <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
                                     </div>
                                     <div className='remEdesc'>
                                         <h5>HERSHESONS</h5>
@@ -179,6 +210,8 @@ class MIKRemera extends Component {
                                 </div>
                                 <div className='remEBox'>
                                     <div className='remEimg'>
+                                    <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
+                                    
                                         {/* Image */}
                                     </div>
                                     <div className='remEdesc'>
@@ -189,7 +222,8 @@ class MIKRemera extends Component {
                                 </div>
                                 <div className='remEBox'>
                                     <div className='remEimg'>
-                                        {/* Image */}
+                                    <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
+                                     {/* Image */}
                                     </div>
                                     <div className='remEdesc'>
                                         <h5>HERSHESONS</h5>
@@ -199,7 +233,8 @@ class MIKRemera extends Component {
                                 </div>
                                 <div className='remEBox'>
                                     <div className='remEimg'>
-                                        {/* Image */}
+                                    <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
+                                     {/* Image */}
                                     </div>
                                     <div className='remEdesc'>
                                         <h5>HERSHESONS</h5>
@@ -209,7 +244,8 @@ class MIKRemera extends Component {
                                 </div>
                                 <div className='remEBox'>
                                     <div className='remEimg'>
-                                        {/* Image */}
+                                    <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
+                                     {/* Image */}
                                     </div>
                                     <div className='remEdesc'>
                                         <h5>HERSHESONS</h5>
@@ -219,7 +255,8 @@ class MIKRemera extends Component {
                                 </div>
                                 <div className='remEBox'>
                                     <div className='remEimg'>
-                                        {/* Image */}
+                                    <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
+                                     {/* Image */}
                                     </div>
                                     <div className='remEdesc'>
                                         <h5>HERSHESONS</h5>
@@ -236,6 +273,9 @@ class MIKRemera extends Component {
                         <hr className='rem-hr' />
                             </h2>
                             <div className='food-drink'>
+                            <img style={{ width: '100%', objectFit: 'contain' }} src={benugo} />
+                            <img style={{ width: '100%', objectFit: 'contain' }} src={lolas} />
+                            <img style={{ width: '100%', objectFit: 'contain' }} src={bubbleology} />
 
                                 {/* Images for drinks brands */}
 
