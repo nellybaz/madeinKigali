@@ -1,6 +1,5 @@
-@font-face {
-  font-family: "WarsawGothicE";
-  src: url("../../assets/fonts/WarsawGothicExt.otf") format("opentype");
+* {
+  font-family: 'Lato';
 }
 
 .remContainer {
@@ -8,7 +7,6 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: gainsboro;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -37,7 +35,7 @@
 }
 
 .remContainer .remA .remA-desc {
-  background-color: ghostwhite;
+  background-color: #f5f2f8;
 }
 
 .remContainer .remA .remA-desc .remA-desc-title {
@@ -47,18 +45,17 @@
   text-align: center;
   font-size: 2.5vw;
   font-weight: bold;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   letter-spacing: 0.2vw;
 }
 
 .remContainer .remA .remA-desc .remA-desc-text {
+  text-align: center;
   width: inherit;
   font-size: 1.5vw;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .remContainer .remA .remB {
-  background-color: ghostwhite;
+  background-color: #f5f2f8;
   width: 30vw;
   height: 30vw;
   padding-left: 2vw;
@@ -104,10 +101,11 @@
   width: fit-content;
   padding: 0.5vw 5vw;
   margin: 12vw 0 0 3vw;
+  border: none;
 }
 
 .remContainer .remA .remC {
-  background-color: ghostwhite;
+  background-color: #f5f2f8;
   width: 30vw;
   height: 30vw;
   padding: 0 2vw;
@@ -146,7 +144,7 @@
   margin: 0;
   width: 92vw;
   padding-left: 2vw;
-  background-color: ghostwhite;
+  background-color: #f5f2f8;
 }
 
 .remContainer .remA .remD .remD-top-bar {
@@ -173,12 +171,13 @@
   height: -moz-fit-content;
   height: fit-content;
   margin-top: 1.2vw;
-  margin-left: 55vw;
+  margin-left: 56.4vw;
   background-color: black;
   color: white;
   font-size: 1.2vw;
   width: 15vw;
   padding: 0.5vw 1vw;
+  border: none;
 }
 
 .remContainer .remA .remD .rem-hr {
@@ -323,28 +322,29 @@
 }
 
 .remContainer .remA .remD .other-stores .rem-other-store {
+  padding-top: 1vw;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border: 1px solid black;
   background-color: white;
-  margin: 0 0.5vw;
+  margin: 2vw 0.5vw;
 }
 
-.remContainer .remA .remD .other-stores .rem-other-store .label {
+.remContainer .remA .remD .other-stores .rem-other-store .other-store-label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin: auto;
 }
 
-.remContainer .remA .remD .other-stores .rem-other-store .label i {
+.remContainer .remA .remD .other-stores .rem-other-store .other-store-label i {
   font-size: 3vw;
 }
 
-.remContainer .remA .remD .other-stores .rem-other-store .label p {
+.remContainer .remA .remD .other-stores .rem-other-store .other-store-label p {
   line-height: 1.3vw;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -354,10 +354,5 @@
 
 .remContainer .remA .remD .other-stores .rem-other-store hr {
   width: inherit;
-}
-
-.remContainer .remA .remD .other-stores .rem-other-store i {
-  font-size: 25vw;
-  opacity: 0.5;
 }
 /*# sourceMappingURL=mik_remera_corner.css.map */

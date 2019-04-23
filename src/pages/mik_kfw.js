@@ -23,7 +23,7 @@ class MIKKFW extends Component {
         return (
             <div style={{ background: 'white' }}>
                 <Header />
-                <section>
+                <section className="kfw-section">
                     <h1 className="kfw-title">
                     MADE IN KIGALI
                     </h1>
@@ -37,7 +37,7 @@ class MIKKFW extends Component {
                     <hr className="kfw-hr"/>
                     
 
-                    <p>
+                    <p className="kfw-p">
                     For Kigali Fashion Week February 2018, we supported designers Molly Goddard, House of Holland, Preen <br />
                     by Thornton Bregazzi, Fashion East, Nicopanda and Shrimps at a new show space on Covent Garden’s <br />
                     Floral Street. We also hosted exclusive fashion talks and events at our London flagship store, including 

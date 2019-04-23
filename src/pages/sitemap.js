@@ -22,7 +22,7 @@ class SiteMap extends Component {
         return (
             <div style={{ background: 'white' }}>
                 <Header />
-                <section>
+                <section className="sitemap-section">
 
                     <p className="sitemap-title">SITE MAP</p>
                     <hr />

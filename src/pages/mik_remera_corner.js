@@ -15,6 +15,7 @@ import remStore from '../assets/images/store.jpg';
 import benugo from '../assets/images/benugo.png';
 import lolas from '../assets/images/lolas.png';
 import bubbleology from '../assets/images/bubleology.png';
+import otherPlaces from '../assets/images/rem-map.png';
 
 import CombineWith from '../components/combine';
 import GoogleMapReact from 'google-map-react';
@@ -132,8 +133,10 @@ class MIKRemera extends Component {
                         </h2>
 
                             <p className='remC-text'>
+                                WIth three floors and 90,000 sq ft - that's the equivalent of 1,800 Kigali busses standing end to end - MIK Remera Corner  is more than just your average. WIth three floors and 90,000 sq ft - that's the equivalent of 1,800 Kigali busses standing end to end
+                        <br /><br />
                                 WIth three floors and 90,000 sq ft - that's the equivalent of 1,800 Kigali busses standing end to end - MIK Remera Corner  is more than just your average.
-                        <br />
+                        
                                 WIth three floors and 90,000 sq ft - that's the equivalent of 1,800 Kigali busses standing end to end - MIK Remera Corner  is more than just your average.
                         </p>
                         </div>
@@ -287,7 +290,7 @@ class MIKRemera extends Component {
                             <div className='other-stores'>
                                 <div className='rem-other-store'>
                                     <div className='other-store-map'>
-                                        <p className='label'>  
+                                        <p className='other-store-label'>  
                                         <i class="fas fa-map-marker-alt"></i>
                                         <p >
                                         <strong>Made In Kigali</strong><br />
@@ -300,12 +303,12 @@ class MIKRemera extends Component {
                                            
                                             </p>
                                             <hr/>
-                                            <i class="fas fa-map-marked"></i>
+                                            <img style={{ width: '100%', objectFit: 'contain' }} src={otherPlaces} />
                                     </div>
                                 </div>
                                 <div className='rem-other-store'>
                                     <div className='other-store-map'>
-                                        <p className='label'>  
+                                        <p className='other-store-label'>  
                                         <i class="fas fa-map-marker-alt"></i>
                                         <p >
                                         <strong>Made In Kigali</strong><br />
@@ -318,12 +321,12 @@ class MIKRemera extends Component {
                                            
                                             </p>
                                             <hr/>
-                                            <i class="fas fa-map-marked"></i>
+                                            <img style={{ width: '100%', objectFit: 'contain' }} src={otherPlaces} />
                                     </div>
                                 </div>
                                 <div className='rem-other-store'>
                                     <div className='other-store-map'>
-                                        <p className='label'>  
+                                        <p className='other-store-label'>  
                                         <i class="fas fa-map-marker-alt"></i>
                                         <p >
                                         <strong>Made In Kigali</strong><br />
@@ -336,7 +339,7 @@ class MIKRemera extends Component {
                                            
                                             </p>
                                             <hr/>
-                                            <i class="fas fa-map-marked"></i>
+                                            <img style={{ width: '100%', objectFit: 'contain' }} src={otherPlaces} />
                                     </div>
                                 </div>
                             </div>

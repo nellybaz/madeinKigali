@@ -22,7 +22,7 @@ class SellerLicence extends Component {
         return (
             <div style={{ background: 'white' }}>
                 <Header />
-                <section>
+                <section className="licences-section">
 
                     <div className="licences-top-bar">
 
@@ -32,40 +32,40 @@ class SellerLicence extends Component {
                     </div>
 
                     <div className="licences-terms">
-                        <h1>Seller License Agreement</h1>
+                        <h1 className="licences-h1">Seller License Agreement</h1>
 
-                        <p>
+                        <p className="licences-p">
                             <strong>
                                 Patternbank understands that getting your head around licenses can be a confusing process. Below, we have listed clear information to help make things as simple as possible.
                     </strong>
                         </p>
-                        <p>
+                        <p className="licences-p">
                             Patternbank will sell your designs in two main types of license: <strong>Non-Exclusive Standard License with optional Extended options</strong> and <strong>Exclusive Premium Licenses</strong> to suit your buyers specific needs. The Standard/Extended Licensed designs
                             can be downloaded multiple times and will be used by various licensees (so a chance for one design to generate many sales). Your design can be sold as a Premium design. Premium Exclusive License designs are sold exclusively to the buyer at a higher price point and are then
                             removed from the site giving the buyer exclusive rights to use the design. Premium designs must be exclusive to the buyer with no other designs being similar to them (look, layout or colourway).
                     </p>
 
-                        <p>
+                        <p className="licences-p">
                             In order to sell on Patternbank, you must agree to the following agreement to protect all parties involved. On ticking the agreement, uploading designs and/or using the Patternbank Studio website you will be agreeing to your acceptance of the Sellers License Agreement, and you wholly agree to the following terms and conditions.
 </p>
-                        <p>
+                        <p className="licences-p">
                             Here is what info you need to be aware of when uploading designs onto Patternbank:-
 <ul>
-                                <li>Be original & creative.</li>
-                                <li>All designs uploaded must be exclusive to Patternbank.</li>
-                                <li>No stock art use – use your own original work when creating artwork.</li>
-                                <li>Do not upload any designs that have been purchased prior to Patternbank.</li>
-                                <li>Once a design is uploaded do not resell elsewhere.</li>
-                                <li>You are free to sell other designs elsewhere.</li>
-                                <li>No use of copyrighted imagery.</li>
-                                <li>No illegal, pornographic or prohibited items.</li>
-                                <li>Premium designs must be original & exclusive.</li>
-                                <li>Premium designs should not be resold or shared (Pinterest, Facebook, etc).</li>
+                                <li className="licences-li">Be original & creative.</li>
+                                <li className="licences-li">All designs uploaded must be exclusive to Patternbank.</li>
+                                <li className="licences-li">No stock art use – use your own original work when creating artwork.</li>
+                                <li className="licences-li">Do not upload any designs that have been purchased prior to Patternbank.</li>
+                                <li className="licences-li">Once a design is uploaded do not resell elsewhere.</li>
+                                <li className="licences-li"> You are free to sell other designs elsewhere.</li>
+                                <li className="licences-li">No use of copyrighted imagery.</li>
+                                <li className="licences-li">No illegal, pornographic or prohibited items.</li>
+                                <li className="licences-li">Premium designs must be original & exclusive.</li>
+                                <li className="licences-li">Premium designs should not be resold or shared (Pinterest, Facebook, etc).</li>
                             
                             </ul>
 
                             Please read below for our full terms and conditions.
-<h3>
+<h3 className="licences-h3">
                                 DESIGN CONTRIBUTOR AGREEMENT
 </h3>
 
@@ -79,7 +79,7 @@ class SellerLicence extends Component {
                                 IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, YOU MUST NOT UPLOAD A DESIGN TO WWW.PATTERNBANK.COM.
 <br />
                             </strong>
-                            <h3>
+                            <h3 className="licences-h3">
                                 1. DEFINITIONS
 </h3>
 
@@ -112,7 +112,7 @@ class SellerLicence extends Component {
                             
 <strong>“Website”</strong> means patternbank.com..
                             
-<h3>
+<h3 className="licences-h3">
                                 2. SUBMISSION, ACCEPTANCE AND PROPERTY OF DESIGNS
 </h3>
 
@@ -146,7 +146,7 @@ class SellerLicence extends Component {
                             3.3.2. any unauthorised access to the Website which results in a breach of your Intellectual Property Rights in the Accepted Design.
 <br />
 
-                            <h3>
+                            <h3 className="licences-h3">
 
 
                                 4. YOUR UNDERTAKINGS</h3>
@@ -168,7 +168,7 @@ class SellerLicence extends Component {
 <br />
                             4.2. You hereby indemnify and hold harmless Patternbank and shall at all times keep Patternbank indemnified against all actions, proceedings, costs, claims and damages whatsoever incurred by or awarded against Patternbank and compensation agreed by Patternbank in consequence of any breach or non.performance by you of any of the warranties and undertakings in this agreement.
 <br />
-                            <h3>
+                            <h3 className="licences-h3">
                                 5. PROTECTION OF INTELLECTUAL PROPERTY</h3>
                             5.1. Patternbank shall immediately notify you in writing giving full particulars if any of the following matters come to its attention:
 <br />
@@ -188,7 +188,7 @@ class SellerLicence extends Component {
 <br />
                             5.2.4. you shall bear the cost of any proceedings and shall be entitled to retain all sums recovered in any action for your own account.
 <br />
-                            <h3>
+                            <h3 className="licences-h3">
 
                                 6. PRICING AND PAYMENT</h3>
                             6.1. Once a Design has been confirmed, in accordance with clauses 2.1 and 2.2, as either an Accepted Standard Design or an Accepted Premium Design, we shall set a Price for the Accepted Design and we shall be entitled to amend the Price at our sole and absolute discretion at any time, but only with prospective effect.
@@ -201,7 +201,7 @@ class SellerLicence extends Component {
 <br />
                             6.5. You expressly agree and acknowledge that any payment due under clause 6.2 is in full and final compensation for all rights granted hereunder and (without prejudice to the generality of the foregoing) you expressly acknowledge that you shall not be entitled to any further fees or compensation from Patternbank in respect of the exploitation of the Accepted Design.
 <br />
-                            <h3>
+                            <h3 className="licences-h3">
                                 7. TERM AND TERMINATION</h3>
                             7.1. This agreement shall continue until terminated by either party in accordance with this clause 7.
 <br />
@@ -219,7 +219,7 @@ class SellerLicence extends Component {
 <br />
                             7.4.2. unless already removed, the Accepted Design may be removed from the Website within [28] Business Days of the date of termination.
 <br />
-                            <h3>
+                            <h3 className="licences-h3">
                                 8. MISCELLANEOUS
 </h3>
                             8.1. Patternbank shall be entitled to assign or license all the rights granted to it under this agreement to any third party without notice to you. You shall not be entitled to assign or sub-license your rights under this agreement.
