@@ -246,7 +246,7 @@ class Home extends Component {
         .send({ token: "mik9876543210", tag: 'blog' })
         .end(function (err, res) {
 
- 
+
 
           if (res != null) {
             if (res.body.blog != null) {

@@ -12,7 +12,7 @@ import bh8 from '../assets/images/bh8.jpg';
 import logo from '../assets/images/logo.png';
 
 import { Link } from 'react-router-dom';
- 
+
 class BlogHeader extends Component {
 
     constructor(props) {
