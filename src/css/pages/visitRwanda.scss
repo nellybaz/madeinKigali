@@ -9,7 +9,7 @@ $left : 0;
         }
     }
 }
-
+ 
 
 @media only screen and (min-width: 1600px) {
 
@@ -21,8 +21,11 @@ $left : 0;
 }
 
 
+// @media only screen and (min-width: 900px) {
+
 .visitRwanda{
     width: 100%;
+    
 
     .big-title{
         text-align: center;
@@ -57,16 +60,6 @@ $left : 0;
 
 }
 
-// .shop-all{
-//     background: transparent;
-//     padding: 10px 0;
-//     width: 30%;
-//     margin: 0 auto;
-//     border:2px solid $gray_light;
-//     cursor: pointer;
-  
-  
-// }
 
 .btn-div{
     width:100%;
@@ -200,3 +193,4 @@ $left : 0;
     width:100%;
     cursor: pointer;
 }
+// }

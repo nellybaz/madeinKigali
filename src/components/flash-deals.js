@@ -104,7 +104,7 @@ class FlashDeals extends Component {
             if(isBrowser || isTablet){
               limit = 5;
             }
-            if(isMobileOnly || this.props.isBlog){
+            else if(isMobileOnly || this.props.isBlog){
               limit = 2;
             }
             

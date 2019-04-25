@@ -6,13 +6,14 @@ import '../css/utils/screen.css';
 
 import {Link} from 'react-router-dom';
 
-import img1 from '../assets/images/about/MadeinRwandakigali2013.png';
-import img2 from '../assets/images/about/MadeinRwandakigali2014.png';
-import img3 from '../assets/images/about/MadeinRwandakigali2015.png';
-import img4 from '../assets/images/about/MadeinRwandakigali2016.png';
-import img5 from '../assets/images/about/MadeinRwandakigali2017.png';
-import img6 from '../assets/images/about/MadeinRwandakigali2018.png';
-import img7 from '../assets/images/about/MadeinRwandakigali2019.png';
+import img1 from '../assets/images/about/madeinrwandakigali2013.jpg';
+import img2 from '../assets/images/about/madeinrwandakigali2014.jpg';
+import img3 from '../assets/images/about/madeinrwandakigali2015.jpg';
+import img4 from '../assets/images/about/madeinrwandakigali2016.jpg';
+import img5 from '../assets/images/about/madeinrwandakigali2017.jpg';
+import img6 from '../assets/images/about/madeinrwandakigali2018.jpg';
+import img7 from '../assets/images/about/madeinrwandakigali2019.jpg';
+
 
 class About2 extends Component {
     constructor(props){
@@ -157,7 +158,7 @@ class About2 extends Component {
         //     large_screen_class: "large_screen",
         //   });
         // }
-      }
+      } 
 
     render() {
         return (

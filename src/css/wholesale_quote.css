@@ -15,6 +15,16 @@
 
 }
 
+
+@media only screen and (max-width: 900px) {
+
+    .quote-wrapper{
+        grid-template-columns: 1fr !important;
+    }
+    
+
+}
+
 .quote-wrapper{
     width: 90%;
     margin: 30px 5%;
@@ -25,7 +35,16 @@
     border: 1px solid #DADEED;
 }
 
+.w-quote-right{
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
 
+}
+
+.w-quote-right img{
+    
+}
 .quote-wrapper div:nth-child(1){
     width: 90%;
     margin: 0 5%;

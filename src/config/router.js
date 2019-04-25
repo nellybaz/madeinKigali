@@ -42,54 +42,57 @@ import ComingSoon from '../pages/coming_soon2';
 import About2 from '../pages/about2';
 import Company2 from '../pages/company2';
 import ComingSoon1 from '../pages/comimg_soon';
+import SizeGuide from '../pages/size_guide';
 
 
-const outer = () => (
-        <Router onUpdate={() => window.scrollTo(0, 0)}>
-                <Switch>
-                        
-                        {/* <Route exact path={"/stash/12hdgsikdhlmsdne"} component={App} />
-                        <Route exact path={"/stash/upload"} component={Upload} />
-                        <Route exact path={"/stash/blog/:nav"} component={Blog} />
-                        <Route exact path={"/stash/blog/post/:blog_id/:blog_name"} component={Post} />
-                        <Route exact path={"/stash/product/:slug/:number"} component={Product} />
-                        <Route exact path={"/stash/wholesale/:slug/:number"} component={Wholesale} />
-                        <Route exact path={"/stash/search/:query/category/:category_no"} component={Search} />
-                        <Route exact path={"/stash/shop"} component={Search} />
-                        <Route exact path={"/stash/contact"} component={Contact} />
-                        <Route exact path={"/stash/help"} component={Help} />
-                        <Route exact path={"/stash/points"} component={PointOfSale} />
-                        <Route exact path={"/stash/info/:infocategory"} component={Info} />
-                        <Route exact path={"/stash/m2m"} component={M2M} />
-                        <Route exact path={"/stash/m2m2"} component={M2M2} />
-                        <Route exact path={"/stash/gallery"} component={Gallery} />
-                        <Route exact path={"/stash/quote"} component={WholesaleQuote} />
-                        <Route exact path={"/stash/fabric"} component={Fabric} />
-                        <Route exact path={"/stash/fabric_single"} component={Fabric_Single} />
-                        <Route exact path={"/stash/fabric_search"} component={Fabric_Display} />
-                        <Route exact path={"/stash/fabric/upload"} component={Fabric_Upload} />
-                        <Route exact path={"/stash/fabric/create"} component={PreFabricUpload} />
-                        <Route exact path={"/stash/fabric/upload/select/:fabric_id"} component={Fabric_Upload_Select} />
-                        <Route exact path={"/stash/signin"} component={Signin} />
-                        <Route exact path={"/stash/visit_rwanda"} component={visitRwanda} />
-                        <Route exact path={"/stash/student_discount"} component={student_discount} />
-                        <Route exact path={"/stash/gift_card"} component={GiftCard} />
-                        <Route exact path={"/stash/cart"} component={Cart} /> */}
-                        <Route exact path={"/stash/"} component={ComingSoon1} />
-                        {/* <Route exact path={"/stash/delivery"} component={Delivery} /> */}
-                        <Route exact path={"/stash/company2"} component={Company2} />
-                        <Route exact path={"/stash/company/about"} component={About} />
-                        <Route exact path={"/stash/company/about2"} component={About2} />
-                        {/* <Route exact path={"/stash/admin/dashboard"} component={DashBoard} />
-                        <Route exact path={"/stash/admin/dashboard/flashdeals"} component={FlashDeals} />
-                        <Route exact path={"/stash/admin/dashboard/blog"} component={Blog_Dashboard} />
-                        <Route exact path={"/stash/admin/dashboard/trending"} component={Trending} /> */}
-                        <Route component={notFound} />
-                </Switch>
-        </Router>
-
-);
-
-
+    const outer =()=> (
+                <Router onUpdate={()=> window.scrollTo(0,0)}>
+                        <Switch>
+                        <Route exact path={"/dev/company2"} component={Company2}/>
+                        {/* <Route exact path={"/"} component={ComingSoon1}/> */}
+                            <Route exact path={"/dev/12hdgsikdhlmsdne"} component={App}/>
+                            <Route exact path={"/dev/upload"} component={Upload}/>
+                            <Route exact path={"/dev/blog/:nav"} component={Blog}/>
+                            <Route exact path={"/dev"} component={ComingSoon1}/>
+                             <Route exact path={"/dev/blog/post/:blog_id/:blog_name"} component={Post}/>
+                            <Route exact path={"/dev/product/:slug/:number"} component={Product}/>
+                            <Route exact path={"/dev/wholesale/:slug/:number"} component={Wholesale}/>
+                            <Route exact path={"/dev/search/:query/category/:category_no"} component={Search}/>
+                            <Route exact path={"/dev/shop"} component={Search}/>
+                            <Route exact path={"/dev/contact"} component={Contact}/>
+                            <Route exact path={"/dev/help"} component={Help}/>
+                            <Route exact path={"/dev/points"} component={PointOfSale}/>
+                            <Route exact path={"/dev/info/:infocategory"} component={Info}/>
+                            {/* <Route exact path={"/dev/m2m"} component={M2M}/> */}
+                            <Route exact path={"/dev/size-guide"} component={SizeGuide} />
+                            <Route exact path={"/dev/m2m2"} component={M2M2}/>
+                            <Route exact path={"/dev/gallery"} component={Gallery}/>
+                            <Route exact path={"/dev/quote"} component={WholesaleQuote}/>
+                            <Route exact path={"/dev/fabric"} component={Fabric}/>
+                            <Route exact path={"/dev/fabric_single"} component={Fabric_Single}/>
+                            <Route exact path={"/dev/fabric_search"} component={Fabric_Display}/>
+                            <Route exact path={"/dev/fabric/upload"} component={Fabric_Upload}/>
+                            <Route exact path={"/dev/fabric/create"} component={PreFabricUpload}/>
+                            <Route exact path={"/dev/fabric/upload/select/:fabric_id"} component={Fabric_Upload_Select}/>
+                            <Route exact path={"/dev/signin"} component={Signin}/>
+                            <Route exact path={"/dev/visit_rwanda"} component={visitRwanda}/>
+                            <Route exact path={"/dev/student_discount"} component={student_discount}/>
+                            <Route exact path={"/dev/gift_card"} component={GiftCard}/>
+                            <Route exact path={"/dev/cart"} component={Cart}/>
+                            <Route exact path={"/dev/delivery"} component={Delivery}/>
+                            <Route exact path={"/dev/company"} component={Company}/>
+                            <Route exact path={"/dev/company/about"} component={About}/>
+                            <Route exact path={"/dev/company/about2"} component={About2}/>
+                            <Route exact path={"/dev/admin/dashboard"} component={DashBoard}/>
+                            <Route exact path={"/dev/admin/dashboard/flashdeals"} component={FlashDeals}/>
+                            <Route exact path={"/dev/admin/dashboard/blog"} component={Blog_Dashboard}/>
+                            <Route exact path={"/dev/admin/dashboard/trending"} component={Trending}/>
+                             <Route component={notFound}/>
+                        </Switch>            
+                </Router>
+        
+        );
+        
+    
 
 export default outer;

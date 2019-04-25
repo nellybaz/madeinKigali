@@ -1,0 +1,135 @@
+@media only screen and (max-width: 900px){
+    .size-guide-wrapper{
+        *{
+            height: auto !important;
+        }
+        .sgw-inner-top, .sgw-inner-bottom{
+            grid-template-columns:  1fr !important;
+        }
+        
+    }
+
+    .slidingSetion{
+        // height: auto !important;
+        // border: 1px solid red !important;
+        width:80vw !important;
+        
+    }
+
+    .sqw-hide-slider{
+        display: none !important;
+    }
+
+}
+
+.slidingSetion{
+    // border: 1px solid red;
+    width:30vw;
+    height: 100vh;
+    overflow: scroll;
+    background: white;
+    position: absolute;
+    right: 0;
+    transition: right .4s ease-in-out;
+    padding: 0 15px;
+    // display:flex;
+    // justify-content: center;
+    // align-items:center;
+    // flex-direction:column;
+
+    *{
+        color: black;
+        font-family: "Lato";
+    }
+
+    h2,h3,h5{
+        text-align: center;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+    h5{
+        font-size: 0.9rem;
+        background: #E8EDEC;
+        padding: 5px;
+    }
+
+    p{
+        width:100%;
+        // border: 1px solid red;
+        text-align: center;
+        word-wrap: break-word;
+    }
+}
+
+.sqw-hide-slider{
+    right:-300vw;
+    // display: none;
+    position: absolute;
+
+}
+
+.size-guide-wrapper{
+    width:100%;
+    height: auto;
+    background: white;
+
+    *{
+        box-sizing: border-box;
+        font-family: "Lato";
+        color: black;
+    }
+
+    .sgw-inner-top, .sgw-inner-bottom{
+        width:100%;
+        height: 60vh;
+        // border: 1px solid red;
+
+        padding: 0 10%;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        margin-bottom: 30px;
+
+        div{
+            width:100%;
+            // border: 1px solid red;
+            padding: 5%;
+
+            p, h3{
+                text-align: center;
+            }
+        }
+
+        .sgw-top-one{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction:column;
+        }
+
+        .sgw-top-two{
+            background: #E8EDEC;
+        }
+
+        .sgw-top-three{
+            background: #E8EDEC;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            // flex-direction:;
+            li{
+                list-style: none;
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 10px;
+                cursor: pointer;
+
+            }
+        }
+    }
+
+    .sgw-inner-bottom{
+        margin-top: 30px;
+    }
+}

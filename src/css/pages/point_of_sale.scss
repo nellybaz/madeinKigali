@@ -4,32 +4,59 @@
     .PointOfSale{
         width:60% !important;
         margin: 0 auto !important;
+
     }
 
 }
 
+
+@media only screen and (max-width:900px){
+    .point-wrapper{
+        width: 100% !important;
+        // margin-right: 5% !important;
+        grid-template-columns: 1fr !important;
+       
+    }
+
+    .left{
+        border: 1px solid red;
+        // overflow: auto !important;
+        height: auto !important;
+    }
+}
+
 .PointOfSale{
     width:100%;
+    margin: 0 auto;
 
+
+
+   
 
     .point-wrapper{
+
+        *{
+            color:black !important;
+            font-family: 'Lato' !important;
+        }
         width:80%;
         margin: 0 auto;
         display:grid;
         grid-template-columns:1fr 3fr;  
         grid-gap:5;
 
-        .left{
+        .point-left{
             width: 100%;
-            height: 500px;
+            height: auto;
             border: solid 2px lighten(gray, 30%);
             margin-top: 11%;
-            padding-top: 50px;
-            overflow: scroll;
-
-            display:flex;
-            justify-content: center;
-            align-items:center;
+            padding-top: 20px;
+            padding-left: 20px;
+            // overflow: scroll;
+            // margin-right: 30px;
+            // display:flex;
+            // justify-content: center;
+            // align-items:center;
             flex-direction:column;
 
             div{

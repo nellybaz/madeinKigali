@@ -40,6 +40,49 @@
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .slideshow-content-wrapper {
+    overflow: scroll !important;
+  }
+  .slide-next, .slide-previous {
+    display: none !important;
+  }
+  .img-title-div img {
+    width: 70vw;
+  }
+  .btn-div {
+    margin-top: 200px;
+  }
+  .btn-div button {
+    width: 40vw !important;
+  }
+  .vr-wrapper {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .vr-wrapper .img1, .vr-wrapper .img2, .vr-wrapper .img4, .vr-wrapper .img5, .vr-wrapper .img6, .vr-wrapper .img7, .vr-wrapper .img8, .vr-wrapper .img9, .vr-wrapper .img10, .vr-wrapper .img11 {
+    width: 40vw !important;
+    bottom: 0 !important;
+    height: 400px !important;
+  }
+  .vr-wrapper .img1 img, .vr-wrapper .img2 img, .vr-wrapper .img4 img, .vr-wrapper .img5 img, .vr-wrapper .img6 img, .vr-wrapper .img7 img, .vr-wrapper .img8 img, .vr-wrapper .img9 img, .vr-wrapper .img10 img, .vr-wrapper .img11 img {
+    height: 350px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .vr-wrapper .img3, .vr-wrapper .img12, .vr-wrapper .img13 {
+    width: 80vw !important;
+    bottom: 0 !important;
+    height: 400px !important;
+  }
+  .vr-wrapper .img3 img, .vr-wrapper .img12 img, .vr-wrapper .img13 img {
+    height: 350px !important;
+    width: 80vw !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .vr-wrapper {
   width: 90%;
   -webkit-box-sizing: border-box;
@@ -74,6 +117,13 @@
   padding-bottom: 10px;
   border-bottom: 2px solid black;
   margin-bottom: 30px;
+  width: auto;
+  height: auto;
+}
+
+.vr-wrapper .img-div img {
+  width: 100%;
+  height: auto;
 }
 
 .vr-wrapper .img-div p {
@@ -106,5 +156,18 @@
 
 .vr-wrapper .img-div:nth-child(15), .vr-wrapper .img-div:nth-child(16) {
   bottom: 219px;
+}
+
+.vr-wrapper .img1, .vr-wrapper .img2, .vr-wrapper .img4, .vr-wrapper .img5, .vr-wrapper .img6, .vr-wrapper .img7, .vr-wrapper .img8, .vr-wrapper .img9, .vr-wrapper .img10, .vr-wrapper .img11 {
+  width: 20vw;
+}
+
+.vr-wrapper .img13 img {
+  height: 20vw;
+  width: 40vw;
+}
+
+.vr-wrapper .img3, .vr-wrapper .img12 {
+  width: 42vw;
 }
 /*# sourceMappingURL=visitrwanda2.css.map */

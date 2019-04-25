@@ -15,7 +15,7 @@ import like from '../assets/images/heart3.png';
 class Search extends Component {
 
     constructor(props) {
-        super(props)
+        super(props) 
 
         this.state = {
 

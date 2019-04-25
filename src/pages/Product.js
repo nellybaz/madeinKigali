@@ -19,7 +19,7 @@ import envelope from '../assets/images/envelope.png';
 import shipping_example from "../assets/images/shipping.png";
 
 import {
-    BrowserView,
+    BrowserView, 
     MobileView,
     isBrowser,
     isMobile

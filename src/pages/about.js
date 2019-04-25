@@ -42,6 +42,14 @@ class About extends Component{
                                 <Link to={'/company/about2'}>
                                     MORE ABOUT US
                                 </Link>
+
+
+                                {
+                          window.innerWidth < 900 ?   <div className='first-image-mobile-div'>
+                          <img src={require('../assets/images/modelmadeinkigali09.1.png')}  />
+                      
+                      </div>: <span></span>
+                      }
                             
                             </div>
 
@@ -73,10 +81,12 @@ class About extends Component{
                             </div>
                         </div>
   
-                        <div className='about-section1-right'>
-                            <img src={require('../assets/images/modelmadeinkigali09.1.png')}  />
-                        
-                        </div>
+                      {
+                          window.innerWidth > 900 ?   <div className='about-section1-right'>
+                          <img src={require('../assets/images/modelmadeinkigali09.1.png')}  />
+                      
+                      </div>: <span></span>
+                      }
 
                     </section>
 
@@ -88,18 +98,22 @@ class About extends Component{
                             
                             </div>
 
-                            <div id="mik-experience" className='section2-left-bottom'>
-                            <h4 className='section2-left-bottom-h4'>
-                                THE MIK EXPERIENCE
-                            </h4>
-
-                            <p className='section2-left-bottom-p'>We spare no effort in making your experience with us as smooth as the wind that gusts the thousand hills of Rwanda. We’re not happy until you are. Our ever-caring customer advisors work to solve your queries (on Facebook, whatsApp, live chat, email, and Instagram).
-And lastly, not forgeting our future leaders; being a student can mean living on a budget that is why we offer 10% off all the way through to graduation.
-
-                                </p>
-
-                            
-                            </div>
+                         {
+                             window.innerWidth > 900 ?
+                             <div id="mik-experience" className='section2-left-bottom'>
+                             <h4 className='section2-left-bottom-h4'>
+                                 THE MIK EXPERIENCE
+                             </h4>
+ 
+                             <p className='section2-left-bottom-p'>We spare no effort in making your experience with us as smooth as the wind that gusts the thousand hills of Rwanda. We’re not happy until you are. Our ever-caring customer advisors work to solve your queries (on Facebook, whatsApp, live chat, email, and Instagram).
+ And lastly, not forgeting our future leaders; being a student can mean living on a budget that is why we offer 10% off all the way through to graduation.
+ 
+                                 </p>
+ 
+                             
+                             </div>:
+                             <p></p>
+                         }
                         
                         </div>
 
@@ -177,15 +191,35 @@ Every business year, we engage our organisation in discussions with environmenta
 
 
                     <section className='about-section3'>
+
+
+                   
                     <div className='about-section3-left'>
+
+                    {
+                             window.innerWidth < 900 ?
+                             <div id="mik-experience" className='section2-left-bottom experience-2'>
+                             <h4 className='section2-left-bottom-h4'>
+                                 THE MIK EXPERIENCE
+                             </h4>
+ 
+                             <p className='section2-left-bottom-p'>We spare no effort in making your experience with us as smooth as the wind that gusts the thousand hills of Rwanda. We’re not happy until you are. Our ever-caring customer advisors work to solve your queries (on Facebook, whatsApp, live chat, email, and Instagram).
+ And lastly, not forgeting our future leaders; being a student can mean living on a budget that is why we offer 10% off all the way through to graduation.
+ 
+                                 </p>
+ 
+                             
+                             </div>:
+                             <p></p>
+                         }
 
                         <img src={require('../assets/images/madeinkigali11.1.png')} />
                     
                     </div>
 
                     <div id="mik-brands" className='about-section3-right'>
-                        <h4 style={{position:'relative',}}>THE MIK BRANDS</h4>
-                            {/* <br></br> */}
+                        <h4 style={{position:'relative',}} className='sub-h4-1'>THE MIK BRANDS</h4>
+                            <br></br>
                         <p>
                         
                         Our fashion sense is like no other. MIK Brands are produced with accurate attention to detail to bring you the best of clothing, shoes, accessories and homeware you can possibly get. When it comes to sourcing external brands at MIK, we ensure to retain quality, authenticity and exclusivity. Offering you the best you can get is not an extra service for us, it is standard practice
