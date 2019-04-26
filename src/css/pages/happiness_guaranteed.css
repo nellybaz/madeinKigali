@@ -1,0 +1,139 @@
+@media only screen and (max-width: 745px) {
+  .fun-fact {
+    margin: 0 !important;
+  }
+  .tips li {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .Happiness {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+}
+
+a {
+  color: #639da6;
+}
+
+.Happiness {
+  width: 100%;
+}
+
+.container {
+  font-weight: 500;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.container .header {
+  text-transform: uppercase;
+  color: #2d6d75;
+}
+
+.container .header h1 {
+  font-size: 2.8em;
+}
+
+.container .header em {
+  text-transform: capitalize;
+}
+
+.container .img {
+  width: 20%;
+}
+
+.container .text {
+  margin: 0px 10%;
+}
+
+.container .text p {
+  text-align: left;
+  font-size: 18px;
+}
+
+.container .tips {
+  margin-bottom: 1em;
+}
+
+.container .tips li {
+  text-align: left;
+  font-size: 14px;
+  margin: 1em;
+}
+
+.container .tips ul {
+  -webkit-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+}
+
+.container .tips-header {
+  margin-top: 3em;
+}
+
+.container hr {
+  width: 95%;
+  height: 0.2em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ededed;
+  border: 0 none;
+  margin-top: 3em;
+}
+
+.container .fun-fact {
+  margin: 5em 10em 0.5em;
+}
+
+.container .fun-fact p {
+  font-size: 15px;
+  text-align: left;
+}
+
+.container .contact-us {
+  margin: 5em;
+}
+
+.container .contact-us h5 {
+  font-size: 0.6em;
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 5em;
+}
+
+.container .row img {
+  margin: 3em;
+  margin-top: 5em;
+  border-radius: 50%;
+}
+
+.container .row .column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  background-color: #dceceb;
+  margin: 1em;
+  padding: 1em;
+}
+
+.container .row .column p {
+  padding: 2em;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.container .row .column h6 {
+  padding-bottom: 3em;
+}
+/*# sourceMappingURL=happiness_guaranteed.css.map */

@@ -5,7 +5,9 @@
 }
 
 .washcare-section {
-  width: 60vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: auto;
 }
 
@@ -124,81 +126,130 @@
   margin-left: 2.5vw;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .washcare-section {
-    display: inline;
+    width: 90vw;
+    margin: auto;
+    font-size: 0.9rem;
   }
   .washcare-section .washcare-title {
     letter-spacing: 0.1vw;
     margin: 0 auto;
     padding: 1vw;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 4vw;
+    font-size: 1.5rem;
   }
   .washcare-section .washcare-sub-title {
     letter-spacing: 0;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2vw;
+    font-size: 1.2rem;
+    margin: 2vw auto;
   }
   .washcare-section .washcare-topic {
-    font-size: 2.5vw;
+    font-size: 1.2rem;
     text-decoration: underline;
     margin: 1vw auto;
-    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .washcare-section .washcare-washing {
     display: inline;
     margin: 2vw auto;
   }
   .washcare-section .washcare-washing .washcare-left {
-    width: 90vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 0.9rem;
+  }
+  .washcare-section .washcare-washing .washcare-left .washcare-imgg {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  .washcare-section .washcare-washing .washcare-left .washcare-imgg img {
+    width: 12rem;
   }
   .washcare-section .washcare-washing .washcare-middle {
-    width: 20vw;
-    margin: 0 5vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto;
+  }
+  .washcare-section .washcare-washing .washcare-middle .washcare-imgg {
+    margin: auto;
+    width: 20rem;
+  }
+  .washcare-section .washcare-washing .washcare-middle img {
+    width: 20rem;
+    padding: 0;
   }
   .washcare-section .washcare-washing .washcare-right {
-    width: 20vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .washcare-section .washcare-drying {
     display: inline;
     margin: 2vw auto;
   }
   .washcare-section .washcare-drying .washcare-left {
-    width: 40vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .washcare-section .washcare-drying .washcare-left .washcare-imgg {
+    margin: auto;
+    width: 20rem;
+  }
+  .washcare-section .washcare-drying .washcare-left .washcare-imgg img {
+    width: 20rem;
+    margin: auto;
   }
   .washcare-section .washcare-drying .washcare-middle {
-    width: 40vw;
-    margin: 0 5vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 4vw 0;
   }
   .washcare-section .washcare-drying .washcare-right {
-    width: 40vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .washcare-section .washcare-drying .washcare-right .washcare-imgg {
+    margin: auto;
+    width: 18rem;
+  }
+  .washcare-section .washcare-drying .washcare-right .washcare-imgg img {
+    width: 18rem;
+    margin: auto;
   }
   .washcare-section .washcare-shoes {
-    width: 90vw;
     margin: 2vw auto;
-    height: 10vw;
+    display: inline;
   }
   .washcare-section .washcare-shoes .washcare-left {
-    display: none;
-    width: 32.5vw;
-    margin-right: 2.5vw;
-    font-size: 0.5vw;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .washcare-section .washcare-shoes .washcare-right {
-    width: 32.5vw;
-    margin-left: 2.5vw;
-  }
-  .washcare-section .washcare-imgg {
-    font-size: 5vw;
-    color: gray;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 2.5vw 0;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .washcare-section {
-    width: 45vw;
+    width: 60vw;
   }
   .washcare-section .washcare-title {
     letter-spacing: 0.1vw;
@@ -226,26 +277,29 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 2vw auto;
+    margin: 1vw auto;
     font-size: 0.5vw;
   }
   .washcare-section .washcare-washing .washcare-left {
-    width: 10vw;
+    width: 12vw;
   }
   .washcare-section .washcare-washing .washcare-left img {
     width: 5vw;
     margin-right: 1.5vw;
   }
   .washcare-section .washcare-washing .washcare-middle {
-    width: 10vw;
+    width: 12vw;
     margin: 0 1vw;
   }
-  .washcare-section .washcare-washing .washcare-middle img {
-    width: 2.5vw;
-    margin-right: 2.5vw;
+  .washcare-section .washcare-washing .washcare-middle .washcare-imgg {
+    margin: auto;
+    width: 7vw;
+  }
+  .washcare-section .washcare-washing .washcare-middle .washcare-imgg img {
+    width: 7vw;
   }
   .washcare-section .washcare-washing .washcare-right {
-    width: 10vw;
+    width: 12vw;
   }
   .washcare-section .washcare-drying {
     display: -webkit-box;
@@ -258,22 +312,28 @@
     font-size: 0.5vw;
   }
   .washcare-section .washcare-drying .washcare-left {
-    width: 10vw;
+    width: 12vw;
   }
-  .washcare-section .washcare-drying .washcare-left img {
-    width: 2.5vw;
-    margin-right: 2.5vw;
+  .washcare-section .washcare-drying .washcare-left .washcare-imgg {
+    margin: auto;
+    width: 7vw;
+  }
+  .washcare-section .washcare-drying .washcare-left .washcare-imgg img {
+    width: 7vw;
   }
   .washcare-section .washcare-drying .washcare-middle {
-    width: 10vw;
+    width: 12vw;
     margin: 0 1vw;
   }
   .washcare-section .washcare-drying .washcare-right {
-    width: 10vw;
+    width: 12vw;
   }
-  .washcare-section .washcare-drying .washcare-right img {
-    width: 2.5vw;
-    margin-right: 2.5vw;
+  .washcare-section .washcare-drying .washcare-right .washcare-imgg {
+    margin: auto;
+    width: 7vw;
+  }
+  .washcare-section .washcare-drying .washcare-right .washcare-imgg img {
+    width: 7vw;
   }
   .washcare-section .washcare-hr {
     width: 10vw;
@@ -289,11 +349,11 @@
     font-size: 0.5vw;
   }
   .washcare-section .washcare-shoes .washcare-left {
-    width: 15vw;
+    width: 18vw;
     margin-right: 1vw;
   }
   .washcare-section .washcare-shoes .washcare-right {
-    width: 15vw;
+    width: 18vw;
     margin-left: 1vw;
   }
   .washcare-section .washcare-imgg {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import SimpleImageSlider from "react-simple-image-slider";
+// import SimpleImageSlider from "react-simple-image-slider";
 import '../css/pages/mik_remera_corner.css';
 import Header from '../components/header';
 import rem from '../assets/images/about/remera_corner.png';
@@ -16,6 +16,14 @@ import benugo from '../assets/images/benugo.png';
 import lolas from '../assets/images/lolas.png';
 import bubbleology from '../assets/images/bubleology.png';
 import otherPlaces from '../assets/images/rem-map.png';
+import minusIcon from '../assets/images/icons/minus-circle-solid.svg';
+import markerIcon from '../assets/images/icons/map-marker-alt-solid.svg';
+import minusIconWhite from '../assets/images/icons/minus-circle-solid-white.svg';
+import brand1Img from '../assets/images/rem-brands1.png';
+import brand2Img from '../assets/images/rem-brands2.png';
+import brand3Img from '../assets/images/rem-brands3.png';
+import brand4Img from '../assets/images/rem-brands4.png';
+import brand5Img from '../assets/images/rem-brands5.png';
 
 import CombineWith from '../components/combine';
 import GoogleMapReact from 'google-map-react';
@@ -73,8 +81,9 @@ class MIKRemera extends Component {
                         {/* First row of a grid */}
                         <div className='remA-desc'>
                             <h1 className='remA-desc-title'>
-                                MADE IN KIGALI AT REMERA CORNER
+                                MADEINKIGALI AT REMERA CORNER
                         </h1>
+                        <hr className='remA-hr' />
                             <p className='remA-desc-text'>
                                 214 OXFORD STREET, <br />
                                 LONDON, W1C 1DA <br /><br />
@@ -104,14 +113,36 @@ class MIKRemera extends Component {
                                 <hr className="remB-hr" />
                             </h2>
                             <p className='remB-desc'>
-                                Remera Street <br />
-                                Remera Street<br />
-                                Remera Street <br />
+                            <div className='remB-desc-loc'>
+                            <img style={{ objectFit: 'contain' }} src={minusIcon} />
+                    
+                            Remera Street
+                            <img style={{ marginLeft:'2vw', backgroundColor:'blue', objectFit: 'contain' }} src={minusIconWhite} />
+                            <img style={{ backgroundColor:'gold', objectFit: 'contain' }} src={minusIconWhite} />
+                            <img style={{ backgroundColor:'red', objectFit: 'contain' }} src={minusIconWhite} />
+                    </div>
+                    <div className='remB-desc-loc'>
+                            <img style={{ objectFit: 'contain' }} src={minusIcon} />
+                    
+                            Remera Street
+                            <img style={{ marginLeft:'5.5vw', backgroundColor:'gray', objectFit: 'contain' }} src={minusIconWhite} />
+                            <img style={{ backgroundColor:'red', objectFit: 'contain' }} src={minusIconWhite} />
+                    </div>
+                    <div className='remB-desc-loc'>
+                            <img style={{ objectFit: 'contain' }} src={minusIcon} />
+                    
+                            Remera Street
+                            <img style={{ marginLeft:'5.5vw', backgroundColor:'black', objectFit: 'contain' }} src={minusIconWhite} />
+                            <img style={{ backgroundColor:'red', objectFit: 'contain' }} src={minusIconWhite} />
+                    </div>
+
+                                
                             </p>
-                            <button>GET DIRECTIONS</button>
+                            <div className='remB-btn'><button>GET DIRECTIONS</button></div>
+                            
                         </div>
                         <div className='remB-map' >
-                            <div style={{ height: '30vw', width: 'inherit', }}>
+                            <div style={{ height: 'inherit', width: 'inherit', }}>
                                 <GoogleMapReact
                                     bootstrapURLKeys={{ key: 'AIzaSyCMRJ7kiGqluy7WJRc43vd6LxyvOtt_6OE' }}
                                     defaultCenter={this.props.center}
@@ -130,6 +161,7 @@ class MIKRemera extends Component {
                         <div className='remC'>
                             <h2 className='remC-sub-title'>
                                 MORE THAN JUST A STORE
+                                <hr className='rem-hr' />
                         </h2>
 
                             <p className='remC-text'>
@@ -142,11 +174,11 @@ class MIKRemera extends Component {
                         </div>
 
                         <div className='remC-slides'>
-                        <SimpleImageSlider
+                        {/* <SimpleImageSlider
                     width={807}
                     height={396}
                     images={images}
-                />
+                /> */}
 
                             {/* Sliding Images */}
                         </div>
@@ -161,9 +193,11 @@ class MIKRemera extends Component {
                             </div>
 
                             <div className='remD-brands'>
-                            <img style={{ width: '100%', objectFit: 'contain' }} src={benugo} />
-                            <img style={{ width: '100%', objectFit: 'contain' }} src={lolas} />
-                            <img style={{ width: '100%', objectFit: 'contain' }} src={bubbleology} />
+                            <img style={{ objectFit: 'contain' }} src={brand1Img} />
+                            <img style={{ objectFit: 'contain' }} src={brand2Img} />
+                            <img style={{ objectFit: 'contain' }} src={brand3Img} />
+                            <img style={{ objectFit: 'contain' }} src={brand4Img} />
+                            <img style={{ objectFit: 'contain' }} src={brand5Img} />
 
                                 {/* Imgafes for brands available */}
                                 
@@ -276,9 +310,10 @@ class MIKRemera extends Component {
                         <hr className='rem-hr' />
                             </h2>
                             <div className='food-drink'>
-                            <img style={{ width: '100%', objectFit: 'contain' }} src={benugo} />
-                            <img style={{ width: '100%', objectFit: 'contain' }} src={lolas} />
-                            <img style={{ width: '100%', objectFit: 'contain' }} src={bubbleology} />
+
+                            <img style={{ objectFit: 'contain' }} src={brand1Img} />
+                            <img style={{ objectFit: 'contain' }} src={brand2Img} />
+                            <img style={{ objectFit: 'contain' }} src={brand3Img} />
 
                                 {/* Images for drinks brands */}
 
@@ -291,7 +326,7 @@ class MIKRemera extends Component {
                                 <div className='rem-other-store'>
                                     <div className='other-store-map'>
                                         <p className='other-store-label'>  
-                                        <i class="fas fa-map-marker-alt"></i>
+                                        <img style={{ objectFit: 'contain' }} src={markerIcon} />
                                         <p >
                                         <strong>Made In Kigali</strong><br />
                                             Selfridges,<br />
@@ -309,7 +344,7 @@ class MIKRemera extends Component {
                                 <div className='rem-other-store'>
                                     <div className='other-store-map'>
                                         <p className='other-store-label'>  
-                                        <i class="fas fa-map-marker-alt"></i>
+                                        <img style={{ objectFit: 'contain' }} src={markerIcon} />
                                         <p >
                                         <strong>Made In Kigali</strong><br />
                                             Selfridges,<br />
@@ -327,7 +362,7 @@ class MIKRemera extends Component {
                                 <div className='rem-other-store'>
                                     <div className='other-store-map'>
                                         <p className='other-store-label'>  
-                                        <i class="fas fa-map-marker-alt"></i>
+                                        <img style={{ objectFit: 'contain' }} src={markerIcon} />
                                         <p >
                                         <strong>Made In Kigali</strong><br />
                                             Selfridges,<br />

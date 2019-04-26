@@ -49,15 +49,16 @@ class WashCare extends Component {
                                 <img style={{ objectFit: 'contain' }} src={washcare} />
 
                             </div>
-                            <div className=''></div>
-
                         </div>
+
                         <div className="washcare-middle">
+                        <div className="washcare-imgg">
                             <img style={{ objectFit: 'contain' }} src={wash1} />
                             <img style={{ objectFit: 'contain' }} src={wash2} />
                             <img style={{ objectFit: 'contain' }} src={wash3} />
 
                             {/* <div className="imgg">Icons</div> */}
+                            </div>
                         </div>
                         <div className="washcare-right">
                             Separate your wash into whites, darks, and colours to reduce the risk of colours running. <br />
