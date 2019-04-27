@@ -1,0 +1,306 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section {
+  width: 60vw;
+}
+
+section h1 {
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+section .washcare-title {
+  letter-spacing: 0.1vw;
+  margin: 0 auto;
+  padding: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section .washcare-sub-title {
+  letter-spacing: 0;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+}
+
+section .washcare-topic {
+  font-size: 1.5vw;
+  text-decoration: underline;
+  margin: 1vw auto;
+  font-weight: 700;
+}
+
+section .washcare-washing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2vw auto;
+}
+
+section .washcare-washing .left {
+  width: 20vw;
+}
+
+section .washcare-washing .left img {
+  margin: 1vw 2vw;
+}
+
+section .washcare-washing .middle {
+  width: 20vw;
+  margin: 0 5vw;
+}
+
+section .washcare-washing .middle img {
+  width: 5vw;
+  margin-right: 5vw;
+}
+
+section .washcare-washing .right {
+  width: 20vw;
+}
+
+section .washcare-drying {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2vw auto;
+}
+
+section .washcare-drying .left {
+  width: 20vw;
+}
+
+section .washcare-drying .left img {
+  width: 5vw;
+  margin-right: 5vw;
+}
+
+section .washcare-drying .middle {
+  width: 20vw;
+  margin: 0 5vw;
+}
+
+section .washcare-drying .right {
+  width: 20vw;
+}
+
+section .washcare-drying .right img {
+  width: 5vw;
+  margin-right: 5vw;
+}
+
+section .washcare-shoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2vw auto;
+}
+
+section .washcare-shoes .left {
+  width: 32.5vw;
+  margin-right: 2.5vw;
+}
+
+section .washcare-shoes .right {
+  width: 32.5vw;
+  margin-left: 2.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    display: inline;
+  }
+  section h1 {
+    margin: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  section .washcare-title {
+    letter-spacing: 0.1vw;
+    margin: 0 auto;
+    padding: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vw;
+  }
+  section .washcare-sub-title {
+    letter-spacing: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+  }
+  section .washcare-topic {
+    font-size: 2.5vw;
+    text-decoration: underline;
+    margin: 1vw auto;
+    font-weight: 700;
+  }
+  section .washcare-washing {
+    display: inline;
+    margin: 2vw auto;
+  }
+  section .washcare-washing .left {
+    width: 90vw;
+  }
+  section .washcare-washing .middle {
+    width: 20vw;
+    margin: 0 5vw;
+  }
+  section .washcare-washing .right {
+    width: 20vw;
+  }
+  section .washcare-drying {
+    display: inline;
+    margin: 2vw auto;
+  }
+  section .washcare-drying .left {
+    width: 40vw;
+  }
+  section .washcare-drying .middle {
+    width: 40vw;
+    margin: 0 5vw;
+  }
+  section .washcare-drying .right {
+    width: 40vw;
+  }
+  section .washcare-shoes {
+    width: 90vw;
+    margin: 2vw auto;
+    height: 10vw;
+  }
+  section .washcare-shoes .left {
+    display: none;
+    width: 32.5vw;
+    margin-right: 2.5vw;
+    font-size: 0.5vw;
+  }
+  section .washcare-shoes .right {
+    width: 32.5vw;
+    margin-left: 2.5vw;
+  }
+  section .imgg {
+    font-size: 5vw;
+    color: gray;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  section {
+    width: 45vw;
+  }
+  section .washcare-title {
+    letter-spacing: 0.1vw;
+    margin: 0 auto;
+    padding: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+  }
+  section .washcare-sub-title {
+    letter-spacing: 0;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5vw;
+  }
+  section .washcare-topic {
+    font-size: 0.7vw;
+    text-decoration: underline;
+    margin: 1vw auto;
+    font-weight: 700;
+  }
+  section .washcare-washing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 2vw auto;
+    font-size: 0.5vw;
+  }
+  section .washcare-washing .left {
+    width: 10vw;
+  }
+  section .washcare-washing .left img {
+    width: 5vw;
+    margin-right: 1.5vw;
+  }
+  section .washcare-washing .middle {
+    width: 10vw;
+    margin: 0 1vw;
+  }
+  section .washcare-washing .middle img {
+    width: 2.5vw;
+    margin-right: 2.5vw;
+  }
+  section .washcare-washing .right {
+    width: 10vw;
+  }
+  section .washcare-drying {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 2vw auto;
+    font-size: 0.5vw;
+  }
+  section .washcare-drying .left {
+    width: 10vw;
+  }
+  section .washcare-drying .left img {
+    width: 2.5vw;
+    margin-right: 2.5vw;
+  }
+  section .washcare-drying .middle {
+    width: 10vw;
+    margin: 0 1vw;
+  }
+  section .washcare-drying .right {
+    width: 10vw;
+  }
+  section .washcare-drying .right img {
+    width: 2.5vw;
+    margin-right: 2.5vw;
+  }
+  section hr {
+    width: 10vw;
+  }
+  section .washcare-shoes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 2vw auto;
+    font-size: 0.5vw;
+  }
+  section .washcare-shoes .left {
+    width: 15vw;
+    margin-right: 1vw;
+  }
+  section .washcare-shoes .right {
+    width: 15vw;
+    margin-left: 1vw;
+  }
+  section .imgg {
+    font-size: 2vw;
+    color: gray;
+  }
+}
+/*# sourceMappingURL=washcare.css.map */

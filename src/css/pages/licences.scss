@@ -1,0 +1,151 @@
+*, *::before, *::after { box-sizing: border-box}
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+section{
+    width: 60vw;
+    margin: auto;
+
+
+.licences-top-bar{
+    width: fit-content;
+    height: fit-content;
+    margin: 2vw auto ;
+    
+
+    a{
+        border: 0.1vw solid gray;
+        padding:  1vw 7.5vw;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+    ._active{
+        color: #ff6666;
+    }
+    
+}
+.licences-terms{
+    text-align: left;
+    padding-top: 1vw;
+    h1{
+        text-align: left;
+        width: 60vw;
+        padding-left: 0.5vw;
+        font-size: 1.5vw;
+    }
+    p{
+        width: 60vw;
+        text-align: justify;
+    }
+    ul{
+        li{
+         list-style: square;   
+        }
+    }
+    i{
+        color:#ff6666;
+        font-size: 5vw;
+        padding: 1vw;
+    }
+    p{
+        font-size: 1.2vw;
+    }
+}
+}
+@media only screen and (max-width: 900px) {
+    section{
+        width: 80vw;
+        margin: auto;
+    
+    
+    .licences-top-bar{
+        width: fit-content;
+        height: fit-content;
+        margin: 2vw auto ;
+        display: flex;
+        
+        a{
+            border: 0.1vw solid gray;
+            padding:  1vw 2.5vw;
+            font-weight: bold;
+            text-align: center;
+
+        }
+        
+        
+    }
+    .licences-terms{
+        // text-align: left;
+        h1{
+            font-size: 2.5vw;
+            font-weight: bold;
+            text-align:justify;
+            width: 80vw;
+            padding-left: 0.5vw ;
+            margin: 1vw auto;
+        }
+        p{
+            width: 80vw;
+            text-align: justify;
+            padding: 1vw 0;
+            font-size: 2.5vw;
+        }
+        h3{
+            font-size: 4vw;
+            font-weight: bold;
+            padding: 0.5vw 0;
+        }
+        i{
+            color:#ff6666;
+            font-size: 2.5vw;
+            padding: 2vw;
+        }
+    }
+    }
+}
+@media only screen and (min-width: 1600px) {
+    section{
+        width: 40vw;
+        margin: auto;
+    
+    
+    .licences-top-bar{
+        width: fit-content;
+        height: fit-content;
+        margin: 2vw auto ;
+        display: flex;
+        
+        a{
+            border: 0.1vw solid gray;
+            padding:  1vw 2.5vw;
+            font-size: 1.2vw;
+        }
+        
+    }
+    .licences-terms{
+        text-align: left;
+        h1{
+            font-size: 1vw;
+            font-weight: bold;
+            text-align:justify;
+            width: 40vw;
+            padding: 0;
+        }
+        p{
+            width: 40vw;
+            text-align: justify;
+            padding: 1vw 0;
+            font-size: 1vw;
+        }
+        h3{
+            font-size: 1.25vw;
+            font-weight: bold;
+            padding: 0.5vw 0;
+        }
+        i{
+            color:#ff6666;
+            font-size: 1.5vw;
+            padding: 1vw;
+        }
+    }
+    }
+}

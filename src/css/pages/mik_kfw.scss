@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "BaskervilleCustom";
+    src: url("../../assets/fonts/Baskerville-Regular.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "WarsawGothic";
+    src: url("../../assets/fonts/WarsawGothic.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "WarsawGothicE";
+    src: url("../../assets/fonts/WarsawGothicExt.otf") format("opentype");
+  }
+  
+
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .kfw-title{
+    padding: 2vw;
+    font-family: 'WarsawGothic'!important;
+    letter-spacing: 1vw;
+    text-align: center;
+}
+.kfw-mid-title{
+    font-size: 1.5vw;
+    padding: 1vw;
+    font-family: 'WarsawGothic';
+    font-weight: normal;
+    letter-spacing: 0.5vw;
+
+}
+.kfw-sub-title{
+    font-size: 2vw;
+    padding: 1vw;
+    font-weight: normal;
+}
+.kfw-hr{
+    margin: 1vw auto;
+    width: 5vw;
+    background-color:gainsboro;
+    height: 0.2vw;
+    border: 1px solid gainsboro;
+}
+p{
+    width:60vw;
+    margin: auto;
+    text-align: center;
+    padding: 1vw;
+    line-height:  2vw;
+}
+
+  @media only screen and (max-width: 900px) {
+  .kfw-title{
+      padding: 2vw;
+      font-family: 'WarsawGothic';
+      letter-spacing: 2vw;
+  }
+  .kfw-mid-title{
+      font-size: 3vw;
+      padding: 1vw;
+      font-family: 'WarsawGothic';
+  }
+  .kfw-sub-title{
+      font-size: 4vw;
+      padding: 1vw;
+  }
+  .kfw-hr{
+    margin: 2vw auto;
+    width: 10vw;
+    height: 0.5vw;
+}
+  p{
+      width:60vw;
+      margin: auto;
+      text-align: center;
+      padding: 1vw;
+      font-size: 15px;
+      line-height:  20px;
+  }
+
+}
+@media only screen and (min-width: 1600px) {
+    .kfw-title{
+        padding: 1vw;
+        font-family: 'WarsawGothic';
+        letter-spacing: 0.5vw;
+        font-size: 1.5vw;
+    }
+    .kfw-mid-title{
+        font-size: 1.2vw;
+        padding: 1vw;
+        font-family: 'WarsawGothic';
+    }
+    .kfw-sub-title{
+        font-size: 1.2vw;
+        padding: 1vw;
+    }
+    .kfw-hr{
+        margin: 0.5vw auto;
+        width: 2.5vw;
+        height: 0.2vw;
+    }
+    p{
+        width:36vw;
+        margin: auto;
+        text-align: center;
+        padding: 1vw;
+        font-size: 0.7vw;
+        line-height:  1vw;
+    }
+}

@@ -1,0 +1,363 @@
+@font-face {
+  font-family: "WarsawGothicE";
+  src: url("../../assets/fonts/WarsawGothicExt.otf") format("opentype");
+}
+
+.remContainer {
+  padding-top: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: gainsboro;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.remContainer .remA {
+  padding-top: 0;
+  background-color: white;
+  width: inherit;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30vw 30vw 30vw;
+      grid-template-columns: 30vw 30vw 30vw;
+  grid-column-gap: 1vw;
+  -ms-grid-rows: auto auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
+  grid-row-gap: 1vw;
+}
+
+.remContainer .remA img {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  height: inherit;
+}
+
+.remContainer .remA .remA-desc {
+  background-color: ghostwhite;
+}
+
+.remContainer .remA .remA-desc .remA-desc-title {
+  padding-top: 7.5vw;
+  padding-bottom: 2vw;
+  margin: auto;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 0.2vw;
+}
+
+.remContainer .remA .remA-desc .remA-desc-text {
+  width: inherit;
+  font-size: 1.5vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.remContainer .remA .remB {
+  background-color: ghostwhite;
+  width: 30vw;
+  height: 30vw;
+  padding-left: 2vw;
+}
+
+.remContainer .remA .remB .remB-sub-title {
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding-top: 1vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.remContainer .remA .remB .remB-hr {
+  width: 4vw;
+  height: 0.5vw;
+  background-color: white;
+  border: 1px solid white;
+  margin: 1vw 0;
+}
+
+.remContainer .remA .remB .remB-desc {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  text-align: justify;
+  font-weight: bold;
+  padding: 1vw 0;
+}
+
+.remContainer .remA .remB button {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 1.2vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5vw 5vw;
+  margin: 12vw 0 0 3vw;
+}
+
+.remContainer .remA .remC {
+  background-color: ghostwhite;
+  width: 30vw;
+  height: 30vw;
+  padding: 0 2vw;
+}
+
+.remContainer .remA .remC .remC-sub-title {
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding-top: 1vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.remContainer .remA .remC .remC-text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  text-align: left;
+  padding: 0;
+  height: 30vw;
+}
+
+.remContainer .remA .remC-slides {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  height: 30vw;
+}
+
+.remContainer .remA .remD {
+  margin: 0;
+  width: 92vw;
+  padding-left: 2vw;
+  background-color: ghostwhite;
+}
+
+.remContainer .remA .remD .remD-top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.remContainer .remA .remD .remD-top-bar .remD-sub-title {
+  padding: 0;
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding-top: 1vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.remContainer .remA .remD .remD-top-bar .remD-button {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 1.2vw;
+  margin-left: 55vw;
+  background-color: black;
+  color: white;
+  font-size: 1.2vw;
+  width: 15vw;
+  padding: 0.5vw 1vw;
+}
+
+.remContainer .remA .remD .rem-hr {
+  width: 4vw;
+  height: 0.5vw;
+  background-color: white;
+  border: 1px solid white;
+  margin: 1vw 0 0  0;
+}
+
+.remContainer .remA .remD .remD-brands {
+  height: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.remContainer .remA .remD .remD-brands img {
+  padding: 0.5vw 2vw;
+}
+
+.remContainer .remA .remD .remD-sub-title {
+  padding: 0;
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding-top: 1vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.remContainer .remA .remD .remD-store-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.remContainer .remA .remD .remD-store-services .store-service {
+  background-color: white;
+  text-align: center;
+  font-size: 1.25vw;
+  padding: 1vw;
+  margin: 1vw;
+}
+
+.remContainer .remA .remD .drop-it {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+  margin-left: -2vw;
+  padding: 1vw;
+}
+
+.remContainer .remA .remD .drop-it .drop-it-title {
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+.remContainer .remA .remD .drop-it .drop-it-text {
+  padding: 0;
+  color: white;
+  letter-spacing: 0.1vw;
+}
+
+.remContainer .remA .remD .drop-it .drop-it-text button {
+  background-color: black;
+  color: white;
+  font-size: 1vw;
+  font-weight: bold;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  margin-left: 2vw;
+}
+
+.remContainer .remA .remD .remE {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
+}
+
+.remContainer .remA .remD .remE .remEBox {
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.remContainer .remA .remD .remE .remEBox .remEimg {
+  height: 17.5vw;
+  width: 27vw;
+}
+
+.remContainer .remA .remD .remE .remEBox .remEdesc {
+  padding: 1vw;
+}
+
+.remContainer .remA .remD .remE .remEBox .remEdesc h5 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1vw;
+}
+
+.remContainer .remA .remD .food-drink {
+  height: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.remContainer .remA .remD .food-drink img {
+  padding: 0.5vw 2vw;
+}
+
+.remContainer .remA .remD .other-stores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.remContainer .remA .remD .other-stores .rem-other-store {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid black;
+  background-color: white;
+  margin: 0 0.5vw;
+}
+
+.remContainer .remA .remD .other-stores .rem-other-store .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.remContainer .remA .remD .other-stores .rem-other-store .label i {
+  font-size: 3vw;
+}
+
+.remContainer .remA .remD .other-stores .rem-other-store .label p {
+  line-height: 1.3vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: left;
+}
+
+.remContainer .remA .remD .other-stores .rem-other-store hr {
+  width: inherit;
+}
+
+.remContainer .remA .remD .other-stores .rem-other-store i {
+  font-size: 25vw;
+  opacity: 0.5;
+}
+/*# sourceMappingURL=mik_remera_corner.css.map */

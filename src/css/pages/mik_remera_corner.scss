@@ -1,0 +1,282 @@
+*{
+    // border: 1px solid black;
+}
+@font-face {
+    font-family: "WarsawGothicE";
+    src: url("../../assets/fonts/WarsawGothicExt.otf") format("opentype");
+  }
+
+.remContainer{
+    padding-top: 0;
+    height: fit-content;
+    background-color: gainsboro;
+    width: fit-content;
+    margin: auto;
+    .remA{
+        padding-top: 0;
+        background-color: white;
+        width: inherit;
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-column-gap: 1vw;;
+        grid-template-rows: auto auto auto auto auto;
+        grid-row-gap:1vw;;
+
+        img{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: inherit;
+        }
+        .remA-desc{
+            background-color:  ghostwhite;
+            .remA-desc-title{
+                padding-top: 7.5vw;
+                padding-bottom: 2vw;
+                margin: auto;
+                text-align: center;
+                font-size: 2.5vw;
+                font-weight: bold;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                letter-spacing: 0.2vw;
+            }
+            .remA-desc-text{
+                width: inherit;
+                font-size: 1.5vw;
+                font-family: Verdana, Geneva, Tahoma, sans-serif
+            }
+        }
+
+        .remB{
+            background-color:  ghostwhite;
+            width: 30vw;
+            height: 30vw;
+            padding-left: 2vw; 
+            .remB-sub-title{
+                font-size: 1.5vw;
+                font-weight: bold;
+                padding-top: 1vw;
+                height: fit-content;
+                width: fit-content;
+            }
+
+            .remB-hr{
+                width: 4vw;
+                height: 0.5vw;
+                background-color: white;
+                border: 1px solid white;
+                margin: 1vw 0;
+            }
+            .remB-desc{
+                width: fit-content;
+                margin: 0;
+                text-align: justify;
+                font-weight: bold;
+                padding: 1vw 0;
+            }
+            button{
+                // height: fit-content;
+                text-align: center;
+                    background-color: black;
+                    color: white;
+                    font-size: 1.2vw;
+                    width: fit-content;;
+                    padding: 0.5vw 5vw;
+                    margin: 12vw 0 0 3vw;
+            }
+        }
+
+        .remC{
+            background-color:  ghostwhite;
+            width: 30vw;
+            height: 30vw;
+            padding: 0 2vw; 
+            .remC-sub-title{
+                font-size: 1.5vw;
+                font-weight: bold;
+                padding-top: 1vw;
+                height: fit-content;
+                width: fit-content;
+            }
+            .remC-text{
+                width: fit-content;
+                margin: 0;
+                text-align: left;
+                padding: 0;
+                height: 30vw;
+
+            }
+           
+        }
+        .remC-slides{
+            grid-column-start:2;
+            grid-column-end: 4;
+            height: 30vw;
+
+        }
+
+        .remD{
+            margin: 0;
+            // border: 1px solid black;
+            width: 92vw;
+            padding-left: 2vw; 
+            background-color: ghostwhite;
+
+            .remD-top-bar{
+                display: flex;
+
+                .remD-sub-title{
+                    padding: 0;
+                    font-size: 1.5vw;
+                font-weight: bold;
+                padding-top: 1vw;
+                height: fit-content;
+                width: fit-content;
+
+                }
+                
+                .remD-button{
+                    height: fit-content;
+                    margin-top: 1.2vw;
+                    margin-left: 55vw;
+                    background-color: black;
+                    color: white;
+                    font-size: 1.2vw;
+                    width: 15vw;;
+                    padding: 0.5vw 1vw;
+                }
+            }
+            .rem-hr{
+                width: 4vw;
+                height: 0.5vw;
+                background-color: white;
+                border: 1px solid white;
+                margin: 1vw 0 0  0;
+                }
+            .remD-brands{
+                height: 10vw;
+                display: flex;
+                background-color: white;
+                width: fit-content;
+                img{
+                    padding: 0.5vw 2vw;
+                }
+            }
+            .remD-sub-title{
+                padding: 0;
+                    font-size: 1.5vw;
+                font-weight: bold;
+                padding-top: 1vw;
+                height: fit-content;
+                width: fit-content;
+
+            }
+
+            .remD-store-services{
+                display: flex;
+                .store-service{
+                    background-color: white;
+                    text-align: center;
+                    font-size: 1.25vw;
+                    padding: 1vw ;
+                    margin: 1vw;
+
+                }
+            }
+
+            .drop-it{
+                background-color: black;
+                color: white;
+                text-align: center;
+                font-size: 1vw;
+                margin-left: -2vw;
+                padding: 1vw;
+                .drop-it-title{
+                    font-size: 1.2vw;
+                    font-weight: bold;
+                }
+                .drop-it-text{
+                    padding: 0;
+                    
+                    color: white;
+                    letter-spacing: 0.1vw;
+                    button{
+                    background-color: black;
+                    color: white;
+                    font-size: 1vw;
+                    font-weight: bold;
+                    width: fit-content;
+                    border: none;
+                    margin-left: 2vw;
+                    }
+
+                }
+            }
+            .remE{
+                
+                width: fit-content;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-column-gap: 1vw;
+                grid-row-gap:1vw;
+        
+                .remEBox{
+                    background-color: white;
+                    width: fit-content;
+                    height: fit-content;
+                    .remEimg{
+                        height: 17.5vw;
+                        width: 27vw;
+                    }
+                    .remEdesc{
+                        padding: 1vw;
+                        h5{width: fit-content;
+                            font-size: 1vw;
+                        }
+                    }
+                }  
+            }
+            .food-drink{
+                height: 10vw;
+                display: flex;
+                background-color: white;
+                width: fit-content;
+                img{
+                    padding: 0.5vw 2vw;
+                }
+            }
+            .other-stores{
+                display: flex;
+                .rem-other-store{
+                    width: fit-content;
+                    border: 1px solid black;
+                    background-color: white;
+                    margin: 0 0.5vw;
+                    .label{
+                        display: flex;
+                        width: fit-content;
+                        i{
+                            font-size: 3vw;
+                        }
+                        p{
+                            line-height: 1.3vw;
+                        width: fit-content;
+                        text-align: left;
+                        }
+                        
+                    }
+                    hr{
+                        width: inherit;
+                    }
+                    i{
+                        font-size: 25vw;
+                        opacity: 0.5;
+
+                    }
+                }
+            }
+
+        }
+               
+    }
+
+}
