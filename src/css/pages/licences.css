@@ -1,14 +1,15 @@
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Lato';
 }
 
-section {
+.licences-section {
   width: 60vw;
   margin: auto;
 }
 
-section .licences-top-bar {
+.licences-section .licences-top-bar {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -18,7 +19,7 @@ section .licences-top-bar {
   margin: 2vw auto;
 }
 
-section .licences-top-bar a {
+.licences-section .licences-top-bar a {
   border: 0.1vw solid gray;
   padding: 1vw 7.5vw;
   font-weight: bold;
@@ -26,47 +27,44 @@ section .licences-top-bar a {
   color: black;
 }
 
-section .licences-top-bar ._active {
+.licences-section .licences-top-bar ._active {
   color: #ff6666;
 }
 
-section .licences-terms {
+.licences-section .licences-terms {
   text-align: left;
   padding-top: 1vw;
 }
 
-section .licences-terms h1 {
+.licences-section .licences-terms .licences-h1 {
   text-align: left;
   width: 60vw;
   padding-left: 0.5vw;
   font-size: 1.5vw;
 }
 
-section .licences-terms p {
+.licences-section .licences-terms .licences-p {
   width: 60vw;
   text-align: justify;
+  font-size: 1.2vw;
 }
 
-section .licences-terms ul li {
+.licences-section .licences-terms ul .licences-li {
   list-style: square;
 }
 
-section .licences-terms i {
+.licences-section .licences-terms i {
   color: #ff6666;
   font-size: 5vw;
   padding: 1vw;
 }
 
-section .licences-terms p {
-  font-size: 1.2vw;
-}
-
 @media only screen and (max-width: 900px) {
-  section {
+  .licences-section {
     width: 80vw;
     margin: auto;
   }
-  section .licences-top-bar {
+  .licences-section .licences-top-bar {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -78,13 +76,13 @@ section .licences-terms p {
     display: -ms-flexbox;
     display: flex;
   }
-  section .licences-top-bar a {
+  .licences-section .licences-top-bar a {
     border: 0.1vw solid gray;
     padding: 1vw 2.5vw;
     font-weight: bold;
     text-align: center;
   }
-  section .licences-terms h1 {
+  .licences-section .licences-terms .licences-h1 {
     font-size: 2.5vw;
     font-weight: bold;
     text-align: justify;
@@ -92,18 +90,18 @@ section .licences-terms p {
     padding-left: 0.5vw;
     margin: 1vw auto;
   }
-  section .licences-terms p {
+  .licences-section .licences-terms .licences-p {
     width: 80vw;
     text-align: justify;
     padding: 1vw 0;
     font-size: 2.5vw;
   }
-  section .licences-terms h3 {
+  .licences-section .licences-terms .licences-h3 {
     font-size: 4vw;
     font-weight: bold;
     padding: 0.5vw 0;
   }
-  section .licences-terms i {
+  .licences-section .licences-terms i {
     color: #ff6666;
     font-size: 2.5vw;
     padding: 2vw;
@@ -111,11 +109,11 @@ section .licences-terms p {
 }
 
 @media only screen and (min-width: 1600px) {
-  section {
+  .licences-section {
     width: 40vw;
     margin: auto;
   }
-  section .licences-top-bar {
+  .licences-section .licences-top-bar {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -127,33 +125,33 @@ section .licences-terms p {
     display: -ms-flexbox;
     display: flex;
   }
-  section .licences-top-bar a {
+  .licences-section .licences-top-bar a {
     border: 0.1vw solid gray;
     padding: 1vw 2.5vw;
     font-size: 1.2vw;
   }
-  section .licences-terms {
+  .licences-section .licences-terms {
     text-align: left;
   }
-  section .licences-terms h1 {
+  .licences-section .licences-terms .licences-h1 {
     font-size: 1vw;
     font-weight: bold;
     text-align: justify;
     width: 40vw;
     padding: 0;
   }
-  section .licences-terms p {
+  .licences-section .licences-terms .licences-p {
     width: 40vw;
     text-align: justify;
     padding: 1vw 0;
     font-size: 1vw;
   }
-  section .licences-terms h3 {
+  .licences-section .licences-terms .licences-h3 {
     font-size: 1.25vw;
     font-weight: bold;
     padding: 0.5vw 0;
   }
-  section .licences-terms i {
+  .licences-section .licences-terms i {
     color: #ff6666;
     font-size: 1.5vw;
     padding: 1vw;

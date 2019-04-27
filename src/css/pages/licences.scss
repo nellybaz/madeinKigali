@@ -1,6 +1,6 @@
-*, *::before, *::after { box-sizing: border-box}
+*, *::before, *::after { box-sizing: border-box; font-family: 'Lato';}
 // <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-section{
+.licences-section{
     width: 60vw;
     margin: auto;
 
@@ -26,18 +26,19 @@ section{
 .licences-terms{
     text-align: left;
     padding-top: 1vw;
-    h1{
+    .licences-h1{
         text-align: left;
         width: 60vw;
         padding-left: 0.5vw;
         font-size: 1.5vw;
     }
-    p{
+    .licences-p{
         width: 60vw;
         text-align: justify;
+        font-size: 1.2vw;
     }
     ul{
-        li{
+        .licences-li{
          list-style: square;   
         }
     }
@@ -46,13 +47,10 @@ section{
         font-size: 5vw;
         padding: 1vw;
     }
-    p{
-        font-size: 1.2vw;
-    }
 }
 }
 @media only screen and (max-width: 900px) {
-    section{
+    .licences-section{
         width: 80vw;
         margin: auto;
     
@@ -75,7 +73,7 @@ section{
     }
     .licences-terms{
         // text-align: left;
-        h1{
+        .licences-h1{
             font-size: 2.5vw;
             font-weight: bold;
             text-align:justify;
@@ -83,13 +81,13 @@ section{
             padding-left: 0.5vw ;
             margin: 1vw auto;
         }
-        p{
+        .licences-p{
             width: 80vw;
             text-align: justify;
             padding: 1vw 0;
             font-size: 2.5vw;
         }
-        h3{
+        .licences-h3{
             font-size: 4vw;
             font-weight: bold;
             padding: 0.5vw 0;
@@ -103,7 +101,7 @@ section{
     }
 }
 @media only screen and (min-width: 1600px) {
-    section{
+    .licences-section{
         width: 40vw;
         margin: auto;
     
@@ -123,20 +121,20 @@ section{
     }
     .licences-terms{
         text-align: left;
-        h1{
+        .licences-h1{
             font-size: 1vw;
             font-weight: bold;
             text-align:justify;
             width: 40vw;
             padding: 0;
         }
-        p{
+        .licences-p{
             width: 40vw;
             text-align: justify;
             padding: 1vw 0;
             font-size: 1vw;
         }
-        h3{
+        .licences-h3{
             font-size: 1.25vw;
             font-weight: bold;
             padding: 0.5vw 0;
