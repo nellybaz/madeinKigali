@@ -24,7 +24,7 @@ if($token == "mik1234567890allow"){
             $result  = mqslqi_query($con, $query);
             $rows = mysqli_fecth_assoc($result);
             if(mysqli_num_rows($result) > 0){
-                $data = ["carosuel" => [$rows]]
+                $data = ["carosuel" => [$rows]];
 
             }
 
