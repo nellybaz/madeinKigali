@@ -89,7 +89,8 @@ class MIKRemera extends Component {
                                 LONDON, W1C 1DA <br /><br />
                                 03448 487487
                         </p>
-
+                        <div className='remB-btn'><button>GET DIRECTIONS</button></div>
+                            
                         </div>
 
                         {/* Second row of a grid */}
@@ -218,7 +219,7 @@ class MIKRemera extends Component {
 
                             <div className='drop-it'>
 
-                                <h2 className='drop-it-title'><strong style={{fontSize :'2.5vw',}}>Drop</strong><em style={{fontSize :'2.5vw', paddingRight:'2vw',}}>it</em> YOU SHOP. YOU DROP. WE DELIVER.</h2>
+                                <h2 className='drop-it-title'><strong style={{fontSize :'2.3vw',}}>Drop</strong><em style={{fontSize :'2.3vw', paddingRight:'2vw',}}>it</em> YOU SHOP. YOU DROP. WE DELIVER.</h2>
 
                                 <p className='drop-it-text'>
                                     Visit our Remera Corner store and have your shopping delivered home
@@ -318,10 +319,12 @@ class MIKRemera extends Component {
                                 {/* Images for drinks brands */}
 
                             </div>
+                            <hr className='rem-sep' />
                             <h2 className='remD-sub-title'>
                                 OTHER STORES NEARBY...
                         <hr className='rem-hr' />
                             </h2>
+                            
                             <div className='other-stores'>
                                 <div className='rem-other-store'>
                                     <div className='other-store-map'>
@@ -337,8 +340,7 @@ class MIKRemera extends Component {
                                         </p>
                                            
                                             </p>
-                                            <hr/>
-                                            <img style={{ width: '100%', objectFit: 'contain' }} src={otherPlaces} />
+                                            <img style={{  objectFit: 'contain' }} src={otherPlaces} />
                                     </div>
                                 </div>
                                 <div className='rem-other-store'>
@@ -355,8 +357,7 @@ class MIKRemera extends Component {
                                         </p>
                                            
                                             </p>
-                                            <hr/>
-                                            <img style={{ width: '100%', objectFit: 'contain' }} src={otherPlaces} />
+                                            <img style={{ objectFit: 'contain' }} src={otherPlaces} />
                                     </div>
                                 </div>
                                 <div className='rem-other-store'>
@@ -373,8 +374,7 @@ class MIKRemera extends Component {
                                         </p>
                                            
                                             </p>
-                                            <hr/>
-                                            <img style={{ width: '100%', objectFit: 'contain' }} src={otherPlaces} />
+                                            <img style={{objectFit: 'contain' }} src={otherPlaces} />
                                     </div>
                                 </div>
                             </div>
