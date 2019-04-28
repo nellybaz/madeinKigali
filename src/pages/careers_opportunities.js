@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import {Link} from 'react-router-dom';
-import '../css/pages/careers_opportunities.scss'
+import '../css/pages/careers_opportunities.css'
 
 class Careers extends Component {
     render() {

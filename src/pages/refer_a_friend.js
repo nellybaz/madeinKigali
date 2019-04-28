@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import {Link} from 'react-router-dom';
-import '../css/pages/refer_a_friend.scss';
+import '../css/pages/refer_a_friend.css';
 
 class Refer extends Component {
     render() {
