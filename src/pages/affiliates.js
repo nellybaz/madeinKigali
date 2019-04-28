@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import {Link} from 'react-router-dom';
-import '../css/pages/affiliates.scss'
+import '../css/pages/affiliates.css';
 
 class Affiliates extends Component {
 

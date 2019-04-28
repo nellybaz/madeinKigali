@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import {Link} from 'react-router-dom';
-import '../css/pages/happiness_guaranteed.scss'
+import '../css/pages/happiness_guaranteed.css';
 
 class Happiness extends Component {
 
