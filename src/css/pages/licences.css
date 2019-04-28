@@ -21,10 +21,11 @@
 
 .licences-section .licences-top-bar a {
   border: 0.1vw solid gray;
-  padding: 1vw 7.5vw;
+  padding: 2vw 7vw;
   font-weight: bold;
   text-decoration: none;
   color: black;
+  font-size: 1.5vw;
 }
 
 .licences-section .licences-top-bar ._active {
@@ -39,24 +40,29 @@
 .licences-section .licences-terms .licences-h1 {
   text-align: left;
   width: 60vw;
-  padding-left: 0.5vw;
   font-size: 1.5vw;
+  font-weight: bold;
 }
 
 .licences-section .licences-terms .licences-p {
   width: 60vw;
   text-align: justify;
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 
 .licences-section .licences-terms ul .licences-li {
   list-style: square;
 }
 
+.licences-section .licences-terms .licences-h3 {
+  font-size: 1.2vw;
+  font-weight: bold;
+  padding: 1vw;
+}
+
 .licences-section .licences-terms i {
   color: #ff6666;
-  font-size: 5vw;
-  padding: 1vw;
+  font-size: 3vw;
 }
 
 @media only screen and (max-width: 900px) {
@@ -78,12 +84,13 @@
   }
   .licences-section .licences-top-bar a {
     border: 0.1vw solid gray;
-    padding: 1vw 2.5vw;
+    padding: 1vw auto;
     font-weight: bold;
     text-align: center;
+    font-size: 1rem;
   }
   .licences-section .licences-terms .licences-h1 {
-    font-size: 2.5vw;
+    font-size: 0.9rem;
     font-weight: bold;
     text-align: justify;
     width: 80vw;
@@ -94,10 +101,10 @@
     width: 80vw;
     text-align: justify;
     padding: 1vw 0;
-    font-size: 2.5vw;
+    font-size: 0.8rem;
   }
   .licences-section .licences-terms .licences-h3 {
-    font-size: 4vw;
+    font-size: 0.9rem;
     font-weight: bold;
     padding: 0.5vw 0;
   }
@@ -127,7 +134,7 @@
   }
   .licences-section .licences-top-bar a {
     border: 0.1vw solid gray;
-    padding: 1vw 2.5vw;
+    padding: 1vw 3vw;
     font-size: 1.2vw;
   }
   .licences-section .licences-terms {
@@ -153,8 +160,8 @@
   }
   .licences-section .licences-terms i {
     color: #ff6666;
-    font-size: 1.5vw;
-    padding: 1vw;
+    font-size: 2vw;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=licences.css.map */

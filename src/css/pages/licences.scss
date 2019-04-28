@@ -13,10 +13,11 @@
 
     a{
         border: 0.1vw solid gray;
-        padding:  1vw 7.5vw;
+        padding:  2vw 7vw;
         font-weight: bold;
         text-decoration: none;
         color: black;
+        font-size: 1.5vw;
     }
     ._active{
         color: #ff6666;
@@ -29,23 +30,29 @@
     .licences-h1{
         text-align: left;
         width: 60vw;
-        padding-left: 0.5vw;
+        // padding-left: 0.5vw;
         font-size: 1.5vw;
+        font-weight: bold;
     }
     .licences-p{
         width: 60vw;
         text-align: justify;
-        font-size: 1.2vw;
+        font-size: 1vw;
     }
     ul{
         .licences-li{
          list-style: square;   
         }
     }
+    .licences-h3{
+        font-size: 1.2vw;
+        font-weight: bold;
+        padding: 1vw;
+    }
     i{
         color:#ff6666;
-        font-size: 5vw;
-        padding: 1vw;
+        font-size: 3vw;
+        // padding: 1vw;
     }
 }
 }
@@ -63,10 +70,10 @@
         
         a{
             border: 0.1vw solid gray;
-            padding:  1vw 2.5vw;
+            padding:  1vw auto;
             font-weight: bold;
             text-align: center;
-
+            font-size: 1rem
         }
         
         
@@ -74,7 +81,7 @@
     .licences-terms{
         // text-align: left;
         .licences-h1{
-            font-size: 2.5vw;
+            font-size: 0.9rem;
             font-weight: bold;
             text-align:justify;
             width: 80vw;
@@ -85,10 +92,10 @@
             width: 80vw;
             text-align: justify;
             padding: 1vw 0;
-            font-size: 2.5vw;
+            font-size: 0.8rem;
         }
         .licences-h3{
-            font-size: 4vw;
+            font-size: 0.9rem;
             font-weight: bold;
             padding: 0.5vw 0;
         }
@@ -114,7 +121,7 @@
         
         a{
             border: 0.1vw solid gray;
-            padding:  1vw 2.5vw;
+            padding:  1vw 3vw;
             font-size: 1.2vw;
         }
         
@@ -141,8 +148,8 @@
         }
         i{
             color:#ff6666;
-            font-size: 1.5vw;
-            padding: 1vw;
+            font-size: 2vw;
+            padding: 0;
         }
     }
     }

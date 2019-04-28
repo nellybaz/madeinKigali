@@ -5,7 +5,7 @@
 }
 
 .sitemap-section {
-  padding: 1vw;
+  margin: auto;
   width: 90vw;
 }
 
@@ -23,14 +23,14 @@
 
 .sitemap-section hr {
   height: 0.1vw;
-  width: 90vw;
+  width: 82vw;
   background-color: black;
-  margin: 0.75vw auto;
+  margin: 0.75vw 0;
 }
 
 .sitemap-section .sitemap-container {
   padding: 0;
-  margin: auto 0.5vw;
+  margin: auto 2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +68,6 @@
 
 @media only screen and (max-width: 900px) {
   .sitemap-section {
-    padding-top: 1vw;
     width: 90vw;
   }
   .sitemap-section .sitemap-title {
@@ -80,8 +79,7 @@
     margin: auto 0;
   }
   .sitemap-section .sitemap-container {
-    padding: 0;
-    margin: auto 0.5vw;
+    margin: auto 5vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -101,11 +99,11 @@
   }
   .sitemap-section .sitemap-container .sitemap-col .sitemap-categ1 .sitemap-category-name {
     margin: 0;
-    font-size: 3vw;
+    font-size: 1rem;
     padding: 2vw 0;
   }
   .sitemap-section .sitemap-container .sitemap-col .sitemap-categ1 li a {
-    font-size: 2.5vw;
+    font-size: 0.9rem;
   }
 }
 

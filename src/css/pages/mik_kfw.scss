@@ -18,6 +18,8 @@
     font-family: 'Lato';
     font-weight: normal;
     letter-spacing: 0.5vw;
+    margin: auto;
+    width: fit-content
 
 }
 .kfw-sub-title{
@@ -25,6 +27,8 @@
     padding: 1vw;
     font-weight: normal;
     letter-spacing: 0.3vw;
+    margin: auto;
+    width: fit-content
 }
 .kfw-hr{
     margin: 1vw auto;
@@ -62,11 +66,11 @@
     height: 0.5vw;
 }
 .kfw-p{
-      width:60vw;
+      width:80vw;
       margin: auto;
       text-align: center;
       padding: 1vw;
-      font-size: 15px;
+      font-size: 1rem;
       line-height:  20px;
   }
 }
