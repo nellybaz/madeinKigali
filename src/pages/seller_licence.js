@@ -130,7 +130,7 @@ class SellerLicence extends Component {
 <br />
                             2.4. You hereby waive in favour of Patternbank and all its assignees and successors in title all moral rights in the Accepted Design (i.e. the right to be identified as its author and object to its derogatory treatment) to which you may be entitled under the Copyright, Designs and Patents Act 1988 as amended from time to time and under all similar legislation from time to time in force anywhere in the world.
 <br />
-                            <h3>
+<h3 className="licences-h3">
 
 
                                 3. GRANT OF LICENCE
