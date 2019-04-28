@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
-// import SimpleImageSlider from "react-simple-image-slider";
+import SimpleImageSlider from "react-simple-image-slider";
 import '../css/pages/mik_remera_corner.css';
 import Header from '../components/header';
 import rem from '../assets/images/about/remera_corner.png';
@@ -39,6 +39,46 @@ import {
     isMobile
 } from "react-device-detect";
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
+
+function OtherLocations() {
+    return (
+        <div className='rem-other-store'>
+            <div className='other-store-map'>
+                <p className='other-store-label'>
+                    <img style={{ objectFit: 'contain' }} src={markerIcon} />
+                    <p >
+                        <strong>Made In Kigali</strong><br />
+                        Selfridges,<br />
+                        400 Oxford St,<br />
+                        Marylebone,<br />
+                        London,<br />
+                        W1A 1AB<br />
+                    </p>
+                </p>
+                <img style={{ objectFit: 'contain' }} src={otherPlaces} />
+            </div>
+        </div>
+    )
+}
+
+function BeautyServices() {
+    return (
+        <div className='remEBox'>
+            <div className='remEimg'>
+                <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
+                {/* Image */}
+            </div>
+            <div className='remEdesc'>
+                <h5>HERSHESONS</h5>
+                <h7>Blow Dry Bar</h7> <br />
+                0207 927 7888
+                            </div>
+        </div>
+    )
+}
+
+let slidesWidth;
 class MIKRemera extends Component {
 
     constructor(props) {
@@ -61,11 +101,20 @@ class MIKRemera extends Component {
         const images = [
             { url: slide1 },
             { url: slide2 },
-            { url: slide3},
+            { url: slide3 },
             { url: slide4 },
             { url: slide5 },
-            { url: slide6},
+            { url: slide6 },
         ];
+        
+        if (isMobile) {
+            slidesWidth = 50;
+             }
+             else if (isBrowser){
+                 slidesWidth=783;
+             }
+
+             
 
         return (
             <div style={{ background: 'white' }}>
@@ -83,14 +132,14 @@ class MIKRemera extends Component {
                             <h1 className='remA-desc-title'>
                                 MADEINKIGALI AT REMERA CORNER
                         </h1>
-                        <hr className='remA-hr' />
+                            <hr className='remA-hr' />
                             <p className='remA-desc-text'>
                                 214 OXFORD STREET, <br />
                                 LONDON, W1C 1DA <br /><br />
                                 03448 487487
                         </p>
-                        <div className='remB-btn'><button>GET DIRECTIONS</button></div>
-                            
+                            <div className='remB-btn'><button>GET DIRECTIONS</button></div>
+
                         </div>
 
                         {/* Second row of a grid */}
@@ -114,33 +163,33 @@ class MIKRemera extends Component {
                                 <hr className="remB-hr" />
                             </h2>
                             <p className='remB-desc'>
-                            <div className='remB-desc-loc'>
-                            <img style={{ objectFit: 'contain' }} src={minusIcon} />
-                    
-                            Remera Street
-                            <img style={{ marginLeft:'2vw', backgroundColor:'blue', objectFit: 'contain' }} src={minusIconWhite} />
-                            <img style={{ backgroundColor:'gold', objectFit: 'contain' }} src={minusIconWhite} />
-                            <img style={{ backgroundColor:'red', objectFit: 'contain' }} src={minusIconWhite} />
-                    </div>
-                    <div className='remB-desc-loc'>
-                            <img style={{ objectFit: 'contain' }} src={minusIcon} />
-                    
-                            Remera Street
-                            <img style={{ marginLeft:'5.5vw', backgroundColor:'gray', objectFit: 'contain' }} src={minusIconWhite} />
-                            <img style={{ backgroundColor:'red', objectFit: 'contain' }} src={minusIconWhite} />
-                    </div>
-                    <div className='remB-desc-loc'>
-                            <img style={{ objectFit: 'contain' }} src={minusIcon} />
-                    
-                            Remera Street
-                            <img style={{ marginLeft:'5.5vw', backgroundColor:'black', objectFit: 'contain' }} src={minusIconWhite} />
-                            <img style={{ backgroundColor:'red', objectFit: 'contain' }} src={minusIconWhite} />
-                    </div>
+                                <div className='remB-desc-loc'>
+                                    <img style={{ objectFit: 'contain' }} src={minusIcon} />
 
-                                
+                                    Remera Street
+                            <img style={{ marginLeft: '2vw', backgroundColor: 'blue', objectFit: 'contain' }} src={minusIconWhite} />
+                                    <img style={{ backgroundColor: 'gold', objectFit: 'contain' }} src={minusIconWhite} />
+                                    <img style={{ backgroundColor: 'red', objectFit: 'contain' }} src={minusIconWhite} />
+                                </div>
+                                <div className='remB-desc-loc'>
+                                    <img style={{ objectFit: 'contain' }} src={minusIcon} />
+
+                                    Remera Street
+                            <img style={{ marginLeft: '5.5vw', backgroundColor: 'gray', objectFit: 'contain' }} src={minusIconWhite} />
+                                    <img style={{ backgroundColor: 'red', objectFit: 'contain' }} src={minusIconWhite} />
+                                </div>
+                                <div className='remB-desc-loc'>
+                                    <img style={{ objectFit: 'contain' }} src={minusIcon} />
+
+                                    Remera Street
+                            <img style={{ marginLeft: '5.5vw', backgroundColor: 'black', objectFit: 'contain' }} src={minusIconWhite} />
+                                    <img style={{ backgroundColor: 'red', objectFit: 'contain' }} src={minusIconWhite} />
+                                </div>
+
+
                             </p>
                             <div className='remB-btn'><button>GET DIRECTIONS</button></div>
-                            
+
                         </div>
                         <div className='remB-map' >
                             <div style={{ height: 'inherit', width: 'inherit', }}>
@@ -163,23 +212,23 @@ class MIKRemera extends Component {
                             <h2 className='remC-sub-title'>
                                 MORE THAN JUST A STORE
                                 <hr className='rem-hr' />
-                        </h2>
+                            </h2>
 
                             <p className='remC-text'>
                                 WIth three floors and 90,000 sq ft - that's the equivalent of 1,800 Kigali busses standing end to end - MIK Remera Corner  is more than just your average. WIth three floors and 90,000 sq ft - that's the equivalent of 1,800 Kigali busses standing end to end
                         <br /><br />
                                 WIth three floors and 90,000 sq ft - that's the equivalent of 1,800 Kigali busses standing end to end - MIK Remera Corner  is more than just your average.
-                        
+
                                 WIth three floors and 90,000 sq ft - that's the equivalent of 1,800 Kigali busses standing end to end - MIK Remera Corner  is more than just your average.
                         </p>
                         </div>
 
                         <div className='remC-slides'>
-                        {/* <SimpleImageSlider
-                    width={807}
+                            <SimpleImageSlider 
+                    width={slidesWidth}
                     height={396}
                     images={images}
-                /> */}
+                />
 
                             {/* Sliding Images */}
                         </div>
@@ -194,14 +243,14 @@ class MIKRemera extends Component {
                             </div>
 
                             <div className='remD-brands'>
-                            <img style={{ objectFit: 'contain' }} src={brand1Img} />
-                            <img style={{ objectFit: 'contain' }} src={brand2Img} />
-                            <img style={{ objectFit: 'contain' }} src={brand3Img} />
-                            <img style={{ objectFit: 'contain' }} src={brand4Img} />
-                            <img style={{ objectFit: 'contain' }} src={brand5Img} />
+                                <img style={{ objectFit: 'contain' }} src={brand1Img} />
+                                <img style={{ objectFit: 'contain' }} src={brand2Img} />
+                                <img style={{ objectFit: 'contain' }} src={brand3Img} />
+                                <img style={{ objectFit: 'contain' }} src={brand4Img} />
+                                <img style={{ objectFit: 'contain' }} src={brand5Img} />
 
                                 {/* Imgafes for brands available */}
-                                
+
 
                             </div>
 
@@ -219,7 +268,7 @@ class MIKRemera extends Component {
 
                             <div className='drop-it'>
 
-                                <h2 className='drop-it-title'><strong style={{fontSize :'2.3vw',}}>Drop</strong><em style={{fontSize :'2.3vw', paddingRight:'2vw',}}>it</em> YOU SHOP. YOU DROP. WE DELIVER.</h2>
+                                <h2 className='drop-it-title'><strong style={{ fontSize: '2.3vw', }}>Drop</strong><em style={{ fontSize: '2.3vw', paddingRight: '2vw', }}>it</em> YOU SHOP. YOU DROP. WE DELIVER.</h2>
 
                                 <p className='drop-it-text'>
                                     Visit our Remera Corner store and have your shopping delivered home
@@ -235,74 +284,14 @@ class MIKRemera extends Component {
                             </h2>
 
                             <section className="remE">
-                                <div className='remEBox'>
-                                    <div className='remEimg'>
-                                        {/* Image */}
-                                        <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
-                                    </div>
-                                    <div className='remEdesc'>
-                                        <h5>HERSHESONS</h5>
-                                        <h7>Blow Dry Bar</h7> <br />
-                                        0207 927 7888
-                            </div>
-                                </div>
-                                <div className='remEBox'>
-                                    <div className='remEimg'>
-                                    <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
-                                    
-                                        {/* Image */}
-                                    </div>
-                                    <div className='remEdesc'>
-                                        <h5>HERSHESONS</h5>
-                                        <h7>Blow Dry Bar</h7> <br />
-                                        0207 927 7888
-                            </div>
-                                </div>
-                                <div className='remEBox'>
-                                    <div className='remEimg'>
-                                    <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
-                                     {/* Image */}
-                                    </div>
-                                    <div className='remEdesc'>
-                                        <h5>HERSHESONS</h5>
-                                        <h7>Blow Dry Bar</h7> <br />
-                                        0207 927 7888
-                            </div>
-                                </div>
-                                <div className='remEBox'>
-                                    <div className='remEimg'>
-                                    <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
-                                     {/* Image */}
-                                    </div>
-                                    <div className='remEdesc'>
-                                        <h5>HERSHESONS</h5>
-                                        <h7>Blow Dry Bar</h7> <br />
-                                        0207 927 7888
-                            </div>
-                                </div>
-                                <div className='remEBox'>
-                                    <div className='remEimg'>
-                                    <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
-                                     {/* Image */}
-                                    </div>
-                                    <div className='remEdesc'>
-                                        <h5>HERSHESONS</h5>
-                                        <h7>Blow Dry Bar</h7> <br />
-                                        0207 927 7888
-                            </div>
-                                </div>
-                                <div className='remEBox'>
-                                    <div className='remEimg'>
-                                    <img style={{ width: '100%', objectFit: 'contain' }} src={remStore} />
-                                     {/* Image */}
-                                    </div>
-                                    <div className='remEdesc'>
-                                        <h5>HERSHESONS</h5>
-                                        <h7>Blow Dry Bar</h7> <br />
-                                        0207 927 7888
-                            </div>
-                                </div>
+                           
 
+                                <BeautyServices />
+                                <BeautyServices />
+                                <BeautyServices />
+                                <BeautyServices />
+                                <BeautyServices />
+                                <BeautyServices />
 
                             </section>
 
@@ -312,9 +301,9 @@ class MIKRemera extends Component {
                             </h2>
                             <div className='food-drink'>
 
-                            <img style={{ objectFit: 'contain' }} src={brand1Img} />
-                            <img style={{ objectFit: 'contain' }} src={brand2Img} />
-                            <img style={{ objectFit: 'contain' }} src={brand3Img} />
+                                <img style={{ objectFit: 'contain' }} src={brand1Img} />
+                                <img style={{ objectFit: 'contain' }} src={brand2Img} />
+                                <img style={{ objectFit: 'contain' }} src={brand3Img} />
 
                                 {/* Images for drinks brands */}
 
@@ -324,69 +313,14 @@ class MIKRemera extends Component {
                                 OTHER STORES NEARBY...
                         <hr className='rem-hr' />
                             </h2>
-                            
+
                             <div className='other-stores'>
-                                <div className='rem-other-store'>
-                                    <div className='other-store-map'>
-                                        <p className='other-store-label'>  
-                                        <img style={{ objectFit: 'contain' }} src={markerIcon} />
-                                        <p >
-                                        <strong>Made In Kigali</strong><br />
-                                            Selfridges,<br />
-                                            400 Oxford St,<br />
-                                            Marylebone,<br />
-                                            London,<br />
-                                            W1A 1AB<br />
-                                        </p>
-                                           
-                                            </p>
-                                            <img style={{  objectFit: 'contain' }} src={otherPlaces} />
-                                    </div>
-                                </div>
-                                <div className='rem-other-store'>
-                                    <div className='other-store-map'>
-                                        <p className='other-store-label'>  
-                                        <img style={{ objectFit: 'contain' }} src={markerIcon} />
-                                        <p >
-                                        <strong>Made In Kigali</strong><br />
-                                            Selfridges,<br />
-                                            400 Oxford St,<br />
-                                            Marylebone,<br />
-                                            London,<br />
-                                            W1A 1AB<br />
-                                        </p>
-                                           
-                                            </p>
-                                            <img style={{ objectFit: 'contain' }} src={otherPlaces} />
-                                    </div>
-                                </div>
-                                <div className='rem-other-store'>
-                                    <div className='other-store-map'>
-                                        <p className='other-store-label'>  
-                                        <img style={{ objectFit: 'contain' }} src={markerIcon} />
-                                        <p >
-                                        <strong>Made In Kigali</strong><br />
-                                            Selfridges,<br />
-                                            400 Oxford St,<br />
-                                            Marylebone,<br />
-                                            London,<br />
-                                            W1A 1AB<br />
-                                        </p>
-                                           
-                                            </p>
-                                            <img style={{objectFit: 'contain' }} src={otherPlaces} />
-                                    </div>
-                                </div>
+                                <OtherLocations />
+                                <OtherLocations />
+                                <OtherLocations />
                             </div>
-
-
                         </div>
-
                     </section>
-
-
-
-
                 </section>
 
 

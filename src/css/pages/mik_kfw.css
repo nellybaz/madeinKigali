@@ -21,6 +21,10 @@
   font-family: 'Lato';
   font-weight: normal;
   letter-spacing: 0.5vw;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .kfw-section .kfw-sub-title {
@@ -28,6 +32,10 @@
   padding: 1vw;
   font-weight: normal;
   letter-spacing: 0.3vw;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .kfw-section .kfw-hr {
@@ -67,11 +75,11 @@
     height: 0.5vw;
   }
   .kfw-section .kfw-p {
-    width: 60vw;
+    width: 80vw;
     margin: auto;
     text-align: center;
     padding: 1vw;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 20px;
   }
 }

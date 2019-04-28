@@ -55,8 +55,11 @@ class BuyerLicence extends Component {
 If you are looking for exclusive designs that only you and your company/brand has use of, head to our Premium area. The supplied downloadable file is a hi-resolution layered Photoshop PSD or Illustrator AI or EPS file. To access Premium simply create a free account here.
 </p>
 <p>
+
+<p className="licences-p">
 <i class="fas fa-star"></i>
 <strong>Exclusive Rights </strong>- you get all the benefits of our Standard and Exclusive License plus you get exclusive rights to the design and it’s instantly removed from the site once purchased.
+</p>
 </p>                   
                     </div>
                 </section>
