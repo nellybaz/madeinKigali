@@ -80,7 +80,7 @@ class Footer extends Component {
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={'/dev/help'}>Shop Online</Link></td>
+              <td><Link to={'/dev/points'}>Store Finder</Link></td>
                 <td><Link to={'/dev/help'}>Track your order</Link></td>
                 <td><Link to={'/dev/student_discount'}>Student Discount</Link></td>
                 <td><Link to={'/dev/company2'}>Company</Link></td>
@@ -89,75 +89,75 @@ class Footer extends Component {
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}>Orders</Link></td>
+              <td><Link to={'/dev/help'}>FAQs</Link></td>
                 <td><Link to={'/dev/info/delivery'}>Delivery</Link></td>
                 <td><Link to={'/dev/gift_card'}>Gift Cards</Link></td>
-                <td><Link to={'/dev/help'}>MadeInKigali Support</Link></td>
+                <td><Link to={'/dev/affiliates'}>Affiliates</Link></td>
                 <td><Link to={''}>Returns & Exchanges</Link></td>
                 <td><Link to={''}></Link></td>
               </tr>
 
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={'/dev/info/returns'}>Return</Link></td>
+              <td><Link to={'/dev/contact'}>Contact us</Link></td>
                 <td><Link to={'/dev/info/returns'}>Returns</Link></td>
                 <td><Link to={'/dev/gift_card'}>MIK Cards</Link></td>
-                <td><Link to={''}>Careers & Opportunity</Link></td>
+                <td><Link to={''}>MIK at KFC</Link></td>
                 <td><Link to={''}>Subscribe to our Emails</Link></td>
                 <td><Link to={''}></Link></td>
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-                <td><Link to={''}>My account</Link></td>
+                <td><Link to={'/dev/size-guide'}>Size Guide</Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}>Terms & Conditions</Link></td>
+                <td><Link to={'/dev/refer_a_friend'}>Refer a friend</Link></td>
+                <td><Link to={'/dev/careers&Opportunities'}>Careers & opportunities</Link></td>
                 <td><Link to={''}>Contact us</Link></td>
                 <td><Link to={''}></Link></td>
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}>Designing FAQs</Link></td>
+              <td><Link to={'/dev/washcare'}>Washcare & AfterCare</Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}>Privacy</Link></td>
+                <td><Link to={'/dev/happiness_guaranteed'}>Happiness Guaranteed</Link></td>
+                <td><Link to={'/dev/socialresponsibility'}>Social Responsibility</Link></td>
                 <td><Link to={''}>Payment Method</Link></td>
                 <td><Link to={''}></Link></td>
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}>Selling FAQs</Link></td>
+              <td><Link to={'/dev/sitemap'}>Site map</Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}>Seller Agreement</Link></td>
+                <td><Link to={'/dev/seller_licence'}>Legal Notice: Terms & Conditions/ Privacy/ Cookie/ Sales conditions / Seller/Buyer Agreement</Link></td>
                 <td><Link to={''}>Shipping Method</Link></td>
                 <td><Link to={''}></Link></td>
               </tr>
 
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}>Printing FAQs</Link></td>
+              <td><Link to={'/dev/locations/remera_corner'}>MadeInKigali at Remera Corner</Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}>Social responsibility</Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-              </tr>
-
-              <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}>Made to Measure FAQs</Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}>Happiness Guaranteed</Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}>Wholesale FAQs</Link></td>
+              <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}>MIK at IKFW</Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+              </tr>
+
+              <tr className={`${this.state.footerClass}`}>
+              <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
               </tr>

@@ -106,9 +106,9 @@ class ComingSoon1 extends Component {
 
           <img src={require('../assets/images/coming3.jpg')} />
           <div className='coming1-btns'>
-            <Link to={'/stash/company/about2'}>ABOUT US</Link>
-            <Link to={'/stash/company2'}>WHO WE ARE</Link>
-            <Link to={'/stash/company/about'}>WHAT WE DO</Link>
+            <Link to={'/dev/company/about2'}>ABOUT US</Link>
+            <Link to={'/dev/company2'}>WHO WE ARE</Link>
+            <Link to={'/dev/company/about'}>WHAT WE DO</Link>
 
           </div>
 
@@ -236,9 +236,9 @@ class ComingSoon1 extends Component {
                             </ul>
 
                             <div className='coming-mobile-btn-div'>
-                              <Link to={'/stash/company/about2'}>ABOUT US</Link>
-                               <Link to={'/stash/company2'}>WHO WE ARE</Link>
-                              <Link to={'/stash/company/about'}>WHAT WE DO</Link>
+                              <Link to={'/dev/company/about2'}>ABOUT US</Link>
+                               <Link to={'/dev/company2'}>WHO WE ARE</Link>
+                              <Link to={'/dev/company/about'}>WHAT WE DO</Link>
                             </div>
                       
                       </div>

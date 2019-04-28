@@ -104,7 +104,7 @@ const outer = () => (
             <Route exact path={"/dev/washcare"} component={WashCare} />
             <Route exact path={"/dev/mik_kigali_fashion_week"} component={MIKKFW} />
             <Route exact path={"/dev/sitemap"} component={SiteMap} />
-            <Route exact path={"/dev/locations/remera_corner/"} component={MIKRemera} />
+            <Route exact path={"/dev/locations/remera_corner"} component={MIKRemera} />
             <Route exact path={"/dev/happiness_guaranteed"} component={Happiness} />
             <Route exact path={"/dev/affiliates"} component={Affiliates} />
             <Route exact path={"/dev/careers&Opportunities"} component={Careers} />
