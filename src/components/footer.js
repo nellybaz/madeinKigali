@@ -102,7 +102,7 @@ class Footer extends Component {
               <td><Link to={'/dev/contact'}>Contact us</Link></td>
                 <td><Link to={'/dev/info/returns'}>Returns</Link></td>
                 <td><Link to={'/dev/gift_card'}>MIK Cards</Link></td>
-                <td><Link to={''}>MIK at KFC</Link></td>
+                <td><Link to={'/dev/mik_kigali_fashion_week'}>MIK at KFC</Link></td>
                 <td><Link to={''}>Subscribe to our Emails</Link></td>
                 <td><Link to={''}></Link></td>
               </tr>
