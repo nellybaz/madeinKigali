@@ -3,7 +3,6 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import {Link} from 'react-router-dom';
 import '../css/pages/social_responsibility.scss';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 
 class SocialResponsibility extends Component {

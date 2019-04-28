@@ -2,6 +2,20 @@
   font-family: 'Lato', serif;
 }
 
+@media only screen and (min-width: 1600px) {
+
+  .Social  {
+    margin-left:400px !important;
+    align-content: center !important;
+    text-align: center !important;
+    align-items: center !important;
+    width: 60% !important;
+    //justify-content: center !important;
+
+  }
+
+}
+
 @media only screen and (max-width: 745px) {
   .issue-social {
     //width: 100%;
@@ -55,16 +69,19 @@
 }
 
 .Social {
-  .header-label{
-    color: #FFFFFF;
-
-  }
+  align-content: center;
+  align-items: center;
   width: 100%;
   margin: 0 !important;
+  .header-label{
+    color: #FFFFFF;
+  }
+
 }
 
 .container-social {
   align-content: center;
+  align-items: center;
   text-align: center;
   width: 100%;
   //margin:0 !important;
