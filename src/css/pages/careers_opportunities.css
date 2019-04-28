@@ -1,27 +1,15 @@
 @media only screen and (max-width: 745px) {
-<<<<<<< HEAD
   .careers-container {
     margin: 0 3% !important;
     width: 100% !important;
   }
   .careers-column {
-=======
-  .container {
-    margin: 0 !important;
-    width: 100% !important;
-  }
-  .column {
->>>>>>> stagging
     width: 100%;
     display: block;
     margin: 0 !important;
     padding: 0 !important;
   }
-<<<<<<< HEAD
   .careers-column1 {
-=======
-  .column1 {
->>>>>>> stagging
     margin-top: 0 !important;
     width: 100%;
   }
@@ -36,7 +24,6 @@
 
 .Careers {
   width: 100%;
-<<<<<<< HEAD
   font-family: futura-pt, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -48,32 +35,16 @@
 }
 
 .careers-container .careers-img {
-=======
-}
-
-.container {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  width: 50%;
-}
-
-.container img {
->>>>>>> stagging
   width: 100%;
   margin-bottom: 5em;
 }
 
-<<<<<<< HEAD
 .careers-container .h1-main {
-=======
-.container h1 {
->>>>>>> stagging
   font-size: 1em;
   letter-spacing: 0.3em;
   font-weight: 500;
 }
 
-<<<<<<< HEAD
 .careers-container .p-main {
   letter-spacing: 0.1em;
   font-size: 0.8em;
@@ -84,57 +55,26 @@
 }
 
 .careers-container .careers-vacancies .h1-vacancies {
-=======
-.container p {
-  letter-spacing: 0.1em;
-}
-
-.container .vacancies {
-  margin: 5em 0;
-}
-
-.container .vacancies h1 {
->>>>>>> stagging
   font-size: 1.5em;
   font-weight: 600;
 }
 
-<<<<<<< HEAD
 .careers-container .careers-vacancies .careers-row {
-=======
-.container .vacancies .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
->>>>>>> stagging
   width: 100%;
   margin: 0 !important;
 }
 
-<<<<<<< HEAD
 .careers-container .careers-vacancies .careers-column {
   text-align: left;
-=======
-.container .vacancies .column {
-  text-align: left;
-  -webkit-box-flex: 60%;
-      -ms-flex: 60%;
-          flex: 60%;
->>>>>>> stagging
   background-color: white;
   margin-left: 0 !important;
 }
 
-<<<<<<< HEAD
 .careers-container .careers-vacancies .careers-column .h1-column {
-=======
-.container .vacancies .column h1 {
->>>>>>> stagging
   font-size: 1em;
   margin-bottom: 0 !important;
 }
 
-<<<<<<< HEAD
 .careers-container .careers-vacancies .careers-column .p-column {
   letter-spacing: 0.1em;
   font-size: 1em;
@@ -150,23 +90,6 @@
 
 .careers-container .careers-vacancies .careers-column1 .h2-details {
   font-size: 1em;
-=======
-.container .vacancies .column p {
-  letter-spacing: 0.1em;
-  font-size: 1em;
-  padding: 1em 0 !important;
-}
-
-.container .vacancies .column1 {
-  margin-top: 4em;
-  -webkit-box-flex: 20%;
-      -ms-flex: 20%;
-          flex: 20%;
-}
-
-.container .vacancies .column1 h2 {
-  font-size: 1.5em;
->>>>>>> stagging
   background-color: black;
   color: white;
   text-align: center;
@@ -174,11 +97,7 @@
   text-transform: lowercase;
 }
 
-<<<<<<< HEAD
 .careers-container .careers-vacancies .careers-column1 .h2-details:hover {
-=======
-.container .vacancies .column1 h2:hover {
->>>>>>> stagging
   background-color: white;
   color: black;
   border: 0.08em black solid;
