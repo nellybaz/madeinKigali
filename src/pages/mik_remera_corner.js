@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import SimpleImageSlider from "react-simple-image-slider";
+// import SimpleImageSlider from "react-simple-image-slider";
 import '../css/pages/mik_remera_corner.css';
 import Header from '../components/header';
 import rem from '../assets/images/about/remera_corner.png';
@@ -27,6 +27,8 @@ import brand5Img from '../assets/images/rem-brands5.png';
 
 import CombineWith from '../components/combine';
 import GoogleMapReact from 'google-map-react';
+import SimpleImageSlider from '../components/ImageSlider';
+
 
 import Footer from '../components/footer';
 import SellerLicence from './seller_licence';
@@ -78,15 +80,39 @@ function BeautyServices() {
     )
 }
 
-let slidesWidth;
+let slidesWidth = window.innerWidth;
 class MIKRemera extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
 
-        }
-    }
+    //     }
+    // }
+    
+    constructor(props) {
+        console.log(slidesWidth);
+        super(props);
+        this.state = { width: 0, height: 0 };
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+        // console.log(this.state.width/783.0)
+        slidesWidth = this.state.width/4;
+      }
+      
+      componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener('resize', this.updateWindowDimensions);
+      }
+      
+      componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
+      }
+      
+      updateWindowDimensions() {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
+        slidesWidth = this.state.width/3.5;
+        // console.log(this.state.width)
+      }
 
     static defaultProps = {
         center: {
@@ -107,12 +133,12 @@ class MIKRemera extends Component {
             { url: slide6 },
         ];
         
-        if (isMobile) {
-            slidesWidth = 50;
-             }
-             else if (isBrowser){
-                 slidesWidth=783;
-             }
+        // if (isMobile) {
+        //     slidesWidth = 50;
+        //      }
+        //      else if (isBrowser){
+        //         //  slidesWidth=;
+        //      }
 
              
 
@@ -225,7 +251,7 @@ class MIKRemera extends Component {
 
                         <div className='remC-slides'>
                             <SimpleImageSlider 
-                    width={slidesWidth}
+                    width={783}
                     height={396}
                     images={images}
                 />
