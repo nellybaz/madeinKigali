@@ -1,0 +1,98 @@
+* {
+  font-family: 'Lato', serif;
+}
+@media only screen and (max-width: 745px) {
+  .ref-container{
+    margin:0 !important;
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+
+  .Refer {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+
+}
+
+.Refer{
+//align-items: center;
+//  align-content: center;
+//  text-align: center;
+}
+
+.ref-container{
+  margin:5% 18%;
+  border: 0.01em black;
+  box-shadow: 0 0 1em grey;
+  -webkit-border-radius: 1%;
+  -moz-border-radius: 1%;
+  border-radius: 1%;
+  .ref-header{
+    font-family: 'Sans-serif', sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: -0.07em;
+    text-align: center;
+    padding-top: 1.5em;
+  }
+  .ref-col{
+    margin:2em;
+  }
+  .ref-col1{
+    margin:2em;
+    background-color: #ececec;
+  }
+  .ref-p1{
+    color:#f26a97;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+  }
+  .ref-p2{
+    text-align: left;
+    font-size: 1.2em;
+  }
+  .ref-p3{
+    text-align: left;
+    font-size: 1.1em;
+    padding:1em;
+  }
+  .ref-form{
+    margin: 1em;
+    width: 90%;
+  }
+  .ref-input{
+    width: 100%;
+    margin-bottom:2em ;
+  }
+  .ref-submit{
+    background-color: #b5b5b5;
+    height: 4em;
+    color: #ffffff;
+  }
+  #name{
+    background-image:url('../../assets/images/user-solid.svg');
+    background-size: 7%;
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
+    text-indent:2em;
+  }
+  #mail{
+    background-image:url('../../assets/images/envelope-solid.svg');
+    background-size: 7%;
+    background-repeat: no-repeat;
+    background-position: 2px 3px;
+    text-indent:2em;
+  }
+  .ref-comments{
+    margin:2em;
+    font-size: 0.7em;
+    color:#b5b5b5;
+  }
+  .ref-img{
+    width:100%;
+  }
+}
