@@ -73,8 +73,8 @@ class Footer extends Component {
                 <th onClick={()=> this.toggleFooter()}>HELP</th>
                 <th onClick={()=> this.toggleFooter()}>DELIVERY & RETURNS</th>
                 <th onClick={()=> this.toggleFooter()}>CARDS & OFFERS</th>
-                <th onClick={()=> this.toggleFooter()}>COMPANY</th>
-                <th onClick={()=> this.toggleFooter()}>CONTACT</th>
+                <th onClick={()=> this.toggleFooter()}>ABOUT US</th>
+                {/* <th onClick={()=> this.toggleFooter()}>CONTACT</th> */}
                 <th  onClick={()=> this.toggleFooter()}><p className={`btn-open-footer ${this.state.btn_openned}`}>+</p></th>
                 
               </tr>
@@ -84,7 +84,7 @@ class Footer extends Component {
                 <td><Link to={'/dev/help'}>Track your order</Link></td>
                 <td><Link to={'/dev/student_discount'}>Student Discount</Link></td>
                 <td><Link to={'/dev/company2'}>Company</Link></td>
-                <td><Link to={'/dev/contact'}>Contact us</Link></td>
+                {/* <td><Link to={'/dev/contact'}>Contact us</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
@@ -93,7 +93,7 @@ class Footer extends Component {
                 <td><Link to={'/dev/info/delivery'}>Delivery</Link></td>
                 <td><Link to={'/dev/gift_card'}>Gift Cards</Link></td>
                 <td><Link to={'/dev/affiliates'}>Affiliates</Link></td>
-                <td><Link to={''}>Returns & Exchanges</Link></td>
+                {/* <td><Link to={''}>Returns & Exchanges</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
@@ -103,7 +103,7 @@ class Footer extends Component {
                 <td><Link to={'/dev/info/returns'}>Returns</Link></td>
                 <td><Link to={'/dev/gift_card'}>MIK Cards</Link></td>
                 <td><Link to={'/dev/mik_kigali_fashion_week'}>MIK at KFC</Link></td>
-                <td><Link to={''}>Subscribe to our Emails</Link></td>
+                {/* <td><Link to={''}>Subscribe to our Emails</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
@@ -112,7 +112,7 @@ class Footer extends Component {
                 <td><Link to={''}></Link></td>
                 <td><Link to={'/dev/refer_a_friend'}>Refer a friend</Link></td>
                 <td><Link to={'/dev/careers&Opportunities'}>Careers & opportunities</Link></td>
-                <td><Link to={''}>Contact us</Link></td>
+                {/* <td><Link to={''}>Contact us</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
@@ -121,7 +121,7 @@ class Footer extends Component {
                 <td><Link to={''}></Link></td>
                 <td><Link to={'/dev/happiness_guaranteed'}>Happiness Guaranteed</Link></td>
                 <td><Link to={'/dev/socialresponsibility'}>Social Responsibility</Link></td>
-                <td><Link to={''}>Payment Method</Link></td>
+                {/* <td><Link to={''}>Payment Method</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
@@ -130,7 +130,7 @@ class Footer extends Component {
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={'/dev/seller_licence'}>Legal Notice: Terms & Conditions/ Privacy/ Cookie/ Sales conditions / Seller/Buyer Agreement</Link></td>
-                <td><Link to={''}>Shipping Method</Link></td>
+                {/* <td><Link to={''}>Shipping Method</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
@@ -140,16 +140,7 @@ class Footer extends Component {
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-              </tr>
-
-              <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
+                {/* <td><Link to={''}></Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
@@ -157,10 +148,19 @@ class Footer extends Component {
               <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
+                {/* <td><Link to={''}></Link></td> */}
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
               </tr>
+
+              {/* <tr className={`${this.state.footerClass}`}>
+              <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+              </tr> */}
 
 
           </table>
