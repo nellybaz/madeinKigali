@@ -1,4 +1,89 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 745px) {
+  .sgw-top-three {
+    display: none !important;
+  }
+  .sgw-top-three-alt {
+    display: block !important;
+    background: #eeeeee;
+    justify-content: center;
+    align-items: center;
+    .sgw-top-three-li {
+      list-style: none;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      cursor: pointer;
+      text-decoration: underline;
+
+    }
+    .sgw-top-three-li:hover {
+      text-decoration: underline overline;
+    }
+  }
+
+  .size-guide-icons-clothing {
+    .icon-down-clothing {
+      display: block !important;
+      margin-left: 2rem;
+    }
+
+    .icon-up-clothing {
+      display: none !important;
+      margin-left: 2rem;
+    }
+  }
+
+  .size-guide-icons-clothing-alt {
+    .icon-down-clothing {
+      display: none !important;
+      margin-left: 2rem;
+    }
+
+    .icon-up-clothing {
+      display: block !important;
+      margin-left: 2rem;
+    }
+  }
+
+  .size-guide-icons {
+    .icon-down {
+      display: block !important;
+      margin-left: 2rem;
+    }
+
+    .icon-up {
+      display: none !important;
+      margin-left: 2rem;
+    }
+  }
+  .size-guide-icons-alt {
+    .icon-down {
+      display: none !important;
+      margin-left: 2rem;
+    }
+
+    .icon-up {
+      display: block !important;
+      margin-left: 2rem;
+    }
+  }
+  .lastrow-size-guide-content2 {
+    display: none;
+  }
+  .lastrow-size-guide-content2-alt {
+    display: block;
+    transition: 1s ease;
+    transition-property: display;
+  }
+
+  .lastrow-size-guide-content3 {
+    display: none;
+  }
+  .lastrow-size-guide-content3-alt {
+    display: block;
+    transition: down 5s ease;
+    transition-property: display;
+  }
   .size-guide-wrapper {
     * {
       height: auto !important;
@@ -21,6 +106,18 @@
     display: none !important;
   }
 
+}
+
+@media only screen and (min-width: 1600px) {
+  //*{
+  //  align-content: center;
+  //  align-items: center;
+  //}
+  .SizeGuide {
+    width: 60%;
+    align-items: center;
+    align-content: center;
+  }
 }
 
 .slidingSection {
@@ -461,5 +558,29 @@
     background: url("../../assets/images/tallguide.jpeg");
     background-size: 100% 100%;
 
+  }
+}
+
+.size-guide-icons {
+  .icon-down {
+    display: none;
+    margin-left: 2rem;
+  }
+
+  .icon-up {
+    display: none;
+    margin-left: 2rem;
+  }
+}
+
+.size-guide-icons-clothing {
+  .icon-down-clothing {
+    display: none;
+    margin-left: 2rem;
+  }
+
+  .icon-up-clothing {
+    display: none;
+    margin-left: 2rem;
   }
 }

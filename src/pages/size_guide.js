@@ -11,15 +11,36 @@ class SizeGuide extends Component {
         super(props);
         this.state = {
             sliderOpen: false,
-            slidingSection: document.getElementsByClassName("slidingSection"),
+            brandsOpen: false,
+            brandsOpenClothing: false,
+            // slidingSection: document.getElementsByClassName("slidingSection"),
             // sticky: this.state.slidingSection.offsetTop,
         }
     }
 
 
-    myFunction = () => {
-
+    myFunction = (y) => {
         // alert(this.state.slidingSection.toString());
+        if (y == 1) {
+            this.setState({
+                brandsOpen: !this.state.brandsOpen,
+            })
+        } else if (y == 0 && this.state.brandsOpen) {
+            this.setState({
+                brandsOpen: !this.state.brandsOpen,
+            })
+        }
+    };
+    myFunction2 = (z) => {
+        if (z == 1) {
+            this.setState({
+                brandsOpenClothing: !this.state.brandsOpenClothing,
+            })
+        } else if (z == 0 && this.state.brandsOpenClothing) {
+            this.setState({
+                brandsOpenClothing: !this.state.brandsOpenClothing,
+            })
+        }
     };
     handleSlider = (x) => {
         // alert(this.state.sliderOpen);
@@ -77,9 +98,20 @@ class SizeGuide extends Component {
 
                                 <div className='sgw-top-two'>
                                     <h2 className="sgw-top-two-h2">CLOTHING</h2>
+                                    <div
+                                        className={!this.state.brandsOpenClothing ? 'size-guide-icons-clothing' : 'size-guide-icons-clothing-alt'}
+                                        onClick={() => this.myFunction2(1)}>
+                                        <div className="icon-down-clothing">
+                                            <i className="fas fa-chevron-down" onClick={() => this.myFunction2(1)}/>
+                                        </div>
+                                        <div className="icon-up-clothing">
+                                            <i className="fas fa-chevron-up" onClick={() => this.myFunction2(1)}/>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div className='sgw-top-three'>
+                                <div className={!this.state.brandsOpenClothing ? 'sgw-top-three' : 'sgw-top-three-alt'}
+                                     onClick={() => this.myFunction2(1)}>
                                     <ul>
                                         <li className="sgw-top-three-li" onClick={() => this.handleSlider(1)}>
                                             JEANS
@@ -146,8 +178,20 @@ class SizeGuide extends Component {
                             <div className="size-guide-last-row">
                                 <div className="lastrow-size-guide-content1">
                                     <h2 className="lastrow-size-guide-h2">Brands</h2>
+                                    <div
+                                        className={!this.state.brandsOpen ? 'size-guide-icons' : 'size-guide-icons-alt'}
+                                        onClick={() => this.myFunction(1)}>
+                                        <div className="icon-down">
+                                            <i className="fas fa-chevron-down" onClick={() => this.myFunction(1)}/>
+                                        </div>
+                                        <div className="icon-up">
+                                            <i className="fas fa-chevron-up" onClick={() => this.myFunction(1)}/>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="lastrow-size-guide-content2">
+                                <div
+                                    className={!this.state.brandsOpen ? 'lastrow-size-guide-content2' : 'lastrow-size-guide-content2-alt'}
+                                    onClick={() => this.myFunction(0)}>
                                     <div className='lastrow-sgw-top-three'>
                                         <ul>
                                             <li className="lastrow-sgw-top-three-li"
@@ -182,7 +226,9 @@ class SizeGuide extends Component {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="lastrow-size-guide-content3">
+                                <div
+                                    className={!this.state.brandsOpen ? 'lastrow-size-guide-content3' : 'lastrow-size-guide-content3-alt'}
+                                    onClick={() => this.myFunction(0)}>
                                     <div className='lastrow-sgw-top-three'>
                                         <ul>
                                             <li className="lastrow-sgw-top-three-li"
