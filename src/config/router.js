@@ -44,6 +44,9 @@ import Company2 from '../pages/company2';
 import ComingSoon1 from '../pages/comimg_soon';
 import SizeGuide from '../pages/size_guide';
 
+import MIKKFW from '../pages/mik_kfw';
+import SiteMap from '../pages/sitemap';
+
 
     const outer =()=> (
                 <Router onUpdate={()=> window.scrollTo(0,0)}>
@@ -87,6 +90,11 @@ import SizeGuide from '../pages/size_guide';
                             <Route exact path={"/dev/admin/dashboard/flashdeals"} component={FlashDeals}/>
                             <Route exact path={"/dev/admin/dashboard/blog"} component={Blog_Dashboard}/>
                             <Route exact path={"/dev/admin/dashboard/trending"} component={Trending}/>
+
+                            {/* Olivier's routes start from here */}
+                            <Route exact path={"/dev/mik_kigali_fashion_week"} component={MIKKFW}/>
+                            <Route exact path={"/dev/sitemap"} component={SiteMap}/>
+
                              <Route component={notFound}/>
                         </Switch>            
                 </Router>
