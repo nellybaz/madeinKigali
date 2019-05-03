@@ -1,0 +1,113 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lato';
+}
+
+.kfw-section {
+  margin: auto;
+}
+
+.kfw-section .kfw-title {
+  padding: 2vw;
+  font-family: "Lato" !important;
+  letter-spacing: 0.5vw;
+  text-align: center;
+}
+
+.kfw-section .kfw-mid-title {
+  font-size: 1.5vw;
+  padding: 1vw;
+  font-family: 'Lato';
+  font-weight: normal;
+  letter-spacing: 0.5vw;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.kfw-section .kfw-sub-title {
+  font-size: 2vw;
+  padding: 1vw;
+  font-weight: normal;
+  letter-spacing: 0.3vw;
+  margin: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.kfw-section .kfw-hr {
+  margin: 1vw auto;
+  width: 5vw;
+  background-color: gainsboro;
+  height: 0.2vw;
+  border: 1px solid gainsboro;
+}
+
+.kfw-section .kfw-p {
+  width: 60vw;
+  margin: auto;
+  text-align: center;
+  padding: 1vw;
+  line-height: 2vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .kfw-section .kfw-title {
+    padding: 2vw;
+    letter-spacing: 1vw;
+  }
+  .kfw-section .kfw-mid-title {
+    font-size: 3vw;
+    padding: 0.5vw;
+  }
+  .kfw-section .kfw-sub-title {
+    font-size: 4vw;
+    padding: 1vw;
+  }
+  .kfw-section .kfw-hr {
+    margin: 2vw auto;
+    width: 10vw;
+    height: 0.5vw;
+  }
+  .kfw-section .kfw-p {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    padding: 1vw;
+    font-size: 1rem;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .kfw-title {
+    padding: 1vw;
+    letter-spacing: 0.2vw;
+    font-size: 1.5vw;
+  }
+  .kfw-mid-title {
+    font-size: 1.2vw;
+    padding: 1vw;
+  }
+  .kfw-sub-title {
+    font-size: 1.2vw;
+    padding: 1vw;
+  }
+  .kfw-hr {
+    margin: 0.5vw auto;
+    width: 2.5vw;
+    height: 0.2vw;
+  }
+  .kfw-p {
+    width: 36vw;
+    margin: auto;
+    text-align: center;
+    padding: 1vw;
+    font-size: 0.7vw;
+    line-height: 1vw;
+  }
+}
+/*# sourceMappingURL=mik_kfw.css.map */
