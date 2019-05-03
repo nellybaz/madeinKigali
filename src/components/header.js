@@ -16,7 +16,7 @@ import {Link} from 'react-router-dom';
 import play from '../assets/images/play.gif';
 import pause from '../assets/images/pause.png';
  
-
+ 
 import music from '../assets/music/music.mp3';
 
 import little_banner from '../assets/images/1Y.jpg';

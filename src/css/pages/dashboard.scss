@@ -1,24 +1,35 @@
+@media only screen and (max-width: 900px){
+    .DashBoard{
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+
 .DashBoard{
     width:100%;
+    height: auto;
     display:grid;
-    grid-template-columns:2fr 8fr;
+    grid-template-columns:3fr 8fr;
     grid-gap:0;
-
+    background: url(https://cdn.wallpapersafari.com/27/0/4IlThL.jpg) no-repeat;
+    background-size: cover;
     *{
-        font-family: Lato, Arial, Helvetica, sans-serif;
-    }
+        // font-family: Lato, Arial, Helvetica, sans-serif;
+        font-family: 'Gloria Hallelujah', cursive;
+    } 
 
 
-    div{
-        height:700px;
-        width:100%;
-    }
+    // div{
+    //     height:auto;
+    //     width:100vh;
+    // }
 
     .d-left{
         *{
             color:white;
         }
-        background: #260746;
+        background: black;
         
         
         display:flex;
@@ -50,9 +61,10 @@
 
             button{
                 width:100%;
-                background: lighten(#260746, 30%);
+                background: #932823;
                 padding: 10px;
                 border:0;
+                border-radius: 12px;
                 cursor: pointer;
                 margin: 5px;
             }
@@ -60,6 +72,15 @@
     }
 
     .d-right{
+        margin-top:10vh;
+
+
+        *{
+            
+            // color: white;
+            // font-family: 'Lato';
+            font-family: 'Gloria Hallelujah', cursive;
+        }
         .top-header{
             height:50px;
             border:1px solid grey;
@@ -67,6 +88,11 @@
 
         .d-right-wrapper
         {
+            h5{
+                font-size: 32px;
+                color: white;
+            }
+            
             width:80%;
             margin: 0 auto;
         }
@@ -83,12 +109,19 @@
                 border: 1px solid lighten(grey, 30%);
                 padding: 5px;
                 background: white;
-
-                color: lighten(black, 30%)
+                opacity: 0.5;
+                border-radius: 12px;
+                color: black;
             }
 
             textarea{
                 height: 150px;
+                border: 1px solid lighten(grey, 30%);
+                // padding: 5px;
+                background: white;
+                opacity: 0.5;
+                color: black;
+                border-radius: 12px;
             }
 
             .checkbox{
@@ -98,11 +131,16 @@
 
             .add-btn{
                 height:50px;
+                border-radius: 12px;
+                background: #932823;
+                color: white;
             }
             
 
             form{
                display: inline;
+               color: white;
+               
             }
         }
     }

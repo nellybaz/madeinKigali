@@ -7,7 +7,7 @@ class Slider extends Component {
         super(props)
         this.state={
             carousel_index: 0,
-        }
+        } 
     }
 
     async componentDidMount() {

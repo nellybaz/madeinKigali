@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/home.css';
 
-
+import QueueAnim from 'rc-queue-anim';
 import Cookies from 'universal-cookie';
 import DocumentMeta from 'react-document-meta';
 
@@ -132,7 +132,7 @@ class Home extends Component {
       cookies.set('userID', this.generateUserID(), { path: '/', expires: new Date(Date.now() + 2592000) })
     }
 
-    let galleryImageLimit = window.innerWidth < 900 ? 3: 6;
+    let galleryImageLimit = window.innerWidth < 900 ? 3 : 6;
 
 
     //adding madeinkigali gallery
@@ -173,7 +173,7 @@ class Home extends Component {
 
     try {
 
- 
+
       let currentComponent = this;
 
       request
@@ -186,7 +186,7 @@ class Home extends Component {
           if (res != null) {
             if (res.body.flashdeals != null) {
               console.log(res.body.flashdeals);
-              
+
 
               //loop through the data, and push an array of data to state
               const data1 = [];
@@ -255,7 +255,7 @@ class Home extends Component {
               const data = [];
 
               for (let i = 0; i < res.body.blog.length; i++) {
-                if(i < 5){
+                if (i < 5) {
                   data.push({
                     id: res.body.blog[i].article_no,
                     img: res.body.blog[i].article_image,
@@ -320,7 +320,7 @@ class Home extends Component {
                         </p>
                       </div>
                     </div>
-                    
+
 
                   </div>
                 );
@@ -372,7 +372,7 @@ class Home extends Component {
           if (res != null) {
             if (res.body.brands != null) {
               // console.log(res.body.brands);
-              
+
               //set state to the data
               currentComponent.setState({
                 popularObj: res.body.brands,
@@ -428,29 +428,29 @@ class Home extends Component {
     let bigText = '';
     let popularDisplayLength = this.state.popularObj.length;
     for (let x = 0; x < popularDisplayLength; x++) {
-      if(window.innerWidth <= 900 && x < 1){
+      if (window.innerWidth <= 900 && x < 1) {
         console.log(window.innerWidth);
-        
+
         Popular1.push(
 
           <div className="popular-brands-item" key={x}>
             <img alt='mik' src={`https://madeinkigali.com/images/brands/${this.state.popularObj[x].brand_big_banner}`} />
-  
+
           </div>
         )
       }
 
-      if(window.innerWidth > 900 ){
+      if (window.innerWidth > 900) {
         Popular1.push(
 
           <div className="popular-brands-item" key={x}>
             <img alt='mik' src={`https://madeinkigali.com/images/brands/${this.state.popularObj[x].brand_big_banner}`} />
-  
+
           </div>
         )
       }
 
-     
+
 
       // Popular2.push(
       //   <div className="popular-brands-item popular-brands-item-2" key={x} >
@@ -529,236 +529,251 @@ class Home extends Component {
 
 
     return (
+
       <DocumentMeta {...meta}>
-        <div style={{ background: 'white' }}>
-          <Header />
-          {/* calling popup */}
 
-          {/* {this.showPopUp()} */}
+        <QueueAnim
 
-          <div className="Home">
+          delay={0}
+          type={"top"}
+          duration={1000}
 
-            <Carousel />
+        >
 
-            <div className="middle-nav">
-              <div className="middle-nav-item">
-                <span><img src={support} /></span> <Link to={'/dev/quote'}>Wholesale Quote</Link>
-              </div>
-              <div className="middle-nav-item">
-                <span><img src={location} /></span><Link to={'/dev/points'}>Points of Sale</Link>
-              </div>
-              <div className="middle-nav-item">
-                <span><img src={delivery} /></span><Link to={'/dev/info/delivery'} >Delivery</Link>
-              </div>
-              <div className="middle-nav-item">
-                <span><img src={returns} /></span><Link to={'/dev/info/returns'}>Returns</Link>
-              </div>
+          <div style={{ background: 'white' }}>
 
-            </div>
+            <Header />
+            {/* calling popup */}
+
+            {/* {this.showPopUp()} */}
+
+            <div className="Home">
+
+              <Carousel />
 
 
+              <div className="middle-nav">
+                <div className="middle-nav-item">
+                  <span><img src={support} /></span> <Link to={'/dev/quote'}>Wholesale Quote</Link>
+                </div>
+                <div className="middle-nav-item">
+                  <span><img src={location} /></span><Link to={'/dev/points'}>Points of Sale</Link>
+                </div>
+                <div className="middle-nav-item">
+                  <span><img src={delivery} /></span><Link to={'/dev/info/delivery'} >Delivery</Link>
+                </div>
+                <div className="middle-nav-item">
+                  <span><img src={returns} /></span><Link to={'/dev/info/returns'}>Returns</Link>
+                </div>
 
-
-            <Divider color="red" name='Flash Deals' displayTimer={true} />
-            <div className="flashdeals-div">
-
-              {/* flas deals section start */}
-              {
-                //  this.state.flashdealsObj.length > 0 ? <FlashDeals objectDispay={this.state.flashdealsObj} showNav={false} />:
-                this.state.blogObj.length > 0 ? <FlashDeals2 ObjectToDisplay={this.state.flashdealsObj} /> :
-                  <div className='loading-spinner'>
-                    <img src={require('../assets/images/spinner.gif')} />
-
-                  </div>
-              }
-
-            </div>
-
-            {/* flashdeals section ends */}
-
-
-
-
-            {/* fabric section starts */}
-
-            <div className="fabric">
-
-              <Divider name='Create Your Own Dream' />
-              {/* fabric miidle banner image */}
-              <div className="middleBanner">
-                <img src={require('../assets/images/madeinkigali002.png')} />
               </div>
 
-              <div className="fabric-inner-div-wrapper">
 
-                <div>
-                  <Link to={'/dev/fabric'}>
-                    <div className="fabric-inner-div-wrapper-inner">
+
+
+              <Divider color="red" name='Flash Deals' displayTimer={true} />
+              <div className="flashdeals-div">
+
+                {/* flas deals section start */}
+                {
+                  //  this.state.flashdealsObj.length > 0 ? <FlashDeals objectDispay={this.state.flashdealsObj} showNav={false} />:
+                  this.state.blogObj.length > 0 ? <FlashDeals2 ObjectToDisplay={this.state.flashdealsObj} /> :
+                    <div className='loading-spinner'>
+                      <img src={require('../assets/images/spinner.gif')} />
 
                     </div>
-                    <p>FABRIC PRINTING</p>
-                  </Link>
-                </div>
-
-                <div>
-                  <div className="fabric-inner-div-wrapper-inner">
-
-                  </div>
-                  <p>LEATHER PRINTING</p>
-
-                </div>
-                <div>
-                  <img src={fab1} />
-                  <p>CLOTHING</p>
-
-                </div>
-                <div>
-                  <img src={fab2} />
-                  <p>HOMEWEAR</p>
-                </div>
-
-              </div>
-            </div>
-
-            {/* fabric section ends */}
-
-
-            {/* popular brands section   start    */}
-
-            <div className="popular-brands-outer-div">
-
-              <Divider name='Discover Our Most Popular Brands' />
-
-              <div className="popular-brands-holder">
-
-                {this.state.popularObj.length > 0 ? this.popularDisplay(1) :
-
-                  <div className='loading-spinner'>
-                    <img src={require('../assets/images/spinner.gif')} />
-
-                  </div>
                 }
 
               </div>
 
+              {/* flashdeals section ends */}
 
-              <div className="popular-brands-holder ">
 
-                {this.popularDisplay(2)}
-              </div>
 
-            </div>
 
-            {/* popular brands end */}
+              {/* fabric section starts */}
 
-            <div className="madeinkigali-section">
-              <Divider name="#MadeinKigaliRW" />
-              <a href="/dev/gallery" className="gallery-little-title">VIEW GALLERY</a>
+              <div className="fabric">
 
-              <div className="madeinkigali-inner-div">
-                {this.state.madeinkigali_gallery}
-
-              </div>
-
-              <div className={`mik-dropdown-outer ${this.state.mik_dropdown_class}`}>
-                <div style={{ display: 'flex', }}>
-                  <p style={{ width: '90%' }}>Shop @maisiekateyoung's Look</p>
-
-                  <img onClick={() => this.setState({
-                    mik_dropdown_class: 'hide'
-                  })} style={{ height: '20px' }} src={cross_out} />
-
+                <Divider name='Create Your Own Dream' />
+                {/* fabric miidle banner image */}
+                <div className="middleBanner">
+                  {/* <img src={require('../assets/images/madeinkigali002.png')} /> */}
                 </div>
-                <div className="mik-dropdown">
 
-                  <div className="mik-dropdown-item">
+                <div className="fabric-inner-div-wrapper">
 
-                    <img className="mik-dropdown-item-img-left" src={mik5} />
+                  <div>
+                    <Link to={'/dev/fabric'}>
+                      <div className="fabric-inner-div-wrapper-inner">
+
+                      </div>
+                      <p>FABRIC PRINTING</p>
+                    </Link>
                   </div>
 
-                  <div className="mik-dropdown-item">
-                    <div className="mik-dropdown-item-second-inner">
-                      <img className="mik-dropdown-item-img-right" src={mik7} />
-                      <p>Womens Houndstooth Chunky Roll Jumper - Ivory</p>
-                      <p>$42</p>
-                    </div>
+                  <div>
+                    <div className="fabric-inner-div-wrapper-inner">
 
-                    <div className="mik-dropdown-item-second-inner">
-                      <img className="mik-dropdown-item-img-right" src={mik7} />
-                      <p>Womens Houndstooth Chunky Roll Jumper - Ivory</p>
-                      <p>$42</p>
                     </div>
+                    <p>LEATHER PRINTING</p>
 
+                  </div>
+                  <div>
+                    <img src={fab1} />
+                    <p>CLOTHING</p>
 
-                    <div className="mik-dropdown-item-second-inner">
-                      <img className="mik-dropdown-item-img-right" src={mik7} />
-                      <p>Womens Houndstooth Chunky Roll Jumper - Ivory</p>
-                      <p>$42</p>
-                    </div>
+                  </div>
+                  <div>
+                    <img src={fab2} />
+                    <p>HOMEWEAR</p>
                   </div>
 
                 </div>
+              </div>
+
+              {/* fabric section ends */}
+
+
+              {/* popular brands section   start    */}
+
+              <div className="popular-brands-outer-div">
+
+                <Divider name='Discover Our Most Popular Brands' />
+
+                <div className="popular-brands-holder">
+
+                  {this.state.popularObj.length > 0 ? this.popularDisplay(1) :
+
+                    <div className='loading-spinner'>
+                      <img src={require('../assets/images/spinner.gif')} />
+
+                    </div>
+                  }
+
+                </div>
+
+
+                <div className="popular-brands-holder ">
+
+                  {this.popularDisplay(2)}
+                </div>
 
               </div>
 
+              {/* popular brands end */}
+
+              <div className="madeinkigali-section">
+                <Divider name="#MadeinKigaliRW" />
+                <a href="/dev/gallery" className="gallery-little-title">VIEW GALLERY</a>
+
+                <div className="madeinkigali-inner-div">
+                  {this.state.madeinkigali_gallery}
+
+                </div>
+
+                <div className={`mik-dropdown-outer ${this.state.mik_dropdown_class}`}>
+                  <div style={{ display: 'flex', }}>
+                    <p style={{ width: '90%' }}>Shop @maisiekateyoung's Look</p>
+
+                    <img onClick={() => this.setState({
+                      mik_dropdown_class: 'hide'
+                    })} style={{ height: '20px' }} src={cross_out} />
+
+                  </div>
+                  <div className="mik-dropdown">
+
+                    <div className="mik-dropdown-item">
+
+                      <img className="mik-dropdown-item-img-left" src={mik5} />
+                    </div>
+
+                    <div className="mik-dropdown-item">
+                      <div className="mik-dropdown-item-second-inner">
+                        <img className="mik-dropdown-item-img-right" src={mik7} />
+                        <p>Womens Houndstooth Chunky Roll Jumper - Ivory</p>
+                        <p>$42</p>
+                      </div>
+
+                      <div className="mik-dropdown-item-second-inner">
+                        <img className="mik-dropdown-item-img-right" src={mik7} />
+                        <p>Womens Houndstooth Chunky Roll Jumper - Ivory</p>
+                        <p>$42</p>
+                      </div>
 
 
-            </div>
- 
-            {/* blog section starts */}
-            <div className="in-the-know">
-
-              <Divider name='In The Know' />
-
-              {
-                this.state.blogObj.length > 0 ? <FlashDeals isBlog={true} objectDispay={this.state.blogObj} showNav={false} /> :
-
-
-                  <div className='loading-spinner'>
-                    <img src={require('../assets/images/spinner.gif')} />
+                      <div className="mik-dropdown-item-second-inner">
+                        <img className="mik-dropdown-item-img-right" src={mik7} />
+                        <p>Womens Houndstooth Chunky Roll Jumper - Ivory</p>
+                        <p>$42</p>
+                      </div>
+                    </div>
 
                   </div>
 
+                </div>
+
+
+
+              </div>
+
+              {/* blog section starts */}
+              <div className="in-the-know">
+
+                <Divider name='In The Know' />
+
+                {
+                  this.state.blogObj.length > 0 ? <FlashDeals isBlog={true} objectDispay={this.state.blogObj} showNav={false} /> :
+
+
+                    <div className='loading-spinner'>
+                      <img src={require('../assets/images/spinner.gif')} />
+
+                    </div>
+
+                }
+              </div>
+
+              {/* bog section ends */}
+
+              {/* modal opening on load */}
+
+
+              {this.state.justVisited &&
+                <div className={`${this.state.fadein_top_animate_class}`}>
+
+                  <div>
+
+                    <h5 style={{ fontSize: '2rem', color: 'black' }}>SIGN IN TO OUR NEWSLETTER</h5>
+
+                    <label>Name*<br></br>
+                      <input style={{ width: '250px', padding: '5px', border: '1px solid black', color: 'black' }} />
+                    </label>
+
+                    <br></br>
+                    <label>Email*<br></br>
+                      <input style={{ width: '250px', padding: '5px', border: '1px solid black', color: 'black' }} />
+                    </label>
+
+                  </div>
+
+
+
+                  <div className='close-shipping-div-home'>
+                    <button style={{ marginRight: '15px' }} className="btn btn-close-modal-home" onClick={() => this.handleFadeinTop()}>SUBSCRIBE</button>
+                    <button className="btn btn-close-modal-home" onClick={() => this.handleFadeinTop()}>CLOSE</button>
+                  </div>
+                </div>
               }
+
+
+              {/* modal end */}
+
             </div>
-
-            {/* bog section ends */}
-
-            {/* modal opening on load */}
-
-
-            {this.state.justVisited &&
-              <div className={`${this.state.fadein_top_animate_class}`}>
-
-                <div>
-
-                  <h5 style={{ fontSize: '2rem', color: 'black' }}>SIGN IN TO OUR NEWSLETTER</h5>
-
-                  <label>Name*<br></br>
-                    <input style={{ width: '250px', padding: '5px', border: '1px solid black', color: 'black' }} />
-                  </label>
-
-                  <br></br>
-                  <label>Email*<br></br>
-                    <input style={{ width: '250px', padding: '5px', border: '1px solid black', color: 'black' }} />
-                  </label>
-
-                </div>
-
-
-
-                <div className='close-shipping-div-home'>
-                  <button style={{ marginRight: '15px' }} className="btn btn-close-modal-home" onClick={() => this.handleFadeinTop()}>SUBSCRIBE</button>
-                  <button className="btn btn-close-modal-home" onClick={() => this.handleFadeinTop()}>CLOSE</button>
-                </div>
-              </div>
-            }
-
-            {/* modal end */}
-
+            <Footer is_mobile={this.state.is_mobile} />
           </div>
-          <Footer is_mobile={this.state.is_mobile} />
-        </div>
+
+        </QueueAnim>
       </DocumentMeta>
     );
   }

@@ -1,19 +1,41 @@
-@media only screen and (max-width: 745px){
+@media only screen and (max-width: 900px){
     .Flashdeals2{
-        grid-template-columns: 1fr 1fr !important;
-        // display: none !important;
-        // grid-gap: 0px !important;
-        // overflow: scroll;
+        grid-template-columns: repeat(10, 1fr) !important;
+        overflow: scroll;
+        height: auto !important;
+
 
         .flashdeals2-img-div{
-            width:100% !important;
+            width:auto !important;
             height: auto !important;
+            margin-right: 10px;
+            float: right;
+
+            // border: 1px solid green;
             img{
-                width:100%;
+                width: 150px !important;
                 height: auto !important;
             }
         }
+
+
+        // .firstImage{
+        //     position: relative;
+        //     left: 300vw;
+        //     // width: 300px !important;
+        // }
     }
+}
+
+@media only screen and (min-width: 900px){
+    .flashdeals2-img-div:hover img{
+        width: 115% !important;
+        // display: none;
+    }
+
+
+
+
 }
 
 
@@ -41,10 +63,11 @@
 
         img{
             height:80% !important;
-            // width: 100%;
+            width: 70%;
             object-fit: contain;
             height: 100%;
             border-radius: 35px;
+            transition: width .8s ease-in-out;
         }
 
         p{

@@ -8,7 +8,7 @@ class SideBar extends Component{
               <div className='d-left'>
 
                     <div className='profile-image'>
-                    <img src={require('../../assets/images/admin.png')} />
+                    <img src={require('../../assets/images/admin1.png')} />
                     
                     </div>
                     <p>Admin Name</p>

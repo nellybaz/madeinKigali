@@ -3,7 +3,7 @@ import Header from '../../components/header';
 import Footer from '../../components/footer';
 
 import request from 'superagent';
-
+ 
 import '../../css/pages/dashboard.css';
 
 import Flashdeals from  './flashdeals';
@@ -182,10 +182,10 @@ class DashBoard extends Component{
               <SideBar />
 
                 <div className='d-right'>
-                <div className='top-header'>
+                {/* <div className='top-header'>
                 
                 </div>
-                
+                 */}
 
                 <div className='d-right-wrapper'>
                     <h5><b>ADD PRODUCTS</b></h5>
@@ -218,7 +218,7 @@ class DashBoard extends Component{
                                 sub_category: e.target.value
                             })
                           
-                        }}>
+                        }} >
                             <option selected>Select Sub Category</option>
                             <option value = "dress">Dress</option>
                             <option value = "shoes">Shoes</option>

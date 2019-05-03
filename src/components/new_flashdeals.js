@@ -8,12 +8,17 @@ class Flashdeals2 extends Component{
     }
 
     displayHolderFunction=()=>{
-        const holder = [];
+        const holder = []; 
 
+        let firstImgClass = "";
         for(let i= 0; i < this.props.ObjectToDisplay.length; i++){
-                 holder.push(
+
+            if(i==0){
+                firstImgClass = "firstImage";
+            }else firstImgClass = "";
+                 holder.push( 
                     // <div className='flashdeals2-img-div'>
-                    <Link className='flashdeals2-img-div' to={`/dev/product/${this.props.ObjectToDisplay[i].brand}/${this.props.ObjectToDisplay[i].id}`}>
+                    <Link className={`flashdeals2-img-div ${firstImgClass}`} to={`/dev/product/${this.props.ObjectToDisplay[i].brand}/${this.props.ObjectToDisplay[i].id}`}>
                     <img className='flashdeals2-img' src ={`https://madeinkigali.com/images/products/${this.props.ObjectToDisplay[i].img}`} />
 
                     <p>

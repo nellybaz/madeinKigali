@@ -14,6 +14,7 @@ class Blog extends Component{
             article_name:"",
             article_category:"",
             article_featured:"",
+            image_data: null,
 
         }
     }
@@ -23,46 +24,71 @@ class Blog extends Component{
 
     }
 
-    async addBlog(){
+    handleImageUpload =(event)=>{
+   
+        const data = new FormData();
+        data.append('submit', 'true');
+        data.append('fileToUpload', event.target.files[0]);    
+        data.append('token', 'mik9876543210');
+        data.append('tag', 'blog');
+        data.append('article_post', this.state.article_post);
+        data.append('article_name', this.state.article_name);
+        data.append('article_featured', this.state.article_featured);
+        data.append('article_category', this.state.article_category);   
         
-        try {
-
-
-            let currentComponent = this;
-
-        request
-          .post('https://madeinkigali.com/API/api2/dashboard/')
-          .set('Content-Type', 'application/x-www-form-urlencoded')
-          .send({ token: "mik9876543210", tag:'blog', article_post:this.state.article_post, article_name:this.state.article_name,
-          article_featured: this.state.article_featured, article_category: this.state.article_category
+        
+        this.setState({
+            prd_img: event.target.files[0].name,
+            image_data: data,
         })
-          .end(function(err, res){
-         
-          if(res != null){
-            if(res.body.res === 1)
-            {
-                alert('BLOG ADDED');
-                window.location.reload();
-                
-            }
+    
+        
+      }
 
-            else if(res.body.res === 0)
-            {
-                console.log('not registered');
-                
-            }
+    async addBlog(data){
+        
+        if(this.state.article_name != ""){
+            try {
+
+
+                let currentComponent = this;
+    
+            request
+              .post('https://madeinkigali.com/API/api2/dashboard/')
+              .set('Content-Type', 'application/x-www-form-urlencoded')
+              .send(data)
+              .end(function(err, res){
              
-          }
-          else{
-            console.log(res, err);
+              if(res != null){
+                if(res.body.res === 1)
+                {
+                    alert('BLOG ADDED');
+                    window.location.reload();
+                    
+                }
+    
+                else if(res.body.res === 0)
+                {
+                    console.log('not registered');
+                    
+                }
+                 
+              }
+              else{
+                console.log(res, err);
+                
+              }
             
-          }
-        
-          });
-        
-        
-        } catch(e) {
-          console.log(e);
+              });
+            
+            
+            } catch(e) {
+              console.log(e);
+            }
+        }
+
+        else{
+            alert("Blog name cannot be empty");
         }
     }
 
@@ -73,9 +99,9 @@ class Blog extends Component{
               <SideBar />
 
                 <div className='d-right'>
-                <div className='top-header'>
+                {/* <div className='top-header'>
                 
-                </div>
+                </div> */}
                 
 
                 <div className='d-right-wrapper'>
@@ -123,7 +149,7 @@ class Blog extends Component{
                         
                         <input type="file" onChange={this.handleImageUpload} /> 
 
-                        <button onClick={()=> this.addBlog()} className='add-btn'>ADD</button>                   
+                        <button onClick={()=> this.addBlog(this.state.data)} className='add-btn'>ADD</button>                   
                     </div>
                 
                 </div>
