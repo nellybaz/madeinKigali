@@ -33,10 +33,10 @@ import Delivery from '../pages/delivery_final.js';
 import Company from '../pages/company';
 import About from '../pages/about';
 import PointOfSale from '../pages/point_of_sale';
-import DashBoard from '../pages/dashboard/dashboard';
-import FlashDeals from  '../pages/dashboard/flashdeals';
-import Blog_Dashboard from  '../pages/dashboard/blog';
-import Trending from '../pages/dashboard/trending';
+import DashBoard from '../css/dashboard/dashboard';
+import FlashDeals from  '../css/dashboard/flashdeals';
+import Blog_Dashboard from  '../css/dashboard/blog';
+import Trending from '../css/dashboard/trending';
 import PreFabricUpload from '../pages/pre_fabirc_upload';
 import ComingSoon from '../pages/coming_soon2';
 import About2 from '../pages/about2';
@@ -46,6 +46,8 @@ import SizeGuide from '../pages/size_guide';
 
 import MIKKFW from '../pages/mik_kfw';
 import SiteMap from '../pages/sitemap';
+import  MIKCard from '../pages/mik_card';
+import MIKRemera from '../pages/mik_remera_corner';
 
 
     const outer =()=> (
@@ -94,7 +96,8 @@ import SiteMap from '../pages/sitemap';
                             {/* Olivier's routes start from here */}
                             <Route exact path={"/dev/mik_kigali_fashion_week"} component={MIKKFW}/>
                             <Route exact path={"/dev/sitemap"} component={SiteMap}/>
-
+                            <Route exact path={"/dev/mik_card"} component={MIKCard}/>
+                            <Route exact path={"/dev/locations/remera_corner/"} component={MIKRemera} />
                              <Route component={notFound}/>
                         </Switch>            
                 </Router>

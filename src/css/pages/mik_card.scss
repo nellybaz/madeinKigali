@@ -1,0 +1,299 @@
+*{font-family: 'Lato';}
+.mik-card-banner{
+    width: 75vw;
+    display: flex;
+    margin: auto;
+    height: 30vw;;
+    background-color: rgb(250, 250, 250);
+    // position: absolute;;
+
+    .mik-card-bannerImg1{
+        height: 30vw;
+        width: 25vw;
+
+    }
+    .mik-card-bannerImg2{
+        height: 30vw;
+        width: 25vw;
+        margin-left: 25vw;
+        
+    }
+}
+.mik-card-banner-text{
+    margin: 0 auto  -20vw auto;
+    padding-top: 5vw;
+    height: fit-content;
+    width: 30vw;
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Lato';
+    line-height: 5vw;
+    position: relative;
+    font-weight: bold;
+}
+.mik-card-triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 7vw solid transparent;
+    border-right: 7vw solid transparent;
+    border-bottom: 7vw solid #f6909d;
+    margin: -7vw auto 0 auto;
+  }
+.mik-card-card{
+    border: 2px solid #f6909d;
+    width: 75vw;
+    margin: auto;
+    background-color: rgb(250, 250, 250);
+    .mik-card-sub-title{
+        font-size: 1.5vw;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2vw;
+    }
+    
+    .mik-card-title{
+        font-size: 2vw;
+        text-align: center;
+        font-weight: bold;
+        padding: 1vw;
+    }
+    .mik-card-p{
+        padding: 0.5vw 10vw;
+        font-size: 1.2vw;
+        text-align: center;
+    }
+    .mik-card-btn-div{
+        width: fit-content;
+        margin: auto;
+        margin-bottom: 2vw;
+        .mik-card-btn{
+            color: white;
+            background-color: rgb(50,50,50);
+            padding: 0.5vw 3vw;
+            width: fit-content;
+            font-size: 1.2vw;
+            margin: 1vw auto;
+            border: none;
+        }
+    }
+    
+}
+.mik-card-bottom{
+    width: 75vw;
+    margin: 1vw auto;
+    .mik-card-bottom-bar{
+        width: 75vw;
+        display: flex;
+        background-color: #f6909d;
+        .mik-card-bottom-bar-link{
+            color: white;
+            font-size: 1.25vw;
+            font-weight: bold;
+            padding: 1vw;
+            text-decoration: underline;
+            width: inherit;
+            text-align: center;
+        }
+    }
+    .mik-card-bottom-text{
+        .mik-card-bottom-small-text{
+            font-size: 0.8vw;
+            text-align: center;
+            margin: 1vw auto;
+            color: rgb(120, 120, 120);
+        }
+    }
+
+}
+
+@media only screen and (max-width:900px){
+
+    .mik-card-banner{
+        width: 100vw;
+        display: flex;
+        margin: auto;
+        height: 40vw;;
+        background-color: rgb(250, 250, 250);
+        // position: absolute;;
+    
+        .mik-card-bannerImg1{
+            height: 40vw;
+            width: 40vw;
+    
+        }
+        .mik-card-bannerImg2{
+            height: 40vw;
+            width: 40vw;
+            margin-left: 20vw;
+
+        }
+        
+    .mik-card-banner-text{
+        margin: 0 auto  -15rem auto;
+        padding-top: 1vw;
+        height: fit-content;
+        width:15rem;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Lato';
+        line-height: normal;
+        position: relative;
+        border: 1px solid black;
+    }
+
+    .mik-card-triangle-up {
+        width: 0;
+        height: 0;
+        border-left: 15vw solid transparent;
+        border-right: 15vw solid transparent;
+        border-bottom: 15vw solid #f6909d;
+        margin: -15vw auto 0 auto;
+      }
+    .mik-card-card{
+        border: 5px solid #f6909d;
+        width: 100vw;
+        .mik-card-sub-title{
+        font-size: 1.5rem;
+        margin-top: 2vw;
+        }
+        
+        .mik-card-title{
+            font-size: 2.5rem;
+            padding: 1vw;
+        }
+        .mik-card-p{
+            padding: 0.5vw 10vw;
+            font-size: 1.2rem;
+        }
+        .mik-card-btn-div{
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 2vw;
+            .mik-card-btn{
+                padding: 5vw 5vw;
+                width: fit-content;
+                font-size: 1.5rem;
+                margin: 1vw auto;
+                font-weight: 200;
+            }
+        }
+        
+    }
+    .mik-card-bottom{
+        width: 100vw;
+        margin: 3vw auto;
+        .mik-card-bottom-bar{
+            width: 100vw;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5vw;
+            .mik-card-bottom-bar-link{
+                font-size: 1.4rem;
+                font-weight: normal;
+                padding: 2.5vw;
+                text-decoration: underline;
+            }
+        }
+        .mik-card-bottom-text{
+            .mik-card-bottom-small-text{
+                font-size: 1rem;
+                text-align: center;
+                margin: 5vw;
+            }
+        }
+    
+    }
+}}
+
+@media only screen and (min-width:1600px){
+
+    .mik-card-banner{
+        width: 40vw;
+        display: flex;
+        margin: auto;
+        height: 15vw;
+        position: relative;;
+    
+        .mik-card-bannerImg1{
+            height: 15vw;
+            width: 15vw;
+    
+        }
+        .mik-card-bannerImg2{
+            height: 15vw;
+            width: 15vw;
+            margin-left: 10vw;
+        }
+    }
+    .mik-card-banner-text{
+        margin: 0 auto  -9vw auto;
+        padding-top: 4vw;
+        height: fit-content;
+        width:12vw;
+        text-align: center;
+        font-size: 1.5vw;
+        line-height: normal;
+        position: relative;
+        z-index: 1;
+    }
+
+    .mik-card-triangle-up {
+        width: 0;
+        height: 0;
+        border-left: 3vw solid transparent;
+        border-right:3vw solid transparent;
+        border-bottom: 3vw solid #f6909d;
+        margin: -3vw auto 0 auto;
+        position: relative;
+      }
+    .mik-card-card{
+        border: 5px solid #f6909d;
+        width: 40vw;
+        .mik-card-sub-title{
+        font-size: 0.8vw;
+        margin-top: 1vw;
+        }
+        
+        .mik-card-title{
+            font-size: 1vw;
+            padding: 1vw;
+        }
+        .mik-card-p{
+            padding: 0.5vw 4vw;
+            font-size: 0.8vw;
+        }
+        .mik-card-btn-div{
+            width: fit-content;
+            margin: auto;
+            margin-bottom: 1vw;
+            .mik-card-btn{
+                padding: 1vw 2vw;
+                width: fit-content;
+                font-size: 0.8vw;
+                margin: 1vw auto;
+            }
+        }
+        
+    }
+    .mik-card-bottom{
+        width: 40vw;
+        margin: 1vw auto;
+        .mik-card-bottom-bar{
+            width: 40vw;
+            display: flex;
+            padding: 1vw;
+            .mik-card-bottom-bar-link{
+                font-size: 0.8vw;
+                font-weight: normal;
+            }
+        }
+        .mik-card-bottom-text{
+            .mik-card-bottom-small-text{
+                font-size: 0.7vw;
+                text-align: center;
+                margin: 1vw;
+            }
+        }
+    
+    }
+}
