@@ -49,8 +49,8 @@ import SiteMap from '../pages/sitemap';
 import  MIKCard from '../pages/mik_card';
 import MIKRemera from '../pages/mik_remera_corner';
 import WashCare from '../pages/washcare';
-
-
+import BuyerLicence from '../pages/buyer_licence';
+import SellerLicence from '../pages/seller_licence';
 
     const outer =()=> (
                 <Router onUpdate={()=> window.scrollTo(0,0)}>
@@ -101,6 +101,8 @@ import WashCare from '../pages/washcare';
                             <Route exact path={"/dev/mik_card"} component={MIKCard}/>
                             <Route exact path={"/dev/locations/remera_corner/"} component={MIKRemera} />
                             <Route exact path={"/dev/washcare"} component={WashCare}/>
+                            <Route exact path={"/dev/buyer_licence"} component={BuyerLicence}/>
+                            <Route exact path={"/dev/seller_licence"} component={SellerLicence}/>
                              <Route component={notFound}/>
                         </Switch>            
                 </Router>

@@ -1,0 +1,156 @@
+*, *::before, *::after { box-sizing: border-box; font-family: 'Lato';}
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+.licences-section{
+    width: 60vw;
+    margin: auto;
+
+
+.licences-top-bar{
+    width: fit-content;
+    height: fit-content;
+    margin: 2vw auto ;
+    
+
+    a{
+        border: 0.1vw solid gray;
+        padding:  2vw 7vw;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        font-size: 1.5vw;
+    }
+    ._active{
+        color: #ff6666;
+    }
+    
+}
+.licences-terms{
+    text-align: left;
+    padding-top: 1vw;
+    .licences-h1{
+        text-align: left;
+        width: 60vw;
+        // padding-left: 0.5vw;
+        font-size: 1.5vw;
+        font-weight: bold;
+    }
+    .licences-p{
+        width: 60vw;
+        text-align: justify;
+        font-size: 1vw;
+    }
+    ul{
+        .licences-li{
+         list-style: square;   
+        }
+    }
+    .licences-h3{
+        font-size: 1.2vw;
+        font-weight: bold;
+        padding: 1vw;
+    }
+    i{
+        color:#ff6666;
+        font-size: 3vw;
+        // padding: 1vw;
+    }
+}
+}
+@media only screen and (max-width: 900px) {
+    .licences-section{
+        width: 80vw;
+        margin: auto;
+    
+    
+    .licences-top-bar{
+        width: fit-content;
+        height: fit-content;
+        margin: 2vw auto ;
+        display: flex;
+        
+        a{
+            border: 0.1vw solid gray;
+            padding:  1vw auto;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1rem
+        }
+        
+        
+    }
+    .licences-terms{
+        // text-align: left;
+        .licences-h1{
+            font-size: 0.9rem;
+            font-weight: bold;
+            text-align:justify;
+            width: 80vw;
+            padding-left: 0.5vw ;
+            margin: 1vw auto;
+        }
+        .licences-p{
+            width: 80vw;
+            text-align: justify;
+            padding: 1vw 0;
+            font-size: 0.8rem;
+        }
+        .licences-h3{
+            font-size: 0.9rem;
+            font-weight: bold;
+            padding: 0.5vw 0;
+        }
+        i{
+            color:#ff6666;
+            font-size: 2.5vw;
+            padding: 2vw;
+        }
+    }
+    }
+}
+@media only screen and (min-width: 1600px) {
+    .licences-section{
+        width: 40vw;
+        margin: auto;
+    
+    
+    .licences-top-bar{
+        width: fit-content;
+        height: fit-content;
+        margin: 2vw auto ;
+        display: flex;
+        
+        a{
+            border: 0.1vw solid gray;
+            padding:  1vw 3vw;
+            font-size: 1.2vw;
+        }
+        
+    }
+    .licences-terms{
+        text-align: left;
+        .licences-h1{
+            font-size: 1vw;
+            font-weight: bold;
+            text-align:justify;
+            width: 40vw;
+            padding: 0;
+        }
+        .licences-p{
+            width: 40vw;
+            text-align: justify;
+            padding: 1vw 0;
+            font-size: 1vw;
+        }
+        .licences-h3{
+            font-size: 1.25vw;
+            font-weight: bold;
+            padding: 0.5vw 0;
+        }
+        i{
+            color:#ff6666;
+            font-size: 2vw;
+            padding: 0;
+        }
+    }
+    }
+}
