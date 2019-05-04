@@ -1,0 +1,315 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: serif;
+  }
+
+  .washcare-section{
+    width: fit-content;
+    margin: auto;
+      .washcare-title{
+          letter-spacing: 0.1vw;
+          margin: 0 auto;
+          padding: 1vw;
+          font-family: Arial, Helvetica, sans-serif;
+          margin: auto;
+      width: fit-content;
+      }
+      .washcare-sub-title{
+        letter-spacing: 0;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2vw;
+        margin: auto;
+      width: fit-content;
+      }
+      
+      .washcare-topic{
+        font-size: 1.5vw;
+        text-decoration: underline;
+        margin: 1vw auto;
+        font-weight: 700;
+        width: fit-content;
+      }
+
+      .washcare-washing{
+          display: flex;
+          width: fit-content;
+          margin: 2vw auto;
+         
+          .washcare-left{
+              width: 20vw;
+             img{
+                margin: 1vw 2vw;
+              }
+          }
+          .washcare-middle{
+            width: 20vw;
+            margin: 0 5vw;
+            img{
+              width: 20vw;
+              padding-bottom: 1vw;
+            }
+        }
+        .washcare-right{
+            width: 20vw;
+        }
+      }
+      .washcare-drying{
+        display: flex;
+        width: fit-content;
+        margin: 2vw auto;
+        .washcare-left{
+            width: 20vw;
+            img{
+              width: 20vw;
+            }
+        }
+        .washcare-middle{
+          width: 20vw;
+          margin: 0 5vw;
+          
+      }
+      .washcare-right{
+          width: 20vw;
+          img{
+            width: 20vw;
+          }
+      }
+
+    }
+    
+    .washcare-shoes{
+        display: flex;
+        width: fit-content;
+        margin: 2vw auto;
+        .washcare-left{
+            width: 32.5vw;
+            margin-right:  2.5vw;
+        }
+       
+        .washcare-right{
+          width: 32.5vw;
+          margin-left: 2.5vw;
+      }
+
+    }
+  
+  }
+
+
+@media only screen and (max-width:900px){
+  .washcare-section{
+    width: 90vw;
+    margin: auto;
+    font-size: 0.9rem;
+
+      .washcare-title{
+          letter-spacing: 0.1vw;
+          margin: 0 auto;
+          padding: 1vw;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1.5rem;
+      }
+      .washcare-sub-title{
+        letter-spacing: 0;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        margin: 2vw auto;
+      }
+      
+      .washcare-topic{
+        font-size: 1.2rem;
+        text-decoration: underline;
+        margin: 1vw auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .washcare-washing{
+          display: inline;
+          margin: 2vw auto;
+          .washcare-left{
+            width: fit-content;
+            font-size: 0.9rem;
+            .washcare-imgg{
+              width: fit-content;
+              margin: auto;
+              img{
+                width: 12rem;
+              }
+            }
+        }
+          .washcare-middle{
+            width: fit-content;
+            margin: auto;
+            .washcare-imgg{
+              margin: auto;
+              width: 20rem;
+            }
+            img{
+              width: 20rem;
+              padding: 0;
+            }
+        }
+        .washcare-right{
+            width: fit-content;
+        }
+      }
+      .washcare-drying{
+        display: inline;
+        margin: 2vw auto;
+        .washcare-left{
+            width: fit-content;
+            .washcare-imgg{
+              margin: auto;
+              width: 20rem;
+              img{
+                width: 20rem;
+                margin: auto;
+              }
+            }
+        }
+        .washcare-middle{
+          width: fit-content;
+          margin: 4vw 0 ;
+      }
+      .washcare-right{
+          width: fit-content;
+          .washcare-imgg{
+            margin: auto;
+            width: 18rem;
+            img{
+              width: 18rem;
+              margin: auto;
+            }
+          }
+      }
+    }
+    
+    .washcare-shoes{
+      margin: 2vw auto; 
+      display: inline;
+      .washcare-left{
+            width: fit-content;
+        }
+       
+        .washcare-right{
+          width: fit-content;
+          margin: 2.5vw 0;  
+      }
+    }
+  }
+}
+@media only screen and (min-width:1600px){
+  .washcare-section{
+    width: 60vw;
+      .washcare-title{
+          letter-spacing: 0.1vw;
+          margin: 0 auto;
+          padding: 1vw;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1vw;
+      }
+      .washcare-sub-title{
+        letter-spacing: 0;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.5vw;
+      }
+      
+      .washcare-topic{
+        font-size: 0.7vw;
+        text-decoration: underline;
+        margin: 1vw auto;
+        font-weight: 700;
+      }
+
+      .washcare-washing{
+          display: flex;
+          width: fit-content;
+          margin: 1vw auto;
+          font-size: 0.5vw;
+         
+          .washcare-left{
+              width: 12vw;
+              img{
+                width: 5vw;
+                margin-right: 1.5vw;
+              }
+          }
+          .washcare-middle{
+            width: 12vw;
+            margin: 0 1vw;
+            .washcare-imgg{
+              margin: auto;
+              width: 7vw;
+              img{
+                width: 7vw;
+              }
+            }
+        }
+        .washcare-right{
+            width: 12vw;
+        }
+      }
+      .washcare-drying{
+        display: flex;
+        width: fit-content;
+        margin: 2vw auto;
+        font-size: 0.5vw;
+        .washcare-left{
+            width: 12vw;
+            .washcare-imgg{
+              margin: auto;
+              width: 7vw;
+              img{
+                width: 7vw;
+              }
+            }
+        }
+        .washcare-middle{
+          width: 12vw;
+          margin: 0 1vw;
+      }
+      .washcare-right{
+          width: 12vw;
+          .washcare-imgg{
+            margin: auto;
+            width: 7vw;
+            img{
+              width: 7vw;
+            }
+          }
+      }
+
+    }
+    .washcare-hr{
+      width: 10vw;
+    }
+    .washcare-shoes{
+        display: flex;
+        width: fit-content;
+        margin: 2vw auto;
+        font-size: 0.5vw;
+
+        .washcare-left{
+            width: 18vw;
+            margin-right:  1vw;
+        }
+       
+        .washcare-right{
+          width: 18vw;
+          margin-left: 1vw;
+      }
+
+    }
+    .washcare-imgg{
+      font-size: 2vw;
+      color: gray
+    }
+
+  }
+}
+

@@ -1,0 +1,1042 @@
+*{
+    font-family: 'Lato';
+}
+
+.remContainer{
+    padding-top: 0;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    .remA{
+        padding-top: 0;
+        width: inherit;
+        display: grid;
+        grid-template-columns: 29vw 29vw 29vw;
+        grid-column-gap: 1vw;;
+        grid-template-rows: auto auto auto auto auto;
+        grid-row-gap:1vw;;
+
+        img{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: inherit;
+            
+        }
+        .remA-desc{
+            background-color: rgb(240, 240, 240);
+           
+            .remA-desc-title{
+                padding: 5vw 1.5vw 2vw 1.5vw;
+                margin: auto;
+                text-align: center;
+                font-size: 2.5vw;
+                font-weight: 900;
+                font-family: 'Lato';
+                  letter-spacing: 0.2vw;
+                  color: black;
+            }
+            .remA-hr{
+                width: 4vw;
+                height: 0.3vw;
+                background-color: white;
+                border: 1px solid white;
+                margin: 0 auto 2vw auto;
+            }
+            .remA-desc-text{
+                text-align: center;
+                width: inherit;
+                font-size: 1.5vw;
+                font-weight: 500;
+                color: black;
+                letter-spacing: 0.1vw;
+            }
+            .remB-btn{
+                margin:  auto;
+                height: fit-content;
+                width: fit-content;
+                display: none;
+                button{
+                    text-align: center;
+                        background-color: black;
+                        color: white;
+                        font-size: 1.2vw;
+                        width: fit-content;;
+                        padding: 0.6vw 5vw;
+                        border: none;
+                }
+            }
+        }
+
+        .remB{
+            background-color: rgb(240, 240, 240);
+            width: 29vw;
+            height: 30vw;
+            padding:0 2vw; 
+            font-family: 'Lato';
+            .remB-sub-title{
+                font-size: 1.5vw;
+                font-weight: bold;
+                padding-top: 1vw;
+                height: fit-content;
+                width: fit-content;
+            }
+
+            .remB-hr{
+                width: 4vw;
+                height: 0.4vw;
+                background-color: white;
+                border: 1px solid white;
+                margin: 1vw 0;
+            }
+            .remB-desc{
+                color: black;
+                width: fit-content;
+                margin: 0;
+                text-align: justify;
+                font-weight: bold;
+                padding: 1vw 0;
+                font-size: 1.2vw;
+                .remB-desc-loc{
+                    padding: 1.5vw 0;
+                    img{
+                        width: 2.5vw;
+                        height: 2.5vw;
+                        margin:0 0.5vw;
+                    }
+                    .rem-icon-left1{
+                        margin-left: 3.5vw;
+                    }
+                    .rem-icon-left2{
+                        margin-left: 7vw;
+                    }
+                }
+            }
+            .remB-btn{
+                margin:  auto;
+                height: fit-content;
+                width: fit-content;
+                button{
+                    text-align: center;
+                        background-color: black;
+                        color: white;
+                        font-size: 1.3vw;
+                        width: fit-content;;
+                        padding: 0.6vw 7vw;
+                        border: none;
+                }
+            }
+            
+        }
+        .remB-map{
+            height: 30vw;
+        }
+
+        .remC{
+            background-color:  rgb(240, 240, 240);
+            width: 29vw;
+            height: 30vw;
+            padding: 0 2vw; 
+            .remC-sub-title{
+                font-size: 1.5vw;
+                font-weight: bold;
+                padding-top: 1vw;
+                height: fit-content;
+                width: fit-content;
+                font-family: 'Lato';
+                .rem-hr{
+                    width: 4vw;
+                    height: 0.3vw;
+                    background-color: white;
+                    border: 1px solid white;
+                    margin: 1vw 0 2vw 0;
+                    }
+            }
+            .remC-text{
+                width: fit-content;
+                margin: 0;
+                text-align: left;
+                padding: 0;
+                height: 30vw;
+                font-family: 'Lato';
+                font-size: 1.02vw;
+                font-weight: 500;
+            }
+           
+        }
+        .remC-slides{
+            grid-column-start:2;
+            grid-column-end: 4;
+            height: 30vw;
+            .slides-container{
+                position: relative;
+                margin: auto;
+                height: inherit;
+                .rem-slide-img {
+                    display: none;
+                    height: inherit;
+                    top: 0;
+                }
+                img {vertical-align: middle;height: inherit;}
+
+                .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                }
+
+/* Position the "next button" to the right */
+                .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+                }
+
+/* On hover, add a black background color with a little bit see-through */
+                .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+                }}
+
+/* The dots/bullets/indicators */
+.rem-dot-container{
+    position: relative;
+    z-index: 1;
+    margin-top: -2.5vw;
+    text-align: center;
+                .dot {
+                cursor: pointer;
+                height: 10px;
+                width: 10px;
+                margin: 0 5px;
+                background-color: #fff;
+                border:1px solid black;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                }
+            
+                .active, .dot:hover {
+                background-color: #000;
+                }
+
+            }
+            
+        }
+        /*Fading animation */
+        .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+        }
+
+        .remD{
+            margin: 0;
+            // border: 1px solid black;
+            width: 89vw;
+            padding-left: 2vw; 
+            background-color:rgb(240, 240, 240);
+
+            .remD-top-bar{
+                display: flex;
+
+                .remD-sub-title{
+                    padding: 0;
+                    font-size: 1.5vw;
+                font-weight: bold;
+                padding-top: 1vw;
+                height: fit-content;
+                width: fit-content;
+
+                }
+                .remD-button{
+                    height: fit-content;
+                    margin-top: 1.2vw;
+                    margin-left: 52vw;
+                    background-color: black;
+                    color: white;
+                    font-size: 1.2vw;
+                    width: 15vw;;
+                    padding: 0.5vw 1vw;
+                    border: none;
+                }
+            }
+            .rem-hr{
+                width: 4vw;
+                height: 0.5vw;
+                background-color: white;
+                border: 1px solid white;
+                margin: 1vw 0 0  0;
+                }
+            .remD-brands{
+                height: 10vw;
+                display: flex;
+                width: fit-content;
+                margin: auto;
+                img{
+                    margin: 0.5vw  0.8vw;;
+                    width: 15vw;
+                }
+            }
+            .remD-sub-title{
+                padding: 0;
+                    font-size: 1.5vw;
+                font-weight: bold;
+                padding-top: 1vw;
+                height: fit-content;
+                width: fit-content;
+
+            }
+
+            .remD-store-services{
+                margin-left: -1vw;
+                display: flex;
+                .store-service{
+                    background-color: white;
+                    text-align: center;
+                    font-size: 1.3vw;
+                    padding: 1vw 1.8vw;
+                    margin:0.5vw;
+                    width: 16.4vw;
+                    height: 5vw;
+
+                }
+            }
+
+            .drop-it{
+                background-color: black;
+                color: white;
+                text-align: center;
+                font-size: 1vw;
+                margin-left: -2vw;
+                margin-top: 1vw;
+                padding: 1vw;
+                .drop-it-title{
+                    font-size: 1.2vw;
+                    font-weight: bold;
+                    letter-spacing: 0.5vw;
+                    strong,em{letter-spacing: 0;}
+                }
+                .drop-it-text{
+                    padding: 0;
+                    color: white;
+                    font-size: 1.2vw;
+                    letter-spacing: 0.2vw;
+                    button{
+                    background-color: black;
+                    color: white;
+                    font-size: 1vw;
+                    font-weight: bold;
+                    width: fit-content;
+                    border: none;
+                    margin-left: 2vw;
+                    }
+
+                }
+            }
+            .remE{
+                
+                width: fit-content;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-column-gap: 1vw;
+                grid-row-gap:1vw;
+        
+                .remEBox{
+                    width: fit-content;
+                    height: fit-content;
+                    .remEimg{
+                        height: 15.25vw;
+                        width: 27vw;
+                        margin:0;
+                    }
+                    .remEdesc{
+                        padding: 1vw;
+                        margin: 0;
+
+                        background-color: white;
+                        h5{width: fit-content;
+                            font-size: 1vw;
+                        }
+                    }
+                }  
+            }
+            .food-drink{
+                height: 10vw;
+                display: flex;
+                width: fit-content;
+                img{
+                    margin: 0.5vw 3vw;
+                    width: 20vw;
+                }
+            }
+            .rem-sep{
+                height: 0.3vw;
+                background-color: white;
+                border: none;
+                margin-left: -2vw;
+            }
+            .other-stores{
+                display: flex;
+                
+                .rem-other-store{
+                    padding-top: 1vw;
+                    width: fit-content;
+                    background-color: white;
+                    margin: 2vw 0.5vw;
+                    
+                    .other-store-label{
+                        display: flex;
+                        width: fit-content;
+                        margin: auto;
+                        img{
+                            width: 5vw;
+                            margin: 0;
+                            height: 3vw;
+                        }
+                        p{
+                            // line-height: 1.3vw;
+                        width: fit-content;
+                        text-align: left;
+                        color: black;
+                        }
+                        
+                    }
+                    hr{
+                        width: inherit;
+                    }
+                    img{
+                        width: 27.5vw
+                    }
+                }
+            }
+
+        }
+               
+    }
+
+}
+
+@media only screen and (min-width:1600px){
+    .remContainer{
+        padding-top: 1vw;
+        // height: fit-content;
+        // width: fit-content;
+        margin: auto;
+        .remA{
+            padding-top: 0;
+            width: inherit;
+            display: grid;
+            grid-template-columns: 15vw 15vw 15vw;
+            grid-column-gap: 0.5vw;;
+            grid-template-rows: auto auto auto auto auto;
+            grid-row-gap: 0.5vw;
+            margin-left:  3.3vw;
+    
+            img{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                height: 16vw;
+                width: inherit;
+            }
+            .remA-desc{
+                background-color: rgb(240, 240, 240);
+               
+                .remA-desc-title{
+                    padding: 3vw 0.5vw 1vw 0.5vw;
+                    font-size: 1vw;
+                    font-weight: 900;
+                }
+                .remA-hr{
+                    width: 2vw;
+                    height: 0.2vw;
+                    margin: 0.5vw auto 1.5vw auto;
+                }
+                .remA-desc-text{
+                    text-align: center;
+                    width: inherit;
+                    font-size: 0.7vw;
+                    font-weight: 500;
+                    color: black;
+                    letter-spacing: 0.1vw;
+                }
+            }
+
+            .remB{
+                background-color: rgb(240, 240, 240);
+                width: 15vw;
+                height: 14vw;
+                padding:0 1vw; 
+                font-family: 'Lato';
+                .remB-sub-title{
+                    font-size: 0.7vw;
+                    padding-top: 0.5vw;
+                }
+                .remB-hr{
+                    width: 2vw;
+                    height: 0.2vw;
+                    background-color: white;
+                    border: 1px solid white;
+                    margin: 0.5vw 0;
+                }
+                .remB-desc{
+                    padding: 0.5vw 0;
+                    font-size: 0.6vw;
+                    .remB-desc-loc{
+                        padding: 0.7vw 0;
+                        text-align: justify;
+                        img{
+                            width: 1vw;
+                            height: 1vw;
+                            margin:0 0.2vw;
+                        }
+                        .rem-icon-left1{
+                            margin-left: 3.5vw;
+                        }
+                        .rem-icon-left2{
+                            margin-left: 5vw;
+                        }
+                    }
+                }
+                .remB-btn{
+                    button{
+                            color: white;
+                            font-size: 0.6vw;
+                            width: fit-content;;
+                            padding: 0.6vw 4vw;
+                            border: none;
+                    }
+                }
+                
+            }
+            .remB-map{
+                height: 14vw;
+            }
+    
+            .remC{
+                background-color:  rgb(240, 240, 240);
+                width: 15vw;
+                height: 15vw;
+                padding: 0 1vw; 
+                .remC-sub-title{
+                    font-size: 0.7vw;
+                    font-weight: bold;
+                    padding-top: 1vw;
+                    height: fit-content;
+                    width: fit-content;
+                    font-family: 'Lato';
+                    .rem-hr{
+                        width: 2vw;
+                    height: 0.2vw;
+                    background-color: white;
+                    border: 1px solid white;
+                    margin: 0.5vw 0;
+                        }
+                }
+                .remC-text{
+                    width: fit-content;
+                    margin: 0;
+                    text-align: left;
+                    padding: 0;
+                    height: 30vw;
+                    font-family: 'Lato';
+                    font-size: 0.55vw;
+                    font-weight: 500;
+                }
+               
+            }
+            .remC-slides{
+                grid-column-start:2;
+                grid-column-end: 4;
+                height: 15vw;
+    
+            }
+    
+            .remD{
+                margin: 0;
+                width: 46vw;
+                padding-left: 1vw; 
+                background-color:rgb(240, 240, 240);
+                .remD-top-bar{
+                    display: flex;
+                    .remD-sub-title{
+                        padding: 0;
+                        font-size: 0.7vw;
+                    font-weight: bold;
+                    padding-top: 1vw;
+                    }
+                    .remD-button{
+                        height: fit-content;
+                        margin-top: 0.6vw;
+                        margin-left: 25vw;
+                        color: white;
+                        font-size: 0.6vw;
+                        width: 10vw;
+                    }
+                }
+                .rem-hr{
+                    width: 2vw;
+                    height: 0.2vw;
+                    background-color: white;
+                    border: 1px solid white;
+                    margin: 0.5vw 0;
+                    }
+                .remD-brands{
+                    display: flex;
+                    margin: auto;
+                    height: fit-content;
+                    img{
+                        margin: 0.1vw  0.5vw;;
+                        width: 7vw;
+                        padding: 0;
+                        height: fit-content;
+                    }
+                }
+                .remD-sub-title{
+                    padding: 0;
+                        font-size: 0.7vw;
+                    font-weight: bold;
+                    padding-top: 1vw;
+    
+                }
+    
+                .remD-store-services{
+                    display: flex;
+                    .store-service{
+                        background-color: white;
+                        text-align: center;
+                        font-size: 0.62vw;
+                        padding: 0.5vw 1vw;
+                        margin: 0.5vw;
+                        height: 2vw;
+                    }
+                }
+    
+                .drop-it{
+                    font-size: 0.8vw;
+                    margin-left: -0.9vw;
+                    padding: 0.5vw;
+                    .drop-it-title{
+                        strong{font-size: 1vw !important}
+                        em{font-size: 1vw !important}
+                        font-size: 0.7vw;
+                        font-weight: bold;
+                    }
+                    .drop-it-text{
+                        padding: 0;
+                        color: white;
+                        letter-spacing: 0.1vw;
+                        button{
+                        font-size: 0.7vw;
+                        margin-left: 1vw;
+                        }
+    
+                    }
+                }
+                .remE{
+                    
+                    width: fit-content;
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    grid-column-gap: 0.5vw;
+                    grid-row-gap:0.5vw;
+            
+                    .remEBox{
+                        width: fit-content;
+                        height: fit-content;
+                        .remEimg{
+                            height: 12vw;
+                            width: 14.25vw;
+                            margin:0;
+                            padding-top: 0;
+                            margin-top: -4vw;
+                        }
+                        .remEdesc{
+                            padding: 1vw;
+                            margin: 0;
+                            background-color: white;
+                            h5{width: fit-content;
+                                font-size: 1vw;
+                            }
+                        }
+                    }  
+                }
+                .food-drink{
+                    display: flex;
+                    width: fit-content;
+                    margin: auto;
+                    height: fit-content;
+                    img{
+                        margin: 0.5vw 1vw;
+                        width: 10vw;
+                        margin: 0.1vw  0.5vw;;
+                        width: 10vw;
+                        padding: 0;
+                        height: fit-content;
+                    }
+                }
+                .other-stores{
+                    display: flex;
+                    .rem-other-store{
+                        padding-top: 0.5vw;
+                        width: fit-content;
+                        background-color: white;
+                        margin: 1vw 0.35vw;
+                        .other-store-label{
+                            display: flex;
+                            width: fit-content;
+                            margin: auto;
+                            img{
+                                width: 2vw;
+                                height: 1vw;
+                            }
+                            p{
+                                line-height: 0.5vw;
+                            width: fit-content;
+                            text-align: justify;
+                            font-size: 0.5vw
+                            }
+                        }
+                        hr{
+                            width: inherit;
+                        }
+                        img{
+                            width: 14vw;
+                            height: 8.5vw;
+                        }
+                    }
+                }
+    
+            }
+                   
+        }
+    
+    }
+}
+
+@media only screen and (max-width:900px){
+    .remContainer{
+        padding-top: 1vw;
+        margin: auto;
+        .remA{
+            padding-top: 0;
+            width: inherit;
+            display: grid;
+            grid-template-columns: 30vw 30vw 30vw;
+            // grid-template-rows: auto auto auto auto auto;
+            grid-row-gap:0;
+            margin: auto;
+            grid-column-start: 1;
+                grid-column-end: 4;
+            .remA-desc{
+                background-color: rgb(240, 240, 240);
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 1;
+                grid-column-end: 4;
+               
+                .remA-desc-title{
+                    padding: 3vw 0.5vw 1vw 0.5vw;
+                    font-size: 3rem;
+                }
+                .remA-hr{
+                    display: none;
+                }
+                .remA-desc-text{
+                    br{
+                        display: none;
+                    }
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    color: black;
+                    letter-spacing: 0.1vw;
+                    line-height: 3rem;
+                    width: 28rem;
+                    margin: auto;
+                }
+                .remB-btn{
+                    margin: auto;
+                    display: block;
+                    // margin-bottom: 10vw;
+                    position: absolute;
+                    left: 10%;
+                    button{
+                            font-size: 2rem;
+                            padding: 2.5vw auto;
+                            width: 80vw;
+                            height: 5rem;
+                    }
+                }
+            }
+            img{
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 1;
+                grid-column-end: 4;
+                height: 46.5vw;
+            }
+           
+            .remB{
+                background-color: rgb(240, 240, 240);
+                width: 100%;
+                height: fit-content;
+                padding:1vw 2vw; 
+                grid-column-start: 1;
+                grid-column-end: 4;
+                .remB-sub-title{          
+                                  font-size: 1.5rem;
+                    padding-top: 0.5vw;
+                }
+                .remB-hr{
+                    width: 8vw;
+                    height: 0.2vw;
+                }
+                .remB-desc{
+                    padding: 0;
+                    font-size: 0.9rem;
+                    line-height: 5vw;
+                    .remB-desc-loc{
+                        padding: 1vw 0;
+                        text-align: justify;
+                        img{
+                            width: 7vw;
+                            height: 7vw;
+                            margin:0 2vw;
+                        }
+                        .rem-icon-left1{
+                            margin-left: 20vw;
+                        }
+                        .rem-icon-left2{
+                            margin-left: 31vw;
+                        }
+                    }
+                }
+                .remB-btn{
+                    margin: auto;
+                    display: block;
+                    margin: 2vw auto;
+                    button{
+                            font-size: 1rem;
+                            padding: 1vw 10vw;
+                    }
+                }
+            }
+            .remB-map{
+                height: 50vw;
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+    
+            .remC{
+                background-color:  rgb(240, 240, 240);
+                width: 100%;
+                height: fit-content;
+                padding: 0 1vw; 
+                grid-column-start: 1;
+                grid-column-end: 4;
+                .remC-sub-title{
+                        font-size: 1.5rem;
+                    padding: 1vw 2vw;
+                    .rem-hr{
+                        width: 8vw;
+                    height: 0.2vw;
+                    margin: 1vw 0;
+                        }
+                }
+                .remC-text{
+                    width: fit-content;
+                    margin: 0 2vw;
+                    text-align: left;
+                    padding: 2vw 0;
+                    height: fit-content;
+                    font-family: 'Lato';
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                }
+               
+            }
+            .remC-slides{
+                grid-column-start: 1;
+                grid-column-end: 4;
+                height: 50vw;
+                .rem-dot-container{
+                    margin-top: -8%;}
+    
+            }
+    
+            .remD{
+                margin: 0;
+                width: 100%;
+                padding-left: 1vw; 
+                background-color:rgb(240, 240, 240);
+                grid-column-start: 1;
+                grid-column-end: 4;
+                .remD-top-bar{
+                    display: flex;
+                    padding: 1vw 0;
+                    .remD-sub-title{
+                        font-size: 1.5rem;
+                        padding: 1vw 2vw;
+                    }
+                    .remD-button{
+                        display: none;
+                    }
+                }
+                .rem-hr{
+                    width: 8vw;
+                    height: 0.2vw;
+                    margin: 1vw 0;
+                    }
+                .remD-brands{
+                    display: flex;
+                    margin: auto;
+                    height: fit-content;
+                    flex-wrap: wrap;
+                    img{
+                        width: 25vw;
+                        padding: 0;
+                        height: 15vw;
+                        margin: 1vw auto;
+                    }
+                }
+                .remD-sub-title{
+                    font-size: 1.5rem;
+                    padding: 1vw 2vw;
+                    font-family: 'Lato'
+                }
+                .remD-store-services{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .store-service{
+                        font-size: 1rem;
+                        padding: 0.2rem 2.6rem;
+                        height: 3rem;
+                        width:15rem;
+                        margin: 1vw auto;
+                    }
+                }
+                .drop-it{
+                    font-size: 1rem;
+                    margin-left: -0.9vw;
+                    padding: 1vw;
+                    .drop-it-title{
+                        strong{font-size: 1rem !important}
+                        em{font-size: 1rem !important}
+                        font-size: 0.8rem;
+                        font-weight: bold;
+                    }
+                    .drop-it-text{
+                        padding: 0;
+                        color: white;
+                        letter-spacing: 0.1vw;
+                        font-size: 0.8rem;
+                        line-height: 5vw;
+                        button{
+                        font-size: 0.8rem;
+                        margin-left: 1vw;
+                        }
+                    }
+                }
+                .remE{  
+                    width: fit-content;
+                    display: grid;
+                    grid-template-columns: auto;
+                    grid-column-gap: 1vw;
+                    grid-row-gap:0.5vw;
+                    margin: auto;
+                    margin-bottom: 2vw;
+            
+                    .remEBox{
+                        width: fit-content;
+                        height: fit-content;
+                        
+                        .remEimg{
+                            height: fit-content;
+                            width: 75vw;
+                            padding-top: 0;
+                            margin: -2vw auto;
+                        }
+                        .remEdesc{
+                            padding: 1vw;
+                            margin: 0;
+                            background-color: white;
+                            h5{width: fit-content;
+                                font-size: 1rem;
+                            }
+                        }
+                    }  
+                }
+                .food-drink{
+                    display: flex;
+                    width: fit-content;
+                    margin: auto;
+                    height: fit-content;
+                    flex-wrap: wrap;
+                    img{
+                        width: 40vw;
+                        margin: auto;
+                        padding: 0;
+                        height: 15vw;
+                    }
+                }
+                .other-stores{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .rem-other-store{
+                        padding-top: 0.5vw;
+                        width: 75vw;
+                        background-color:rgb(240, 240, 240);
+                        margin: 1vw 0.35vw;
+                        margin: auto;
+                        .other-store-label{
+                            display: flex;
+                            width: fit-content;
+                            margin: auto;
+                            
+                            img{
+                                display: block;
+                                width: 10vw;
+                                height: 8vw;
+                            }
+                            p{
+                            line-height: 4vw;
+                            width: fit-content;
+                            text-align: justify;
+                            font-size: 1.2rem
+                            }
+                        }
+                        img{
+                            display: none;
+                            width: 75vw;
+                            height: 8.5vw;
+                            height: 45vw;
+                        }
+                    }
+                }
+    
+            }
+                   
+        }
+    
+    }
+}

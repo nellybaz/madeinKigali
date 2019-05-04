@@ -48,6 +48,8 @@ import MIKKFW from '../pages/mik_kfw';
 import SiteMap from '../pages/sitemap';
 import  MIKCard from '../pages/mik_card';
 import MIKRemera from '../pages/mik_remera_corner';
+import WashCare from '../pages/washcare';
+
 
 
     const outer =()=> (
@@ -98,6 +100,7 @@ import MIKRemera from '../pages/mik_remera_corner';
                             <Route exact path={"/dev/sitemap"} component={SiteMap}/>
                             <Route exact path={"/dev/mik_card"} component={MIKCard}/>
                             <Route exact path={"/dev/locations/remera_corner/"} component={MIKRemera} />
+                            <Route exact path={"/dev/washcare"} component={WashCare}/>
                              <Route component={notFound}/>
                         </Switch>            
                 </Router>
