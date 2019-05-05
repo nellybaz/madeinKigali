@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import {Link} from 'react-router-dom';
-import '../css/pages/happiness_guaranteed.css'
+import '../css/pages/happiness_guaranteed.css';
 
 class Happiness extends Component {
 
@@ -24,7 +24,7 @@ class Happiness extends Component {
                             Spoonflower is all about
                             making your dreams a reality, but delivering dreams can sometimes be a bit tricky. If you
                             think that your order has a flaw or it is not what you expected, we want to make it right.
-                            Start by <Link to={'/dev/contact'}>contacting us</Link> to let us know your situation, and
+                            Start by <Link to={'/dev/contact'} className="link-color">contacting us</Link> to let us know your situation, and
                             your order will either be
                             reprinted or reimbursed — just like that! Our community comes first: your happiness makes us
                             merrier than cuddling kittens.
@@ -37,14 +37,14 @@ class Happiness extends Component {
 
                     <div className="happiness-tips">
                         <ul className="ul-happiness">
-                            <li className="li-happiness"><Link to={'/dev/contact'}>Contact us</Link> to start a return
+                            <li className="li-happiness"><Link to={'/dev/contact'} className="link-color">Contact us</Link> to start a return
                                 or reimbursement request
                                 before mailing your package to us.
                                 Please include all relevant information along with order number if applicable.
                             </li>
                             <li className="li-happiness">If there is a problem with the fabric or paper, please email a
                                 photo of the issue along
-                                with your request to <Link to={''}>info@mik.com</Link> for quicker processing.
+                                with your request to <Link to={''} className="link-color">info@mik.com</Link> for quicker processing.
                             </li>
                             <li className="li-happiness">We do not offer prepaid return labels, so once you hear back
                                 from us with instructions,
@@ -66,9 +66,9 @@ class Happiness extends Component {
                     <div className="happiness-fun-fact">
                         <p className="p-fun-fact"><strong>Fun Fact:</strong><em>Since we cannot restock or resell any
                             fabric or paper that is
-                            returned to us, we donate returns to programs like the <Link to={''}>RARE Bear</Link> sew-in
+                            returned to us, we donate returns to programs like the <Link to={''} className="link-color">RARE Bear</Link> sew-in
                             or local nonprofits
-                            like <Link to={''}>The Scrap Exchange</Link>. Fabric that doesn’t meet our standards never
+                            like <Link to={''} className="link-color">The Scrap Exchange</Link>. Fabric that doesn’t meet our standards never
                             makes it to the
                             landfill, as it is shredded for industrial applications such as car upholstery and furniture
                             stuffing.</em></p>
@@ -76,7 +76,7 @@ class Happiness extends Component {
                     <hr/>
 
                     <div className="happiness-contact-us">
-                        <h3>Contact Us <br/><h5>Need more help? Reach out to us <Link to={'/dev/contact'}>here</Link>.
+                        <h3>Contact Us <br/><h5>Need more help? Reach out to us <Link to={'/dev/contact'} className="link-color">here</Link>.
                         </h5></h3>
                     </div>
 
