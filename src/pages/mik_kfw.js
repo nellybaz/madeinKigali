@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import { withRouter } from 'react-router';
 import '../css/pages/mik_kfw.css';
 import Header from '../components/header';
@@ -7,29 +6,6 @@ import Footer from '../components/footer';
 
 class MIKKFW extends Component {
     render() {
-=======
-import { Link } from 'react-router-dom';
-import { withRouter } from 'react-router';
-import '../css/pages/mik_kfw.css';
-import Header from '../components/header';
-
-import CombineWith from '../components/combine';
-import Footer from '../components/footer';
-import SellerLicence from './seller_licence';
-
-import {
-    BrowserView,
-    MobileView,
-    isBrowser,
-    isMobile
-} from "react-device-detect";
-
-class MIKKFW extends Component {
-
-
-    render() {
-
->>>>>>> olivier
         return (
             <div style={{ background: 'white' }}>
                 <Header />

@@ -3,22 +3,8 @@ import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import '../css/pages/sitemap.css';
 import Header from '../components/header';
-<<<<<<< HEAD
 import Footer from '../components/footer';
 
-=======
-
-import CombineWith from '../components/combine';
-import Footer from '../components/footer';
-import SellerLicence from './seller_licence';
-
-import {
-    BrowserView,
-    MobileView,
-    isBrowser,
-    isMobile
-} from "react-device-detect";
->>>>>>> olivier
 
 class SiteMap extends Component {
 

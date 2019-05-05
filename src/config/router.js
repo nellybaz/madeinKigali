@@ -43,12 +43,6 @@ import About2 from '../pages/about2';
 import Company2 from '../pages/company2';
 import ComingSoon1 from '../pages/comimg_soon';
 import SizeGuide from '../pages/size_guide';
-import BuyerLicence from '../pages/buyer_licence';
-import SellerLicence from '../pages/seller_licence';
-import WashCare from '../pages/washcare';
-import MIKKFW from '../pages/mik_kfw';
-import SiteMap from '../pages/sitemap';
-import MIKRemera from '../pages/mik_remera_corner';
 
 import MIKKFW from '../pages/mik_kfw';
 import SiteMap from '../pages/sitemap';

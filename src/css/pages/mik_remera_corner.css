@@ -24,11 +24,8 @@
   -ms-grid-rows: auto auto auto auto auto;
       grid-template-rows: auto auto auto auto auto;
   grid-row-gap: 1vw;
-<<<<<<< HEAD
   /*Fading animation */
   /* On smaller screens, decrease text size */
-=======
->>>>>>> olivier
 }
 
 .remContainer .remA img {
@@ -39,11 +36,7 @@
 }
 
 .remContainer .remA .remA-desc {
-<<<<<<< HEAD
   background-color: #f0f0f0;
-=======
-  background-color: #fafafa;
->>>>>>> olivier
 }
 
 .remContainer .remA .remA-desc .remA-desc-title {
@@ -98,11 +91,7 @@
 }
 
 .remContainer .remA .remB {
-<<<<<<< HEAD
   background-color: #f0f0f0;
-=======
-  background-color: #fafafa;
->>>>>>> olivier
   width: 29vw;
   height: 30vw;
   padding: 0 2vw;
@@ -151,7 +140,6 @@
   margin: 0 0.5vw;
 }
 
-<<<<<<< HEAD
 .remContainer .remA .remB .remB-desc .remB-desc-loc .rem-icon-left1 {
   margin-left: 3.5vw;
 }
@@ -160,8 +148,6 @@
   margin-left: 7vw;
 }
 
-=======
->>>>>>> olivier
 .remContainer .remA .remB .remB-btn {
   margin: auto;
   height: -webkit-fit-content;
@@ -176,19 +162,11 @@
   text-align: center;
   background-color: black;
   color: white;
-<<<<<<< HEAD
   font-size: 1.3vw;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.6vw 7vw;
-=======
-  font-size: 1.2vw;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.6vw 5vw;
->>>>>>> olivier
   border: none;
 }
 
@@ -197,11 +175,7 @@
 }
 
 .remContainer .remA .remC {
-<<<<<<< HEAD
   background-color: #f0f0f0;
-=======
-  background-color: #fafafa;
->>>>>>> olivier
   width: 29vw;
   height: 30vw;
   padding: 0 2vw;
@@ -246,7 +220,6 @@
       grid-column-start: 2;
   grid-column-end: 4;
   height: 30vw;
-<<<<<<< HEAD
   /* The dots/bullets/indicators */
 }
 
@@ -348,19 +321,13 @@
   .remContainer .remA .prev, .remContainer .remA .next, .remContainer .remA .text {
     font-size: 11px;
   }
-=======
->>>>>>> olivier
 }
 
 .remContainer .remA .remD {
   margin: 0;
   width: 89vw;
   padding-left: 2vw;
-<<<<<<< HEAD
   background-color: #f0f0f0;
-=======
-  background-color: #fafafa;
->>>>>>> olivier
 }
 
 .remContainer .remA .remD .remD-top-bar {
@@ -624,11 +591,7 @@
     width: inherit;
   }
   .remContainer .remA .remA-desc {
-<<<<<<< HEAD
     background-color: #f0f0f0;
-=======
-    background-color: #fafafa;
->>>>>>> olivier
   }
   .remContainer .remA .remA-desc .remA-desc-title {
     padding: 3vw 0.5vw 1vw 0.5vw;
@@ -649,11 +612,7 @@
     letter-spacing: 0.1vw;
   }
   .remContainer .remA .remB {
-<<<<<<< HEAD
     background-color: #f0f0f0;
-=======
-    background-color: #fafafa;
->>>>>>> olivier
     width: 15vw;
     height: 14vw;
     padding: 0 1vw;
@@ -681,7 +640,6 @@
   .remContainer .remA .remB .remB-desc .remB-desc-loc img {
     width: 1vw;
     height: 1vw;
-<<<<<<< HEAD
     margin: 0 0.2vw;
   }
   .remContainer .remA .remB .remB-desc .remB-desc-loc .rem-icon-left1 {
@@ -689,9 +647,6 @@
   }
   .remContainer .remA .remB .remB-desc .remB-desc-loc .rem-icon-left2 {
     margin-left: 5vw;
-=======
-    margin: 0 0.1vw;
->>>>>>> olivier
   }
   .remContainer .remA .remB .remB-btn button {
     color: white;
@@ -699,22 +654,14 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-<<<<<<< HEAD
     padding: 0.6vw 4vw;
-=======
-    padding: 0.6vw 2vw;
->>>>>>> olivier
     border: none;
   }
   .remContainer .remA .remB-map {
     height: 14vw;
   }
   .remContainer .remA .remC {
-<<<<<<< HEAD
     background-color: #f0f0f0;
-=======
-    background-color: #fafafa;
->>>>>>> olivier
     width: 15vw;
     height: 15vw;
     padding: 0 1vw;
@@ -760,11 +707,7 @@
     margin: 0;
     width: 46vw;
     padding-left: 1vw;
-<<<<<<< HEAD
     background-color: #f0f0f0;
-=======
-    background-color: #fafafa;
->>>>>>> olivier
   }
   .remContainer .remA .remD .remD-top-bar {
     display: -webkit-box;
@@ -975,11 +918,7 @@
     grid-column-end: 4;
   }
   .remContainer .remA .remA-desc {
-<<<<<<< HEAD
     background-color: #f0f0f0;
-=======
-    background-color: #fafafa;
->>>>>>> olivier
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 2;
@@ -1028,11 +967,7 @@
     height: 46.5vw;
   }
   .remContainer .remA .remB {
-<<<<<<< HEAD
     background-color: #f0f0f0;
-=======
-    background-color: #fafafa;
->>>>>>> olivier
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -1064,15 +999,12 @@
     height: 7vw;
     margin: 0 2vw;
   }
-<<<<<<< HEAD
   .remContainer .remA .remB .remB-desc .remB-desc-loc .rem-icon-left1 {
     margin-left: 20vw;
   }
   .remContainer .remA .remB .remB-desc .remB-desc-loc .rem-icon-left2 {
     margin-left: 31vw;
   }
-=======
->>>>>>> olivier
   .remContainer .remA .remB .remB-btn {
     margin: auto;
     display: block;
@@ -1089,11 +1021,7 @@
     grid-column-end: 4;
   }
   .remContainer .remA .remC {
-<<<<<<< HEAD
     background-color: #f0f0f0;
-=======
-    background-color: #fafafa;
->>>>>>> olivier
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -1131,23 +1059,15 @@
         grid-column-start: 1;
     grid-column-end: 4;
     height: 50vw;
-<<<<<<< HEAD
   }
   .remContainer .remA .remC-slides .rem-dot-container {
     margin-top: -8%;
-=======
-    border: 1px solid black;
->>>>>>> olivier
   }
   .remContainer .remA .remD {
     margin: 0;
     width: 100%;
     padding-left: 1vw;
-<<<<<<< HEAD
     background-color: #f0f0f0;
-=======
-    background-color: #fafafa;
->>>>>>> olivier
     -ms-grid-column: 1;
         grid-column-start: 1;
     grid-column-end: 4;
@@ -1302,11 +1222,7 @@
   .remContainer .remA .remD .other-stores .rem-other-store {
     padding-top: 0.5vw;
     width: 75vw;
-<<<<<<< HEAD
     background-color: #f0f0f0;
-=======
-    background-color: #fafafa;
->>>>>>> olivier
     margin: 1vw 0.35vw;
     margin: auto;
   }
