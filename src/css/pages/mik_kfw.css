@@ -57,11 +57,19 @@
 @media only screen and (max-width: 900px) {
   .kfw-section .kfw-title {
     padding: 2vw;
+<<<<<<< HEAD
+=======
+    font-family: 'Lato';
+>>>>>>> olivier
     letter-spacing: 1vw;
   }
   .kfw-section .kfw-mid-title {
     font-size: 3vw;
     padding: 0.5vw;
+<<<<<<< HEAD
+=======
+    font-family: 'Lato';
+>>>>>>> olivier
   }
   .kfw-section .kfw-sub-title {
     font-size: 4vw;
@@ -85,12 +93,20 @@
 @media only screen and (min-width: 1600px) {
   .kfw-title {
     padding: 1vw;
+<<<<<<< HEAD
+=======
+    font-family: 'Lato';
+>>>>>>> olivier
     letter-spacing: 0.2vw;
     font-size: 1.5vw;
   }
   .kfw-mid-title {
     font-size: 1.2vw;
     padding: 1vw;
+<<<<<<< HEAD
+=======
+    font-family: 'Lato';
+>>>>>>> olivier
   }
   .kfw-sub-title {
     font-size: 1.2vw;

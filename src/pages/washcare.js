@@ -13,6 +13,7 @@ import dryr2 from '../assets/images/dry-right-2.png';
 import washcare from '../assets/images/washcare.jpeg';
 import Footer from '../components/footer';
 
+
 class WashCare extends Component {
     render() {
 

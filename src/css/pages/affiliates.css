@@ -1,0 +1,56 @@
+@media only screen and (max-width: 745px) {
+  .column {
+    display: none;
+  }
+  .row {
+    display: block;
+    margin-left: 1em !important;
+  }
+  .column1 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .Affiliates {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+}
+
+.Affiliates {
+  width: 100%;
+}
+
+.row {
+  font-family: Missguided, Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 8em;
+  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.row .column {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+}
+
+.row .column1 {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  width: 100%;
+  margin-left: 1em;
+  margin-right: 15%;
+  text-align: left;
+}
+
+.row .column1 h5 {
+  font-size: 1.7em;
+  font-weight: 600;
+}
+/*# sourceMappingURL=affiliates.css.map */

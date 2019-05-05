@@ -1,0 +1,67 @@
+.Social {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.container {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.container h1 {
+  letter-spacing: normal;
+  font-size: 2em;
+}
+
+.container p {
+  font-size: 1.5em;
+  letter-spacing: normal;
+}
+
+.container .top {
+  text-align: center;
+  background-image: url(./../../assets/images/careers.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 20rem;
+}
+
+.container .top div {
+  top: 50%;
+  line-height: 5em;
+  padding-top: 5%;
+}
+
+.container .issue {
+  margin: 2em 15em;
+}
+
+.container .solution {
+  background-color: #f3f9dd;
+}
+
+.container .solution .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.container .solution .row .column {
+  background-color: #f3f9dd;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .solution .row .column img {
+  border-radius: unset;
+  width: 100%;
+  margin: 0 !important;
+}
+/*# sourceMappingURL=social_responsibility.css.map */

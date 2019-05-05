@@ -5,6 +5,7 @@ import '../css/pages/licences.css';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
+
 class BuyerLicence extends Component {
 
 

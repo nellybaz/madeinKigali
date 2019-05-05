@@ -1,0 +1,108 @@
+@media only screen and (max-width: 745px) {
+  .container {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .column1 {
+    margin-top: 0 !important;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .Careers {
+    width: 60% !important;
+    margin: 0 auto !important;
+  }
+}
+
+.Careers {
+  width: 100%;
+}
+
+.container {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 50%;
+}
+
+.container img {
+  width: 100%;
+  margin-bottom: 5em;
+}
+
+.container h1 {
+  font-size: 1em;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+}
+
+.container p {
+  letter-spacing: 0.1em;
+}
+
+.container .vacancies {
+  margin: 5em 0;
+}
+
+.container .vacancies h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.container .vacancies .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 !important;
+}
+
+.container .vacancies .column {
+  text-align: left;
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  background-color: white;
+  margin-left: 0 !important;
+}
+
+.container .vacancies .column h1 {
+  font-size: 1em;
+  margin-bottom: 0 !important;
+}
+
+.container .vacancies .column p {
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  padding: 1em 0 !important;
+}
+
+.container .vacancies .column1 {
+  margin-top: 4em;
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+}
+
+.container .vacancies .column1 h2 {
+  font-size: 1.5em;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.3em 1em;
+  text-transform: lowercase;
+}
+
+.container .vacancies .column1 h2:hover {
+  background-color: white;
+  color: black;
+  border: 0.08em black solid;
+}
+/*# sourceMappingURL=careers_opportunities.css.map */

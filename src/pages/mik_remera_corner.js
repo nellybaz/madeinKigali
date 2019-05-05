@@ -194,16 +194,19 @@ class MIKRemera extends Component {
                                     <img style={{ objectFit: 'contain' }} src={minusIcon} />
 
                                     Remera Street
+
                             <img className="rem-icon-left1" style={{ backgroundColor: '#0080FF', objectFit: 'contain' }} src={minusIconWhite} />
                                     <img style={{ backgroundColor: '#D4AF37', objectFit: 'contain' }} src={minusIconWhite} />
                                     <img style={{ backgroundColor: '#DC143C', objectFit: 'contain' }} src={minusIconWhite} />
-                                </div>
+</div>
                                 <div className='remB-desc-loc'>
                                     <img style={{ objectFit: 'contain' }} src={minusIcon} />
 
                                     Remera Street
+
                             <img className="rem-icon-left2" style={{ backgroundColor: '#696969', objectFit: 'contain' }} src={minusIconWhite} />
                                     <img style={{ backgroundColor: '#DC143C', objectFit: 'contain' }} src={minusIconWhite} />
+
                                 </div>
                                 <div className='remB-desc-loc'>
                                     <img style={{ objectFit: 'contain' }} src={minusIcon} />
@@ -341,7 +344,6 @@ class MIKRemera extends Component {
                             </h2>
 
                             <section className="remE">
-
 
                                 <BeautyServices />
                                 <BeautyServices />
