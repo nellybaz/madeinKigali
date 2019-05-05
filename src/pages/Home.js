@@ -89,7 +89,7 @@ class Home extends Component {
   componentDidMount() {
     //calling the APIs
     this.flashdealsCall();
-    this.getFeaturedBlog();
+    this.getFeaturedBlog(); 
     this.getTrending();
     this.getBrands();
 
@@ -665,7 +665,7 @@ class Home extends Component {
 
               <div className="madeinkigali-section">
                 <Divider name="#MadeinKigaliRW" />
-                <a href="/dev/gallery" className="gallery-little-title">VIEW GALLERY</a>
+                <Link to="/dev/gallery" className="gallery-little-title">VIEW GALLERY</Link>
 
                 <div className="madeinkigali-inner-div">
                   {this.state.madeinkigali_gallery}

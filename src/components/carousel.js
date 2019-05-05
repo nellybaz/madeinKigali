@@ -17,7 +17,7 @@ class Slider extends Component {
 
         setInterval(async ()=>{ 
             this.changeState()
-        }, 3000);
+        }, 5000);
         
     }
 

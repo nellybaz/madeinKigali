@@ -120,8 +120,8 @@ class Contact extends Component {
       <div className="contact-section">
         <h3>Contact MadeInKigali for </h3>
         <div>
-          <a href="mailTo: info@mik.com" className="btn" >PRESS INQUIRIES</a>
-          <a href="mailTo: info@mik.com" className="btn" >RETAILERS AND FRANCHISERS</a>
+          <Link to="mailTo: info@mik.com" className="btn" >PRESS INQUIRIES</Link>
+          <Link to="mailTo: info@mik.com" className="btn" >RETAILERS AND FRANCHISERS</Link>
         </div>
       </div>
 

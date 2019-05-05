@@ -94,8 +94,8 @@ class VisitRwanda2 extends Component {
                     
                         <button>FASHION</button>
 
-                        <a href="#">Boutique</a>
-                        <a href="/dev/blog/post/2/title">Shop by story</a>
+                        <Link to="#">Boutique</Link>
+                        <Link to="/dev/blog/post/2/title">Shop by story</Link>
                     </div>
                     </div>
                     

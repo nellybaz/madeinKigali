@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { ScrollContext } from 'react-router-scroll-4';
+import request from 'superagent';
 
 
 import App from '../App';
@@ -57,8 +58,11 @@ import SocialResponsibility from '../pages/social_responsibility';
 import Refer from '../pages/refer_a_friend';
 
 
-const outer = () => (
-    <Router onUpdate={() => window.scrollTo(0, 0)}>
+class AppRouter extends Component{
+ 
+    render(){
+        return(
+            <Router onUpdate={() => window.scrollTo(0, 0)}>
         <Switch>
             <Route exact path={"/dev/company2"} component={Company2} />
             {/* <Route exact path={"/"} component={ComingSoon1}/> */}
@@ -114,7 +118,13 @@ const outer = () => (
         </Switch>
     </Router>
 
-);
+
+        );
+    }
+}
+// const router = () => (
+    
+// );
 
 
-export default outer;
+export default AppRouter;

@@ -7,7 +7,7 @@ body{
 } 
 
 
-@media only screen and ( max-width: 745px){
+@media only screen and ( max-width: 900px){
     .Slider{
         height:300px !important;
     }
@@ -25,6 +25,13 @@ body{
     }
 
     
+}
+
+
+@media only screen and ( min-width: 900px){
+    .c-item:nth-child(1), .c-item:nth-child(2), .c-item:nth-child(3){
+        background-attachment: fixed !important;
+    }
 }
 
 .Slider{
@@ -162,7 +169,7 @@ body{
 .c-item:nth-child(1){
     width: 100%;
     background: url('../assets/images/madinkigali001.jpg') no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover; 
@@ -173,7 +180,7 @@ body{
 .c-item:nth-child(2){
     width: 100%;
     background: url('../assets/images/new_background.jpg') no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -185,7 +192,7 @@ body{
 .c-item:nth-child(3){
     width: 100%;
     background: url('../assets/images/new_background2.jpg') no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

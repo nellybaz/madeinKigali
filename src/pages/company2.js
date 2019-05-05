@@ -117,7 +117,7 @@ It’s a place made to get it right to shop and be inspired to develop your own 
                             We are selflessly committed to providing the most authentic handmade fashion products that Rwanda has to offer while ensuring that the hundreds of women that we work with in producing the products are the priority beneficiaries to the proceeds.
                             </p>
 
-                            <a href="/company/about2" className='c2-section2-btn'>WHO WE ARE</a>
+                            <Link to="/company/about2" className='c2-section2-btn'>WHO WE ARE</Link>
                         </div>
                         <div>
                             <h5><b>Our Products</b></h5>
@@ -125,7 +125,7 @@ It’s a place made to get it right to shop and be inspired to develop your own 
                             From clothes and footwear to homeware, our local but highly talented designers focus on the details to ensure that each piece is perfect for your look and comfort. Our flattering styles always fit with no fuss. We do not stop until each product is made to perfectly fit you. 
                             </p>
  
-                            <a href="/company/about#what-we-do" className='c2-section2-btn'>WHAT WE DO</a>
+                            <Link to="/company/about#what-we-do" className='c2-section2-btn'>WHAT WE DO</Link>
                         </div>
                         <div>
                             <h5><b>The MIK Experience</b></h5>
@@ -133,7 +133,7 @@ It’s a place made to get it right to shop and be inspired to develop your own 
                             we are on a never ending journey. We are constantly improving to make it all just that bit better every day. From inspiring to contributing, if it hasn’t been done before, we find our way to make it happen.
                             </p>
 
-                            <a href="/company/about#mik-experience" className='c2-section2-btn'>WHAT WE GUARANTEE</a>
+                            <Link to="/company/about#mik-experience" className='c2-section2-btn'>WHAT WE GUARANTEE</Link>
                         </div>
                         <div>
                             <h5><b>The MIK Brands</b></h5>
@@ -141,7 +141,7 @@ It’s a place made to get it right to shop and be inspired to develop your own 
                             The Made in Kigali concept is not to make you look good only, your comfort is as much a priority. 
                             </p>
 
-                            <a href="/company/about#mik-brands" className='c2-section2-btn'>OUR PROJECTS</a>
+                            <Link to="/company/about#mik-brands" className='c2-section2-btn'>OUR PROJECTS</Link>
                         </div>
                         <div>
                             <h5><b>Code of Conduct</b></h5>
@@ -149,7 +149,7 @@ It’s a place made to get it right to shop and be inspired to develop your own 
                             Our commitment to responsibility lives in the materials we choose, the ethical partners we work with, our employee benefits, community involvement and so much more. 
                             </p>
 
-                            <a href="/company/about#code-of-conduct" className='c2-section2-btn'>CODE OF CONDUCT</a>
+                            <Link to="/company/about#code-of-conduct" className='c2-section2-btn'>CODE OF CONDUCT</Link>
                         </div>
                 </div>
 

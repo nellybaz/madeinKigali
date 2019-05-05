@@ -12,7 +12,7 @@
             float: right;
 
             // border: 1px solid green;
-            img{
+            .flashdeals2-img{
                 width: 150px !important;
                 height: auto !important;
             }
@@ -28,8 +28,8 @@
 }
 
 @media only screen and (min-width: 900px){
-    .flashdeals2-img-div:hover img{
-        width: 115% !important;
+    .flashdeals2-img-div:hover .flashdeals2-img{
+        width: 80% !important;
         // display: none;
     }
 
@@ -66,16 +66,20 @@
         display:flex;
         justify-content: center;
         align-items:center;
+        // margin-left: 10px !important;
         flex-direction:column;
+        // border: 1px solid red;
 
 
-        img{
-            height:80% !important;
-            width: 70%;
+        .flashdeals2-img{
+            height:auto !important;
+            width: 60%;
             object-fit: contain;
             height: 100%;
             border-radius: 35px;
             transition: width .8s ease-in-out;
+            // border: 1px solid red;
+            margin-left: 8% !important;
         }
 
         p{

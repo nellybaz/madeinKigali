@@ -56,6 +56,10 @@
         height:230px;
     }
 
+    .middleBanner{
+        background-attachment: fixed !important;
+    }
+
 }
 
 
@@ -252,7 +256,6 @@
     /* border: 1px solid red; */
   
      background: url(../assets/images/madeinkigali002.jpg);
-     background-attachment: fixed;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;

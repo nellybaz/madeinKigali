@@ -213,7 +213,7 @@ class Post extends Component {
                             </a>
 
                             <map name="image-map">
-                                <area target="" alt="Here" title="Here" href="/dev/product/Isabel%20Maer/2" coords="396,680,187" shape="circle"/>
+                                <area target="" alt="Here" title="Here" to="/dev/product/Isabel%20Maer/2" coords="396,680,187" shape="circle"/>
                             </map>
                         </div>
 
@@ -236,7 +236,7 @@ class Post extends Component {
                             <Divider blogBorder="blog-border-width" name="Join The Convo!!!" class="full_width" />
 
                             <FacebookProvider appId="203119847024539">
-                                <Comments href="https://www.facebook.com/Kibuti-1542295485889144/" />
+                                <Comments to="https://www.facebook.com/Kibuti-1542295485889144/" />
                             </FacebookProvider>
 
                         </div>

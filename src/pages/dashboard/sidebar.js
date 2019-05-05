@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from "react-router-dom";
 import '../../css/pages/dashboard.css';
 
 class SideBar extends Component{
@@ -14,13 +15,13 @@ class SideBar extends Component{
                     <p>Admin Name</p>
 
                     <div className='sub-menus'>
-                    <button><a href={'/dev/admin/dashboard'}>PRODUCTS</a></button>
-                    <button><a href={'/dev/admin/dashboard/flashdeals'}>FLASH DEALS</a></button>
-                    <button><a href={'/dev/admin/dashboard/blog'}>BLOG</a></button>
+                    <button><Link to={'/dev/admin/dashboard'}>PRODUCTS</Link></button>
+                    <button><Link to={'/dev/admin/dashboard/flashdeals'}>FLASH DEALS</Link></button>
+                    <button><Link to={'/dev/admin/dashboard/blog'}>BLOG</Link></button>
                     <button>FEATURED BLOG</button>
 
                     <button>BRANDS</button>
-                    <button><a href={'/dev/admin/dashboard/trending'}>TRENDING</a></button>
+                    <button><Link to={'/dev/admin/dashboard/trending'}>TRENDING</Link></button>
                     
                     </div>
                 

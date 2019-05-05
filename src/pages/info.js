@@ -59,15 +59,15 @@ class Info extends Component {
           
 
             <div className={``}>
-                <h1><a href={'#'}>Points of Sale</a></h1>
+                <h1><Link to={'#'}>Points of Sale</Link></h1>
             </div>
 
              <div className={`${this.state.delivery_active}`}>
-                <h1><a href={'/dev/info/delivery'}>Delivery</a></h1>
+                <h1><Link to={'/dev/info/delivery'}>Delivery</Link></h1>
             </div>
 
              <div className={`${this.state.return_active}`}>
-                <h1><a href={'/dev/info/returns'} >Returns</a></h1>
+                <h1><Link to={'/dev/info/returns'} >Returns</Link></h1>
             </div>
         </div>
 
