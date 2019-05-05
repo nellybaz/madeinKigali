@@ -1,9 +1,20 @@
 @media only screen and (max-width: 745px) {
-  .fun-fact {
+  .happiness-fun-fact {
+    margin: 2em !important;
+  }
+  .li-happiness {
     margin: 0 !important;
   }
-  .tips li {
-    margin: 0 !important;
+  .ul-happiness {
+    -webkit-column-count: 1 !important;
+    column-count: 1 !important;
+  }
+  .happiness-tips {
+    margin: 2em !important;
+  }
+  .happiness-header-img {
+    width: 20% !important;
+    margin: 2em 0;
   }
 }
 
@@ -14,69 +25,75 @@
   }
 }
 
-a {
+.link-color {
   color: #639da6;
 }
 
 .Happiness {
-  width: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.container {
+.happiness-container {
   font-weight: 500;
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
 }
 
-.container .header {
+.happiness-container .happiness-header {
   text-transform: uppercase;
   color: #2d6d75;
 }
 
-.container .header h1 {
+.happiness-container .happiness-header .happiness-h1-header {
   font-size: 2.8em;
+  margin-bottom: 1.5em;
 }
 
-.container .header em {
+.happiness-container .happiness-header .happiness-em {
   text-transform: capitalize;
 }
 
-.container .img {
-  width: 20%;
+.happiness-container .happiness-header-img {
+  width: 8%;
+  margin: 2em 0;
 }
 
-.container .text {
-  margin: 0px 10%;
+.happiness-container .happiness-text {
+  margin: 0 15%;
 }
 
-.container .text p {
+.happiness-container .happiness-text .p-happiness-text {
   text-align: left;
   font-size: 18px;
 }
 
-.container .tips {
-  margin-bottom: 1em;
+.happiness-container .happiness-tips {
+  margin: 1em 5em;
 }
 
-.container .tips li {
+.happiness-container .happiness-tips .li-happiness {
   text-align: left;
-  font-size: 14px;
+  font-size: 0.875em;
   margin: 1em;
 }
 
-.container .tips ul {
+.happiness-container .happiness-tips .ul-happiness {
   -webkit-column-count: 2;
   column-count: 2;
   -webkit-column-gap: 1em;
           column-gap: 1em;
 }
 
-.container .tips-header {
+.happiness-container .happiness-tips-header {
   margin-top: 3em;
 }
 
-.container hr {
+.happiness-container hr {
   width: 95%;
   height: 0.2em;
   margin-left: auto;
@@ -86,54 +103,48 @@ a {
   margin-top: 3em;
 }
 
-.container .fun-fact {
-  margin: 5em 10em 0.5em;
+.happiness-container .happiness-fun-fact {
+  margin: 5em 20% 0.5em;
 }
 
-.container .fun-fact p {
-  font-size: 15px;
+.happiness-container .happiness-fun-fact .p-fun-fact {
+  font-size: 1em;
   text-align: left;
 }
 
-.container .contact-us {
+.happiness-container .happiness-contact-us {
   margin: 5em;
 }
 
-.container .contact-us h5 {
+.happiness-container .happiness-contact-us h5 {
   font-size: 0.6em;
 }
 
-.container .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin-top: 5em;
+.happiness-container .happiness-row {
+  margin: 3% 10%;
 }
 
-.container .row img {
+.happiness-container .happiness-row .happiness-column-img {
   margin: 3em;
   margin-top: 5em;
   border-radius: 50%;
 }
 
-.container .row .column {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
+.happiness-container .happiness-row .happiness-column1 {
   background-color: #dceceb;
-  margin: 1em;
-  padding: 1em;
+  margin: 2%;
+  height: 28em;
 }
 
-.container .row .column p {
-  padding: 2em;
-  font-size: 1.5em;
-  text-align: left;
+.happiness-container .happiness-row .happiness-column2 {
+  background-color: #dceceb;
+  margin: 2%;
+  height: 28em;
 }
 
-.container .row .column h6 {
-  padding-bottom: 3em;
+.happiness-container .happiness-row .happiness-column3 {
+  background-color: #dceceb;
+  margin: 2%;
+  height: 28em;
 }
 /*# sourceMappingURL=happiness_guaranteed.css.map */

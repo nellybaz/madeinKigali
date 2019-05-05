@@ -275,46 +275,46 @@ class Blog extends Component {
                             <div className="article-follow-us-div">
                                 <div className="post-social-media-div">
                                     <div className="social-media-div">
-                                        <a href="https://www.facebook.com/MadeInKigali/ "><img src={fb} alt="facebook" /></a>
+                                        <Link to="https://www.facebook.com/MadeInKigali/ "><img src={fb} alt="facebook" /></Link>
 
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="https://twitter.com/MadeinKigaliRW"><img src={twitter} alt="twitter" /></a>
+                                        <Link to="https://twitter.com/MadeinKigaliRW"><img src={twitter} alt="twitter" /></Link>
 
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="https://www.instagram.com/madeinkigali/"><img src={insta} alt="insta" /></a>
+                                        <Link to="https://www.instagram.com/madeinkigali/"><img src={insta} alt="insta" /></Link>
 
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="https://www.linkedin.com/in/madeinkigali/"><img src={linkedin} alt="linkedin" /></a>
+                                        <Link to="https://www.linkedin.com/in/madeinkigali/"><img src={linkedin} alt="linkedin" /></Link>
 
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="https://plus.google.com/u/2/112933730940706528592?tab=mX" target="_blanck" > <img src={g_plus} alt="g_plus" /></a>
+                                        <Link to="https://plus.google.com/u/2/112933730940706528592?tab=mX" target="_blanck" > <img src={g_plus} alt="g_plus" /></Link>
 
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="https://www.pinterest.com/madeinkigali/pins/" target="_blanck" > <img src={pinterest} alt="pinterest" /></a>
+                                        <Link to="https://www.pinterest.com/madeinkigali/pins/" target="_blanck" > <img src={pinterest} alt="pinterest" /></Link>
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></a>
-
-                                    </div>
-
-                                    <div className="social-media-div">
-                                        <a href="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></a>
+                                        <Link to="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></Link>
 
                                     </div>
 
                                     <div className="social-media-div">
-                                        <a href="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
+                                        <Link to="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></Link>
+
+                                    </div>
+
+                                    <div className="social-media-div">
+                                        <Link to="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></Link>
 
                                     </div>
                                 </div>

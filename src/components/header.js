@@ -16,8 +16,8 @@ import {Link} from 'react-router-dom';
 import play from '../assets/images/play.gif';
 import pause from '../assets/images/pause.png';
  
-
-import music from '../assets/music/music.mp3';
+ 
+// import music from '../assets/music/music.mp3';
 
 import little_banner from '../assets/images/1Y.jpg';
 
@@ -148,10 +148,10 @@ class Header2 extends Component {
       <div className="Header">
         {/* {this.getWindowClick()} */}
       <div className="topmost-bar">
-            <audio autoPlay={false} ref = {(ip)=> {this.mytune = ip}}>
+            {/* <audio autoPlay={false} ref = {(ip)=> {this.mytune = ip}}>
             <source src={music} type="audio/mpeg" />
                 Your browser does not support the audio element.
-            </audio>
+            </audio> */}
 
         <img className="audio-pause" src={this.state.music_icon} onClick={()=> this.handleTunePause()} />
           <p onClick={()=>window.location.href="/dev/signin"}>Register now to get <span className="top-bar-white-text">10% off*</span> your first order with code <span onClick={()=>this.disableCookies()} className="top-bar-white-text"><b>NEWCUSTOMER10</b></span></p>
@@ -790,12 +790,12 @@ class Header2 extends Component {
 
                                 <h5 style={{}}>THE EDIT</h5>
 
-                               <Link to={"#"} >  <i class="fas fa-crosshairs"></i> Competition</Link>
-                                <Link to={"#"} > <i class="fas fa-atom"></i> Art Stories</Link>
-                                <Link to={"#"} > <i class="fas fa-box-open"></i> Blog Stories</Link>
-                                <Link to={"#"} > <i class="fas fa-gift"> </i> #Visit Rwanda Blog </Link>
-                                <Link to={"#"} ><i class="fas fa-hand-holding-heart"> </i> #MadeinKigaliRW</Link>
-                                <Link to={"#"} >  <i class="fas fa-hands"> </i> MIK Supports</Link>
+                               <Link to={"#"} >  <i className="fas fa-crosshairs"></i> Competition</Link>
+                                <Link to={"#"} > <i className="fas fa-atom"></i> Art Stories</Link>
+                                <Link to={"#"} > <i className="fas fa-box-open"></i> Blog Stories</Link>
+                                <Link to={"#"} > <i className="fas fa-gift"> </i> #Visit Rwanda Blog </Link>
+                                <Link to={"#"} ><i className="fas fa-hand-holding-heart"> </i> #MadeinKigaliRW</Link>
+                                <Link to={"#"} >  <i className="fas fa-hands"> </i> MIK Supports</Link>
                   
                             </div>
                         </div>

@@ -56,11 +56,15 @@
         height:230px;
     }
 
+    .middleBanner{
+        background-attachment: fixed !important;
+    }
+
 }
 
 
 
- @media only screen and (max-width: 745px){
+ @media only screen and (max-width: 900px){
      .right{
         display: none;
     }
@@ -163,6 +167,7 @@
 
    .middleBanner{
        background-size: 100% 100% !important;
+       height: 250px !important;
        
    }
 
@@ -170,6 +175,8 @@
         height:220px !important;
         width:90% !important;
         margin:15px auto !important; 
+
+        display: none !important;
 
    }
 
@@ -244,13 +251,15 @@
     width: 92%;
     margin: 5px auto;
     margin-bottom: 15px;
-    height: auto
-    
-    /* background:url('../assets/images/background_front.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
+    height: 600px;
+
+    /* border: 1px solid red; */
+  
+     background: url(../assets/images/madeinkigali002.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+
 }
 
 .middleBanner img {

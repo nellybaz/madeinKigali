@@ -2,18 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
-    <list default="true" id="516ccb87-f1dd-45d7-948d-a49589444189" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-    </list>
+<<<<<<< HEAD
 =======
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
+    <list default="true" id="516ccb87-f1dd-45d7-948d-a49589444189" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/accessoriesguide.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/brandsguide.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/clothing.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/lingerie.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/lingerie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/maternity.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/maternity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/petite.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/petite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/shoesguide.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/shoesguide.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/size_icon.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/tallguide.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/tallguide.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/pages/happiness_guaranteed.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/pages/happiness_guaranteed.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/pages/happiness_guaranteed.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/pages/happiness_guaranteed.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/pages/happiness_guaranteed.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/pages/happiness_guaranteed.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/pages/size_guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/pages/size_guide.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/pages/size_guide.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/pages/size_guide.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/pages/size_guide.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/pages/size_guide.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/affiliates.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/affiliates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/careers_opportunities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/careers_opportunities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/hapiness_guaranteed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/hapiness_guaranteed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/size_guide.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/size_guide.js" afterDir="false" />
+    </list>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
     <list default="true" id="72b4fb27-763e-480c-8aa6-bd779e38233d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/pages/mik_remera_corner.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/mik_remera_corner.js" afterDir="false" />
     </list>
+ 
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+<<<<<<< HEAD
 >>>>>>> olivier
+=======
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,20 +58,69 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/config/router.js">
+        <entry file="file://$PROJECT_DIR$/src/pages/size_guide.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1753">
+            <state relative-caret-position="1293">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
               <folding>
-                <element signature="e#0#57#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
 <<<<<<< HEAD
+<<<<<<< HEAD
     </leaf>
   </component>
 =======
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/pages/size_guide.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/pages/happiness_guaranteed.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/pages/social_responsibility.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/social_responsibility.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+ 
+    </leaf>
+  </component>
+ 
+ 
+ 
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/pages/cart.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,12 +150,55 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Lin</find>
+      <find>Link</find>
+      <find>size</find>
+      <find>size-guide-wrapper</find>
+      <find>ye</find>
+      <find>top-th</find>
+      <find>opacity</find>
+      <find>30px</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/config/router.js" />
+        <option value="$PROJECT_DIR$/src/pages/social_responsibility.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/social_responsibility.scss" />
+        <option value="$PROJECT_DIR$/src/css/pages/refer_a_friend.scss" />
+        <option value="$PROJECT_DIR$/src/css/pages/happiness_guaranteed.scss" />
+        <option value="$PROJECT_DIR$/src/pages/hapiness_guaranteed.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/happiness_guaranteed.css" />
+        <option value="$PROJECT_DIR$/src/pages/size_guide.js" />
+        <option value="$PROJECT_DIR$/src/css/pages/size_guide.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="697" />
+  </component>
+ 
         <option value="$PROJECT_DIR$/src/css/pages/cart.scss" />
         <option value="$PROJECT_DIR$/node_modules/react-simple-image-slider/dist/ImageSlider.js" />
       </list>
@@ -82,7 +210,12 @@
     <option name="width" value="1317" />
     <option name="height" value="671" />
   </component>
+<<<<<<< HEAD
 >>>>>>> olivier
+=======
+
+ 
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -91,6 +224,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,30 +241,32 @@
               <item name="madeinKigali" type="b2602c69:ProjectViewProjectNode" />
               <item name="madeinKigali" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="madeinKigali" type="b2602c69:ProjectViewProjectNode" />
-              <item name="madeinKigali" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="madeinKigali" type="b2602c69:ProjectViewProjectNode" />
-              <item name="madeinKigali" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="madeinKigali" type="b2602c69:ProjectViewProjectNode" />
+              <item name="madeinKigali" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -144,21 +280,70 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ 
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="516ccb87-f1dd-45d7-948d-a49589444189" name="Default Changelist" comment="" />
+      <created>1556442450711</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556442450711</updated>
+      <workItem from="1556442452635" duration="4050000" />
+      <workItem from="1556446664619" duration="1308000" />
+      <workItem from="1556449736162" duration="1306000" />
+      <workItem from="1556463582151" duration="1582000" />
+      <workItem from="1556630315712" duration="1671000" />
+      <workItem from="1556720411124" duration="374000" />
+      <workItem from="1556720808678" duration="10459000" />
+      <workItem from="1556778030765" duration="11524000" />
+      <workItem from="1556794992738" duration="14609000" />
+      <workItem from="1557065639398" duration="144000" />
+    </task>
+ 
+ 
+ 
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69000" />
+    <option name="totallyTimeSpent" value="47096000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="745" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <layout>
+ 
+ 
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.22205663" />
+ 
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22205663" />
+<<<<<<< HEAD
 =======
+=======
+ 
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
     <task active="true" id="Default" summary="Default task">
       <changelist id="72b4fb27-763e-480c-8aa6-bd779e38233d" name="Default Changelist" comment="" />
       <created>1546546871922</created>
@@ -180,15 +365,23 @@
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25333333" />
+<<<<<<< HEAD
 >>>>>>> olivier
+=======
+
+ 
+ 
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.22023809" />
+ 
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="npm" order="2" sideWeight="0.5032258" side_tool="true" weight="0.22205663" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49850968" visible="true" weight="0.32352942" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -196,42 +389,71 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.32982457" />
       <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.47892073" />
 =======
+=======
+ 
+ 
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50298065" side_tool="true" visible="true" weight="0.06745362" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49701938" weight="0.4772344" />
+ 
+ 
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.32982457" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.47892073" />
+ 
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.055452865" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="right" id="R Graphics" />
       <window_info anchor="right" id="R Packages" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="SciView" />
+<<<<<<< HEAD
 >>>>>>> olivier
+=======
+
+ 
+ 
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50372577" side_tool="true" weight="0.4772344" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4962742" weight="0.086677365" />
+ 
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49172577" visible="true" weight="0.22271715" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967742" visible="true" weight="0.22065379" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.50827426" side_tool="true" weight="0.22271715" />
+      <window_info id="npm" order="2" sideWeight="0.5032258" side_tool="true" weight="0.22205663" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4996288" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49814403" weight="0.3221154" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49850968" weight="0.32615894" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" auto_hide="true" id="Event Log" order="9" sideWeight="0.50185597" side_tool="true" weight="0.3221154" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4988864" visible="true" weight="0.16666667" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50372577" side_tool="true" weight="0.4772344" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4962742" weight="0.16225165" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
+<<<<<<< HEAD
 =======
+=======
+ 
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -267,6 +489,158 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 >>>>>>> olivier
+=======
+
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/css/pages/about.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/coming1.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/hapiness_guaranteed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1554">
+          <caret line="78" column="139" selection-start-line="78" selection-start-column="135" selection-end-line="78" selection-end-column="139" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/careers_opportunities.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/comimg_soon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/happiness_guaranteed.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="71" column="73" selection-start-line="71" selection-start-column="73" selection-end-line="71" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/refer_a_friend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/refer_a_friend.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/careers_opportunities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/careers_opportunities.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/affiliates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/router_code_split.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/size_guide.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="223" column="1" selection-start-line="223" selection-start-column="1" selection-end-line="223" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/size_guide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1293">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/size_guide.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/happiness_guaranteed.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/pages/social_responsibility.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/social_responsibility.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+>>>>>>> c1f5fd409df4dbe208de0d665232ada616cb8e72
   </component>
 </project>

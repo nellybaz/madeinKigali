@@ -8,8 +8,8 @@ class notFound extends Component{
         return(
             <div style={{height:window.innerHeight, background:'white'}} className='notFound'>
             <img src={not} />
-                <h1 className="not-text">PAGE NOT FOUND  <br></br>
-                <span>Go <a href="/dev/company/about2"  style={{fontStyle:'underline', fontWeight:'bold'}}>Here</a></span></h1>
+                <h1 className="not-text">OOPS!! PAGE NOT AVAILABLE  <br></br>
+                <span>Go <a href="dev/company/about2"  style={{fontStyle:'underline', fontWeight:'bold'}}>Here</a></span></h1>
                 
             </div>
         )

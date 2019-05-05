@@ -73,94 +73,94 @@ class Footer extends Component {
                 <th onClick={()=> this.toggleFooter()}>HELP</th>
                 <th onClick={()=> this.toggleFooter()}>DELIVERY & RETURNS</th>
                 <th onClick={()=> this.toggleFooter()}>CARDS & OFFERS</th>
-                <th onClick={()=> this.toggleFooter()}>COMPANY</th>
-                <th onClick={()=> this.toggleFooter()}>CONTACT</th>
+                <th onClick={()=> this.toggleFooter()}>ABOUT US</th>
+                {/* <th onClick={()=> this.toggleFooter()}>CONTACT</th> */}
                 <th  onClick={()=> this.toggleFooter()}><p className={`btn-open-footer ${this.state.btn_openned}`}>+</p></th>
                 
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={'/dev/help'}>Shop Online</Link></td>
+              <td><Link to={'/dev/points'}>Store Finder</Link></td>
                 <td><Link to={'/dev/help'}>Track your order</Link></td>
                 <td><Link to={'/dev/student_discount'}>Student Discount</Link></td>
                 <td><Link to={'/dev/company2'}>Company</Link></td>
-                <td><Link to={'/dev/contact'}>Contact us</Link></td>
+                {/* <td><Link to={'/dev/contact'}>Contact us</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}>Orders</Link></td>
+              <td><Link to={'/dev/help'}>FAQs</Link></td>
                 <td><Link to={'/dev/info/delivery'}>Delivery</Link></td>
                 <td><Link to={'/dev/gift_card'}>Gift Cards</Link></td>
-                <td><Link to={'/dev/help'}>MadeInKigali Support</Link></td>
-                <td><Link to={''}>Returns & Exchanges</Link></td>
+                <td><Link to={'/dev/affiliates'}>Affiliates</Link></td>
+                {/* <td><Link to={''}>Returns & Exchanges</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={'/dev/info/returns'}>Return</Link></td>
+              <td><Link to={'/dev/contact'}>Contact us</Link></td>
                 <td><Link to={'/dev/info/returns'}>Returns</Link></td>
                 <td><Link to={'/dev/gift_card'}>MIK Cards</Link></td>
-                <td><Link to={''}>Careers & Opportunity</Link></td>
-                <td><Link to={''}>Subscribe to our Emails</Link></td>
+                <td><Link to={'/dev/mik_kigali_fashion_week'}>MIK at KFC</Link></td>
+                {/* <td><Link to={''}>Subscribe to our Emails</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-                <td><Link to={''}>My account</Link></td>
+                <td><Link to={'/dev/size-guide'}>Size Guide</Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}>Terms & Conditions</Link></td>
-                <td><Link to={''}>Contact us</Link></td>
-                <td><Link to={''}></Link></td>
-              </tr>
-
-              <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}>Designing FAQs</Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}>Privacy</Link></td>
-                <td><Link to={''}>Payment Method</Link></td>
+                <td><Link to={'/dev/refer_a_friend'}>Refer a friend</Link></td>
+                <td><Link to={'/dev/careers&Opportunities'}>Careers & opportunities</Link></td>
+                {/* <td><Link to={''}>Contact us</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}>Selling FAQs</Link></td>
+              <td><Link to={'/dev/washcare'}>Washcare & AfterCare</Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={'/dev/happiness_guaranteed'}>Happiness Guaranteed</Link></td>
+                <td><Link to={'/dev/socialresponsibility'}>Social Responsibility</Link></td>
+                {/* <td><Link to={''}>Payment Method</Link></td> */}
+                <td><Link to={''}></Link></td>
+              </tr>
+
+              <tr className={`${this.state.footerClass}`}>
+              <td><Link to={'/dev/sitemap'}>Site map</Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}>Seller Agreement</Link></td>
-                <td><Link to={''}>Shipping Method</Link></td>
+                <td><Link to={'/dev/seller_licence'}>Legal Notice: Terms & Conditions/ Privacy/ Cookie/ Sales conditions / Seller/Buyer Agreement</Link></td>
+                {/* <td><Link to={''}>Shipping Method</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}>Printing FAQs</Link></td>
+              <td><Link to={'/dev/locations/remera_corner'}>MadeInKigali at Remera Corner</Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}>Social responsibility</Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-              </tr>
-
-              <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}>Made to Measure FAQs</Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}></Link></td>
-                <td><Link to={''}>Happiness Guaranteed</Link></td>
-                <td><Link to={''}></Link></td>
+                {/* <td><Link to={''}></Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={''}>Wholesale FAQs</Link></td>
+              <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={''}>MIK at IKFW</Link></td>
+                {/* <td><Link to={''}></Link></td> */}
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
               </tr>
+
+              {/* <tr className={`${this.state.footerClass}`}>
+              <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+                <td><Link to={''}></Link></td>
+              </tr> */}
 
 
           </table>
@@ -270,46 +270,46 @@ class Footer extends Component {
 
          <div className="footer-third-div">
           <div className="social-media-div">
-            <a target="_blank" href="https://www.facebook.com/MadeInKigali/"><img src={fb} alt="facebook" /></a>
+            <Link target="_blank" to="https://www.facebook.com/MadeInKigali/"><img src={fb} alt="facebook" /></Link>
 
           </div>
 
           <div className="social-media-div">
-            <a target="_blank" href="https://twitter.com/MadeinKigaliRW"><img src={twitter} alt="twitter" /></a>
+            <Link target="_blank" to="https://twitter.com/MadeinKigaliRW"><img src={twitter} alt="twitter" /></Link>
 
           </div>
 
           <div className="social-media-div">
-            <a target="_blank" href="https://www.instagram.com/madeinkigali/"><img src={insta} alt="insta" /></a>
+            <Link target="_blank" to="https://www.instagram.com/madeinkigali/"><img src={insta} alt="insta" /></Link>
 
           </div>
 
           <div className="social-media-div">
-            <a target="_blank" href="https://www.linkedin.com/in/madeinkigali/"><img src={linkedin} alt="linkedin" /></a>
+            <Link target="_blank" to="https://www.linkedin.com/in/madeinkigali/"><img src={linkedin} alt="linkedin" /></Link>
 
           </div>
 
           <div className="social-media-div">
-          <a href="https://plus.google.com/u/2/112933730940706528592?tab=mX" target="_blank" > <img src={g_plus} alt="g_plus" /></a>
+          <Link to="https://plus.google.com/u/2/112933730940706528592?tab=mX" target="_blank" > <img src={g_plus} alt="g_plus" /></Link>
 
           </div>
 
           <div className="social-media-div">
-          <a href="https://www.pinterest.com/madeinkigali/pins/" target="_blank" > <img src={pinterest} alt="pinterest" /></a>
+          <Link to="https://www.pinterest.com/madeinkigali/pins/" target="_blank" > <img src={pinterest} alt="pinterest" /></Link>
           </div>
 
           <div className="social-media-div">
-          <a href="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></a>
-
-          </div>
-
-          <div className="social-media-div">
-          <a href="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></a>
+          <Link to="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></Link>
 
           </div>
 
           <div className="social-media-div">
-          <a href="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
+          <Link to="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></Link>
+
+          </div>
+
+          <div className="social-media-div">
+          <Link to="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></Link>
 
           </div>
         </div>

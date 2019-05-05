@@ -677,7 +677,7 @@ request
 
           <div className="madeinkigali-section">
             <Divider name="#MadeinKigaliRW" />
-            <a href="/dev/gallery" className="gallery-little-title">VIEW GALLERY</a>
+            <Link to="/dev/gallery" className="gallery-little-title">VIEW GALLERY</Link>
 
             <div className="madeinkigali-inner-div">
               {this.state.madeinkigali_gallery}
@@ -743,13 +743,13 @@ request
                   resolution='standard_resolution'
                   sortBy='most-recent'
                   target={instafeedTarget}
-                  template="<a href='{{link}}' target='_blank' class='instafeed__item'>
+                  template="<Link to='{{link}}' target='_blank' class='instafeed__item'>
       <img alt='mik' class='instafeed__item__background' src='{{image}}' />
                     <div class='instafeed__item__overlay'>
                       <div class='instafeed__item__overlay--inner'>
                       </div>
                     </div>
-                </a>"
+                </Link>"
                   userId='4242984811'
                   clientId='035fca9dd2b84d6aaec758d945b931ad'
                   accessToken='4242984811.1677ed0.744ef950db2e48dc9f8f76cf6f9aab0e'

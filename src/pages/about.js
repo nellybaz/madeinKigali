@@ -39,7 +39,7 @@ class About extends Component{
                                 Support the movement
                                 </p>
 
-                                <Link to={'/dev/company/about2'}>
+                                <Link to={'/company/about2'}>
                                     MORE ABOUT US
                                 </Link>
 
@@ -252,7 +252,7 @@ Every business year, we engage our organisation in discussions with environmenta
                     
                    <div className='div-action-right-bottom'>
                         <h5>Made to get it right</h5>
-                        <Link to={'/dev/company/about2'}>DISCOVER THE MIK STORY ></Link>
+                        <Link to={'/company/about2'}>DISCOVER THE MIK STORY ></Link>
                    </div>
                     </div>
 

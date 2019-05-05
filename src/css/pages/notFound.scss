@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "BaskervilleCustom";
+    src:url("../../assets/fonts/Baskerville-Regular.otf") format("opentype"),
+   
+    }
+
+    @font-face {
+        font-family: "WarsawGothic";
+        src:url("../../assets/fonts/WarsawGothic.otf") format("opentype"),
+       
+        }
 
 @media only screen and (min-width: 1600px) {
 
@@ -24,10 +35,10 @@
 .not-text{
     margin-top: -270px;
     text-align: center;
-    font-family: 'ZCOOL KuaiLe', cursive;
+    font-family: 'WarsawGothic';
 }
 
 .not-text span, .not-text a{
     font-size: 1rem;
-    font-family: 'ZCOOL KuaiLe', cursive;
+    font-family: 'BaskervilleCustom';
 }

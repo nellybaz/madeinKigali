@@ -13366,7 +13366,7 @@ function (_Component) {
         },
         __self: this
       }, "Tweet"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("iframe", {
-        src: "https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
+        src: "https://www.facebook.com/plugins/share_button.php?to=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
         width: "69",
         height: "20",
         style: {
@@ -19417,7 +19417,7 @@ function (_Component) {
         },
         __self: this
       }, "Tweet"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("iframe", {
-        src: "https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
+        src: "https://www.facebook.com/plugins/share_button.php?to=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
         width: "69",
         height: "20",
         style: {
@@ -20569,7 +20569,7 @@ function (_Component) {
         },
         __self: this
       }, "Tweet"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("iframe", {
-        src: "https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
+        src: "https://www.facebook.com/plugins/share_button.php?to=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
         width: "69",
         height: "20",
         style: {
@@ -23869,7 +23869,7 @@ function (_Component) {
         },
         __self: this
       }, "Tweet"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("iframe", {
-        src: "https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
+        src: "https://www.facebook.com/plugins/share_button.php?to=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
         width: "69",
         height: "20",
         style: {
@@ -27152,7 +27152,7 @@ function (_Component) {
         },
         __self: this
       }, "Tweet"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("iframe", {
-        src: "https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
+        src: "https://www.facebook.com/plugins/share_button.php?to=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
         width: "69",
         height: "20",
         style: {

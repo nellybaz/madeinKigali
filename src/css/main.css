@@ -7,7 +7,7 @@ body{
 } 
 
 
-@media only screen and ( max-width: 745px){
+@media only screen and ( max-width: 900px){
     .Slider{
         height:300px !important;
     }
@@ -27,10 +27,17 @@ body{
     
 }
 
+
+@media only screen and ( min-width: 900px){
+    .c-item:nth-child(1), .c-item:nth-child(2), .c-item:nth-child(3){
+        background-attachment: fixed !important;
+    }
+}
+
 .Slider{
     height: 750px;
 }
-
+/* 
 .jumbo3{
     height: 750px;
     background: url('../assets/images/new_background2.jpg');
@@ -58,7 +65,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: contain;
-}
+} */
 
 .Divider{
     display: flex;
@@ -144,41 +151,52 @@ body{
     /* border: 1px solid red; */
     width:100%;
     height:100%;
+    position: relative;
+    left: 100vw !important;
     display: none;
+    transition: left 4s ease-in-out;
 
     
 }
 
 .act {
+    left:0 !important;
     display: inline-block;
+    
+
 }
 
 .c-item:nth-child(1){
-    background: url('../assets/images/madinkigali001.png');
+    width: 100%;
+    background: url('../assets/images/madinkigali001.jpg') no-repeat;
+    /* background-attachment: fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; 
     background-size: cover;
 }
 
 
 .c-item:nth-child(2){
-    background: url('../assets/images/new_background.jpg');
-
+    width: 100%;
+    background: url('../assets/images/new_background.jpg') no-repeat;
+    /* background-attachment: fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: contain;
+    background-size: cover; 
+    /* border: 1px solid red; */
 }
 
 
 .c-item:nth-child(3){
-    background: url('../assets/images/new_background2.jpg');
-
+    width: 100%;
+    background: url('../assets/images/new_background2.jpg') no-repeat;
+    /* background-attachment: fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: contain;
+    background-size: cover;
 }
 
 .dot-control{

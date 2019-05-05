@@ -1,12 +1,12 @@
 @media only screen and (max-width: 745px) {
-  .column {
+  .affiliates-column {
     display: none;
   }
-  .row {
+  .affiliates-row {
     display: block;
     margin-left: 1em !important;
   }
-  .column1 {
+  .affiliates-column1 {
     width: 100%;
   }
 }
@@ -20,37 +20,42 @@
 
 .Affiliates {
   width: 100%;
+  font-family: Missguided, Arial, sans-serif;
 }
 
-.row {
+.affiliates-row {
   font-family: Missguided, Arial, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 8em;
+  margin-left: 5.5%;
   width: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
-.row .column {
+.affiliates-row .affiliates-column {
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
           flex: 20%;
 }
 
-.row .column1 {
+.affiliates-row .affiliates-column1 {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
   width: 100%;
   margin-left: 1em;
-  margin-right: 15%;
+  margin-right: 10%;
   text-align: left;
 }
 
-.row .column1 h5 {
+.affiliates-row .affiliates-column1 .affiliates-h5 {
   font-size: 1.7em;
   font-weight: 600;
+}
+
+.affiliates-row .affiliates-img {
+  width: 100%;
 }
 /*# sourceMappingURL=affiliates.css.map */
