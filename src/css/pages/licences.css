@@ -1,0 +1,167 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato';
+}
+
+.licences-section {
+  width: 60vw;
+  margin: auto;
+}
+
+.licences-section .licences-top-bar {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 2vw auto;
+}
+
+.licences-section .licences-top-bar a {
+  border: 0.1vw solid gray;
+  padding: 2vw 7vw;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5vw;
+}
+
+.licences-section .licences-top-bar ._active {
+  color: #ff6666;
+}
+
+.licences-section .licences-terms {
+  text-align: left;
+  padding-top: 1vw;
+}
+
+.licences-section .licences-terms .licences-h1 {
+  text-align: left;
+  width: 60vw;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.licences-section .licences-terms .licences-p {
+  width: 60vw;
+  text-align: justify;
+  font-size: 1vw;
+}
+
+.licences-section .licences-terms ul .licences-li {
+  list-style: square;
+}
+
+.licences-section .licences-terms .licences-h3 {
+  font-size: 1.2vw;
+  font-weight: bold;
+  padding: 1vw;
+}
+
+.licences-section .licences-terms i {
+  color: #ff6666;
+  font-size: 3vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .licences-section {
+    width: 80vw;
+    margin: auto;
+  }
+  .licences-section .licences-top-bar {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 2vw auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .licences-section .licences-top-bar a {
+    border: 0.1vw solid gray;
+    padding: 1vw auto;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .licences-section .licences-terms .licences-h1 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: justify;
+    width: 80vw;
+    padding-left: 0.5vw;
+    margin: 1vw auto;
+  }
+  .licences-section .licences-terms .licences-p {
+    width: 80vw;
+    text-align: justify;
+    padding: 1vw 0;
+    font-size: 0.8rem;
+  }
+  .licences-section .licences-terms .licences-h3 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.5vw 0;
+  }
+  .licences-section .licences-terms i {
+    color: #ff6666;
+    font-size: 2.5vw;
+    padding: 2vw;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .licences-section {
+    width: 40vw;
+    margin: auto;
+  }
+  .licences-section .licences-top-bar {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 2vw auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .licences-section .licences-top-bar a {
+    border: 0.1vw solid gray;
+    padding: 1vw 3vw;
+    font-size: 1.2vw;
+  }
+  .licences-section .licences-terms {
+    text-align: left;
+  }
+  .licences-section .licences-terms .licences-h1 {
+    font-size: 1vw;
+    font-weight: bold;
+    text-align: justify;
+    width: 40vw;
+    padding: 0;
+  }
+  .licences-section .licences-terms .licences-p {
+    width: 40vw;
+    text-align: justify;
+    padding: 1vw 0;
+    font-size: 1vw;
+  }
+  .licences-section .licences-terms .licences-h3 {
+    font-size: 1.25vw;
+    font-weight: bold;
+    padding: 0.5vw 0;
+  }
+  .licences-section .licences-terms i {
+    color: #ff6666;
+    font-size: 2vw;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=licences.css.map */

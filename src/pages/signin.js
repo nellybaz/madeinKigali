@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import '../css/pages/signin.css';
-
+import {Link} from "react-router-dom";
 import {withRouter, Redirect} from 'react-router-dom';
 import Cookies from 'universal-cookie';
 import request from 'superagent';
@@ -102,7 +102,7 @@ class Signin extends Component{
 
     
 
-    window.location.href="/dev/signin";
+    window.location.to="/signin";
 
 }
 
@@ -148,7 +148,7 @@ class Signin extends Component{
                             <br></br><br></br>
 
                             <button onClick={()=> this.login()} className="btn-login">SIGN IN</button><br></br>
-                            <a href="#"> Forgot your password?</a>
+                            <Link to="#"> Forgot your password?</Link>
                         </div>
                     </div>
 

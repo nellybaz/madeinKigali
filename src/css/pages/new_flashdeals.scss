@@ -1,19 +1,49 @@
-@media only screen and (max-width: 745px){
+@media only screen and (max-width: 900px){
     .Flashdeals2{
-        grid-template-columns: 1fr 1fr !important;
-        // display: none !important;
-        // grid-gap: 0px !important;
-        // overflow: scroll;
+        grid-template-columns: repeat(10, 1fr) !important;
+        overflow: scroll;
+        height: auto !important;
+
 
         .flashdeals2-img-div{
-            width:100% !important;
+            width:auto !important;
             height: auto !important;
-            img{
-                width:100%;
+            margin-right: 10px;
+            float: right;
+
+            // border: 1px solid green;
+            .flashdeals2-img{
+                width: 150px !important;
                 height: auto !important;
             }
         }
+
+
+        // .firstImage{
+        //     position: relative;
+        //     left: 300vw;
+        //     // width: 300px !important;
+        // }
     }
+}
+
+@media only screen and (min-width: 900px){
+    .flashdeals2-img-div:hover .flashdeals2-img{
+        width: 80% !important;
+        // display: none;
+    }
+
+    .flashdeals2-img-div:hover{
+        background-color: #191843 !important;
+    }
+
+    .flashdeals2-img-div:hover p{
+        color: white !important;
+    }
+
+
+
+
 }
 
 
@@ -36,15 +66,20 @@
         display:flex;
         justify-content: center;
         align-items:center;
+        // margin-left: 10px !important;
         flex-direction:column;
+        // border: 1px solid red;
 
 
-        img{
-            height:80% !important;
-            // width: 100%;
+        .flashdeals2-img{
+            height:auto !important;
+            width: 60%;
             object-fit: contain;
             height: 100%;
             border-radius: 35px;
+            transition: width .8s ease-in-out;
+            // border: 1px solid red;
+            // margin-left: 8% !important;
         }
 
         p{
@@ -53,10 +88,11 @@
             width:100%;
             text-align: center;
             // padding-left: 20%;
-            font-size: 0.8rem;
+            font-size: 1rem;
 
             strike{
                 color:#9A0022;
+                font-size: 0.8rem;
             }
 
             font-weight: bold;

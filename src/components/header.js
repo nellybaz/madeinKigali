@@ -16,8 +16,8 @@ import {Link} from 'react-router-dom';
 import play from '../assets/images/play.gif';
 import pause from '../assets/images/pause.png';
  
-
-import music from '../assets/music/music.mp3';
+ 
+// import music from '../assets/music/music.mp3';
 
 import little_banner from '../assets/images/1Y.jpg';
 
@@ -118,7 +118,7 @@ class Header2 extends Component {
             cookies.remove('userID');
         }
 
-        // window.location.href="/12hdgsikdhlmsdne";
+        window.location.href="/12hdgsikdhlmsdne";
 
     }
 
@@ -150,10 +150,10 @@ class Header2 extends Component {
       <div className="Header">
         {/* {this.getWindowClick()} */}
       <div className="topmost-bar">
-            <audio autoPlay={false} ref = {(ip)=> {this.mytune = ip}}>
+            {/* <audio autoPlay={false} ref = {(ip)=> {this.mytune = ip}}>
             <source src={music} type="audio/mpeg" />
                 Your browser does not support the audio element.
-            </audio>
+            </audio> */}
 
         <img className="audio-pause" src={this.state.music_icon} onClick={()=> this.handleTunePause()} />
           <p onClick={()=>window.location.href="#"}>Register now to get <span className="top-bar-white-text">10% off*</span> your first order with code <span onClick={()=>this.disableCookies()} className="top-bar-white-text"><b>NEWCUSTOMER10</b></span></p>
@@ -327,7 +327,7 @@ class Header2 extends Component {
                   
 
                     <div className="new-in-dropdown-content">
-                        <img src={little_banner} />
+                        <img src={require('../assets/images/menus/new_in.png')} />
                     </div>
                 </div>
             </div>
@@ -431,7 +431,7 @@ class Header2 extends Component {
                     </div>
 
                     <div className="fabric-dropdown-content">
-                        <img width="100%" height="100%" src={little_banner} />
+                        <img width="100%" height="90%" src={require('../assets/images/menus/3M2M.png')} />
                     </div>
                 </div>
             </div>
@@ -519,7 +519,7 @@ class Header2 extends Component {
                     </div>
 
                     <div className="m2m-dropdown-content">
-                        <img width="100%" height="100%" src={little_banner} />
+                        <img width="100%" height="100%" src={require('../assets/images/menus/3M2M.png')} />
                     </div>
                 </div>
             
@@ -622,7 +622,7 @@ class Header2 extends Component {
                     </div>
 
                      <div className="m2m-dropdown-content">
-                        <img width="100%" height="100%" src={little_banner} />
+                        <img width="100%" height="90%" src={require('../assets/images/menus/4wholesale.png')} />
                     </div>
                 </div>
             
@@ -671,7 +671,7 @@ class Header2 extends Component {
                    
 
                     <div className="brands-dropdown-content">
-                        <img width="100%" height="100%" src={little_banner} />
+                        <img width="100%" height="auto" style={{objectFit:'cover'}} src={require('../assets/images/menus/5Brands.jpg')} />
                     </div>
 
                     <div className='div-for-brands-display'>
@@ -735,7 +735,7 @@ class Header2 extends Component {
                   
 
                     <div className="sales-dropdown-content">
-                        <img src={little_banner} />
+                        <img src={require('../assets/images/menus/6sale.png')} />
                     </div>
                 </div>
             
@@ -761,7 +761,7 @@ class Header2 extends Component {
                   
 
                     <div className="visitrwanda-dropdown-content">
-                        <img src={little_banner} />
+                        <img src={require('../assets/images/menus/7visit.jpg')} />
                     </div>
                 </div>
               </div>
@@ -772,18 +772,18 @@ class Header2 extends Component {
 
                       
                         <div className="fashion-stories-dropdown-content">
-                            <img src={little_banner} />
+                            <img src={require('../assets/images/menus/8.1.png')} />
                             <p>Spring awakening</p>
                         </div>
 
                         <div className="fashion-stories-dropdown-content">
-                            <img src={little_banner} />
+                            <img src={require('../assets/images/menus/8.2.png')} />
                             <p>Casual Party</p>
                         </div>
 
 
                         <div className="fashion-stories-dropdown-content">
-                            <img src={little_banner} />
+                            <img src={require('../assets/images/menus/8.3.png')} />
                             <p>Gorilla Trekking</p>
                         </div>
                         <div className="fashion-stories-dropdown-content">
@@ -792,17 +792,17 @@ class Header2 extends Component {
 
                                 <h5 style={{}}>THE EDIT</h5>
 
-                                <Link to={"#"} >Competition</Link>
-                                <Link to={"#"} >Art Stories</Link>
-                                <Link to={"#"} >Blog Stories</Link>
-                                <Link to={"#"} >#Visit Rwanda Blog </Link>
-                                <Link to={"#"} >#MadeinKigaliRW</Link>
-                                <Link to={"#"} >MIK Supports</Link>
+                               <Link to={"#"} >  <i className="fas fa-crosshairs"></i> Competition</Link>
+                                <Link to={"#"} > <i className="fas fa-atom"></i> Art Stories</Link>
+                                <Link to={"#"} > <i className="fas fa-box-open"></i> Blog Stories</Link>
+                                <Link to={"#"} > <i className="fas fa-gift"> </i> #Visit Rwanda Blog </Link>
+                                <Link to={"#"} ><i className="fas fa-hand-holding-heart"> </i> #MadeinKigaliRW</Link>
+                                <Link to={"#"} >  <i className="fas fa-hands"> </i> MIK Supports</Link>
                   
                             </div>
                         </div>
                   
-
+                        
                     
                 </div>
             </div>

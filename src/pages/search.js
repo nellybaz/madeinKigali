@@ -88,7 +88,7 @@ class Search extends Component {
             }
             searchDisplayHolder.push(
                 <div className="search-prd-item-div" key={x}>
-                    <Link to={'/dev/product/jean/2'} ><img className={ads_class} src={img} alt="mik" /> </Link>
+                    <Link to={'/product/jean/2'} ><img className={ads_class} src={img} alt="mik" /> </Link>
                     {
                         x != 4 &&
                         <p><b>Check Velvet Wide Leg Trousers </b><br></br><span>$112.99</span> <span style={{ float: 'right', marginRight: "20%", width: "16px", display: 'flex', position: 'relative', bottom: '370px', left: '10px', cursor: 'pointer' }} title="Likes"><img src={like} /><span className="prd-search-likes">112</span></span></p>

@@ -1,0 +1,410 @@
+* {
+  font-family: 'Lato', serif;
+}
+
+@media only screen and (min-width: 1600px) {
+
+  .Social  {
+    margin-left:400px !important;
+    align-content: center !important;
+    text-align: center !important;
+    align-items: center !important;
+    width: 60% !important;
+    //justify-content: center !important;
+
+  }
+
+}
+
+@media only screen and (max-width: 745px) {
+  .issue-social {
+    //width: 100%;
+    margin: 2em 10% !important;
+  }
+  .solution-social-child {
+    //width: 100%;
+    margin: 2em 10% !important;
+  }
+  .column-social {
+    flex: 100%;
+  }
+  .below-solution-social {
+    margin: 2em 10% !important;
+  }
+  .our-difference2-inner-row {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)) !important;
+    grid-gap: 1rem !important;
+  }
+  .our-difference2-inner-column {
+    .our-difference-img {
+      //width: 50%;
+    }
+
+    width: 100%;
+    margin: 2rem 0 !important;
+  }
+  .eco-conscious-row {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)) !important;
+    grid-gap: 1rem !important;
+  }
+  .img-solution1 {
+    width: 100% !important;
+  }
+  .eco-conscious-row2 {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)) !important;
+    grid-gap: 5%;
+  }
+  .eco-conscious-img {
+    width: 100% !important;
+  }
+  .conscious-testimonials-row1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    grid-gap: 5%;
+  }
+}
+
+.Social {
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 !important;
+  .header-label{
+    color: #FFFFFF;
+  }
+
+}
+
+.container-social {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  //margin:0 !important;
+  .h1-text-social {
+    letter-spacing: normal;
+    font-size: 2em;
+  }
+
+  .normal {
+    font-size: 1.5em;
+  }
+
+  .p-text-social {
+    font-size: 1.2em;
+    letter-spacing: normal;
+  }
+
+
+  .top-social {
+    text-align: center;
+    //filter: blur(2px);
+    //-webkit-filter: blur(2px);
+    background: linear-gradient(
+                    rgba(0, 0, 0, 0.45),
+                    rgba(0, 0, 0, 0.45)
+    ), url(./../../assets/images/careers.jpg) no-repeat fixed center;
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+
+    .test-social {
+      width: 100%;
+      top: 50%;
+      line-height: 5em;
+      //background-color: yellow;
+      padding-top: 5%;
+    }
+
+  }
+
+  .issue-social {
+    //width:100%;
+    margin: 2em 22%;
+
+  }
+
+  .solution-social {
+    width: 100%;
+    margin-top: 2em;
+    background-color: #f3f9dd;
+
+    .solution-social-child {
+      //width: 100%;
+      margin: 0 20%;
+
+      .row-text-social {
+        padding-top: 0.5em;
+      }
+    }
+
+    .h1-text-social {
+      padding-top: 2em;
+    }
+
+    .row-social {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 1rem;
+      margin: 0 10% 0 10%;
+
+      .column-social {
+        //width: 100%;
+        background-color: #f3f9dd;
+        //flex: 1;
+        margin: 2%;
+
+        .img-social {
+          //border-radius: unset;
+          width: 100%;
+          margin: 0 !important;
+        }
+      }
+    }
+
+  }
+
+  .below-solution-social {
+    margin: 2em 20%;
+
+    .below-solution {
+      font-size: 1.7em;
+      color: darkolivegreen;
+    }
+  }
+
+  .approach-social {
+    background-color: #f3f9dd;
+    margin: 1em 6%;
+
+    .h1-approach {
+      padding-top: 1em;
+    }
+
+    .p-approach {
+      padding-bottom: 1.3em;
+    }
+  }
+
+  .solution1 {
+    margin: 2em;
+
+    .img-solution1 {
+      width: auto;
+    }
+
+    .h1-solution1 {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .p-solution1 {
+      padding-bottom: 2em;
+    }
+  }
+
+  .our-difference {
+    .h1-our-difference1 {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .p-our-difference1 {
+      font-size: 1.3em;
+    }
+
+    .our-difference-row {
+      margin: 0 15%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 1rem;
+
+      .our-difference-column {
+        margin: 1em;
+        flex: 1;
+
+        .img-our-difference {
+          width: 10%;
+        }
+
+        .h1-our-difference {
+          font-size: 1.3em;
+          font-weight: bold;
+        }
+
+        .p-our-difference {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .our-difference2 {
+    .h1-our-difference2 {
+      font-size: 2em;
+    }
+
+    .our-difference2-inner {
+      margin: 2em 15%;
+      background-color: #efefef;
+
+      .our-difference2-inner-row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+        grid-gap: 5%;
+
+
+        .our-difference2-inner-column {
+          //flex: 1;
+          margin: 20% 0;
+        }
+      }
+    }
+  }
+
+  .eco-conscious {
+    .h1-eco-conscious {
+      font-size: 2em;
+    }
+
+    .eco-conscious-inner {
+      margin: 2em 15%;
+
+      .eco-conscious-row {
+        background-color: #efefef;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+        grid-gap: 5%;
+
+        .eco-conscious-column {
+          flex: 1;
+          margin: 15% 2%;
+          float: left;
+        }
+      }
+
+      .eco-conscious-row2 {
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+        grid-gap: 5%;
+
+        .eco-conscious-column2 {
+          width: 100%;
+          //flex: 1;
+          .eco-conscious-img {
+            width: auto;
+          }
+
+          .h1-recycle {
+            font-size: 2em;
+          }
+
+          //margin: 1em;
+        }
+      }
+
+      .img-cutting-down {
+        margin-top: 5em;
+      }
+
+      .h1-cutting-down {
+        font-size: 2em;
+      }
+
+      .p-cutting-down {
+        text-align: left;
+        margin: 0 5%;
+      }
+
+      .eco-conscious-stats {
+        margin-top: 3em;
+        width: 100%;
+      }
+
+      .conscious-testimonials {
+        width: 100%;
+        margin: 1em 0 !important;
+
+        .conscious-testimonials-row2 {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+          grid-gap: 5%;
+
+          .h1-testimonials {
+            font-size: 1em;
+            font-weight: bold;
+          }
+
+          .img-testimonials {
+            border-radius: 50%;
+            width: 20%;
+            margin-top: 1em;
+          }
+
+          .p-testimonials {
+            margin: 2em;
+          }
+
+          .conscious-testimonials-column2 {
+            background-color: #f3f7de;
+            //flex: 1;
+            margin: 1em 2em;
+          }
+
+        }
+        .conscious-testimonials-row1 {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+          grid-gap: 5%;
+
+          .h1-testimonials {
+            font-size: 1em;
+            font-weight: bold;
+          }
+
+          .img-testimonials {
+            border-radius: 50%;
+            width: 20%;
+            margin-top: 1em;
+          }
+
+          .p-testimonials {
+            margin: 2em;
+          }
+
+          .conscious-testimonials-column1 {
+            background-color: #def6f8;
+            //flex: 1;
+            margin: 1em 2em;
+          }
+
+        }
+      }
+    }
+  }
+  //.img-testimonials {
+  //  border-radius: 50%;
+  //  width: 20%;
+  //  margin-top: 1em;
+  //}
+  //.h1-testimonials {
+  //  font-size: 1em;
+  //}
+  //.conscious-testimonials-column-first {
+  //  width: 100%;
+  //  background-color: #def6f8;
+  //  margin-right:10em;
+  //  //flex: 1;
+  //  //margin: 1em 1em;
+  //}
+  //.conscious-testimonials-column1{
+  //  width: 100%;
+  //  background-color: black;
+  //  //margin-left: 10em;
+  //}
+}

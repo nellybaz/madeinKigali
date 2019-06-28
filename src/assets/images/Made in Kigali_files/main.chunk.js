@@ -2839,7 +2839,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__["Link"], {
-        to: '/dev/blog/home',
+        to: '/blog/home',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 244
@@ -2859,7 +2859,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__["Link"], {
-        to: '/dev/blog/style',
+        to: '/blog/style',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 247
@@ -2879,7 +2879,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__["Link"], {
-        to: '/dev/blog/beauty',
+        to: '/blog/beauty',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 250
@@ -2899,7 +2899,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__["Link"], {
-        to: '/dev/blog/news',
+        to: '/blog/news',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 253
@@ -2919,7 +2919,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_18__["Link"], {
-        to: '/dev/visit_rwanda',
+        to: '/visit_rwanda',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 256
@@ -4499,7 +4499,7 @@ function (_Component) {
               },
               __self: this
             }, _this2.props.isBlog && react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
-              to: "/dev/blog/post/".concat(item.link),
+              to: "/blog/post/".concat(item.link),
               __source: {
                 fileName: _jsxFileName,
                 lineNumber: 123
@@ -4514,7 +4514,7 @@ function (_Component) {
               },
               __self: this
             })), !_this2.props.isBlog && react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
-              to: "/dev/product/".concat(item.brand, "/").concat(item.id),
+              to: "/product/".concat(item.brand, "/").concat(item.id),
               __source: {
                 fileName: _jsxFileName,
                 lineNumber: 127
@@ -4859,7 +4859,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 109
@@ -4872,7 +4872,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 110
@@ -4885,7 +4885,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 111
@@ -4898,7 +4898,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 112
@@ -4911,7 +4911,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 113
@@ -4924,7 +4924,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 114
@@ -4937,7 +4937,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 115
@@ -4950,7 +4950,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 116
@@ -4963,7 +4963,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 117
@@ -4976,7 +4976,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 118
@@ -4989,7 +4989,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 119
@@ -5002,7 +5002,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 120
@@ -5022,7 +5022,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/company',
+        to: '/company',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 125
@@ -5035,7 +5035,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 126
@@ -5048,7 +5048,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 127
@@ -5061,7 +5061,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 128
@@ -5074,7 +5074,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 129
@@ -5087,7 +5087,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 130
@@ -5100,7 +5100,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 131
@@ -5113,7 +5113,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 132
@@ -5126,7 +5126,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 133
@@ -5139,7 +5139,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 134
@@ -5152,7 +5152,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 135
@@ -5165,7 +5165,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 136
@@ -5185,7 +5185,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/student_discount',
+        to: '/student_discount',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 141
@@ -5198,7 +5198,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/gift_card',
+        to: '/gift_card',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 142
@@ -5211,7 +5211,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 143
@@ -5231,7 +5231,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 150
@@ -5244,7 +5244,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 151
@@ -5257,7 +5257,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 152
@@ -5270,7 +5270,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 153
@@ -5283,7 +5283,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 154
@@ -5296,7 +5296,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 155
@@ -5309,7 +5309,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 156
@@ -5322,7 +5322,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 157
@@ -5335,7 +5335,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 158
@@ -5348,7 +5348,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 159
@@ -5361,7 +5361,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/contact',
+        to: '/contact',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 160
@@ -5374,7 +5374,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-        to: '/dev/help',
+        to: '/help',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 161
@@ -5757,7 +5757,7 @@ function (_Component) {
 
     _this.searchBoxHandler = function () {
       // alert('Searching....');
-      window.location.href = "/dev/search/".concat(_this.state.search_query, "/category/1"); //call search api
+      window.location.href = "/search/".concat(_this.state.search_query, "/category/1"); //call search api
     };
 
     _this.handleMobileSearch = function () {
@@ -5986,7 +5986,7 @@ function (_Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "/dev/signin",
+        href: "/signin",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 185
@@ -6000,7 +6000,7 @@ function (_Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "/dev/cart",
+        href: "/cart",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 186
@@ -6014,7 +6014,7 @@ function (_Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "/dev/cart",
+        href: "/cart",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 187
@@ -6365,14 +6365,14 @@ function (_Component) {
         },
         __self: this
       }, "FABRICS"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_20__["Link"], {
-        to: "/dev/fabric",
+        to: "/fabric",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 269
         },
         __self: this
       }, "Fabrics"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_20__["Link"], {
-        to: "/dev/fabric/upload",
+        to: "/fabric/upload",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 270
@@ -6642,7 +6642,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "/dev/m2m2",
+        href: "/m2m2",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 346
@@ -6957,7 +6957,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_20__["Link"], {
-        to: '/dev/wholesale/new/2',
+        to: '/wholesale/new/2',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 426
@@ -7644,7 +7644,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_20__["Link"], {
-        to: '/dev/visit_rwanda',
+        to: '/visit_rwanda',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 608
@@ -7752,7 +7752,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_20__["Link"], {
-        to: '/dev/blog/home',
+        to: '/blog/home',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 635
@@ -8920,7 +8920,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/blog/:nav",
+    path: "/blog/:nav",
     component: _pages_blog__WEBPACK_IMPORTED_MODULE_6__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -8929,7 +8929,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/blog/post/:blog_id/:blog_name",
+    path: "/blog/post/:blog_id/:blog_name",
     component: _pages_post__WEBPACK_IMPORTED_MODULE_7__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -8938,7 +8938,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/product/:slug/:number",
+    path: "/product/:slug/:number",
     component: _pages_Product_js__WEBPACK_IMPORTED_MODULE_4__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -8947,7 +8947,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/wholesale/:slug/:number",
+    path: "/wholesale/:slug/:number",
     component: _pages_wholesale__WEBPACK_IMPORTED_MODULE_8__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -8956,7 +8956,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/search/:query/category/:category_no",
+    path: "/search/:query/category/:category_no",
     component: _pages_search__WEBPACK_IMPORTED_MODULE_9__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -8965,7 +8965,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/shop",
+    path: "/shop",
     component: _pages_search__WEBPACK_IMPORTED_MODULE_9__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -8974,7 +8974,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/contact",
+    path: "/contact",
     component: _pages_contact__WEBPACK_IMPORTED_MODULE_11__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -8983,7 +8983,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/help",
+    path: "/help",
     component: _pages_help__WEBPACK_IMPORTED_MODULE_10__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -8992,7 +8992,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/info/:infocategory",
+    path: "/info/:infocategory",
     component: _pages_info__WEBPACK_IMPORTED_MODULE_12__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9001,7 +9001,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/m2m",
+    path: "/m2m",
     component: _pages_m2m__WEBPACK_IMPORTED_MODULE_14__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9010,7 +9010,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/m2m2",
+    path: "/m2m2",
     component: _pages_m2m2__WEBPACK_IMPORTED_MODULE_13__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9019,7 +9019,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/gallery",
+    path: "/gallery",
     component: _pages_gallery__WEBPACK_IMPORTED_MODULE_15__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9028,7 +9028,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/quote",
+    path: "/quote",
     component: _pages_wholesale_quote__WEBPACK_IMPORTED_MODULE_16__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9037,7 +9037,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/fabric",
+    path: "/fabric",
     component: _pages_fabric_home__WEBPACK_IMPORTED_MODULE_17__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9046,7 +9046,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/fabric_single",
+    path: "/fabric_single",
     component: _pages_fabric_single_js__WEBPACK_IMPORTED_MODULE_20__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9055,7 +9055,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/fabric_search",
+    path: "/fabric_search",
     component: _pages_fabric_display__WEBPACK_IMPORTED_MODULE_21__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9064,7 +9064,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/fabric/upload",
+    path: "/fabric/upload",
     component: _pages_fabric_upload__WEBPACK_IMPORTED_MODULE_22__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9073,7 +9073,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/fabric/upload/select/:fabric_id",
+    path: "/fabric/upload/select/:fabric_id",
     component: _pages_fabric_upload_select__WEBPACK_IMPORTED_MODULE_23__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9082,7 +9082,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/signin",
+    path: "/signin",
     component: _pages_signin__WEBPACK_IMPORTED_MODULE_18__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9091,7 +9091,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/visit_rwanda",
+    path: "/visit_rwanda",
     component: _pages_visitRwanda2__WEBPACK_IMPORTED_MODULE_24__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9100,7 +9100,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/student_discount",
+    path: "/student_discount",
     component: _pages_student_discount__WEBPACK_IMPORTED_MODULE_26__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9109,7 +9109,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/gift_card",
+    path: "/gift_card",
     component: _pages_gift_card_js__WEBPACK_IMPORTED_MODULE_27__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9118,7 +9118,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/cart",
+    path: "/cart",
     component: _pages_cart_js__WEBPACK_IMPORTED_MODULE_28__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9127,7 +9127,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/delivery",
+    path: "/delivery",
     component: _pages_delivery_final_js__WEBPACK_IMPORTED_MODULE_29__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9136,7 +9136,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/company",
+    path: "/company",
     component: _pages_company__WEBPACK_IMPORTED_MODULE_30__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -9145,7 +9145,7 @@ var outer = function outer() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
-    path: "/dev/company/about",
+    path: "/company/about",
     component: _pages_about__WEBPACK_IMPORTED_MODULE_31__["default"],
     __source: {
       fileName: _jsxFileName,
@@ -11788,7 +11788,7 @@ function (_Component) {
         },
         __self: this
       })), " ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_49__["Link"], {
-        to: '/dev/quote',
+        to: '/quote',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 440
@@ -11815,7 +11815,7 @@ function (_Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_49__["Link"], {
-        to: '/dev/info/points-of-sale',
+        to: '/info/points-of-sale',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 443
@@ -11842,7 +11842,7 @@ function (_Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_49__["Link"], {
-        to: '/dev/info/delivery',
+        to: '/info/delivery',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 446
@@ -11869,7 +11869,7 @@ function (_Component) {
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_49__["Link"], {
-        to: '/dev/info/returns',
+        to: '/info/returns',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 449
@@ -11957,7 +11957,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_49__["Link"], {
-        to: '/dev/fabric',
+        to: '/fabric',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 514
@@ -12090,7 +12090,7 @@ function (_Component) {
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
-        href: "/dev/gallery",
+        href: "/gallery",
         className: "gallery-little-title",
         __source: {
           fileName: _jsxFileName,
@@ -13267,7 +13267,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "/dev/cart",
+        href: "/cart",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 258
@@ -13366,7 +13366,7 @@ function (_Component) {
         },
         __self: this
       }, "Tweet"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("iframe", {
-        src: "https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
+        src: "https://www.facebook.com/plugins/share_button.php?to=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
         width: "69",
         height: "20",
         style: {
@@ -14945,7 +14945,7 @@ function (_Component) {
         __self: this
       }, "SHOPPING BAG SUMMARY"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
         className: "checkout-btn",
-        to: '/dev/delivery',
+        to: '/delivery',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 77
@@ -15134,7 +15134,7 @@ function (_Component) {
         __self: this
       }, "$189.00")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
         className: "checkout-btn-2",
-        to: '/dev/delivery',
+        to: '/delivery',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 131
@@ -15416,7 +15416,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__["Link"], {
-        to: '/dev/company/about',
+        to: '/company/about',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 88
@@ -15429,7 +15429,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__["Link"], {
-        to: '/dev/company/about#how-we-do-it',
+        to: '/company/about#how-we-do-it',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 88
@@ -15442,7 +15442,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__["Link"], {
-        to: '/dev/company/about',
+        to: '/company/about',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 88
@@ -16126,7 +16126,7 @@ function (_Component) {
         },
         __self: this
       }), "Access the latest corporate news from MadeinKigali."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__["Link"], {
-        to: '/dev/blog',
+        to: '/blog',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 281
@@ -17330,7 +17330,7 @@ function (_Component) {
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__["Link"], {
-          to: '/dev/fabric_single',
+          to: '/fabric_single',
           __source: {
             fileName: _jsxFileName,
             lineNumber: 59
@@ -18142,7 +18142,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__["Link"], {
-        to: '/dev/fabric_search',
+        to: '/fabric_search',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 145
@@ -18176,7 +18176,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__["Link"], {
-        to: '/dev/fabric_search',
+        to: '/fabric_search',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 155
@@ -18210,7 +18210,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_13__["Link"], {
-        to: '/dev/fabric_search',
+        to: '/fabric_search',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 164
@@ -19417,7 +19417,7 @@ function (_Component) {
         },
         __self: this
       }, "Tweet"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("iframe", {
-        src: "https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
+        src: "https://www.facebook.com/plugins/share_button.php?to=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
         width: "69",
         height: "20",
         style: {
@@ -19701,7 +19701,7 @@ function (_Component) {
         },
         __self: this
       }, "3. Upload Your FIles"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_9__["Link"], {
-        to: '/dev/fabric/upload/select/1',
+        to: '/fabric/upload/select/1',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 45
@@ -19977,7 +19977,7 @@ function (_Component) {
     };
 
     _this.flipDesign = function (x) {
-      window.location.href = "/dev/fabric/upload/select/" + x;
+      window.location.href = "/fabric/upload/select/" + x;
 
       _this.handleDesignChange();
     };
@@ -20569,7 +20569,7 @@ function (_Component) {
         },
         __self: this
       }, "Tweet"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("iframe", {
-        src: "https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
+        src: "https://www.facebook.com/plugins/share_button.php?to=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
         width: "69",
         height: "20",
         style: {
@@ -21951,7 +21951,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        href: '/dev/info/delivery',
+        href: '/info/delivery',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 66
@@ -21971,7 +21971,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        href: '/dev/info/returns',
+        href: '/info/returns',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 70
@@ -23869,7 +23869,7 @@ function (_Component) {
         },
         __self: this
       }, "Tweet"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("iframe", {
-        src: "https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
+        src: "https://www.facebook.com/plugins/share_button.php?to=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
         width: "69",
         height: "20",
         style: {
@@ -24407,7 +24407,7 @@ function (_Component) {
         target: "",
         alt: "Here",
         title: "Here",
-        href: "/dev/product/Isabel%20Maer/2",
+        href: "/product/Isabel%20Maer/2",
         coords: "396,633,187",
         shape: "circle",
         __source: {
@@ -25010,7 +25010,7 @@ function (_Component) {
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__["Link"], {
-          to: '/dev/product/jean/2',
+          to: '/product/jean/2',
           __source: {
             fileName: _jsxFileName,
             lineNumber: 92
@@ -25275,7 +25275,7 @@ function (_Component) {
         });
       }
 
-      window.location.href = "/dev/signin";
+      window.location.href = "/signin";
     };
 
     _this.state = {
@@ -26235,7 +26235,7 @@ function (_Component) {
 
         holder.push(react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_10__["Link"], {
           className: "img-div",
-          to: "/dev/search/jeans/category/".concat(x),
+          to: "/search/jeans/category/".concat(x),
           __source: {
             fileName: _jsxFileName,
             lineNumber: 56
@@ -26344,7 +26344,7 @@ function (_Component) {
           },
           __self: this
         }, "Boutique"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-          href: "/dev/blog/post/2/title",
+          href: "/blog/post/2/title",
           __source: {
             fileName: _jsxFileName,
             lineNumber: 113
@@ -26413,7 +26413,7 @@ function (_Component) {
           textAlign: 'center'
         },
         className: "shop-all",
-        to: '/dev/search/jeans/category/1',
+        to: '/search/jeans/category/1',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 145
@@ -27152,7 +27152,7 @@ function (_Component) {
         },
         __self: this
       }, "Tweet"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("iframe", {
-        src: "https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
+        src: "https://www.facebook.com/plugins/share_button.php?to=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20",
         width: "69",
         height: "20",
         style: {

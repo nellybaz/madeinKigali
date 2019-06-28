@@ -1,0 +1,618 @@
+@media only screen and (max-width: 745px) {
+  .sgw-top-three {
+    display: none !important;
+  }
+  .sgw-top-three-alt {
+    display: block !important;
+    background: #eeeeee;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sgw-top-three-alt .sgw-top-three-li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .sgw-top-three-alt .sgw-top-three-li:hover {
+    text-decoration: underline overline;
+  }
+  .size-guide-icons-clothing .icon-down-clothing {
+    display: block !important;
+    margin-left: 2rem;
+  }
+  .size-guide-icons-clothing .icon-up-clothing {
+    display: none !important;
+    margin-left: 2rem;
+  }
+  .size-guide-icons-clothing-alt .icon-down-clothing {
+    display: none !important;
+    margin-left: 2rem;
+  }
+  .size-guide-icons-clothing-alt .icon-up-clothing {
+    display: block !important;
+    margin-left: 2rem;
+  }
+  .size-guide-icons .icon-down {
+    display: block !important;
+    margin-left: 2rem;
+  }
+  .size-guide-icons .icon-up {
+    display: none !important;
+    margin-left: 2rem;
+  }
+  .size-guide-icons-alt .icon-down {
+    display: none !important;
+    margin-left: 2rem;
+  }
+  .size-guide-icons-alt .icon-up {
+    display: block !important;
+    margin-left: 2rem;
+  }
+  .lastrow-size-guide-content2 {
+    display: none;
+  }
+  .lastrow-size-guide-content2-alt {
+    display: block;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+    -webkit-transition-property: display;
+    transition-property: display;
+  }
+  .lastrow-size-guide-content3 {
+    display: none;
+  }
+  .lastrow-size-guide-content3-alt {
+    display: block;
+    -webkit-transition: down 5s ease;
+    transition: down 5s ease;
+    -webkit-transition-property: display;
+    transition-property: display;
+  }
+  .size-guide-wrapper * {
+    height: auto !important;
+  }
+  .size-guide-wrapper .sgw-inner-top, .size-guide-wrapper .sgw-inner-bottom {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+  .slidingSection {
+    width: 80vw !important;
+  }
+  .sqw-hide-slider {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .SizeGuide {
+    width: 60%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+.slidingSection {
+  width: 30vw;
+  height: 1250px;
+  overflow: scroll;
+  background: white;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  -webkit-transition: right 1s ease;
+  transition: right 1s ease;
+  padding: 0 15px;
+}
+
+.slidingSection * {
+  color: black;
+  font-family: "Lato";
+}
+
+.slidingSection h2, .slidingSection h3, .slidingSection h5 {
+  text-align: center;
+}
+
+.slidingSection h3 {
+  font-size: 1.2rem;
+}
+
+.slidingSection h5 {
+  font-size: 0.9rem;
+  background: #E8EDEC;
+  padding: 5px;
+}
+
+.slidingSection p {
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.sqw-hide-slider {
+  right: -300vw;
+  position: absolute;
+}
+
+.size-guide-wrapper {
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+.size-guide-wrapper * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", serif;
+  color: black;
+}
+
+.size-guide-wrapper .sgw-inner-top, .size-guide-wrapper .sgw-inner-bottom {
+  width: 100%;
+  height: 60vh;
+  padding: 0 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 1%;
+}
+
+.size-guide-wrapper .sgw-inner-top div, .size-guide-wrapper .sgw-inner-bottom div {
+  width: 100%;
+  padding: 5%;
+}
+
+.size-guide-wrapper .sgw-inner-top div p, .size-guide-wrapper .sgw-inner-top div h3, .size-guide-wrapper .sgw-inner-bottom div p, .size-guide-wrapper .sgw-inner-bottom div h3 {
+  text-align: center;
+}
+
+.size-guide-wrapper .sgw-inner-top .sgw-top-one, .size-guide-wrapper .sgw-inner-bottom .sgw-top-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.size-guide-wrapper .sgw-inner-top .sgw-top-one .mik-size-guide, .size-guide-wrapper .sgw-inner-bottom .sgw-top-one .mik-size-guide {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.6em;
+}
+
+.size-guide-wrapper .sgw-inner-top .sgw-top-one .size-guide-head, .size-guide-wrapper .sgw-inner-bottom .sgw-top-one .size-guide-head {
+  font-weight: 900;
+  letter-spacing: 0.2em;
+}
+
+.size-guide-wrapper .sgw-inner-top .sgw-top-one .p-size-guide-head, .size-guide-wrapper .sgw-inner-bottom .sgw-top-one .p-size-guide-head {
+  margin-top: 1em;
+}
+
+.size-guide-wrapper .sgw-inner-top .sgw-top-two, .size-guide-wrapper .sgw-inner-bottom .sgw-top-two {
+  background: url(./../../assets/images/clothing.jpeg);
+  background-size: cover;
+}
+
+.size-guide-wrapper .sgw-inner-top .sgw-top-two .sgw-top-two-h2, .size-guide-wrapper .sgw-inner-bottom .sgw-top-two .sgw-top-two-h2 {
+  margin-top: 50%;
+  margin-left: 25%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.size-guide-wrapper .sgw-inner-top .sgw-top-three, .size-guide-wrapper .sgw-inner-bottom .sgw-top-three {
+  background: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.size-guide-wrapper .sgw-inner-top .sgw-top-three .sgw-top-three-li, .size-guide-wrapper .sgw-inner-bottom .sgw-top-three .sgw-top-three-li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.size-guide-wrapper .sgw-inner-top .sgw-top-three .sgw-top-three-li:hover, .size-guide-wrapper .sgw-inner-bottom .sgw-top-three .sgw-top-three-li:hover {
+  text-decoration: underline overline;
+}
+
+.size-guide-wrapper .sgw-inner-bottom {
+  margin-top: 30px;
+}
+
+.size-guide-wrapper1 {
+  width: 100%;
+  height: auto;
+  background: white;
+  opacity: 0.5;
+  -webkit-transition: right 1s ease;
+  transition: right 1s ease;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.size-guide-wrapper1 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", serif;
+  color: black;
+}
+
+.size-guide-wrapper1 .sgw-inner-top, .size-guide-wrapper1 .sgw-inner-bottom {
+  width: 100%;
+  height: 60vh;
+  padding: 0 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 30px;
+}
+
+.size-guide-wrapper1 .sgw-inner-top div, .size-guide-wrapper1 .sgw-inner-bottom div {
+  width: 100%;
+  padding: 5%;
+}
+
+.size-guide-wrapper1 .sgw-inner-top div p, .size-guide-wrapper1 .sgw-inner-top div h3, .size-guide-wrapper1 .sgw-inner-bottom div p, .size-guide-wrapper1 .sgw-inner-bottom div h3 {
+  text-align: center;
+}
+
+.size-guide-wrapper1 .sgw-inner-top .sgw-top-one, .size-guide-wrapper1 .sgw-inner-bottom .sgw-top-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.size-guide-wrapper1 .sgw-inner-top .sgw-top-one .mik-size-guide, .size-guide-wrapper1 .sgw-inner-bottom .sgw-top-one .mik-size-guide {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.6em;
+}
+
+.size-guide-wrapper1 .sgw-inner-top .sgw-top-one .size-guide-head, .size-guide-wrapper1 .sgw-inner-bottom .sgw-top-one .size-guide-head {
+  font-weight: 900;
+  letter-spacing: 0.2em;
+}
+
+.size-guide-wrapper1 .sgw-inner-top .sgw-top-one .p-size-guide-head, .size-guide-wrapper1 .sgw-inner-bottom .sgw-top-one .p-size-guide-head {
+  margin-top: 1em;
+}
+
+.size-guide-wrapper1 .sgw-inner-top .sgw-top-two, .size-guide-wrapper1 .sgw-inner-bottom .sgw-top-two {
+  background: url(./../../assets/images/clothing.jpeg);
+  background-size: cover;
+}
+
+.size-guide-wrapper1 .sgw-inner-top .sgw-top-two .sgw-top-two-h2, .size-guide-wrapper1 .sgw-inner-bottom .sgw-top-two .sgw-top-two-h2 {
+  margin-top: 50%;
+  margin-left: 25%;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.size-guide-wrapper1 .sgw-inner-top .sgw-top-three, .size-guide-wrapper1 .sgw-inner-bottom .sgw-top-three {
+  background: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.size-guide-wrapper1 .sgw-inner-top .sgw-top-three .sgw-top-three-li, .size-guide-wrapper1 .sgw-inner-bottom .sgw-top-three .sgw-top-three-li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.size-guide-wrapper1 .sgw-inner-top .sgw-top-three .sgw-top-three-li:hover, .size-guide-wrapper1 .sgw-inner-bottom .sgw-top-three .sgw-top-three-li:hover {
+  text-decoration: underline overline;
+}
+
+.size-guide-wrapper1 .sgw-inner-bottom {
+  margin-top: 30px;
+}
+
+.sgw-inner-bottom {
+  margin-top: 30px;
+}
+
+.first_wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: white;
+  position: relative;
+}
+
+.first_wrapper-row1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: black;
+  position: relative;
+}
+
+.first_wrapper-row4 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: white;
+  position: relative;
+}
+
+.first_wrapper-row4-alt {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: white;
+  position: relative;
+  opacity: 0.5;
+  -webkit-transition: right 1s ease;
+  transition: right 1s ease;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.first_wrapper-row3 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: white;
+  position: relative;
+}
+
+.first_wrapper-row3-alt {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: white;
+  position: relative;
+  opacity: 0.5;
+  -webkit-transition: right 1s ease;
+  transition: right 1s ease;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.hello {
+  background-color: black;
+  margin-bottom: 0;
+}
+
+.size-guide-last-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin: 0 10% 0 10%;
+}
+
+.size-guide-last-row .lastrow-size-guide-h2 {
+  margin-top: 75%;
+  margin-left: 4%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.size-guide-last-row .lastrow-sgw-top-three {
+  background: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bolder;
+}
+
+.size-guide-last-row .lastrow-sgw-top-three .lastrow-sgw-top-three-li {
+  padding-top: 0.7rem;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.size-guide-last-row .lastrow-sgw-top-three .lastrow-sgw-top-three-li:hover {
+  text-decoration: underline overline;
+}
+
+.size-guide-last-row .lastrow-size-guide-content1 {
+  background: url("../../assets/images/brandsguide.jpeg");
+  background-size: 100% 100%;
+  width: 100%;
+}
+
+.size-guide-last-row .lastrow-size-guide-content2 {
+  width: 100%;
+}
+
+.size-guide-last-row .lastrow-size-guide-content3 {
+  width: 100%;
+}
+
+.second-row-size-guide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  margin: 0 10% 0 10%;
+}
+
+.second-row-size-guide .row2-size-guide-h2 {
+  margin-top: 50%;
+  margin-left: 4%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.second-row-size-guide .row2-size-guide-content1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  background-image: url("../../assets/images/lingerie.jpeg");
+  background-size: 100% 100%;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.second-row-size-guide .row2-size-guide-content2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  background: url("../../assets/images/shoesguide.jpeg");
+  background-size: 100% 100%;
+}
+
+.second-row-size-guide .row2-size-guide-content3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  background: url("../../assets/images/accessoriesguide.jpeg");
+  background-size: 100% 100%;
+}
+
+.third-row-size-guide {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  margin: 1% 10% 1% 10%;
+}
+
+.third-row-size-guide .row3-size-guide-h2 {
+  margin-top: 50%;
+  margin-left: 4%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.third-row-size-guide .row3-size-guide-content1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  background-image: url("../../assets/images/maternity.jpeg");
+  background-size: 100% 100%;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.third-row-size-guide .row3-size-guide-content2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  background: url("../../assets/images/petite.jpeg");
+  background-size: 100% 100%;
+}
+
+.third-row-size-guide .row3-size-guide-content3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  background: url("../../assets/images/tallguide.jpeg");
+  background-size: 100% 100%;
+}
+
+.size-guide-icons .icon-down {
+  display: none;
+  margin-left: 2rem;
+}
+
+.size-guide-icons .icon-up {
+  display: none;
+  margin-left: 2rem;
+}
+
+.size-guide-icons-clothing .icon-down-clothing {
+  display: none;
+  margin-left: 2rem;
+}
+
+.size-guide-icons-clothing .icon-up-clothing {
+  display: none;
+  margin-left: 2rem;
+}
+/*# sourceMappingURL=size_guide.css.map */

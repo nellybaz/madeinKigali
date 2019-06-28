@@ -163,6 +163,8 @@ class Post extends Component {
     }
 
     async componentDidMount() {
+        // console.log(this.props.match.params.blog_id);
+        
         window.scrollTo(0,0);
         this.setState({
             isLoading: true,
@@ -171,8 +173,8 @@ class Post extends Component {
 
             let data = JSON.stringify({
                 "tag": "get_blog",
-                "article_no": 1
-
+                "article_no": this.props.match.params.blog_id
+ 
             })
 
             const res = await fetch('https://madeinkigali.com/API/products/index.php', {
@@ -205,13 +207,13 @@ class Post extends Component {
                     <div className="article-section">
                         <div className="post-image-div">
                             <img src={bh3} alt="mik" useMap="#image-map" />
-                            <a href="/dev/product/Isabel%20Maer/2"><div className='image-point' title="SHOP THIS">
+                            <a href="/product/Isabel%20Maer/2"><div className='image-point' title="SHOP THIS">
                             
                             </div>
                             </a>
 
                             <map name="image-map">
-                                <area target="" alt="Here" title="Here" href="/dev/product/Isabel%20Maer/2" coords="396,680,187" shape="circle"/>
+                                <area target="" alt="Here" title="Here" to="/product/Isabel%20Maer/2" coords="396,680,187" shape="circle"/>
                             </map>
                         </div>
 
@@ -234,7 +236,7 @@ class Post extends Component {
                             <Divider blogBorder="blog-border-width" name="Join The Convo!!!" class="full_width" />
 
                             <FacebookProvider appId="203119847024539">
-                                <Comments href="https://www.facebook.com/Kibuti-1542295485889144/" />
+                                <Comments to="https://www.facebook.com/Kibuti-1542295485889144/" />
                             </FacebookProvider>
 
                         </div>

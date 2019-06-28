@@ -17,7 +17,8 @@ import youtube from '../assets/images/icons/youtube.png';
 import tumblr from '../assets/images/icons/tumblr-logo.png';
 // import MetaTags from 'react-meta-tags';
 
-const Completionist = () => window.location.href="/who-we-are";
+
+const Completionist = () => window.location.to="/company2";
 class ComingSoon1 extends Component {
 
 
@@ -123,7 +124,7 @@ class ComingSoon1 extends Component {
 
             <Countdown
 
-              date={'Mon, 08 Jul 2019 13:00:00'}
+              date={'Sun, 01 September 2019 13:00:00'}
               renderer={renderer}
             />
 
@@ -153,45 +154,45 @@ class ComingSoon1 extends Component {
 
           <div className="coming1-footer">
           <div className="social-media-div">
-            <a target="_blank" href="https://www.facebook.com/MadeInKigali/"><img src={fb} alt="facebook" /></a>
+            <Link target="_blank" to="https://www.facebook.com/MadeInKigali/"><img src={fb} alt="facebook" /></Link>
 
           </div>
 
           <div className="social-media-div">
-            <a target="_blank" href="https://twitter.com/MadeinKigaliRW"><img src={twitter} alt="twitter" /></a>
+            <Link target="_blank" to="https://twitter.com/MadeinKigaliRW"><img src={twitter} alt="twitter" /></Link>
 
           </div>
 
           <div className="social-media-div">
-            <a target="_blank" href="https://www.instagram.com/madeinkigali/"><img src={insta} alt="insta" /></a>
+            <Link target="_blank" to="https://www.instagram.com/madeinkigali/"><img src={insta} alt="insta" /></Link>
 
           </div>
 
           <div className="social-media-div">
-            <a target="_blank" href="https://www.linkedin.com/company/13063612/admin/"><img src={linkedin} alt="linkedin" /></a>
+            <Link target="_blank" to="https://www.linkedin.com/company/13063612/admin/"><img src={linkedin} alt="linkedin" /></Link>
 
           </div>
 
-          {/* <div className="social-media-div">
-          <a href="https://plus.google.com/u/0/107469092096162928956" target="_blank" > <img src={g_plus} alt="g_plus" /></a>
+          <div className="social-media-div">
+          <Link to="https://plus.google.com/u/0/107469092096162928956" target="_blank" > <img src={g_plus} alt="g_plus" /></Link>
 
           </div> */}
 
           <div className="social-media-div">
-          <a href="https://www.pinterest.com/madeinkigali/pins/" target="_blank" > <img src={pinterest} alt="pinterest" /></a>
+          <Link to="https://www.pinterest.com/madeinkigali/pins/" target="_blank" > <img src={pinterest} alt="pinterest" /></Link>
           </div>
 
           <div className="social-media-div">
-          <a href="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></a>
+          <Link to="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></Link>
 
           </div>
           <div className="social-media-div">
-          <a href="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
+          <Link to="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></Link>
 
           </div>
 
           <div className="social-media-div">
-          <a href="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></a>
+          <Link to="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></Link>
 
           </div>
         </div>
@@ -226,7 +227,7 @@ class ComingSoon1 extends Component {
                       </div>
                             <Countdown
                                  
-                                date={'Mon, 08 Jul 2019 13:00:00' }
+                                date={'Sun, 01 September 2019 13:00:00' }
                                 renderer={renderer2}
                             />
 

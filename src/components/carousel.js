@@ -7,7 +7,7 @@ class Slider extends Component {
         super(props)
         this.state={
             carousel_index: 0,
-        }
+        } 
     }
 
     async componentDidMount() {
@@ -17,7 +17,7 @@ class Slider extends Component {
 
         setInterval(async ()=>{ 
             this.changeState()
-        }, 2000);
+        }, 5000);
         
     }
 
@@ -36,6 +36,7 @@ class Slider extends Component {
             
         }
 
+       try {
         carousel_item[this.state.carousel_index].className = "c-item act";
         dot_item[this.state.carousel_index].className = "dot";
         if(this.state.carousel_index == 2){
@@ -49,6 +50,12 @@ class Slider extends Component {
             });
         }
 
+           
+       } catch (error) {
+           console.log(error);
+           
+           
+       }
 
 
         

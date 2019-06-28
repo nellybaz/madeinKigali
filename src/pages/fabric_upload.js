@@ -57,7 +57,7 @@ class Fabric_Upload extends Component{
 
 
                                 <h5>3. Upload Your FIles</h5>
-                                <Link to={'/dev/fabric/upload/select/1'} ><button disabled = {this.state.upload_btn}  className="btn-upload-fabric">Upload</button></Link>
+                                <Link to={'/fabric/upload/select/1'} ><button disabled = {this.state.upload_btn}  className="btn-upload-fabric">Upload</button></Link>
                             </div>
 
                             

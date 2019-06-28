@@ -1,15 +1,31 @@
-@media only screen and (max-width: 745px) {
+@media only screen and (max-width: 900px) {
   .Flashdeals2 {
-    -ms-grid-columns: 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr !important;
+    -ms-grid-columns: (1fr)[10] !important;
+        grid-template-columns: repeat(10, 1fr) !important;
+    overflow: scroll;
+    height: auto !important;
   }
   .Flashdeals2 .flashdeals2-img-div {
-    width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin-right: 10px;
+    float: right;
+  }
+  .Flashdeals2 .flashdeals2-img-div .flashdeals2-img {
+    width: 150px !important;
     height: auto !important;
   }
-  .Flashdeals2 .flashdeals2-img-div img {
-    width: 100%;
-    height: auto !important;
+}
+
+@media only screen and (min-width: 900px) {
+  .flashdeals2-img-div:hover .flashdeals2-img {
+    width: 80% !important;
+  }
+  .flashdeals2-img-div:hover {
+    background-color: #191843 !important;
+  }
+  .flashdeals2-img-div:hover p {
+    color: white !important;
   }
 }
 
@@ -44,23 +60,27 @@
           flex-direction: column;
 }
 
-.Flashdeals2 .flashdeals2-img-div img {
-  height: 80% !important;
+.Flashdeals2 .flashdeals2-img-div .flashdeals2-img {
+  height: auto !important;
+  width: 60%;
   -o-object-fit: contain;
      object-fit: contain;
   height: 100%;
   border-radius: 35px;
+  -webkit-transition: width .8s ease-in-out;
+  transition: width .8s ease-in-out;
 }
 
 .Flashdeals2 .flashdeals2-img-div p {
   font-family: 'Lato';
   width: 100%;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 .Flashdeals2 .flashdeals2-img-div p strike {
   color: #9A0022;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=new_flashdeals.css.map */

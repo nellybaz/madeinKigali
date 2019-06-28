@@ -1,23 +1,28 @@
+@media only screen and (max-width: 900px) {
+  .DashBoard {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+}
+
 .DashBoard {
   width: 100%;
+  height: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 8fr;
-      grid-template-columns: 2fr 8fr;
+  -ms-grid-columns: 3fr 8fr;
+      grid-template-columns: 3fr 8fr;
   grid-gap: 0;
+  background: url(https://cdn.wallpapersafari.com/27/0/4IlThL.jpg) no-repeat;
+  background-size: cover;
 }
 
 .DashBoard * {
-  font-family: Lato, Arial, Helvetica, sans-serif;
-}
-
-.DashBoard div {
-  height: 700px;
-  width: 100%;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .DashBoard .d-left {
-  background: #260746;
+  background: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,11 +67,20 @@
 
 .DashBoard .d-left div button {
   width: 100%;
-  background: #7215d1;
+  background: #932823;
   padding: 10px;
   border: 0;
+  border-radius: 12px;
   cursor: pointer;
   margin: 5px;
+}
+
+.DashBoard .d-right {
+  margin-top: 10vh;
+}
+
+.DashBoard .d-right * {
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .DashBoard .d-right .top-header {
@@ -77,6 +91,11 @@
 .DashBoard .d-right .d-right-wrapper {
   width: 80%;
   margin: 0 auto;
+}
+
+.DashBoard .d-right .d-right-wrapper h5 {
+  font-size: 32px;
+  color: white;
 }
 
 .DashBoard .d-right .d-right-content {
@@ -94,11 +113,18 @@
   border: 1px solid #cdcdcd;
   padding: 5px;
   background: white;
-  color: #4d4d4d;
+  opacity: 0.5;
+  border-radius: 12px;
+  color: black;
 }
 
 .DashBoard .d-right .d-right-content textarea {
   height: 150px;
+  border: 1px solid #cdcdcd;
+  background: white;
+  opacity: 0.5;
+  color: black;
+  border-radius: 12px;
 }
 
 .DashBoard .d-right .d-right-content .checkbox {
@@ -108,10 +134,14 @@
 
 .DashBoard .d-right .d-right-content .add-btn {
   height: 50px;
+  border-radius: 12px;
+  background: #932823;
+  color: white;
 }
 
 .DashBoard .d-right .d-right-content form {
   display: inline;
+  color: white;
 }
 
 @media only screen and (min-width: 1600px) {

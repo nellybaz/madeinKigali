@@ -38,7 +38,7 @@ class PreFabricUpload extends Component{
                     </ul>
 
 
-                    <Link to={'/dev/fabric/upload'} >
+                    <Link to={'/fabric/upload'} >
                         <button>Upload Fabric Display</button>
                     </Link>
                 </div>
@@ -62,7 +62,7 @@ class PreFabricUpload extends Component{
                             <li>Starts at $5 per linear foot for custom lengths</li>
                         </ul>
 
-                        <Link to={'/dev/fabric/upload'} >
+                        <Link to={'/fabric/upload'} >
                             <button>Upload Wallpaper Design</button>
                         </Link>
                     </div>
@@ -82,7 +82,7 @@ class PreFabricUpload extends Component{
                             <li>Starts at $5 per linear foot for custom lengths</li>
                         </ul>
 
-                        <Link to={'/dev/fabric/upload'} >
+                        <Link to={'/fabric/upload'} >
                             <button>Upload Gift Wrap Design</button>
                         </Link>
                     </div>

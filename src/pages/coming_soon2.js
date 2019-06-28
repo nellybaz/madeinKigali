@@ -4,7 +4,7 @@ import '../css/utils/screen.css';
 
 import request from 'superagent';
 import Countdown from 'react-countdown-now';
-
+ 
 import fb from '../assets/images/icons/facebook-logo.png';
 import insta from '../assets/images/instagram-black.png';
 import twitter from '../assets/images/icons/twitter-logo-silhouette.png';
@@ -109,9 +109,9 @@ class ComingSoon2 extends Component{
                        
 
                         <div className='btns-div'>
-                                <Link to={'/dev/company/about2'}>ABOUT US</Link>
-                                <Link to={'/dev/company'}>WHO WE ARE</Link>
-                                <Link to={'/dev/company/about'}>WHAT WE DO</Link>
+                                <Link to={'/company/about2'}>ABOUT US</Link>
+                                <Link to={'/company'}>WHO WE ARE</Link>
+                                <Link to={'/company/about'}>WHAT WE DO</Link>
                              </div>
 
                             <div className='count-down-div'>
@@ -142,45 +142,45 @@ class ComingSoon2 extends Component{
 
                             <div className="footer-third-div coming-soon-social">
           <div className="social-media-div">
-            <a target="_blank" href="https://www.facebook.com/MadeInKigali/"><img src={fb} alt="facebook" /></a>
+            <Link target="_blank" to="https://www.facebook.com/MadeInKigali/"><img src={fb} alt="facebook" /></Link>
 
           </div>
 
           <div className="social-media-div">
-            <a target="_blank" href="https://twitter.com/MadeinKigaliRW"><img src={twitter} alt="twitter" /></a>
+            <Link target="_blank" to="https://twitter.com/MadeinKigaliRW"><img src={twitter} alt="twitter" /></Link>
 
           </div>
 
           <div className="social-media-div">
-            <a target="_blank" href="https://www.instagram.com/madeinkigali/"><img src={insta} alt="insta" /></a>
+            <Link target="_blank" to="https://www.instagram.com/madeinkigali/"><img src={insta} alt="insta" /></Link>
 
           </div>
 
           <div className="social-media-div">
-            <a target="_blank" href="https://www.linkedin.com/in/madeinkigali/"><img src={linkedin} alt="linkedin" /></a>
+            <Link target="_blank" to="https://www.linkedin.com/in/madeinkigali/"><img src={linkedin} alt="linkedin" /></Link>
 
           </div>
 
           <div className="social-media-div">
-          <a href="https://plus.google.com/u/2/112933730940706528592?tab=mX" target="_blank" > <img src={g_plus} alt="g_plus" /></a>
+          <Link to="https://plus.google.com/u/2/112933730940706528592?tab=mX" target="_blank" > <img src={g_plus} alt="g_plus" /></Link>
 
           </div>
 
           <div className="social-media-div">
-          <a href="https://www.pinterest.com/madeinkigali/pins/" target="_blank" > <img src={pinterest} alt="pinterest" /></a>
+          <Link to="https://www.pinterest.com/madeinkigali/pins/" target="_blank" > <img src={pinterest} alt="pinterest" /></Link>
           </div>
 
           <div className="social-media-div">
-          <a href="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></a>
+          <Link to="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></Link>
 
           </div>
           <div className="social-media-div">
-          <a href="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
+          <Link to="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></Link>
 
           </div>
 
           <div className="social-media-div">
-          <a href="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></a>
+          <Link to="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></Link>
 
           </div>
         </div>
@@ -227,9 +227,9 @@ class ComingSoon2 extends Component{
                             </ul>
 
                             <div className='coming-mobile-btn-div'>
-                              <Link to={'/dev/company/about2'}>ABOUT US</Link>
-                              <Link to={'/dev/company'}>WHO WE ARE</Link>
-                              <Link to={'/dev/company/about'}>WHAT WE DO</Link>
+                              <Link to={'/company/about2'}>ABOUT US</Link>
+                              <Link to={'/company'}>WHO WE ARE</Link>
+                              <Link to={'/company/about'}>WHAT WE DO</Link>
                             </div>
                       
                       </div>

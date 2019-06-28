@@ -103,13 +103,13 @@ class Header extends Component {
             cookies.remove('userID');
         }
 
-        window.location.href="/dev";
+        window.location.to="/dev";
 
     }
 
    searchBoxHandler =()=>{
     // alert('Searching....');
-    window.location.href=`/dev/search/${this.state.search_query}`;
+    window.location.to=`/search/${this.state.search_query}`;
 
     //call search api
    }
@@ -133,10 +133,10 @@ class Header extends Component {
       <div className="Header">
         {/* {this.getWindowClick()} */}
       <div className="topmost-bar">
-            <audio autoPlay={true} ref = {(ip)=> {this.mytune = ip}}>
+            <Linkudio autoPlay={true} ref = {(ip)=> {this.mytune = ip}}>
             <source src={music} type="audio/mpeg" />
                 Your browser does not support the audio element.
-            </audio>
+            </Linkudio>
 
         <img className="audio-pause" src={this.state.music_icon} onClick={()=> this.handleTunePause()} />
           <p>Register now to get <span className="top-bar-white-text">10% off*</span> your first order with code <span onClick={()=>this.disableCookies()} className="top-bar-white-text"><b>NEWCUSTOMER10</b></span></p>
@@ -144,9 +144,9 @@ class Header extends Component {
       <header className="header">
             <div className="Header-one">
                 <div className="sigin-wishlist header-items">
-                    <a href="/dev/signin" className="sigin"><b>SIGN IN</b></a>
-                    <a href="#" ><b>WISHLIST</b></a>
-                    <a href ="#" className="wishlist-icon-link"><img className="wishlist-icon" src={heart} /></a>
+                    <Link to="/signin" className="sigin"><b>SIGN IN</b></Link>
+                    <Link to="#" ><b>WISHLIST</b></Link>
+                    <Link href ="#" className="wishlist-icon-link"><img className="wishlist-icon" src={heart} /></Link>
 
                 </div>
 
@@ -163,9 +163,9 @@ class Header extends Component {
                             ev.preventDefault();
                             }
         }} type="text" placeholder="Search" />
-                    <a href="#" onClick={()=>this.handleSearchHighlight()}><img src={search}></img></a>
-                    <a href="/dev/signin"><img src={profile}></img></a>
-                    <a href="/dev/cart"><img src={bag}></img></a>
+                    <Link to="#" onClick={()=>this.handleSearchHighlight()}><img src={search}></img></Link>
+                    <Link to="/signin"><img src={profile}></img></Link>
+                    <Link to="/cart"><img src={bag}></img></Link>
 
                     
                 </div>
@@ -176,14 +176,14 @@ class Header extends Component {
         {/* mobile navigation */}
 
         <div className={`mobile-nav`}>
-            <a style={{fontSize: '0.8rem'}} className="btn btn-open-nav mobile-nav-item"><img src={mobile_menu} alt="mik"/><br></br>MENU</a>
+            <Link style={{fontSize: '0.8rem'}} className="btn btn-open-nav mobile-nav-item"><img src={mobile_menu} alt="mik"/><br></br>MENU</Link>
             <Link to={'/dev'} className="mobile-nav-item" ><img className="mobile-logo" src={logo} /></Link>
             
 
            <div className="mobile-nav-item right-icons-mobile">
-               <a style={{fontSize: '0.8rem'}} onClick={()=> this.handleMobileSearch()} className="btn btn-search mobile-nav-item-b"><img src={search_mobile}></img><br></br>SEARCH</a>
-                <a style={{fontSize: '0.8rem'}} className="btn mobile-nav-item-b"><img src={heart_mobile}></img> <br></br>WISHLIST</a>
-                <a style={{fontSize: '0.8rem'}} className="btn btn-bag mobile-nav-item-b"><img src={bag_mobile}></img> <br></br>BAG</a>
+               <Link style={{fontSize: '0.8rem'}} onClick={()=> this.handleMobileSearch()} className="btn btn-search mobile-nav-item-b"><img src={search_mobile}></img><br></br>SEARCH</Link>
+                <Link style={{fontSize: '0.8rem'}} className="btn mobile-nav-item-b"><img src={heart_mobile}></img> <br></br>WISHLIST</Link>
+                <Link style={{fontSize: '0.8rem'}} className="btn btn-bag mobile-nav-item-b"><img src={bag_mobile}></img> <br></br>BAG</Link>
            </div>
 
         </div>
@@ -206,7 +206,7 @@ class Header extends Component {
 
         <div className={`navigation ${this.state.nav_class}`}>
             
-            <div className="new-in" ><a href="#" >NEW IN </a>
+            <div className="new-in" ><Link to="#" >NEW IN </Link>
             <div className="new-in-dropdown dropdowns">
                     <div className="new-in-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>
@@ -235,7 +235,7 @@ class Header extends Component {
                 {/* fabric */}
 
 
-            <div className="fabric" ><a href="#" >FABRIC </a>
+            <div className="fabric" ><Link to="#" >FABRIC </Link>
             <div className="fabric-dropdown dropdowns">
                     <div className="fabric-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>
@@ -243,8 +243,8 @@ class Header extends Component {
                             
                                 <h5 style={{ }}>FABRICS</h5>
                         
-                            <Link to={"/dev/fabric"} >Fabrics</Link>
-                            <Link to={"/dev/fabric/upload"} >Upload</Link>
+                            <Link to={"/fabric"} >Fabrics</Link>
+                            <Link to={"/fabric/upload"} >Upload</Link>
                             <Link to={"#"} >Men’s dress shirts</Link>
                             <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
                             <Link to={"#"} >Women’s dresses</Link>
@@ -320,7 +320,7 @@ class Header extends Component {
 
 
 
-            <div className="m2m"><a href="/dev/m2m2">MADE TO MEASURE</a>
+            <div className="m2m"><Link to="/m2m2">MADE TO MEASURE</Link>
                 <div className="m2m-dropdown dropdowns">
                     <div className="m2m-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>
@@ -400,7 +400,7 @@ class Header extends Component {
                 </div>
             
             </div>
-            <div className="wholesale"><Link to={'/dev/wholesale/new/2'}>WHOLESALE</Link>
+            <div className="wholesale"><Link to={'/wholesale/new/2'}>WHOLESALE</Link>
             <div className="wholesale-dropdown dropdowns">
                     <div className="wholesale-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column', flexWrap:'wrap', }}>
@@ -493,7 +493,7 @@ class Header extends Component {
             
             
             </div>
-            <div className="brands"><a href="#">BRANDS </a>
+            <div className="brands"><Link to="#">BRANDS </Link>
 
                  <div className="brands-dropdown dropdowns">
                     <div className="brands-dropdown-content">
@@ -538,7 +538,7 @@ class Header extends Component {
                 </div>
             </div>
             
-            <div className="sale" ><a href="#">SALES </a>
+            <div className="sale" ><Link to="#">SALES </Link>
 
                  <div className="sales-dropdown dropdowns">
                     <div className="sales-dropdown-content">
@@ -554,7 +554,7 @@ class Header extends Component {
                             <Link to={"#"} >Women’s dresses</Link>
                             <Link to={"#"} >Women’s shirts & blouses</Link>
                             <Link to={"#"} >Women’s playsuit & jumpsuit</Link>
-                            {/* <Link to={"#"} ></Link> */}
+                            {/* <Link to={"#"</Link</Link> */}
                         </div>
                     </div>
 
@@ -582,7 +582,7 @@ class Header extends Component {
                 </div>
             
             </div>
-            <div className='fashion-stories'><Link to={'/dev/blog'}>FASHION STORIES</Link>
+            <div className='fashion-stories'><Link to={'/blog'}>FASHION STORIES</Link>
             <div className="fashion-stories-dropdown dropdowns">
                     <div className="fashion-stories-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>
@@ -608,7 +608,7 @@ class Header extends Component {
                 </div>
             </div>
 
-              <div className='visitrwanda'><Link to={'/dev/visit_rwanda'}>#VISITRWANDA</Link>
+              <div className='visitrwanda'><Link to={'/visit_rwanda'}>#VISITRWANDA</Link>
               <div className="visitrwanda-dropdown dropdowns">
                     <div className="visitrwanda-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>

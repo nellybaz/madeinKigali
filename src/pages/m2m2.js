@@ -151,7 +151,7 @@ class M2M extends Component {
                         <div className="product-select-img-div">
                             <img className="product-select-img" src={bag}/>
                         </div>
-                        <div className="product-select-img-div">
+                        {/* <div className="product-select-img-div">
                             <img className="product-select-img" src={bag}/>
                         </div>
                         <div className="product-select-img-div">
@@ -159,7 +159,7 @@ class M2M extends Component {
                         </div>
                         <div className="product-select-img-div">
                             <img className="product-select-img" src={bag}/>
-                        </div>
+                        </div> */}
                        
                     </div>
 
@@ -377,12 +377,12 @@ class M2M extends Component {
                         </div>
 
                         <div className="social-media-share">
-                        <a class="twitter-share-button"
-                            href="https://twitter.com/intent/tweet">
+                        <a className="twitter-share-button"
+                            to="https://twitter.com/intent/tweet">
                         Tweet</a>
 
 
-                        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20" width="69" height="20" style={{border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <iframe src="https://www.facebook.com/plugins/share_button.php?to=https%3A%2F%2Fwww.madeinkigali.com%2Fdev%2Fproduct%2FIsabel%2520Maer%2F4&layout=button_count&size=small&mobile_iframe=true&appId=144879322877728&width=69&height=20" width="69" height="20" style={{border:'none', overflow:'hidden'}} scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                         </div>
                     </div>
                 </div>

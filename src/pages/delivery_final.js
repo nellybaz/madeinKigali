@@ -55,7 +55,7 @@ class Delivery extends Component{
                 {/* <Header /> */}
 
                     <div className='delivery-logo-div'>
-                        <Link to={'/dev/12hdgsikdhlmsdne'}><img src={logo} /></Link>
+                        <Link to={'/12hdgsikdhlmsdne'}><img src={logo} /></Link>
                     </div>
                     <div className='delivery-progress-bar'>
                         <div className='delivery-active'>DELIVERY</div>

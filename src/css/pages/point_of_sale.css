@@ -5,8 +5,21 @@
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .point-wrapper {
+    width: 100% !important;
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+  .left {
+    border: 1px solid red;
+    height: auto !important;
+  }
+}
+
 .PointOfSale {
   width: 100%;
+  margin: 0 auto;
 }
 
 .PointOfSale .point-wrapper {
@@ -19,41 +32,37 @@
   grid-gap: 5;
 }
 
-.PointOfSale .point-wrapper .left {
+.PointOfSale .point-wrapper * {
+  color: black !important;
+  font-family: 'Lato' !important;
+}
+
+.PointOfSale .point-wrapper .point-left {
   width: 100%;
-  height: 500px;
+  height: auto;
   border: solid 2px #cdcdcd;
   margin-top: 11%;
-  padding-top: 50px;
-  overflow: scroll;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.PointOfSale .point-wrapper .left div {
+.PointOfSale .point-wrapper .point-left div {
   padding: 10px;
 }
 
-.PointOfSale .point-wrapper .left div * {
+.PointOfSale .point-wrapper .point-left div * {
   color: #595959;
 }
 
-.PointOfSale .point-wrapper .left div h6 {
+.PointOfSale .point-wrapper .point-left div h6 {
   font-weight: bold;
 }
 
-.PointOfSale .point-wrapper .left div p {
+.PointOfSale .point-wrapper .point-left div p {
   font-size: 0.8rem;
 }
 

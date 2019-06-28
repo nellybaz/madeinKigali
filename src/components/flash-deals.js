@@ -101,14 +101,12 @@ class FlashDeals extends Component {
         this.props.objectDispay.map((item, index)=> 
           {
             let limit;
-            // if(isBrowser || isTablet){
-            //   limit = 1;
-            // }
-            // if(isMobileOnly || this.props.isBlog){
-              
-            // }
-
-            window.innerWidth < 900 ? limit = 2 : limit = 5;
+            if(isBrowser || isTablet){
+              limit = 5;
+            }
+            else if(isMobileOnly || this.props.isBlog){
+              limit = 2;
+            }
             
             
             if((index >= this.state.count && index < this.state.count+limit) && 6 - this.state.count > 3){
@@ -120,11 +118,11 @@ class FlashDeals extends Component {
               {/* rendering image if blog */}
               {
                 this.props.isBlog && 
-                <Link to={`/dev/blog/post/${item.id}/${item.name}`} ><img className="flashdeals-img" src={`https://madeinkigali.com/images/blog/${item.img}`}/></Link>
+                <Link to={`/blog/post/${item.id}/${item.name}`} ><img className="flashdeals-img" src={`https://madeinkigali.com/images/blog/${item.img}`}/></Link>
               }
               {
                 !this.props.isBlog && 
-              <Link to={`/dev/product/${item.brand}/${item.id}`} ><img className="flashdeals-img" src={`https://madeinkigali.com/images/products/${item.img}`}/></Link>
+              <Link to={`/product/${item.brand}/${item.id}`} ><img className="flashdeals-img" src={`https://madeinkigali.com/images/products/${item.img}`}/></Link>
               }
               </div>
             <div className="flashdeals-text">

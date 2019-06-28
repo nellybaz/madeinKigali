@@ -7,13 +7,29 @@
   }
   
   @media only screen and (max-width: 900px) {
+   
+    .m2m2-section-content{
+      padding: 20px 0 !important;
+    }
+    .div2-m2m{
+      // border: 1px solid red;
+      width:100% !important;
+      height: 350px !important;
+
+    }
+
+    .div3-m2m{
+      // border: 1px solid red;
+      margin-top: 0 !important
+    }
     .div1 {
       display: none !important;
     }
     .div2 {
       width: 100% !important;
-      height: 300px !important;
+      height: auto !important;
       margin-bottom: 50px !important;
+      // border: 1px solid red;
     }
     .price-section-div h1, .price-section-div h4 {
       font-size: 1.5rem !important;
@@ -325,10 +341,10 @@
   }
   
   .m2m2-product-details {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     margin-top: -150px;
-    height: 600px;
+    height: auto;
     
     border-top: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
@@ -373,7 +389,7 @@
   // }
   
   .m2m2-product-details .header {
-    height: 50px;
+    height: auto;
     width: 100%;
     background: #260746;
     display: -ms-grid;
