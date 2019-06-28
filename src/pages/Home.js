@@ -80,7 +80,18 @@ class Home extends Component {
       blogObj: [],
       popularObj: [],
 
-      flashdealsObj: []
+      flashdealsObj: [
+        {"id": 1},
+        {"id": 2},
+        {"id": 3},
+        {"id": 4},
+        {"id": 5},
+        {"id": 6},
+        {"id": 7},
+        {"id": 8},
+        {"id": 9},
+        {"id": 10},
+      ]
     }
   }
 
@@ -88,10 +99,12 @@ class Home extends Component {
 
   componentDidMount() {
     //calling the APIs
-    this.flashdealsCall();
-    this.getFeaturedBlog(); 
+    
+    
     this.getTrending();
     this.getBrands();
+    this.getFeaturedBlog(); 
+    this.flashdealsCall();
 
 
     let visited = sessionStorage.getItem('visited');
@@ -577,11 +590,12 @@ class Home extends Component {
                 {/* flas deals section start */}
                 {
                   //  this.state.flashdealsObj.length > 0 ? <FlashDeals objectDispay={this.state.flashdealsObj} showNav={false} />:
-                  this.state.blogObj.length > 0 ? <FlashDeals2 ObjectToDisplay={this.state.flashdealsObj} /> :
-                    <div className='loading-spinner'>
-                      <img src={require('../assets/images/spinner.gif')} />
+                  // this.state.blogObj.length > 0 ? <FlashDeals2 ObjectToDisplay={this.state.flashdealsObj} /> :
+                  //   <div className='loading-spinner'>
+                  //     <img src={require('../assets/images/spinner.gif')} />
 
-                    </div>
+                  //   </div>
+                  <FlashDeals2 ObjectToDisplay={this.state.flashdealsObj} />
                 }
 
               </div>
@@ -605,7 +619,7 @@ class Home extends Component {
 
                   <div>
                     <Link to={'/fabric'}>
-                      <div className="fabric-inner-div-wrapper-inner">
+                      <div className="fabric-inner-div-wrapper-inner" style={{borderRadius:'5px'}}>
 
                       </div>
                       <p>FABRIC PRINTING</p>
@@ -613,19 +627,19 @@ class Home extends Component {
                   </div>
 
                   <div>
-                    <div className="fabric-inner-div-wrapper-inner">
+                    <div className="fabric-inner-div-wrapper-inner" style={{borderRadius:'5px'}}>
 
                     </div>
                     <p>LEATHER PRINTING</p>
 
                   </div>
                   <div>
-                    <img src={fab1} />
+                    <img src={fab1} style={{borderRadius:'5px'}} />
                     <p>CLOTHING</p>
 
                   </div>
                   <div>
-                    <img src={fab2} />
+                    <img src={fab2}  style={{borderRadius:'5px'}}/>
                     <p>HOMEWEAR</p>
                   </div>
 

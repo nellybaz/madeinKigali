@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import '../css/pages/new_flashdeals.css';
 import { Link } from "react-router-dom";
+import Img from "react-image";
+import svgPlaceholder from "../assets/images/new_placeholder.svg";
 
 class Flashdeals2 extends Component {
     constructor(props) {
@@ -19,18 +21,28 @@ class Flashdeals2 extends Component {
             holder.push(
                 // <div className='flashdeals2-img-div'>
                 <Link className={`flashdeals2-img-div ${firstImgClass}`} to={`/product/${this.props.ObjectToDisplay[i].brand}/${this.props.ObjectToDisplay[i].id}`}>
-                    <picture>
+                    {/* <picture>
                         <source className='flashdeals2-img' srcset={`https://madeinkigali.com/images/products/webp/${this.props.ObjectToDisplay[i].img}.webp`} type="image/webp" />
                         <img className='flashdeals2-img' src={`https://madeinkigali.com/images/products/${this.props.ObjectToDisplay[i].img}.png`} />
-                    </picture>
+                    </picture> */}
                     {/* <img className='flashdeals2-img' src={`https://madeinkigali.com/images/products/${this.props.ObjectToDisplay[i].img}`} /> */}
 
-                    <p>
+                    <Img className='flashdeals2-img' 
+                        src={[
+                            `https://madeinkigali.com/images/products/webp/${this.props.ObjectToDisplay[i].img}.webp`,
+                            `https://madeinkigali.com/images/products/${this.props.ObjectToDisplay[i].img}.png`
+                        ]}
+                        loader={
+                            <img className='flashdeals2-img'  src={svgPlaceholder}  alt=""/>
+                        }
+                    />
+                    <p>                       
+                        $120.00
+                        <br></br>
                         <strike>
                             {'$150.00'}
                         </strike>
-                        <br></br>
-                        $120.00
+                        
                     </p>
                 </Link>
 

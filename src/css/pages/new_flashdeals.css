@@ -69,18 +69,18 @@
   border-radius: 35px;
   -webkit-transition: width .8s ease-in-out;
   transition: width .8s ease-in-out;
-  margin-left: 8% !important;
 }
 
 .Flashdeals2 .flashdeals2-img-div p {
   font-family: 'Lato';
   width: 100%;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 .Flashdeals2 .flashdeals2-img-div p strike {
   color: #9A0022;
+  font-size: 0.8rem;
 }
 /*# sourceMappingURL=new_flashdeals.css.map */

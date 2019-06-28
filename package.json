@@ -1,8 +1,8 @@
 {
   "name": "madeinkigali",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
-  "homepage": "http://madeinkigali.com/dev",
+  "homepage": "http://madeinkigali.com",
   "dependencies": {
     "axios": "^0.18.0",
     "google-map-react": "^1.1.0",
@@ -16,6 +16,7 @@
     "react-document-meta": "^3.0.0-beta.2",
     "react-dom": "^16.5.2",
     "react-facebook": "^6.0.15",
+    "react-image": "^2.1.3",
     "react-instafeed": "^0.4.0",
     "react-loadable": "^5.5.0",
     "react-router": "^4.3.1",

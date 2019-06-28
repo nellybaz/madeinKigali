@@ -79,7 +79,7 @@
             border-radius: 35px;
             transition: width .8s ease-in-out;
             // border: 1px solid red;
-            margin-left: 8% !important;
+            // margin-left: 8% !important;
         }
 
         p{
@@ -88,10 +88,11 @@
             width:100%;
             text-align: center;
             // padding-left: 20%;
-            font-size: 0.8rem;
+            font-size: 1rem;
 
             strike{
                 color:#9A0022;
+                font-size: 0.8rem;
             }
 
             font-weight: bold;
