@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import '../css/home.css';
-
+import {connect} from 'react-redux';
+import PropTypes from 'prop-types';
 import QueueAnim from 'rc-queue-anim';
 import Cookies from 'universal-cookie';
 import DocumentMeta from 'react-document-meta';
-
+import {fetchFlashDeals} from '../actions/flashdealsActions';
 import Header from '../components/header.js';
 import Carousel from '../components/carousel.js';
 import Divider from '../components/divider.js';
@@ -12,21 +13,21 @@ import FlashDeals from '../components/flash-deals.js';
 
 import FlashDeals2 from '../components/new_flashdeals';
 
-import bag from '../assets/images/1A.jpg';
-import shoe from '../assets/images/1E.jpg';
-import blogpost2 from '../assets/images/1W.jpg';
-import blogpost3 from '../assets/images/1S.jpg';
-import blogpost4 from '../assets/images/1Q.jpg';
-import flashdeals1 from '../assets/images/1R.jpg';
-import flashdeals2 from '../assets/images/1Z.jpg';
-import shoe2 from '../assets/images/1T.jpg';
-import brand1 from '../assets/images/1Y.jpg';
-import p1 from '../assets/images/popular1.jpg';
-import lingerir from '../assets/images/pop5.jpg';
-import lingerir2 from '../assets/images/lingerir2.jpg';
-import pop2 from '../assets/images/pop4.jpg'
-import pop from '../assets/images/pop2.jpg'
-import pop3 from '../assets/images/pop6.jpg';
+// import bag from '../assets/images/1A.jpg';
+// import shoe from '../assets/images/1E.jpg';
+// import blogpost2 from '../assets/images/1W.jpg';
+// import blogpost3 from '../assets/images/1S.jpg';
+// import blogpost4 from '../assets/images/1Q.jpg';
+// import flashdeals1 from '../assets/images/1R.jpg';
+// import flashdeals2 from '../assets/images/1Z.jpg';
+// import shoe2 from '../assets/images/1T.jpg';
+// import brand1 from '../assets/images/1Y.jpg';
+// import p1 from '../assets/images/popular1.jpg';
+// import lingerir from '../assets/images/pop5.jpg';
+// import lingerir2 from '../assets/images/lingerir2.jpg';
+// import pop2 from '../assets/images/pop4.jpg'
+// import pop from '../assets/images/pop2.jpg'
+// import pop3 from '../assets/images/pop6.jpg';
 import tr1 from '../assets/images/trending5.jpg';
 import fab1 from '../assets/images/fab_in_home1.jpg';
 import fab2 from '../assets/images/fab_in_home2.jpg';
@@ -87,6 +88,11 @@ class Home extends Component {
 
 
   componentDidMount() {
+
+    this.props.fetchFlashDeals();
+
+    console.log(this.props);
+    
     //calling the APIs
     this.flashdealsCall();
     this.getFeaturedBlog(); 
@@ -189,21 +195,21 @@ class Home extends Component {
 
 
               //loop through the data, and push an array of data to state
-              const data1 = [];
+              // const data1 = [];
 
-              for (let i = 0; i < res.body.flashdeals.length; i++) {
-                data1.push({
-                  id: res.body.flashdeals[i].product_id,
-                  name: res.body.flashdeals[i].product_name,
-                  img: res.body.flashdeals[i].primary_img,
-                  brand: res.body.flashdeals[i].product_brand,
-                  price: res.body.flashdeals[i].product_price,
-                }
-                );
-              }
+              // for (let i = 0; i < res.body.flashdeals.length; i++) {
+              //   data1.push({
+              //     id: res.body.flashdeals[i].product_id,
+              //     name: res.body.flashdeals[i].product_name,
+              //     img: res.body.flashdeals[i].primary_img,
+              //     brand: res.body.flashdeals[i].product_brand,
+              //     price: res.body.flashdeals[i].product_price,
+              //   }
+              //   );
+              // }
               currentComponent.setState(
                 {
-                  flashdealsObj: data1,
+                  flashdealsObj: res.body.flashdeals,
                 }
               );
 
@@ -779,4 +785,16 @@ class Home extends Component {
   }
 }
 
-export default Home;
+const mapStateToProps = state => ({
+  flashdeals: state.flashdeals,
+});
+
+// function mapStateToProps(state) {
+//   const { flashdeals } = state
+//   console.log(state);
+  
+//   return { todoList: flashdeals.items }
+// }
+
+
+export default connect(mapStateToProps, {fetchFlashDeals})(Home);

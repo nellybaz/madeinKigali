@@ -18,10 +18,10 @@ class Flashdeals2 extends Component {
             } else firstImgClass = "";
             holder.push(
                 // <div className='flashdeals2-img-div'>
-                <Link className={`flashdeals2-img-div ${firstImgClass}`} to={`/dev/product/${this.props.ObjectToDisplay[i].brand}/${this.props.ObjectToDisplay[i].id}`}>
+                <Link className={`flashdeals2-img-div ${firstImgClass}`} to={`/dev/product/${this.props.ObjectToDisplay[i].product_brand}/${this.props.ObjectToDisplay[i].product_id}`}>
                     <picture>
-                        <source className='flashdeals2-img' srcset={`https://madeinkigali.com/images/products/webp/${this.props.ObjectToDisplay[i].img}.webp`} type="image/webp" />
-                        <img className='flashdeals2-img' src={`https://madeinkigali.com/images/products/${this.props.ObjectToDisplay[i].img}.png`} />
+                        <source className='flashdeals2-img' srcSet={`https://madeinkigali.com/images/products/webp/${this.props.ObjectToDisplay[i].primary_img}.webp`} type="image/webp" />
+                        <img className='flashdeals2-img' src={`https://madeinkigali.com/images/products/${this.props.ObjectToDisplay[i].primary_img}.png`} />
                     </picture>
                     {/* <img className='flashdeals2-img' src={`https://madeinkigali.com/images/products/${this.props.ObjectToDisplay[i].img}`} /> */}
 
@@ -30,7 +30,7 @@ class Flashdeals2 extends Component {
                             {'$150.00'}
                         </strike>
                         <br></br>
-                        $120.00
+                        ${this.props.ObjectToDisplay[i].product_price}
                     </p>
                 </Link>
 
