@@ -24,7 +24,7 @@ class Happiness extends Component {
                             Spoonflower is all about
                             making your dreams a reality, but delivering dreams can sometimes be a bit tricky. If you
                             think that your order has a flaw or it is not what you expected, we want to make it right.
-                            Start by <Link to={'/dev/contact'} className="link-color">contacting us</Link> to let us know your situation, and
+                            Start by <Link to={'/contact'} className="link-color">contacting us</Link> to let us know your situation, and
                             your order will either be
                             reprinted or reimbursed — just like that! Our community comes first: your happiness makes us
                             merrier than cuddling kittens.
@@ -37,7 +37,7 @@ class Happiness extends Component {
 
                     <div className="happiness-tips">
                         <ul className="ul-happiness">
-                            <li className="li-happiness"><Link to={'/dev/contact'} className="link-color">Contact us</Link> to start a return
+                            <li className="li-happiness"><Link to={'/contact'} className="link-color">Contact us</Link> to start a return
                                 or reimbursement request
                                 before mailing your package to us.
                                 Please include all relevant information along with order number if applicable.
@@ -76,7 +76,7 @@ class Happiness extends Component {
                     <hr/>
 
                     <div className="happiness-contact-us">
-                        <h3>Contact Us <br/><h5>Need more help? Reach out to us <Link to={'/dev/contact'} className="link-color">here</Link>.
+                        <h3>Contact Us <br/><h5>Need more help? Reach out to us <Link to={'/contact'} className="link-color">here</Link>.
                         </h5></h3>
                     </div>
 

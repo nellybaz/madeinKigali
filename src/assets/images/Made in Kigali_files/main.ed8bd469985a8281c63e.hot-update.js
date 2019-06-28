@@ -779,7 +779,7 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("a", {
-        href: "/dev/cart",
+        href: "/cart",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 258

@@ -38,7 +38,7 @@ class VisitRwanda2 extends Component {
                 img  = require(`../assets/images/vr${x}.gif`);
             }
             holder.push(
-                <Link className={`img-div img${x}`} to={`/dev/search/jeans/category/${x}`}>
+                <Link className={`img-div img${x}`} to={`/search/jeans/category/${x}`}>
                     <div>
                         <img  src={img} alt="mik" />
                         <p>STATEMENT COATS</p>
@@ -95,7 +95,7 @@ class VisitRwanda2 extends Component {
                         <button>FASHION</button>
 
                         <Link to="#">Boutique</Link>
-                        <Link to="/dev/blog/post/2/title">Shop by story</Link>
+                        <Link to="/blog/post/2/title">Shop by story</Link>
                     </div>
                     </div>
                     
@@ -127,7 +127,7 @@ class VisitRwanda2 extends Component {
 
 
                 <div className="btn-div">
-                    <Link style={{ textAlign: 'center' }} className="shop-all" to={'/dev/search/jeans/category/1'}><button className='btn-vr' >SHOP ALL GIFTS</button></Link>
+                    <Link style={{ textAlign: 'center' }} className="shop-all" to={'/search/jeans/category/1'}><button className='btn-vr' >SHOP ALL GIFTS</button></Link>
                 </div>
                 <br></br>
 

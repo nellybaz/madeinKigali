@@ -56,7 +56,7 @@ searchDisplay =()=>{
 
         searchDisplayHolder.push(
             <div className="search-prd-item-div search-prd-item-div-fabric" key={x}>
-                <Link to={'/dev/fabric_single'} ><img className={ads_class} src={img} alt="mik" /> </Link>
+                <Link to={'/fabric_single'} ><img className={ads_class} src={img} alt="mik" /> </Link>
                {
                    x != 4 &&
                    <p><b>Check Velvet Wide Leg Trousers </b><br></br><span>$112.99</span></p>

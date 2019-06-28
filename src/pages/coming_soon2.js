@@ -109,9 +109,9 @@ class ComingSoon2 extends Component{
                        
 
                         <div className='btns-div'>
-                                <Link to={'/dev/company/about2'}>ABOUT US</Link>
-                                <Link to={'/dev/company'}>WHO WE ARE</Link>
-                                <Link to={'/dev/company/about'}>WHAT WE DO</Link>
+                                <Link to={'/company/about2'}>ABOUT US</Link>
+                                <Link to={'/company'}>WHO WE ARE</Link>
+                                <Link to={'/company/about'}>WHAT WE DO</Link>
                              </div>
 
                             <div className='count-down-div'>
@@ -227,9 +227,9 @@ class ComingSoon2 extends Component{
                             </ul>
 
                             <div className='coming-mobile-btn-div'>
-                              <Link to={'/dev/company/about2'}>ABOUT US</Link>
-                              <Link to={'/dev/company'}>WHO WE ARE</Link>
-                              <Link to={'/dev/company/about'}>WHAT WE DO</Link>
+                              <Link to={'/company/about2'}>ABOUT US</Link>
+                              <Link to={'/company'}>WHO WE ARE</Link>
+                              <Link to={'/company/about'}>WHAT WE DO</Link>
                             </div>
                       
                       </div>

@@ -102,7 +102,7 @@ class Signin extends Component{
 
     
 
-    window.location.to="/dev/signin";
+    window.location.to="/signin";
 
 }
 

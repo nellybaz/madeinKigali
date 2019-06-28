@@ -74,7 +74,7 @@ class Cart extends Component{
                     <div className='cart-wrapper'>
                         <div className='cart-title-div'>
                             <h5 className='h5-title'>SHOPPING BAG SUMMARY</h5>
-                            <Link className="checkout-btn" to={'/dev/delivery'}>CHECKOUT</Link>
+                            <Link className="checkout-btn" to={'/delivery'}>CHECKOUT</Link>
                         </div>
 
                         <section className='cart-table'>
@@ -128,7 +128,7 @@ class Cart extends Component{
 
                                 <p className='cart-checkout-div-p3'>Total cost incl. Delivery <span>$189.00</span></p>
 
-                                <Link className='checkout-btn-2' to={'/dev/delivery'}><button>CHECKOUT</button></Link>
+                                <Link className='checkout-btn-2' to={'/delivery'}><button>CHECKOUT</button></Link>
                             </div>
                         </section> 
                         

@@ -26,7 +26,7 @@ class SellerLicence extends Component {
 
                     <div className="licences-top-bar">
 
-                        <Link to={'/dev/buyer_licence'}>Buyer Licence Agreement</Link>
+                        <Link to={'/buyer_licence'}>Buyer Licence Agreement</Link>
                         <Link className="_active" to={'#'}>Seller Licence Agreement</Link>
 
                     </div>

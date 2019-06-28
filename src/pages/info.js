@@ -63,11 +63,11 @@ class Info extends Component {
             </div>
 
              <div className={`${this.state.delivery_active}`}>
-                <h1><Link to={'/dev/info/delivery'}>Delivery</Link></h1>
+                <h1><Link to={'/info/delivery'}>Delivery</Link></h1>
             </div>
 
              <div className={`${this.state.return_active}`}>
-                <h1><Link to={'/dev/info/returns'} >Returns</Link></h1>
+                <h1><Link to={'/info/returns'} >Returns</Link></h1>
             </div>
         </div>
 

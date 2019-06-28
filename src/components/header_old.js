@@ -109,7 +109,7 @@ class Header extends Component {
 
    searchBoxHandler =()=>{
     // alert('Searching....');
-    window.location.to=`/dev/search/${this.state.search_query}`;
+    window.location.to=`/search/${this.state.search_query}`;
 
     //call search api
    }
@@ -144,7 +144,7 @@ class Header extends Component {
       <header className="header">
             <div className="Header-one">
                 <div className="sigin-wishlist header-items">
-                    <Link to="/dev/signin" className="sigin"><b>SIGN IN</b></Link>
+                    <Link to="/signin" className="sigin"><b>SIGN IN</b></Link>
                     <Link to="#" ><b>WISHLIST</b></Link>
                     <Link href ="#" className="wishlist-icon-link"><img className="wishlist-icon" src={heart} /></Link>
 
@@ -164,8 +164,8 @@ class Header extends Component {
                             }
         }} type="text" placeholder="Search" />
                     <Link to="#" onClick={()=>this.handleSearchHighlight()}><img src={search}></img></Link>
-                    <Link to="/dev/signin"><img src={profile}></img></Link>
-                    <Link to="/dev/cart"><img src={bag}></img></Link>
+                    <Link to="/signin"><img src={profile}></img></Link>
+                    <Link to="/cart"><img src={bag}></img></Link>
 
                     
                 </div>
@@ -243,8 +243,8 @@ class Header extends Component {
                             
                                 <h5 style={{ }}>FABRICS</h5>
                         
-                            <Link to={"/dev/fabric"} >Fabrics</Link>
-                            <Link to={"/dev/fabric/upload"} >Upload</Link>
+                            <Link to={"/fabric"} >Fabrics</Link>
+                            <Link to={"/fabric/upload"} >Upload</Link>
                             <Link to={"#"} >Men’s dress shirts</Link>
                             <Link to={"#"} >Men’s hoodies & sweatshirts </Link>
                             <Link to={"#"} >Women’s dresses</Link>
@@ -320,7 +320,7 @@ class Header extends Component {
 
 
 
-            <div className="m2m"><Link to="/dev/m2m2">MADE TO MEASURE</Link>
+            <div className="m2m"><Link to="/m2m2">MADE TO MEASURE</Link>
                 <div className="m2m-dropdown dropdowns">
                     <div className="m2m-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>
@@ -400,7 +400,7 @@ class Header extends Component {
                 </div>
             
             </div>
-            <div className="wholesale"><Link to={'/dev/wholesale/new/2'}>WHOLESALE</Link>
+            <div className="wholesale"><Link to={'/wholesale/new/2'}>WHOLESALE</Link>
             <div className="wholesale-dropdown dropdowns">
                     <div className="wholesale-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column', flexWrap:'wrap', }}>
@@ -582,7 +582,7 @@ class Header extends Component {
                 </div>
             
             </div>
-            <div className='fashion-stories'><Link to={'/dev/blog'}>FASHION STORIES</Link>
+            <div className='fashion-stories'><Link to={'/blog'}>FASHION STORIES</Link>
             <div className="fashion-stories-dropdown dropdowns">
                     <div className="fashion-stories-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>
@@ -608,7 +608,7 @@ class Header extends Component {
                 </div>
             </div>
 
-              <div className='visitrwanda'><Link to={'/dev/visit_rwanda'}>#VISITRWANDA</Link>
+              <div className='visitrwanda'><Link to={'/visit_rwanda'}>#VISITRWANDA</Link>
               <div className="visitrwanda-dropdown dropdowns">
                     <div className="visitrwanda-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>

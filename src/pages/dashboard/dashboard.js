@@ -74,7 +74,7 @@ class DashBoard extends Component{
             {
                console.log('info added okay');
                alert('PRODUCT UPLOAD SUCCESS');
-               window.location.href = "/dev/admin/dashboard"
+               window.location.href = "/admin/dashboard"
                
               
             }

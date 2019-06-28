@@ -118,13 +118,13 @@ class Header2 extends Component {
             cookies.remove('userID');
         }
 
-        window.location.href="/dev/12hdgsikdhlmsdne";
+        window.location.href="/12hdgsikdhlmsdne";
 
     }
 
    searchBoxHandler =()=>{
     // alert('Searching....');
-    window.location.href=`/dev/search/${this.state.search_query}/category/1`;
+    window.location.href=`/search/${this.state.search_query}/category/1`;
 
     //call search api
    }
@@ -154,12 +154,12 @@ class Header2 extends Component {
             </audio> */}
 
         <img className="audio-pause" src={this.state.music_icon} onClick={()=> this.handleTunePause()} />
-          <p onClick={()=>window.location.href="/dev/signin"}>Register now to get <span className="top-bar-white-text">10% off*</span> your first order with code <span onClick={()=>this.disableCookies()} className="top-bar-white-text"><b>NEWCUSTOMER10</b></span></p>
+          <p onClick={()=>window.location.href="/signin"}>Register now to get <span className="top-bar-white-text">10% off*</span> your first order with code <span onClick={()=>this.disableCookies()} className="top-bar-white-text"><b>NEWCUSTOMER10</b></span></p>
       </div>
       <header className="header">
                 <div className='topbar-nav'>
                     <div className='topbar-nav-left'>
-                        <Link className='student-text' to={'/dev/student_discount'} >Student? check our student discount</Link>
+                        <Link className='student-text' to={'/student_discount'} >Student? check our student discount</Link>
                     </div>
 
                     <div className='topbar-nav-right'>
@@ -172,9 +172,9 @@ class Header2 extends Component {
                             }
         }} type="text" placeholder="Search" />
                     <a href="#" onClick={()=>this.handleSearchHighlight()} title="SEARCH"><img src={search}></img></a>
-                    <a href="/dev/signin"  title="SIGN IN"><img src={profile}></img></a>
-                    <a href="/dev/cart" title="WISHLIST"><img src={require('../assets/images/heart2.png')}></img></a>
-                    <a href="/dev/cart" title="BASKET"><img src={bag}></img></a>
+                    <a href="/signin"  title="SIGN IN"><img src={profile}></img></a>
+                    <a href="/cart" title="WISHLIST"><img src={require('../assets/images/heart2.png')}></img></a>
+                    <a href="/cart" title="BASKET"><img src={bag}></img></a>
                     
                     </div>
                     
@@ -187,7 +187,7 @@ class Header2 extends Component {
          
             <a onClick={()=> this.handleDrawer(1)}
              style={{fontSize: '0.8rem'}} className="btn btn-open-nav mobile-nav-item"><img src={mobile_menu} alt="mik"/><br></br>MENU</a>
-            <Link to={'/dev/12hdgsikdhlmsdne'} className="mobile-nav-item" ><img className="mobile-logo" src={logo} /></Link>
+            <Link to={'/12hdgsikdhlmsdne'} className="mobile-nav-item" ><img className="mobile-logo" src={logo} /></Link>
             
 
            <div className="mobile-nav-item right-icons-mobile">
@@ -268,7 +268,7 @@ class Header2 extends Component {
 
                     <details>
                         <summary>#VISIT RWANDA</summary>
-                        <Link to={'/dev/visit_rwanda'}>#Visitrwanda</Link>
+                        <Link to={'/visit_rwanda'}>#Visitrwanda</Link>
                         <Link to={''}>Baskets</Link>
                         <Link to={''}>Atrs</Link>
                         <Link to={''}>Clothing</Link>
@@ -276,7 +276,7 @@ class Header2 extends Component {
 
                     <details>
                         <summary>FASHION STORIES</summary>
-                        <Link to={'/dev/blog/home'}>Fashion Stories</Link>
+                        <Link to={'/blog/home'}>Fashion Stories</Link>
                         <Link to={''}>Competition</Link>
                         <Link to={''}>Art Stories</Link>
                         <Link to={''}>Blog Stories</Link>
@@ -301,7 +301,7 @@ class Header2 extends Component {
          <div className={`navigation ${this.state.nav_class}`}>
 
             <div className='logo-div-nav'>
-                <Link to={'/dev/12hdgsikdhlmsdne'} ><img src={logo} alt="mik logo"/></Link>
+                <Link to={'/12hdgsikdhlmsdne'} ><img src={logo} alt="mik logo"/></Link>
             </div>
             
             <div className="new-in" ><a href="#" >NEW IN </a>
@@ -333,7 +333,7 @@ class Header2 extends Component {
                 {/* fabric */}
 
 
-            <div className="fabric" ><a href="/dev/fabric" >FABRIC </a>
+            <div className="fabric" ><a href="/fabric" >FABRIC </a>
             <div className="fabric-dropdown dropdowns">
                     <div className="fabric-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>
@@ -341,10 +341,10 @@ class Header2 extends Component {
                             
                                 <h5 style={{ }}>DESIGN</h5>
                         
-                            <Link to={"/dev/fabric/create"} >Create </Link>
-                            <Link to={"/dev/fabric/upload"} >Upload</Link>
+                            <Link to={"/fabric/create"} >Create </Link>
+                            <Link to={"/fabric/upload"} >Upload</Link>
                             <Link to={"#"} >Design tools</Link>
-                            <Link to={"/dev/help"} >Design FAQS </Link>
+                            <Link to={"/help"} >Design FAQS </Link>
 
                             <h5 style={{ }}>SELL</h5>
 
@@ -439,7 +439,7 @@ class Header2 extends Component {
 
 
 
-            <div className="m2m"><a href="/dev/m2m2">MADE TO MEASURE</a>
+            <div className="m2m"><a href="/m2m2">MADE TO MEASURE</a>
                 <div className="m2m-dropdown dropdowns">
                     <div className="m2m-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>
@@ -522,7 +522,7 @@ class Header2 extends Component {
                 </div>
             
             </div>
-            <div className="wholesale"><Link to={'/dev/wholesale/new/2'}>WHOLESALE</Link>
+            <div className="wholesale"><Link to={'/wholesale/new/2'}>WHOLESALE</Link>
             <div className="wholesale-dropdown dropdowns">
                     <div className="wholesale-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column', flexWrap:'wrap', }}>
@@ -690,7 +690,7 @@ class Header2 extends Component {
                         </div>
 
                         <div className='shop-all-brands-div'>
-                        <Link to={'/dev/search/jeans/category/1'} >SHOP ALL BRANDS</Link>
+                        <Link to={'/search/jeans/category/1'} >SHOP ALL BRANDS</Link>
                     </div>
                     </div>
 
@@ -738,7 +738,7 @@ class Header2 extends Component {
                 </div>
             
             </div>
-            <div className='visitrwanda'><Link to={'/dev/visit_rwanda'}>#VISITRWANDA</Link>
+            <div className='visitrwanda'><Link to={'/visit_rwanda'}>#VISITRWANDA</Link>
               <div className="visitrwanda-dropdown dropdowns">
                     <div className="visitrwanda-dropdown-content">
                         <div style={{display:'flex', flexDirection:'column'}}>
@@ -765,7 +765,7 @@ class Header2 extends Component {
               </div>
 
 
-            <div className='fashion-stories'><Link to={'/dev/blog/home'}>FASHION STORIES</Link>
+            <div className='fashion-stories'><Link to={'/blog/home'}>FASHION STORIES</Link>
             <div className="fashion-stories-dropdown dropdowns">
 
                       

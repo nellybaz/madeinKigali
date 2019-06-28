@@ -80,63 +80,63 @@ class Footer extends Component {
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={'/dev/points'}>Store Finder</Link></td>
-                <td><Link to={'/dev/help'}>Track your order</Link></td>
-                <td><Link to={'/dev/student_discount'}>Student Discount</Link></td>
-                <td><Link to={'/dev/company2'}>Company</Link></td>
-                {/* <td><Link to={'/dev/contact'}>Contact us</Link></td> */}
+              <td><Link to={'/points'}>Store Finder</Link></td>
+                <td><Link to={'/help'}>Track your order</Link></td>
+                <td><Link to={'/student_discount'}>Student Discount</Link></td>
+                <td><Link to={'/company2'}>Company</Link></td>
+                {/* <td><Link to={'/contact'}>Contact us</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={'/dev/help'}>FAQs</Link></td>
-                <td><Link to={'/dev/info/delivery'}>Delivery</Link></td>
-                <td><Link to={'/dev/gift_card'}>Gift Cards</Link></td>
-                <td><Link to={'/dev/affiliates'}>Affiliates</Link></td>
+              <td><Link to={'/help'}>FAQs</Link></td>
+                <td><Link to={'/info/delivery'}>Delivery</Link></td>
+                <td><Link to={'/gift_card'}>Gift Cards</Link></td>
+                <td><Link to={'/affiliates'}>Affiliates</Link></td>
                 {/* <td><Link to={''}>Returns & Exchanges</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={'/dev/contact'}>Contact us</Link></td>
-                <td><Link to={'/dev/info/returns'}>Returns</Link></td>
-                <td><Link to={'/dev/gift_card'}>MIK Cards</Link></td>
-                <td><Link to={'/dev/mik_kigali_fashion_week'}>MIK at KFC</Link></td>
+              <td><Link to={'/contact'}>Contact us</Link></td>
+                <td><Link to={'/info/returns'}>Returns</Link></td>
+                <td><Link to={'/gift_card'}>MIK Cards</Link></td>
+                <td><Link to={'/mik_kigali_fashion_week'}>MIK at KFC</Link></td>
                 {/* <td><Link to={''}>Subscribe to our Emails</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-                <td><Link to={'/dev/size-guide'}>Size Guide</Link></td>
+                <td><Link to={'/size-guide'}>Size Guide</Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={'/dev/refer_a_friend'}>Refer a friend</Link></td>
-                <td><Link to={'/dev/careers&Opportunities'}>Careers & opportunities</Link></td>
+                <td><Link to={'/refer_a_friend'}>Refer a friend</Link></td>
+                <td><Link to={'/careers&Opportunities'}>Careers & opportunities</Link></td>
                 {/* <td><Link to={''}>Contact us</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={'/dev/washcare'}>Washcare & AfterCare</Link></td>
+              <td><Link to={'/washcare'}>Washcare & AfterCare</Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={'/dev/happiness_guaranteed'}>Happiness Guaranteed</Link></td>
-                <td><Link to={'/dev/socialresponsibility'}>Social Responsibility</Link></td>
+                <td><Link to={'/happiness_guaranteed'}>Happiness Guaranteed</Link></td>
+                <td><Link to={'/socialresponsibility'}>Social Responsibility</Link></td>
                 {/* <td><Link to={''}>Payment Method</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={'/dev/sitemap'}>Site map</Link></td>
+              <td><Link to={'/sitemap'}>Site map</Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={'/dev/seller_licence'}>Legal Notice: Terms & Conditions/ Privacy/ Cookie/ Sales conditions / Seller/Buyer Agreement</Link></td>
+                <td><Link to={'/seller_licence'}>Legal Notice: Terms & Conditions/ Privacy/ Cookie/ Sales conditions / Seller/Buyer Agreement</Link></td>
                 {/* <td><Link to={''}>Shipping Method</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>
 
 
               <tr className={`${this.state.footerClass}`}>
-              <td><Link to={'/dev/locations/remera_corner'}>MadeInKigali at Remera Corner</Link></td>
+              <td><Link to={'/locations/remera_corner'}>MadeInKigali at Remera Corner</Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
@@ -208,59 +208,59 @@ class Footer extends Component {
 {/* 
         <div className={`${this.state.footerClass}`}>
             <div className="expand-item">
-            <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
+            <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
 
             </div>
 
             <div className="expand-item">
-            <Link to={'/dev/company2'}>Company</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
+            <Link to={'/company2'}>Company</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
 
             </div>
             <div className="expand-item">
               
-            <Link to={'/dev/student_discount'}>Student Discount</Link> <br></br>
-              <Link to={'/dev/gift_card'}>Gift Cards</Link><br></br>
-              <Link to={'/dev/contact'}>MIK Cards</Link> <br></br>
+            <Link to={'/student_discount'}>Student Discount</Link> <br></br>
+              <Link to={'/gift_card'}>Gift Cards</Link><br></br>
+              <Link to={'/contact'}>MIK Cards</Link> <br></br>
               
              
 
             </div>
             
             <div className="expand-item">
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
-              <Link to={'/dev/contact'}>Contact Us</Link> <br></br>
-              <Link to={'/dev/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
+              <Link to={'/contact'}>Contact Us</Link> <br></br>
+              <Link to={'/help'}>Help</Link><br></br>
 
             </div>
             <div className="expand-item">

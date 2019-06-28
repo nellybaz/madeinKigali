@@ -345,7 +345,7 @@ class Product extends Component {
                             </div>
 
                             <div className="add-to-cart">
-                                <button className="btn btn-add-to-cart"><Link to="/dev/cart">ADD TO BAG</Link></button>
+                                <button className="btn btn-add-to-cart"><Link to="/cart">ADD TO BAG</Link></button>
                                 <img className="wishlist" src={heart} />
                             </div>
 

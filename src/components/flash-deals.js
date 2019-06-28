@@ -118,11 +118,11 @@ class FlashDeals extends Component {
               {/* rendering image if blog */}
               {
                 this.props.isBlog && 
-                <Link to={`/dev/blog/post/${item.id}/${item.name}`} ><img className="flashdeals-img" src={`https://madeinkigali.com/images/blog/${item.img}`}/></Link>
+                <Link to={`/blog/post/${item.id}/${item.name}`} ><img className="flashdeals-img" src={`https://madeinkigali.com/images/blog/${item.img}`}/></Link>
               }
               {
                 !this.props.isBlog && 
-              <Link to={`/dev/product/${item.brand}/${item.id}`} ><img className="flashdeals-img" src={`https://madeinkigali.com/images/products/${item.img}`}/></Link>
+              <Link to={`/product/${item.brand}/${item.id}`} ><img className="flashdeals-img" src={`https://madeinkigali.com/images/products/${item.img}`}/></Link>
               }
               </div>
             <div className="flashdeals-text">

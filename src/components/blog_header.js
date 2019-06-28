@@ -204,7 +204,7 @@ class BlogHeader extends Component {
                     <div className={this.state.fixed_scroll_class}>
                         <div className="blog-header-fixed-navlinks">
                             <div className="blog-header-navlinks">
-                                <Link className='blog-logo-link' to={'/dev/12hdgsikdhlmsdne'}><img className="blog-header-logo" alt="mik" src={logo} /></Link>
+                                <Link className='blog-logo-link' to={'/12hdgsikdhlmsdne'}><img className="blog-header-logo" alt="mik" src={logo} /></Link>
                             </div>
                             <div className="header-links-fixed">
                                 <p>HOME</p>
@@ -241,23 +241,23 @@ class BlogHeader extends Component {
                     <div className="blog-header-nav ">
 
                         <div className="blog-header-navlinks">
-                            <Link to={'/dev/12hdgsikdhlmsdne'}><img className="blog-header-logo" alt="mik" src={logo} /></Link>
+                            <Link to={'/12hdgsikdhlmsdne'}><img className="blog-header-logo" alt="mik" src={logo} /></Link>
                         </div>
 
                         <div className="blog-header-navlinks">
-                            <Link to={'/dev/blog/home'} ><p>HOME</p></Link>
+                            <Link to={'/blog/home'} ><p>HOME</p></Link>
                         </div>
                         <div className="blog-header-navlinks">
-                            <Link to={'/dev/blog/style'} ><p>STYLE</p></Link>
+                            <Link to={'/blog/style'} ><p>STYLE</p></Link>
                         </div>
                         <div className="blog-header-navlinks">
-                        <Link to={'/dev/blog/beauty'} ><p>BEAUTY</p></Link>
+                        <Link to={'/blog/beauty'} ><p>BEAUTY</p></Link>
                         </div>
                         <div className="blog-header-navlinks">
-                        <Link to={'/dev/blog/news'} ><p>NEWS</p></Link>
+                        <Link to={'/blog/news'} ><p>NEWS</p></Link>
                         </div>
                         <div className="blog-header-navlinks">
-                            <Link  to={'/dev/blog/visit_rwanda'} ><p>#VISITRWANDA</p></Link>
+                            <Link  to={'/blog/visit_rwanda'} ><p>#VISITRWANDA</p></Link>
                         </div>
 
                     </div>

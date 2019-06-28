@@ -71,7 +71,7 @@ class visitRwanda extends Component{
                         <button>FASHION</button>
 
                         <Link to="#">Boutique</a>
-                        <Link to="/dev/blog/post/2/title">Shop by story</a>
+                        <Link to="/blog/post/2/title">Shop by story</a>
                     </div>
                     </div>
                     
@@ -100,7 +100,7 @@ class visitRwanda extends Component{
                     <img className='visitRwana-wrapper-img' src={vr1}  useMap="#image-link-map"/>
 
                     <map name="image-link-map">
-                        <Linkrea shape="rect" coords="1,2,280,400" title="STATEMENT COATS" alt="statement coats" to="/dev/search/jeans" />
+                        <Linkrea shape="rect" coords="1,2,280,400" title="STATEMENT COATS" alt="statement coats" to="/search/jeans" />
                         
 
                     </map>
@@ -108,7 +108,7 @@ class visitRwanda extends Component{
                 </div>
 
                 <div className="btn-div">
-                    <Link style={{textAlign:'center'}} className="shop-all" to={'/dev/search/jeans'}><button className='btn-vr' >SHOP ALL GIFTS</button></a>
+                    <Link style={{textAlign:'center'}} className="shop-all" to={'/search/jeans'}><button className='btn-vr' >SHOP ALL GIFTS</button></a>
                 </div>
                 <br></br>
 

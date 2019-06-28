@@ -150,7 +150,7 @@ class Fabric extends Component{
                         </details>
 
                         <div className='fabric-sidebar-view-all-div'>
-                            <Link to={'/dev/fabric_search'} >
+                            <Link to={'/fabric_search'} >
                                 <button className='fabric-sidebar-view-all-button'>View all Fabrics</button>
                             </Link>
                         </div>
@@ -167,13 +167,13 @@ class Fabric extends Component{
                                 <li>Handmade</li>
                             </ul>
 
-                            <Link to={'/dev/fabric/upload'} >
+                            <Link to={'/fabric/upload'} >
                                 <button className=''>Upload Your Design</button>
                             </Link>
                             <br></br>
 
                             <div className='view-all'>
-                            <Link to={'/dev/fabric_search'}>View all Fabrics</Link>
+                            <Link to={'/fabric_search'}>View all Fabrics</Link>
                             </div>
                         
                         </div>
@@ -216,7 +216,7 @@ class Fabric extends Component{
                         <div className="fabric-cat-one-div">
                             <div className="fabric-cat-one-div-inner">
                                 <div>
-                                <Link to={'/dev/fabric_search'} >
+                                <Link to={'/fabric_search'} >
                                     <div className="fabric-cat-one-div-inner-img-div">
                                             <img src={fabric1} />
                                         </div>
@@ -226,7 +226,7 @@ class Fabric extends Component{
                                 </div>
                                   
                                 <div>
-                                    <Link to={'/dev/fabric_search'} >
+                                    <Link to={'/fabric_search'} >
                                     <div className="fabric-cat-one-div-inner-img-div">
                                             <img src={fabric2} />
                                         </div>
@@ -235,7 +235,7 @@ class Fabric extends Component{
                                     </Link>
                                 </div>
                                  <div>
-                                 <Link to={'/dev/fabric_search'} >
+                                 <Link to={'/fabric_search'} >
                                     <div className="fabric-cat-one-div-inner-img-div">
                                             <img src={fabric3} />
                                         </div>

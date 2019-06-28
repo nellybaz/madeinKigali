@@ -15,13 +15,13 @@ class SideBar extends Component{
                     <p>Admin Name</p>
 
                     <div className='sub-menus'>
-                    <button><Link to={'/dev/admin/dashboard'}>PRODUCTS</Link></button>
-                    <button><Link to={'/dev/admin/dashboard/flashdeals'}>FLASH DEALS</Link></button>
-                    <button><Link to={'/dev/admin/dashboard/blog'}>BLOG</Link></button>
+                    <button><Link to={'/admin/dashboard'}>PRODUCTS</Link></button>
+                    <button><Link to={'/admin/dashboard/flashdeals'}>FLASH DEALS</Link></button>
+                    <button><Link to={'/admin/dashboard/blog'}>BLOG</Link></button>
                     <button>FEATURED BLOG</button>
 
                     <button>BRANDS</button>
-                    <button><Link to={'/dev/admin/dashboard/trending'}>TRENDING</Link></button>
+                    <button><Link to={'/admin/dashboard/trending'}>TRENDING</Link></button>
                     
                     </div>
                 

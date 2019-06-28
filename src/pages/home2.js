@@ -542,16 +542,16 @@ request
 
           <div className="middle-nav">
             <div className="middle-nav-item">
-              <span><img src={support} /></span> <Link to={'/dev/quote'}>Wholesale Quote</Link>
+              <span><img src={support} /></span> <Link to={'/quote'}>Wholesale Quote</Link>
             </div>
             <div className="middle-nav-item">
-              <span><img src={location} /></span><Link to={'/dev/points'}>Points of Sale</Link>
+              <span><img src={location} /></span><Link to={'/points'}>Points of Sale</Link>
             </div>
             <div className="middle-nav-item">
-              <span><img src={delivery} /></span><Link to={'/dev/info/delivery'} >Delivery</Link>
+              <span><img src={delivery} /></span><Link to={'/info/delivery'} >Delivery</Link>
             </div>
             <div className="middle-nav-item">
-              <span><img src={returns} /></span><Link to={'/dev/info/returns'}>Returns</Link>
+              <span><img src={returns} /></span><Link to={'/info/returns'}>Returns</Link>
             </div>
 
           </div>
@@ -605,7 +605,7 @@ request
             <div className="fabric-inner-div-wrapper">
 
               <div>
-                <Link to={'/dev/fabric'}>
+                <Link to={'/fabric'}>
                   <div className="fabric-inner-div-wrapper-inner">
 
                   </div>
@@ -677,7 +677,7 @@ request
 
           <div className="madeinkigali-section">
             <Divider name="#MadeinKigaliRW" />
-            <Link to="/dev/gallery" className="gallery-little-title">VIEW GALLERY</Link>
+            <Link to="/gallery" className="gallery-little-title">VIEW GALLERY</Link>
 
             <div className="madeinkigali-inner-div">
               {this.state.madeinkigali_gallery}

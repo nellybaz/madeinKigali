@@ -163,7 +163,7 @@ class Fabric_Upload_Select extends Component{
     
 
       flipDesign =(x)=>{
-         window.location.to="/dev/fabric/upload/select/"+x
+         window.location.to="/fabric/upload/select/"+x
           this.handleDesignChange();
        
       }
