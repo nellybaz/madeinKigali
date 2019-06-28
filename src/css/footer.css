@@ -7,6 +7,10 @@
     font-size: 0.7rem !important;
 } 
 
+  table {
+    border-collapse: collapse;
+  }
+  
 @media only screen and (max-width: 745px){
     .signup-div > div{
         width:100% !important;
