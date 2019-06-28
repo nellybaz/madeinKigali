@@ -70,8 +70,8 @@ class visitRwanda extends Component{
                     
                         <button>FASHION</button>
 
-                        <Link to="#">Boutique</a>
-                        <Link to="/blog/post/2/title">Shop by story</a>
+                        <Link to="#">Boutique</Link>
+                        <Link to="/blog/post/2/title">Shop by story</Link>
                     </div>
                     </div>
                     
@@ -108,7 +108,7 @@ class visitRwanda extends Component{
                 </div>
 
                 <div className="btn-div">
-                    <Link style={{textAlign:'center'}} className="shop-all" to={'/search/jeans'}><button className='btn-vr' >SHOP ALL GIFTS</button></a>
+                    <Link style={{textAlign:'center'}} className="shop-all" to={'/search/jeans'}><button className='btn-vr' >SHOP ALL GIFTS</button></Link>
                 </div>
                 <br></br>
 
