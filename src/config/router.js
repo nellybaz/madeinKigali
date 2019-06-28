@@ -66,7 +66,7 @@ class AppRouter extends Component{
         return(
             <Router onUpdate={() => window.scrollTo(0, 0)} basename="">
         <Switch>
-            <Route exact path={"/company2"} component={Company2} />
+            <Route exact path={"/who-we-are"} component={Company2} />
             <Route exact path={"/"} component={ComingSoon1}/>
             {/* <Route exact path={"/12hdgsikdhlmsdne"} component={App} />
             <Route exact path={"/upload"} component={Upload} />
@@ -98,9 +98,9 @@ class AppRouter extends Component{
             <Route exact path={"/gift_card"} component={GiftCard} />
             <Route exact path={"/cart"} component={Cart} />
             <Route exact path={"/delivery"} component={Delivery} /> */}
-            <Route exact path={"/company"} component={Company} />
-            <Route exact path={"/company/about"} component={About} />
-            <Route exact path={"/company/about2"} component={About2} />
+            {/* <Route exact path={"/company"} component={Company} /> */}
+            <Route exact path={"/what-we-do"} component={About} />
+            <Route exact path={"/about-us"} component={About2} />
             {/* <Route exact path={"/admin/dashboard"} component={DashBoard} />
             <Route exact path={"/admin/dashboard/flashdeals"} component={FlashDeals} />
             <Route exact path={"/admin/dashboard/blog"} component={Blog_Dashboard} />

@@ -292,7 +292,7 @@ class Footer extends Component {
           <div className="social-media-div">
           <Link to="https://plus.google.com/u/2/112933730940706528592?tab=mX" target="_blank" > <img src={g_plus} alt="g_plus" /></Link>
 
-          </div> */}
+          </div> 
 
           <div className="social-media-div">
           <Link to="https://www.pinterest.com/madeinkigali/pins/" target="_blank" > <img src={pinterest} alt="pinterest" /></Link>

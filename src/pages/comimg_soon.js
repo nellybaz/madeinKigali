@@ -18,13 +18,13 @@ import tumblr from '../assets/images/icons/tumblr-logo.png';
 // import MetaTags from 'react-meta-tags';
 
 
-const Completionist = () => window.location.to="/company2";
+const Completionist = () => window.location.to = "/company2";
 class ComingSoon1 extends Component {
 
 
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
+    this.state = {
       email_input: '',
       large_screen_class: '',
     }
@@ -42,11 +42,11 @@ class ComingSoon1 extends Component {
         .end(function (err, res) {
           if (res != null) {
             if (res.body.res == 1) {
-                alert("Thanks for subscribing!!\n We will reach back to you soon");
-                window.location.href = "/dev";
+              alert("Thanks for subscribing!!\n We will reach back to you soon");
+              window.location.href = "/dev";
             }
 
-            else{
+            else {
               alert("Could not subscribe please try again");
             }
 
@@ -65,14 +65,14 @@ class ComingSoon1 extends Component {
     }
   }
 
-  _handleKeyPress=(e)=> {
+  _handleKeyPress = (e) => {
     if (e.key === 'Enter') {
-      if(this.state.email_input == ""){
-          alert("Please enter your email");
-      }else{
-        if(!this.state.email_input.includes("@")){
+      if (this.state.email_input == "") {
+        alert("Please enter your email");
+      } else {
+        if (!this.state.email_input.includes("@")) {
           alert("Please enter valid email");
-        }else{
+        } else {
           this.subscribe();
         }
       }
@@ -91,7 +91,7 @@ class ComingSoon1 extends Component {
     };
 
 
-    const renderer2 = ({ days,hours, minutes, seconds, completed }) => {
+    const renderer2 = ({ days, hours, minutes, seconds, completed }) => {
       if (completed) {
         // Render a completed state
         return <Completionist />;
@@ -102,11 +102,11 @@ class ComingSoon1 extends Component {
     };
     return (
       <div className='ComingSoon1'>
-      <MetaTags>
-            <title>MadeInKigali - Rwanda's Fashion Store - Coming Soon</title>
-            <meta name="description" content="Follow our social media Feeds for updates on Made in Rwanda fashion clothing and subscribe to be notified when the store is Live" />
+        <MetaTags>
+          <title>MadeInKigali - Rwanda's Fashion Store - Coming Soon</title>
+          <meta name="description" content="Follow our social media Feeds for updates on Made in Rwanda fashion clothing and subscribe to be notified when the store is Live" />
 
-          </MetaTags>
+        </MetaTags>
 
         <div className='coming1-content'>
 
@@ -144,58 +144,59 @@ class ComingSoon1 extends Component {
 
           <div className='coming1-social-sub'>
             <input
-            onKeyPress={this._handleKeyPress} onChange={(e)=> this.setState({
-              email_input: e.target.value,
-          })}
-            type="email" placeholder="We'll be here soon, subscribe to be notified...          >" />
+              onKeyPress={this._handleKeyPress} onChange={(e) => this.setState({
+                email_input: e.target.value,
+              })}
+              type="email" placeholder="We'll be here soon, subscribe to be notified...          >" />
 
           </div>
 
 
           <div className="coming1-footer">
-          <div className="social-media-div">
-            <Link target="_blank" to="https://www.facebook.com/MadeInKigali/"><img src={fb} alt="facebook" /></Link>
+            <div className="social-media-div">
+              <a target="_blank" href="https://www.facebook.com/MadeInKigali/"><img src={fb} alt="facebook" /></a>
 
+            </div>
+
+            <div className="social-media-div">
+              <a target="_blank" href="https://twitter.com/MadeinKigaliRW"><img src={twitter} alt="twitter" /></a>
+
+            </div>
+
+            <div className="social-media-div">
+              <a target="_blank" href="https://www.instagram.com/madeinkigali/"><img src={insta} alt="insta" /></a>
+
+            </div>
+
+            <div className="social-media-div">
+              <a target="_blank" href="https://www.Linkedin.com/company/13063612/admin/"><img src={linkedin} alt="linkedin" /></a>
+
+            </div>
+
+            <div className="social-media-div">
+              <a href="https://plus.google.com/u/0/107469092096162928956" target="_blank" > <img src={g_plus} alt="g_plus" /></a>
+
+            </div>
+
+            <div className="social-media-div">
+              <a href="https://www.pinterest.com/madeinkigali/pins/" target="_blank" > <img src={pinterest} alt="pinterest" /></a>
+            </div>
+
+            <div className="social-media-div">
+              <a href="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></a>
+
+            </div>
+            <div className="social-media-div">
+              <a href="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></a>
+
+            </div>
+
+            <div className="social-media-div">
+              <a href="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></a>
+
+            </div>
           </div>
-
-          <div className="social-media-div">
-            <Link target="_blank" to="https://twitter.com/MadeinKigaliRW"><img src={twitter} alt="twitter" /></Link>
-
-          </div>
-
-          <div className="social-media-div">
-            <Link target="_blank" to="https://www.instagram.com/madeinkigali/"><img src={insta} alt="insta" /></Link>
-
-          </div>
-
-          <div className="social-media-div">
-            <Link target="_blank" to="https://www.linkedin.com/company/13063612/admin/"><img src={linkedin} alt="linkedin" /></Link>
-
-          </div>
-
-          <div className="social-media-div">
-          <Link to="https://plus.google.com/u/0/107469092096162928956" target="_blank" > <img src={g_plus} alt="g_plus" /></Link>
-
-          </div> */}
-
-          <div className="social-media-div">
-          <Link to="https://www.pinterest.com/madeinkigali/pins/" target="_blank" > <img src={pinterest} alt="pinterest" /></Link>
-          </div>
-
-          <div className="social-media-div">
-          <Link to="https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber" target="_blanck" > <img src={youtube} alt="youtube" /></Link>
-
-          </div>
-          <div className="social-media-div">
-          <Link to="https://madeinkigali-blog.tumblr.com/" target="_blanck" > <img src={tumblr} alt="tumblr" /></Link>
-
-          </div>
-
-          <div className="social-media-div">
-          <Link to="#" target="_blanck" > <img src={wiebo} alt="wiebo" /></Link>
-
-          </div>
-        </div>
+          
 
 
         </div>
@@ -204,110 +205,110 @@ class ComingSoon1 extends Component {
 
 
         <div className='coming-mobile-wrapper'>
-                    <div className='mobile-logo-div'>
-                        <img src={require('../assets/images/logo.png')} />
-                    </div>
+          <div className='mobile-logo-div'>
+            <img src={require('../assets/images/logo.png')} />
+          </div>
 
-                    <div className='mobile-header'>
-                        <h4>COMING SOON</h4>  
-                        <p>
-                          We're working really hard on creating something fantastic and are pretty interested to see what you think!
-                          Its nothing revolutionary, but it will fix somethings that are just aren't working so well as they should.
-                          In the meantime follow our social media feeds or click on the buttons below for more informations about MIK.
+          <div className='mobile-header'>
+            <h4>COMING SOON</h4>
+            <p>
+              We're working really hard on creating something fantastic and are pretty interested to see what you think!
+              Its nothing revolutionary, but it will fix somethings that are just aren't working so well as they should.
+              In the meantime follow our social media feeds or click on the buttons below for more informations about MIK.
                         </p>
-                    
-                    </div>
 
-                    <div className='mobile-content'>
+          </div>
 
-                      <div className='mobile-content-inner-div2'>
+          <div className='mobile-content'>
 
-                      <div className='space-div'>
-                      
-                      </div>
-                            <Countdown
-                                 
-                                date={'Sun, 01 September 2019 13:00:00' }
-                                renderer={renderer2}
-                            />
+            <div className='mobile-content-inner-div2'>
 
-                            <ul className='mobile-content-inner-ul'>
-                              <li>DAYS</li>
+              <div className='space-div'>
 
-                              <li className='coming-hour-label'>HOURS</li>
+              </div>
+              <Countdown
 
-                              <li className='coming-min-label'>MINUTES</li>
+                date={'Sun, 01 September 2019 13:00:00'}
+                renderer={renderer2}
+              />
 
-                              <li className='coming-sec-label'>SECONDS</li>
-                            </ul>
+              <ul className='mobile-content-inner-ul'>
+                <li>DAYS</li>
 
-                            <div className='coming-mobile-btn-div'>
-                              <Link to={'/about-us'}>ABOUT US</Link>
-                               <Link to={'/who-we-are'}>WHO WE ARE</Link>
-                              <Link to={'/what-we-do'}>WHAT WE DO</Link>
-                            </div>
-                      
-                      </div>
-                      
-                    </div>
+                <li className='coming-hour-label'>HOURS</li>
 
- 
-                    <div className='coming-mobile-footer'>
-                    <div className='coming-footer-input-div'>
-                      <input
-                      onKeyPress={this._handleKeyPress} onChange={(e)=> this.setState({
-                        email_input: e.target.value,
-                    })}
-                      
-                      type="text"  placeholder="We'll be here soon, subscribe to be notfied...   >"/>
-                    </div>
+                <li className='coming-min-label'>MINUTES</li>
 
-                    <div className='coming-footer-social'>
+                <li className='coming-sec-label'>SECONDS</li>
+              </ul>
 
-                      <Link to={'https://www.facebook.com/MadeInKigali/'} >
-                        <img src={require('../assets/images/icons/facebook_white.png')} />
-                      </Link>
+              <div className='coming-mobile-btn-div'>
+                <Link to={'/about-us'}>ABOUT US</Link>
+                <Link to={'/who-we-are'}>WHO WE ARE</Link>
+                <Link to={'/what-we-do'}>WHAT WE DO</Link>
+              </div>
 
-                      <Link to={'https://twitter.com/MadeinKigaliRW'} >
-                        <img src={require('../assets/images/icons/twitter_white.png')} />
-                      </Link>
+            </div>
 
-                      <Link to={'https://www.instagram.com/madeinkigali/'} >
-                        <img src={require('../assets/images/icons/instagram_white.png')} />
-                      </Link>
+          </div>
 
-                      <Link to={'https://www.linkedin.com/company/13063612/admin/'} >
-                        <img src={require('../assets/images/icons/linkedin_white.png')} />
-                      </Link>
 
-                      <Link to={'https://www.pinterest.com/madeinkigali/pins/'} >
-                        <img src={require('../assets/images/icons/pinterest_white.png')} />
-                      </Link>
+          <div className='coming-mobile-footer'>
+            <div className='coming-footer-input-div'>
+              <input
+                onKeyPress={this._handleKeyPress} onChange={(e) => this.setState({
+                  email_input: e.target.value,
+                })}
 
-                      <Link to={'https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber'} >
-                        <img src={require('../assets/images/icons/youtube_white.png')} />
-                      </Link>
+                type="text" placeholder="We'll be here soon, subscribe to be notfied...   >" />
+            </div>
 
-                      <Link to={'https://madeinkigali-blog.tumblr.com/'} >
-                        <img src={require('../assets/images/icons/tumblr_white.png')} />
-                      </Link>
+            <div className='coming-footer-social'>
 
-                      {/* <Link to={'https://plus.google.com/u/0/107469092096162928956'} >
+              <a href={'https://www.facebook.com/MadeInKigali/'} >
+                <img src={require('../assets/images/icons/facebook_white.png')} />
+              </a>
+
+              <a href={'https://twitter.com/MadeinKigaliRW'} >
+                <img src={require('../assets/images/icons/twitter_white.png')} />
+              </a>
+
+              <a href={'https://www.instagram.com/madeinkigali/'} >
+                <img src={require('../assets/images/icons/instagram_white.png')} />
+              </a>
+
+              <a href={'https://www.linkedin.com/company/13063612/admin/'} >
+                <img src={require('../assets/images/icons/linkedin_white.png')} />
+              </a>
+
+              <a href={'https://www.pinterest.com/madeinkigali/pins/'} >
+                <img src={require('../assets/images/icons/pinterest_white.png')} />
+              </a>
+
+              <a href={'https://www.youtube.com/channel/UCfCedXqAFLRVdk1EUPosvAw?view_as=subscriber'} >
+                <img src={require('../assets/images/icons/youtube_white.png')} />
+              </a>
+
+              <a href={'https://madeinkigali-blog.tumblr.com/'} >
+                <img src={require('../assets/images/icons/tumblr_white.png')} />
+              </a>
+
+              {/* <a href={'https://plus.google.com/u/0/107469092096162928956'} >
                         <img src={require('../assets/images/icons/google_white.png')} />
-                      </Link> */}
+                      </a> */}
 
-                      <Link to={'#'} >
-                        <img src={require('../assets/images/icons/weibo_white.png')} />
-                      </Link>
-                    
-                    </div>
-                    
-                    </div>
+              <a href={'#'} >
+                <img src={require('../assets/images/icons/weibo_white.png')} />
+              </a>
 
-                    
+            </div>
+
+          </div>
 
 
-                </div>
+
+
+        </div>
 
       </div>
     )
