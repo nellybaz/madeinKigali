@@ -62,7 +62,7 @@ class AppRouter extends Component{
  
     render(){
         return(
-            <Router onUpdate={() => window.scrollTo(0, 0)}>
+            <Router onUpdate={() => window.scrollTo(0, 0)} basename="/dev">
         <Switch>
             <Route exact path={"/dev/company2"} component={Company2} />
             {/* <Route exact path={"/"} component={ComingSoon1}/> */}
