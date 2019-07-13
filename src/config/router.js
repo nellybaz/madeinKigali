@@ -64,10 +64,10 @@ class AppRouter extends Component{
  
     render(){
         return(
-            <Router onUpdate={() => window.scrollTo(0, 0)} basename="">
+            <Router onUpdate={() => window.scrollTo(0, 0)} basename="/dev" >
         <Switch>
             <Route exact path={"/company2"} component={Company2} />
-            <Route exact path={"/"} component={ComingSoon1}/>
+            <Route exact path={"/"} component={App}/>
             <Route exact path={"/12hdgsikdhlmsdne"} component={App} />
             <Route exact path={"/upload"} component={Upload} />
             <Route exact path={"/blog/:nav"} component={Blog} />
