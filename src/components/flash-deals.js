@@ -102,7 +102,7 @@ class FlashDeals extends Component {
           {
             let limit;
             if(isBrowser || isTablet){
-              limit = 5;
+              limit = 4;
             }
             else if(isMobileOnly || this.props.isBlog){
               limit = 2;

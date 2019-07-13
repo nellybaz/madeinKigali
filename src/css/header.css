@@ -61,7 +61,7 @@
 
     .right-icons-mobile{
        display:flex;
-       justify-content: flex-end;
+       justify-content: space-evenly;
        align-items:center;
        flex-direction:row;
         margin-left: 15px;
@@ -167,7 +167,7 @@
 
 .Header-one > .header-items
 {
-    
+     
 }
  
 .mobile-nav{
@@ -179,12 +179,10 @@
 .navigation{
     display: flex;
     height:50px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    /* border-bottom: 1px solid white; */
     width: 90%;
     z-index: 1;
-    /* flex-shrink:  */
     flex-wrap: nowrap;
     
 }
@@ -260,7 +258,6 @@
 
 .new-in:hover .drop-down-content-new-in{
     display: grid;
-    position: absolute;
     z-index: 1;
     /* transition: display .4s ease-in-out; */
 
@@ -321,7 +318,6 @@
 }
 .brands:hover .drop-down-content-brands{
     display: grid;
-    position: absolute;
     z-index: 1;
 }
 
@@ -439,7 +435,6 @@
     display: none;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    position: absolute;
     z-index: 1;
     background-color: #F5F5F5;
     left: 0;    
@@ -467,7 +462,6 @@
     width: 100%;
     /* height: 300px; */
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    position: absolute;
     z-index: 1;
     background-color: #F5F5F5;
     left: 0;    
@@ -484,7 +478,6 @@
     width: 100%;
     height:100%;
     grid-template-columns: 1fr 1fr 3fr;
-    position: absolute;
     z-index: 1;
     background-color: #F5F5F5;
     left: 0;    
@@ -563,7 +556,6 @@
     width: 100%;
     /* height: 300px; */
     grid-template-columns: 1fr 1fr 1fr 1fr 2fr;;
-    position: absolute;
     z-index: 1;
     background-color: #F5F5F5;
     left: 0;    
@@ -601,7 +593,6 @@
     padding:5px 30px 0 30px;
     display: none;    
     grid-template-columns: 1fr 5fr;
-    position: absolute;
     z-index: 2;
     background-color: #F5F5F5;
     left: 0;   
@@ -632,7 +623,6 @@
     padding:5px 30px 0 30px;
     display: none;    
     grid-template-columns: repeat(3, 1fr) 2fr;
-    position: absolute;
     z-index: 2;
     background-color: #F5F5F5;
     left: 0;   
@@ -686,7 +676,6 @@
     padding:5px 30px 0 30px;
     display: none;    
     grid-template-columns: 1fr 5fr;
-    position: absolute;
     z-index: 2;
     background-color: #F5F5F5;
     left: 0;   
@@ -717,7 +706,6 @@
     padding:5px 30px 0 30px;
     display: none;    
     grid-template-columns: 1fr 1fr 4fr;
-    position: absolute;
     z-index: 2;
     background-color: #F5F5F5;
     left: 0;   
@@ -768,9 +756,9 @@
 
 
 .dropdowns{
-    /* display: none !important; */
+    position: absolute;
     width: 90%;
-    margin:16px 5%;
+    margin:14px 5%;
     height:auto;
     z-index: 2;
     padding: 0 0 10px 0;

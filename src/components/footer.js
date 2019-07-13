@@ -129,7 +129,9 @@ class Footer extends Component {
               <td><Link to={'/sitemap'}>Site map</Link></td>
                 <td><Link to={''}></Link></td>
                 <td><Link to={''}></Link></td>
-                <td><Link to={'/seller_licence'}>Legal Notice: Terms & Conditions/ Privacy/ Cookie/ Sales conditions / Seller/Buyer Agreement</Link></td>
+                <td><Link to={'/seller_licence'}>Legal Notice
+                {/* : Terms & Conditions/ Privacy/ Cookie/ Sales conditions / Seller/Buyer Agreement */}
+                </Link></td>
                 {/* <td><Link to={''}>Shipping Method</Link></td> */}
                 <td><Link to={''}></Link></td>
               </tr>

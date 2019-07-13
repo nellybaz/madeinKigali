@@ -8,189 +8,183 @@ import arrow_down from '../assets/images/arrow-down.png';
 
 class SearchSidebar extends Component {
 
-    constructor(props){
-      super(props)
+    constructor(props) {
+        super(props)
 
-      this.state={
+        this.state = {
 
-        sidebar_class: '',
-        has_reached_end: false,
+            sidebar_class: '',
+            has_reached_end: false,
 
-      }
+        }
 
     }
- 
+
 
     async componentDidMount() {
         //document.addEventListener('scroll', this.trackScrolling);
 
-               
 
-          setInterval(async () => {
+
+        setInterval(async () => {
 
             window.addEventListener('scroll', this.handleScroll());
-            
-          }, 10);
 
-          setInterval(async () => {
+        }, 10);
+
+        setInterval(async () => {
 
             window.addEventListener('scroll', this.trackScrolling());
-            
-          }, 10);
-        } 
-  
-        componentWillUnmount() {
-            document.removeEventListener('scroll', this.trackScrolling);
-            document.removeEventListener('scroll', this.handleScroll());
-          }
 
-    
-    handleScroll=(event)=> {
+        }, 10);
+    }
 
-        if(!this.state.has_reached_end){
+    componentWillUnmount() {
+        document.removeEventListener('scroll', this.trackScrolling);
+        document.removeEventListener('scroll', this.handleScroll());
+    }
+
+
+    handleScroll = (event) => {
+
+        if (!this.state.has_reached_end) {
             if (Math.round(window.scrollY) >= 420 && !this.state.has_reached_end) {
-                
+
 
                 this.setState({
                     sidebar_class: 'sidebar-fixed',
                     has_reached_end: false,
                 })
-                
-                }
 
-       
-       else{
-           this.setState({
-               sidebar_class: '',
-               has_reached_end: false,
-           })
-           
-       }
+            }
+
+
+            else {
+                this.setState({
+                    sidebar_class: '',
+                    has_reached_end: false,
+                })
+
+            }
 
         }
-       
-       
+
+
     }
 
 
 
-        isBottom(el) {
-            if(el != null){
-                return el.getBoundingClientRect().bottom <= window.innerHeight;      
-            }
-            
-            }   
+    isBottom(el) {
+        if (el != null) {
+            return el.getBoundingClientRect().bottom <= window.innerHeight;
+        }
 
-        trackScrolling = () => {
-            const wrappedElement = document.getElementById('end');
-            if (this.isBottom(wrappedElement)) {
-                // alert('reached')
-                this.setState({
-                    has_reached_end: true,
-                    sidebar_class: 'sidebar-small'
-                });
-                document.removeEventListener('scroll', this.trackScrolling);
-            }
+    }
 
-            else{
-                this.setState({
-                    
-                    has_reached_end: false,
-                })
-            }
-            };
-  
-  render() {
+    trackScrolling = () => {
+        const wrappedElement = document.getElementById('end');
+        if (this.isBottom(wrappedElement)) {
+            // alert('reached')
+            this.setState({
+                has_reached_end: true,
+                sidebar_class: 'sidebar-small'
+            });
+            document.removeEventListener('scroll', this.trackScrolling);
+        }
 
-   
+        else {
+            this.setState({
 
-   
-    
-    return (
-       
-      <div id="SearchSidebar" className={`SearchSidebar ${this.state.sidebar_class}`} >
-        {/* <div className="sidebar-item">
-            <details>
-                <summary>
-                        <button className="btn btn-sidebar-search"><p><b>Size</b> </p>
-                    <span><img src={arrow_down} /></span></button>  
-                        </summary>
+                has_reached_end: false,
+            })
+        }
+    };
 
-                        <p>Details</p>
-            </details>
-          
+    render() {
 
-        </div> */}
 
-        <div className="sidebar-item">
-                    
-        </div>
-        <div className="sidebar-item">
-        <details>
-                <summary>
-                        <button className="btn btn-sidebar-search"><p><b>Price</b> </p>
-                    <span><img src={arrow_down} /></span></button>  
-                        </summary>
 
-                        <p>Details</p>
-            </details>         
-        </div>
-        <div className="sidebar-item">
-        <details>
-                <summary>
-                        <button className="btn btn-sidebar-search"><p><b>Brand</b> </p>
-                    <span><img src={arrow_down} /></span></button>  
-                        </summary>
 
-                        <p>Details</p>
-            </details>         
-        </div>
-        <div className="sidebar-item">
-        <details>
-                <summary>
-                        <button className="btn btn-sidebar-search"><p><b>Fabric</b> </p>
-                    <span><img src={arrow_down} /></span></button>  
-                        </summary>
 
-                        <p>Details</p>
-            </details>          
-        </div>
-        <div className="sidebar-item">
-        <details>
-                <summary>
-                        <button className="btn btn-sidebar-search"><p><b>Size</b> </p>
-                    <span><img src={arrow_down} /></span></button>  
-                        </summary>
+        return (
 
-                        <p>Details</p>
-            </details>        
-        </div>
+            <div id="SearchSidebar" className={`SearchSidebar ${this.state.sidebar_class}`} >
+                <div className="sidebar-item">
+                    <p>Price</p>
+                    <label className="container">
+                        <input type="checkbox" /> &nbsp;$10 to $50
+                                <span className="checkmark search-checkmark"></span>
+                    </label>
 
-        <div className="sidebar-item">
-        <details>
-                <summary>
-                        <button className="btn btn-sidebar-search"><p><b>Color</b> </p>
-                    <span><img src={arrow_down} /></span></button>  
-                        </summary>
+                    <label className="container">
+                        <input type="checkbox" /> &nbsp;$50 to $100
+                                <span className="checkmark search-checkmark"></span>
+                    </label>
 
-                        <p>Details</p>
-            </details>        
-        </div>
+                    <label className="container">
+                        <input type="checkbox" /> &nbsp;$100 to $200
+                                <span className="checkmark search-checkmark"></span>
+                    </label>
 
-        <div className="sidebar-item">
-        <details>
-                <summary>
-                        <button className="btn btn-sidebar-search"><p><b>Color</b> </p>
-                    <span><img src={arrow_down} /></span></button>  
-                        </summary>
+                    <label className="container">
+                        <input type="checkbox" /> &nbsp;$200 to $500
+                                <span className="checkmark search-checkmark"></span>
+                    </label>
 
-                        <p>Details</p>
-            </details>        
-        </div>
-      
-      </div>
-    );
-  }
+
+                    <label className="container">
+                        <input type="checkbox" /> &nbsp;More than $500
+                                <span className="checkmark search-checkmark"></span>
+                    </label>
+
+                </div>
+
+
+                {/* gender */}
+                <div className="sidebar-item">
+                    <p>Gender</p>
+                    <label className="container">
+                        <input type="checkbox" /> &nbsp;Female
+                                <span className="checkmark search-checkmark-circle"></span>
+                    </label>
+
+                    <label className="container">
+                        <input type="checkbox" /> &nbsp;Male
+                                <span className="checkmark search-checkmark-circle"></span>
+                    </label>
+
+                    <label className="container">
+                        <input type="checkbox" /> &nbsp;Kids
+                                <span className="checkmark search-checkmark-circle"></span>
+                    </label>
+
+                </div>
+
+
+                {/* size */}
+                <div className="sidebar-item">
+                    <p>Size</p>
+                    <label className="container">
+                        <input type="checkbox" /> &nbsp;XL
+                                <span className="checkmark search-checkmark-circle"></span>
+                    </label>
+
+                    <label className="container">
+                        <input type="checkbox" /> &nbsp;L
+                                <span className="checkmark search-checkmark-circle"></span>
+                    </label>
+
+                    <label className="container">
+                        <input type="checkbox" /> &nbsp;S
+                                <span className="checkmark search-checkmark-circle"></span>
+                    </label>
+
+                </div>
+
+
+            </div>
+        );
+    }
 }
 
 export default SearchSidebar;

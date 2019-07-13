@@ -607,12 +607,10 @@ class Home extends Component {
 
               {/* fabric section starts */}
 
-              <div className="fabric">
+              {/* <div className="fabric">
 
                 <Divider name='Create Your Own Dream' />
-                {/* fabric miidle banner image */}
                 <div className="middleBanner">
-                  {/* <img src={require('../assets/images/madeinkigali002.png')} /> */}
                 </div>
 
                 <div className="fabric-inner-div-wrapper">
@@ -644,7 +642,7 @@ class Home extends Component {
                   </div>
 
                 </div>
-              </div>
+              </div> */}
 
               {/* fabric section ends */}
 

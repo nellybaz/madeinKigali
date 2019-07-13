@@ -37,7 +37,9 @@ input{
 
 button{
   border: none;
+  height: 40px;
 }
+
 
 body{
   font-family: "Lato" !important;

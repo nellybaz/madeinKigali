@@ -22,9 +22,15 @@ class PointOfSale extends Component {
             <div className='PointOfSale'>
                 <Header />
 
+
+
+                      <div className='point-top-image'>
+                    <img src={require('../assets/images/point_of_sale_pic.png')} />
                 
+                </div>          
 
                 <div className='point-wrapper'>
+
                     <div className='point-left'>
                         <div className=''>
                             <h6>MadeinKigali Ltd</h6>

@@ -94,11 +94,10 @@ header{
 
     img{
         width:90%;
-        height: 90%;
+        height: 100%;
         object-fit: contain;
-
         position: relative;
-        bottom: 5px;
+        // bottom: 5px;
         
     }
 }
@@ -225,5 +224,18 @@ header{
 @media only screen and (min-width: 900px){
     .mobile-drawer{
         display: none;
+    }
+}
+
+.header-nav-links-div{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    // flex-direction:;
+    // border: 1px solid red;
+    width: 80%;
+
+    div{
+        margin-right: 40px;
     }
 }

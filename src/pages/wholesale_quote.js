@@ -89,7 +89,7 @@ class WholeSaleQuote extends Component{
                         </div>
 
                         <div className="w-quote-right">
-                                <img src={require('../assets/images/menus/5Brands.jpg')}  />
+                                <img src={require('../assets/images/quotation_pic.png')}  />
                         </div>
                     </div>
 

@@ -15,7 +15,7 @@ import like from '../assets/images/heart3.png';
 class Search extends Component {
 
     constructor(props) {
-        super(props) 
+        super(props)
 
         this.state = {
 
@@ -29,20 +29,58 @@ class Search extends Component {
 
         let active_no = this.props.match.params.category_no;
 
-        for (let x = 1; x <= 12; x++) {
-            if (x === 1) {
-                text = "All"
+        for (let x = 1; x <= 6; x++) {
+            // if (x === 1) {
+            //     text = "All"
+            // }
+
+            // else {
+            //     text = "category";
+            // }
+
+            switch (x) {
+                case 1:
+                    text = "All";
+
+                    break;
+
+                case 2:
+                    text = "New In";
+
+                    break;
+
+                case 3:
+                    text = "Wholesale";
+
+                    break;
+
+
+                case 4:
+                text = "Male";
+
+                break;
+
+
+                case 5:
+                    text = "Female";
+
+                    break;
+
+
+                case 6:
+                text = "#MadeinRwanda";
+
+                break;
+
+                default:
+                    break;
             }
 
-            else {
-                text = "category";
-            }
 
-
-            if(x === parseInt(active_no)){
+            if (x === parseInt(active_no)) {
                 active_class = "search-top-nav-active";
             }
-            else{
+            else {
                 active_class = "";
             }
             holder.push(
@@ -91,7 +129,14 @@ class Search extends Component {
                     <Link to={'/product/jean/2'} ><img className={ads_class} src={img} alt="mik" /> </Link>
                     {
                         x != 4 &&
-                        <p><b>Check Velvet Wide Leg Trousers </b><br></br><span>$112.99</span> <span style={{ float: 'right', marginRight: "20%", width: "16px", display: 'flex', position: 'relative', bottom: '370px', left: '10px', cursor: 'pointer' }} title="Likes"><img src={like} /><span className="prd-search-likes">112</span></span></p>
+                        <p><b>Check Velvet Wide Leg Trousers
+                            </b><br></br>
+                            <span>$112.99</span>
+                            <span style={{ float: 'right', marginRight: "20%", width: "16px", display: 'flex', position: 'relative', bottom: '370px', left: '10px', cursor: 'pointer' }} title="Likes">
+                                <img src={like} />
+                                {/* <span className="prd-search-likes">112</span> */}
+                            </span>
+                        </p>
                     }
 
                     {
@@ -107,10 +152,10 @@ class Search extends Component {
     }
 
 
-    componentDidMount(){
+    componentDidMount() {
         //let data = this.props.location.search.split("=")
         //console.log(this.props.match.params.category_no);
-        
+
     }
 
 
@@ -125,9 +170,9 @@ class Search extends Component {
                 <div className="search-inner-main">
                     <div className="search-bar-top"></div>
                     <div className="search-top-nav">
-                       
+
                         {this.displaySearchtopNav()}
-                       
+
                     </div>
 
                     <div className="search-content">
@@ -150,7 +195,7 @@ class Search extends Component {
                 </div>
 
                 <Footer />
-                <div id="end"></div>
+                {/* <div id="end"></div> */}
             </div>
         );
     }
