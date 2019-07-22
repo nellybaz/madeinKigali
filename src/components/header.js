@@ -124,7 +124,7 @@ class Header2 extends Component {
 
     searchBoxHandler = () => {
         // alert('Searching....');
-        window.location.href = `/search/${this.state.search_query}/category/1`;
+        window.location.href = `/dev/search/${this.state.search_query}/category/1`;
 
         //call search api
     }
@@ -162,7 +162,7 @@ class Header2 extends Component {
                             {/* <Link className='student-text' to={'/student_discount'} >Student? check our student discount</Link> */}
                         </div>
 
-                        <div className='topbar-nav-right'>
+                         <div className='topbar-nav-right'>
                             <input title="SEARCH" style={{ fontSize: '0.8rem' }} ref="search_input" className="search-input" onChange={(e) => this.setState({ search_query: e.target.value })} onKeyPress={(ev) => {
                                 if (ev.key === 'Enter') {
                                     // Do code here
@@ -172,9 +172,9 @@ class Header2 extends Component {
                                 }
                             }} type="text" placeholder="Search" />
                             <a href="#" onClick={() => this.handleSearchHighlight()} title="SEARCH"><img src={search}></img></a>
-                            <a href="/signin" title="SIGN IN"><img src={profile}></img></a>
-                            <a href="/cart" title="WISHLIST"><img src={require('../assets/images/heart2.png')}></img></a>
-                            <a href="/cart" title="BASKET"><img src={bag}></img></a>
+                            <a href="/dev/signin" title="SIGN IN"><img src={profile}></img></a>
+                            <a href="/dev/cart" title="WISHLIST"><img src={require('../assets/images/heart2.png')}></img></a>
+                            <a href="/dev/cart" title="BASKET"><img src={bag}></img></a>
 
                         </div>
 
@@ -306,7 +306,7 @@ class Header2 extends Component {
 
                     <div className='header-nav-links-div'>
 
-                    <div className="new-in" ><a href="/search/jeans/category/2" >NEW IN </a>
+                    <div className="new-in" ><a href="/dev/search/jeans/category/2" >NEW IN </a>
                         <div className="new-in-dropdown dropdowns">
                             <div className="new-in-dropdown-content">
                                 <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -809,7 +809,7 @@ class Header2 extends Component {
                     </div>
 
 
-                    <div className="sale" ><a href="/company2">ABOUT US </a>
+                    <div className="sale" ><a href="/dev/company2">ABOUT US </a>
 
                         {/* <div className="sales-dropdown dropdowns">
                             <div className="sales-dropdown-content">

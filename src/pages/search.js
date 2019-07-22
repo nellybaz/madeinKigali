@@ -29,7 +29,7 @@ class Search extends Component {
 
         let active_no = this.props.match.params.category_no;
 
-        for (let x = 1; x <= 6; x++) {
+        for (let x = 1; x <= 12; x++) {
             // if (x === 1) {
             //     text = "All"
             // }

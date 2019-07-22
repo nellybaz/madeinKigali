@@ -21,12 +21,6 @@
   .flashdeals2-img-div:hover .flashdeals2-img {
     width: 80% !important;
   }
-  .flashdeals2-img-div:hover {
-    background-color: #191843 !important;
-  }
-  .flashdeals2-img-div:hover p {
-    color: white !important;
-  }
 }
 
 .Flashdeals2 {
