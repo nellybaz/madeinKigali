@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import '../css/home.css';
 
 import QueueAnim from 'rc-queue-anim';
@@ -587,15 +587,10 @@ class Home extends Component {
               <Divider color="red" name='Flash Deals' displayTimer={true} />
               <div className="flashdeals-div">
 
-                {/* flas deals section start */}
-                {
-                  //  this.state.flashdealsObj.length > 0 ? <FlashDeals objectDispay={this.state.flashdealsObj} showNav={false} />:
-                  // this.state.blogObj.length > 0 ? <FlashDeals2 ObjectToDisplay={this.state.flashdealsObj} /> :
-                  //   <div className='loading-spinner'>
-                  //     <img src={require('../assets/images/spinner.gif')} />
-
-                  //   </div>
-                  <FlashDeals2 ObjectToDisplay={this.state.flashdealsObj} />
+               
+                 {/* <Suspense fallback={<p>Loading</p>}>  */}
+                    <FlashDeals2 ObjectToDisplay={this.state.flashdealsObj} />
+                 {/* </Suspense> */}
                 }
 
               </div>
