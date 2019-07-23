@@ -556,10 +556,6 @@ class Home extends Component {
           <div style={{ background: 'white' }}>
 
             <Header />
-            {/* calling popup */}
-
-            {/* {this.showPopUp()} */}
-
             <div className="Home">
 
               <Carousel />
@@ -591,7 +587,7 @@ class Home extends Component {
                  {/* <Suspense fallback={<p>Loading</p>}>  */}
                     <FlashDeals2 ObjectToDisplay={this.state.flashdealsObj} />
                  {/* </Suspense> */}
-                }
+                
 
               </div>
 

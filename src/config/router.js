@@ -1,66 +1,17 @@
 import React, { lazy, Suspense, Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { ScrollContext } from 'react-router-scroll-4';
-
-// import Product from '../pages/Product.js';
-// import Upload from '../pages/upload';
-// import Blog from '../pages/blog';
-// import Post from '../pages/post';
-// import Wholesale from '../pages/wholesale';
-// import Search from '../pages/search';
-// import Help from '../pages/help';
-// import Contact from '../pages/contact';
-// import Info from '../pages/info';
-// import M2M2 from '../pages/m2m2';
-import M2M from '../pages/m2m';
-// import Gallery from '../pages/gallery';
-// import WholesaleQuote from '../pages/wholesale_quote';
-// import Fabric from '../pages/fabric_home';
-// import Signin from '../pages/signin';
-import '../css/home.css';
-// import Fabric_Single from '../pages/fabric_single.js';
-// import Fabric_Display from '../pages/fabric_display';
-// import Fabric_Upload from '../pages/fabric_upload';
-// import Fabric_Upload_Select from '../pages/fabric_upload_select';
-// import visitRwanda from '../pages/visitRwanda2';
-// import notFound from '../pages/404';
-// import student_discount from '../pages/student_discount';
-// import GiftCard from '../pages/gift_card.js';
-// import Cart from '../pages/cart.js';
-// import Delivery from '../pages/delivery_final.js';
-// import Company from '../pages/company';
-// import About from '../pages/about';
-// import PointOfSale from '../pages/point_of_sale';
-// import DashBoard from '../pages/dashboard/dashboard';
-// import FlashDeals from '../pages/dashboard/flashdeals';
-// import Blog_Dashboard from '../pages/dashboard/blog';
-// import Trending from '../pages/dashboard/trending';
-// import PreFabricUpload from '../pages/pre_fabirc_upload';
-import ComingSoon from '../pages/coming_soon2';
-import About2 from '../pages/about2';
-import Company2 from '../pages/company2';
-import ComingSoon1 from '../pages/comimg_soon';
-import SizeGuide from '../pages/size_guide';
-import BuyerLicence from '../pages/buyer_licence';
-import SellerLicence from '../pages/seller_licence';
-import WashCare from '../pages/washcare';
-import MIKKFW from '../pages/mik_kfw';
-import SiteMap from '../pages/sitemap';
-import MIKRemera from '../pages/mik_remera_corner';
 import DynamicImport from './router_lazy_load';
-import Happiness from '../pages/hapiness_guaranteed';
-import Affiliates from '../pages/affiliates';
-import Careers from '../pages/careers_opportunities';
-import SocialResponsibility from '../pages/social_responsibility';
-import Refer from '../pages/refer_a_friend';
-
-
+import '../css/home.css';
+import spinner from '../assets/images/blog-spinner.gif';
 
 const lazyLoad=(props, link)=>{
     return (
         <DynamicImport load={() => link}>
             {(Component) => Component === null
-            ? <p>Loading</p>
+            ? <div style={{ width:"200px", margin: '50vh 45%'}}>
+                <p>Loading please wait....</p>
+            </div>
             :
             <Component {...props} />
             }
@@ -73,36 +24,50 @@ const Product = (props) => lazyLoad(props, import('../pages/Product'))
 
 const Upload = (props) => lazyLoad(props, import('../pages/upload'))
 const Blog = (props) => lazyLoad(props, import('../pages/blog'))
-const Post = lazy(() => import('../pages/post'));
-const Wholesale = lazy(() => import('../pages/wholesale'));
-const Search = lazy(() => import('../pages/search'));
-const Help = lazy(() => import('../pages/help'));
-const Contact = lazy(() => import('../pages/contact'));
-const Info = lazy(() => import('../pages/info'));
-const M2M2 = lazy(() => import('../pages/m2m2'));
-const Gallery = lazy(() => import('../App'));
-const WholesaleQuote = lazy(() => import('../App'));
-const Signin = lazy(() => import('../App'));
-const Fabric = lazy(() => import('../App'));
-const Fabric_Single = lazy(() => import('../pages/fabric_single'));
-const Fabric_Display = lazy(() => import('../pages/fabric_display'));
-const Fabric_Upload = lazy(() => import('../pages/fabric_upload'));
-const Fabric_Upload_Select = lazy(() => import('../pages/fabric_upload_select'));
-const visitRwanda = lazy(() => import('../pages/visitRwanda2'));
-const notFound = lazy(() => import('../pages/404'));
-const GiftCard = lazy(() => import('../pages/gift_card'));
-const student_discount = lazy(() => import('../pages/student_discount'));
-const Cart = lazy(() => import('../pages/cart'));
-const Delivery = lazy(() => import('../pages/delivery_final'));
-const Company = lazy(() => import('../pages/company'));
-const About = lazy(() => import('../pages/about'));
-const PointOfSale = lazy(() => import('../pages/point_of_sale'));
-const DashBoard = lazy(() => import('../pages/dashboard/dashboard'));
-const FlashDeals = lazy(() => import('../pages/dashboard/flashdeals'));
-const Blog_Dashboard = lazy(() => import('../pages/dashboard/blog'));
-const Trending = lazy(() => import('../pages/dashboard/trending'));
-const PreFabricUpload = lazy(() => import('../pages/pre_fabirc_upload'));
-
+const Post = (props) => lazyLoad(props, import('../pages/post'));
+const Wholesale = (props) => lazyLoad(props, import('../pages/wholesale'));
+const Search = (props) => lazyLoad(props, import('../pages/search'));
+const Help = (props) => lazyLoad(props, import('../pages/help'))
+const Contact = (props) => lazyLoad(props, import('../pages/contact'));
+const Info = (props) => lazyLoad(props, import('../pages/info'));
+const M2M2 = (props) => lazyLoad(props, import('../pages/m2m2'));
+const Gallery = (props) => lazyLoad(props, import('../pages/gallery'));
+const WholesaleQuote = (props) => lazyLoad(props, import('../pages/wholesale_quote'));
+const Signin = (props) => lazyLoad(props, import('../pages/signin'));
+const Fabric = (props) => lazyLoad(props, import('../pages/fabric'));
+const Fabric_Single = (props) => lazyLoad(props, import('../pages/fabric_single'));
+const Fabric_Display = (props) => lazyLoad(props, import('../pages/fabric_display'));
+const Fabric_Upload = (props) => lazyLoad(props, import('../pages/fabric_upload'));
+const Fabric_Upload_Select = (props) => lazyLoad(props, import('../pages/fabric_upload_select'));
+const visitRwanda = (props) => lazyLoad(props, import('../pages/visitRwanda2'));
+const notFound = (props) => lazyLoad(props, import('../pages/404'));
+const GiftCard = (props) => lazyLoad(props, import('../pages/gift_card'));
+const student_discount = (props) => lazyLoad(props, import('../pages/student_discount'));
+const Cart = (props) => lazyLoad(props, import('../pages/cart'));
+const Delivery = (props) => lazyLoad(props, import('../pages/delivery_final'));
+const Company = (props) => lazyLoad(props, import('../pages/company'));
+const About = (props) => lazyLoad(props, import('../pages/about'));
+const PointOfSale = (props) => lazyLoad(props, import('../pages/point_of_sale'));
+const DashBoard = (props) => lazyLoad(props, import('../pages/dashboard/dashboard'));
+const FlashDeals = (props) => lazyLoad(props, import('../pages/dashboard/flashdeals'));
+const Blog_Dashboard = (props) => lazyLoad(props, import('../pages/dashboard/blog'));
+const Trending = (props) => lazyLoad(props, import('../pages/dashboard/trending'));
+const PreFabricUpload = (props) => lazyLoad(props, import('../pages/pre_fabirc_upload'));
+const About2 = (props) => lazyLoad(props, import('../pages/about2'));
+const ComingSoon1 = (props) => lazyLoad(props, import('../pages/coming_soon2'));
+const Company2 = (props) => lazyLoad(props, import('../pages/company2'));
+const SizeGuide = (props) => lazyLoad(props, import('../pages/size_guide'));
+const BuyerLicence = (props) => lazyLoad(props, import('../pages/buyer_licence'));
+const Happiness = (props) => lazyLoad(props, import('../pages/hapiness_guaranteed'));
+const SellerLicence = (props) => lazyLoad(props, import('../pages/seller_licence'));
+const WashCare = (props) => lazyLoad(props, import('../pages/washcare'));
+const MIKKFW = (props) => lazyLoad(props, import('../pages/mik_kfw'));
+const SiteMap = (props) => lazyLoad(props, import('../pages/sitemap'));
+const MIKRemera = (props) => lazyLoad(props, import('../pages/mik_remera_corner'));
+const Affiliates = (props) => lazyLoad(props, import('../pages/affiliates'));
+const Careers = (props) => lazyLoad(props, import('../pages/careers_opportunities'));
+const SocialResponsibility = (props) => lazyLoad(props, import('../pages/social_responsibility'));
+const Refer = (props) => lazyLoad(props, import('../pages/refer_a_friend'));
 
 const outer = () => (
     <Suspense fallback={<p>Loading..</p>}>

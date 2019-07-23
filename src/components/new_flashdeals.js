@@ -19,15 +19,8 @@ class Flashdeals2 extends Component {
                 firstImgClass = "firstImage";
             } else firstImgClass = "";
             holder.push(
-                // <div className='flashdeals2-img-div'>
-                <Link className={`flashdeals2-img-div ${firstImgClass}`} to={`/dev/product/${this.props.ObjectToDisplay[i].brand}/${this.props.ObjectToDisplay[i].id}`}>
-                    {/* <picture>
-                        <source className='flashdeals2-img' srcset={`https://madeinkigali.com/images/products/webp/${this.props.ObjectToDisplay[i].img}.webp`} type="image/webp" />
-                        <img className='flashdeals2-img' src={`https://madeinkigali.com/images/products/${this.props.ObjectToDisplay[i].img}.png`} />
-                    </picture> */}
-                    {/* <img className='flashdeals2-img' src={`https://madeinkigali.com/images/products/${this.props.ObjectToDisplay[i].img}`} /> */}
-
-                    <Img className='flashdeals2-img' 
+                
+                <Link className={`flashdeals2-img-div ${firstImgClass}`} to={`product/${this.props.ObjectToDisplay[i].brand}/${this.props.ObjectToDisplay[i].id}`}>                    <Img className='flashdeals2-img' 
                         src={[
                             `https://madeinkigali.com/images/products/webp/${this.props.ObjectToDisplay[i].img}.webp`,
                             `https://madeinkigali.com/images/products/${this.props.ObjectToDisplay[i].img}.png`

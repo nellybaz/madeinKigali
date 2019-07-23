@@ -146,16 +146,6 @@ class Header2 extends Component {
     render() {
         return (
             <div className="Header">
-                {/* {this.getWindowClick()} */}
-                <div className="topmost-bar">
-                    {/* <audio autoPlay={false} ref = {(ip)=> {this.mytune = ip}}>
-            <source src={music} type="audio/mpeg" />
-                Your browser does not support the audio element.
-            </audio> */}
-
-                    <img className="audio-pause" src={this.state.music_icon} onClick={() => this.handleTunePause()} />
-                    <p onClick={() => window.location.href = "/signin"}>Register now to get <span className="top-bar-white-text">10% off*</span> your first order with code <span onClick={() => this.disableCookies()} className="top-bar-white-text"><b>NEWCUSTOMER10</b></span></p>
-                </div>
                 <header className="header">
                     <div className='topbar-nav'>
                         <div className='topbar-nav-left'>
@@ -301,7 +291,7 @@ class Header2 extends Component {
                 <div className={`navigation ${this.state.nav_class}`}>
 
                     <div className='logo-div-nav'>
-                        <Link to={'/12hdgsikdhlmsdne'} ><img src={logo} alt="mik logo" /></Link>
+                        <Link to={'/12hdgsikdhlmsdne'} ><img src={logo} alt="madeinkigali fashion shop logo" /></Link>
                     </div>
 
                     <div className='header-nav-links-div'>

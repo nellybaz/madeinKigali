@@ -164,20 +164,25 @@ class SearchSidebar extends Component {
                 {/* size */}
                 <div className="sidebar-item">
                     <p>Size</p>
-                    <label className="container">
-                        <input type="checkbox" /> &nbsp;XL
-                                <span className="checkmark search-checkmark-circle"></span>
-                    </label>
+                    <div className="sidebar-size">
 
-                    <label className="container">
-                        <input type="checkbox" /> &nbsp;L
-                                <span className="checkmark search-checkmark-circle"></span>
-                    </label>
 
-                    <label className="container">
-                        <input type="checkbox" /> &nbsp;S
+                        <label className="container">
+                            <input type="checkbox" /> &nbsp;XL
                                 <span className="checkmark search-checkmark-circle"></span>
-                    </label>
+                        </label>
+
+                        <label className="container">
+                            <input type="checkbox" /> &nbsp;L
+                                <span className="checkmark search-checkmark-circle"></span>
+                        </label>
+
+                        <label className="container">
+                            <input type="checkbox" /> &nbsp;S
+                                <span className="checkmark search-checkmark-circle"></span>
+                        </label>
+
+                    </div>
 
                 </div>
 
