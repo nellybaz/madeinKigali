@@ -1,7 +1,7 @@
 import React, { lazy, Suspense, Component } from 'react';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { ScrollContext } from 'react-router-scroll-4';
-import Loadable from 'react-loadable';
+
 // import Product from '../pages/Product.js';
 // import Upload from '../pages/upload';
 // import Blog from '../pages/blog';
@@ -47,24 +47,32 @@ import WashCare from '../pages/washcare';
 import MIKKFW from '../pages/mik_kfw';
 import SiteMap from '../pages/sitemap';
 import MIKRemera from '../pages/mik_remera_corner';
-import DynamicLoad from './router_lazy_load';
+import DynamicImport from './router_lazy_load';
 import Happiness from '../pages/hapiness_guaranteed';
 import Affiliates from '../pages/affiliates';
 import Careers from '../pages/careers_opportunities';
 import SocialResponsibility from '../pages/social_responsibility';
 import Refer from '../pages/refer_a_friend';
 
-const App = lazy(() => import('../App'));
-// const Product = lazy(() => import('../pages/Product.js'));
-const Product = (props) => (
-    <DynamicLoad load={()=> import('../pages/Product')}>
-        {
-            (Component) => Component === null ? <p>you will hearr new</p> : <Component props= "...props"/>
-        }
-    </DynamicLoad>
-)
-const Upload = lazy(() => import('../pages/upload'));
-const Blog = lazy(() => import('../pages/blog'));
+
+
+const lazyLoad=(props, link)=>{
+    return (
+        <DynamicImport load={() => link}>
+            {(Component) => Component === null
+            ? <p>Loading</p>
+            :
+            <Component {...props} />
+            }
+        </DynamicImport>
+    )
+}
+const App =(props) => lazyLoad(props, import('../App'))
+
+const Product = (props) => lazyLoad(props, import('../pages/Product'))
+
+const Upload = (props) => lazyLoad(props, import('../pages/upload'))
+const Blog = (props) => lazyLoad(props, import('../pages/blog'))
 const Post = lazy(() => import('../pages/post'));
 const Wholesale = lazy(() => import('../pages/wholesale'));
 const Search = lazy(() => import('../pages/search'));
@@ -97,212 +105,64 @@ const PreFabricUpload = lazy(() => import('../pages/pre_fabirc_upload'));
 
 
 const outer = () => (
-    <Router onUpdate={() => window.scrollTo(0, 0)}>
+    <Suspense fallback={<p>Loading..</p>}>
+
+    <Router onUpdate={() => window.scrollTo(0, 0)} basename="/dev">
         <Switch>
-            <Route exact path={"/dev/company2"} component={Company2} />
+            <Route exact path={"/company2"} component={Company2} />
             {/* <Route exact path={"/"} component={ComingSoon1}/> */}
-            <Suspense fallback={<p>Loading...</p>}>
-            <Route exact path={"/dev/12hdgsikdhlmsdne"} component={App} />
-            </Suspense>
-            <Suspense fallback={<p>Loading .. </p>}> 
-            <Route exact path={"/dev/upload"} component={Upload} />
-            </Suspense>
-
-            <Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/blog/:nav"} component={Blog} />
-</Suspense>
-
-<Suspense fallback={<p>Loading</p>}> 
-
+            <Route exact path={"/12hdgsikdhlmsdne"} component={App} />
+            <Route exact path={"/upload"} component={Upload} />
+            <Route exact path={"/blog/:nav"} component={Blog} />
             <Route exact path={"/dev"} component={ComingSoon1} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/blog/post/:blog_id/:blog_name"} component={Post} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/product/:slug/:number"} component={Product} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/wholesale/:slug/:number"} component={Wholesale} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/search/:query/category/:category_no"} component={Search} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/shop"} component={Search} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/contact"} component={Contact} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/help"} component={Help} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/points"} component={PointOfSale} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/info/:infocategory"} component={Info} />
-</Suspense>
-            {/* <Route exact path={"/dev/m2m"} component={M2M}/> */}
-            <Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/size-guide"} component={SizeGuide} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/m2m2"} component={M2M2} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/gallery"} component={Gallery} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/quote"} component={WholesaleQuote} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/fabric"} component={Fabric} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/fabric_single"} component={Fabric_Single} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/fabric_search"} component={Fabric_Display} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/fabric/upload"} component={Fabric_Upload} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/fabric/create"} component={PreFabricUpload} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/fabric/upload/select/:fabric_id"} component={Fabric_Upload_Select} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/signin"} component={Signin} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/visit_rwanda"} component={visitRwanda} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/student_discount"} component={student_discount} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/gift_card"} component={GiftCard} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/cart"} component={Cart} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/delivery"} component={Delivery} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/company"} component={Company} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/company/about"} component={About} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/company/about2"} component={About2} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/admin/dashboard"} component={DashBoard} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/admin/dashboard/flashdeals"} component={FlashDeals} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/admin/dashboard/trending"} component={Trending} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/admin/dashboard/blog"} component={Blog_Dashboard} />
-</Suspense>
-
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/buyer_licence"} component={BuyerLicence} />
-</Suspense>
-
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/seller_licence"} component={SellerLicence} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/washcare"} component={WashCare} />
-</Suspense>
-
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/mik_kigali_fashion_week"} component={MIKKFW} />
-</Suspense>
-
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/sitemap"} component={SiteMap} />
-</Suspense>
-
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/locations/remera_corner"} component={MIKRemera} />
-</Suspense>
-
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/happiness_guaranteed"} component={Happiness} />
-</Suspense>
-
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/affiliates"} component={Affiliates} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/careers&Opportunities"} component={Careers} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/socialresponsibility"} component={SocialResponsibility} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
-            <Route exact path={"/dev/refer_a_friend"} component={Refer} />
-</Suspense>
-<Suspense fallback={<p>Loading</p>}> 
-
+            <Route exact path={"/blog/post/:blog_id/:blog_name"} component={Post} />
+            <Route exact path={"/product/:slug/:number"} component={Product} />
+            <Route exact path={"/wholesale/:slug/:number"} component={Wholesale} />
+            <Route exact path={"/search/:query/category/:category_no"} component={Search} />
+            <Route exact path={"/shop"} component={Search} />
+            <Route exact path={"/contact"} component={Contact} />
+            <Route exact path={"/help"} component={Help} />
+            <Route exact path={"/points"} component={PointOfSale} />
+            <Route exact path={"/info/:infocategory"} component={Info} />
+            {/* <Route exact path={"/m2m"} component={M2M}/> */}
+            <Route exact path={"/size-guide"} component={SizeGuide} />
+            <Route exact path={"/m2m2"} component={M2M2} />
+            <Route exact path={"/gallery"} component={Gallery} />
+            <Route exact path={"/quote"} component={WholesaleQuote} />
+            <Route exact path={"/fabric"} component={Fabric} />
+            <Route exact path={"/fabric_single"} component={Fabric_Single} />
+            <Route exact path={"/fabric_search"} component={Fabric_Display} />
+            <Route exact path={"/fabric/upload"} component={Fabric_Upload} />
+            <Route exact path={"/fabric/create"} component={PreFabricUpload} />
+            <Route exact path={"/fabric/upload/select/:fabric_id"} component={Fabric_Upload_Select} />
+            <Route exact path={"/signin"} component={Signin} />
+            <Route exact path={"/visit_rwanda"} component={visitRwanda} />
+            <Route exact path={"/student_discount"} component={student_discount} />
+            <Route exact path={"/gift_card"} component={GiftCard} />
+            <Route exact path={"/cart"} component={Cart} />
+            <Route exact path={"/delivery"} component={Delivery} />
+            <Route exact path={"/company"} component={Company} />
+            <Route exact path={"/company/about"} component={About} />
+            <Route exact path={"/company/about2"} component={About2} />
+            <Route exact path={"/admin/dashboard"} component={DashBoard} />
+            <Route exact path={"/admin/dashboard/flashdeals"} component={FlashDeals} />
+            <Route exact path={"/admin/dashboard/blog"} component={Blog_Dashboard} />
+            <Route exact path={"/admin/dashboard/trending"} component={Trending} />
+            <Route exact path={"/buyer_licence"} component={BuyerLicence} />
+            <Route exact path={"/seller_licence"} component={SellerLicence} />
+            <Route exact path={"/washcare"} component={WashCare} />
+            <Route exact path={"/mik_kigali_fashion_week"} component={MIKKFW} />
+            <Route exact path={"/sitemap"} component={SiteMap} />
+            <Route exact path={"/locations/remera_corner"} component={MIKRemera} />
+            <Route exact path={"/happiness_guaranteed"} component={Happiness} />
+            <Route exact path={"/affiliates"} component={Affiliates} />
+            <Route exact path={"/careers&Opportunities"} component={Careers} />
+            <Route exact path={"/socialresponsibility"} component={SocialResponsibility} />
+            <Route exact path={"/refer_a_friend"} component={Refer} />
             <Route component={notFound} />
-</Suspense>
         </Switch>
     </Router>
+    </Suspense>
 
 );
 
