@@ -24,7 +24,7 @@ import {
     isMobile
 } from "react-device-detect";
 
-
+ 
 
 class Product extends Component {
 
@@ -32,15 +32,22 @@ class Product extends Component {
         super(props)
 
         this.state = {
-            quantity_value: 0,
+            quantity_value: 12,
             fadein_top_animate_class: '',
             fadein_top_animate_class2: '',
             modal_opacity_big: '',
             start_show: 1,
             image_selected_active: 'img-select-active',
+            ColorBoxClass:'',
+            minPrice: 12 * 26,
         }
     }
 
+    changeBgColor=()=>{ 
+        this.setState({
+            ColorBoxClass: 'bgGrey'
+        });
+    }
 
    async componentDidMount() {
     console.log("product called");
@@ -158,12 +165,20 @@ class Product extends Component {
         if (x === 1) {
             this.setState({
                 quantity_value: parseInt(this.state.quantity_value) + 1
+            }, () => {
+                this.setState({
+                    minPrice : 26 * this.state.quantity_value
+                })
             })
         }
         else {
-            if (this.state.quantity_value >= 1) {
+            if (this.state.quantity_value >= 1 && this.state.quantity_value > 12) {
                 this.setState({
                     quantity_value: parseInt(this.state.quantity_value) - 1
+                }, () => {
+                    this.setState({
+                        minPrice :26 * this.state.quantity_value
+                    })
                 })
             }
         }
@@ -254,7 +269,7 @@ class Product extends Component {
 
                         <div className="product-section-item div3">
                             <div className="price-section-div">
-                                <h1>$139.99</h1>
+                                <h1>$26.00</h1>
                                 <h5> NAXIST ITALIAN BAGS <br></br><span className="sku">SKU: 18WSTD02</span></h5>
 
                                 <div className="div-stars">
@@ -268,14 +283,14 @@ class Product extends Component {
                                 </div>
                             </div>
 
-                            <div className="color-box-div">
+                            <div className="color-box-div"> 
                                 <p>COLOR</p>
                                 <div>
-                                    <img src={bag} />
-                                    <img src={bag} />
-                                    <img src={bag} />
-                                    <img src={bag} />
-                                    <img src={bag} />
+                                    <img className={`${this.state.ColorBoxClass}`} src={bag} onClick ={this.changeBgColor}/>
+                                    <img src={bag} onClick ={this.changeBgColor}/>
+                                    <img src={bag} onClick ={this.changeBgColor}/>
+                                    <img src={bag} onClick ={this.changeBgColor}/>
+                                    <img src={bag} onClick ={this.changeBgColor}/>
 
                                 </div>
                             </div>
@@ -329,6 +344,7 @@ class Product extends Component {
 
                             <div className="quantity-div">
                                 <p>QUANTITY</p>
+                                <p>Min quantity: 12</p>
 
                                 <div className="div-quantity-inner">
                                     <button onClick={() =>
@@ -341,11 +357,12 @@ class Product extends Component {
 
 
                                 </div>
+                                <p>Total price: <span>{this.state.minPrice}</span></p>
 
                             </div>
 
                             <div className="add-to-cart">
-                                <button className="btn btn-add-to-cart"><Link to="/quote">PRE ORDER</Link></button>
+                                <button className="btn btn-add-to-cart"><Link to={`/quote/ladies_handbag/${this.state.quantity_value}`}>PRE ORDER</Link></button>
                                 <img className="wishlist" src={heart} />
                             </div>
 

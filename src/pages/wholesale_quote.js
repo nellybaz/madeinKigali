@@ -3,22 +3,42 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import '../css/wholesale_quote.css';
 class WholeSaleQuote extends Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            orderText:"Dear Sir/Madam, I write to request..."
+        }
+    }
+
+    componentDidMount(){
+        console.log(this.props);
+    }
+
+    handleOrderText=(e)=>{
+        this.setState({
+            orderText: e.target.value
+        });
+    }
     render(){ 
         return(
             <div className="WholeSaleQuote" style={{background:'white'}}>
                 <Header />
                     <div className="quote-wrapper">
                         <div className="quote-left">
-                            <h4>Tell us what you need</h4>
+                            <h4>Make your order to be processed </h4>
                            
 
                             <h5>
                             Complete Your RFQ
                             </h5>
 
+
                             <p>The more specific your information, the more accurately we can match your request to the right suppliers</p>
-                            <input className="input-keyword border-gray" placeholder="Keywords for products you're looking for" />
                             <br></br>
+                            <p>Product Name</p>
+                            <input className="input-keyword border-gray" placeholder="Keywords for products you're looking for" value={this.props.match.params.product_name} />
+                            <br></br>
+                            {/* <p>Category</p>
                             <select className="quote-category">
                                 <option selected hidden>Please select category</option>
                                 <option>Please select category</option>
@@ -27,20 +47,21 @@ class WholeSaleQuote extends Component{
                                 <option>Please select category</option>
                                 <option>Please select category</option>
                             </select>
-                            <br></br>
+                            <br></br> */}
 
-                             <input className="quote-quantity border-gray" placeholder="Enter Quantity" />
+                            <p>Quantity Ordered</p>
+                             <input className="quote-quantity border-gray" placeholder="Enter Quantity" value={this.props.match.params.quantity_order} />
                            
-                            <select className="quote-pieces border-gray">
+                            {/* <select className="quote-pieces border-gray">
                                 <option selected hidden>Pieces</option>
                                 <option>Please select category</option>
                                 <option>Please select category</option>
                                 <option>Please select category</option>
                                 <option>Please select category</option>
                                 <option>Please select category</option>
-                            </select>
+                            </select> */}
                                 <br></br>
-                            <textarea className="quote-textarea border-gray" rows="10" value="Dear Sir/Madam, I write to request..."/>
+                            <textarea className="quote-textarea border-gray" onChange={this.handleOrderText} rows="10" value={this.state.orderText}/>
                             <div class="upload-btn-wrapper">
                                 <button class="btn-req-upload border-gray">Upload a file</button>
                                 <input type="file" name="myfile" />

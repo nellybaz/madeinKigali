@@ -5,18 +5,20 @@ import DynamicImport from './router_lazy_load';
 import '../css/home.css';
 import spinner from '../assets/images/blog-spinner.gif';
 
+
+//enables lazy loading of components and helps in code splitting
 const lazyLoad=(props, link)=>{
     return (
         <DynamicImport load={() => link}>
             {(Component) => Component === null
             ? <div style={{ width:"200px", margin: '50vh 45%'}}>
-                <p>Loading please wait....</p>
+                <p className="center">Loading please wait....</p>
             </div>
             :
             <Component {...props} />
             }
         </DynamicImport>
-    )
+    ) 
 }
 const App =(props) => lazyLoad(props, import('../App'))
 
@@ -93,7 +95,7 @@ const outer = () => (
             <Route exact path={"/size-guide"} component={SizeGuide} />
             <Route exact path={"/m2m2"} component={M2M2} />
             <Route exact path={"/gallery"} component={Gallery} />
-            <Route exact path={"/quote"} component={WholesaleQuote} />
+            <Route exact path={"/quote/:product_name/:quantity_order"} component={WholesaleQuote} />
             <Route exact path={"/fabric"} component={Fabric} />
             <Route exact path={"/fabric_single"} component={Fabric_Single} />
             <Route exact path={"/fabric_search"} component={Fabric_Display} />

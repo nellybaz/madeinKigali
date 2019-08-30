@@ -12,7 +12,7 @@
     } 
 
    
-}
+} 
 
 
 @media only screen and (max-width: 900px){
@@ -403,13 +403,14 @@
     z-index: 2;
     padding-top: 10px;
     width:100% !important;  
-    background-color: #191843;
-    /* height: 60px; */
-    
+    background-color: #191843;    
 }
 
-.nav-fixed div{
-    padding:10px;
+
+.nav-fixed .header-nav-links-div{
+    width:100%;
+    position: relative;
+    left:-4.5%;
 }
 .nav-fixed *{
     color: #73705B !important;

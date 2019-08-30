@@ -334,11 +334,23 @@
 .color-box-div div{
     margin-top: -10px;
 }
-
+.bgGrey{
+    background: #C7C5C5;
+}
 .color-box-div img{
+    box-sizing: border-box;
+    border:1px solid #C7C5C5;
+    padding: 3px;
     width:50px;
-    height:60px;
+    object-fit: center ;
+    height:50px;
     margin-right:10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.color-box-div img:hover{
+    border:2px solid #9B001C;
 }
 
 .color-box-div p{
@@ -382,13 +394,21 @@
 .div-quantity-inner {
     display: flex;
     width: 100%;
-    margin-top: -10px;
-    border:1px solid rgb(199, 197, 197);
+    /* margin-top: -10px; */
+    /* border:1px solid rgb(199, 197, 197); */
 }
+
+
 
 .div-quantity-inner input{
     border: 0;
     width:40%;
+}
+
+.div-quantity-inner button{
+    border:1px solid rgb(199, 197, 197);
+    border-radius: 20px;
+    cursor: pointer;
 }
 .btn-quantity{
     background: transparent;
@@ -409,6 +429,7 @@
 }
 
 .size-div-m2m-inner div{
+    box-sizing: border-box;
     min-width: 8%;
     max-width: 18%;
     display: flex;
@@ -416,8 +437,12 @@
     border: 1px solid rgb(199, 197, 197);
     justify-content: center;
     height:30px;
-    /* background: red; */
+    cursor: pointer;
     margin: 2px;
+}
+
+.size-div-m2m-inner div:hover{
+    border: 2px solid rgb(158, 155, 155);
 }
 
 input::-webkit-outer-spin-button,
@@ -447,7 +472,7 @@ input::-webkit-inner-spin-button {
 }
 
 .shipping-div p:nth-child(2){
-    margin-top: -12px; 
+    /* margin-top: -12px;  */
     font-size: 0.9rem;
 }
 

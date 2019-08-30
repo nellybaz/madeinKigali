@@ -106,9 +106,6 @@ class BlogHeader extends Component {
                     img: bh8,
                     title: 'Blog Title Eight',
                 },
-
-
-
             ]
         }
     }

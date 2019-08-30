@@ -216,21 +216,21 @@ class Header2 extends Component {
                             <Link to={''}>New in Wholesale</Link>
                         </details>
 
-                        <details>
+                        {/* <details>
                             <summary>FABRIC</summary>
                             <Link to={''}>Create</Link>
                             <Link to={''}>Upload</Link>
                             <Link to={''}>Design Tools</Link>
                             <Link to={''}>Design FAQS</Link>
-                        </details>
+                        </details> */}
 
-                        <details>
+                        {/* <details>
                             <summary>MADE TO MEASURE</summary>
                             <Link to={''}>MIK Boutique</Link>
                             <Link to={''}>The Men’s guide</Link>
                             <Link to={''}>The Women’s guide</Link>
                             <Link to={''}>Wardrobe essentials</Link>
-                        </details>
+                        </details> */}
 
                         <details>
                             <summary>WHOLESALE</summary>
@@ -240,21 +240,21 @@ class Header2 extends Component {
                             <Link to={''}>Sportswears</Link>
                         </details>
 
-                        <details>
+                        {/* <details>
                             <summary>BRANDS</summary>
                             <Link to={''}>Brands A-Z</Link>
                             <Link to={''}>Clothing Brands</Link>
                             <Link to={''}>Accessories Brands</Link>
                             <Link to={''}>Shoe Brands</Link>
-                        </details>
+                        </details> */}
 
-                        <details>
+                        {/* <details>
                             <summary>SALES</summary>
                             <Link to={''}>Shop all Sales</Link>
                             <Link to={''}>SALE Fabric</Link>
                             <Link to={''}>Bag & Accessories</Link>
                             <Link to={''}>Sale M2M</Link>
-                        </details>
+                        </details> */}
 
                         <details>
                             <summary>#VISIT RWANDA</summary>
