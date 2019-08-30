@@ -74,10 +74,10 @@ const Refer = (props) => lazyLoad(props, import('../pages/refer_a_friend'));
 const outer = () => (
     <Suspense fallback={<p>Loading..</p>}>
 
-    <Router onUpdate={() => window.scrollTo(0, 0)} basename="/dev">
+    <Router onUpdate={() => window.scrollTo(0, 0)} basename="">
         <Switch>
             <Route exact path={"/company2"} component={Company2} />
-            {/* <Route exact path={"/"} component={ComingSoon1}/> */}
+            <Route exact path={"/"} component={ComingSoon1}/>
             <Route exact path={"/12hdgsikdhlmsdne"} component={App} />
             <Route exact path={"/upload"} component={Upload} />
             <Route exact path={"/blog/:nav"} component={Blog} />
