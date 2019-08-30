@@ -78,8 +78,8 @@ const outer = () => (
         <Switch>
             <Route exact path={"/company2"} component={Company2} />
             <Route exact path={"/"} component={ComingSoon1}/>
-            <Route exact path={"/12hdgsikdhlmsdne"} component={App} />
-            <Route exact path={"/upload"} component={Upload} />
+            {/* <Route exact path={"/12hdgsikdhlmsdne"} component={App} /> */}
+            {/* <Route exact path={"/upload"} component={Upload} />
             <Route exact path={"/blog/:nav"} component={Blog} />
             <Route exact path={"/dev"} component={ComingSoon1} />
             <Route exact path={"/blog/post/:blog_id/:blog_name"} component={Post} />
@@ -90,9 +90,9 @@ const outer = () => (
             <Route exact path={"/contact"} component={Contact} />
             <Route exact path={"/help"} component={Help} />
             <Route exact path={"/points"} component={PointOfSale} />
-            <Route exact path={"/info/:infocategory"} component={Info} />
+            <Route exact path={"/info/:infocategory"} component={Info} /> */}
             {/* <Route exact path={"/m2m"} component={M2M}/> */}
-            <Route exact path={"/size-guide"} component={SizeGuide} />
+            {/* <Route exact path={"/size-guide"} component={SizeGuide} />
             <Route exact path={"/m2m2"} component={M2M2} />
             <Route exact path={"/gallery"} component={Gallery} />
             <Route exact path={"/quote/:product_name/:quantity_order"} component={WholesaleQuote} />
@@ -107,11 +107,11 @@ const outer = () => (
             <Route exact path={"/student_discount"} component={student_discount} />
             <Route exact path={"/gift_card"} component={GiftCard} />
             <Route exact path={"/cart"} component={Cart} />
-            <Route exact path={"/delivery"} component={Delivery} />
+            <Route exact path={"/delivery"} component={Delivery} /> */}
             <Route exact path={"/company"} component={Company} />
             <Route exact path={"/company/about"} component={About} />
             <Route exact path={"/company/about2"} component={About2} />
-            <Route exact path={"/admin/dashboard"} component={DashBoard} />
+            {/* <Route exact path={"/admin/dashboard"} component={DashBoard} />
             <Route exact path={"/admin/dashboard/flashdeals"} component={FlashDeals} />
             <Route exact path={"/admin/dashboard/blog"} component={Blog_Dashboard} />
             <Route exact path={"/admin/dashboard/trending"} component={Trending} />
@@ -125,7 +125,7 @@ const outer = () => (
             <Route exact path={"/affiliates"} component={Affiliates} />
             <Route exact path={"/careers&Opportunities"} component={Careers} />
             <Route exact path={"/socialresponsibility"} component={SocialResponsibility} />
-            <Route exact path={"/refer_a_friend"} component={Refer} />
+            <Route exact path={"/refer_a_friend"} component={Refer} /> */}
             <Route component={notFound} />
         </Switch>
     </Router>

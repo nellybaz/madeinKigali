@@ -20,7 +20,6 @@
 }
 
 .ComingSoon {
-  border: 1px solid #F8F8F8;
   width: 100%;
   background: #F8F8F8;
 }
@@ -80,7 +79,7 @@
 
 .ComingSoon .content .content-inner .btns-div {
   position: relative;
-  margin-top: 15%;
+  margin-top: 18%;
   margin-bottom: 10%;
   left: 4%;
   width: 100%;
@@ -120,7 +119,7 @@
 .ComingSoon .content .content-inner .count-down-labels ul li {
   text-decoration: none;
   display: inline;
-  margin-right: 135px;
+  margin-right: 16%;
   font-size: 8px;
   font-weight: bold;
   font-family: "BaskervilleCustom" !important;
@@ -158,7 +157,7 @@
 
 .coming-soon-social .social-media-div img {
   width: 12px !important;
-  height: 28px;
+  height: 15px;
 }
 
 .days, .hours, .mins, .secs {

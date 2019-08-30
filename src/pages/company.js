@@ -141,7 +141,7 @@ It’s a place made to get it right to shop and be inspired to develop your own 
                             We are selflessly committed to providing the most authentic handmade fashion products that Rwanda has to offer while ensuring that the hundreds of women that we work with in producing the products are the priority beneficiaries to the proceeds.
                             </p>
 
-                            <Link  className='btn-company'>WHO WE ARE</Link>
+                            <Link to="" className='btn-company'>WHO WE ARE</Link>
                         </div>
                         <div>
                             <h5><b>Our Products</b></h5>

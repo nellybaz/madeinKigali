@@ -291,7 +291,7 @@ class Header2 extends Component {
                 <div className={`navigation ${this.state.nav_class}`}>
 
                     <div className='logo-div-nav'>
-                        <Link to={'/12hdgsikdhlmsdne'} ><img src={logo} alt="madeinkigali fashion shop logo" /></Link>
+                        <Link to={'/'} ><img src={logo} alt="madeinkigali fashion shop logo" /></Link>
                     </div>
 
                     <div className='header-nav-links-div'>
