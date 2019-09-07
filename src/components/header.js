@@ -124,7 +124,7 @@ class Header2 extends Component {
 
     searchBoxHandler = () => {
         // alert('Searching....');
-        window.location.href = `/dev/search/${this.state.search_query}/category/1`;
+        window.location.href = `/search/${this.state.search_query}/category/1`;
 
         //call search api
     }
@@ -162,9 +162,9 @@ class Header2 extends Component {
                                 }
                             }} type="text" placeholder="Search" />
                             <a href="#" onClick={() => this.handleSearchHighlight()} title="SEARCH"><img src={search}></img></a>
-                            <a href="/dev/signin" title="SIGN IN"><img src={profile}></img></a>
-                            <a href="/dev/cart" title="WISHLIST"><img src={require('../assets/images/heart2.png')}></img></a>
-                            <a href="/dev/cart" title="BASKET"><img src={bag}></img></a>
+                            <a href="#" title="SIGN IN"><img src={profile}></img></a>
+                            <a href="#" title="WISHLIST"><img src={require('../assets/images/heart2.png')}></img></a>
+                            <a href="#" title="BASKET"><img src={bag}></img></a>
 
                         </div>
 
@@ -296,7 +296,7 @@ class Header2 extends Component {
 
                     <div className='header-nav-links-div'>
 
-                    <div className="new-in" ><a href="/dev/search/jeans/category/2" >NEW IN </a>
+                    <div className="new-in" ><a href="#" >NEW IN </a>
                         <div className="new-in-dropdown dropdowns">
                             <div className="new-in-dropdown-content">
                                 <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -322,196 +322,8 @@ class Header2 extends Component {
                         </div>
                     </div>
 
-                    {/* fabric */}
-
-
-                    {/* <div className="fabric" ><a href="/fabric" >FABRIC </a>
-            <div className="fabric-dropdown dropdowns">
-                    <div className="fabric-dropdown-content">
-                        <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                            
-                                <h5 style={{ }}>DESIGN</h5>
-                        
-                            <Link to={"/fabric/create"} >Create </Link>
-                            <Link to={"/fabric/upload"} >Upload</Link>
-                            <Link to={"#"} >Design tools</Link>
-                            <Link to={"/help"} >Design FAQS </Link>
-
-                            <h5 style={{ }}>SELL</h5>
-
-
-                            <Link to={"#"} >Commissions</Link>
-                        <Link to={"#"} >Seller Agreement</Link>
-                            <Link to={"#"} >Selling FAQs</Link>
-                        </div>
-                    </div>
-
-                    <div className="fabric-dropdown-content">
-                    
-                    <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                            
-                            <h5 style={{ }}>DESIGN YOUR OWN</h5>
-                    
-                        <Link to={"#"} >Fabric</Link>
-                        <Link to={"#"} >Leather</Link>
-                        <Link to={"#"} >Clothing</Link>
-                        <Link to={"#"} >Homewear </Link>
-                        <Link to={"#"} >Accessories</Link>
-
-                        <h5 style={{ }}>SHOP BY CATEGORY</h5>
-
-                        <Link to={"#"} >Select a Room</Link>
-                        <Link to={"#"} >Soft furnishings</Link>
-                       
-                        
-                        
-                    </div>
-
-                    </div>
-
-                    <div className="fabric-dropdown-content">
-                    <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                        
-                    
-                        <Link style={{fontWeight:'400'}} to={"#"} >Cook and dine</Link>
-                        <Link to={"#"} >Home accessories</Link>
-                        <Link to={"#"} >Stationery</Link>
-                        <Link to={"#"} >Travel & leisure </Link>
-                       
-
-                        <h5 style={{ }}>SHOP BY DESIGNS</h5>
-
-                        <Link to={"#"} >Trending Now </Link>
-                        <Link to={"#"} >Animals</Link>
-                        <Link to={"#"} >Nature </Link>
-                        <Link to={"#"} >Seasonals</Link>
-                        <Link to={"#"} >Holiday </Link>
-                        
-                    </div>
-                    
-
-                    </div>
-
-                    <div className="fabric-dropdown-content">
-                        <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                            
-                            <h5 style={{ }}>SHOP BY THEMES</h5>
-                    
-                        <Link to={"#"} >Summer wave</Link>
-                        <Link to={"#"} >Spring Flower</Link>
-                        <Link to={"#"} >Valentine’s Day</Link>
-                        <Link to={"#"} >Holiday </Link>
-                        <Link to={"#"} >Dots</Link>
-
-                        <h5 style={{ }}>HELP CENTER</h5>
-
-                        <Link to={"#"} >Our Process </Link>
-                        <Link to={"#"} >Products</Link>
-
-                        <Link to={"#"} >Fill-A-Yard  </Link>
-                        <Link to={"#"} >Tutorials</Link>
-                        
-                    </div>
-                    </div>
-
-                    <div className="fabric-dropdown-content">
-                        <img width="100%" height="90%" src={require('../assets/images/menus/3M2M.png')} />
-                    </div>
-                </div>
-            </div> */}
-
-
-                    {/* fabric ends */}
-
-
-                    {/* 
-            <div className="m2m"><a href="/m2m2">MADE TO MEASURE</a>
-                <div className="m2m-dropdown dropdowns">
-                    <div className="m2m-dropdown-content">
-                        <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                            
-                                <h5 style={{ }}>SHOP BY STYLE</h5>
-                        
-                            <Link to={"#"} >MIK Boutique</Link>
-                            <Link to={"#"} >The Men guide</Link>
-                            <Link to={"#"} >The Women  guide</Link>
-                            <Link to={"#"} >Wardrobe essentials </Link>
-                            <Link to={"#"} >Work wear & Suits</Link>
-                            <Link to={"#"} >Mind Blowing</Link>
-                            <Link to={"#"} >Dare to impress</Link>
-                        </div>
-                    </div>
-
-                    <div className="m2m-dropdown-content">
-                    
-                    <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                            
-                            <h5 style={{ }}>SHOP BY CATEGORY</h5>
-                    
-                        <Link to={"#"} >Shop all Women</Link>
-                        <Link to={"#"} >Shop all Men</Link>
-                        <Link to={"#"} >Shop All Patronnage</Link>
-                        <Link to={"#"} >Children</Link>
-                        <Link to={"#"} >Toodler & Baby Wear</Link>
-                        <Link to={"#"} >Special occasions</Link>
-                        <Link to={"#"} >Couture</Link>
-                        <Link to={"#"} >Accessories</Link>
-                        <Link to={"#"} >Festival</Link>
-
-                    </div>
-
-                    </div>
-
-                    <div className="m2m-dropdown-content">
-                    <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                            
-                            <h5 style={{ }}>DESIGN YOUR OWN</h5>
-                    
-                        <Link to={"#"} >Patterns</Link>
-                        <Link to={"#"} >Clothing</Link>
-                        <Link to={"#"} >Handmade Jewellery Men</Link>
-                        <Link to={"#"} >Embroidery Design </Link>
-                        <Link to={"#"} >Beaded Design</Link>
-
-                        <Link to={"#"} >Weaving Design </Link>
-                        <Link to={"#"} >Art Design</Link>
-                        <Link to={"#"} >Home Decor </Link>
-     
-                    </div>
-                    
-
-                    </div>
-
-                    <div className="m2m-dropdown-content">
-                        <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                            
-                            <h5 style={{ }}>FABRIC CATALOGUE</h5>
-                    
-                        <Link to={"#"} >Uniwax</Link>
-                        <Link to={"#"} >Vlisco</Link>
-                        <Link to={"#"} >Chinese Wax</Link>
-                        <Link to={"#"} >Couture Lace </Link>
-                        <Link to={"#"} >Wedding Lace</Link>
-
-                        
-                    </div>
-                    </div>
-
-                    <div className="m2m-dropdown-content">
-                        <img width="100%" height="100%" src={require('../assets/images/menus/3M2M.png')} />
-                    </div>
-                </div> */}
-
                     {/* </div> */}
-                    <div className="wholesale"><Link to={'/search/jeans/category/3'}>WHOLESALE</Link>
+                    <div className="wholesale"><Link to={'#'}>WHOLESALE</Link>
                         <div className="wholesale-dropdown dropdowns">
                             <div className="wholesale-dropdown-content">
                                 <div style={{ display: 'flex', flexDirection: 'column', flexWrap: 'wrap', }}>
@@ -617,148 +429,7 @@ class Header2 extends Component {
 
                     </div>
 
-                    {/* <div className="brands"><a href="#">BRANDS </a>
-
-                 <div className="brands-dropdown dropdowns">
-                    <div className="brands-dropdown-content">
-                        <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                            
-                                <h5 style={{ }}>SHOP BY CATEGORY</h5>
-                        
-                            <Link to={"#"} >Brands A to Z</Link>
-                            <Link to={"#"} >Clothing Brands</Link>
-                            <Link to={"#"} >Shoe Brands</Link>
-                            <Link to={"#"} >Accessories Brands </Link>
-                            <Link to={"#"} >Beauty Brands</Link>
-                            <h5 style={{ }}>FEATURED BRANDS</h5>
-                    
-                        <Link to={"#"} >Maxhosa</Link>
-                        
-                            
-                        </div>
-                    </div>
-
-                    <div className="brands-dropdown-content">
-                    
-                    <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                            
-                    <Link style={{fontWeight: '400'}} to={"#"} >Dpipertwins</Link>
-                        <Link to={"#"} >Nanawax</Link>
-                        <Link to={"#"} >Patheo </Link>
-                        <Link to={"#"} >Duro Olowu</Link>
-                        <Link to={"#"} >Stella Jean </Link>
-                        <Link to={"#"} >MIK Boutique</Link>
-                        <Link to={"#"} >Oheme Ohema </Link>
-                        <Link to={"#"} >Ellisha Boie</Link>
-                        
-                    </div>
-
-                    </div>
-
-                   
-
-                    <div className="brands-dropdown-content">
-                        <img width="100%" height="auto" style={{objectFit:'cover'}} src={require('../assets/images/menus/5Brands.jpg')} />
-                    </div>
-
-                    <div className='div-for-brands-display'>
-                        <div>
-                            <img src={require('../assets/images/logo.png')} />
-                        </div>
-                        <div>
-                        <img src={require('../assets/images/logo.png')} />
-                        </div>
-                        <div>
-                        <img src={require('../assets/images/logo.png')} />
-                        </div>
-                        <div>
-                        <img src={require('../assets/images/logo.png')} />
-                        </div>
-                        <div>
-                        <img src={require('../assets/images/logo.png')} />
-                        </div>
-
-                        <div className='shop-all-brands-div'>
-                        <Link to={'/search/jeans/category/1'} >SHOP ALL BRANDS</Link>
-                    </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div className="sale" ><a href="#">SALES </a>
-
-                 <div className="sales-dropdown dropdowns">
-                    <div className="sales-dropdown-content">
-                        <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                            
-                                <h5 style={{ }}>SALES & OFFERS</h5>
-                        
-                            <Link to={"#"} >Shop all Sales</Link>
-                            <Link to={"#"} >SALE Fabric</Link>
-                            <Link to={"#"} >SALE M2M</Link>
-                            <Link to={"#"} >SALE TOP/DRESSES </Link>
-                            <Link to={"#"} >SALES  SHOES/BEAUTY</Link>
-  
-                        </div>
-                    </div>
-
-                     <div className="sales-dropdown-content">
-                        <div style={{display:'flex', flexDirection:'column'}}>
-                            
-                            
-                                <h5 style={{ }}>SPECIAL OFFERS</h5>
-                        
-                            <Link to={"#"} >2 for £10 Jersey</Link>
-                            <Link to={"#"} >Multi-buy deals</Link>
-                            <Link to={"#"} >Last Chance to Buy</Link>
-                            <Link to={"#"} >MIK * 10 Mystery bag</Link>
-                            <Link to={"#"} >Student discount</Link>
-
-                        </div>
-                    </div>
-                  
-
-                    <div className="sales-dropdown-content">
-                        <img src={require('../assets/images/menus/6sale.png')} />
-                    </div>
-                </div>
-            
-            </div> */}
-
-
-                    {/* <div className='visitrwanda'><Link to={'/visit_rwanda'}>#VISITRWANDA</Link>
-                        <div className="visitrwanda-dropdown dropdowns">
-                            <div className="visitrwanda-dropdown-content">
-                                <div style={{ display: 'flex', flexDirection: 'column' }}>
-
-
-                                    <h5 style={{}}>SHOP BY EDIT</h5>
-
-                                    <Link to={"#"} >Baskets</Link>
-                                    <Link to={"#"} >Arts</Link>
-                                    <Link to={"#"} >Clothing</Link>
-                                    <Link to={"#"} >Home Decor </Link>
-                                    <Link to={"#"} >Bags & Accessories </Link>
-                                    <Link to={"#"} >Gift Box</Link>
-                                    <Link to={"#"} >Multi-buy deals</Link>
-                                    <Link to={"#"} >Last Chance to Buy</Link>
-                                </div>
-                            </div>
-
-
-                            <div className="visitrwanda-dropdown-content">
-                                <img src={require('../assets/images/menus/7visit.jpg')} />
-                            </div>
-                        </div>
-                    </div> */}
-
-
-                    <div className='fashion-stories'><Link to={'/blog/home'}>THE EDIT</Link>
+                    <div className='fashion-stories'><Link to={'#'}>THE EDIT</Link>
                         <div className="fashion-stories-dropdown dropdowns">
 
 
@@ -799,44 +470,7 @@ class Header2 extends Component {
                     </div>
 
 
-                    <div className="sale" ><a href="/dev/company2">ABOUT US </a>
-
-                        {/* <div className="sales-dropdown dropdowns">
-                            <div className="sales-dropdown-content">
-                                <div style={{ display: 'flex', flexDirection: 'column' }}>
-
-
-                                    <h5 style={{}}>SALES & OFFERS</h5>
-
-                                    <Link to={"#"} >Shop all Sales</Link>
-                                    <Link to={"#"} >SALE Fabric</Link>
-                                    <Link to={"#"} >SALE M2M</Link>
-                                    <Link to={"#"} >SALE TOP/DRESSES </Link>
-                                    <Link to={"#"} >SALES  SHOES/BEAUTY</Link>
-
-                                </div>
-                            </div>
-
-                            <div className="sales-dropdown-content">
-                                <div style={{ display: 'flex', flexDirection: 'column' }}>
-
-
-                                    <h5 style={{}}>SPECIAL OFFERS</h5>
-
-                                    <Link to={"#"} >2 for £10 Jersey</Link>
-                                    <Link to={"#"} >Multi-buy deals</Link>
-                                    <Link to={"#"} >Last Chance to Buy</Link>
-                                    <Link to={"#"} >MIK * 10 Mystery bag</Link>
-                                    <Link to={"#"} >Student discount</Link>
-
-                                </div>
-                            </div>
-
-
-                            <div className="sales-dropdown-content">
-                                <img src={require('../assets/images/menus/6sale.png')} />
-                            </div>
-                        </div> */}
+                    <div className="sale" ><a href="#">ABOUT US </a>
 
                     </div>
 
