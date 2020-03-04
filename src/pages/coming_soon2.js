@@ -109,16 +109,16 @@ class ComingSoon2 extends Component{
                        
 
                         <div className='btns-div'>
-                                <Link to={'/company/about2'}>ABOUT US</Link>
-                                <Link to={'/company'}>WHO WE ARE</Link>
-                                <Link to={'/company/about'}>WHAT WE DO</Link>
+                                <Link to={'#'}>ABOUT US</Link>
+                                <Link to={'#'}>WHO WE ARE</Link>
+                                <Link to={'#'}>WHAT WE DO</Link>
                              </div>
 
                             <div className='count-down-div'>
                            
                                 <Countdown
                                  
-                                date={'Wed, 01 Jan 2020 00:00:00' }
+                                date={'Wed, 01 Jan 2021 00:00:00' }
                                 renderer={renderer}
                             />
                             
@@ -212,7 +212,7 @@ class ComingSoon2 extends Component{
                       </div>
                             <Countdown
                                 
-                                date={'Wed, 01 Jan 2020 00:00:00' }
+                                date={'Wed, 01 Jan 2021 00:00:00' }
                                 renderer={renderer}
                             />
 
@@ -227,9 +227,9 @@ class ComingSoon2 extends Component{
                             </ul>
 
                             <div className='coming-mobile-btn-div'>
-                              <Link to={'/company/about2'}>ABOUT US</Link>
-                              <Link to={'/company'}>WHO WE ARE</Link>
-                              <Link to={'/company/about'}>WHAT WE DO</Link>
+                              <Link to={'#'}>ABOUT US</Link>
+                              <Link to={'#'}>WHO WE ARE</Link>
+                              <Link to={'#'}>WHAT WE DO</Link>
                             </div>
                       
                       </div>
