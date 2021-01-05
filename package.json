@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://madeinkigali.com/dev",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "google-map-react": "^1.1.0",
     "node-sass": "^4.12.0",
     "react": "^16.5.2",
